@@ -35,6 +35,16 @@ const EQUIPAS_PT = {
   'Tottenham Hotspur': 'Tottenham', Benfica: 'Benfica', Sporting: 'Sporting', 'Sporting CP': 'Sporting', Braga: 'SC Braga',
   'CSKA Moscow': 'CSKA Moscovo', Sevilla: 'Sevilha', Celtic: 'Celtic', 'Queens Park Rangers': 'QPR',
 };
+// Equipas da Equipa Mítica (nome em pt-PT → slug de data/equipas.json).
+const SLUGS = {
+  'Real Madrid': 'real-madrid', Barcelona: 'barcelona', 'Manchester United': 'man-utd', 'Manchester City': 'man-city',
+  Liverpool: 'liverpool', Chelsea: 'chelsea', Arsenal: 'arsenal', Tottenham: 'tottenham', 'Bayern Munique': 'bayern',
+  'Borussia Dortmund': 'dortmund', Juventus: 'juventus', Milan: 'milan', Inter: 'inter', 'Atlético de Madrid': 'atletico',
+  'Valência': 'valencia', 'Paris Saint-Germain': 'psg', Benfica: 'benfica', 'FC Porto': 'porto', Sporting: 'sporting',
+  Portugal: 'portugal', Espanha: 'espanha', 'França': 'franca', 'Itália': 'italia', Alemanha: 'alemanha',
+  Inglaterra: 'inglaterra', Holanda: 'holanda', Argentina: 'argentina', Brasil: 'brasil', 'Croácia': 'croacia', 'Grécia': 'grecia',
+};
+
 const CIDADES_PT = {
   Munich: 'Munique', Moscow: 'Moscovo', Rome: 'Roma', Milan: 'Milão', Lisbon: 'Lisboa', Seville: 'Sevilha',
   Turin: 'Turim', London: 'Londres', Athens: 'Atenas', Berlin: 'Berlim', Vienna: 'Viena', Istanbul: 'Istambul',
@@ -234,6 +244,25 @@ async function lerPlantel(plantel) {
   });
 }
 
+/** Atribui a cada equipa a lista de convocados com mais nomes em comum com quem jogou. */
+function atribuirPlanteis(onzes, planteis) {
+  const chaves = (lista) => new Set(lista.flatMap((j) => [normalizar(j.nome), normalizar(j.alvo ?? '')]).filter(Boolean));
+  return onzes.map((bruta) => {
+    const jogaram = chaves([...bruta.onze, ...bruta.banco]);
+    let melhor = null;
+    let pontos = 0;
+    for (const p of planteis) {
+      const comuns = [...chaves(p)].filter((k) => jogaram.has(k)).length;
+      if (comuns > pontos) {
+        pontos = comuns;
+        melhor = p;
+      }
+    }
+    if (pontos < 8) throw new Error('Não consegui associar os convocados às equipas.');
+    return melhor;
+  });
+}
+
 // --- montagem do JSON ---
 function pessoa(j, extra = {}) {
   const aceites = new Set([...alcunhasDe(j.nome), ...(j.alvo ? alcunhasDe(j.alvo) : [])]);
@@ -298,14 +327,19 @@ export async function importar(entrada) {
     .map((p) => CIDADES_PT[p] ?? p)
     .join(', ');
 
-  const slugs = entrada.slugs ?? [];
-  const planteis = entrada.plantel ? await lerPlantel(entrada.plantel) : [];
+  // Slugs automáticos pelo nome; `slugs` explícitos ganham; `semEquipa` exclui (ex.: Portugal antes de 2004).
+  const excluir = new Set(entrada.semEquipa ?? []);
+  const slugs = nomes.map((n, i) => (entrada.slugs?.[i] !== undefined ? entrada.slugs[i] : SLUGS[n] ?? ''));
+  const modos = [...new Set([...entrada.modos, ...slugs.filter((s) => s && !excluir.has(s)).map((s) => `equipa:${s}`)])];
+  const planteis = entrada.plantel ? atribuirPlanteis(onzes, await lerPlantel(entrada.plantel)) : [];
   return {
     id: entrada.id,
-    modos: entrada.modos,
+    modos,
     competicao: entrada.competicao,
     ...(entrada.fase ? { fase: entrada.fase } : {}),
     ...(entrada.titulo ? { titulo: entrada.titulo } : {}),
+    // Jogos entre seleções não têm a pista da bandeira.
+    ...(entrada.plantel || entrada.selecoes ? { selecoes: true } : {}),
     data: dataDaCaixa(caixa),
     estadio,
     resultado,

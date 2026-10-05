@@ -39,11 +39,30 @@ describe('tempo da ronda', () => {
     expect(rondaNova({ tipo: 'solo' }).r.fim - INICIO).toBe(300_000);
   });
 
-  it('pistas aos 20 %, 35 % e 50 % da duração base', () => {
+  it('pistas quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial', () => {
     const { r } = rondaNova();
-    expect(motor.momentosPistas(r)).toEqual([INICIO + 36_000, INICIO + 63_000, INICIO + 90_000]);
+    expect(motor.limiaresPistas(r)).toEqual([144_000, 117_000, 90_000]); // 2:24, 1:57, 1:30
     const solo = rondaNova({ tipo: 'solo' }).r;
-    expect(motor.momentosPistas(solo)).toEqual([INICIO + 60_000, INICIO + 105_000, INICIO + 150_000]);
+    expect(motor.limiaresPistas(solo)).toEqual([240_000, 195_000, 150_000]); // 4:00, 3:15, 2:30
+  });
+
+  it('cada acerto atrasa as pistas (o relógio sobe 5 s)', () => {
+    const { prep, r } = rondaNova();
+    motor.avancar(r, INICIO);
+    motor.palpite(r, prep, 'a', 'Deco', INICIO + 1000);
+    motor.palpite(r, prep, 'a', 'Maniche', INICIO + 2000);
+    expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000 + 10_000);
+    expect(motor.avancar(r, INICIO + 40_000)).toEqual([]);
+    expect(motor.avancar(r, INICIO + 46_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
+  });
+
+  it('uma pista revelada não volta a esconder-se quando o relógio sobe', () => {
+    const { prep, r } = rondaNova();
+    motor.avancar(r, INICIO + 36_000);
+    expect(r.nivelPista).toBe(1);
+    motor.palpite(r, prep, 'a', 'Deco', INICIO + 36_500);
+    expect(motor.nivelPistaEm(r, INICIO + 36_600)).toBe(1);
+    expect(motor.estadoPublico(r, prep).equipas[1].onze[0].numero).toBe(99);
   });
 
   it('avancar emite início, as 3 pistas e o fim, uma vez cada', () => {
@@ -51,9 +70,12 @@ describe('tempo da ronda', () => {
     expect(motor.avancar(r, INICIO - 1)).toEqual([]);
     expect(motor.avancar(r, INICIO)).toEqual([{ tipo: 'inicio' }]);
     expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000);
-    expect(motor.avancar(r, INICIO + 36_000)).toEqual([{ tipo: 'pista', nivel: 1 }]);
+    expect(motor.avancar(r, INICIO + 36_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
     expect(motor.avancar(r, INICIO + 36_500)).toEqual([]);
-    expect(motor.avancar(r, INICIO + 95_000)).toEqual([{ tipo: 'pista', nivel: 2 }, { tipo: 'pista', nivel: 3 }]);
+    expect(motor.avancar(r, INICIO + 95_000)).toEqual([
+      { tipo: 'pista', nivel: 2, pista: 'pais' },
+      { tipo: 'pista', nivel: 3, pista: 'inicial' },
+    ]);
     expect(motor.proximoPrazo(r)).toBe(r.fim);
     expect(motor.avancar(r, r.fim)).toEqual([{ tipo: 'fim', motivo: 'tempo' }]);
     expect(r.etapa).toBe('terminada');
@@ -95,10 +117,29 @@ describe('palpites', () => {
   });
 
   it('pontos do onze descem com as pistas: 5, 4, 3, 2', () => {
-    expect(motor.palpite(r, prep, 'a', 'Vítor Baía', INICIO + 35_999).pontos).toBe(5);
-    expect(motor.palpite(r, prep, 'a', 'Costinha', INICIO + 36_000).pontos).toBe(4);
-    expect(motor.palpite(r, prep, 'a', 'Maniche', INICIO + 63_000).pontos).toBe(3);
-    expect(motor.palpite(r, prep, 'a', 'Derlei', INICIO + 90_000).pontos).toBe(2);
+    // r.fim é lido em cada chamada porque cada acerto o empurra 5 s.
+    const [l1, l2, l3] = motor.limiaresPistas(r);
+    expect(motor.palpite(r, prep, 'a', 'Vítor Baía', r.fim - l1 - 1).pontos).toBe(5);
+    expect(motor.palpite(r, prep, 'a', 'Costinha', r.fim - l1).pontos).toBe(4);
+    expect(motor.palpite(r, prep, 'a', 'Maniche', r.fim - l2).pontos).toBe(3);
+    expect(motor.palpite(r, prep, 'a', 'Derlei', r.fim - l3).pontos).toBe(2);
+  });
+
+  it('jogos entre seleções saltam a pista da bandeira (5, 4, 2)', () => {
+    const euro = carregar('euro-2016-final');
+    expect(euro.selecoes).toBe(true);
+    const p = motor.prepararJogo(euro);
+    const ronda = motor.criarRonda({ jogo: euro, agora: T0 });
+    expect(ronda.pistas.map((x) => x.tipo)).toEqual(['numero', 'inicial']);
+    expect(motor.limiaresPistas(ronda)).toEqual([144_000, 90_000]);
+    motor.avancar(ronda, INICIO);
+    expect(motor.avancar(ronda, INICIO + 63_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
+    const [, l2] = motor.limiaresPistas(ronda);
+    expect(motor.palpite(ronda, p, 'a', 'Pepe', ronda.fim - l2 - 1).pontos).toBe(4);
+    motor.avancar(ronda, ronda.fim - l2);
+    expect(motor.palpite(ronda, p, 'a', 'Nani', ronda.fim - l2).pontos).toBe(2);
+    const gr = motor.estadoPublico(ronda, p).equipas[0].onze[0];
+    expect(gr).toEqual({ id: '0o0', tipo: 'onze', pos: 'GR', numero: 1, inicial: 'P' });
   });
 
   it('suplentes e treinadores valem 3, mesmo sem pistas', () => {

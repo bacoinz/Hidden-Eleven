@@ -31,6 +31,13 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
     if (typeof jogo[campo] !== 'string' || !jogo[campo].trim()) erro(`falta "${campo}"`);
   }
   if (!/^\d{4}-\d{2}-\d{2}$/.test(jogo.data ?? '')) erro(`data inválida "${jogo.data}"`);
+  if (jogo.selecoes !== undefined && typeof jogo.selecoes !== 'boolean') erro('"selecoes" tem de ser true/false');
+  if (jogo.selecoes) {
+    for (const e of jogo.equipas ?? []) {
+      const paises = new Set((e.onze ?? []).map((p) => p.pais));
+      if (paises.size > 1) erro(`${e.nome}: jogo entre seleções com nacionalidades diferentes no onze`);
+    }
+  }
   if (!Array.isArray(jogo.modos) || !jogo.modos.length) erro('falta "modos"');
   for (const m of jogo.modos ?? []) {
     if (m === 'final' || m === 'classico') continue;

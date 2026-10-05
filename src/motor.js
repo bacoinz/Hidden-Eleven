@@ -74,23 +74,52 @@ export function criarRonda({ jogo, equipa = null, tipo = 'multi', agora }) {
     inicio: fichaAte,
     fim: fichaAte + duracaoBase,
     etapa: 'ficha',
+    pistas: pistasDoJogo(jogo),
     nivelPista: 0,
     descobertas: {},
     terminadaEm: null,
   };
 }
 
-/** Horas a que saem as 3 pistas (frações da duração base, sem contar extensões). */
-export const momentosPistas = (r) => REGRAS.pistas.map((f) => r.inicio + Math.round(f * r.duracaoBase));
+// ---------------------------------------------------------------------------
+// Pistas
+// ---------------------------------------------------------------------------
+// Cada pista sai quando o relógio desce até uma meta do tempo inicial (3:00 → 2:24, 1:57, 1:30).
+// Como cada acerto acrescenta 5 s ao relógio, enquanto se for acertando as pistas não aparecem.
+// Depois de reveladas, ficam. Nos jogos entre seleções não há pista da bandeira.
 
-export const nivelPistaEm = (r, agora) => momentosPistas(r).filter((t) => agora >= t).length;
+export const TIPOS_PISTA = ['numero', 'pais', 'inicial'];
+
+export function pistasDoJogo(jogo) {
+  const todas = TIPOS_PISTA.map((tipo, i) => ({ tipo, fracao: REGRAS.pistas[i] }));
+  return jogo.selecoes ? todas.filter((p) => p.tipo !== 'pais') : todas;
+}
+
+const pistasDe = (r) => r.pistas ?? TIPOS_PISTA.map((tipo, i) => ({ tipo, fracao: REGRAS.pistas[i] }));
+
+/** Tempo que falta (ms) quando sai cada pista. */
+export const limiaresPistas = (r) => pistasDe(r).map((p) => Math.round(r.duracaoBase * (1 - p.fracao)));
+
+/** Nível de pistas a `agora` (nunca desce: uma pista revelada fica revelada). */
+export function nivelPistaEm(r, agora) {
+  const limiares = limiaresPistas(r);
+  let nivel = r.nivelPista;
+  while (nivel < limiares.length && r.fim - agora <= limiares[nivel]) nivel++;
+  return nivel;
+}
+
+/** Pontos de um jogador do onze consoante a última pista revelada (5, 4, 3, 2). */
+export function pontosOnze(r, nivel) {
+  if (nivel <= 0) return REGRAS.pontosOnze[0];
+  return REGRAS.pontosOnze[TIPOS_PISTA.indexOf(pistasDe(r)[nivel - 1].tipo) + 1];
+}
 
 /** Próximo instante em que a ronda muda sozinha (para o alarme), ou null. */
 export function proximoPrazo(r) {
   if (r.etapa === 'ficha') return r.fichaAte;
   if (r.etapa !== 'corrida') return null;
-  const pista = momentosPistas(r)[r.nivelPista];
-  return pista !== undefined ? Math.min(pista, r.fim) : r.fim;
+  const limiar = limiaresPistas(r)[r.nivelPista];
+  return limiar !== undefined ? r.fim - limiar : r.fim;
 }
 
 export function terminar(r, agora) {
@@ -111,7 +140,7 @@ export function avancar(r, agora) {
     const nivel = nivelPistaEm(r, Math.min(agora, r.fim));
     while (r.nivelPista < nivel) {
       r.nivelPista++;
-      eventos.push({ tipo: 'pista', nivel: r.nivelPista });
+      eventos.push({ tipo: 'pista', nivel: r.nivelPista, pista: pistasDe(r)[r.nivelPista - 1].tipo });
     }
     if (agora >= r.fim && terminar(r, agora)) eventos.push({ tipo: 'fim', motivo: 'tempo' });
   }
@@ -138,9 +167,12 @@ export function palpite(r, prep, jogadorId, texto, agora) {
   const ja = r.descobertas[lugar.id];
   if (ja) return { r: 'ja', por: ja.por, lugar: lugar.id };
 
-  const nivel = Math.min(nivelPistaEm(r, agora), REGRAS.pontosOnze.length - 1);
   const pontos =
-    lugar.tipo === 'onze' ? REGRAS.pontosOnze[nivel] : lugar.tipo === 'suplente' ? REGRAS.pontosSuplente : REGRAS.pontosTreinador;
+    lugar.tipo === 'onze'
+      ? pontosOnze(r, nivelPistaEm(r, agora))
+      : lugar.tipo === 'suplente'
+        ? REGRAS.pontosSuplente
+        : REGRAS.pontosTreinador;
   const descoberta = { por: jogadorId, pontos, em: agora };
   r.descobertas[lugar.id] = descoberta;
   r.fim += REGRAS.extraPorAcertoMs;
@@ -168,6 +200,7 @@ export function estadoPublico(r, prep) {
   const { jogo } = prep;
   const acabou = r.etapa === 'terminada';
   const nivel = r.etapa === 'ficha' ? 0 : r.nivelPista;
+  const reveladas = new Set(pistasDe(r).slice(0, nivel).map((p) => p.tipo));
 
   const publico = (l) => {
     const p = l.pessoa;
@@ -187,9 +220,9 @@ export function estadoPublico(r, prep) {
       return lugar;
     }
     if (l.tipo === 'onze') {
-      if (nivel >= 1) lugar.numero = p.numero;
-      if (nivel >= 2) lugar.pais = p.pais;
-      if (nivel >= 3) lugar.inicial = inicial(p);
+      if (reveladas.has('numero')) lugar.numero = p.numero;
+      if (reveladas.has('pais')) lugar.pais = p.pais;
+      if (reveladas.has('inicial')) lugar.inicial = inicial(p);
     }
     return lugar;
   };
@@ -223,7 +256,8 @@ export function estadoPublico(r, prep) {
     inicio: r.inicio,
     fim: r.fim,
     duracaoBase: r.duracaoBase,
-    pistasEm: momentosPistas(r),
+    // Metas das pistas: fração do tempo inicial já consumida (o relógio desce até duracaoBase × (1 − fracao)).
+    pistas: pistasDe(r).map((p) => ({ tipo: p.tipo, fracao: p.fracao })),
     nivelPista: nivel,
     total: prep.lugares.length,
     descobertos: Object.keys(r.descobertas).length,

@@ -1,5 +1,5 @@
 // Pedaços da interface: lobby, classificação, feed, ficha, fim de ronda, pódio, relógio e avisos.
-import { $, el, formatarData, formatarTempo, NOMES_PISTAS } from './util.js';
+import { $, el, formatarData, formatarTempo, nomePista } from './util.js';
 
 const CONTEUDOS = [
   { id: 'finais', nome: 'Finais', chave: 'finais' },
@@ -106,24 +106,12 @@ export function renderCabecalho(sala) {
   const r = sala.ronda;
   const p = sala.partida;
   $('#jogo-ronda').textContent = p ? `Ronda ${p.numero}/${p.total}` : '';
-  const ano = r?.jogo.data?.slice(0, 4) ?? '';
-  $('#jogo-competicao').textContent = r ? `${r.jogo.competicao}${r.jogo.fase ? ` · ${r.jogo.fase}` : ''} ${ano}` : '';
+  $('#jogo-competicao').textContent = r ? `${r.jogo.competicao}${r.jogo.fase ? ` · ${r.jogo.fase}` : ''}${r.jogo.titulo ? ` · ${r.jogo.titulo}` : ''}` : '';
+  // Equipas e resultado, estádio e cidade, data.
+  $('#jogo-resultado').textContent = r?.jogo.resultado ?? '';
+  $('#jogo-local').textContent = r?.jogo.estadio ?? '';
+  $('#jogo-data').textContent = r ? formatarData(r.jogo.data) : '';
   $('#jogo-sala').textContent = sala.solo ? '' : sala.codigo;
-}
-
-export function renderClassificacao(sala, eu, anterior) {
-  const lista = ordenar(sala.jogadores);
-  $('#classificacao').replaceChildren(
-    ...lista.map((j) => {
-      const subiu = anterior && anterior.get(j.id) !== undefined && anterior.get(j.id) < j.total;
-      return el('li', { class: `linha-classificacao${j.id === eu ? ' eu' : ''}${j.ligado ? '' : ' desligado'}${subiu ? ' subiu' : ''}` },
-        el('span', { class: 'posicao', text: `${j.posicao}.` }),
-        el('span', { class: 'ponto', style: { background: j.cor } }),
-        el('span', { class: 'nome-jogador' }, j.nome, j.id === sala.anfitriao ? ' 👑' : '', j.id === eu ? ' (tu)' : ''),
-        el('span', { class: 'mais-ronda', text: j.ronda ? `+${j.ronda}` : '' }),
-        el('span', { class: 'total', text: String(j.total) }));
-    }),
-  );
 }
 
 function textoFeed(ev, nomeDe) {
@@ -133,7 +121,7 @@ function textoFeed(ev, nomeDe) {
       return [quem(ev.jogador), ' descobriu ', el('strong', { text: ev.nome }), ' ', el('span', { class: 'pontos', text: `+${ev.pontos}` }),
         ev.bonus ? el('span', { class: 'pontos', text: ` · fechou o jogo +${ev.bonus}` }) : null];
     case 'pista':
-      return [el('span', { class: 'sistema', text: `Pista: ${NOMES_PISTAS[ev.nivel]}` })];
+      return [el('span', { class: 'sistema', text: `Pista: ${nomePista(ev)}` })];
     case 'fim':
       return [el('span', { class: 'sistema', text: ev.motivo === 'completo' ? 'Onze completo!' : 'Acabou o tempo!' })];
     case 'ronda':
@@ -180,34 +168,47 @@ export function renderFicha(sala) {
   );
 }
 
-export function renderFim(sala, eu, enviar) {
-  const painel = $('#painel-fim');
-  const visivel = sala.fase === 'fim' || sala.fase === 'final';
-  painel.hidden = !visivel;
-  if (!visivel) return;
+/**
+ * Classificação sempre visível. No fim da ronda passa a "Fim da ronda N/M", com o resumo
+ * e o botão do anfitrião para a próxima ronda.
+ */
+export function renderPlacar(sala, eu, anterior, enviar) {
   const p = sala.partida;
   const r = sala.ronda;
-  const ultima = p && p.numero >= p.total;
-  $('#fim-titulo').textContent = sala.fase === 'final' ? 'Jogo terminado' : `Fim da ronda ${p?.numero ?? ''}/${p?.total ?? ''}`;
-  $('#fim-resumo').textContent = r ? `Descobriram ${r.descobertos} de ${r.total} posições. O que ficou por descobrir está a cinzento.` : '';
-  $('#fim-tabela').replaceChildren(
-    ...ordenar(sala.jogadores).map((j) =>
-      el('tr', {},
-        el('td', {}, el('span', { class: 'celula-jogador' }, el('span', { class: 'ponto', style: { background: j.cor } }), j.nome)),
-        el('td', { text: j.ronda ? `+${j.ronda}` : '0' }),
-        el('td', { text: String(j.total) }))),
+  const terminou = sala.fase === 'fim' || sala.fase === 'final';
+  $('#jogo-grelha').classList.toggle('terminada', terminou);
+  $('#placar-titulo').textContent =
+    sala.fase === 'final' ? 'Jogo terminado' : sala.fase === 'fim' ? `Fim da ronda ${p?.numero ?? ''}/${p?.total ?? ''}` : 'Classificação';
+  $('#placar-resumo').textContent =
+    terminou && r ? `Descobriram ${r.descobertos} de ${r.total} posições. O que ficou por descobrir está a cinzento.` : '';
+
+  $('#placar-tabela').replaceChildren(
+    ...ordenar(sala.jogadores).map((j) => {
+      const subiu = anterior?.get(j.id) !== undefined && anterior.get(j.id) < j.total;
+      return el('tr', { class: [j.id === eu ? 'eu' : '', j.ligado ? '' : 'desligado', subiu ? 'subiu' : ''].filter(Boolean).join(' ') || null },
+        el('td', { text: `${j.posicao}.` }),
+        el('td', {},
+          el('span', { class: 'celula-jogador' },
+            el('span', { class: 'ponto', style: { background: j.cor } }),
+            el('span', { class: 'nome-jogador' }, j.nome, j.id === sala.anfitriao ? ' 👑' : '', j.id === eu ? ' (tu)' : ''))),
+        el('td', { class: 'mais', text: j.ronda ? `+${j.ronda}` : '0' }),
+        el('td', { class: 'total-celula', text: String(j.total) }));
+    }),
   );
+
   const anfitriao = sala.anfitriao === eu;
+  const ultima = p && p.numero >= p.total;
   const botao = $('#btn-proxima');
   if (sala.fase === 'final') {
     botao.hidden = false;
     botao.textContent = 'Ver classificação final';
+    botao.onclick = () => mostrarFinal(true);
   } else {
-    botao.hidden = !anfitriao;
+    botao.hidden = !(sala.fase === 'fim' && anfitriao);
     botao.textContent = ultima ? 'Ver classificação final' : 'Próxima ronda';
+    botao.onclick = () => enviar({ t: 'proxima' });
   }
-  $('#fim-espera').hidden = anfitriao || sala.fase === 'final';
-  botao.onclick = () => (sala.fase === 'final' ? mostrarFinal(true) : enviar({ t: 'proxima' }));
+  $('#placar-espera').hidden = !(sala.fase === 'fim' && !anfitriao);
 }
 
 let finalEscondido = false;
@@ -261,18 +262,21 @@ export function tick(sala, agora) {
       contagem.classList.add('bater');
     }
   }
-  const total = r.fim - r.inicio;
   const correr = sala.fase === 'ronda';
-  const restante = correr ? r.fim - agora : sala.fase === 'ficha' ? r.duracaoBase : 0;
+  const restante = correr ? Math.max(0, r.fim - agora) : sala.fase === 'ficha' ? r.duracaoBase : 0;
   const relogio = $('#relogio');
   relogio.textContent = formatarTempo(restante);
   relogio.classList.toggle('urgente', correr && restante <= 30_000);
-  const decorrido = sala.fase === 'ficha' ? 0 : correr ? (agora - r.inicio) / total : 1;
-  $('#barra-tempo-enchimento').style.width = `${Math.min(100, Math.max(0, decorrido * 100))}%`;
+  // A barra mostra quanto do tempo inicial já se gastou: recua quando um acerto dá +5 s.
+  const consumido = sala.fase === 'ficha' ? 0 : correr ? 1 - restante / r.duracaoBase : 1;
+  $('#barra-tempo-enchimento').style.width = `${Math.min(100, Math.max(0, consumido * 100))}%`;
+  const pistas = r.pistas ?? [];
   document.querySelectorAll('.marca-pista').forEach((m) => {
-    const i = Number(m.dataset.pista);
-    m.style.left = `${((r.pistasEm[i - 1] - r.inicio) / total) * 100}%`;
-    m.classList.toggle('ativa', r.nivelPista >= i);
+    const i = pistas.findIndex((p) => p.tipo === m.dataset.tipo);
+    m.hidden = i < 0;
+    if (i < 0) return;
+    m.style.left = `${pistas[i].fracao * 100}%`;
+    m.classList.toggle('ativa', r.nivelPista > i);
   });
   $('#contador').textContent = `${r.descobertos}/${r.total} descobertos`;
 }

@@ -3,6 +3,7 @@
   "modos": ["final", "equipa:portugal", "equipa:franca"],
   "competicao": "Campeonato da Europa",
   "fase": "Final",
+  "selecoes": true,
   "data": "2016-07-10",
   "estadio": "Stade de France, Saint-Denis",
   "resultado": "Portugal 1–0 França (a.p.)",

@@ -219,7 +219,7 @@ export function avancar(sala, agora) {
   if (r) {
     for (const ev of motor.avancar(r, agora)) {
       mudou = true;
-      if (ev.tipo === 'pista') noFeed(sala, { tipo: 'pista', nivel: ev.nivel });
+      if (ev.tipo === 'pista') noFeed(sala, { tipo: 'pista', nivel: ev.nivel, pista: ev.pista });
       if (ev.tipo === 'fim') noFeed(sala, { tipo: 'fim', motivo: ev.motivo });
     }
     fecharRonda(sala);

@@ -3,6 +3,7 @@
   "modos": ["final", "equipa:holanda", "equipa:espanha"],
   "competicao": "Campeonato do Mundo",
   "fase": "Final",
+  "selecoes": true,
   "data": "2010-07-11",
   "estadio": "Soccer City, Joanesburgo",
   "resultado": "Holanda 0–1 Espanha (a.p.)",

@@ -7,9 +7,11 @@ const W = 680; // largura
 const M = 22; // margem à volta das linhas
 
 const TAMANHOS = {
-  horizontal: { S: 50, numero: 21, nome: 14, dono: 11, maxNome: 112 },
-  vertical: { S: 62, numero: 26, nome: 20, dono: 14, maxNome: 150 },
+  horizontal: { S: 58, numero: 24, nome: 15, dono: 12, maxNome: 122 },
+  vertical: { S: 68, numero: 29, nome: 21, dono: 15, maxNome: 158 },
 };
+/** Em ecrãs pequenos o texto cresce (em unidades do SVG) para nunca ficar abaixo deste tamanho em píxeis. */
+const LETRA_MINIMA_PX = 11;
 
 const COR_EQUIPA_OMISSAO = ['#e5e7eb', '#9ca3af'];
 
@@ -71,22 +73,42 @@ function paraCampo(indice, nEquipas, p) {
 const larguraTexto = (texto, tamanho) => texto.length * tamanho * 0.58;
 
 export class Relvado {
-  constructor(svgEl, bancoCima, bancoBaixo) {
+  /** `bancoA`: à esquerda (computador) ou por cima (telemóvel); `bancoB`: à direita ou por baixo. */
+  constructor(svgEl, bancoA, bancoB) {
     this.svg = svgEl;
-    this.bancoCima = bancoCima;
-    this.bancoBaixo = bancoBaixo;
+    this.bancoA = bancoA;
+    this.bancoB = bancoB;
+    this.k = 1;
     this.chave = null;
     this.assinaturas = new Map();
     this.ultimo = null;
     this.vertical = false;
     new ResizeObserver(() => {
+      if (!this.ultimo) return;
       const vertical = this.decidirOrientacao();
-      if (vertical !== this.vertical && this.ultimo) this.render(...this.ultimo);
+      const mudouTexto = Math.abs(this.fatorTexto(vertical) - this.k) / this.k > 0.08;
+      if (vertical !== this.vertical || mudouTexto) {
+        this.chave = null;
+        this.render(...this.ultimo);
+      }
     }).observe(this.svg.parentElement);
   }
 
+  /** Vertical só no layout de telemóvel (abaixo de 960 px) e quando a largura é pouca. */
   decidirOrientacao() {
+    if (matchMedia('(min-width: 960px)').matches) return false;
     return (this.svg.parentElement?.clientWidth ?? 1000) < 640;
+  }
+
+  /** Quanto o texto tem de crescer para se ler bem à escala a que o relvado está desenhado. */
+  fatorTexto(vertical) {
+    const caixa = this.svg.parentElement?.getBoundingClientRect();
+    if (!caixa?.width) return 1;
+    const [vw, vh] = vertical ? [W + 2 * M, L + 2 * M] : [L + 2 * M, W + 2 * M];
+    // No telemóvel a altura acompanha a largura; no computador o SVG ajusta-se à caixa.
+    const escala = vertical || !caixa.height ? caixa.width / vw : Math.min(caixa.width / vw, caixa.height / vh);
+    const base = TAMANHOS[vertical ? 'vertical' : 'horizontal'].nome;
+    return Math.min(1.6, Math.max(1, LETRA_MINIMA_PX / (base * escala)));
   }
 
   /** Desenha (ou atualiza) o jogo. `jogadores`: Map id → { nome, cor }. */
@@ -107,7 +129,16 @@ export class Relvado {
     this.assinaturas.clear();
     const t = TAMANHOS[this.vertical ? 'vertical' : 'horizontal'];
     const escala = ronda.equipas.length === 1 ? 1.12 : 1;
-    this.t = Object.fromEntries(Object.entries(t).map(([k, v]) => [k, v * escala]));
+    this.k = this.fatorTexto(this.vertical);
+    const k = this.k;
+    const ks = Math.min(k, 1.2);
+    this.t = {
+      S: t.S * escala * ks,
+      numero: t.numero * escala * ks,
+      nome: t.nome * escala * k,
+      dono: t.dono * escala * k,
+      maxNome: t.maxNome * escala * k,
+    };
     const [vw, vh] = this.vertical ? [W, L] : [L, W];
     this.svg.setAttribute('viewBox', `${-M} ${-M} ${vw + 2 * M} ${vh + 2 * M}`);
     this.svg.replaceChildren();
@@ -128,10 +159,15 @@ export class Relvado {
       });
     });
 
-    // Bancos: no telemóvel a equipa de cima tem o banco por cima do relvado.
+    // Bancos: no computador ao lado de cada equipa; no telemóvel por cima/por baixo do relvado.
     this.bancos = new Map();
-    this.bancoCima.replaceChildren();
-    this.bancoBaixo.replaceChildren();
+    this.bancoA.replaceChildren();
+    this.bancoB.replaceChildren();
+    const destino = (i) => {
+      if (n === 1) return this.vertical ? this.bancoB : this.bancoA;
+      if (this.vertical) return i === 1 ? this.bancoA : this.bancoB;
+      return i === 0 ? this.bancoA : this.bancoB;
+    };
     ronda.equipas.forEach((e, i) => {
       const cor = e.cor ?? COR_EQUIPA_OMISSAO[i];
       const lugares = el('div', { class: 'banco-lugares' });
@@ -143,8 +179,7 @@ export class Relvado {
         lugares.append(chip);
         this.bancos.set(lugar.id, chip);
       }
-      const destino = this.vertical && n === 2 && i === 1 ? this.bancoCima : this.bancoBaixo;
-      destino.append(banco);
+      destino(i).append(banco);
     });
     this.coresEquipa = ronda.equipas.map((e, i) => e.cor ?? COR_EQUIPA_OMISSAO[i]);
     this.indiceEquipa = new Map(ronda.equipas.flatMap((e, i) => [...e.onze, ...e.suplentes, e.treinador].map((l) => [l.id, i])));

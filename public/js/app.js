@@ -1,5 +1,5 @@
 // Arranque e controlo do cliente: ecrãs, ligação à sala, palpites e animações.
-import { $, ler, guardar, novoId, NOMES_PISTAS } from './util.js';
+import { $, ler, guardar, novoId, nomePista } from './util.js';
 import { Ligacao } from './ligacao.js';
 import { Relvado } from './relvado.js';
 import * as ui from './ui.js';
@@ -25,7 +25,7 @@ const estado = {
   pendente: null,
 };
 
-const relvado = new Relvado($('#relvado'), $('#banco-cima'), $('#banco-baixo'));
+const relvado = new Relvado($('#relvado'), $('#banco-a'), $('#banco-b'));
 const enviar = (msg) => estado.ligacao?.enviar(msg);
 
 // ---------------------------------------------------------------------------
@@ -161,9 +161,8 @@ function aoEstado(sala) {
     relvado.render(sala.ronda, jogadores);
   }
   ui.renderFicha(sala);
-  ui.renderFim(sala, estado.eu, enviar);
   ui.renderFinal(sala, estado.eu);
-  ui.renderClassificacao(sala, estado.eu, estado.totais);
+  ui.renderPlacar(sala, estado.eu, estado.totais, enviar);
   estado.totais = new Map(sala.jogadores.map((j) => [j.id, j.total]));
   ui.renderFeed(sala);
   atualizarCaixa(sala, anterior);
@@ -176,7 +175,7 @@ function aoEstado(sala) {
       void extra.offsetWidth;
       extra.classList.add('mostrar');
     }
-    if (ev.tipo === 'pista') ui.toast(`Nova pista: ${NOMES_PISTAS[ev.nivel]}`);
+    if (ev.tipo === 'pista') ui.toast(`Nova pista: ${nomePista(ev)}`);
     if (ev.tipo === 'anfitriao' && ev.jogador === estado.eu) ui.toast('Agora és tu o anfitrião.');
   }
   ui.tick(sala, estado.ligacao.agora());
@@ -192,8 +191,8 @@ function atualizarCaixa(sala, anterior) {
     : sala.fase === 'ficha'
       ? 'Prepara-te…'
       : 'Ronda terminada';
+  if (sala.fase !== anterior?.fase) $('#resposta').textContent = '';
   if (aJogar && anterior?.fase !== 'ronda') {
-    $('#resposta').textContent = '';
     caixa.value = '';
     caixa.focus();
   }

@@ -77,5 +77,6 @@ export function novoId() {
 
 export const bandeira = (pais) => `/bandeiras/${String(pais).toLowerCase()}.svg`;
 
-/** Nomes de pista para o feed. */
-export const NOMES_PISTAS = ['', 'números das camisolas', 'bandeiras', 'iniciais dos apelidos'];
+/** Nome de uma pista para o feed e avisos. */
+const NOMES_PISTAS = { numero: 'números das camisolas', pais: 'bandeiras', inicial: 'iniciais dos apelidos' };
+export const nomePista = (ev) => NOMES_PISTAS[ev.pista] ?? NOMES_PISTAS[['numero', 'pais', 'inicial'][ev.nivel - 1]] ?? 'nova pista';
