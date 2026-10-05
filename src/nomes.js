@@ -3,8 +3,15 @@
 
 const ESPECIAIS = { ø: 'o', ł: 'l', đ: 'd', ð: 'd', þ: 'th', ß: 'ss', æ: 'ae', œ: 'oe', ı: 'i' };
 const PARTICULAS = new Set([
-  'van', 'von', 'der', 'den', 'de', 'di', 'da', 'das', 'do', 'dos', 'del', 'della', 'la', 'le', 'ten', 'ter', 'el', 'al', 'du', 'dal',
+  'van', 'von', 'der', 'den', 'de', 'di', 'da', 'das', 'do', 'dos', 'del', 'della', 'la', 'le', 'ten', 'ter', 'el', 'al', 'du', 'dal', 'mac',
 ]);
+
+/** Índice do termo onde começa o apelido, contando com as partículas ("Edwin van der Sar" → 1). */
+export function inicioDoApelido(termos) {
+  let inicio = termos.length - 1;
+  while (inicio > 1 && PARTICULAS.has(normalizar(termos[inicio - 1]))) inicio--;
+  return Math.max(inicio, 0);
+}
 
 export const PRIORIDADE = { COMPLETO: 3, ACEITE: 2, APELIDO: 1 };
 
@@ -61,8 +68,7 @@ export function distancia(a, b, max = Infinity) {
 function apelidos(termos) {
   if (termos.length < 2) return [];
   const ultimo = termos[termos.length - 1];
-  let inicio = termos.length - 1;
-  while (inicio > 1 && PARTICULAS.has(termos[inicio - 1])) inicio--;
+  const inicio = inicioDoApelido(termos);
   const resultado = [];
   if (inicio < termos.length - 1) resultado.push(termos.slice(inicio).join(' '));
   resultado.push(ultimo);
