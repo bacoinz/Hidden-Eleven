@@ -1375,11 +1375,24 @@ kbd {
   .competicao {
     font-size: 12px;
   }
+  .barra-jogo {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
   .barra-nome {
-    font-size: 17px;
+    font-size: 18px;
   }
   .barra-marca {
-    padding-right: 8px;
+    padding-right: 0;
+    border-right: 0;
+  }
+  .barra-sala {
+    margin-left: auto;
+  }
+  /* A informação do jogo passa para uma segunda linha, a toda a largura. */
+  .barra-info {
+    order: 3;
+    flex-basis: 100%;
   }
   .barra-jogo-dados {
     white-space: normal;
