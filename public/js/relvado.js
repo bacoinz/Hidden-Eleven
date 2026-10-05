@@ -27,6 +27,46 @@ export function camisolaMini(cor = '#ffffff22', contorno = '#ffffff99') {
     svg('path', { d: caminhoCamisola(22), fill: cor, stroke: contorno, 'stroke-width': 1.5, 'stroke-linejoin': 'round' }));
 }
 
+/** Bola de futebol centrada em (0,0); vermelha nos autogolos. */
+function bola(r, autogolo = false) {
+  const pentagono = [...Array(5)]
+    .map((_, i) => {
+      const a = -Math.PI / 2 + (i * 2 * Math.PI) / 5;
+      return `${(Math.cos(a) * r * 0.45).toFixed(2)},${(Math.sin(a) * r * 0.45).toFixed(2)}`;
+    })
+    .join(' ');
+  return svg('g', { class: 'bola' },
+    svg('circle', { r, fill: autogolo ? '#ef4444' : '#ffffff', stroke: '#0b1220', 'stroke-width': r * 0.2 }),
+    svg('polygon', { points: pentagono, fill: autogolo ? '#7f1d1d' : '#0b1220' }));
+}
+
+const descreverGolo = (g) => `${g.autogolo ? 'Autogolo' : g.penalti ? 'Golo de penálti' : 'Golo'} ${g.minuto}'`;
+
+/** Bolas dos golos ao lado da camisola (uma por golo; a partir de 4, uma bola com "×N"). */
+function iconesGolos(golos, S) {
+  const r = S * 0.15;
+  const g = svg('g', { class: 'golos' });
+  const mostrar = golos.length > 3 ? [golos[0]] : golos;
+  mostrar.forEach((golo, i) => {
+    const icone = bola(r, golo.autogolo);
+    icone.setAttribute('transform', `translate(${S * 0.52 + r} ${-S * 0.3 + i * r * 2.3})`);
+    g.append(icone);
+    const extra = golos.length > 3 ? `×${golos.length}` : golo.penalti ? 'P' : '';
+    if (extra) {
+      g.append(svg('text', { class: 'golo-extra', x: S * 0.52 + r * 2.3, y: -S * 0.3 + i * r * 2.3 + r * 0.45, 'font-size': r * 1.35, 'stroke-width': r * 0.35 }, extra));
+    }
+  });
+  return g;
+}
+
+/** Versão HTML (para os bancos). */
+export function bolasHtml(golos = []) {
+  return golos.map((golo) => {
+    const s = svg('svg', { class: 'bola-mini', width: 14, height: 14, viewBox: '-8 -8 16 16', 'aria-hidden': 'true' }, bola(6.5, golo.autogolo));
+    return el('span', { class: 'golo-mini', title: descreverGolo(golo) }, s, golo.penalti ? el('b', { text: 'P' }) : null);
+  });
+}
+
 /** Linhas do campo em coordenadas horizontais (x ao longo do comprimento, y na largura). */
 function marcacoes() {
   const g = svg('g');
@@ -190,7 +230,7 @@ export class Relvado {
     if (!g) return;
     const dono = lugar.por ? jogadores.get(lugar.por) : null;
     const estado = lugar.por ? 'descoberta' : lugar.revelado ? 'revelada' : 'escondida';
-    const assinatura = JSON.stringify([estado, lugar.numero, lugar.pais, lugar.inicial, lugar.curto, dono?.cor, dono?.nome]);
+    const assinatura = JSON.stringify([estado, lugar.numero, lugar.pais, lugar.inicial, lugar.curto, dono?.cor, dono?.nome, lugar.golos]);
     const anterior = this.assinaturas.get(lugar.id);
     if (anterior === assinatura) return;
     this.assinaturas.set(lugar.id, assinatura);
@@ -205,11 +245,15 @@ export class Relvado {
         svg('path', { d: forma, fill: '#06140d', 'fill-opacity': 0.82 }),
         svg('path', { class: 'forma', d: forma, fill: corEquipa, 'fill-opacity': 0.38 }),
       );
+    } else if (estado === 'descoberta') {
+      // Camisolas claras levam contorno escuro para se verem no relvado.
+      const contorno = corTexto(corEquipa) === '#ffffff' ? '#ffffff' : '#0b1220';
+      conteudo.append(svg('path', { class: 'forma', d: forma, fill: corEquipa, style: { stroke: contorno } }));
     } else {
-      conteudo.append(svg('path', { class: 'forma', d: forma, fill: estado === 'descoberta' ? dono?.cor ?? '#fff' : '#4b5563' }));
+      conteudo.append(svg('path', { class: 'forma', d: forma, fill: '#4b5563' }));
     }
     const textoNumero = lugar.numero ?? (estado === 'escondida' ? '?' : '');
-    const corNumero = estado === 'descoberta' ? corTexto(dono?.cor ?? '#ffffff') : null;
+    const corNumero = estado === 'descoberta' ? corTexto(corEquipa) : null;
     conteudo.append(svg('text', { class: 'numero', y: S * 0.1, 'font-size': numero, fill: corNumero }, String(textoNumero)));
 
     const rotulo = svg('g', { class: 'legenda' });
@@ -243,11 +287,13 @@ export class Relvado {
       if (estado === 'descoberta' && dono) {
         rotulo.append(svg('text', { class: 'rotulo-dono', y: y0 + tamDono * 1.25, 'font-size': tamDono, fill: dono.cor, 'stroke-width': tamDono * 0.3 }, dono.nome));
       }
-      const titulo = estado === 'descoberta' ? `${lugar.nome} — descoberto por ${dono?.nome ?? '?'} (+${lugar.pontos})` : `${lugar.nome} (ninguém descobriu)`;
+      const golos = (lugar.golos ?? []).map(descreverGolo).join(', ');
+      const titulo = `${lugar.nome}${estado === 'descoberta' ? ` — descoberto por ${dono?.nome ?? '?'} (+${lugar.pontos})` : ' (ninguém descobriu)'}${golos ? ` · ${golos}` : ''}`;
       g.replaceChildren(svg('title', {}, titulo));
     }
     if (estado === 'escondida') g.replaceChildren();
     g.append(conteudo, rotulo);
+    if (lugar.golos?.length) g.append(iconesGolos(lugar.golos, S));
 
     if (animar && estado === 'descoberta' && anterior && JSON.parse(anterior)[0] === 'escondida') {
       this.animarConquista(g, dono?.cor ?? '#fff', lugar.pontos);
@@ -274,7 +320,7 @@ export class Relvado {
     if (!chip) return;
     const dono = lugar.por ? jogadores.get(lugar.por) : null;
     const estado = lugar.por ? 'descoberta' : lugar.revelado ? 'revelada' : 'escondida';
-    const assinatura = JSON.stringify([estado, lugar.curto, dono?.cor, dono?.nome]);
+    const assinatura = JSON.stringify([estado, lugar.curto, dono?.cor, dono?.nome, lugar.golos]);
     const anterior = this.assinaturas.get(lugar.id);
     if (anterior === assinatura) return;
     this.assinaturas.set(lugar.id, assinatura);
@@ -282,11 +328,18 @@ export class Relvado {
     const treinador = lugar.tipo === 'treinador';
     chip.className = `lugar-banco ${estado}${treinador ? ' treinador' : ''}`;
     chip.style.setProperty('--cor', dono?.cor ?? '');
-    const corCamisola = estado === 'descoberta' ? dono.cor : estado === 'revelada' ? '#4b5563' : '#ffffff1f';
+    const corEquipa = this.coresEquipa[this.indiceEquipa.get(lugar.id)];
+    const corCamisola = estado === 'descoberta' ? corEquipa : estado === 'revelada' ? '#4b5563' : '#ffffff1f';
     const partes = treinador
       ? [el('span', { class: 'minuto', text: 'Treinador' })]
       : [camisolaMini(corCamisola), el('span', { class: 'minuto', text: `⬆ ${lugar.minuto}'` })];
-    chip.replaceChildren(...partes, el('span', { class: 'quem', text: estado === 'escondida' ? '?' : lugar.curto ?? lugar.nome }));
+    const filhos = [
+      ...partes,
+      el('span', { class: 'quem', text: estado === 'escondida' ? '?' : lugar.curto ?? lugar.nome }),
+      ...bolasHtml(lugar.golos),
+      estado === 'descoberta' && dono ? el('span', { class: 'dono', style: { color: dono.cor }, text: dono.nome }) : null,
+    ];
+    chip.replaceChildren(...filhos.filter(Boolean));
     chip.title = estado === 'descoberta' ? `${lugar.nome} — descoberto por ${dono?.nome} (+${lugar.pontos})` : estado === 'revelada' ? lugar.nome : '';
     if (animar && estado === 'descoberta' && anterior && JSON.parse(anterior)[0] === 'escondida') {
       chip.classList.remove('conquista');

@@ -45,6 +45,30 @@ const SLUGS = {
   Inglaterra: 'inglaterra', Holanda: 'holanda', Argentina: 'argentina', Brasil: 'brasil', 'Croácia': 'croacia', 'Grécia': 'grecia',
 };
 
+// Cor principal do equipamento (para as camisolas). Ajustável por jogo em curadoria.json.
+const CORES = {
+  'Real Madrid': '#f4f4f4', Barcelona: '#a50044', 'Manchester United': '#da291c', 'Manchester City': '#6cabdd',
+  Liverpool: '#c8102e', Chelsea: '#034694', Arsenal: '#ef0107', Tottenham: '#f4f4f4', 'Bayern Munique': '#dc052d',
+  'Borussia Dortmund': '#fde100', Juventus: '#1a1a1a', Milan: '#d4021d', Inter: '#0068a8', 'Atlético de Madrid': '#cb3524',
+  'Valência': '#f4f4f4', 'Paris Saint-Germain': '#004170', 'Bayer Leverkusen': '#e32221', 'Mónaco': '#e2001a',
+  'FC Porto': '#0047ab', Benfica: '#e30613', Sporting: '#008057', 'SC Braga': '#e30613', Celtic: '#018749',
+  'CSKA Moscovo': '#c8102e', Sevilha: '#f4f4f4', QPR: '#1d5ba4', Portugal: '#c8102e', 'França': '#1e3a8a',
+  Espanha: '#c60b1e', 'Itália': '#0066cc', Alemanha: '#f4f4f4', Inglaterra: '#f4f4f4', Holanda: '#f36c21',
+  Argentina: '#75aadb', Brasil: '#ffdf00', 'Croácia': '#e5242a', 'Grécia': '#0d5eaf', 'Suíça': '#d52b1e',
+};
+
+/** Cores das duas equipas; se forem parecidas, a segunda passa a branco (ou escuro, se a primeira já for clara). */
+function coresDoJogo(nomes) {
+  const cores = nomes.map((n) => CORES[n] ?? null);
+  const rgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+  if (cores[0] && cores[1]) {
+    const [a, b] = [rgb(cores[0]), rgb(cores[1])];
+    const distancia = Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+    if (distancia < 90) cores[1] = a.reduce((s, x) => s + x, 0) / 3 > 180 ? '#1f2937' : '#f4f4f4';
+  }
+  return cores;
+}
+
 const CIDADES_PT = {
   Munich: 'Munique', Moscow: 'Moscovo', Rome: 'Roma', Milan: 'Milão', Lisbon: 'Lisboa', Seville: 'Sevilha',
   Turin: 'Turim', London: 'Londres', Athens: 'Atenas', Berlin: 'Berlim', Vienna: 'Viena', Istanbul: 'Istambul',
@@ -179,6 +203,61 @@ function lerOnzes(texto, desde) {
   return equipas;
 }
 
+// --- golos (campos goals1/goals2 da Football box; o desempate por penáltis fica de fora) ---
+function lerGolos(caixa, campo) {
+  const linhas = caixa.split('\n');
+  const inicio = linhas.findIndex((l) => new RegExp(`^\\|\\s*${campo}\\s*=`).test(l));
+  if (inicio < 0) return [];
+  const golos = [];
+  for (let k = inicio; k < linhas.length; k++) {
+    const linha = k === inicio ? linhas[k].replace(/^\|[^=]*=/, '') : linhas[k];
+    if (k > inicio && /^\s*\|/.test(linha)) break; // começou outro campo
+    const ligacao = linha.match(/\[\[[^\]]+\]\]/)?.[0];
+    if (!ligacao) continue;
+    for (const g of linha.matchAll(/\{\{\s*goal\s*\|([^}]*)\}\}/gi)) {
+      const minutos = [];
+      for (const p of g[1].split('|').map((x) => x.trim())) {
+        if (/^\d{1,3}(\+\d{1,2})?$/.test(p)) minutos.push({ minuto: minuto(p) });
+        else if (/^(pen\.?|p)$/i.test(p) && minutos.length) minutos.at(-1).penalti = true;
+        else if (/^(o\.?g\.?)$/i.test(p) && minutos.length) minutos.at(-1).autogolo = true;
+      }
+      if (minutos.length) golos.push({ nome: limpar(ligacao), alvo: alvoDeLigacao(ligacao), minutos });
+    }
+  }
+  return golos;
+}
+
+/** Junta cada golo ao jogador (nos autogolos, o marcador é da outra equipa). */
+function atribuirGolos(onzes, golosPorEquipa) {
+  const avisos = [];
+  const chaves = (j) => [normalizar(j.nome), normalizar(j.alvo ?? '')].filter(Boolean);
+  golosPorEquipa.forEach((golos, equipa) => {
+    for (const g of golos) {
+      for (const m of g.minutos) {
+        const alvoEquipa = m.autogolo ? 1 - equipa : equipa;
+        const candidatos = [...onzes[alvoEquipa].onze, ...onzes[alvoEquipa].banco];
+        const alvos = [normalizar(g.alvo), normalizar(g.nome)];
+        let jogador = candidatos.find((j) => chaves(j).some((c) => alvos.includes(c)));
+        if (!jogador) {
+          // Pelo apelido, se for único.
+          const apelido = normalizar(g.nome).split(' ').pop();
+          const porApelido = candidatos.filter((j) => chaves(j).some((c) => c.split(' ').pop() === apelido));
+          if (porApelido.length === 1) [jogador] = porApelido;
+        }
+        if (!jogador) {
+          avisos.push(`golo de ${g.nome} (${m.minuto}') sem jogador correspondente`);
+          continue;
+        }
+        const golo = { minuto: m.minuto };
+        if (m.penalti) golo.penalti = true;
+        if (m.autogolo) golo.autogolo = true;
+        (jogador.golos ??= []).push(golo);
+      }
+    }
+  });
+  return avisos;
+}
+
 // --- posições e formação ---
 function mapearPosicoes(onze) {
   const nCB = onze.filter((j) => j.posWiki === 'CB' || j.posWiki === 'SW').length;
@@ -279,7 +358,7 @@ function corrigirLosango(onze) {
   return onze;
 }
 
-function montarEquipa(bruta, nomeEquipa, isoEquipa, slug, plantel) {
+function montarEquipa(bruta, nomeEquipa, isoEquipa, slug, plantel, cor) {
   const onze = corrigirLosango(mapearPosicoes(bruta.onze));
   const usados = bruta.banco.filter((j) => j.entrou);
   let naoUsados = bruta.banco.filter((j) => !j.entrou);
@@ -292,10 +371,13 @@ function montarEquipa(bruta, nomeEquipa, isoEquipa, slug, plantel) {
   return {
     nome: nomeEquipa,
     ...(slug ? { slug } : {}),
+    ...(cor ? { cor } : {}),
     formacao: deduzirFormacao(onze),
     treinador: pessoa(bruta.treinador ?? { nome: '?' }),
-    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: j.pos })),
-    suplentes: usados.map((j) => pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j) })),
+    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: j.pos, ...(j.golos ? { golos: j.golos } : {}) })),
+    suplentes: usados.map((j) =>
+      pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j), ...(j.golos ? { golos: j.golos } : {}) }),
+    ),
     nao_utilizados: naoUsados.map((j) => {
       const p = pessoa(j);
       return p.aceites ? p : p.nome;
@@ -312,6 +394,8 @@ export async function importar(entrada) {
   const isos = [bandeira(t1), bandeira(t2)];
   const onzes = lerOnzes(texto, fim);
   if (onzes.length < 2) throw new Error(`Só encontrei ${onzes.length} onze(s) completo(s).`);
+  const avisosGolos = atribuirGolos(onzes, [lerGolos(caixa, 'goals1'), lerGolos(caixa, 'goals2')]);
+  for (const a of avisosGolos) console.log(`   ⚠ ${entrada.id}: ${a}`);
 
   const placarBruto = campoDaCaixa(caixa, 'score');
   const placar = limpar(placarBruto).replace(/-/g, '–');
@@ -344,7 +428,10 @@ export async function importar(entrada) {
     estadio,
     resultado,
     fonte: url,
-    equipas: [0, 1].map((i) => montarEquipa(onzes[i], nomes[i], isos[i], slugs[i], planteis[i])),
+    equipas: (() => {
+      const cores = coresDoJogo(nomes);
+      return [0, 1].map((i) => montarEquipa(onzes[i], nomes[i], isos[i], slugs[i], planteis[i], cores[i]));
+    })(),
   };
 }
 
@@ -383,6 +470,12 @@ export function aplicarCuradoria(jogo, c) {
       if (k < 0) throw new Error(`curadoria: "${nome}" não existe em ${e.nome}`);
       const atual = e.nao_utilizados[k];
       e.nao_utilizados[k] = { nome, aceites: [...new Set([...(typeof atual === 'string' ? [] : atual.aceites ?? []), ...extra])] };
+    }
+    for (const [nome, golos] of Object.entries(a.golos ?? {})) {
+      const p = [...e.onze, ...e.suplentes].find((x) => x.nome === nome);
+      if (!p) throw new Error(`curadoria: "${nome}" não jogou por ${e.nome}`);
+      if (golos.length) p.golos = golos;
+      else delete p.golos;
     }
     for (const [nome, curto] of Object.entries(a.curto ?? {})) {
       const p = todas().find((x) => x.nome === nome);

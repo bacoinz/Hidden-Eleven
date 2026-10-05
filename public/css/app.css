@@ -785,8 +785,14 @@ select.campo option {
   stroke-dasharray: 7 5;
 }
 .camisola.descoberta .forma {
-  stroke: #fff;
   stroke-width: 3;
+}
+.camisola .golo-extra {
+  font-family: var(--display);
+  fill: #fff;
+  paint-order: stroke;
+  stroke: #000000c0;
+  stroke-linejoin: round;
 }
 .camisola.revelada .forma {
   fill: #4b5563;
@@ -930,8 +936,28 @@ select.campo option {
 }
 .lugar-banco.descoberta {
   border-style: solid;
-  border-color: var(--cor, #fff);
-  background: color-mix(in srgb, var(--cor, #fff) 18%, #00000066);
+  border-color: #ffffff40;
+  background: #ffffff12;
+}
+.lugar-banco {
+  flex-wrap: wrap;
+  row-gap: 2px;
+}
+.lugar-banco .dono {
+  font-size: 11px;
+  font-weight: 800;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.golo-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  flex: none;
+}
+.golo-mini b {
+  font-size: 10px;
+  line-height: 1;
 }
 .lugar-banco.descoberta .quem {
   color: #fff;

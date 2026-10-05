@@ -10,6 +10,7 @@
   "equipas": [
     {
       "nome": "Mónaco",
+      "cor": "#e2001a",
       "formacao": "4-3-3",
       "treinador": { "nome": "Didier Deschamps" },
       "onze": [
@@ -30,12 +31,12 @@
         { "nome": "Dado Pršo", "numero": 9, "minuto": 23, "pais": "HR" },
         { "nome": "Shabani Nonda", "numero": 18, "minuto": 64, "pais": "CD" }
       ],
-      "nao_utilizados": ["Tony Sylva", "Jaroslav Plašil", "Hassan El Fakiri", "Emmanuel Adebayor"],
-      "cor": "#e2001a"
+      "nao_utilizados": ["Tony Sylva", "Jaroslav Plašil", "Hassan El Fakiri", "Emmanuel Adebayor"]
     },
     {
       "nome": "FC Porto",
       "slug": "porto",
+      "cor": "#0047ab",
       "formacao": "4-4-2 losango",
       "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
       "onze": [
@@ -47,13 +48,20 @@
         { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MDC" },
         { "nome": "Pedro Mendes", "numero": 23, "pais": "PT", "pos": "MC" },
         { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
-        { "nome": "Deco", "numero": 10, "pais": "PT", "pos": "MO" },
-        { "nome": "Carlos Alberto", "numero": 19, "pais": "BR", "pos": "PL" },
+        { "nome": "Deco", "numero": 10, "pais": "PT", "pos": "MO", "golos": [{ "minuto": 71 }] },
+        { "nome": "Carlos Alberto", "numero": 19, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 39 }] },
         { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
         { "nome": "Pedro Emanuel", "numero": 3, "minuto": 85, "pais": "PT" },
-        { "nome": "Dmitri Alenichev", "numero": 15, "minuto": 60, "pais": "RU", "aceites": ["alenitchev", "dmitri alenitchev"] },
+        {
+          "nome": "Dmitri Alenichev",
+          "numero": 15,
+          "minuto": 60,
+          "pais": "RU",
+          "golos": [{ "minuto": 75 }],
+          "aceites": ["alenitchev", "dmitri alenitchev"]
+        },
         { "nome": "Benni McCarthy", "numero": 77, "minuto": 78, "pais": "ZA", "aceites": ["benni"] }
       ],
       "nao_utilizados": [
@@ -61,8 +69,7 @@
         "Ricardo Costa",
         { "nome": "José Bosingwa", "aceites": ["bosingwa"] },
         "Edgaras Jankauskas"
-      ],
-      "cor": "#0047ab"
+      ]
     }
   ]
 }

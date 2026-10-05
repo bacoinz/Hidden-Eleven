@@ -213,6 +213,8 @@ export function estadoPublico(r, prep) {
       lugar.curto = curto(p);
       if (p.numero != null) lugar.numero = p.numero;
       if (p.pais) lugar.pais = p.pais;
+      // Os golos só se mostram depois de descoberto (seriam uma pista grátis).
+      if (p.golos?.length) lugar.golos = p.golos.map((g) => ({ ...g }));
       if (d) {
         lugar.por = d.por;
         lugar.pontos = d.pontos + (d.bonus ?? 0);

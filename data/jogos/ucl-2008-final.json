@@ -11,6 +11,7 @@
     {
       "nome": "Manchester United",
       "slug": "man-utd",
+      "cor": "#da291c",
       "formacao": "4-4-2",
       "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson", "Sir Alex Ferguson"] },
       "onze": [
@@ -22,7 +23,7 @@
         { "nome": "Owen Hargreaves", "numero": 4, "pais": "GB-ENG", "pos": "MD", "aceites": ["hargreaves"] },
         { "nome": "Paul Scholes", "numero": 18, "pais": "GB-ENG", "pos": "MC" },
         { "nome": "Michael Carrick", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
-        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ME" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ME", "golos": [{ "minuto": 26 }] },
         { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL" },
         { "nome": "Carlos Tevez", "numero": 32, "pais": "AR", "pos": "PL" }
       ],
@@ -31,12 +32,12 @@
         { "nome": "Ryan Giggs", "numero": 11, "minuto": 87, "pais": "GB-WLS" },
         { "nome": "Nani", "numero": 17, "minuto": 101, "pais": "PT" }
       ],
-      "nao_utilizados": ["Tomasz Kuszczak", "John O'Shea", "Mikaël Silvestre", "Darren Fletcher"],
-      "cor": "#da291c"
+      "nao_utilizados": ["Tomasz Kuszczak", "John O'Shea", "Mikaël Silvestre", "Darren Fletcher"]
     },
     {
       "nome": "Chelsea",
       "slug": "chelsea",
+      "cor": "#034694",
       "formacao": "4-3-3",
       "treinador": { "nome": "Avram Grant" },
       "onze": [
@@ -47,7 +48,7 @@
         { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
         { "nome": "Claude Makélélé", "numero": 4, "pais": "FR", "pos": "MDC" },
         { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MC" },
-        { "nome": "Frank Lampard", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Frank Lampard", "numero": 8, "pais": "GB-ENG", "pos": "MC", "golos": [{ "minuto": 45 }] },
         { "nome": "Joe Cole", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
         { "nome": "Florent Malouda", "numero": 15, "pais": "FR", "pos": "EE" },
         { "nome": "Didier Drogba", "numero": 11, "pais": "CI", "pos": "PL" }
@@ -62,8 +63,7 @@
         "Alex",
         { "nome": "Mikel John Obi", "aceites": ["john obi mikel", "obi mikel", "mikel"] },
         { "nome": "Andriy Shevchenko", "aceites": ["sheva"] }
-      ],
-      "cor": "#034694"
+      ]
     }
   ]
 }

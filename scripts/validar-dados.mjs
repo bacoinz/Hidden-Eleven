@@ -59,6 +59,15 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
     if (nomes.has(n)) erro(`"${nome}" aparece duas vezes (${nomes.get(n)} e ${onde})`);
     else nomes.set(n, onde);
   };
+  const verGolos = (p, onde) => {
+    if (p.golos === undefined) return;
+    if (!Array.isArray(p.golos) || !p.golos.length) return erro(`${onde}: "golos" inválido`);
+    for (const g of p.golos) {
+      if (!MINUTO.test(String(g?.minuto ?? '')) || Number.parseInt(g.minuto, 10) > 125) erro(`${onde}: minuto de golo inválido "${g?.minuto}"`);
+      if ((g.penalti !== undefined && g.penalti !== true) || (g.autogolo !== undefined && g.autogolo !== true)) erro(`${onde}: golo com campos inválidos`);
+      if (g.penalti && g.autogolo) erro(`${onde}: golo não pode ser penálti e autogolo`);
+    }
+  };
   const verAceites = (p, onde) => {
     if (p.aceites !== undefined && (!Array.isArray(p.aceites) || p.aceites.some((a) => typeof a !== 'string' || !normalizar(a)))) {
       erro(`${onde}: "aceites" inválido`);
@@ -82,6 +91,7 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
       const onde = `${eq} onze ${p.nome}`;
       registar(p.nome, onde);
       verAceites(p, onde);
+      verGolos(p, onde);
       if (!SIGLAS.includes(p.pos)) erro(`${onde}: posição "${p.pos}" inválida`);
       if (!Number.isInteger(p.numero) || p.numero < 1 || p.numero > 99) erro(`${onde}: número inválido`);
       if (!temBandeira(p.pais)) erro(`${onde}: país "${p.pais}" sem bandeira`);
@@ -96,6 +106,7 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
       const onde = `${eq} suplente ${s.nome}`;
       registar(s.nome, onde);
       verAceites(s, onde);
+      verGolos(s, onde);
       if (!MINUTO.test(String(s.minuto ?? '')) || Number.parseInt(s.minuto, 10) > 125) erro(`${onde}: minuto inválido "${s.minuto}"`);
       if (!temBandeira(s.pais)) erro(`${onde}: país "${s.pais}" sem bandeira`);
       if (s.numero !== undefined && s.numero !== null) {
@@ -108,6 +119,19 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
       if (typeof n === 'object') verAceites(n, `${eq} banco ${n.nome}`);
     }
   });
+  const placar = String(jogo.resultado ?? '').match(/(\d+)\s*–\s*(\d+)/);
+  if (!placar) erro(`resultado sem placar "X–Y": "${jogo.resultado}"`);
+  else {
+    const marcados = [0, 0];
+    jogo.equipas.forEach((e, i) => {
+      for (const p of [...(e.onze ?? []), ...(e.suplentes ?? [])]) {
+        for (const g of p.golos ?? []) marcados[g.autogolo ? 1 - i : i]++;
+      }
+    });
+    if (marcados[0] !== Number(placar[1]) || marcados[1] !== Number(placar[2])) {
+      erro(`golos (${marcados[0]}–${marcados[1]}) não batem com o resultado ${placar[1]}–${placar[2]}`);
+    }
+  }
   return erros;
 }
 

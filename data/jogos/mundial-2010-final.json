@@ -12,6 +12,7 @@
     {
       "nome": "Holanda",
       "slug": "holanda",
+      "cor": "#f36c21",
       "formacao": "4-2-3-1",
       "treinador": { "nome": "Bert van Marwijk" },
       "onze": [
@@ -42,12 +43,12 @@
         "Ibrahim Afellay",
         "Klaas-Jan Huntelaar",
         "Sander Boschker"
-      ],
-      "cor": "#f36c21"
+      ]
     },
     {
       "nome": "Espanha",
       "slug": "espanha",
+      "cor": "#c60b1e",
       "formacao": "4-2-3-1",
       "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
       "onze": [
@@ -58,7 +59,7 @@
         { "nome": "Joan Capdevila", "numero": 11, "pais": "ES", "pos": "DE" },
         { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
         { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC" },
-        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "ED" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "ED", "golos": [{ "minuto": 116 }] },
         { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MO" },
         { "nome": "Pedro", "numero": 18, "pais": "ES", "pos": "EE", "aceites": ["pedro rodriguez"] },
         { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "PL" }
@@ -78,8 +79,7 @@
         "Javi Martínez",
         "David Silva",
         "Pepe Reina"
-      ],
-      "cor": "#c60b1e"
+      ]
     }
   ]
 }

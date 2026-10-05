@@ -11,6 +11,7 @@
     {
       "nome": "Manchester City",
       "slug": "man-city",
+      "cor": "#6cabdd",
       "formacao": "4-3-3",
       "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
       "onze": [
@@ -41,12 +42,12 @@
         "Eric García",
         "Rodri",
         { "nome": "Ferran Torres", "aceites": ["ferran"] }
-      ],
-      "cor": "#6cabdd"
+      ]
     },
     {
       "nome": "Chelsea",
       "slug": "chelsea",
+      "cor": "#034694",
       "formacao": "3-4-2-1",
       "treinador": { "nome": "Thomas Tuchel" },
       "onze": [
@@ -58,7 +59,7 @@
         { "nome": "Ben Chilwell", "numero": 21, "pais": "GB-ENG", "pos": "ME" },
         { "nome": "Jorginho", "numero": 5, "pais": "IT", "pos": "MC" },
         { "nome": "N'Golo Kanté", "aceites": ["kante"], "numero": 7, "pais": "FR", "pos": "MC" },
-        { "nome": "Kai Havertz", "numero": 29, "pais": "DE", "pos": "MO" },
+        { "nome": "Kai Havertz", "numero": 29, "pais": "DE", "pos": "MO", "golos": [{ "minuto": 42 }] },
         { "nome": "Mason Mount", "numero": 19, "pais": "GB-ENG", "pos": "MO" },
         { "nome": "Timo Werner", "numero": 11, "pais": "DE", "pos": "PL" }
       ],
@@ -77,8 +78,7 @@
         "Hakim Ziyech",
         "Billy Gilmour",
         "Olivier Giroud"
-      ],
-      "cor": "#034694"
+      ]
     }
   ]
 }

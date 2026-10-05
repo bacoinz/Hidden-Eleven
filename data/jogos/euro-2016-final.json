@@ -12,6 +12,7 @@
     {
       "nome": "Portugal",
       "slug": "portugal",
+      "cor": "#c8102e",
       "formacao": "4-4-2 losango",
       "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
       "onze": [
@@ -30,7 +31,7 @@
       "suplentes": [
         { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 25, "pais": "PT" },
         { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 66, "pais": "PT" },
-        { "nome": "Éder", "numero": 9, "minuto": 79, "pais": "PT" }
+        { "nome": "Éder", "numero": 9, "minuto": 79, "pais": "PT", "golos": [{ "minuto": 109 }] }
       ],
       "nao_utilizados": [
         "Bruno Alves",
@@ -42,12 +43,12 @@
         "Rafa Silva",
         "Eliseu",
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
-      ],
-      "cor": "#c8102e"
+      ]
     },
     {
       "nome": "França",
       "slug": "franca",
+      "cor": "#1e3a8a",
       "formacao": "4-4-2",
       "treinador": { "nome": "Didier Deschamps" },
       "onze": [
@@ -78,8 +79,7 @@
         "Steve Mandanda",
         "Lucas Digne",
         "Benoît Costil"
-      ],
-      "cor": "#1e3a8a"
+      ]
     }
   ]
 }

@@ -194,6 +194,15 @@ describe('estado público', () => {
     expect(depois.equipas[1].treinador).toEqual({ id: '1t', tipo: 'treinador' });
   });
 
+  it('os golos só aparecem depois de a posição ser descoberta', () => {
+    const { prep, r } = rondaNova();
+    motor.avancar(r, INICIO);
+    const deco = () => motor.estadoPublico(r, prep).equipas[1].onze.find((l) => l.pos === 'MO');
+    expect(deco().golos).toBeUndefined();
+    motor.palpite(r, prep, 'rui', 'Deco', INICIO + 1000);
+    expect(deco().golos).toEqual([{ minuto: 71 }]);
+  });
+
   it('no fim revela tudo e marca o que ficou por descobrir', () => {
     const { prep, r } = rondaNova();
     motor.avancar(r, INICIO);
