@@ -303,7 +303,8 @@ export function estadoPublico(sala, agora) {
     partida: sala.partida
       ? { numero: sala.partida.numero, total: sala.partida.total, historico: sala.partida.historico }
       : null,
-    ronda: r && sala.fase === 'jogo' ? motor.estadoPublico(r, preparado(r)) : null,
+    // No pódio final mantém-se o último onze (já todo revelado) para quem o quiser rever.
+    ronda: r ? motor.estadoPublico(r, preparado(r)) : null,
     disponiveis: disponiveis(sala.config, sala.usados).length,
     feed: sala.feed,
     agora,

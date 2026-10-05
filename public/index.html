@@ -2,13 +2,204 @@
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>Hidden Eleven</title>
   <meta name="description" content="Descobre os onzes escondidos de jogos míticos com os teus amigos.">
+  <meta name="theme-color" content="#3b82f6">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hidden Eleven">
   <meta property="og:title" content="Hidden Eleven">
   <meta property="og:description" content="Descobre os onzes escondidos de jogos míticos com os teus amigos.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fontes/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fontes/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/app.js"></script>
 </head>
 <body>
-  <p>Em construção.</p>
+  <div class="fundo" aria-hidden="true"><div class="fundo-circulo"></div></div>
+
+  <!-- Início -->
+  <main id="ecra-inicio" class="ecra ecra-centro" hidden>
+    <header class="marca">
+      <img class="logo" src="/favicon.svg" alt="" width="64" height="64">
+      <h1 class="titulo"><span>Hidden</span> <span class="azul">Eleven</span></h1>
+      <p class="subtitulo">Onzes míticos com os nomes escondidos. Quem escreve primeiro fica com a posição.</p>
+    </header>
+    <section class="cartao">
+      <label class="rotulo" for="nome">O teu nome</label>
+      <input id="nome" class="campo" maxlength="16" placeholder="Ex.: Mister" autocomplete="nickname" spellcheck="false">
+      <button id="btn-criar" class="btn btn-principal" type="button"><span aria-hidden="true">＋</span> Criar sala</button>
+      <button id="btn-solo" class="btn btn-claro" type="button">Jogar sozinho</button>
+      <p class="separador">ou entra numa sala</p>
+      <form id="form-entrar" class="linha">
+        <input id="codigo" class="campo campo-codigo" maxlength="4" placeholder="CÓDIGO" autocomplete="off" autocapitalize="characters" spellcheck="false" aria-label="Código da sala">
+        <button class="btn btn-fantasma" type="submit">Entrar</button>
+      </form>
+      <p id="erro-inicio" class="erro" role="alert"></p>
+    </section>
+    <button class="btn btn-contorno btn-como" type="button" data-abrir="dialogo-como">Como jogar</button>
+  </main>
+
+  <!-- Entrada por link -->
+  <main id="ecra-nome" class="ecra ecra-centro" hidden>
+    <header class="marca marca-pequena">
+      <img class="logo" src="/favicon.svg" alt="" width="48" height="48">
+      <h1 class="titulo"><span>Hidden</span> <span class="azul">Eleven</span></h1>
+    </header>
+    <form id="form-nome" class="cartao">
+      <p class="rotulo">Sala <strong id="nome-codigo" class="codigo-inline"></strong></p>
+      <label class="rotulo" for="nome-link">O teu nome</label>
+      <input id="nome-link" class="campo" maxlength="16" placeholder="Ex.: Mister" autocomplete="nickname" spellcheck="false" required>
+      <button class="btn btn-principal" type="submit">Entrar na sala</button>
+      <p id="erro-nome" class="erro" role="alert"></p>
+      <a class="ligacao-voltar" href="/">Voltar ao início</a>
+    </form>
+  </main>
+
+  <!-- Lobby -->
+  <main id="ecra-lobby" class="ecra ecra-centro" hidden>
+    <header class="marca marca-pequena">
+      <img class="logo" src="/favicon.svg" alt="" width="48" height="48">
+      <h1 class="titulo"><span>Hidden</span> <span class="azul">Eleven</span></h1>
+    </header>
+    <section class="cartao cartao-largo">
+      <div id="lobby-sala" class="lobby-sala">
+        <div>
+          <p class="rotulo">Sala</p>
+          <p id="lobby-codigo" class="codigo-grande"></p>
+        </div>
+        <button id="btn-copiar" class="btn btn-fantasma" type="button">Copiar link</button>
+      </div>
+      <div id="lobby-jogadores-bloco">
+        <p class="rotulo">Jogadores</p>
+        <ul id="lobby-jogadores" class="lista-jogadores"></ul>
+      </div>
+      <div class="lobby-config">
+        <p class="rotulo">Conteúdo</p>
+        <div id="cfg-conteudo" class="segmentos" role="radiogroup" aria-label="Conteúdo"></div>
+        <div id="cfg-equipa-bloco" hidden>
+          <label class="rotulo" for="cfg-equipa">Equipa</label>
+          <select id="cfg-equipa" class="campo"></select>
+        </div>
+        <p class="rotulo">Rondas</p>
+        <div id="cfg-rondas" class="segmentos" role="radiogroup" aria-label="Rondas"></div>
+        <p id="cfg-resumo" class="nota"></p>
+      </div>
+      <button id="btn-comecar" class="btn btn-principal" type="button">Começar</button>
+      <button id="btn-repor" class="btn btn-fantasma" type="button" hidden>Repor jogos já jogados</button>
+      <p id="lobby-espera" class="nota centro" hidden>À espera que o anfitrião comece…</p>
+      <p id="erro-lobby" class="erro" role="alert"></p>
+    </section>
+    <div class="linha-botoes">
+      <button class="btn btn-contorno" type="button" data-abrir="dialogo-como">Como jogar</button>
+      <button class="btn btn-contorno btn-sair" type="button">Sair</button>
+    </div>
+  </main>
+
+  <!-- Jogo -->
+  <main id="ecra-jogo" class="ecra ecra-jogo" hidden>
+    <header class="barra-jogo">
+      <img class="logo" src="/favicon.svg" alt="" width="28" height="28">
+      <p class="barra-titulo"><span id="jogo-ronda" class="ronda"></span> <span id="jogo-competicao" class="competicao"></span></p>
+      <p id="jogo-sala" class="barra-sala"></p>
+      <button class="btn btn-mini btn-sair" type="button" aria-label="Sair da sala">Sair</button>
+    </header>
+    <div class="jogo-grelha">
+      <div class="g-controlo">
+        <div class="relogio-bloco">
+          <p id="relogio" class="relogio" aria-live="off">3:00</p>
+          <div class="relogio-info">
+            <div class="barra-tempo" aria-hidden="true">
+              <div id="barra-tempo-enchimento" class="barra-tempo-enchimento"></div>
+              <span class="marca-pista" data-pista="1" title="Número da camisola">#</span>
+              <span class="marca-pista" data-pista="2" title="Bandeira">⚑</span>
+              <span class="marca-pista" data-pista="3" title="Inicial do apelido">A</span>
+            </div>
+            <p id="contador" class="contador"></p>
+          </div>
+          <span id="relogio-extra" class="relogio-extra" aria-hidden="true"></span>
+        </div>
+        <form id="form-palpite" class="palpite" autocomplete="off">
+          <input id="palpite" class="campo campo-palpite" maxlength="40" placeholder="Escreve um nome e carrega Enter" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="send" aria-label="Nome do jogador ou treinador">
+          <button class="btn btn-principal btn-enviar" type="submit" aria-label="Enviar">↵</button>
+          <div id="bloqueio" class="bloqueio" aria-hidden="true"></div>
+        </form>
+        <p id="resposta" class="resposta" role="status" aria-live="polite"></p>
+      </div>
+      <section class="g-campo">
+        <div id="banco-cima" class="bancos"></div>
+        <div class="relvado-moldura">
+          <svg id="relvado" class="relvado" role="img" aria-label="Relvado com as posições do jogo"></svg>
+        </div>
+        <div id="banco-baixo" class="bancos"></div>
+      </section>
+      <section id="painel-fim" class="painel g-fim" hidden>
+        <h2 id="fim-titulo" class="painel-titulo">Fim da ronda</h2>
+        <p id="fim-resumo" class="nota"></p>
+        <table class="tabela">
+          <thead><tr><th>Jogador</th><th>Ronda</th><th>Total</th></tr></thead>
+          <tbody id="fim-tabela"></tbody>
+        </table>
+        <button id="btn-proxima" class="btn btn-principal" type="button">Próxima ronda</button>
+        <p id="fim-espera" class="nota centro">À espera do anfitrião…</p>
+      </section>
+      <section class="painel g-classificacao">
+        <h2 class="painel-titulo">Classificação</h2>
+        <ol id="classificacao" class="classificacao"></ol>
+      </section>
+      <section class="painel g-feed">
+        <h2 class="painel-titulo">Acontecimentos</h2>
+        <ol id="feed" class="feed" aria-live="polite"></ol>
+      </section>
+    </div>
+
+    <div id="ficha" class="sobreposicao" hidden>
+      <article class="ficha">
+        <p id="ficha-competicao" class="ficha-competicao"></p>
+        <p id="ficha-titulo" class="ficha-titulo"></p>
+        <p id="ficha-resultado" class="ficha-resultado"></p>
+        <dl class="ficha-dados">
+          <div><dt>Data</dt><dd id="ficha-data"></dd></div>
+          <div><dt>Estádio</dt><dd id="ficha-estadio"></dd></div>
+        </dl>
+        <ul id="ficha-equipas" class="ficha-equipas"></ul>
+        <p class="ficha-nota">Treinadores escondidos. Descobre também quem entrou do banco.</p>
+        <p id="ficha-contagem" class="ficha-contagem">7</p>
+      </article>
+    </div>
+
+    <div id="final" class="sobreposicao" hidden>
+      <article class="cartao cartao-largo final">
+        <h2 class="titulo titulo-medio"><span>Classificação</span> <span class="azul">final</span></h2>
+        <ol id="podio" class="podio"></ol>
+        <table class="tabela">
+          <thead><tr><th>#</th><th>Jogador</th><th>Pontos</th></tr></thead>
+          <tbody id="final-tabela"></tbody>
+        </table>
+        <button id="btn-novo" class="btn btn-principal" type="button">Novo jogo</button>
+        <p id="final-espera" class="nota centro">À espera do anfitrião…</p>
+        <button id="btn-ver-campo" class="btn btn-fantasma" type="button">Ver o último onze</button>
+        <button class="btn btn-contorno btn-sair" type="button">Sair</button>
+      </article>
+    </div>
+  </main>
+
+  <dialog id="dialogo-como" class="dialogo">
+    <h2 class="titulo titulo-medio"><span>Como</span> <span class="azul">jogar</span></h2>
+    <ol class="regras">
+      <li>Aparece o onze de um jogo real com os nomes escondidos. Toda a gente joga ao mesmo tempo.</li>
+      <li>Escreve um nome e carrega <kbd>Enter</kbd>. Se for alguém do onze, um suplente que entrou ou um treinador, a posição é tua. Não precisas de escolher onde.</li>
+      <li>Cada posição só tem um dono: ganha quem escrever primeiro.</li>
+      <li>Aos 20 %, 35 % e 50 % do tempo aparecem pistas no onze: o número, a bandeira e a inicial do apelido.</li>
+      <li>Pontos: 5 sem pistas, depois 4, 3 e 2. Suplentes e treinadores valem 3. Quem fecha a última posição ganha +2.</li>
+      <li>Cada acerto dá +5 segundos à ronda. Um nome errado bloqueia a tua caixa durante 1 segundo.</li>
+      <li>Apelidos, alcunhas e pequenas gralhas contam. Se dois jogadores tiverem o mesmo apelido, escreve o nome completo.</li>
+    </ol>
+    <form method="dialog"><button class="btn btn-principal" type="submit">Percebi</button></form>
+  </dialog>
+
+  <div id="aviso-ligacao" class="aviso-ligacao" hidden>A ligar ao servidor…</div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
 </body>
 </html>
