@@ -1,0 +1,81 @@
+{
+  "id": "mundial-2026-final",
+  "modos": ["final", "equipa:espanha", "equipa:argentina"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2026-07-19",
+  "estadio": "MetLife Stadium, East Rutherford",
+  "resultado": "Espanha 1–0 Argentina (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis de la Fuente" },
+      "onze": [
+        { "nome": "Unai Simón", "numero": 23, "pais": "ES", "pos": "GR" },
+        { "nome": "Pedro Porro", "numero": 12, "pais": "ES", "pos": "DD" },
+        { "nome": "Pau Cubarsí", "numero": 22, "pais": "ES", "pos": "DC" },
+        { "nome": "Aymeric Laporte", "numero": 14, "pais": "ES", "pos": "DC" },
+        { "nome": "Marc Cucurella", "numero": 24, "pais": "ES", "pos": "DE" },
+        { "nome": "Rodri", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Dani Olmo", "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Lamine Yamal", "aceites": ["yamal", "lamine"], "numero": 19, "pais": "ES", "pos": "ED" },
+        { "nome": "Mikel Oyarzabal", "numero": 21, "pais": "ES", "pos": "PL" },
+        { "nome": "Álex Baena", "numero": 15, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 62, "pais": "ES", "golos": [{ "minuto": 106 }] },
+        { "nome": "Pedri", "numero": 20, "minuto": 62, "pais": "ES" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES" },
+        { "nome": "Nico Williams", "numero": 17, "minuto": 75, "pais": "ES" },
+        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 99, "pais": "ES" },
+        { "nome": "Eric Garcia", "numero": 4, "minuto": 99, "pais": "ES" }
+      ],
+      "nao_utilizados": ["David Raya", "Marc Pubill", "Álex Grimaldo", "Marcos Llorente", "Gavi", "Yéremy Pino", "Joan Garcia", "Víctor Muñoz", "Borja Iglesias"]
+    },
+    {
+      "nome": "Argentina",
+      "slug": "argentina",
+      "cor": "#75aadb",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Lionel Scaloni ||" },
+      "onze": [
+        { "nome": "Emiliano Martínez", "aceites": ["dibu", "dibu martinez"], "numero": 23, "pais": "AR", "pos": "GR" },
+        { "nome": "Gonzalo Montiel", "numero": 4, "pais": "AR", "pos": "DD" },
+        { "nome": "Cristian Romero", "numero": 13, "pais": "AR", "pos": "DC" },
+        { "nome": "Lisandro Martínez", "numero": 6, "pais": "AR", "pos": "DC" },
+        { "nome": "Nicolás Tagliafico", "numero": 3, "pais": "AR", "pos": "DE" },
+        { "nome": "Rodrigo De Paul", "aceites": ["de paul"], "numero": 7, "pais": "AR", "pos": "MD" },
+        { "nome": "Enzo Fernández", "aceites": ["enzo"], "numero": 24, "pais": "AR", "pos": "MC" },
+        { "nome": "Alexis Mac Allister", "aceites": ["mac allister", "macallister"], "numero": 20, "pais": "AR", "pos": "MC" },
+        { "nome": "Nicolás González", "numero": 15, "pais": "AR", "pos": "ME" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "PL" },
+        { "nome": "Julián Alvarez", "aceites": ["julian", "la arana"], "numero": 9, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nicolás Otamendi", "numero": 19, "minuto": 44, "pais": "AR" },
+        { "nome": "Leandro Paredes", "numero": 5, "minuto": 46, "pais": "AR" },
+        { "nome": "Nahuel Molina", "numero": 26, "minuto": 58, "pais": "AR" },
+        { "nome": "Facundo Medina", "numero": 25, "minuto": 70, "pais": "AR" },
+        { "nome": "Giuliano Simeone", "numero": 17, "minuto": 70, "pais": "AR" },
+        { "nome": "Marcos Senesi", "numero": 2, "minuto": 102, "pais": "AR" }
+      ],
+      "nao_utilizados": [
+        "Juan Musso",
+        "Valentín Barco",
+        "Giovani Lo Celso",
+        "Gerónimo Rulli",
+        "Exequiel Palacios",
+        "Thiago Almada",
+        "Nico Paz",
+        "José Manuel López",
+        { "nome": "Lautaro Martínez", "aceites": ["lautaro"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "mundial-2006-final",
+  "modos": ["final", "equipa:italia", "equipa:franca"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2006-07-09",
+  "estadio": "Olympiastadion, Berlim",
+  "resultado": "Itália 1–1 França (5–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Itália",
+      "slug": "italia",
+      "cor": "#0066cc",
+      "formacao": "4-4-1-1",
+      "treinador": { "nome": "Marcello Lippi" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Gianluca Zambrotta", "numero": 19, "pais": "IT", "pos": "DD" },
+        { "nome": "Fabio Cannavaro", "numero": 5, "pais": "IT", "pos": "DC" },
+        { "nome": "Marco Materazzi", "numero": 23, "pais": "IT", "pos": "DC", "golos": [{ "minuto": 19 }] },
+        { "nome": "Fabio Grosso", "numero": 3, "pais": "IT", "pos": "DE" },
+        { "nome": "Mauro Camoranesi", "numero": 16, "pais": "IT", "pos": "MD" },
+        { "nome": "Gennaro Gattuso", "aceites": ["rino gattuso"], "numero": 8, "pais": "IT", "pos": "MC" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MC" },
+        { "nome": "Simone Perrotta", "numero": 20, "pais": "IT", "pos": "ME" },
+        { "nome": "Francesco Totti", "numero": 10, "pais": "IT", "pos": "MO" },
+        { "nome": "Luca Toni", "numero": 9, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Daniele De Rossi", "numero": 4, "minuto": 61, "pais": "IT" },
+        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 61, "pais": "IT" },
+        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 7, "minuto": 86, "pais": "IT" }
+      ],
+      "nao_utilizados": [
+        "Cristian Zaccardo",
+        "Andrea Barzagli",
+        "Alberto Gilardino",
+        "Angelo Peruzzi",
+        "Alessandro Nesta",
+        "Marco Amelia",
+        "Simone Barone",
+        { "nome": "Filippo Inzaghi", "aceites": ["pippo inzaghi", "pippo"] },
+        "Massimo Oddo"
+      ]
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Raymond Domenech" },
+      "onze": [
+        { "nome": "Fabien Barthez", "numero": 16, "pais": "FR", "pos": "GR" },
+        { "nome": "Willy Sagnol", "numero": 19, "pais": "FR", "pos": "DD" },
+        { "nome": "Lilian Thuram", "numero": 15, "pais": "FR", "pos": "DC" },
+        { "nome": "William Gallas", "numero": 5, "pais": "FR", "pos": "DC" },
+        { "nome": "Eric Abidal", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Patrick Vieira", "numero": 4, "pais": "FR", "pos": "MC" },
+        { "nome": "Claude Makélélé", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "Franck Ribéry", "numero": 22, "pais": "FR", "pos": "ED" },
+        {
+          "nome": "Zinedine Zidane",
+          "aceites": ["zidane", "zizou"],
+          "numero": 10,
+          "pais": "FR",
+          "pos": "MO",
+          "golos": [{ "minuto": 7, "penalti": true }]
+        },
+        { "nome": "Florent Malouda", "numero": 7, "pais": "FR", "pos": "EE" },
+        { "nome": "Thierry Henry", "numero": 12, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alou Diarra", "numero": 18, "minuto": 56, "pais": "FR" },
+        { "nome": "David Trezeguet", "numero": 20, "minuto": 100, "pais": "FR" },
+        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 107, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Mickaël Landreau",
+        "Jean-Alain Boumsong",
+        "Vikash Dhorasoo",
+        "Sidney Govou",
+        "Mikaël Silvestre",
+        "Louis Saha",
+        "Gaël Givet",
+        "Pascal Chimbonda",
+        "Grégory Coupet"
+      ]
+    }
+  ]
+}

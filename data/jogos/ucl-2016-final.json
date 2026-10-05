@@ -1,0 +1,64 @@
+{
+  "id": "ucl-2016-final",
+  "modos": ["final", "equipa:real-madrid", "equipa:atletico"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2016-05-28",
+  "estadio": "Stadio San Siro, Milão",
+  "resultado": "Real Madrid 1–1 Atlético de Madrid (5–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2016_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Zinedine Zidane", "aceites": ["zidane", "zizou"] },
+      "onze": [
+        { "nome": "Keylor Navas", "numero": 1, "pais": "CR", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 15, "pais": "ES", "pos": "DD" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DC", "golos": [{ "minuto": 15 }] },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Casemiro", "numero": 14, "pais": "BR", "pos": "MDC" },
+        { "nome": "Luka Modrić", "numero": 19, "pais": "HR", "pos": "MC" },
+        { "nome": "Toni Kroos", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Gareth Bale", "numero": 11, "pais": "GB-WLS", "pos": "ED" },
+        { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Danilo", "numero": 23, "minuto": 52, "pais": "BR" },
+        { "nome": "Lucas Vázquez", "numero": 18, "minuto": 77, "pais": "ES" },
+        { "nome": "Isco", "numero": 22, "minuto": 72, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Kiko Casilla", "Nacho", { "nome": "James Rodríguez", "aceites": ["james"] }, "Jesé"]
+    },
+    {
+      "nome": "Atlético de Madrid",
+      "slug": "atletico",
+      "cor": "#cb3524",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Diego Simeone", "aceites": ["cholo", "cholo simeone"] },
+      "onze": [
+        { "nome": "Jan Oblak", "numero": 13, "pais": "SI", "pos": "GR" },
+        { "nome": "Juanfran", "numero": 20, "pais": "ES", "pos": "DD" },
+        { "nome": "Stefan Savić", "numero": 15, "pais": "ME", "pos": "DC" },
+        { "nome": "Diego Godín", "numero": 2, "pais": "UY", "pos": "DC" },
+        { "nome": "Filipe Luís", "numero": 3, "pais": "BR", "pos": "DE" },
+        { "nome": "Saúl", "numero": 17, "pais": "ES", "pos": "MD" },
+        { "nome": "Gabi", "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Augusto Fernández", "numero": 12, "pais": "AR", "pos": "MC" },
+        { "nome": "Koke", "numero": 6, "pais": "ES", "pos": "ME" },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "PL" },
+        { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Lucas Hernandez", "numero": 19, "minuto": 109, "pais": "FR" },
+        { "nome": "Yannick Carrasco", "numero": 21, "minuto": 46, "pais": "BE", "golos": [{ "minuto": 79 }] },
+        { "nome": "Thomas Partey", "numero": 22, "minuto": 116, "pais": "GH" }
+      ],
+      "nao_utilizados": ["Miguel Ángel Moyá", "José Giménez", { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] }, "Ángel Correa"]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "ucl-2014-final",
+  "modos": ["final", "equipa:real-madrid", "equipa:atletico"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "titulo": "La Décima",
+  "data": "2014-05-24",
+  "estadio": "Estádio da Luz, Lisboa",
+  "resultado": "Real Madrid 4–1 Atlético de Madrid (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2014_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 15, "pais": "ES", "pos": "DD" },
+        { "nome": "Raphaël Varane", "numero": 2, "pais": "FR", "pos": "DC" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DC", "golos": [{ "minuto": "90+3" }] },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Luka Modrić", "numero": 19, "pais": "HR", "pos": "MD" },
+        { "nome": "Sami Khedira", "numero": 6, "pais": "DE", "pos": "MC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 22, "pais": "AR", "pos": "ME" },
+        { "nome": "Gareth Bale", "numero": 11, "pais": "GB-WLS", "pos": "ED", "golos": [{ "minuto": 110 }] },
+        { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "EE",
+          "golos": [{ "minuto": 120, "penalti": true }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Marcelo", "numero": 12, "minuto": 59, "pais": "BR", "golos": [{ "minuto": 118 }] },
+        { "nome": "Isco", "numero": 23, "minuto": 59, "pais": "ES" },
+        { "nome": "Álvaro Morata", "numero": 21, "minuto": 79, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Diego López", "Pepe", "Álvaro Arbeloa", "Asier Illarramendi"]
+    },
+    {
+      "nome": "Atlético de Madrid",
+      "slug": "atletico",
+      "cor": "#cb3524",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Diego Simeone", "aceites": ["cholo", "cholo simeone"] },
+      "onze": [
+        { "nome": "Thibaut Courtois", "numero": 13, "pais": "BE", "pos": "GR" },
+        { "nome": "Juanfran", "numero": 20, "pais": "ES", "pos": "DD" },
+        { "nome": "Miranda", "numero": 23, "pais": "BR", "pos": "DC" },
+        { "nome": "Diego Godín", "numero": 2, "pais": "UY", "pos": "DC", "golos": [{ "minuto": 36 }] },
+        { "nome": "Filipe Luís", "numero": 3, "pais": "BR", "pos": "DE" },
+        { "nome": "Raúl García", "numero": 8, "pais": "ES", "pos": "MD" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 5, "pais": "PT", "pos": "MC" },
+        { "nome": "Gabi", "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Koke", "numero": 6, "pais": "ES", "pos": "ME" },
+        { "nome": "Diego Costa", "numero": 19, "pais": "ES", "pos": "PL" },
+        { "nome": "David Villa", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Toby Alderweireld", "numero": 12, "minuto": 83, "pais": "BE" },
+        { "nome": "José Sosa", "numero": 24, "minuto": 66, "pais": "AR" },
+        { "nome": "Adrián", "aceites": ["Adrián López"], "numero": 7, "minuto": 9, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Dani Aranzubia", "Mario Suárez", "Cristian Rodríguez", "Diego"]
+    }
+  ]
+}

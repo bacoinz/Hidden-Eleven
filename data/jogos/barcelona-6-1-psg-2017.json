@@ -1,0 +1,79 @@
+{
+  "id": "barcelona-6-1-psg-2017",
+  "modos": ["classico", "equipa:barcelona", "equipa:psg"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Oitavos de final (2.ª mão)",
+  "titulo": "La Remontada",
+  "data": "2017-03-08",
+  "estadio": "Camp Nou, Barcelona",
+  "resultado": "Barcelona 6–1 Paris Saint-Germain",
+  "fonte": "https://en.wikipedia.org/wiki/FC_Barcelona_6%E2%80%931_Paris_Saint-Germain_FC",
+  "equipas": [
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "3-1-2-3-1",
+      "treinador": { "nome": "Luis Enrique", "aceites": ["lucho"] },
+      "onze": [
+        { "nome": "Marc-André ter Stegen", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Samuel Umtiti", "numero": 23, "pais": "FR", "pos": "DC" },
+        { "nome": "Sergio Busquets", "numero": 5, "pais": "ES", "pos": "MDC" },
+        { "nome": "Ivan Rakitić", "numero": 4, "pais": "HR", "pos": "MD" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "ME" },
+        {
+          "nome": "Lionel Messi",
+          "aceites": ["leo messi", "leo"],
+          "numero": 10,
+          "pais": "AR",
+          "pos": "MO",
+          "golos": [{ "minuto": 50, "penalti": true }]
+        },
+        { "nome": "Rafinha", "numero": 12, "pais": "BR", "pos": "ED" },
+        { "nome": "Luis Suárez", "numero": 9, "pais": "UY", "pos": "PL", "golos": [{ "minuto": 3 }] },
+        {
+          "nome": "Neymar",
+          "aceites": ["neymar jr"],
+          "numero": 11,
+          "pais": "BR",
+          "pos": "EE",
+          "golos": [{ "minuto": 88 }, { "minuto": "90+1", "penalti": true }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Sergi Roberto", "numero": 20, "minuto": 76, "pais": "ES", "golos": [{ "minuto": "90+5" }] },
+        { "nome": "Arda Turan", "numero": 7, "minuto": 65, "pais": "TR" },
+        { "nome": "André Gomes", "numero": 21, "minuto": 84, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Jasper Cillessen", "Jordi Alba", "Lucas Digne", "Paco Alcácer"]
+    },
+    {
+      "nome": "Paris Saint-Germain",
+      "slug": "psg",
+      "cor": "#004170",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Unai Emery" },
+      "onze": [
+        { "nome": "Kevin Trapp", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Thomas Meunier", "numero": 12, "pais": "BE", "pos": "DD" },
+        { "nome": "Marquinhos", "numero": 5, "pais": "BR", "pos": "DC" },
+        { "nome": "Thiago Silva", "aceites": ["thiago"], "numero": 2, "pais": "BR", "pos": "DC" },
+        { "nome": "Layvin Kurzawa", "numero": 20, "pais": "FR", "pos": "DE", "golos": [{ "minuto": 40, "autogolo": true }] },
+        { "nome": "Adrien Rabiot", "numero": 25, "pais": "FR", "pos": "MC" },
+        { "nome": "Blaise Matuidi", "numero": 14, "pais": "FR", "pos": "MC" },
+        { "nome": "Lucas Moura", "numero": 7, "pais": "BR", "pos": "ED" },
+        { "nome": "Marco Verratti", "numero": 6, "pais": "IT", "pos": "MO" },
+        { "nome": "Julian Draxler", "numero": 23, "pais": "DE", "pos": "EE" },
+        { "nome": "Edinson Cavani", "numero": 9, "pais": "UY", "pos": "PL", "golos": [{ "minuto": 62 }] }
+      ],
+      "suplentes": [
+        { "nome": "Serge Aurier", "numero": 19, "minuto": 75, "pais": "CI" },
+        { "nome": "Grzegorz Krychowiak", "numero": 4, "minuto": "90+3", "pais": "PL" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 55, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Alphonse Areola", "Presnel Kimpembe", "Javier Pastore", "Hatem Ben Arfa"]
+    }
+  ]
+}

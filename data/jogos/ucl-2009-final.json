@@ -1,0 +1,60 @@
+{
+  "id": "ucl-2009-final",
+  "modos": ["final", "equipa:barcelona", "equipa:man-utd"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2009-05-27",
+  "estadio": "Stadio Olimpico, Roma",
+  "resultado": "Barcelona 2–0 Manchester United",
+  "fonte": "https://en.wikipedia.org/wiki/2009_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Víctor Valdés", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DD" },
+        { "nome": "Yaya Touré", "numero": 24, "pais": "CI", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Sylvinho", "numero": 16, "pais": "BR", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 28, "pais": "ES", "pos": "MDC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "pais": "ES", "pos": "MC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "ED", "golos": [{ "minuto": 70 }] },
+        { "nome": "Thierry Henry", "numero": 14, "pais": "FR", "pos": "EE" },
+        { "nome": "Samuel Eto'o", "numero": 9, "pais": "CM", "pos": "PL", "golos": [{ "minuto": 10 }] }
+      ],
+      "suplentes": [{ "nome": "Seydou Keita", "numero": 15, "minuto": 72, "pais": "ML" }, { "nome": "Pedro", "numero": 27, "minuto": "90+2", "pais": "ES" }],
+      "nao_utilizados": ["José Manuel Pinto", "Martín Cáceres", "Marc Muniesa", "Eiður Guðjohnsen", { "nome": "Bojan", "aceites": ["Bojan Krkić"] }]
+    },
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Sir Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson"] },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "John O'Shea", "numero": 22, "pais": "IE", "pos": "DD" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Nemanja Vidić", "numero": 15, "pais": "RS", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Anderson", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Michael Carrick", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Ryan Giggs", "numero": 11, "pais": "GB-WLS", "pos": "MC" },
+        { "nome": "Park Ji-sung", "numero": 13, "pais": "KR", "pos": "ED" },
+        { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paul Scholes", "numero": 18, "minuto": 75, "pais": "GB-ENG" },
+        { "nome": "Dimitar Berbatov", "numero": 9, "minuto": 66, "pais": "BG" },
+        { "nome": "Carlos Tevez", "numero": 32, "minuto": 46, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Tomasz Kuszczak", "Rafael", "Jonny Evans", "Nani"]
+    }
+  ]
+}

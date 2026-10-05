@@ -1,0 +1,60 @@
+{
+  "id": "ucl-2010-final",
+  "modos": ["final", "equipa:bayern", "equipa:inter"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2010-05-22",
+  "estadio": "Santiago Bernabéu, Madrid",
+  "resultado": "Bayern Munique 0–2 Inter",
+  "fonte": "https://en.wikipedia.org/wiki/2010_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "4-2-4",
+      "treinador": { "nome": "Louis van Gaal", "aceites": ["lvg"] },
+      "onze": [
+        { "nome": "Hans-Jörg Butt", "numero": 22, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 21, "pais": "DE", "pos": "DD" },
+        { "nome": "Daniel Van Buyten", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Martín Demichelis", "numero": 6, "pais": "AR", "pos": "DC" },
+        { "nome": "Holger Badstuber", "numero": 28, "pais": "DE", "pos": "DE" },
+        { "nome": "Mark van Bommel", "numero": 17, "pais": "NL", "pos": "MC" },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 31, "pais": "DE", "pos": "MC" },
+        { "nome": "Arjen Robben", "numero": 10, "pais": "NL", "pos": "ED" },
+        { "nome": "Hamit Altıntop", "numero": 8, "pais": "TR", "pos": "EE" },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "PL" },
+        { "nome": "Ivica Olić", "numero": 11, "pais": "HR", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Miroslav Klose", "numero": 18, "minuto": 63, "pais": "DE" }, { "nome": "Mario Gómez", "numero": 33, "minuto": 74, "pais": "DE" }],
+      "nao_utilizados": ["Michael Rensing", "Andreas Görlitz", "Diego Contento", "Danijel Pranjić", "Anatoliy Tymoshchuk"]
+    },
+    {
+      "nome": "Inter",
+      "slug": "inter",
+      "cor": "#0068a8",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Júlio César", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Maicon", "numero": 13, "pais": "BR", "pos": "DD" },
+        { "nome": "Lúcio", "numero": 6, "pais": "BR", "pos": "DC" },
+        { "nome": "Walter Samuel", "numero": 25, "pais": "AR", "pos": "DC" },
+        { "nome": "Cristian Chivu", "numero": 26, "pais": "RO", "pos": "DE" },
+        { "nome": "Javier Zanetti", "aceites": ["pupi"], "numero": 4, "pais": "AR", "pos": "MC" },
+        { "nome": "Esteban Cambiasso", "numero": 19, "pais": "AR", "pos": "MC" },
+        { "nome": "Wesley Sneijder", "numero": 10, "pais": "NL", "pos": "MO" },
+        { "nome": "Samuel Eto'o", "numero": 9, "pais": "CM", "pos": "ED" },
+        { "nome": "Diego Milito", "aceites": ["principe"], "numero": 22, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 35 }, { "minuto": 70 }] },
+        { "nome": "Goran Pandev", "numero": 27, "pais": "MK", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Marco Materazzi", "numero": 23, "minuto": "90+2", "pais": "IT" },
+        { "nome": "Dejan Stanković", "numero": 5, "minuto": 68, "pais": "RS" },
+        { "nome": "Sulley Muntari", "numero": 11, "minuto": 79, "pais": "GH" }
+      ],
+      "nao_utilizados": ["Francesco Toldo", "Iván Córdoba", "McDonald Mariga", "Mario Balotelli"]
+    }
+  ]
+}

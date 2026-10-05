@@ -1,0 +1,65 @@
+{
+  "id": "ucl-2005-final",
+  "modos": ["final", "equipa:milan", "equipa:liverpool"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "titulo": "O milagre de Istambul",
+  "data": "2005-05-25",
+  "estadio": "Atatürk Olympic Stadium, Istambul",
+  "resultado": "Milan 3–3 Liverpool (2–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2005_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Milan",
+      "slug": "milan",
+      "cor": "#d4021d",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
+      "onze": [
+        { "nome": "Dida", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Cafu", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Jaap Stam", "numero": 31, "pais": "NL", "pos": "DC" },
+        { "nome": "Alessandro Nesta", "numero": 13, "pais": "IT", "pos": "DC" },
+        { "nome": "Paolo Maldini", "numero": 3, "pais": "IT", "pos": "DE", "golos": [{ "minuto": 1 }] },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MDC" },
+        { "nome": "Gennaro Gattuso", "aceites": ["rino gattuso"], "numero": 8, "pais": "IT", "pos": "MD" },
+        { "nome": "Clarence Seedorf", "numero": 20, "pais": "NL", "pos": "ME" },
+        { "nome": "Kaká", "numero": 22, "pais": "BR", "pos": "MO" },
+        { "nome": "Andriy Shevchenko", "aceites": ["sheva"], "numero": 7, "pais": "UA", "pos": "PL" },
+        { "nome": "Hernán Crespo", "numero": 11, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 39 }, { "minuto": 44 }] }
+      ],
+      "suplentes": [
+        { "nome": "Rui Costa", "numero": 10, "minuto": 112, "pais": "PT" },
+        { "nome": "Serginho", "numero": 27, "minuto": 86, "pais": "BR" },
+        { "nome": "Jon Dahl Tomasson", "numero": 15, "minuto": 85, "pais": "DK" }
+      ],
+      "nao_utilizados": ["Christian Abbiati", "Kakha Kaladze", "Alessandro Costacurta", "Vikash Dhorasoo"]
+    },
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Rafael Benítez", "aceites": ["rafa benitez", "benitez"] },
+      "onze": [
+        { "nome": "Jerzy Dudek", "numero": 1, "pais": "PL", "pos": "GR" },
+        { "nome": "Steve Finnan", "numero": 3, "pais": "IE", "pos": "DD" },
+        { "nome": "Jamie Carragher", "numero": 23, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Sami Hyypiä", "numero": 4, "pais": "FI", "pos": "DC" },
+        { "nome": "Djimi Traoré", "numero": 21, "pais": "ML", "pos": "DE" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC", "golos": [{ "minuto": 60 }] },
+        { "nome": "Luis García", "numero": 10, "pais": "ES", "pos": "MD" },
+        { "nome": "Steven Gerrard", "numero": 8, "pais": "GB-ENG", "pos": "MC", "golos": [{ "minuto": 54 }] },
+        { "nome": "John Arne Riise", "numero": 6, "pais": "NO", "pos": "ME" },
+        { "nome": "Harry Kewell", "numero": 7, "pais": "AU", "pos": "PL" },
+        { "nome": "Milan Baroš", "numero": 5, "pais": "CZ", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 46, "pais": "DE" },
+        { "nome": "Djibril Cissé", "numero": 9, "minuto": 85, "pais": "FR" },
+        { "nome": "Vladimír Šmicer", "numero": 11, "minuto": 23, "pais": "CZ", "golos": [{ "minuto": 56 }] }
+      ],
+      "nao_utilizados": ["Scott Carson", "Josemi", { "nome": "Antonio Núñez", "aceites": ["Antonio Núñez Tena"] }, "Igor Bišćan"]
+    }
+  ]
+}

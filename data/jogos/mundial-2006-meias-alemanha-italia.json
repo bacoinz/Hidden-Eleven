@@ -1,0 +1,85 @@
+{
+  "id": "mundial-2006-meias-alemanha-italia",
+  "modos": ["classico", "equipa:alemanha", "equipa:italia"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Meia-final",
+  "selecoes": true,
+  "data": "2006-07-04",
+  "estadio": "Westfalenstadion, Dortmund",
+  "resultado": "Alemanha 0–2 Itália (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jürgen Klinsmann" },
+      "onze": [
+        { "nome": "Jens Lehmann", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Arne Friedrich", "numero": 3, "pais": "DE", "pos": "DD" },
+        { "nome": "Per Mertesacker", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DE" },
+        { "nome": "Bernd Schneider", "numero": 19, "pais": "DE", "pos": "MD" },
+        { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MC" },
+        { "nome": "Sebastian Kehl", "numero": 5, "pais": "DE", "pos": "MC" },
+        { "nome": "Tim Borowski", "numero": 18, "pais": "DE", "pos": "ME" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" },
+        { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "minuto": 73, "pais": "DE" },
+        { "nome": "David Odonkor", "numero": 22, "minuto": 83, "pais": "DE" },
+        { "nome": "Oliver Neuville", "numero": 10, "minuto": 111, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Marcell Jansen",
+        "Robert Huth",
+        "Jens Nowotny",
+        "Torsten Frings",
+        "Mike Hanke",
+        "Oliver Kahn",
+        "Gerald Asamoah",
+        "Thomas Hitzlsperger",
+        "Timo Hildebrand"
+      ]
+    },
+    {
+      "nome": "Itália",
+      "slug": "italia",
+      "cor": "#0066cc",
+      "formacao": "4-4-1-1",
+      "treinador": { "nome": "Marcello Lippi" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Gianluca Zambrotta", "numero": 19, "pais": "IT", "pos": "DD" },
+        { "nome": "Fabio Cannavaro", "numero": 5, "pais": "IT", "pos": "DC" },
+        { "nome": "Marco Materazzi", "numero": 23, "pais": "IT", "pos": "DC" },
+        { "nome": "Fabio Grosso", "numero": 3, "pais": "IT", "pos": "DE", "golos": [{ "minuto": 119 }] },
+        { "nome": "Mauro Camoranesi", "numero": 16, "pais": "IT", "pos": "MD" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MC" },
+        { "nome": "Gennaro Gattuso", "aceites": ["rino gattuso"], "numero": 8, "pais": "IT", "pos": "MC" },
+        { "nome": "Simone Perrotta", "numero": 20, "pais": "IT", "pos": "ME" },
+        { "nome": "Francesco Totti", "numero": 10, "pais": "IT", "pos": "MO" },
+        { "nome": "Luca Toni", "numero": 9, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 74, "pais": "IT" },
+        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 91, "pais": "IT" },
+        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 7, "minuto": 104, "pais": "IT", "golos": [{ "minuto": "120+1" }] }
+      ],
+      "nao_utilizados": [
+        "Cristian Zaccardo",
+        "Daniele De Rossi",
+        "Andrea Barzagli",
+        "Angelo Peruzzi",
+        "Alessandro Nesta",
+        "Marco Amelia",
+        "Simone Barone",
+        { "nome": "Filippo Inzaghi", "aceites": ["pippo inzaghi", "pippo"] },
+        "Massimo Oddo"
+      ]
+    }
+  ]
+}

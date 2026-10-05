@@ -1,0 +1,93 @@
+{
+  "id": "mundial-2018-portugal-espanha",
+  "modos": ["classico", "equipa:portugal", "equipa:espanha"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "titulo": "O hat-trick de Cristiano Ronaldo",
+  "selecoes": true,
+  "data": "2018-06-15",
+  "estadio": "Fisht Olympic Stadium, Sochi",
+  "resultado": "Portugal 3–3 Espanha",
+  "fonte": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric", "aceites": ["cedric", "Cédric Soares"], "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "José Fonte", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 11, "pais": "PT", "pos": "ED" },
+        { "nome": "Gonçalo Guedes", "numero": 17, "pais": "PT", "pos": "MO" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 16, "pais": "PT", "pos": "EE" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "PL",
+          "golos": [{ "minuto": 4, "penalti": true }, { "minuto": 44 }, { "minuto": 88 }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "João Mário", "numero": 10, "minuto": 68, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 69, "pais": "PT" },
+        { "nome": "André Silva", "numero": 9, "minuto": 80, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "Manuel Fernandes",
+        "Anthony Lopes",
+        "Rúben Dias",
+        "Ricardo Pereira",
+        "Gelson Martins",
+        "Mário Rui",
+        "Beto",
+        { "nome": "Adrien Silva", "aceites": ["adrien"] }
+      ]
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Fernando Hierro" },
+      "onze": [
+        { "nome": "David de Gea", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Nacho", "numero": 4, "pais": "ES", "pos": "DD", "golos": [{ "minuto": 58 }] },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DC" },
+        { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 5, "pais": "ES", "pos": "MC" },
+        { "nome": "Koke", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "ED" },
+        { "nome": "Isco", "numero": 22, "pais": "ES", "pos": "MO" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" },
+        { "nome": "Diego Costa", "numero": 19, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 24 }, { "minuto": 55 }] }
+      ],
+      "suplentes": [
+        { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"], "numero": 10, "minuto": 70, "pais": "ES" },
+        { "nome": "Iago Aspas", "numero": 17, "minuto": 77, "pais": "ES" },
+        { "nome": "Lucas Vázquez", "numero": 11, "minuto": 86, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Dani Carvajal",
+        "Saúl",
+        "Rodrigo",
+        "Álvaro Odriozola",
+        "Kepa Arrizabalaga",
+        "César Azpilicueta",
+        "Nacho Monreal",
+        "Marco Asensio",
+        "Pepe Reina"
+      ]
+    }
+  ]
+}

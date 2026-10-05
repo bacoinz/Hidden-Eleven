@@ -1,0 +1,65 @@
+{
+  "id": "ucl-2011-final",
+  "modos": ["final", "equipa:barcelona", "equipa:man-utd"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2011-05-28",
+  "estadio": "Wembley Stadium, Londres",
+  "resultado": "Barcelona 3–1 Manchester United",
+  "fonte": "https://en.wikipedia.org/wiki/2011_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Víctor Valdés", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Alves", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Eric Abidal", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "pais": "ES", "pos": "MC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "ED", "golos": [{ "minuto": 69 }] },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 54 }] },
+        { "nome": "Pedro", "numero": 17, "pais": "ES", "pos": "EE", "golos": [{ "minuto": 27 }] }
+      ],
+      "suplentes": [
+        { "nome": "Carles Puyol", "numero": 5, "minuto": 88, "pais": "ES" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 86, "pais": "ML" },
+        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": "90+2", "pais": "NL" }
+      ],
+      "nao_utilizados": [
+        { "nome": "Oier", "aceites": ["Oier Olazábal"] },
+        "Adriano",
+        { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"] },
+        { "nome": "Bojan", "aceites": ["Bojan Krkić"] }
+      ]
+    },
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "Fábio", "numero": 20, "pais": "BR", "pos": "DD" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Nemanja Vidić", "numero": 15, "pais": "RS", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Antonio Valencia", "numero": 25, "pais": "EC", "pos": "MD" },
+        { "nome": "Michael Carrick", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Ryan Giggs", "numero": 11, "pais": "GB-WLS", "pos": "MC" },
+        { "nome": "Park Ji-sung", "numero": 13, "pais": "KR", "pos": "ME" },
+        { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL", "golos": [{ "minuto": 34 }] },
+        { "nome": "Javier Hernández", "numero": 14, "pais": "MX", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Nani", "numero": 17, "minuto": 69, "pais": "PT" }, { "nome": "Paul Scholes", "numero": 18, "minuto": 77, "pais": "GB-ENG" }],
+      "nao_utilizados": ["Tomasz Kuszczak", "Chris Smalling", "Anderson", "Darren Fletcher", "Michael Owen"]
+    }
+  ]
+}

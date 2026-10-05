@@ -1,0 +1,59 @@
+{
+  "id": "ucl-2012-final",
+  "modos": ["final", "equipa:bayern", "equipa:chelsea"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2012-05-19",
+  "estadio": "Allianz Arena, Munique",
+  "resultado": "Bayern Munique 1–1 Chelsea (3–4 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2012_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jupp Heynckes" },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 21, "pais": "DE", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Anatoliy Tymoshchuk", "numero": 44, "pais": "UA", "pos": "DC" },
+        { "nome": "Diego Contento", "numero": 26, "pais": "DE", "pos": "DE" },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 31, "pais": "DE", "pos": "MDC" },
+        { "nome": "Toni Kroos", "numero": 39, "pais": "DE", "pos": "MDC" },
+        { "nome": "Arjen Robben", "numero": 10, "pais": "NL", "pos": "ED" },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "MO", "golos": [{ "minuto": 83 }] },
+        { "nome": "Franck Ribéry", "numero": 7, "pais": "FR", "pos": "EE" },
+        { "nome": "Mario Gómez", "numero": 33, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Daniel Van Buyten", "numero": 5, "minuto": 87, "pais": "BE" }, { "nome": "Ivica Olić", "numero": 11, "minuto": 97, "pais": "HR" }],
+      "nao_utilizados": ["Hans-Jörg Butt", "Rafinha", "Takashi Usami", "Danijel Pranjić", "Nils Petersen"]
+    },
+    {
+      "nome": "Chelsea",
+      "slug": "chelsea",
+      "cor": "#034694",
+      "formacao": "4-1-1-3-1",
+      "treinador": { "nome": "Roberto Di Matteo" },
+      "onze": [
+        { "nome": "Petr Čech", "numero": 1, "pais": "CZ", "pos": "GR" },
+        { "nome": "José Bosingwa", "numero": 17, "pais": "PT", "pos": "DD" },
+        { "nome": "David Luiz", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Gary Cahill", "numero": 24, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "Mikel John Obi", "numero": 12, "pais": "NG", "pos": "MDC" },
+        { "nome": "Frank Lampard", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Salomon Kalou", "numero": 21, "pais": "CI", "pos": "ED" },
+        { "nome": "Juan Mata", "numero": 10, "pais": "ES", "pos": "MO" },
+        { "nome": "Ryan Bertrand", "numero": 34, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Didier Drogba", "numero": 11, "pais": "CI", "pos": "PL", "golos": [{ "minuto": 88 }] }
+      ],
+      "suplentes": [
+        { "nome": "Florent Malouda", "numero": 15, "minuto": 73, "pais": "FR" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 84, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Ross Turnbull", "Paulo Ferreira", "Michael Essien", "Oriol Romeu", "Daniel Sturridge"]
+    }
+  ]
+}

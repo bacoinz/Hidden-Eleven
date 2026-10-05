@@ -1,0 +1,71 @@
+{
+  "id": "ucl-2017-final",
+  "modos": ["final", "equipa:juventus", "equipa:real-madrid"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2017-06-03",
+  "estadio": "Millennium Stadium, Cardiff",
+  "resultado": "Juventus 1–4 Real Madrid",
+  "fonte": "https://en.wikipedia.org/wiki/2017_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Juventus",
+      "slug": "juventus",
+      "cor": "#1a1a1a",
+      "formacao": "3-4-1-2",
+      "treinador": { "nome": "Massimiliano Allegri" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Andrea Barzagli", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC" },
+        { "nome": "Giorgio Chiellini", "numero": 3, "pais": "IT", "pos": "DC" },
+        { "nome": "Dani Alves", "numero": 23, "pais": "BR", "pos": "MD" },
+        { "nome": "Miralem Pjanić", "numero": 5, "pais": "BA", "pos": "MC" },
+        { "nome": "Sami Khedira", "numero": 6, "pais": "DE", "pos": "MC" },
+        { "nome": "Alex Sandro", "numero": 12, "pais": "BR", "pos": "ME" },
+        { "nome": "Paulo Dybala", "numero": 21, "pais": "AR", "pos": "MO" },
+        { "nome": "Gonzalo Higuaín", "aceites": ["pipita"], "numero": 9, "pais": "AR", "pos": "PL" },
+        { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 27 }] }
+      ],
+      "suplentes": [
+        { "nome": "Juan Cuadrado", "numero": 7, "minuto": 66, "pais": "CO" },
+        { "nome": "Claudio Marchisio", "numero": 8, "minuto": 71, "pais": "IT" },
+        { "nome": "Mario Lemina", "numero": 18, "minuto": 78, "pais": "GA" }
+      ],
+      "nao_utilizados": ["Neto", "Medhi Benatia", "Stephan Lichtsteiner", "Kwadwo Asamoah"]
+    },
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Zinedine Zidane", "aceites": ["zidane", "zizou"] },
+      "onze": [
+        { "nome": "Keylor Navas", "numero": 1, "pais": "CR", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 2, "pais": "ES", "pos": "DD" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DC" },
+        { "nome": "Raphaël Varane", "numero": 5, "pais": "FR", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Casemiro", "numero": 14, "pais": "BR", "pos": "MDC", "golos": [{ "minuto": 61 }] },
+        { "nome": "Toni Kroos", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Luka Modrić", "numero": 19, "pais": "HR", "pos": "MC" },
+        { "nome": "Isco", "numero": 22, "pais": "ES", "pos": "ED" },
+        { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "EE",
+          "golos": [{ "minuto": 20 }, { "minuto": 64 }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Marco Asensio", "numero": 20, "minuto": 82, "pais": "ES", "golos": [{ "minuto": 90 }] },
+        { "nome": "Gareth Bale", "numero": 11, "minuto": 77, "pais": "GB-WLS" },
+        { "nome": "Álvaro Morata", "numero": 21, "minuto": 89, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Kiko Casilla", "Nacho", "Danilo", "Mateo Kovačić"]
+    }
+  ]
+}

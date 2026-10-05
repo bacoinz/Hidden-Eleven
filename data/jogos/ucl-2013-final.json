@@ -1,0 +1,62 @@
+{
+  "id": "ucl-2013-final",
+  "modos": ["final", "equipa:dortmund", "equipa:bayern"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2013-05-25",
+  "estadio": "Wembley Stadium, Londres",
+  "resultado": "Borussia Dortmund 1–2 Bayern Munique",
+  "fonte": "https://en.wikipedia.org/wiki/2013_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Borussia Dortmund",
+      "slug": "dortmund",
+      "cor": "#fde100",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
+      "onze": [
+        { "nome": "Roman Weidenfeller", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Łukasz Piszczek", "numero": 26, "pais": "PL", "pos": "DD" },
+        { "nome": "Neven Subotić", "numero": 4, "pais": "RS", "pos": "DC" },
+        { "nome": "Mats Hummels", "numero": 15, "pais": "DE", "pos": "DC" },
+        { "nome": "Marcel Schmelzer", "numero": 29, "pais": "DE", "pos": "DE" },
+        { "nome": "Sven Bender", "numero": 6, "pais": "DE", "pos": "MC" },
+        { "nome": "İlkay Gündoğan", "numero": 8, "pais": "DE", "pos": "MC", "golos": [{ "minuto": 68, "penalti": true }] },
+        { "nome": "Jakub Błaszczykowski", "aceites": ["kuba"], "numero": 16, "pais": "PL", "pos": "ED" },
+        { "nome": "Marco Reus", "numero": 11, "pais": "DE", "pos": "MO" },
+        { "nome": "Kevin Großkreutz", "numero": 19, "pais": "DE", "pos": "EE" },
+        { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nuri Şahin", "numero": 18, "minuto": "90+2", "pais": "TR" },
+        { "nome": "Julian Schieber", "numero": 23, "minuto": 90, "pais": "DE" }
+      ],
+      "nao_utilizados": ["Mitchell Langerak", "Felipe Santana", "Sebastian Kehl", "Moritz Leitner", "Oliver Kirch"]
+    },
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jupp Heynckes" },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 21, "pais": "DE", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Dante", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "David Alaba", "numero": 27, "pais": "AT", "pos": "DE" },
+        { "nome": "Javi Martínez", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 31, "pais": "DE", "pos": "MC" },
+        { "nome": "Arjen Robben", "numero": 10, "pais": "NL", "pos": "ED", "golos": [{ "minuto": 89 }] },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "MO" },
+        { "nome": "Franck Ribéry", "numero": 7, "pais": "FR", "pos": "EE" },
+        { "nome": "Mario Mandžukić", "numero": 9, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 60 }] }
+      ],
+      "suplentes": [
+        { "nome": "Luiz Gustavo", "numero": 30, "minuto": "90+1", "pais": "BR" },
+        { "nome": "Mario Gómez", "numero": 33, "minuto": "90+4", "pais": "DE" }
+      ],
+      "nao_utilizados": ["Tom Starke", "Daniel Van Buyten", "Xherdan Shaqiri", "Anatoliy Tymoshchuk", "Claudio Pizarro"]
+    }
+  ]
+}

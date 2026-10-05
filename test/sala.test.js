@@ -140,6 +140,61 @@ describe('partida', () => {
   });
 });
 
+describe('terminar a ronda com o onze completo', () => {
+  function descobrirOnze(sala, jogadorId) {
+    const r = sala.partida.ronda;
+    const jogo = JOGOS.get(r.jogoId);
+    let t = r.inicio + 1000;
+    for (const e of jogo.equipas) {
+      for (const p of e.onze) {
+        expect(S.palpite(sala, jogadorId, p.nome, t).resposta.r).toBe('certo');
+        t += 200;
+      }
+    }
+    return t;
+  }
+
+  it('só se pode pedir depois de o onze estar todo descoberto', () => {
+    const sala = salaCom(2);
+    const anf = sala.jogadores[0].id;
+    S.comecar(sala, anf, T0, primeiro);
+    S.avancar(sala, sala.partida.ronda.inicio);
+    expect(S.votarTerminar(sala, anf, sala.partida.ronda.inicio + 500).erro).toMatch(/onze/);
+  });
+
+  it('a solo termina logo, sem bónus de fecho', () => {
+    const sala = salaCom(1, { solo: true });
+    const eu = sala.jogadores[0].id;
+    S.comecar(sala, eu, T0, primeiro);
+    S.avancar(sala, sala.partida.ronda.inicio);
+    const t = descobrirOnze(sala, eu);
+    expect(S.estadoPublico(sala, t).ronda.onzeCompleto).toBe(true);
+    expect(S.votarTerminar(sala, eu, t)).toEqual({ ok: true });
+    expect(S.faseVisivel(sala)).toBe('fim');
+    expect(sala.feed.at(-1)).toMatchObject({ tipo: 'fim', motivo: 'votacao' });
+    expect(Object.values(sala.partida.ronda.descobertas).some((d) => d.bonus)).toBe(false);
+  });
+
+  it('em multijogador todos os ligados têm de confirmar; quem sai deixa de contar', () => {
+    const sala = salaCom(3);
+    const [a, b, c] = sala.jogadores.map((j) => j.id);
+    S.comecar(sala, a, T0, primeiro);
+    S.avancar(sala, sala.partida.ronda.inicio);
+    const t = descobrirOnze(sala, a);
+    S.votarTerminar(sala, a, t);
+    S.votarTerminar(sala, b, t);
+    expect(S.faseVisivel(sala)).toBe('ronda');
+    expect(S.estadoPublico(sala, t).ronda.votosTerminar).toEqual([a, b]);
+    // Carregar outra vez cancela.
+    S.votarTerminar(sala, b, t);
+    expect(S.estadoPublico(sala, t).ronda.votosTerminar).toEqual([a]);
+    S.votarTerminar(sala, b, t);
+    // O terceiro sai: já não é preciso o voto dele.
+    S.desligar(sala, c, t + 100);
+    expect(S.faseVisivel(sala)).toBe('fim');
+  });
+});
+
 describe('Equipa Mítica', () => {
   const original = REGRAS.minimoJogosEquipa;
   beforeEach(() => {
@@ -155,7 +210,8 @@ describe('Equipa Mítica', () => {
     S.configurar(sala, anf, { conteudo: 'equipa', equipa: 'porto', rondas: 3 });
     expect(sala.config).toEqual({ conteudo: 'equipa', equipa: 'porto', rondas: 3 });
     S.comecar(sala, anf, T0, primeiro);
-    expect(sala.partida.total).toBe(1);
+    const jogosPorto = [...JOGOS.values()].filter((j) => j.modos.includes('equipa:porto')).length;
+    expect(sala.partida.total).toBe(Math.min(3, jogosPorto));
     const e = S.estadoPublico(sala, T0);
     expect(e.ronda.equipas).toHaveLength(1);
     expect(e.ronda.equipas[0].nome).toBe('FC Porto');

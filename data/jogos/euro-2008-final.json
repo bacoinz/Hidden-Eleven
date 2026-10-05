@@ -1,0 +1,86 @@
+{
+  "id": "euro-2008-final",
+  "modos": ["final", "equipa:alemanha", "equipa:espanha"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2008-06-29",
+  "estadio": "Ernst-Happel-Stadion, Viena",
+  "resultado": "Alemanha 0–1 Espanha",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2008_final",
+  "equipas": [
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Joachim Löw", "aceites": ["loew", "jogi"] },
+      "onze": [
+        { "nome": "Jens Lehmann", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Arne Friedrich", "numero": 3, "pais": "DE", "pos": "DD" },
+        { "nome": "Per Mertesacker", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DE" },
+        { "nome": "Torsten Frings", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Thomas Hitzlsperger", "numero": 15, "pais": "DE", "pos": "MC" },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "pais": "DE", "pos": "ED" },
+        { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MO" },
+        { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "EE" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Marcell Jansen", "numero": 2, "minuto": 46, "pais": "DE" },
+        { "nome": "Kevin Kurányi", "numero": 22, "minuto": 58, "pais": "DE" },
+        { "nome": "Mario Gómez", "numero": 9, "minuto": 79, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Clemens Fritz",
+        "Heiko Westermann",
+        "Simon Rolfes",
+        "Oliver Neuville",
+        "Robert Enke",
+        "Piotr Trochowski",
+        "Tim Borowski",
+        "David Odonkor",
+        "René Adler"
+      ]
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-1-4-1",
+      "treinador": { "nome": "Luis Aragonés" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DD" },
+        { "nome": "Carlos Marchena", "numero": 4, "pais": "ES", "pos": "DC" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Joan Capdevila", "numero": 11, "pais": "ES", "pos": "DE" },
+        { "nome": "Marcos Senna", "numero": 19, "pais": "ES", "pos": "MDC" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "MD" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "ME" },
+        { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 33 }] }
+      ],
+      "suplentes": [
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "minuto": 63, "pais": "ES" },
+        { "nome": "Santi Cazorla", "numero": 12, "minuto": 66, "pais": "ES" },
+        { "nome": "Dani Güiza", "numero": 17, "minuto": 78, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Raúl Albiol",
+        "Fernando Navarro",
+        "David Villa",
+        "Andrés Palop",
+        "Sergio García",
+        "Daniel Güiza",
+        "Álvaro Arbeloa",
+        "Juanito",
+        "Rubén de la Red",
+        "Pepe Reina"
+      ]
+    }
+  ]
+}

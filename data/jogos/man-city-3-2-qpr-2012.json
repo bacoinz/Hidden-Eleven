@@ -1,0 +1,63 @@
+{
+  "id": "man-city-3-2-qpr-2012",
+  "modos": ["classico", "equipa:man-city"],
+  "competicao": "Premier League",
+  "fase": "Última jornada",
+  "titulo": "Agüerooooo! (93:20)",
+  "data": "2012-05-12",
+  "estadio": "City of Manchester Stadium, Manchester",
+  "resultado": "Manchester City 3–2 QPR",
+  "fonte": "https://en.wikipedia.org/wiki/Manchester_City_F.C._3%E2%80%932_Queens_Park_Rangers_F.C.",
+  "equipas": [
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "cor": "#6cabdd",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Roberto Mancini" },
+      "onze": [
+        { "nome": "Joe Hart", "numero": 25, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Pablo Zabaleta", "numero": 5, "pais": "AR", "pos": "DD", "golos": [{ "minuto": 39 }, { "minuto": "90+2" }, { "minuto": "90+4" }] },
+        { "nome": "Vincent Kompany", "numero": 4, "pais": "BE", "pos": "DC" },
+        { "nome": "Joleon Lescott", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Gaël Clichy", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Samir Nasri", "numero": 19, "pais": "FR", "pos": "MD" },
+        { "nome": "Yaya Touré", "numero": 42, "pais": "CI", "pos": "MC" },
+        { "nome": "Gareth Barry", "numero": 18, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "ME" },
+        { "nome": "Carlos Tevez", "numero": 32, "pais": "AR", "pos": "PL" },
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nigel de Jong", "numero": 34, "minuto": 45, "pais": "NL" },
+        { "nome": "Edin Džeko", "numero": 10, "minuto": 69, "pais": "BA" },
+        { "nome": "Mario Balotelli", "numero": 45, "minuto": 76, "pais": "IT" }
+      ],
+      "nao_utilizados": ["Costel Pantilimon", "Micah Richards", "Aleksandar Kolarov", "James Milner"]
+    },
+    {
+      "nome": "QPR",
+      "cor": "#1d5ba4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Mark Hughes" },
+      "onze": [
+        { "nome": "Paddy Kenny", "numero": 1, "pais": "IE", "pos": "GR" },
+        { "nome": "Nedum Onuoha", "numero": 42, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Anton Ferdinand", "numero": 35, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Clint Hill", "numero": 3, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Taye Taiwo", "numero": 34, "pais": "NG", "pos": "DE" },
+        { "nome": "Jamie Mackie", "numero": 12, "pais": "GB-SCT", "pos": "MD" },
+        { "nome": "Shaun Derry", "numero": 4, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Joey Barton", "numero": 17, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Shaun Wright-Phillips", "numero": 32, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Djibril Cissé", "numero": 23, "pais": "FR", "pos": "PL", "golos": [{ "minuto": 48 }, { "minuto": 66 }] },
+        { "nome": "Bobby Zamora", "numero": 52, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Armand Traoré", "numero": 13, "minuto": 59, "pais": "SN" },
+        { "nome": "Jay Bothroyd", "numero": 10, "minuto": 76, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Radek Černý", "Danny Gabbidon", "Adel Taarabt", "Ákos Buzsáky", "DJ Campbell"]
+    }
+  ]
+}

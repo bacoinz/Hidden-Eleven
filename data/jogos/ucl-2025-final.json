@@ -1,0 +1,75 @@
+{
+  "id": "ucl-2025-final",
+  "modos": ["final", "equipa:psg", "equipa:inter"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2025-05-31",
+  "estadio": "Allianz Arena, Munique",
+  "resultado": "Paris Saint-Germain 5–0 Inter",
+  "fonte": "https://en.wikipedia.org/wiki/2025_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Paris Saint-Germain",
+      "slug": "psg",
+      "cor": "#004170",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis Enrique", "aceites": ["lucho"] },
+      "onze": [
+        { "nome": "Gianluigi Donnarumma", "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Achraf Hakimi", "numero": 2, "pais": "MA", "pos": "DD", "golos": [{ "minuto": 12 }] },
+        { "nome": "Marquinhos", "numero": 5, "pais": "BR", "pos": "DC" },
+        { "nome": "Willian Pacho", "numero": 51, "pais": "EC", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE" },
+        { "nome": "João Neves", "numero": 87, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Désiré Doué", "numero": 14, "pais": "FR", "pos": "ED", "golos": [{ "minuto": 20 }, { "minuto": 63 }] },
+        { "nome": "Ousmane Dembélé", "numero": 10, "pais": "FR", "pos": "PL" },
+        { "nome": "Khvicha Kvaratskhelia", "numero": 7, "pais": "GE", "pos": "EE", "golos": [{ "minuto": 73 }] }
+      ],
+      "suplentes": [
+        { "nome": "Lucas Hernandez", "numero": 21, "minuto": 78, "pais": "FR" },
+        { "nome": "Senny Mayulu", "numero": 24, "minuto": 84, "pais": "FR", "golos": [{ "minuto": 86 }] },
+        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 84, "pais": "FR" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 84, "pais": "PT" },
+        { "nome": "Bradley Barcola", "numero": 29, "minuto": 66, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Matvey Safonov",
+        "Arnau Tenas",
+        "Presnel Kimpembe",
+        "Lucas Beraldo",
+        { "nome": "Lee Kang-in", "aceites": ["lee", "kang in"] },
+        "Ibrahim Mbaye"
+      ]
+    },
+    {
+      "nome": "Inter",
+      "slug": "inter",
+      "cor": "#f4f4f4",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Simone Inzaghi ||" },
+      "onze": [
+        { "nome": "Yann Sommer", "numero": 1, "pais": "CH", "pos": "GR" },
+        { "nome": "Benjamin Pavard", "numero": 28, "pais": "FR", "pos": "DC" },
+        { "nome": "Francesco Acerbi", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Alessandro Bastoni", "numero": 95, "pais": "IT", "pos": "DC" },
+        { "nome": "Denzel Dumfries", "numero": 2, "pais": "NL", "pos": "MD" },
+        { "nome": "Nicolò Barella", "numero": 23, "pais": "IT", "pos": "MC" },
+        { "nome": "Hakan Çalhanoğlu", "numero": 20, "pais": "TR", "pos": "MC" },
+        { "nome": "Henrikh Mkhitaryan", "numero": 22, "pais": "AM", "pos": "MC" },
+        { "nome": "Federico Dimarco", "numero": 32, "pais": "IT", "pos": "ME" },
+        { "nome": "Marcus Thuram", "numero": 9, "pais": "FR", "pos": "PL" },
+        { "nome": "Lautaro Martínez", "aceites": ["lautaro"], "numero": 10, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Carlos Augusto", "numero": 30, "minuto": 62, "pais": "BR" },
+        { "nome": "Yann Aurel Bisseck", "numero": 31, "minuto": 53, "pais": "DE" },
+        { "nome": "Matteo Darmian", "numero": 36, "minuto": 62, "pais": "IT" },
+        { "nome": "Kristjan Asllani", "numero": 21, "minuto": 70, "pais": "AL" },
+        { "nome": "Nicola Zalewski", "numero": 59, "minuto": 53, "pais": "PL" }
+      ],
+      "nao_utilizados": ["Raffaele Di Gennaro", "Josep Martínez", "Stefan de Vrij", "Piotr Zieliński", "Davide Frattesi", "Marko Arnautović", "Mehdi Taremi"]
+    }
+  ]
+}

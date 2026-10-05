@@ -1,0 +1,60 @@
+{
+  "id": "ucl-2018-final",
+  "modos": ["final", "equipa:real-madrid", "equipa:liverpool"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2018-05-26",
+  "estadio": "NSC Olimpiyskiy, Kiev",
+  "resultado": "Real Madrid 3–1 Liverpool",
+  "fonte": "https://en.wikipedia.org/wiki/2018_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Zinedine Zidane", "aceites": ["zidane", "zizou"] },
+      "onze": [
+        { "nome": "Keylor Navas", "numero": 1, "pais": "CR", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 2, "pais": "ES", "pos": "DD" },
+        { "nome": "Raphaël Varane", "numero": 5, "pais": "FR", "pos": "DC" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Casemiro", "numero": 14, "pais": "BR", "pos": "MDC" },
+        { "nome": "Luka Modrić", "numero": 10, "pais": "HR", "pos": "MC" },
+        { "nome": "Toni Kroos", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Isco", "numero": 22, "pais": "ES", "pos": "MO" },
+        { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL", "golos": [{ "minuto": 51 }] },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nacho", "numero": 6, "minuto": 37, "pais": "ES" },
+        { "nome": "Marco Asensio", "numero": 20, "minuto": 89, "pais": "ES" },
+        { "nome": "Gareth Bale", "numero": 11, "minuto": 61, "pais": "GB-WLS", "golos": [{ "minuto": 63 }, { "minuto": 83 }] }
+      ],
+      "nao_utilizados": ["Kiko Casilla", "Théo Hernandez", "Mateo Kovačić", "Lucas Vázquez"]
+    },
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
+      "onze": [
+        { "nome": "Loris Karius", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Trent Alexander-Arnold", "numero": 66, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Dejan Lovren", "numero": 6, "pais": "HR", "pos": "DC" },
+        { "nome": "Virgil van Dijk", "aceites": ["vvd"], "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Andy Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },
+        { "nome": "James Milner", "numero": 7, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Jordan Henderson", "numero": 14, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Georginio Wijnaldum", "numero": 5, "pais": "NL", "pos": "MC" },
+        { "nome": "Mohamed Salah", "aceites": ["mo salah"], "numero": 11, "pais": "EG", "pos": "ED" },
+        { "nome": "Roberto Firmino", "numero": 9, "pais": "BR", "pos": "PL" },
+        { "nome": "Sadio Mané", "numero": 19, "pais": "SN", "pos": "EE", "golos": [{ "minuto": 55 }] }
+      ],
+      "suplentes": [{ "nome": "Adam Lallana", "numero": 20, "minuto": 31, "pais": "GB-ENG" }, { "nome": "Emre Can", "numero": 23, "minuto": 83, "pais": "DE" }],
+      "nao_utilizados": ["Simon Mignolet", "Nathaniel Clyne", "Ragnar Klavan", "Alberto Moreno", "Dominic Solanke"]
+    }
+  ]
+}

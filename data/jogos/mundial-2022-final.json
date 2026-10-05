@@ -1,0 +1,104 @@
+{
+  "id": "mundial-2022-final",
+  "modos": ["final", "equipa:argentina", "equipa:franca"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2022-12-18",
+  "estadio": "Lusail Stadium, Lusail",
+  "resultado": "Argentina 3–3 França (4–2 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Argentina",
+      "slug": "argentina",
+      "cor": "#75aadb",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Lionel Scaloni" },
+      "onze": [
+        { "nome": "Emiliano Martínez", "aceites": ["dibu", "dibu martinez"], "numero": 23, "pais": "AR", "pos": "GR" },
+        { "nome": "Nahuel Molina", "numero": 26, "pais": "AR", "pos": "DD" },
+        { "nome": "Cristian Romero", "numero": 13, "pais": "AR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 19, "pais": "AR", "pos": "DC" },
+        { "nome": "Nicolás Tagliafico", "numero": 3, "pais": "AR", "pos": "DE" },
+        { "nome": "Enzo Fernández", "aceites": ["enzo"], "numero": 24, "pais": "AR", "pos": "MDC" },
+        { "nome": "Alexis Mac Allister", "aceites": ["mac allister", "macallister"], "numero": 20, "pais": "AR", "pos": "MC" },
+        { "nome": "Rodrigo De Paul", "aceites": ["de paul"], "numero": 7, "pais": "AR", "pos": "MC" },
+        {
+          "nome": "Lionel Messi",
+          "aceites": ["leo messi", "leo"],
+          "numero": 10,
+          "pais": "AR",
+          "pos": "ED",
+          "golos": [{ "minuto": 23, "penalti": true }, { "minuto": 108 }]
+        },
+        { "nome": "Julián Alvarez", "aceites": ["julian", "la arana"], "numero": 9, "pais": "AR", "pos": "PL" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "pais": "AR", "pos": "EE", "golos": [{ "minuto": 36 }] }
+      ],
+      "suplentes": [
+        { "nome": "Marcos Acuña", "numero": 8, "minuto": 64, "pais": "AR" },
+        { "nome": "Gonzalo Montiel", "numero": 4, "minuto": 91, "pais": "AR" },
+        { "nome": "Leandro Paredes", "numero": 5, "minuto": 102, "pais": "AR" },
+        { "nome": "Lautaro Martínez", "aceites": ["lautaro"], "numero": 22, "minuto": 102, "pais": "AR" },
+        { "nome": "Germán Pezzella", "numero": 6, "minuto": 116, "pais": "AR" },
+        { "nome": "Paulo Dybala", "numero": 21, "minuto": "120+1", "pais": "AR" }
+      ],
+      "nao_utilizados": [
+        "Franco Armani",
+        "Juan Foyth",
+        "Gerónimo Rulli",
+        "Exequiel Palacios",
+        "Ángel Correa",
+        "Thiago Almada",
+        "Papu Gómez",
+        "Guido Rodríguez",
+        "Lisandro Martínez"
+      ]
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#1e3a8a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Hugo Lloris", "numero": 1, "pais": "FR", "pos": "GR" },
+        { "nome": "Jules Koundé", "numero": 5, "pais": "FR", "pos": "DD" },
+        { "nome": "Raphaël Varane", "numero": 4, "pais": "FR", "pos": "DC" },
+        { "nome": "Dayot Upamecano", "numero": 18, "pais": "FR", "pos": "DC" },
+        { "nome": "Théo Hernandez", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Aurélien Tchouaméni", "numero": 8, "pais": "FR", "pos": "MC" },
+        { "nome": "Adrien Rabiot", "numero": 14, "pais": "FR", "pos": "MC" },
+        { "nome": "Ousmane Dembélé", "numero": 11, "pais": "FR", "pos": "ED" },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "MO" },
+        {
+          "nome": "Kylian Mbappé",
+          "numero": 10,
+          "pais": "FR",
+          "pos": "EE",
+          "golos": [{ "minuto": 80, "penalti": true }, { "minuto": 81 }, { "minuto": 118, "penalti": true }]
+        },
+        { "nome": "Olivier Giroud", "numero": 9, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Randal Kolo Muani", "numero": 12, "minuto": 41, "pais": "FR" },
+        { "nome": "Marcus Thuram", "numero": 26, "minuto": 41, "pais": "FR" },
+        { "nome": "Kingsley Coman", "numero": 20, "minuto": 71, "pais": "FR" },
+        { "nome": "Eduardo Camavinga", "numero": 25, "minuto": 71, "pais": "FR" },
+        { "nome": "Youssouf Fofana", "numero": 13, "minuto": 96, "pais": "FR" },
+        { "nome": "Ibrahima Konaté", "numero": 24, "minuto": 113, "pais": "FR" },
+        { "nome": "Axel Disasi", "numero": 3, "minuto": "120+1", "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Benjamin Pavard",
+        "Mattéo Guendouzi",
+        "Jordan Veretout",
+        "Steve Mandanda",
+        "William Saliba",
+        "Karim Benzema",
+        "Lucas Hernandez",
+        "Alphonse Areola"
+      ]
+    }
+  ]
+}

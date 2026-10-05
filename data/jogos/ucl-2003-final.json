@@ -1,0 +1,64 @@
+{
+  "id": "ucl-2003-final",
+  "modos": ["final", "equipa:juventus", "equipa:milan"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2003-05-28",
+  "estadio": "Old Trafford, Manchester",
+  "resultado": "Juventus 0–0 Milan (2–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2003_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Juventus",
+      "slug": "juventus",
+      "cor": "#1a1a1a",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Marcello Lippi" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Lilian Thuram", "numero": 21, "pais": "FR", "pos": "DD" },
+        { "nome": "Ciro Ferrara", "numero": 2, "pais": "IT", "pos": "DC" },
+        { "nome": "Igor Tudor", "numero": 5, "pais": "HR", "pos": "DC" },
+        { "nome": "Paolo Montero", "numero": 4, "pais": "UY", "pos": "DE" },
+        { "nome": "Mauro Camoranesi", "numero": 16, "pais": "IT", "pos": "MD" },
+        { "nome": "Alessio Tacchinardi", "numero": 3, "pais": "IT", "pos": "MC" },
+        { "nome": "Edgar Davids", "numero": 26, "pais": "NL", "pos": "MC" },
+        { "nome": "Gianluca Zambrotta", "numero": 19, "pais": "IT", "pos": "ME" },
+        { "nome": "David Trezeguet", "numero": 17, "pais": "FR", "pos": "PL" },
+        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 10, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alessandro Birindelli", "numero": 15, "minuto": 42, "pais": "IT" },
+        { "nome": "Antonio Conte", "numero": 8, "minuto": 46, "pais": "IT" },
+        { "nome": "Marcelo Zalayeta", "numero": 25, "minuto": 65, "pais": "UY" }
+      ],
+      "nao_utilizados": ["Antonio Chimenti", "Gianluca Pessotto", "Mark Iuliano", "Marco Di Vaio"]
+    },
+    {
+      "nome": "Milan",
+      "slug": "milan",
+      "cor": "#d4021d",
+      "formacao": "4-3-1-2",
+      "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
+      "onze": [
+        { "nome": "Dida", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Alessandro Costacurta", "numero": 19, "pais": "IT", "pos": "DD" },
+        { "nome": "Alessandro Nesta", "numero": 13, "pais": "IT", "pos": "DC" },
+        { "nome": "Paolo Maldini", "numero": 3, "pais": "IT", "pos": "DC" },
+        { "nome": "Kakha Kaladze", "numero": 4, "pais": "GE", "pos": "DE" },
+        { "nome": "Gennaro Gattuso", "aceites": ["rino gattuso"], "numero": 8, "pais": "IT", "pos": "MD" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MC" },
+        { "nome": "Clarence Seedorf", "numero": 20, "pais": "NL", "pos": "ME" },
+        { "nome": "Rui Costa", "numero": 10, "pais": "PT", "pos": "MO" },
+        { "nome": "Andriy Shevchenko", "aceites": ["sheva"], "numero": 7, "pais": "UA", "pos": "PL" },
+        { "nome": "Filippo Inzaghi", "aceites": ["pippo inzaghi", "pippo"], "numero": 9, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Roque Júnior", "numero": 25, "minuto": 66, "pais": "BR" },
+        { "nome": "Massimo Ambrosini", "numero": 23, "minuto": 87, "pais": "IT" },
+        { "nome": "Serginho", "numero": 27, "minuto": 71, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Christian Abbiati", "Martin Laursen", "Cristian Brocchi", "Rivaldo"]
+    }
+  ]
+}

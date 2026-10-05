@@ -1,0 +1,68 @@
+{
+  "id": "taca-uefa-2003-final",
+  "modos": ["classico", "equipa:porto"],
+  "competicao": "Taça UEFA",
+  "fase": "Final",
+  "data": "2003-05-21",
+  "estadio": "Estadio Olímpico de Sevilla, Sevilha",
+  "resultado": "Celtic 2–3 FC Porto (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2003_UEFA_Cup_final",
+  "equipas": [
+    {
+      "nome": "Celtic",
+      "cor": "#018749",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Martin O'Neill" },
+      "onze": [
+        { "nome": "Rab Douglas", "numero": 20, "pais": "GB-SCT", "pos": "GR" },
+        { "nome": "Johan Mjällby", "numero": 35, "pais": "SE", "pos": "DC" },
+        { "nome": "Bobo Baldé", "numero": 6, "pais": "GN", "pos": "DC" },
+        { "nome": "Joos Valgaeren", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Paul Lambert", "numero": 14, "pais": "GB-SCT", "pos": "MDC" },
+        { "nome": "Didier Agathe", "numero": 17, "pais": "FR", "pos": "MD" },
+        { "nome": "Stiliyan Petrov", "numero": 19, "pais": "BG", "pos": "MC" },
+        { "nome": "Neil Lennon", "numero": 18, "pais": "GB-NIR", "pos": "MC" },
+        { "nome": "Alan Thompson", "numero": 8, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Chris Sutton", "numero": 9, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Henrik Larsson", "numero": 7, "pais": "SE", "pos": "PL", "golos": [{ "minuto": 47 }, { "minuto": 57 }] }
+      ],
+      "suplentes": [
+        { "nome": "Jackie McNamara", "numero": 4, "minuto": 76, "pais": "GB-SCT" },
+        { "nome": "Ulrik Laursen", "numero": 16, "minuto": 64, "pais": "DK" },
+        { "nome": "Shaun Maloney", "numero": 29, "minuto": 105, "pais": "GB-SCT" }
+      ],
+      "nao_utilizados": ["Magnus Hedman", "Mohammed Sylla", "Jamie Smith", "David Fernández"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Vítor Baía", "aceites": ["baia"], "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Paulo Ferreira", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Costa", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 8, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "Dmitri Alenichev", "numero": 15, "pais": "RU", "pos": "MC", "golos": [{ "minuto": 54 }] },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Deco", "numero": 10, "pais": "PT", "pos": "MO" },
+        { "nome": "Capucho", "numero": 21, "pais": "PT", "pos": "PL" },
+        { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": "45+1" }, { "minuto": 115 }] }
+      ],
+      "suplentes": [
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 71, "pais": "PT" },
+        { "nome": "Ricardo Costa", "numero": 5, "minuto": 9, "pais": "PT" },
+        { "nome": "Marco Ferreira", "numero": 78, "minuto": 98, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        { "nome": "Nuno", "aceites": ["nuno", "espirito santo", "Nuno Espírito Santo"] },
+        "César Peixoto",
+        { "nome": "Clayton", "aceites": ["Clayton Ferreira Cruz"] },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Pereira"] }
+      ]
+    }
+  ]
+}

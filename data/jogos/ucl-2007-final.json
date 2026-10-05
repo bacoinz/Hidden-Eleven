@@ -1,0 +1,71 @@
+{
+  "id": "ucl-2007-final",
+  "modos": ["final", "equipa:milan", "equipa:liverpool"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2007-05-23",
+  "estadio": "Olympic Stadium, Atenas",
+  "resultado": "Milan 2–1 Liverpool",
+  "fonte": "https://en.wikipedia.org/wiki/2007_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Milan",
+      "slug": "milan",
+      "cor": "#d4021d",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
+      "onze": [
+        { "nome": "Dida", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Massimo Oddo", "numero": 44, "pais": "IT", "pos": "DD" },
+        { "nome": "Alessandro Nesta", "numero": 13, "pais": "IT", "pos": "DC" },
+        { "nome": "Paolo Maldini", "numero": 3, "pais": "IT", "pos": "DC" },
+        { "nome": "Marek Jankulovski", "numero": 18, "pais": "CZ", "pos": "DE" },
+        { "nome": "Gennaro Gattuso", "aceites": ["rino gattuso"], "numero": 8, "pais": "IT", "pos": "MD" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MC" },
+        { "nome": "Massimo Ambrosini", "numero": 23, "pais": "IT", "pos": "MC" },
+        { "nome": "Clarence Seedorf", "numero": 10, "pais": "NL", "pos": "ME" },
+        { "nome": "Kaká", "numero": 22, "pais": "BR", "pos": "PL" },
+        {
+          "nome": "Filippo Inzaghi",
+          "aceites": ["pippo inzaghi", "pippo"],
+          "numero": 9,
+          "pais": "IT",
+          "pos": "PL",
+          "golos": [{ "minuto": 45 }, { "minuto": 82 }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Kakha Kaladze", "numero": 4, "minuto": 80, "pais": "GE" },
+        { "nome": "Giuseppe Favalli", "numero": 19, "minuto": "90+2", "pais": "IT" },
+        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 88, "pais": "IT" }
+      ],
+      "nao_utilizados": ["Zeljko Kalac", "Cafu", "Serginho", "Cristian Brocchi"]
+    },
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-2-1-1",
+      "treinador": { "nome": "Rafael Benítez", "aceites": ["rafa benitez", "benitez"] },
+      "onze": [
+        { "nome": "Pepe Reina", "numero": 25, "pais": "ES", "pos": "GR" },
+        { "nome": "Steve Finnan", "numero": 3, "pais": "IE", "pos": "DD" },
+        { "nome": "Jamie Carragher", "numero": 23, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Daniel Agger", "numero": 5, "pais": "DK", "pos": "DC" },
+        { "nome": "John Arne Riise", "numero": 6, "pais": "NO", "pos": "DE" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 20, "pais": "AR", "pos": "MDC" },
+        { "nome": "Jermaine Pennant", "numero": 16, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Boudewijn Zenden", "numero": 32, "pais": "NL", "pos": "ME" },
+        { "nome": "Steven Gerrard", "numero": 8, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Dirk Kuyt", "numero": 18, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 89 }] }
+      ],
+      "suplentes": [
+        { "nome": "Álvaro Arbeloa", "numero": 2, "minuto": 88, "pais": "ES" },
+        { "nome": "Harry Kewell", "numero": 7, "minuto": 59, "pais": "AU" },
+        { "nome": "Peter Crouch", "numero": 15, "minuto": 78, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Jerzy Dudek", "Sami Hyypiä", "Mark González", "Craig Bellamy"]
+    }
+  ]
+}

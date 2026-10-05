@@ -123,7 +123,7 @@ function textoFeed(ev, nomeDe) {
     case 'pista':
       return [el('span', { class: 'sistema', text: `Pista: ${nomePista(ev)}` })];
     case 'fim':
-      return [el('span', { class: 'sistema', text: ev.motivo === 'completo' ? 'Onze completo!' : 'Acabou o tempo!' })];
+      return [el('span', { class: 'sistema', text: { completo: 'Tudo descoberto!', votacao: 'Ronda terminada com o onze completo.' }[ev.motivo] ?? 'Acabou o tempo!' })];
     case 'ronda':
       return [el('span', { class: 'sistema', text: `Começou a ronda ${ev.numero}` })];
     case 'entrou':
@@ -199,16 +199,41 @@ export function renderPlacar(sala, eu, anterior, enviar) {
   const anfitriao = sala.anfitriao === eu;
   const ultima = p && p.numero >= p.total;
   const botao = $('#btn-proxima');
+  const espera = $('#placar-espera');
+  espera.hidden = true;
   if (sala.fase === 'final') {
     botao.hidden = false;
     botao.textContent = 'Ver classificação final';
     botao.onclick = () => mostrarFinal(true);
+  } else if (sala.fase === 'ronda' && r?.onzeCompleto) {
+    // Onze todo descoberto: pode terminar-se a ronda sem os suplentes e treinadores.
+    const votos = r.votosTerminar ?? [];
+    const ligados = sala.jogadores.filter((j) => j.ligado);
+    const votei = votos.includes(eu);
+    botao.hidden = false;
+    botao.textContent = sala.solo
+      ? 'Terminar ronda'
+      : votei
+        ? `Cancelar · ${votos.length}/${ligados.length} confirmaram`
+        : `Terminar ronda (${votos.length}/${ligados.length})`;
+    botao.onclick = () => enviar({ t: 'terminar' });
+    $('#placar-resumo').textContent = sala.solo
+      ? 'Onze completo! Podes terminar já, sem os suplentes e os treinadores.'
+      : 'Onze completo! Para terminar já, todos têm de confirmar.';
+    const faltam = ligados.filter((j) => !votos.includes(j.id)).map((j) => j.nome);
+    if (!sala.solo && votos.length && faltam.length) {
+      espera.hidden = false;
+      espera.textContent = `À espera de: ${faltam.join(', ')}`;
+    }
   } else {
     botao.hidden = !(sala.fase === 'fim' && anfitriao);
     botao.textContent = ultima ? 'Ver classificação final' : 'Próxima ronda';
     botao.onclick = () => enviar({ t: 'proxima' });
+    if (sala.fase === 'fim' && !anfitriao) {
+      espera.hidden = false;
+      espera.textContent = 'À espera do anfitrião…';
+    }
   }
-  $('#placar-espera').hidden = !(sala.fase === 'fim' && !anfitriao);
 }
 
 let finalEscondido = false;

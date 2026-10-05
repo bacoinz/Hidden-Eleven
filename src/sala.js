@@ -86,6 +86,10 @@ export class Sala extends DurableObject {
       const r = L.palpite(this.sala, id, msg.texto, agora);
       if (r.resposta) this.enviar(ws, { t: 'resposta', ...r.resposta, agora });
       mudou = r.mudou;
+    } else if (msg.t === 'terminar') {
+      const r = L.votarTerminar(this.sala, id, agora);
+      if (r.erro) this.enviar(ws, { t: 'erro', msg: r.erro });
+      else mudou = true;
     } else if (ACOES_ANFITRIAO[msg.t]) {
       const r = ACOES_ANFITRIAO[msg.t](this.sala, id, msg, agora);
       if (r?.erro) this.enviar(ws, { t: 'erro', msg: r.erro });

@@ -1,0 +1,63 @@
+{
+  "id": "taca-uefa-2005-final",
+  "modos": ["classico", "equipa:sporting"],
+  "competicao": "Taça UEFA",
+  "fase": "Final",
+  "data": "2005-05-18",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–3 CSKA Moscovo",
+  "fonte": "https://en.wikipedia.org/wiki/2005_UEFA_Cup_final",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Peseiro" },
+      "onze": [
+        { "nome": "Ricardo", "numero": 76, "pais": "PT", "pos": "GR" },
+        { "nome": "Rogério", "numero": 37, "pais": "BR", "pos": "DD", "golos": [{ "minuto": 29 }] },
+        { "nome": "Beto", "numero": 22, "pais": "PT", "pos": "DC" },
+        { "nome": "Joseph Enakarhire", "numero": 14, "pais": "NG", "pos": "DC" },
+        { "nome": "Miguel Garcia", "numero": 15, "pais": "PT", "pos": "DE" },
+        { "nome": "Fábio Rochemback", "numero": 26, "pais": "BR", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Ricardo Sá Pinto", "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Pedro Barbosa", "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Rodrigo Tello", "numero": 11, "pais": "CL", "pos": "EE" },
+        { "nome": "Liédson", "numero": 31, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Hugo Viana", "numero": 45, "minuto": 88, "pais": "PT" },
+        { "nome": "Marius Niculae", "numero": 9, "minuto": 73, "pais": "RO" },
+        { "nome": "Roudolphe Douala", "numero": 17, "minuto": 80, "pais": "CM" }
+      ],
+      "nao_utilizados": [{ "nome": "Nélson", "aceites": ["Nélson Pereira"] }, "Ânderson Polga", "Rui Jorge", { "nome": "Custódio", "aceites": ["Custódio Castro"] }]
+    },
+    {
+      "nome": "CSKA Moscovo",
+      "cor": "#c8102e",
+      "formacao": "3-4-1-2",
+      "treinador": { "nome": "Valery Gazzaev" },
+      "onze": [
+        { "nome": "Igor Akinfeev", "numero": 35, "pais": "RU", "pos": "GR" },
+        { "nome": "Vasili Berezutski", "numero": 24, "pais": "RU", "pos": "DC" },
+        { "nome": "Sergei Ignashevich", "numero": 4, "pais": "RU", "pos": "DC" },
+        { "nome": "Aleksei Berezutski", "numero": 6, "pais": "RU", "pos": "DC", "golos": [{ "minuto": 56 }] },
+        { "nome": "Chidi Odiah", "numero": 15, "pais": "NG", "pos": "MD" },
+        { "nome": "Evgeni Aldonin", "numero": 22, "pais": "RU", "pos": "MC" },
+        { "nome": "Elvir Rahimić", "numero": 25, "pais": "BA", "pos": "MC" },
+        { "nome": "Yuri Zhirkov", "numero": 18, "pais": "RU", "pos": "ME", "golos": [{ "minuto": 65 }] },
+        { "nome": "Daniel Carvalho", "numero": 7, "pais": "BR", "pos": "MO" },
+        { "nome": "Vágner Love", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 75 }] },
+        { "nome": "Ivica Olić", "numero": 9, "pais": "HR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Deividas Šemberas", "numero": 2, "minuto": 82, "pais": "LT" },
+        { "nome": "Rolan Gusev", "numero": 8, "minuto": 86, "pais": "RU" },
+        { "nome": "Miloš Krasić", "numero": 17, "minuto": 67, "pais": "RS" }
+      ],
+      "nao_utilizados": ["Veniamin Mandrykin", "Osmar Ferreyra", "Juris Laizāns", "Aleksandr Salugin"]
+    }
+  ]
+}

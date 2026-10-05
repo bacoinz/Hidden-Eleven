@@ -1,0 +1,66 @@
+{
+  "id": "ucl-2024-final",
+  "modos": ["final", "equipa:dortmund", "equipa:real-madrid"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2024-06-01",
+  "estadio": "Wembley Stadium, Londres",
+  "resultado": "Borussia Dortmund 0–2 Real Madrid",
+  "fonte": "https://en.wikipedia.org/wiki/2024_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Borussia Dortmund",
+      "slug": "dortmund",
+      "cor": "#fde100",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Edin Terzić" },
+      "onze": [
+        { "nome": "Gregor Kobel", "numero": 1, "pais": "CH", "pos": "GR" },
+        { "nome": "Julian Ryerson", "numero": 26, "pais": "NO", "pos": "DD" },
+        { "nome": "Mats Hummels", "numero": 15, "pais": "DE", "pos": "DC" },
+        { "nome": "Nico Schlotterbeck", "numero": 4, "pais": "DE", "pos": "DC" },
+        { "nome": "Ian Maatsen", "numero": 22, "pais": "NL", "pos": "DE" },
+        { "nome": "Emre Can", "numero": 23, "pais": "DE", "pos": "MC" },
+        { "nome": "Marcel Sabitzer", "numero": 20, "pais": "AT", "pos": "MC" },
+        { "nome": "Jadon Sancho", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Julian Brandt", "numero": 19, "pais": "DE", "pos": "MO" },
+        { "nome": "Karim Adeyemi", "numero": 27, "pais": "DE", "pos": "EE" },
+        { "nome": "Niclas Füllkrug", "numero": 14, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Marco Reus", "numero": 11, "minuto": 72, "pais": "DE" },
+        { "nome": "Jamie Bynoe-Gittens", "numero": 43, "minuto": 87, "pais": "GB-ENG" },
+        { "nome": "Sébastien Haller", "numero": 9, "minuto": 80, "pais": "CI" },
+        { "nome": "Donyell Malen", "numero": 21, "minuto": 80, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Alexander Meyer", "Marcel Lotka", "Niklas Süle", "Salih Özcan", "Felix Nmecha", "Marius Wolf", "Kjell Wätjen", "Youssoufa Moukoko"]
+    },
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
+      "onze": [
+        { "nome": "Thibaut Courtois", "numero": 1, "pais": "BE", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 2, "pais": "ES", "pos": "DD", "golos": [{ "minuto": 74 }] },
+        { "nome": "Antonio Rüdiger", "numero": 22, "pais": "DE", "pos": "DC" },
+        { "nome": "Nacho", "numero": 6, "pais": "ES", "pos": "DC" },
+        { "nome": "Ferland Mendy", "numero": 23, "pais": "FR", "pos": "DE" },
+        { "nome": "Eduardo Camavinga", "numero": 12, "pais": "FR", "pos": "MDC" },
+        { "nome": "Federico Valverde", "numero": 15, "pais": "UY", "pos": "MC" },
+        { "nome": "Toni Kroos", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Jude Bellingham", "numero": 5, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Rodrygo", "numero": 11, "pais": "BR", "pos": "PL" },
+        { "nome": "Vinícius Júnior", "aceites": ["vinicius", "vini", "vini jr"], "numero": 7, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 83 }] }
+      ],
+      "suplentes": [
+        { "nome": "Éder Militão", "numero": 3, "minuto": 90, "pais": "BR" },
+        { "nome": "Lucas Vázquez", "numero": 17, "minuto": "90+4", "pais": "ES" },
+        { "nome": "Luka Modrić", "numero": 10, "minuto": 85, "pais": "HR" },
+        { "nome": "Joselu", "numero": 14, "minuto": 85, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Andriy Lunin", "Kepa Arrizabalaga", "David Alaba", "Fran García", "Aurélien Tchouaméni", "Dani Ceballos", "Brahim Díaz", "Arda Güler"]
+    }
+  ]
+}

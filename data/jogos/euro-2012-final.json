@@ -1,0 +1,85 @@
+{
+  "id": "euro-2012-final",
+  "modos": ["final", "equipa:espanha", "equipa:italia"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2012-07-01",
+  "estadio": "Olympic Stadium, Kiev",
+  "resultado": "Espanha 4–0 Itália",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2012_final",
+  "equipas": [
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Álvaro Arbeloa", "numero": 17, "pais": "ES", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DC" },
+        { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE", "golos": [{ "minuto": 41 }] },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "MO", "golos": [{ "minuto": 14 }] },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "MO" }
+      ],
+      "suplentes": [
+        { "nome": "Pedro", "numero": 7, "minuto": 59, "pais": "ES" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 75, "pais": "ES", "golos": [{ "minuto": 84 }] },
+        { "nome": "Juan Mata", "numero": 13, "minuto": 87, "pais": "ES", "golos": [{ "minuto": 88 }] }
+      ],
+      "nao_utilizados": [
+        "Raúl Albiol",
+        "Javi Martínez",
+        "Juanfran",
+        "Álvaro Negredo",
+        "Víctor Valdés",
+        "Fernando Llorente",
+        "Santi Cazorla",
+        { "nome": "Jesús Navas", "aceites": ["navas"] },
+        "Pepe Reina"
+      ]
+    },
+    {
+      "nome": "Itália",
+      "slug": "italia",
+      "cor": "#0066cc",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Cesare Prandelli" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Ignazio Abate", "numero": 7, "pais": "IT", "pos": "DD" },
+        { "nome": "Andrea Barzagli", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC" },
+        { "nome": "Giorgio Chiellini", "numero": 3, "pais": "IT", "pos": "DE" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MDC" },
+        { "nome": "Claudio Marchisio", "numero": 8, "pais": "IT", "pos": "MC" },
+        { "nome": "Riccardo Montolivo", "numero": 18, "pais": "IT", "pos": "MO" },
+        { "nome": "Daniele De Rossi", "numero": 16, "pais": "IT", "pos": "MC" },
+        { "nome": "Mario Balotelli", "numero": 9, "pais": "IT", "pos": "PL" },
+        { "nome": "Antonio Cassano", "numero": 10, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Federico Balzaretti", "numero": 6, "minuto": 21, "pais": "IT" },
+        { "nome": "Antonio Di Natale", "numero": 11, "minuto": 46, "pais": "IT" },
+        { "nome": "Thiago Motta", "numero": 5, "minuto": 57, "pais": "IT" }
+      ],
+      "nao_utilizados": [
+        "Christian Maggio",
+        "Angelo Ogbonna",
+        "Salvatore Sirigu",
+        "Emanuele Giaccherini",
+        "Morgan De Sanctis",
+        "Fabio Borini",
+        "Sebastian Giovinco",
+        "Alessandro Diamanti",
+        "Antonio Nocerino"
+      ]
+    }
+  ]
+}

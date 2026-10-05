@@ -1,0 +1,73 @@
+{
+  "id": "ucl-2023-final",
+  "modos": ["final", "equipa:man-city", "equipa:inter"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2023-06-10",
+  "estadio": "Atatürk Olympic Stadium, Istambul",
+  "resultado": "Manchester City 1–0 Inter",
+  "fonte": "https://en.wikipedia.org/wiki/2023_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "cor": "#6cabdd",
+      "formacao": "3-2-4-1",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Ederson", "numero": 31, "pais": "BR", "pos": "GR" },
+        { "nome": "Manuel Akanji", "numero": 25, "pais": "CH", "pos": "DC" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Nathan Aké", "numero": 6, "pais": "NL", "pos": "DC" },
+        { "nome": "John Stones", "numero": 5, "pais": "GB-ENG", "pos": "MDC" },
+        { "nome": "Rodri", "numero": 16, "pais": "ES", "pos": "MDC", "golos": [{ "minuto": 68 }] },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 17, "pais": "BE", "pos": "MO" },
+        { "nome": "İlkay Gündoğan", "numero": 8, "pais": "DE", "pos": "MO" },
+        { "nome": "Jack Grealish", "numero": 10, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Erling Haaland", "numero": 9, "pais": "NO", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Kyle Walker", "numero": 2, "minuto": 82, "pais": "GB-ENG" }, { "nome": "Phil Foden", "numero": 47, "minuto": 36, "pais": "GB-ENG" }],
+      "nao_utilizados": [
+        "Stefan Ortega",
+        "Scott Carson",
+        "Aymeric Laporte",
+        "Sergio Gómez",
+        "Rico Lewis",
+        "Kalvin Phillips",
+        "Máximo Perrone",
+        "Cole Palmer",
+        { "nome": "Julián Alvarez", "aceites": ["julian", "la arana"] },
+        "Riyad Mahrez"
+      ]
+    },
+    {
+      "nome": "Inter",
+      "slug": "inter",
+      "cor": "#0068a8",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Simone Inzaghi ||" },
+      "onze": [
+        { "nome": "André Onana", "numero": 24, "pais": "CM", "pos": "GR" },
+        { "nome": "Matteo Darmian", "numero": 36, "pais": "IT", "pos": "DC" },
+        { "nome": "Francesco Acerbi", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Alessandro Bastoni", "numero": 95, "pais": "IT", "pos": "DC" },
+        { "nome": "Denzel Dumfries", "numero": 2, "pais": "NL", "pos": "MD" },
+        { "nome": "Nicolò Barella", "numero": 23, "pais": "IT", "pos": "MC" },
+        { "nome": "Marcelo Brozović", "numero": 77, "pais": "HR", "pos": "MC" },
+        { "nome": "Hakan Çalhanoğlu", "numero": 20, "pais": "TR", "pos": "MC" },
+        { "nome": "Federico Dimarco", "numero": 32, "pais": "IT", "pos": "ME" },
+        { "nome": "Lautaro Martínez", "aceites": ["lautaro"], "numero": 10, "pais": "AR", "pos": "PL" },
+        { "nome": "Edin Džeko", "numero": 9, "pais": "BA", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Raoul Bellanova", "numero": 12, "minuto": 76, "pais": "IT" },
+        { "nome": "Danilo D'Ambrosio", "numero": 33, "minuto": 84, "pais": "IT" },
+        { "nome": "Robin Gosens", "numero": 8, "minuto": 76, "pais": "DE" },
+        { "nome": "Henrikh Mkhitaryan", "numero": 22, "minuto": 84, "pais": "AM" },
+        { "nome": "Romelu Lukaku", "numero": 90, "minuto": 57, "pais": "BE" }
+      ],
+      "nao_utilizados": ["Samir Handanović", "Alex Cordaz", "Stefan de Vrij", "Milan Škriniar", "Roberto Gagliardini", "Kristjan Asllani", "Joaquín Correa"]
+    }
+  ]
+}

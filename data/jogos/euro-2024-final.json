@@ -1,0 +1,91 @@
+{
+  "id": "euro-2024-final",
+  "modos": ["final", "equipa:espanha", "equipa:inglaterra"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2024-07-14",
+  "estadio": "Olympiastadion, Berlim",
+  "resultado": "Espanha 2–1 Inglaterra",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_final",
+  "equipas": [
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luis de la Fuente" },
+      "onze": [
+        { "nome": "Unai Simón", "numero": 23, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Carvajal", "numero": 2, "pais": "ES", "pos": "DD" },
+        { "nome": "Robin Le Normand", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Aymeric Laporte", "numero": 14, "pais": "ES", "pos": "DC" },
+        { "nome": "Marc Cucurella", "numero": 24, "pais": "ES", "pos": "DE" },
+        { "nome": "Rodri", "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Lamine Yamal", "aceites": ["yamal", "lamine"], "numero": 19, "pais": "ES", "pos": "ED" },
+        { "nome": "Dani Olmo", "numero": 10, "pais": "ES", "pos": "MO" },
+        { "nome": "Nico Williams", "numero": 17, "pais": "ES", "pos": "EE", "golos": [{ "minuto": 47 }] },
+        { "nome": "Álvaro Morata", "numero": 7, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 46, "pais": "ES" },
+        { "nome": "Mikel Oyarzabal", "numero": 21, "minuto": 68, "pais": "ES", "golos": [{ "minuto": 86 }] },
+        { "nome": "Nacho", "numero": 4, "minuto": 83, "pais": "ES" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 89, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "David Raya",
+        "Daniel Vivian",
+        "Joselu",
+        { "nome": "Ferran Torres", "aceites": ["ferran"] },
+        "Álex Grimaldo",
+        "Álex Remiro",
+        "Álex Baena",
+        "Pedri",
+        { "nome": "Jesús Navas", "aceites": ["navas"] },
+        "Fermín López",
+        "Ayoze Pérez"
+      ]
+    },
+    {
+      "nome": "Inglaterra",
+      "slug": "inglaterra",
+      "cor": "#f4f4f4",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Gareth Southgate" },
+      "onze": [
+        { "nome": "Jordan Pickford", "numero": 1, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Kyle Walker", "numero": 2, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "John Stones", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Marc Guéhi", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Bukayo Saka", "numero": 7, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Kobbie Mainoo", "numero": 26, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Declan Rice", "numero": 4, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Luke Shaw", "numero": 3, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Phil Foden", "numero": 11, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Jude Bellingham", "numero": 10, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Harry Kane", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ollie Watkins", "numero": 19, "minuto": 61, "pais": "GB-ENG" },
+        { "nome": "Cole Palmer", "numero": 24, "minuto": 70, "pais": "GB-ENG", "golos": [{ "minuto": 73 }] },
+        { "nome": "Ivan Toney", "numero": 17, "minuto": 89, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": [
+        "Trent Alexander-Arnold",
+        "Kieran Trippier",
+        "Aaron Ramsdale",
+        "Ezri Konsa",
+        "Lewis Dunk",
+        "Conor Gallagher",
+        "Anthony Gordon",
+        "Jarrod Bowen",
+        "Eberechi Eze",
+        "Joe Gomez",
+        "Dean Henderson",
+        "Adam Wharton"
+      ]
+    }
+  ]
+}

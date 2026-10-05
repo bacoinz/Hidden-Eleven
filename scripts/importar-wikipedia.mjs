@@ -35,6 +35,18 @@ const EQUIPAS_PT = {
   'Tottenham Hotspur': 'Tottenham', Benfica: 'Benfica', Sporting: 'Sporting', 'Sporting CP': 'Sporting', Braga: 'SC Braga',
   'CSKA Moscow': 'CSKA Moscovo', Sevilla: 'Sevilha', Celtic: 'Celtic', 'Queens Park Rangers': 'QPR',
 };
+// Seleções em pt-PT pelo código da bandeira (as caixas das seleções só têm {{fb|POR}}).
+const SELECOES_PT = {
+  pt: 'Portugal', es: 'Espanha', fr: 'França', it: 'Itália', de: 'Alemanha', nl: 'Holanda', 'gb-eng': 'Inglaterra',
+  br: 'Brasil', ar: 'Argentina', hr: 'Croácia', gr: 'Grécia', se: 'Suécia', au: 'Austrália', ch: 'Suíça', cz: 'Chéquia',
+  dk: 'Dinamarca', be: 'Bélgica', uy: 'Uruguai', mx: 'México', us: 'Estados Unidos', jp: 'Japão', kr: 'Coreia do Sul',
+  ru: 'Rússia', tr: 'Turquia', pl: 'Polónia', ua: 'Ucrânia', no: 'Noruega', ma: 'Marrocos', gh: 'Gana', ng: 'Nigéria',
+  cm: 'Camarões', sn: 'Senegal', ci: 'Costa do Marfim', co: 'Colômbia', cl: 'Chile', is: 'Islândia', 'gb-wls': 'País de Gales',
+  'gb-sct': 'Escócia', ie: 'Irlanda', at: 'Áustria', hu: 'Hungria', ro: 'Roménia', rs: 'Sérvia', sk: 'Eslováquia',
+  si: 'Eslovénia', ec: 'Equador', py: 'Paraguai', pe: 'Peru', cr: 'Costa Rica', sa: 'Arábia Saudita', ir: 'Irão',
+  qa: 'Catar', ca: 'Canadá', tn: 'Tunísia', dz: 'Argélia', eg: 'Egito', fi: 'Finlândia', ge: 'Geórgia', al: 'Albânia',
+};
+
 // Equipas da Equipa Mítica (nome em pt-PT → slug de data/equipas.json).
 const SLUGS = {
   'Real Madrid': 'real-madrid', Barcelona: 'barcelona', 'Manchester United': 'man-utd', 'Manchester City': 'man-city',
@@ -113,6 +125,7 @@ function campoDaCaixa(caixa, nome) {
 function bandeira(s) {
   const m =
     s.match(/\{\{\s*(?:flagicon|flag icon|fbaicon|flagdeco)\s*\|\s*([^|}]+)/i) ||
+    s.match(/\{\{#invoke:flagg\|[^}]*?\|([A-Z]{3})\}\}/) ||
     s.match(/\{\{#invoke:flag\|[^|}]*\|([^|}]+)/i) ||
     s.match(/\{\{\s*(?:fb|fb-rt|fbu|fb-rt-u)\s*\|\s*([A-Z]{3})/);
   return m ? paraIso(m[1]) : null;
@@ -131,18 +144,17 @@ function dataDaCaixa(caixa) {
 }
 
 function nomeEquipa(campo) {
-  const nome = limpar(campo.replace(/\{\{#invoke:flag\|[^}]*\}\}/g, '').replace(/\{\{\s*(?:fbaicon|flagicon)[^}]*\}\}/gi, ''));
+  const nome = limpar(campo.replace(/\{\{#invoke:flagg?\|[^}]*\}\}/g, '').replace(/\{\{\s*(?:fbaicon|flagicon)[^}]*\}\}/gi, ''));
   if (nome) return nome;
   // Seleções: {{fb-rt|ESP}} / {{#invoke:flag|fb|ARG}}
   const iso = bandeira(campo);
-  const porIso = { es: 'Espanha', ar: 'Argentina', fr: 'França', it: 'Itália', de: 'Alemanha', nl: 'Holanda', pt: 'Portugal', br: 'Brasil', hr: 'Croácia', gr: 'Grécia', 'gb-eng': 'Inglaterra' };
-  return porIso[iso] ?? campo;
+  return SELECOES_PT[iso] ?? campo;
 }
 
 // --- parse do bloco do jogo ---
 function encontrarCaixa(texto, procurar) {
   const caixas = [];
-  const re = /\{\{\s*Football box/gi;
+  const re = /\{\{\s*(?:#invoke:\s*football\s*box\s*\|\s*main|football\s*box|footballbox)/gi;
   let m;
   while ((m = re.exec(texto))) {
     // Fecha a caixa contando chavetas.
@@ -156,7 +168,14 @@ function encontrarCaixa(texto, procurar) {
   }
   if (!caixas.length) throw new Error('Não encontrei nenhuma {{Football box}}.');
   if (!procurar?.length) return caixas.find((c) => /\n\s*\|\s*GK\s*\|\|/.test(texto.slice(c.fim, c.fim + 20000))) ?? caixas[0];
-  const alvo = caixas.find((c) => procurar.every((p) => c.caixa.includes(p)));
+  // Procura pelo nome ou pelo código FIFA ({{fb|POR}}).
+  const CODIGOS = { Portugal: 'POR', Netherlands: 'NED', England: 'ENG', Germany: 'GER', Italy: 'ITA', Spain: 'ESP', Brazil: 'BRA', France: 'FRA', Argentina: 'ARG', Greece: 'GRE', Croatia: 'CRO', Switzerland: 'SUI' };
+  const equipasDaCaixa = (c) => `${campoDaCaixa(c.caixa, 'team1')} ${campoDaCaixa(c.caixa, 'team2')}`;
+  const tem = (c, p) => {
+    const t = equipasDaCaixa(c);
+    return t.includes(p) || Boolean(CODIGOS[p] && new RegExp(`\\b${CODIGOS[p]}\\b`).test(t));
+  };
+  const alvo = caixas.find((c) => procurar.every((p) => tem(c, p)));
   if (!alvo) throw new Error(`Nenhuma caixa com ${procurar.join(' e ')}.`);
   return alvo;
 }
@@ -168,9 +187,9 @@ function lerOnzes(texto, desde) {
   let seccao = 'onze';
   for (const linha of linhas) {
     if (equipas.length === 2) break;
-    if (/\{\{\s*Football box/i.test(linha) && (atual.onze.length || equipas.length)) break;
+    if (/\{\{\s*(?:#invoke:\s*football\s*box|football\s*box|footballbox)/i.test(linha) && (atual.onze.length || equipas.length)) break;
     if (/Substitutes:|Substitutions:/i.test(linha)) { seccao = 'banco'; continue; }
-    if (/(Manager|Head coach|Coach):/i.test(linha)) { seccao = 'treinador'; continue; }
+    if (/(Managers?|Head coach(es)?|Coach(es)?):/i.test(linha)) { seccao = 'treinador'; continue; }
     if (seccao === 'treinador' && /\[\[/.test(linha)) {
       const ligacaoTreinador = linha.match(/\[\[[^\]]+\]\]/)?.[0];
       atual.treinador = {
@@ -183,7 +202,9 @@ function lerOnzes(texto, desde) {
       seccao = 'onze';
       continue;
     }
-    const m = linha.match(/^\|\s*([A-Z]{2,3})\s*\|\|(.*)$/);
+    // "|CB ||…" ou "|{{abbr|MF|Midfielder}} ||…"
+    const m =
+      linha.match(/^\|\s*\{\{\s*abbr\s*\|\s*([A-Z]{2,3})\s*\|[^}]*\}\}\s*\|\|(.*)$/) || linha.match(/^\|\s*([A-Z]{2,3})\s*\|\|(.*)$/);
     if (!m) continue;
     const resto = m[2];
     const numero = resto.match(/'''\s*(\d+)\s*'''/)?.[1];
@@ -214,13 +235,23 @@ function lerGolos(caixa, campo) {
     if (k > inicio && /^\s*\|/.test(linha)) break; // começou outro campo
     const ligacao = linha.match(/\[\[[^\]]+\]\]/)?.[0];
     if (!ligacao) continue;
-    for (const g of linha.matchAll(/\{\{\s*goal\s*\|([^}]*)\}\}/gi)) {
+    for (const g of linha.matchAll(/\{\{\s*(?:goal|golden\s*goal|goldengoal|silver\s*goal|silvergoal)\s*\|([^}]*)\}\}/gi)) {
       const minutos = [];
       for (const p of g[1].split('|').map((x) => x.trim())) {
         if (/^\d{1,3}(\+\d{1,2})?$/.test(p)) minutos.push({ minuto: minuto(p) });
         else if (/^(pen\.?|p)$/i.test(p) && minutos.length) minutos.at(-1).penalti = true;
         else if (/^(o\.?g\.?)$/i.test(p) && minutos.length) minutos.at(-1).autogolo = true;
       }
+      if (minutos.length) golos.push({ nome: limpar(ligacao), alvo: alvoDeLigacao(ligacao), minutos });
+    }
+    // Sem {{goal}}: minutos em texto ("[[Ferran Torres|Torres]] 106'", "23' (pen.)").
+    if (!/\{\{\s*(?:goal|golden\s*goal|goldengoal|silver\s*goal|silvergoal)\s*\|/i.test(linha)) {
+      const minutos = [...linha.replace(/\[\[[^\]]+\]\]/g, '').matchAll(/(\d{1,3}(?:\+\d{1,2})?)\s*['′]\s*(\((?:pen|p|o\.?\s*g)\.?\))?/gi)].map((x) => {
+        const golo = { minuto: minuto(x[1]) };
+        if (x[2] && /pen|\(p/i.test(x[2])) golo.penalti = true;
+        if (x[2] && /o\.?\s*g/i.test(x[2])) golo.autogolo = true;
+        return golo;
+      });
       if (minutos.length) golos.push({ nome: limpar(ligacao), alvo: alvoDeLigacao(ligacao), minutos });
     }
   }
@@ -307,7 +338,7 @@ async function lerPlantel(plantel) {
     const jogadores = [];
     for (const l of linhas) {
       const campo = l.match(/\|\s*name\s*=\s*(\{\{[^}]*\}\}|\[\[[^\]]*\]\]|[^|}]*)/)?.[1];
-      if (!campo || !/nat fs (g )?player/i.test(l)) continue;
+      if (!campo || !/(nat fs (g )?player|national football squad player)/i.test(l)) continue;
       let nome;
       const sortname = campo.match(/\{\{\s*sortname\s*\|([^|}]*)\|([^|}]*)/i);
       const sort = campo.match(/\{\{\s*sort\s*\|[^|]*\|(.*)\}\}$/i);

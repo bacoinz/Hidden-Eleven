@@ -1,0 +1,85 @@
+{
+  "id": "euro-2004-final",
+  "modos": ["final", "equipa:portugal", "equipa:grecia"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2004-07-04",
+  "estadio": "Estádio da Luz, Lisboa",
+  "resultado": "Portugal 0–1 Grécia",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2004_final",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Andrade", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 43, "pais": "PT" },
+        { "nome": "Rui Costa", "numero": 10, "minuto": 60, "pais": "PT" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 74, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Rui Jorge",
+        "Fernando Couto",
+        "Petit",
+        { "nome": "Simão", "aceites": ["simao sabrosa", "Simão Sabrosa"] },
+        "Quim",
+        "Beto",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "José Moreira",
+        "Hélder Postiga"
+      ]
+    },
+    {
+      "nome": "Grécia",
+      "slug": "grecia",
+      "cor": "#0d5eaf",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Otto Rehhagel", "aceites": ["rehakles"] },
+      "onze": [
+        { "nome": "Antonios Nikopolidis", "numero": 1, "pais": "GR", "pos": "GR" },
+        { "nome": "Giourkas Seitaridis", "numero": 2, "pais": "GR", "pos": "DD" },
+        { "nome": "Michalis Kapsis", "numero": 19, "pais": "GR", "pos": "DC" },
+        { "nome": "Traianos Dellas", "numero": 5, "pais": "GR", "pos": "DC" },
+        { "nome": "Takis Fyssas", "numero": 14, "pais": "GR", "pos": "DE" },
+        { "nome": "Kostas Katsouranis", "numero": 21, "pais": "GR", "pos": "MDC" },
+        { "nome": "Theodoros Zagorakis", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Angelos Basinas", "numero": 6, "pais": "GR", "pos": "MC" },
+        { "nome": "Angelos Charisteas", "numero": 9, "pais": "GR", "pos": "ED", "golos": [{ "minuto": 57 }] },
+        { "nome": "Stelios Giannakopoulos", "numero": 8, "pais": "GR", "pos": "EE" },
+        { "nome": "Zisis Vryzas", "numero": 15, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Stylianos Venetidis", "numero": 3, "minuto": 76, "pais": "GR" },
+        { "nome": "Dimitrios Papadopoulos", "numero": 22, "minuto": 81, "pais": "GR" }
+      ],
+      "nao_utilizados": [
+        "Nikos Dabizas",
+        "Vasilios Tsiartas",
+        "Demis Nikolaidis",
+        "Kostas Chalkias",
+        "Fanis Katergiannakis",
+        "Pantelis Kafes",
+        "Georgios Georgiadis",
+        "Giannis Goumas",
+        "Giorgos Karagounis",
+        "Vasilios Lakis"
+      ]
+    }
+  ]
+}

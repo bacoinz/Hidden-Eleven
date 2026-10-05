@@ -1,0 +1,78 @@
+{
+  "id": "mundial-2002-final",
+  "modos": ["final", "equipa:alemanha", "equipa:brasil"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2002-06-30",
+  "estadio": "International Stadium, Yokohama",
+  "resultado": "Alemanha 0–2 Brasil",
+  "fonte": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "3-4-1-2",
+      "treinador": { "nome": "Rudi Völler" },
+      "onze": [
+        { "nome": "Oliver Kahn", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Thomas Linke", "numero": 2, "pais": "DE", "pos": "DC" },
+        { "nome": "Carsten Ramelow", "numero": 5, "pais": "DE", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Torsten Frings", "numero": 22, "pais": "DE", "pos": "MD" },
+        { "nome": "Dietmar Hamann", "numero": 8, "pais": "DE", "pos": "MC" },
+        { "nome": "Jens Jeremies", "numero": 16, "pais": "DE", "pos": "MC" },
+        { "nome": "Marco Bode", "numero": 17, "pais": "DE", "pos": "ME" },
+        { "nome": "Bernd Schneider", "numero": 19, "pais": "DE", "pos": "MO" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" },
+        { "nome": "Oliver Neuville", "numero": 7, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Oliver Bierhoff", "numero": 20, "minuto": 74, "pais": "DE" },
+        { "nome": "Gerald Asamoah", "numero": 14, "minuto": 77, "pais": "DE" },
+        { "nome": "Christian Ziege", "numero": 6, "minuto": 84, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Marko Rehmer",
+        "Frank Baumann",
+        "Carsten Jancker",
+        "Lars Ricken",
+        "Jens Lehmann",
+        "Michael Ballack",
+        "Sebastian Kehl",
+        "Jörg Böhme",
+        "Hans-Jörg Butt"
+      ]
+    },
+    {
+      "nome": "Brasil",
+      "slug": "brasil",
+      "cor": "#ffdf00",
+      "formacao": "3-4-1-2",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Marcos", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Lúcio", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Edmílson", "numero": 5, "pais": "BR", "pos": "DC" },
+        { "nome": "Roque Júnior", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Cafu", "numero": 2, "pais": "BR", "pos": "MD" },
+        { "nome": "Roberto Carlos", "numero": 6, "pais": "BR", "pos": "ME" },
+        { "nome": "Gilberto Silva", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Kléberson", "aceites": ["José Kléberson"], "numero": 15, "pais": "BR", "pos": "MC" },
+        { "nome": "Ronaldinho", "aceites": ["ronaldinho gaucho", "dinho"], "numero": 11, "pais": "BR", "pos": "MO" },
+        { "nome": "Rivaldo", "numero": 10, "pais": "BR", "pos": "PL" },
+        {
+          "nome": "Ronaldo",
+          "aceites": ["fenomeno", "ronaldo nazario", "r9"],
+          "numero": 9,
+          "pais": "BR",
+          "pos": "PL",
+          "golos": [{ "minuto": 67 }, { "minuto": 79 }]
+        }
+      ],
+      "suplentes": [{ "nome": "Juninho Paulista", "numero": 19, "minuto": 85, "pais": "BR" }, { "nome": "Denílson", "numero": 17, "minuto": 90, "pais": "BR" }],
+      "nao_utilizados": ["Ricardinho", "Dida", "Juliano Belletti", "Ânderson Polga", "Júnior", "Vampeta", "Edílson", "Luizão", "Rogério Ceni", "Kaká"]
+    }
+  ]
+}

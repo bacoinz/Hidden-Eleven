@@ -1,0 +1,75 @@
+{
+  "id": "ucl-2020-final",
+  "modos": ["final", "equipa:psg", "equipa:bayern"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2020-08-23",
+  "estadio": "Estádio da Luz, Lisboa",
+  "resultado": "Paris Saint-Germain 0–1 Bayern Munique",
+  "fonte": "https://en.wikipedia.org/wiki/2020_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Paris Saint-Germain",
+      "slug": "psg",
+      "cor": "#004170",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Thomas Tuchel" },
+      "onze": [
+        { "nome": "Keylor Navas", "numero": 1, "pais": "CR", "pos": "GR" },
+        { "nome": "Thilo Kehrer", "numero": 4, "pais": "DE", "pos": "DD" },
+        { "nome": "Thiago Silva", "aceites": ["thiago"], "numero": 2, "pais": "BR", "pos": "DC" },
+        { "nome": "Presnel Kimpembe", "numero": 3, "pais": "FR", "pos": "DC" },
+        { "nome": "Juan Bernat", "numero": 14, "pais": "ES", "pos": "DE" },
+        { "nome": "Ander Herrera", "numero": 21, "pais": "ES", "pos": "MC" },
+        { "nome": "Marquinhos", "numero": 5, "pais": "BR", "pos": "MC" },
+        { "nome": "Leandro Paredes", "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "pais": "AR", "pos": "ED" },
+        { "nome": "Kylian Mbappé", "numero": 7, "pais": "FR", "pos": "PL" },
+        { "nome": "Neymar", "aceites": ["neymar jr"], "numero": 10, "pais": "BR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Layvin Kurzawa", "numero": 20, "minuto": 80, "pais": "FR" },
+        { "nome": "Marco Verratti", "numero": 6, "minuto": 65, "pais": "IT" },
+        { "nome": "Julian Draxler", "numero": 23, "minuto": 72, "pais": "DE" },
+        { "nome": "Eric Maxim Choupo-Moting", "numero": 17, "minuto": 80, "pais": "CM" }
+      ],
+      "nao_utilizados": ["Sergio Rico", "Marcin Bułka", "Abdou Diallo", "Mitchel Bakker", "Colin Dagba", "Pablo Sarabia", "Idrissa Gueye", "Mauro Icardi"]
+    },
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Hansi Flick" },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Joshua Kimmich", "numero": 32, "pais": "DE", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "David Alaba", "numero": 27, "pais": "AT", "pos": "DC" },
+        { "nome": "Alphonso Davies", "numero": 19, "pais": "CA", "pos": "DE" },
+        { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"], "numero": 6, "pais": "ES", "pos": "MC" },
+        { "nome": "Leon Goretzka", "numero": 18, "pais": "DE", "pos": "MC" },
+        { "nome": "Serge Gnabry", "numero": 22, "pais": "DE", "pos": "ED" },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "MO" },
+        { "nome": "Kingsley Coman", "numero": 29, "pais": "FR", "pos": "EE", "golos": [{ "minuto": 59 }] },
+        { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Niklas Süle", "numero": 4, "minuto": 25, "pais": "DE" },
+        { "nome": "Philippe Coutinho", "numero": 10, "minuto": 68, "pais": "BR" },
+        { "nome": "Ivan Perišić", "numero": 14, "minuto": 68, "pais": "HR" },
+        { "nome": "Corentin Tolisso", "numero": 24, "minuto": 86, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Sven Ulreich",
+        "Ron-Thorben Hoffmann",
+        "Álvaro Odriozola",
+        "Benjamin Pavard",
+        "Lucas Hernandez",
+        "Javi Martínez",
+        "Michaël Cuisance",
+        "Joshua Zirkzee"
+      ]
+    }
+  ]
+}

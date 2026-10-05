@@ -149,6 +149,9 @@ export function avancar(r, agora) {
 
 export const restantes = (r, prep) => prep.lugares.filter((l) => !r.descobertas[l.id]).length;
 
+/** O onze (jogadores de campo) está todo descoberto: já se pode terminar a ronda sem os suplentes e treinadores. */
+export const onzeCompleto = (r, prep) => prep.lugares.every((l) => l.tipo !== 'onze' || r.descobertas[l.id]);
+
 /**
  * Processa um palpite. Respostas:
  * certo (lugar, pontos, bonus, terminou) · errado · ja (por) · banco · ambiguo · invalido · fora
@@ -263,5 +266,7 @@ export function estadoPublico(r, prep) {
     nivelPista: nivel,
     total: prep.lugares.length,
     descobertos: Object.keys(r.descobertas).length,
+    onzeCompleto: onzeCompleto(r, prep),
+    votosTerminar: r.votosTerminar ?? [],
   };
 }

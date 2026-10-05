@@ -1,0 +1,64 @@
+{
+  "id": "ucl-2015-final",
+  "modos": ["final", "equipa:juventus", "equipa:barcelona"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2015-06-06",
+  "estadio": "Olympiastadion, Berlim",
+  "resultado": "Juventus 1–3 Barcelona",
+  "fonte": "https://en.wikipedia.org/wiki/2015_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Juventus",
+      "slug": "juventus",
+      "cor": "#1a1a1a",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Massimiliano Allegri" },
+      "onze": [
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Stephan Lichtsteiner", "numero": 26, "pais": "CH", "pos": "DD" },
+        { "nome": "Andrea Barzagli", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 33, "pais": "FR", "pos": "DE" },
+        { "nome": "Andrea Pirlo", "numero": 21, "pais": "IT", "pos": "MDC" },
+        { "nome": "Claudio Marchisio", "numero": 8, "pais": "IT", "pos": "MC" },
+        { "nome": "Paul Pogba", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "Arturo Vidal", "numero": 23, "pais": "CL", "pos": "MO" },
+        { "nome": "Carlos Tevez", "numero": 10, "pais": "AR", "pos": "PL" },
+        { "nome": "Álvaro Morata", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 55 }] }
+      ],
+      "suplentes": [
+        { "nome": "Kingsley Coman", "numero": 11, "minuto": 89, "pais": "FR" },
+        { "nome": "Roberto Pereyra", "numero": 37, "minuto": 79, "pais": "AR" },
+        { "nome": "Fernando Llorente", "numero": 14, "minuto": 85, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Marco Storari", "Angelo Ogbonna", "Simone Padoin", "Stefano Sturaro"]
+    },
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis Enrique", "aceites": ["lucho"] },
+      "onze": [
+        { "nome": "Marc-André ter Stegen", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Dani Alves", "numero": 22, "pais": "BR", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "DC" },
+        { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE" },
+        { "nome": "Ivan Rakitić", "numero": 4, "pais": "HR", "pos": "MC", "golos": [{ "minuto": 4 }] },
+        { "nome": "Sergio Busquets", "numero": 5, "pais": "ES", "pos": "MC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "ED" },
+        { "nome": "Luis Suárez", "numero": 9, "pais": "UY", "pos": "PL", "golos": [{ "minuto": 68 }] },
+        { "nome": "Neymar", "aceites": ["neymar jr"], "numero": 11, "pais": "BR", "pos": "EE", "golos": [{ "minuto": "90+7" }] }
+      ],
+      "suplentes": [
+        { "nome": "Jérémy Mathieu", "numero": 24, "minuto": "90+1", "pais": "FR" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "minuto": 78, "pais": "ES" },
+        { "nome": "Pedro", "numero": 7, "minuto": "90+6", "pais": "ES" }
+      ],
+      "nao_utilizados": ["Claudio Bravo", "Marc Bartra", "Adriano", "Rafinha"]
+    }
+  ]
+}

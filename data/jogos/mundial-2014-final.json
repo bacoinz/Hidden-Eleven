@@ -1,0 +1,85 @@
+{
+  "id": "mundial-2014-final",
+  "modos": ["final", "equipa:alemanha", "equipa:argentina"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2014-07-13",
+  "estadio": "Maracanã Stadium, Rio de Janeiro",
+  "resultado": "Alemanha 1–0 Argentina (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Joachim Löw", "aceites": ["loew", "jogi"] },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 20, "pais": "DE", "pos": "DC" },
+        { "nome": "Mats Hummels", "numero": 5, "pais": "DE", "pos": "DC" },
+        { "nome": "Benedikt Höwedes", "numero": 4, "pais": "DE", "pos": "DE" },
+        { "nome": "Christoph Kramer", "numero": 23, "pais": "DE", "pos": "MD" },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "pais": "DE", "pos": "MC" },
+        { "nome": "Toni Kroos", "numero": 18, "pais": "DE", "pos": "ME" },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 13, "pais": "DE", "pos": "ED" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" },
+        { "nome": "Mesut Özil", "numero": 8, "pais": "DE", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "André Schürrle", "numero": 9, "minuto": 32, "pais": "DE" },
+        { "nome": "Mario Götze", "aceites": ["goetze"], "numero": 19, "minuto": 88, "pais": "DE", "golos": [{ "minuto": 113 }] },
+        { "nome": "Per Mertesacker", "numero": 17, "minuto": 120, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Kevin Großkreutz",
+        "Matthias Ginter",
+        "Sami Khedira",
+        "Lukas Podolski",
+        "Ron-Robert Zieler",
+        "Julian Draxler",
+        "Erik Durm",
+        "Shkodran Mustafi",
+        "Roman Weidenfeller"
+      ]
+    },
+    {
+      "nome": "Argentina",
+      "slug": "argentina",
+      "cor": "#75aadb",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Alejandro Sabella" },
+      "onze": [
+        { "nome": "Sergio Romero", "numero": 1, "pais": "AR", "pos": "GR" },
+        { "nome": "Pablo Zabaleta", "numero": 4, "pais": "AR", "pos": "DD" },
+        { "nome": "Martín Demichelis", "numero": 15, "pais": "AR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 2, "pais": "AR", "pos": "DC" },
+        { "nome": "Marcos Rojo", "numero": 16, "pais": "AR", "pos": "DE" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "MC" },
+        { "nome": "Lucas Biglia", "numero": 6, "pais": "AR", "pos": "MC" },
+        { "nome": "Enzo Pérez", "numero": 8, "pais": "AR", "pos": "ED" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "MO" },
+        { "nome": "Ezequiel Lavezzi", "numero": 22, "pais": "AR", "pos": "EE" },
+        { "nome": "Gonzalo Higuaín", "aceites": ["pipita"], "numero": 9, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 20, "minuto": 46, "pais": "AR" },
+        { "nome": "Rodrigo Palacio", "numero": 18, "minuto": 78, "pais": "AR" },
+        { "nome": "Fernando Gago", "numero": 5, "minuto": 86, "pais": "AR" }
+      ],
+      "nao_utilizados": [
+        "Hugo Campagnaro",
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"] },
+        "Maxi Rodríguez",
+        "Agustín Orión",
+        "Augusto Fernández",
+        "Federico Fernández",
+        "Ricky Álvarez",
+        "Mariano Andújar",
+        "José María Basanta"
+      ]
+    }
+  ]
+}

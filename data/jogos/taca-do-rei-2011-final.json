@@ -1,0 +1,64 @@
+{
+  "id": "taca-do-rei-2011-final",
+  "modos": ["classico", "equipa:barcelona", "equipa:real-madrid"],
+  "competicao": "Taça do Rei",
+  "fase": "Final",
+  "data": "2011-04-19",
+  "estadio": "Mestalla",
+  "resultado": "Barcelona 0–1 Real Madrid (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2011_Copa_del_Rey_final",
+  "equipas": [
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "José Manuel Pinto", "numero": 13, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Alves", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Adriano", "numero": 21, "pais": "BR", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "pais": "ES", "pos": "MC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedro", "numero": 17, "pais": "ES", "pos": "ED" },
+        { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "EE" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Maxwell", "numero": 19, "minuto": 115, "pais": "BR" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 107, "pais": "ML" },
+        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": 104, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Víctor Valdés", "Carles Puyol", "Gabriel Milito", { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"] }]
+    },
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Álvaro Arbeloa", "numero": 17, "pais": "ES", "pos": "DD" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "MDC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Sami Khedira", "numero": 24, "pais": "DE", "pos": "MC" },
+        { "nome": "Mesut Özil", "numero": 23, "pais": "DE", "pos": "ED" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 22, "pais": "AR", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 103 }] }
+      ],
+      "suplentes": [
+        { "nome": "Ezequiel Garay", "numero": 19, "minuto": 119, "pais": "AR" },
+        { "nome": "Esteban Granero", "numero": 11, "minuto": 104, "pais": "ES" },
+        { "nome": "Emmanuel Adebayor", "numero": 6, "minuto": 69, "pais": "TG" }
+      ],
+      "nao_utilizados": ["Jerzy Dudek", "Kaká", "Karim Benzema", { "nome": "Gonzalo Higuaín", "aceites": ["pipita"] }]
+    }
+  ]
+}

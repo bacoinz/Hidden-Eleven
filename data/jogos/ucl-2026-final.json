@@ -1,0 +1,77 @@
+{
+  "id": "ucl-2026-final",
+  "modos": ["final", "equipa:psg", "equipa:arsenal"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2026-05-30",
+  "estadio": "Puskás Aréna, Budapeste",
+  "resultado": "Paris Saint-Germain 1–1 Arsenal (4–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Paris Saint-Germain",
+      "slug": "psg",
+      "cor": "#004170",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis Enrique", "aceites": ["lucho"] },
+      "onze": [
+        { "nome": "Matvey Safonov", "numero": 39, "pais": "RU", "pos": "GR" },
+        { "nome": "Achraf Hakimi", "numero": 2, "pais": "MA", "pos": "DD" },
+        { "nome": "Marquinhos", "numero": 5, "pais": "BR", "pos": "DC" },
+        { "nome": "Willian Pacho", "numero": 51, "pais": "EC", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE" },
+        { "nome": "João Neves", "numero": 87, "pais": "PT", "pos": "MD" },
+        { "nome": "Vitinha", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "ME" },
+        { "nome": "Désiré Doué", "numero": 14, "pais": "FR", "pos": "ED" },
+        { "nome": "Ousmane Dembélé", "numero": 10, "pais": "FR", "pos": "PL", "golos": [{ "minuto": 65, "penalti": true }] },
+        { "nome": "Khvicha Kvaratskhelia", "numero": 7, "pais": "GE", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Lucas Beraldo", "numero": 4, "minuto": 106, "pais": "BR" },
+        { "nome": "Illia Zabarnyi", "numero": 6, "minuto": 106, "pais": "UA" },
+        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 95, "pais": "FR" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": "90+6", "pais": "PT" },
+        { "nome": "Bradley Barcola", "numero": 29, "minuto": 83, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Lucas Chevalier",
+        "Renato Marin",
+        "Lucas Hernandez",
+        { "nome": "Lee Kang-in", "aceites": ["lee", "kang in"] },
+        "Senny Mayulu",
+        "Dro Fernández",
+        "Ibrahim Mbaye"
+      ]
+    },
+    {
+      "nome": "Arsenal",
+      "slug": "arsenal",
+      "cor": "#ef0107",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Mikel Arteta ||" },
+      "onze": [
+        { "nome": "David Raya", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Cristhian Mosquera", "numero": 3, "pais": "ES", "pos": "DD" },
+        { "nome": "William Saliba", "numero": 2, "pais": "FR", "pos": "DC" },
+        { "nome": "Gabriel Magalhães", "aceites": ["gabriel"], "numero": 6, "pais": "BR", "pos": "DC" },
+        { "nome": "Piero Hincapié", "numero": 5, "pais": "EC", "pos": "DE" },
+        { "nome": "Declan Rice", "numero": 41, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Myles Lewis-Skelly", "numero": 49, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Bukayo Saka", "numero": 7, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Martin Ødegaard", "numero": 8, "pais": "NO", "pos": "MO" },
+        { "nome": "Leandro Trossard", "numero": 19, "pais": "BE", "pos": "EE" },
+        { "nome": "Kai Havertz", "numero": 29, "pais": "DE", "pos": "PL", "golos": [{ "minuto": 6 }] }
+      ],
+      "suplentes": [
+        { "nome": "Jurriën Timber", "numero": 12, "minuto": 66, "pais": "NL" },
+        { "nome": "Eberechi Eze", "numero": 10, "minuto": 91, "pais": "GB-ENG" },
+        { "nome": "Noni Madueke", "numero": 20, "minuto": 83, "pais": "GB-ENG" },
+        { "nome": "Martín Zubimendi", "numero": 36, "minuto": 91, "pais": "ES" },
+        { "nome": "Gabriel Martinelli", "aceites": ["martinelli"], "numero": 11, "minuto": 83, "pais": "BR" },
+        { "nome": "Viktor Gyökeres", "numero": 14, "minuto": 67, "pais": "SE" }
+      ],
+      "nao_utilizados": ["Kepa Arrizabalaga", "Riccardo Calafiori", "Christian Nørgaard", "Mikel Merino", "Max Dowman", "Gabriel Jesus"]
+    }
+  ]
+}

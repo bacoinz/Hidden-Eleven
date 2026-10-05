@@ -1,0 +1,85 @@
+{
+  "id": "euro-2004-meias-portugal-holanda",
+  "modos": ["classico", "equipa:portugal", "equipa:holanda"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Meia-final",
+  "selecoes": true,
+  "data": "2004-06-30",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Portugal 2–1 Holanda",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2004_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Andrade", "numero": 4, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 63, "autogolo": true }] },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 58 }] },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 26 }] },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Petit", "numero": 8, "minuto": 68, "pais": "PT" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 75, "pais": "PT" },
+        { "nome": "Fernando Couto", "numero": 5, "minuto": 87, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Paulo Ferreira",
+        "Rui Jorge",
+        "Rui Costa",
+        { "nome": "Simão", "aceites": ["simao sabrosa", "Simão Sabrosa"] },
+        "Quim",
+        "Beto",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "José Moreira",
+        "Hélder Postiga"
+      ]
+    },
+    {
+      "nome": "Holanda",
+      "slug": "holanda",
+      "cor": "#f36c21",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Dick Advocaat" },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "Michael Reiziger", "numero": 2, "pais": "NL", "pos": "DD" },
+        { "nome": "Jaap Stam", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Wilfred Bouma", "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Giovanni van Bronckhorst", "numero": 5, "pais": "NL", "pos": "DE" },
+        { "nome": "Edgar Davids", "numero": 8, "pais": "NL", "pos": "MC" },
+        { "nome": "Clarence Seedorf", "numero": 20, "pais": "NL", "pos": "MC" },
+        { "nome": "Phillip Cocu", "numero": 6, "pais": "NL", "pos": "MC" },
+        { "nome": "Marc Overmars", "numero": 16, "pais": "NL", "pos": "ED" },
+        { "nome": "Arjen Robben", "numero": 19, "pais": "NL", "pos": "EE" },
+        { "nome": "Ruud van Nistelrooy", "numero": 10, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Roy Makaay", "numero": 12, "minuto": 46, "pais": "NL" },
+        { "nome": "Rafael van der Vaart", "numero": 11, "minuto": 56, "pais": "NL" },
+        { "nome": "Pierre van Hooijdonk", "numero": 17, "minuto": 81, "pais": "NL" }
+      ],
+      "nao_utilizados": [
+        "Andy van der Meyde",
+        "Patrick Kluivert",
+        "Sander Westerveld",
+        "Wesley Sneijder",
+        "Frank de Boer",
+        "John Heitinga",
+        "Paul Bosvelt",
+        "Boudewijn Zenden",
+        "Ronald Waterreus"
+      ]
+    }
+  ]
+}

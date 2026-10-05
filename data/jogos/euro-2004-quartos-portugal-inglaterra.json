@@ -1,0 +1,76 @@
+{
+  "id": "euro-2004-quartos-portugal-inglaterra",
+  "modos": ["classico", "equipa:portugal", "equipa:inglaterra"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Quartos de final",
+  "titulo": "O penálti do Ricardo sem luvas",
+  "selecoes": true,
+  "data": "2004-06-24",
+  "estadio": "Estádio da Luz, Lisboa",
+  "resultado": "Portugal 2–2 Inglaterra (6–5 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2004_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Jorge Andrade", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Simão Sabrosa", "numero": 11, "minuto": 63, "pais": "PT" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 75, "pais": "PT", "golos": [{ "minuto": 83 }] },
+        { "nome": "Rui Costa", "numero": 10, "minuto": 79, "pais": "PT", "golos": [{ "minuto": 110 }] }
+      ],
+      "nao_utilizados": [
+        "Paulo Ferreira",
+        "Rui Jorge",
+        "Fernando Couto",
+        "Petit",
+        "Pauleta",
+        "Quim",
+        "Beto",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "José Moreira"
+      ]
+    },
+    {
+      "nome": "Inglaterra",
+      "slug": "inglaterra",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sven-Göran Eriksson" },
+      "onze": [
+        { "nome": "David James", "numero": 1, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Gary Neville", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "John Terry", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Sol Campbell", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "David Beckham", "numero": 7, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Frank Lampard", "numero": 11, "pais": "GB-ENG", "pos": "MC", "golos": [{ "minuto": 115 }] },
+        { "nome": "Steven Gerrard", "numero": 4, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Paul Scholes", "numero": 8, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Michael Owen", "numero": 10, "pais": "GB-ENG", "pos": "PL", "golos": [{ "minuto": 3 }] },
+        { "nome": "Wayne Rooney", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Darius Vassell", "numero": 23, "minuto": 27, "pais": "GB-ENG" },
+        { "nome": "Phil Neville", "numero": 14, "minuto": 57, "pais": "GB-ENG" },
+        { "nome": "Owen Hargreaves", "numero": 18, "minuto": 81, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Wayne Bridge", "Paul Robinson", "Ledley King", "Jamie Carragher", "Nicky Butt", "Joe Cole", "Kieron Dyer", "Emile Heskey", "Ian Walker"]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "mundial-2018-final",
+  "modos": ["final", "equipa:franca", "equipa:croacia"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2018-07-15",
+  "estadio": "Luzhniki Stadium, Moscovo",
+  "resultado": "França 4–2 Croácia",
+  "fonte": "https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#1e3a8a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Hugo Lloris", "numero": 1, "pais": "FR", "pos": "GR" },
+        { "nome": "Benjamin Pavard", "numero": 2, "pais": "FR", "pos": "DD" },
+        { "nome": "Raphaël Varane", "numero": 4, "pais": "FR", "pos": "DC" },
+        { "nome": "Samuel Umtiti", "numero": 5, "pais": "FR", "pos": "DC" },
+        { "nome": "Lucas Hernandez", "numero": 21, "pais": "FR", "pos": "DE" },
+        { "nome": "Paul Pogba", "numero": 6, "pais": "FR", "pos": "MC", "golos": [{ "minuto": 59 }] },
+        { "nome": "N'Golo Kanté", "aceites": ["kante"], "numero": 13, "pais": "FR", "pos": "MC" },
+        { "nome": "Kylian Mbappé", "numero": 10, "pais": "FR", "pos": "ED", "golos": [{ "minuto": 65 }] },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "MO", "golos": [{ "minuto": 38, "penalti": true }] },
+        { "nome": "Blaise Matuidi", "numero": 14, "pais": "FR", "pos": "EE" },
+        { "nome": "Olivier Giroud", "numero": 9, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Steven Nzonzi", "numero": 15, "minuto": 55, "pais": "FR" },
+        { "nome": "Corentin Tolisso", "numero": 12, "minuto": 73, "pais": "FR" },
+        { "nome": "Nabil Fekir", "numero": 18, "minuto": 81, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Presnel Kimpembe",
+        "Thomas Lemar",
+        "Ousmane Dembélé",
+        "Steve Mandanda",
+        "Adil Rami",
+        "Djibril Sidibé",
+        "Florian Thauvin",
+        "Benjamin Mendy",
+        "Alphonse Areola"
+      ]
+    },
+    {
+      "nome": "Croácia",
+      "slug": "croacia",
+      "cor": "#e5242a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Zlatko Dalić" },
+      "onze": [
+        { "nome": "Danijel Subašić", "numero": 23, "pais": "HR", "pos": "GR" },
+        { "nome": "Šime Vrsaljko", "numero": 2, "pais": "HR", "pos": "DD" },
+        { "nome": "Dejan Lovren", "numero": 6, "pais": "HR", "pos": "DC" },
+        { "nome": "Domagoj Vida", "numero": 21, "pais": "HR", "pos": "DC" },
+        { "nome": "Ivan Strinić", "numero": 3, "pais": "HR", "pos": "DE" },
+        { "nome": "Ivan Rakitić", "numero": 7, "pais": "HR", "pos": "MC" },
+        { "nome": "Marcelo Brozović", "numero": 11, "pais": "HR", "pos": "MC" },
+        { "nome": "Ante Rebić", "numero": 18, "pais": "HR", "pos": "ED" },
+        { "nome": "Luka Modrić", "numero": 10, "pais": "HR", "pos": "MO" },
+        { "nome": "Ivan Perišić", "numero": 4, "pais": "HR", "pos": "EE", "golos": [{ "minuto": 28 }] },
+        { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 18, "autogolo": true }, { "minuto": 69 }] }
+      ],
+      "suplentes": [{ "nome": "Andrej Kramarić", "numero": 9, "minuto": 71, "pais": "HR" }, { "nome": "Marko Pjaca", "numero": 20, "minuto": 81, "pais": "HR" }],
+      "nao_utilizados": [
+        "Dominik Livaković",
+        "Vedran Ćorluka",
+        "Mateo Kovačić",
+        "Lovre Kalinić",
+        "Tin Jedvaj",
+        "Filip Bradarić",
+        "Duje Ćaleta-Car",
+        "Nikola Kalinić",
+        "Milan Badelj",
+        "Josip Pivarić"
+      ]
+    }
+  ]
+}

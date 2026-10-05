@@ -1,0 +1,71 @@
+{
+  "id": "liga-nacoes-2025-final",
+  "modos": ["classico", "equipa:portugal", "equipa:espanha"],
+  "competicao": "Liga das Nações",
+  "fase": "Final",
+  "selecoes": true,
+  "data": "2025-06-08",
+  "estadio": "Munich Football Arena , Munique",
+  "resultado": "Portugal 2–2 Espanha (5–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2025_UEFA_Nations_League_final",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roberto Martínez ||" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Neves", "numero": 15, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE", "golos": [{ "minuto": 26 }] },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Neto", "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Francisco Conceição", "numero": 26, "pais": "PT", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 61 }] }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 46, "pais": "PT" },
+        { "nome": "Renato Veiga", "numero": 13, "minuto": 74, "pais": "PT" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 74, "pais": "PT" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 88, "pais": "PT" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 106, "pais": "PT" }
+      ],
+      "nao_utilizados": []
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis de la Fuente" },
+      "onze": [
+        { "nome": "Unai Simón", "numero": 23, "pais": "ES", "pos": "GR" },
+        { "nome": "Óscar Mingueza", "numero": 14, "pais": "ES", "pos": "DD" },
+        { "nome": "Robin Le Normand", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Dean Huijsen", "numero": 12, "pais": "ES", "pos": "DC" },
+        { "nome": "Marc Cucurella", "numero": 24, "pais": "ES", "pos": "DE" },
+        { "nome": "Pedri", "numero": 20, "pais": "ES", "pos": "MC" },
+        { "nome": "Martín Zubimendi", "numero": 18, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 21 }] },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Lamine Yamal", "aceites": ["yamal", "lamine"], "numero": 19, "pais": "ES", "pos": "ED" },
+        { "nome": "Mikel Oyarzabal", "numero": 21, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 45 }] },
+        { "nome": "Nico Williams", "numero": 11, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Isco", "numero": 22, "minuto": 75, "pais": "ES" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES" },
+        { "nome": "Álex Baena", "numero": 16, "minuto": 92, "pais": "ES" },
+        { "nome": "Pedro Porro", "numero": 2, "minuto": 92, "pais": "ES" },
+        { "nome": "Yéremy Pino", "numero": 15, "minuto": 106, "pais": "ES" },
+        { "nome": "Álvaro Morata", "numero": 7, "minuto": 111, "pais": "ES" }
+      ],
+      "nao_utilizados": []
+    }
+  ]
+}

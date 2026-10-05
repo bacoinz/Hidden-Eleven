@@ -101,6 +101,8 @@ export function desligar(sala, jogadorId, agora) {
   j.ligado = false;
   j.desligadoEm = agora;
   if (!sala.jogadores.some((x) => x.ligado)) sala.vaziaDesde = agora;
+  // Quem sai deixa de contar para a votação de terminar a ronda.
+  verificarVotos(sala, agora);
   return true;
 }
 
@@ -206,6 +208,42 @@ export function reporJogos(sala, jogadorId) {
   if (sala.fase !== 'lobby') return erro('Só no lobby.');
   sala.usados = [];
   return { ok: true };
+}
+
+// ---------------------------------------------------------------------------
+// Terminar a ronda com o onze completo
+// ---------------------------------------------------------------------------
+
+const rondaACorrer = (sala) => {
+  const r = sala.fase === 'jogo' ? sala.partida?.ronda : null;
+  return r?.etapa === 'corrida' ? r : null;
+};
+
+/**
+ * Com o onze todo descoberto, cada jogador pode pedir para terminar a ronda (voltar a carregar cancela).
+ * Termina quando todos os jogadores ligados confirmarem (a solo, logo à primeira).
+ */
+export function votarTerminar(sala, jogadorId, agora) {
+  const r = rondaACorrer(sala);
+  if (!r || !jogador(sala, jogadorId)) return erro('A ronda não está a decorrer.');
+  if (!motor.onzeCompleto(r, preparado(r))) return erro('Só se pode terminar a ronda com o onze todo descoberto.');
+  const votos = new Set(r.votosTerminar ?? []);
+  if (votos.has(jogadorId)) votos.delete(jogadorId);
+  else votos.add(jogadorId);
+  r.votosTerminar = [...votos];
+  verificarVotos(sala, agora);
+  return { ok: true };
+}
+
+function verificarVotos(sala, agora) {
+  const r = rondaACorrer(sala);
+  if (!r?.votosTerminar?.length) return false;
+  const ligados = sala.jogadores.filter((j) => j.ligado).map((j) => j.id);
+  if (!ligados.length || !ligados.every((id) => r.votosTerminar.includes(id))) return false;
+  motor.terminar(r, agora);
+  noFeed(sala, { tipo: 'fim', motivo: 'votacao' });
+  fecharRonda(sala);
+  return true;
 }
 
 // ---------------------------------------------------------------------------

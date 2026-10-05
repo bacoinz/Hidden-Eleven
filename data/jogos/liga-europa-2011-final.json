@@ -1,0 +1,68 @@
+{
+  "id": "liga-europa-2011-final",
+  "modos": ["classico", "equipa:porto"],
+  "competicao": "Liga Europa",
+  "fase": "Final",
+  "data": "2011-05-18",
+  "estadio": "Aviva Stadium, Dublin",
+  "resultado": "FC Porto 1–0 SC Braga",
+  "fonte": "https://en.wikipedia.org/wiki/2011_UEFA_Europa_League_final",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "André Villas-Boas", "aceites": ["villas boas", "avb"] },
+      "onze": [
+        { "nome": "Helton", "aceites": ["Helton Arruda"], "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Cristian Săpunaru", "numero": 21, "pais": "RO", "pos": "DD" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Álvaro Pereira", "numero": 5, "pais": "UY", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MDC" },
+        { "nome": "Fredy Guarín", "numero": 6, "pais": "CO", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "ED" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 44 }] }
+      ],
+      "suplentes": [
+        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 73, "pais": "AR" },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 79, "pais": "CO" }
+      ],
+      "nao_utilizados": [
+        "Beto",
+        { "nome": "Maicon", "aceites": ["Maicon Pereira Roque"] },
+        { "nome": "Souza", "aceites": ["Josef de Souza"] },
+        "Rúben Micael",
+        { "nome": "Walter", "aceites": ["Walter Henrique da Silva"] }
+      ]
+    },
+    {
+      "nome": "SC Braga",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Domingos Paciência" },
+      "onze": [
+        { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Miguel Garcia", "numero": 15, "pais": "PT", "pos": "DD" },
+        { "nome": "Paulão", "aceites": ["Paulo Afonso Santos Júnior"], "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Alberto Rodríguez", "aceites": ["Alberto Junior Rodríguez"], "numero": 2, "pais": "PE", "pos": "DC" },
+        { "nome": "Sílvio", "numero": 28, "pais": "PT", "pos": "DE" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 27, "pais": "PT", "pos": "MC" },
+        { "nome": "Vandinho", "aceites": ["Vanderson Válter de Almeida"], "numero": 88, "pais": "BR", "pos": "MC" },
+        { "nome": "Hugo Viana", "numero": 45, "pais": "PT", "pos": "MO" },
+        { "nome": "Alan", "numero": 30, "pais": "BR", "pos": "ED" },
+        { "nome": "Paulo César", "aceites": ["Paulo César Rocha Rosa"], "numero": 9, "pais": "BR", "pos": "EE" },
+        { "nome": "Lima", "numero": 18, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kaká", "numero": 4, "minuto": 46, "pais": "BR" },
+        { "nome": "Márcio Mossoró", "numero": 8, "minuto": 46, "pais": "BR" },
+        { "nome": "Albert Meyong", "numero": 19, "minuto": 66, "pais": "CM" }
+      ],
+      "nao_utilizados": ["Cristiano", "Elderson Echiéjilé", "Leandro Salino", "Hélder Barbosa"]
+    }
+  ]
+}

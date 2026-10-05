@@ -1,0 +1,84 @@
+{
+  "id": "ucl-2019-final",
+  "modos": ["final", "equipa:tottenham", "equipa:liverpool"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2019-06-01",
+  "estadio": "Estadio Metropolitano, Madrid",
+  "resultado": "Tottenham 0–2 Liverpool",
+  "fonte": "https://en.wikipedia.org/wiki/2019_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Tottenham",
+      "slug": "tottenham",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Mauricio Pochettino", "aceites": ["poch"] },
+      "onze": [
+        { "nome": "Hugo Lloris", "numero": 1, "pais": "FR", "pos": "GR" },
+        { "nome": "Kieran Trippier", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Toby Alderweireld", "numero": 4, "pais": "BE", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Danny Rose", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "Moussa Sissoko", "numero": 17, "pais": "FR", "pos": "MC" },
+        { "nome": "Harry Winks", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Dele Alli", "numero": 20, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Christian Eriksen", "numero": 23, "pais": "DK", "pos": "MO" },
+        { "nome": "Son Heung-min", "aceites": ["son", "sonny"], "numero": 7, "pais": "KR", "pos": "EE" },
+        { "nome": "Harry Kane", "numero": 10, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Eric Dier", "numero": 15, "minuto": 74, "pais": "GB-ENG" },
+        { "nome": "Lucas Moura", "numero": 27, "minuto": 66, "pais": "BR" },
+        { "nome": "Fernando Llorente", "numero": 18, "minuto": 81, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Michel Vorm",
+        "Paulo Gazzaniga",
+        "Davinson Sánchez",
+        "Kyle Walker-Peters",
+        "Juan Foyth",
+        "Serge Aurier",
+        "Ben Davies",
+        "Erik Lamela",
+        "Victor Wanyama"
+      ]
+    },
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
+      "onze": [
+        { "nome": "Alisson", "aceites": ["Alisson Becker"], "numero": 13, "pais": "BR", "pos": "GR" },
+        { "nome": "Trent Alexander-Arnold", "numero": 66, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Joël Matip", "numero": 32, "pais": "CM", "pos": "DC" },
+        { "nome": "Virgil van Dijk", "aceites": ["vvd"], "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Andy Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },
+        { "nome": "Jordan Henderson", "numero": 14, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Fabinho", "numero": 3, "pais": "BR", "pos": "MC" },
+        { "nome": "Georginio Wijnaldum", "numero": 5, "pais": "NL", "pos": "MC" },
+        { "nome": "Mohamed Salah", "aceites": ["mo salah"], "numero": 11, "pais": "EG", "pos": "ED", "golos": [{ "minuto": 2, "penalti": true }] },
+        { "nome": "Roberto Firmino", "numero": 9, "pais": "BR", "pos": "PL" },
+        { "nome": "Sadio Mané", "numero": 10, "pais": "SN", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Joe Gomez", "numero": 12, "minuto": 90, "pais": "GB-ENG" },
+        { "nome": "James Milner", "numero": 7, "minuto": 62, "pais": "GB-ENG" },
+        { "nome": "Divock Origi", "numero": 27, "minuto": 58, "pais": "BE", "golos": [{ "minuto": 87 }] }
+      ],
+      "nao_utilizados": [
+        "Simon Mignolet",
+        "Caoimhín Kelleher",
+        "Dejan Lovren",
+        "Alberto Moreno",
+        "Adam Lallana",
+        "Alex Oxlade-Chamberlain",
+        "Xherdan Shaqiri",
+        "Daniel Sturridge",
+        "Rhian Brewster"
+      ]
+    }
+  ]
+}

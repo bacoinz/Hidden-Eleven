@@ -1,0 +1,63 @@
+{
+  "id": "ucl-2002-final",
+  "modos": ["final", "equipa:real-madrid"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2002-05-15",
+  "estadio": "Hampden Park, Glasgow",
+  "resultado": "Bayer Leverkusen 1–2 Real Madrid",
+  "fonte": "https://en.wikipedia.org/wiki/2002_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Bayer Leverkusen",
+      "cor": "#e32221",
+      "formacao": "4-1-3-1-1",
+      "treinador": { "nome": "Klaus Toppmöller" },
+      "onze": [
+        { "nome": "Hans-Jörg Butt", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Zoltán Sebescen", "numero": 26, "pais": "DE", "pos": "DD" },
+        { "nome": "Boris Živković", "numero": 6, "pais": "HR", "pos": "DC" },
+        { "nome": "Lúcio", "numero": 19, "pais": "BR", "pos": "DC", "golos": [{ "minuto": 14 }] },
+        { "nome": "Diego Placente", "numero": 35, "pais": "AR", "pos": "DE" },
+        { "nome": "Carsten Ramelow", "numero": 28, "pais": "DE", "pos": "MDC" },
+        { "nome": "Bernd Schneider", "numero": 25, "pais": "DE", "pos": "MD" },
+        { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MC" },
+        { "nome": "Thomas Brdarić", "numero": 23, "pais": "DE", "pos": "ME" },
+        { "nome": "Yıldıray Baştürk", "numero": 10, "pais": "TR", "pos": "MO" },
+        { "nome": "Oliver Neuville", "numero": 27, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Marko Babić", "numero": 3, "minuto": "90+1", "pais": "HR" },
+        { "nome": "Ulf Kirsten", "numero": 9, "minuto": 65, "pais": "DE" },
+        { "nome": "Dimitar Berbatov", "numero": 12, "minuto": 39, "pais": "BG" }
+      ],
+      "nao_utilizados": ["Frank Juric", "Thomas Kleine", "Jurica Vranješ", "Anel Džaka"]
+    },
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
+      "onze": [
+        { "nome": "César", "aceites": ["César Sánchez"], "numero": 13, "pais": "ES", "pos": "GR" },
+        { "nome": "Míchel Salgado", "numero": 2, "pais": "ES", "pos": "DD" },
+        { "nome": "Fernando Hierro", "numero": 4, "pais": "ES", "pos": "DC" },
+        { "nome": "Iván Helguera", "numero": 6, "pais": "ES", "pos": "DC" },
+        { "nome": "Roberto Carlos", "numero": 3, "pais": "BR", "pos": "DE" },
+        { "nome": "Claude Makélélé", "numero": 24, "pais": "FR", "pos": "MDC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 10, "pais": "PT", "pos": "MD" },
+        { "nome": "Santiago Solari", "numero": 21, "pais": "AR", "pos": "ME" },
+        { "nome": "Zinedine Zidane", "aceites": ["zidane", "zizou"], "numero": 5, "pais": "FR", "pos": "MO", "golos": [{ "minuto": 45 }] },
+        { "nome": "Raúl", "numero": 7, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 8 }] },
+        { "nome": "Fernando Morientes", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "minuto": 68, "pais": "ES" },
+        { "nome": "Steve McManaman", "numero": 8, "minuto": 61, "pais": "GB-ENG" },
+        { "nome": "Flávio Conceição", "numero": 16, "minuto": 73, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Aitor Karanka", "Francisco Pavón", "Guti", "Pedro Munitis"]
+    }
+  ]
+}

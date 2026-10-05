@@ -1,0 +1,86 @@
+{
+  "id": "mundial-2014-meias-brasil-alemanha",
+  "modos": ["classico", "equipa:brasil", "equipa:alemanha"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Meia-final",
+  "titulo": "O Mineiraço",
+  "selecoes": true,
+  "data": "2014-07-08",
+  "estadio": "Estádio Mineirão, Belo Horizonte",
+  "resultado": "Brasil 1–7 Alemanha",
+  "fonte": "https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)",
+  "equipas": [
+    {
+      "nome": "Brasil",
+      "slug": "brasil",
+      "cor": "#ffdf00",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Júlio César", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Maicon", "aceites": ["Maicon Sisenando"], "numero": 23, "pais": "BR", "pos": "DD" },
+        { "nome": "David Luiz", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Dante", "numero": 13, "pais": "BR", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 6, "pais": "BR", "pos": "DE" },
+        { "nome": "Luiz Gustavo", "numero": 17, "pais": "BR", "pos": "MC" },
+        { "nome": "Fernandinho", "numero": 5, "pais": "BR", "pos": "MC" },
+        { "nome": "Hulk", "numero": 7, "pais": "BR", "pos": "ED" },
+        { "nome": "Oscar", "numero": 11, "pais": "BR", "pos": "MO", "golos": [{ "minuto": 89 }] },
+        { "nome": "Bernard", "numero": 20, "pais": "BR", "pos": "EE" },
+        { "nome": "Fred", "numero": 9, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paulinho", "numero": 8, "minuto": 46, "pais": "BR" },
+        { "nome": "Ramires", "numero": 16, "minuto": 46, "pais": "BR" },
+        { "nome": "Willian", "numero": 19, "minuto": 70, "pais": "BR" }
+      ],
+      "nao_utilizados": [
+        "Jefferson",
+        "Dani Alves",
+        { "nome": "Thiago Silva", "aceites": ["thiago"] },
+        { "nome": "Neymar", "aceites": ["neymar jr"] },
+        "Maxwell",
+        "Henrique",
+        "Hernanes",
+        "Jô",
+        { "nome": "Victor", "aceites": ["Victor Leandro Bagy"] }
+      ]
+    },
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Joachim Löw", "aceites": ["loew", "jogi"] },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 20, "pais": "DE", "pos": "DC" },
+        { "nome": "Mats Hummels", "numero": 5, "pais": "DE", "pos": "DC" },
+        { "nome": "Benedikt Höwedes", "numero": 4, "pais": "DE", "pos": "DE" },
+        { "nome": "Sami Khedira", "numero": 6, "pais": "DE", "pos": "MC", "golos": [{ "minuto": 29 }] },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "pais": "DE", "pos": "MC" },
+        { "nome": "Thomas Müller", "aceites": ["mueller"], "numero": 13, "pais": "DE", "pos": "ED", "golos": [{ "minuto": 11 }] },
+        { "nome": "Toni Kroos", "numero": 18, "pais": "DE", "pos": "MO", "golos": [{ "minuto": 24 }, { "minuto": 26 }] },
+        { "nome": "Mesut Özil", "numero": 8, "pais": "DE", "pos": "EE" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL", "golos": [{ "minuto": 23 }] }
+      ],
+      "suplentes": [
+        { "nome": "André Schürrle", "numero": 9, "minuto": 58, "pais": "DE", "golos": [{ "minuto": 69 }, { "minuto": 79 }] },
+        { "nome": "Julian Draxler", "numero": 14, "minuto": 76, "pais": "DE" },
+        { "nome": "Per Mertesacker", "numero": 17, "minuto": 46, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Kevin Großkreutz",
+        "Matthias Ginter",
+        "Lukas Podolski",
+        "Ron-Robert Zieler",
+        "Erik Durm",
+        { "nome": "Mario Götze", "aceites": ["goetze"] },
+        "Shkodran Mustafi",
+        "Roman Weidenfeller",
+        "Christoph Kramer"
+      ]
+    }
+  ]
+}

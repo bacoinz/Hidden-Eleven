@@ -1,0 +1,64 @@
+{
+  "id": "ucl-2001-final",
+  "modos": ["final", "equipa:bayern", "equipa:valencia"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2001-05-23",
+  "estadio": "San Siro, Milão",
+  "resultado": "Bayern Munique 1–1 Valência (5–4 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2001_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "3-1-5-1",
+      "treinador": { "nome": "Ottmar Hitzfeld" },
+      "onze": [
+        { "nome": "Oliver Kahn", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Samuel Kuffour", "numero": 4, "pais": "GH", "pos": "DC" },
+        { "nome": "Patrik Andersson", "numero": 5, "pais": "SE", "pos": "DC" },
+        { "nome": "Thomas Linke", "numero": 25, "pais": "DE", "pos": "DC" },
+        { "nome": "Willy Sagnol", "numero": 2, "pais": "FR", "pos": "MD" },
+        { "nome": "Bixente Lizarazu", "numero": 3, "pais": "FR", "pos": "ME" },
+        { "nome": "Owen Hargreaves", "numero": 23, "pais": "GB-ENG", "pos": "MDC" },
+        { "nome": "Hasan Salihamidžić", "numero": 20, "pais": "BA", "pos": "MD" },
+        { "nome": "Stefan Effenberg", "numero": 11, "pais": "DE", "pos": "MC", "golos": [{ "minuto": 50, "penalti": true }] },
+        { "nome": "Mehmet Scholl", "numero": 7, "pais": "DE", "pos": "ME" },
+        { "nome": "Giovane Élber", "numero": 9, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paulo Sérgio", "numero": 13, "minuto": 108, "pais": "BR" },
+        { "nome": "Carsten Jancker", "numero": 19, "minuto": 46, "pais": "DE" },
+        { "nome": "Alexander Zickler", "numero": 21, "minuto": 100, "pais": "DE" }
+      ],
+      "nao_utilizados": ["Bernd Dreher", "Michael Tarnat", "Ciriaco Sforza", "Roque Santa Cruz"]
+    },
+    {
+      "nome": "Valência",
+      "slug": "valencia",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-1-2",
+      "treinador": { "nome": "Héctor Cúper" },
+      "onze": [
+        { "nome": "Santiago Cañizares", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Jocelyn Angloma", "numero": 20, "pais": "FR", "pos": "DD" },
+        { "nome": "Roberto Ayala", "numero": 12, "pais": "AR", "pos": "DC" },
+        { "nome": "Mauricio Pellegrino", "numero": 2, "pais": "AR", "pos": "DC" },
+        { "nome": "Amedeo Carboni", "numero": 15, "pais": "IT", "pos": "DE" },
+        { "nome": "Gaizka Mendieta", "numero": 6, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 3, "penalti": true }] },
+        { "nome": "Rubén Baraja", "numero": 19, "pais": "ES", "pos": "MC" },
+        { "nome": "Kily González", "numero": 18, "pais": "AR", "pos": "MC" },
+        { "nome": "Pablo Aimar", "numero": 35, "pais": "AR", "pos": "MO" },
+        { "nome": "Juan Ginés Sánchez", "aceites": ["Juan Sánchez"], "numero": 17, "pais": "ES", "pos": "PL" },
+        { "nome": "John Carew", "numero": 7, "pais": "NO", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Miroslav Đukić", "numero": 5, "minuto": 90, "pais": "ES" },
+        { "nome": "Zlatko Zahovič", "numero": 8, "minuto": 66, "pais": "SI" },
+        { "nome": "David Albelda", "numero": 23, "minuto": 46, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Andrés Palop", "Fábio Aurélio", "Didier Deschamps", { "nome": "Vicente", "aceites": ["Vicente Rodríguez"] }]
+    }
+  ]
+}

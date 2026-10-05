@@ -178,6 +178,9 @@ function aoEstado(sala) {
     if (ev.tipo === 'pista') ui.toast(`Nova pista: ${nomePista(ev)}`);
     if (ev.tipo === 'anfitriao' && ev.jogador === estado.eu) ui.toast('Agora és tu o anfitrião.');
   }
+  if (sala.fase === 'ronda' && sala.ronda?.onzeCompleto && anterior?.ronda && !anterior.ronda.onzeCompleto) {
+    ui.toast(sala.solo ? 'Onze completo! Podes terminar a ronda.' : 'Onze completo! Podem terminar a ronda se todos confirmarem.');
+  }
   ui.tick(sala, estado.ligacao.agora());
 }
 
