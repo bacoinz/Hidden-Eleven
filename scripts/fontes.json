@@ -1,0 +1,7 @@
+[
+  { "id": "ucl-2004-final", "artigo": "2004 UEFA Champions League final", "competicao": "Liga dos Campeões", "fase": "Final", "modos": ["final", "equipa:porto"], "slugs": ["", "porto"] },
+  { "id": "ucl-2008-final", "artigo": "2008 UEFA Champions League final", "competicao": "Liga dos Campeões", "fase": "Final", "modos": ["final", "equipa:man-utd", "equipa:chelsea"], "slugs": ["man-utd", "chelsea"] },
+  { "id": "ucl-2021-final", "artigo": "2021 UEFA Champions League final", "competicao": "Liga dos Campeões", "fase": "Final", "modos": ["final", "equipa:man-city", "equipa:chelsea"], "slugs": ["man-city", "chelsea"] },
+  { "id": "euro-2016-final", "artigo": "UEFA Euro 2016 final", "competicao": "Campeonato da Europa", "fase": "Final", "modos": ["final", "equipa:portugal", "equipa:franca"], "slugs": ["portugal", "franca"], "plantel": { "artigo": "UEFA Euro 2016 squads", "seccoes": ["Portugal", "France"] } },
+  { "id": "mundial-2010-final", "artigo": "2010 FIFA World Cup final", "competicao": "Campeonato do Mundo", "fase": "Final", "modos": ["final", "equipa:holanda", "equipa:espanha"], "slugs": ["holanda", "espanha"], "plantel": { "artigo": "2010 FIFA World Cup squads", "seccoes": ["Netherlands", "Spain"] } }
+]

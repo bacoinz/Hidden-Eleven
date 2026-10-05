@@ -1,0 +1,69 @@
+{
+  "id": "ucl-2008-final",
+  "modos": ["final", "equipa:man-utd", "equipa:chelsea"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2008-05-21",
+  "estadio": "Estádio Luzhniki, Moscovo",
+  "resultado": "Manchester United 1–1 Chelsea (6–5 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2008_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson", "Sir Alex Ferguson"] },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR", "aceites": ["vds"] },
+        { "nome": "Wes Brown", "numero": 6, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Nemanja Vidić", "numero": 15, "pais": "RS", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Owen Hargreaves", "numero": 4, "pais": "GB-ENG", "pos": "MD", "aceites": ["hargreaves"] },
+        { "nome": "Paul Scholes", "numero": 18, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Michael Carrick", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ME" },
+        { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Carlos Tevez", "numero": 32, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Anderson", "numero": 8, "minuto": "120+5", "pais": "BR" },
+        { "nome": "Ryan Giggs", "numero": 11, "minuto": 87, "pais": "GB-WLS" },
+        { "nome": "Nani", "numero": 17, "minuto": 101, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Tomasz Kuszczak", "John O'Shea", "Mikaël Silvestre", "Darren Fletcher"],
+      "cor": "#da291c"
+    },
+    {
+      "nome": "Chelsea",
+      "slug": "chelsea",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Avram Grant" },
+      "onze": [
+        { "nome": "Petr Čech", "numero": 1, "pais": "CZ", "pos": "GR", "aceites": ["cech"] },
+        { "nome": "Michael Essien", "numero": 5, "pais": "GH", "pos": "DD" },
+        { "nome": "Ricardo Carvalho", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "John Terry", "numero": 26, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "Claude Makélélé", "numero": 4, "pais": "FR", "pos": "MDC" },
+        { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MC" },
+        { "nome": "Frank Lampard", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Joe Cole", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Florent Malouda", "numero": 15, "pais": "FR", "pos": "EE" },
+        { "nome": "Didier Drogba", "numero": 11, "pais": "CI", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Juliano Belletti", "numero": 35, "minuto": "120+4", "pais": "BR" },
+        { "nome": "Salomon Kalou", "numero": 21, "minuto": 92, "pais": "CI" },
+        { "nome": "Nicolas Anelka", "numero": 39, "minuto": 99, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Carlo Cudicini",
+        "Alex",
+        { "nome": "Mikel John Obi", "aceites": ["john obi mikel", "obi mikel", "mikel"] },
+        { "nome": "Andriy Shevchenko", "aceites": ["sheva"] }
+      ],
+      "cor": "#034694"
+    }
+  ]
+}

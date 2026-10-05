@@ -1,0 +1,84 @@
+{
+  "id": "ucl-2021-final",
+  "modos": ["final", "equipa:man-city", "equipa:chelsea"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2021-05-29",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "Manchester City 0–1 Chelsea",
+  "fonte": "https://en.wikipedia.org/wiki/2021_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Ederson", "numero": 31, "pais": "BR", "pos": "GR" },
+        { "nome": "Kyle Walker", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "John Stones", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Oleksandr Zinchenko", "numero": 11, "pais": "UA", "pos": "DE" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "İlkay Gündoğan", "numero": 8, "pais": "DE", "pos": "MDC" },
+        { "nome": "Phil Foden", "numero": 47, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Riyad Mahrez", "numero": 26, "pais": "DZ", "pos": "ED" },
+        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 17, "pais": "BE", "pos": "PL" },
+        { "nome": "Raheem Sterling", "numero": 7, "pais": "GB-ENG", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Fernandinho", "numero": 25, "minuto": 64, "pais": "BR" },
+        { "nome": "Gabriel Jesus", "numero": 9, "minuto": 60, "pais": "BR" },
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 10, "minuto": 77, "pais": "AR" }
+      ],
+      "nao_utilizados": [
+        "Zack Steffen",
+        "Scott Carson",
+        "Nathan Aké",
+        "Aymeric Laporte",
+        "Benjamin Mendy",
+        "João Cancelo",
+        "Eric García",
+        "Rodri",
+        { "nome": "Ferran Torres", "aceites": ["ferran"] }
+      ],
+      "cor": "#6cabdd"
+    },
+    {
+      "nome": "Chelsea",
+      "slug": "chelsea",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Thomas Tuchel" },
+      "onze": [
+        { "nome": "Édouard Mendy", "numero": 16, "pais": "SN", "pos": "GR", "aceites": ["edouard"] },
+        { "nome": "César Azpilicueta", "numero": 28, "pais": "ES", "pos": "DC" },
+        { "nome": "Thiago Silva", "aceites": ["thiago"], "numero": 6, "pais": "BR", "pos": "DC" },
+        { "nome": "Antonio Rüdiger", "numero": 2, "pais": "DE", "pos": "DC" },
+        { "nome": "Reece James", "numero": 24, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Ben Chilwell", "numero": 21, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Jorginho", "numero": 5, "pais": "IT", "pos": "MC" },
+        { "nome": "N'Golo Kanté", "aceites": ["kante"], "numero": 7, "pais": "FR", "pos": "MC" },
+        { "nome": "Kai Havertz", "numero": 29, "pais": "DE", "pos": "MO" },
+        { "nome": "Mason Mount", "numero": 19, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Timo Werner", "numero": 11, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Andreas Christensen", "numero": 4, "minuto": 39, "pais": "DK" },
+        { "nome": "Christian Pulisic", "numero": 10, "minuto": 66, "pais": "US" },
+        { "nome": "Mateo Kovačić", "numero": 17, "minuto": 80, "pais": "HR" }
+      ],
+      "nao_utilizados": [
+        "Kepa Arrizabalaga",
+        "Willy Caballero",
+        "Marcos Alonso",
+        "Kurt Zouma",
+        "Emerson Palmieri",
+        "Callum Hudson-Odoi",
+        "Hakim Ziyech",
+        "Billy Gilmour",
+        "Olivier Giroud"
+      ],
+      "cor": "#034694"
+    }
+  ]
+}

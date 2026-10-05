@@ -1,0 +1,84 @@
+{
+  "id": "mundial-2010-final",
+  "modos": ["final", "equipa:holanda", "equipa:espanha"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Final",
+  "data": "2010-07-11",
+  "estadio": "Soccer City, Joanesburgo",
+  "resultado": "Holanda 0–1 Espanha (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_final",
+  "equipas": [
+    {
+      "nome": "Holanda",
+      "slug": "holanda",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Bert van Marwijk" },
+      "onze": [
+        { "nome": "Maarten Stekelenburg", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "Gregory van der Wiel", "numero": 2, "pais": "NL", "pos": "DD" },
+        { "nome": "John Heitinga", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Joris Mathijsen", "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Giovanni van Bronckhorst", "numero": 5, "pais": "NL", "pos": "DE", "aceites": ["gio"] },
+        { "nome": "Mark van Bommel", "numero": 6, "pais": "NL", "pos": "MDC" },
+        { "nome": "Nigel de Jong", "numero": 8, "pais": "NL", "pos": "MDC" },
+        { "nome": "Arjen Robben", "numero": 11, "pais": "NL", "pos": "ED" },
+        { "nome": "Wesley Sneijder", "numero": 10, "pais": "NL", "pos": "MO" },
+        { "nome": "Dirk Kuyt", "numero": 7, "pais": "NL", "pos": "EE" },
+        { "nome": "Robin van Persie", "numero": 9, "pais": "NL", "pos": "PL", "aceites": ["rvp"] }
+      ],
+      "suplentes": [
+        { "nome": "Eljero Elia", "numero": 17, "minuto": 71, "pais": "NL" },
+        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 99, "pais": "NL" },
+        { "nome": "Edson Braafheid", "numero": 15, "minuto": 105, "pais": "NL" }
+      ],
+      "nao_utilizados": [
+        "Khalid Boulahrouz",
+        "André Ooijer",
+        "Demy de Zeeuw",
+        "Michel Vorm",
+        "Stijn Schaars",
+        "Ryan Babel",
+        "Ibrahim Afellay",
+        "Klaas-Jan Huntelaar",
+        "Sander Boschker"
+      ],
+      "cor": "#f36c21"
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Joan Capdevila", "numero": 11, "pais": "ES", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "ED" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MO" },
+        { "nome": "Pedro", "numero": 18, "pais": "ES", "pos": "EE", "aceites": ["pedro rodriguez"] },
+        { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES" },
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 87, "pais": "ES" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 106, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Raúl Albiol",
+        "Carlos Marchena",
+        "Víctor Valdés",
+        "Juan Mata",
+        "Álvaro Arbeloa",
+        "Fernando Llorente",
+        "Javi Martínez",
+        "David Silva",
+        "Pepe Reina"
+      ],
+      "cor": "#c60b1e"
+    }
+  ]
+}

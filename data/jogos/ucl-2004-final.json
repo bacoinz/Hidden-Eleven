@@ -1,0 +1,68 @@
+{
+  "id": "ucl-2004-final",
+  "modos": ["final", "equipa:porto"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Final",
+  "data": "2004-05-26",
+  "estadio": "Arena AufSchalke, Gelsenkirchen",
+  "resultado": "Mónaco 0–3 FC Porto",
+  "fonte": "https://en.wikipedia.org/wiki/2004_UEFA_Champions_League_final",
+  "equipas": [
+    {
+      "nome": "Mónaco",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Flavio Roma", "numero": 30, "pais": "IT", "pos": "GR" },
+        { "nome": "Hugo Ibarra", "numero": 4, "pais": "AR", "pos": "DD" },
+        { "nome": "Julien Rodriguez", "numero": 27, "pais": "FR", "pos": "DC" },
+        { "nome": "Gaël Givet", "numero": 32, "pais": "FR", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Édouard Cissé", "numero": 14, "pais": "FR", "pos": "MC" },
+        { "nome": "Lucas Bernardi", "numero": 7, "pais": "AR", "pos": "MC" },
+        { "nome": "Akis Zikos", "numero": 15, "pais": "GR", "pos": "MC" },
+        { "nome": "Ludovic Giuly", "numero": 8, "pais": "FR", "pos": "ED" },
+        { "nome": "Jérôme Rothen", "numero": 25, "pais": "FR", "pos": "EE" },
+        { "nome": "Fernando Morientes", "numero": 10, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Sébastien Squillaci", "numero": 19, "minuto": 72, "pais": "FR" },
+        { "nome": "Dado Pršo", "numero": 9, "minuto": 23, "pais": "HR" },
+        { "nome": "Shabani Nonda", "numero": 18, "minuto": 64, "pais": "CD" }
+      ],
+      "nao_utilizados": ["Tony Sylva", "Jaroslav Plašil", "Hassan El Fakiri", "Emmanuel Adebayor"],
+      "cor": "#e2001a"
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Vítor Baía", "aceites": ["baia"], "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Paulo Ferreira", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Costa", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 8, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "Pedro Mendes", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Deco", "numero": 10, "pais": "PT", "pos": "MO" },
+        { "nome": "Carlos Alberto", "numero": 19, "pais": "BR", "pos": "PL" },
+        { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 85, "pais": "PT" },
+        { "nome": "Dmitri Alenichev", "numero": 15, "minuto": 60, "pais": "RU", "aceites": ["alenitchev", "dmitri alenitchev"] },
+        { "nome": "Benni McCarthy", "numero": 77, "minuto": 78, "pais": "ZA", "aceites": ["benni"] }
+      ],
+      "nao_utilizados": [
+        { "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] },
+        "Ricardo Costa",
+        { "nome": "José Bosingwa", "aceites": ["bosingwa"] },
+        "Edgaras Jankauskas"
+      ],
+      "cor": "#0047ab"
+    }
+  ]
+}

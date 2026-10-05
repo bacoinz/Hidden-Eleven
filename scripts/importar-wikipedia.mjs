@@ -1,0 +1,404 @@
+// Importa um jogo a partir do wikitext bruto da Wikipédia e escreve um rascunho em data/jogos/<id>.json.
+// O rascunho tem de ser revisto à mão (formação, nomes em pt-PT, alcunhas) e passar no validador.
+//
+// Uso:
+//   node scripts/importar-wikipedia.mjs <id>            importa a entrada <id> de scripts/fontes.json
+//   node scripts/importar-wikipedia.mjs --todos         importa todas as entradas sem ficheiro
+//   opções: --forcar (reescreve o ficheiro), --mostrar (só imprime, não escreve)
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { paraIso, paraCodigoJson } from './paises.mjs';
+import { alcunhasDe } from './alcunhas.mjs';
+import { formatarJogo } from './formato.mjs';
+import { normalizar } from '../src/nomes.js';
+import { problemasDaFormacao } from '../public/js/formacao.js';
+
+const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
+const UA = 'HiddenEleven/1.0 (jogo entre amigos; importação de onzes)';
+
+const POSICOES = {
+  GK: 'GR', RB: 'DD', RWB: 'DD', CB: 'DC', SW: 'DC', LB: 'DE', LWB: 'DE',
+  DM: 'MDC', CM: 'MC', RM: 'MD', LM: 'ME', AM: 'MO', RW: 'ED', LW: 'EE',
+  RF: 'PL', LF: 'PL', CF: 'PL', ST: 'PL', SS: 'PL', FW: 'PL',
+};
+
+// Nomes de equipas e cidades em pt-PT (o que não estiver aqui fica como vem e é revisto à mão).
+const EQUIPAS_PT = {
+  Monaco: 'Mónaco', Porto: 'FC Porto', 'Bayern Munich': 'Bayern Munique', Germany: 'Alemanha', Spain: 'Espanha',
+  France: 'França', Italy: 'Itália', Netherlands: 'Holanda', England: 'Inglaterra', Portugal: 'Portugal',
+  Brazil: 'Brasil', Argentina: 'Argentina', Croatia: 'Croácia', Greece: 'Grécia', 'Manchester United': 'Manchester United',
+  'Manchester City': 'Manchester City', Chelsea: 'Chelsea', Liverpool: 'Liverpool', Arsenal: 'Arsenal',
+  'Real Madrid': 'Real Madrid', Barcelona: 'Barcelona', 'Atlético Madrid': 'Atlético de Madrid', Juventus: 'Juventus',
+  'AC Milan': 'Milan', Milan: 'Milan', 'Inter Milan': 'Inter', Internazionale: 'Inter', Valencia: 'Valência',
+  'Bayer Leverkusen': 'Bayer Leverkusen', 'Borussia Dortmund': 'Borussia Dortmund', 'Paris Saint-Germain': 'Paris Saint-Germain',
+  'Tottenham Hotspur': 'Tottenham', Benfica: 'Benfica', Sporting: 'Sporting', 'Sporting CP': 'Sporting', Braga: 'SC Braga',
+  'CSKA Moscow': 'CSKA Moscovo', Sevilla: 'Sevilha', Celtic: 'Celtic', 'Queens Park Rangers': 'QPR',
+};
+const CIDADES_PT = {
+  Munich: 'Munique', Moscow: 'Moscovo', Rome: 'Roma', Milan: 'Milão', Lisbon: 'Lisboa', Seville: 'Sevilha',
+  Turin: 'Turim', London: 'Londres', Athens: 'Atenas', Berlin: 'Berlim', Vienna: 'Viena', Istanbul: 'Istambul',
+  Basel: 'Basileia', Amsterdam: 'Amesterdão', Budapest: 'Budapeste', Johannesburg: 'Joanesburgo', Brussels: 'Bruxelas',
+  Warsaw: 'Varsóvia', Rotterdam: 'Roterdão', Bucharest: 'Bucareste', Nuremberg: 'Nuremberga', Glasgow: 'Glasgow',
+  Kyiv: 'Kiev', Kiev: 'Kiev', 'Saint-Denis': 'Saint-Denis', Yokohama: 'Yokohama', Cardiff: 'Cardiff',
+};
+
+async function wikitext(lingua, titulo, saltos = 0) {
+  const url = `https://${lingua}.wikipedia.org/w/index.php?title=${encodeURIComponent(titulo.replace(/ /g, '_'))}&action=raw`;
+  const r = await fetch(url, { headers: { 'User-Agent': UA } });
+  if (!r.ok) throw new Error(`HTTP ${r.status} em ${url}`);
+  const texto = await r.text();
+  const redirect = texto.match(/^#REDIRECT\s*\[\[([^\]#|]+)/i);
+  if (redirect && saltos < 3) return wikitext(lingua, redirect[1], saltos + 1);
+  return { texto, url: `https://${lingua}.wikipedia.org/wiki/${encodeURIComponent(titulo.replace(/ /g, '_'))}` };
+}
+
+// --- utilitários de wikitext ---
+const semRefs = (s) => s.replace(/<ref[^>]*\/>/g, '').replace(/<ref[\s\S]*?<\/ref>/g, '');
+function textoDeLigacao(s) {
+  // [[Alvo|Texto]] → Texto ; [[Alvo]] → Alvo (sem "(footballer...)").
+  return s
+    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
+    .replace(/\[\[([^\]]+)\]\]/g, (_, alvo) => alvo.replace(/\s*\([^)]*\)\s*$/, ''));
+}
+function limpar(s) {
+  return textoDeLigacao(semRefs(s))
+    .replace(/\{\{[^{}]*\}\}/g, '')
+    .replace(/'''?/g, '')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+// [[Cédric Soares|Cédric]] → "Cédric Soares" (título do artigo, sem desambiguação).
+const alvoDeLigacao = (ligacao) => ligacao.replace(/^\[\[([^\]|]+).*$/, '$1').replace(/\s*\([^)]*\)\s*$/, '').trim();
+
+function campoDaCaixa(caixa, nome) {
+  const m = caixa.match(new RegExp(`\\|\\s*${nome}\\s*=([^\\n]*)`));
+  return m ? m[1].trim() : '';
+}
+function bandeira(s) {
+  const m =
+    s.match(/\{\{\s*(?:flagicon|flag icon|fbaicon|flagdeco)\s*\|\s*([^|}]+)/i) ||
+    s.match(/\{\{#invoke:flag\|[^|}]*\|([^|}]+)/i) ||
+    s.match(/\{\{\s*(?:fb|fb-rt|fbu|fb-rt-u)\s*\|\s*([A-Z]{3})/);
+  return m ? paraIso(m[1]) : null;
+}
+const minuto = (s) => {
+  const v = s.trim().replace(/[′']/g, '');
+  return /^\d+$/.test(v) ? Number(v) : v;
+};
+
+function dataDaCaixa(caixa) {
+  const d = campoDaCaixa(caixa, 'date');
+  const m = d.match(/(\d{4})\|(\d{1,2})\|(\d{1,2})/);
+  if (m) return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
+  const t = Date.parse(limpar(d));
+  return Number.isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10);
+}
+
+function nomeEquipa(campo) {
+  const nome = limpar(campo.replace(/\{\{#invoke:flag\|[^}]*\}\}/g, '').replace(/\{\{\s*(?:fbaicon|flagicon)[^}]*\}\}/gi, ''));
+  if (nome) return nome;
+  // Seleções: {{fb-rt|ESP}} / {{#invoke:flag|fb|ARG}}
+  const iso = bandeira(campo);
+  const porIso = { es: 'Espanha', ar: 'Argentina', fr: 'França', it: 'Itália', de: 'Alemanha', nl: 'Holanda', pt: 'Portugal', br: 'Brasil', hr: 'Croácia', gr: 'Grécia', 'gb-eng': 'Inglaterra' };
+  return porIso[iso] ?? campo;
+}
+
+// --- parse do bloco do jogo ---
+function encontrarCaixa(texto, procurar) {
+  const caixas = [];
+  const re = /\{\{\s*Football box/gi;
+  let m;
+  while ((m = re.exec(texto))) {
+    // Fecha a caixa contando chavetas.
+    let nivel = 0;
+    let i = m.index;
+    for (; i < texto.length; i++) {
+      if (texto.startsWith('{{', i)) { nivel++; i++; }
+      else if (texto.startsWith('}}', i)) { nivel--; i++; if (nivel === 0) break; }
+    }
+    caixas.push({ inicio: m.index, fim: i + 1, caixa: texto.slice(m.index, i + 1) });
+  }
+  if (!caixas.length) throw new Error('Não encontrei nenhuma {{Football box}}.');
+  if (!procurar?.length) return caixas.find((c) => /\n\s*\|\s*GK\s*\|\|/.test(texto.slice(c.fim, c.fim + 20000))) ?? caixas[0];
+  const alvo = caixas.find((c) => procurar.every((p) => c.caixa.includes(p)));
+  if (!alvo) throw new Error(`Nenhuma caixa com ${procurar.join(' e ')}.`);
+  return alvo;
+}
+
+function lerOnzes(texto, desde) {
+  const linhas = texto.slice(desde).split('\n');
+  const equipas = [];
+  let atual = { onze: [], banco: [], treinador: null };
+  let seccao = 'onze';
+  for (const linha of linhas) {
+    if (equipas.length === 2) break;
+    if (/\{\{\s*Football box/i.test(linha) && (atual.onze.length || equipas.length)) break;
+    if (/Substitutes:|Substitutions:/i.test(linha)) { seccao = 'banco'; continue; }
+    if (/(Manager|Head coach|Coach):/i.test(linha)) { seccao = 'treinador'; continue; }
+    if (seccao === 'treinador' && /\[\[/.test(linha)) {
+      const ligacaoTreinador = linha.match(/\[\[[^\]]+\]\]/)?.[0];
+      atual.treinador = {
+        nome: limpar(linha.replace(/^\|[^|]*\|/, '')),
+        alvo: ligacaoTreinador ? alvoDeLigacao(ligacaoTreinador) : undefined,
+        iso: bandeira(linha),
+      };
+      equipas.push(atual);
+      atual = { onze: [], banco: [], treinador: null };
+      seccao = 'onze';
+      continue;
+    }
+    const m = linha.match(/^\|\s*([A-Z]{2,3})\s*\|\|(.*)$/);
+    if (!m) continue;
+    const resto = m[2];
+    const numero = resto.match(/'''\s*(\d+)\s*'''/)?.[1];
+    const ligacao = [...resto.matchAll(/\[\[([^\]]+)\]\]/g)].map((x) => x[0]).find((l) => !/Captain|\|c\]\]/i.test(l));
+    if (!ligacao) continue;
+    const jogador = {
+      posWiki: m[1],
+      numero: numero ? Number(numero) : null,
+      nome: limpar(ligacao),
+      alvo: alvoDeLigacao(ligacao),
+      iso: bandeira(resto),
+      saiu: resto.match(/\{\{\s*sub\s*off\s*\|\s*([^}|]+)/i)?.[1],
+      entrou: resto.match(/\{\{\s*sub\s*on\s*\|\s*([^}|]+)/i)?.[1],
+    };
+    (seccao === 'banco' ? atual.banco : atual.onze).push(jogador);
+  }
+  return equipas;
+}
+
+// --- posições e formação ---
+function mapearPosicoes(onze) {
+  const nCB = onze.filter((j) => j.posWiki === 'CB' || j.posWiki === 'SW').length;
+  const temCF = onze.some((j) => ['CF', 'ST'].includes(j.posWiki));
+  return onze.map((j) => {
+    let pos = POSICOES[j.posWiki] ?? 'PL';
+    if (nCB === 3 && j.posWiki === 'RWB') pos = 'MD';
+    if (nCB === 3 && j.posWiki === 'LWB') pos = 'ME';
+    if (temCF && j.posWiki === 'RF') pos = 'ED';
+    if (temCF && j.posWiki === 'LF') pos = 'EE';
+    return { ...j, pos };
+  });
+}
+
+const CANONICAS = {
+  '4-1-2-1-2': '4-4-2 losango', '4-1-2-3': '4-3-3', '4-2-1-3': '4-3-3', '3-1-4-2': '3-5-2', '5-1-2-2': '5-3-2',
+  '4-1-3-2': '4-4-2 losango',
+};
+function deduzirFormacao(onze) {
+  const conta = (...ps) => onze.filter((j) => ps.includes(j.pos)).length;
+  const D = conta('DD', 'DC', 'DE');
+  const MDC = conta('MDC');
+  const MID = conta('MD', 'MC', 'ME');
+  const MO = conta('MO');
+  const W = conta('ED', 'EE');
+  const PL = conta('PL');
+  const linhas = [D];
+  if (MDC) linhas.push(MDC);
+  if (MID) linhas.push(MID);
+  if (MO && W) linhas.push(MO + W);
+  else if (MO) linhas.push(MO);
+  if (W && !MO) linhas.push(W + PL);
+  else if (PL) linhas.push(PL);
+  const f = linhas.filter(Boolean).join('-');
+  return CANONICAS[f] ?? f;
+}
+
+// --- convocados (seleções): a Wikipédia só lista as substituições feitas ---
+async function lerPlantel(plantel) {
+  const { texto } = await wikitext(plantel.lingua ?? 'en', plantel.artigo);
+  return plantel.seccoes.map((seccao) => {
+    const titulo = texto.search(new RegExp(`^==+\\s*${seccao.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*==+\\s*$`, 'm'));
+    if (titulo < 0) throw new Error(`Secção "${seccao}" não encontrada em ${plantel.artigo}.`);
+    const resto = texto.slice(titulo).split('\n').slice(1);
+    const fim = resto.findIndex((l) => /^==/.test(l));
+    const linhas = resto.slice(0, fim < 0 ? undefined : fim);
+    const jogadores = [];
+    for (const l of linhas) {
+      const campo = l.match(/\|\s*name\s*=\s*(\{\{[^}]*\}\}|\[\[[^\]]*\]\]|[^|}]*)/)?.[1];
+      if (!campo || !/nat fs (g )?player/i.test(l)) continue;
+      let nome;
+      const sortname = campo.match(/\{\{\s*sortname\s*\|([^|}]*)\|([^|}]*)/i);
+      const sort = campo.match(/\{\{\s*sort\s*\|[^|]*\|(.*)\}\}$/i);
+      if (sortname) nome = [sortname[1], sortname[2]].map((x) => x.trim()).filter(Boolean).join(' ');
+      else if (sort) nome = limpar(sort[1]);
+      else nome = limpar(campo);
+      const ligacao = campo.match(/\[\[[^\]]+\]\]/)?.[0];
+      const numero = l.match(/\|\s*no\s*=\s*(\d+)/)?.[1];
+      jogadores.push({ nome, alvo: ligacao ? alvoDeLigacao(ligacao) : nome, numero: numero ? Number(numero) : null });
+    }
+    if (!jogadores.length) throw new Error(`Sem jogadores na secção "${seccao}".`);
+    return jogadores;
+  });
+}
+
+// --- montagem do JSON ---
+function pessoa(j, extra = {}) {
+  const aceites = new Set([...alcunhasDe(j.nome), ...(j.alvo ? alcunhasDe(j.alvo) : [])]);
+  if (j.alvo && normalizar(j.alvo) !== normalizar(j.nome)) aceites.add(j.alvo);
+  return { nome: j.nome, ...(aceites.size ? { aceites: [...aceites] } : {}), ...extra };
+}
+
+// Losango em que a Wikipédia chama extremos aos médios interiores (RW/LW + AM + DM + 2 CF).
+function corrigirLosango(onze) {
+  const conta = (p) => onze.filter((j) => j.pos === p).length;
+  if (conta('MDC') === 1 && conta('MO') === 1 && conta('ED') === 1 && conta('EE') === 1 && conta('PL') === 2 && !conta('MC') && !conta('MD') && !conta('ME')) {
+    return onze.map((j) => (j.pos === 'ED' || j.pos === 'EE' ? { ...j, pos: 'MC' } : j));
+  }
+  return onze;
+}
+
+function montarEquipa(bruta, nomeEquipa, isoEquipa, slug, plantel) {
+  const onze = corrigirLosango(mapearPosicoes(bruta.onze));
+  const usados = bruta.banco.filter((j) => j.entrou);
+  let naoUsados = bruta.banco.filter((j) => !j.entrou);
+  if (plantel) {
+    // Convocados que não estão no onze nem nas substituições.
+    const jogaram = new Set([...bruta.onze, ...usados].flatMap((j) => [normalizar(j.nome), normalizar(j.alvo ?? '')]));
+    naoUsados = plantel.filter((j) => !jogaram.has(normalizar(j.nome)) && !jogaram.has(normalizar(j.alvo)));
+  }
+  const pais = (j) => paraCodigoJson(j.iso ?? isoEquipa);
+  return {
+    nome: nomeEquipa,
+    ...(slug ? { slug } : {}),
+    formacao: deduzirFormacao(onze),
+    treinador: pessoa(bruta.treinador ?? { nome: '?' }),
+    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: j.pos })),
+    suplentes: usados.map((j) => pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j) })),
+    nao_utilizados: naoUsados.map((j) => {
+      const p = pessoa(j);
+      return p.aceites ? p : p.nome;
+    }),
+  };
+}
+
+export async function importar(entrada) {
+  const { texto, url } = await wikitext(entrada.lingua ?? 'en', entrada.artigo);
+  const { caixa, fim } = encontrarCaixa(texto, entrada.procurar);
+  const t1 = campoDaCaixa(caixa, 'team1');
+  const t2 = campoDaCaixa(caixa, 'team2');
+  const nomes = [nomeEquipa(t1), nomeEquipa(t2)].map((n) => EQUIPAS_PT[n] ?? n);
+  const isos = [bandeira(t1), bandeira(t2)];
+  const onzes = lerOnzes(texto, fim);
+  if (onzes.length < 2) throw new Error(`Só encontrei ${onzes.length} onze(s) completo(s).`);
+
+  const placarBruto = campoDaCaixa(caixa, 'score');
+  const placar = limpar(placarBruto).replace(/-/g, '–');
+  const gols = placarBruto.match(/(\d+)\s*[–-]\s*(\d+)/);
+  const prolongamento = /a\.?e\.?t|aet|extra time/i.test(caixa.match(/\|\s*score\s*=[^\n]*/)?.[0] ?? '') || /\|\s*aet\s*=\s*yes/i.test(caixa);
+  const penaltis = limpar(campoDaCaixa(caixa, 'penaltyscore')).replace(/-/g, '–');
+  let resultado = gols ? `${nomes[0]} ${gols[1]}–${gols[2]} ${nomes[1]}` : `${nomes[0]} ${placar} ${nomes[1]}`;
+  if (penaltis) resultado += ` (${penaltis} g.p.)`;
+  else if (prolongamento) resultado += ' (a.p.)';
+
+  const estadio = limpar(campoDaCaixa(caixa, 'stadium'))
+    .split(', ')
+    .map((p) => CIDADES_PT[p] ?? p)
+    .join(', ');
+
+  const slugs = entrada.slugs ?? [];
+  const planteis = entrada.plantel ? await lerPlantel(entrada.plantel) : [];
+  return {
+    id: entrada.id,
+    modos: entrada.modos,
+    competicao: entrada.competicao,
+    ...(entrada.fase ? { fase: entrada.fase } : {}),
+    ...(entrada.titulo ? { titulo: entrada.titulo } : {}),
+    data: dataDaCaixa(caixa),
+    estadio,
+    resultado,
+    fonte: url,
+    equipas: [0, 1].map((i) => montarEquipa(onzes[i], nomes[i], isos[i], slugs[i], planteis[i])),
+  };
+}
+
+// --- curadoria manual (scripts/curadoria.json), aplicada depois de cada importação ---
+export function aplicarCuradoria(jogo, c) {
+  if (!c) return jogo;
+  const { equipas: ajustesEquipas = [], ...topo } = c;
+  Object.assign(jogo, topo);
+  ajustesEquipas.forEach((a, i) => {
+    const e = jogo.equipas[i];
+    if (!a || !e) return;
+    const todas = () => [e.treinador, ...e.onze, ...e.suplentes];
+    for (const [antigo, novo] of Object.entries(a.nomes ?? {})) {
+      const p = todas().find((x) => x.nome === antigo);
+      if (p) {
+        p.nome = novo;
+        if (normalizar(antigo) !== normalizar(novo)) p.aceites = [...new Set([...(p.aceites ?? []), antigo])];
+        continue;
+      }
+      const k = e.nao_utilizados.findIndex((x) => (typeof x === 'string' ? x : x.nome) === antigo);
+      if (k < 0) throw new Error(`curadoria: "${antigo}" não existe em ${e.nome}`);
+      e.nao_utilizados[k] = typeof e.nao_utilizados[k] === 'string' ? novo : { ...e.nao_utilizados[k], nome: novo };
+    }
+    for (const [nome, pos] of Object.entries(a.pos ?? {})) {
+      const p = e.onze.find((x) => x.nome === nome);
+      if (!p) throw new Error(`curadoria: "${nome}" não está no onze de ${e.nome}`);
+      p.pos = pos;
+    }
+    for (const [nome, extra] of Object.entries(a.aceites ?? {})) {
+      const p = todas().find((x) => x.nome === nome);
+      if (p) {
+        p.aceites = [...new Set([...(p.aceites ?? []), ...extra])];
+        continue;
+      }
+      const k = e.nao_utilizados.findIndex((x) => (typeof x === 'string' ? x : x.nome) === nome);
+      if (k < 0) throw new Error(`curadoria: "${nome}" não existe em ${e.nome}`);
+      const atual = e.nao_utilizados[k];
+      e.nao_utilizados[k] = { nome, aceites: [...new Set([...(typeof atual === 'string' ? [] : atual.aceites ?? []), ...extra])] };
+    }
+    for (const [nome, curto] of Object.entries(a.curto ?? {})) {
+      const p = todas().find((x) => x.nome === nome);
+      if (!p) throw new Error(`curadoria: "${nome}" não existe em ${e.nome}`);
+      p.curto = curto;
+    }
+    if (a.ordem) {
+      const falta = a.ordem.filter((n) => !e.onze.some((p) => p.nome === n));
+      if (falta.length || a.ordem.length !== 11) throw new Error(`curadoria: ordem inválida em ${e.nome} (${falta.join(', ')})`);
+      e.onze.sort((x, y) => a.ordem.indexOf(x.nome) - a.ordem.indexOf(y.nome));
+    }
+    for (const campo of ['nome', 'formacao', 'cor', 'slug']) if (a[campo] !== undefined) e[campo] = a[campo];
+  });
+  return jogo;
+}
+
+async function principal() {
+  const args = process.argv.slice(2);
+  const forcar = args.includes('--forcar');
+  const mostrar = args.includes('--mostrar');
+  const fontes = JSON.parse(readFileSync(join(raiz, 'scripts', 'fontes.json'), 'utf8'));
+  const curadoria = JSON.parse(readFileSync(join(raiz, 'scripts', 'curadoria.json'), 'utf8'));
+  const ids = args.includes('--todos') ? fontes.map((f) => f.id) : args.filter((a) => !a.startsWith('--'));
+  if (!ids.length) {
+    console.log('Uso: node scripts/importar-wikipedia.mjs <id>|--todos [--forcar] [--mostrar]');
+    process.exit(1);
+  }
+  let falhas = 0;
+  for (const id of ids) {
+    const entrada = fontes.find((f) => f.id === id);
+    if (!entrada) { console.error(`✗ ${id}: não está em scripts/fontes.json`); falhas++; continue; }
+    if (!entrada.artigo) continue; // jogos transcritos à mão
+    const destino = join(raiz, 'data', 'jogos', `${id}.json`);
+    if (existsSync(destino) && !forcar && !mostrar) { console.log(`· ${id}: já existe (usa --forcar para reescrever)`); continue; }
+    try {
+      const jogo = aplicarCuradoria(await importar(entrada), curadoria[id]);
+      const json = formatarJogo(jogo);
+      if (mostrar) console.log(json);
+      else writeFileSync(destino, json);
+      const resumo = jogo.equipas.map((e) => `${e.nome} ${e.formacao} (${e.onze.length}+${e.suplentes.length}, banco ${e.nao_utilizados.length})`).join(' vs ');
+      console.log(`✓ ${id}: ${resumo}`);
+      for (const e of jogo.equipas) {
+        for (const p of problemasDaFormacao(e.onze, e.formacao)) console.log(`   ⚠ ${e.nome}: ${p}`);
+      }
+    } catch (e) {
+      console.error(`✗ ${id}: ${e.message}`);
+      falhas++;
+    }
+  }
+  process.exit(falhas ? 1 : 0);
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) principal();

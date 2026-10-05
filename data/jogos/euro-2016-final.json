@@ -1,0 +1,84 @@
+{
+  "id": "euro-2016-final",
+  "modos": ["final", "equipa:portugal", "equipa:franca"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Final",
+  "data": "2016-07-10",
+  "estadio": "Stade de France, Saint-Denis",
+  "resultado": "Portugal 1–0 França (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2016_final",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric", "aceites": ["cedric", "Cédric Soares"], "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "José Fonte", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MDC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MO" },
+        { "nome": "João Mário", "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 25, "pais": "PT" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 66, "pais": "PT" },
+        { "nome": "Éder", "numero": 9, "minuto": 79, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "Ricardo Carvalho",
+        "Vieirinha",
+        "Anthony Lopes",
+        { "nome": "Danilo", "aceites": ["Danilo Pereira"] },
+        "André Gomes",
+        "Rafa Silva",
+        "Eliseu",
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
+      ],
+      "cor": "#c8102e"
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Hugo Lloris", "numero": 1, "pais": "FR", "pos": "GR" },
+        { "nome": "Bacary Sagna", "numero": 19, "pais": "FR", "pos": "DD" },
+        { "nome": "Laurent Koscielny", "numero": 21, "pais": "FR", "pos": "DC" },
+        { "nome": "Samuel Umtiti", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Moussa Sissoko", "numero": 18, "pais": "FR", "pos": "MD" },
+        { "nome": "Paul Pogba", "numero": 15, "pais": "FR", "pos": "MC" },
+        { "nome": "Blaise Matuidi", "numero": 14, "pais": "FR", "pos": "MC" },
+        { "nome": "Dimitri Payet", "numero": 8, "pais": "FR", "pos": "ME" },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "PL" },
+        { "nome": "Olivier Giroud", "numero": 9, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kingsley Coman", "numero": 20, "minuto": 58, "pais": "FR" },
+        { "nome": "André-Pierre Gignac", "numero": 10, "minuto": 78, "pais": "FR" },
+        { "nome": "Anthony Martial", "numero": 11, "minuto": 110, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Christophe Jallet",
+        "Adil Rami",
+        { "nome": "N'Golo Kanté", "aceites": ["kante"] },
+        "Yohan Cabaye",
+        "Morgan Schneiderlin",
+        "Eliaquim Mangala",
+        "Steve Mandanda",
+        "Lucas Digne",
+        "Benoît Costil"
+      ],
+      "cor": "#1e3a8a"
+    }
+  ]
+}
