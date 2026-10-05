@@ -115,8 +115,8 @@ describe('partida', () => {
 
     expect(S.palpite(sala, anf, nome, t + 2000).resposta).toMatchObject({ r: 'ja', porNome: 'Jogador2' });
     expect(S.palpite(sala, outro, nome, t + 3000).resposta).toMatchObject({ r: 'ja', porNome: null });
-    // Demasiado rápido: ignorado em silêncio.
-    expect(S.palpite(sala, outro, nome, t + 3050).resposta).toBeNull();
+    // Demasiado rápido: pede para repetir.
+    expect(S.palpite(sala, outro, nome, t + 3050).resposta).toEqual({ r: 'devagar' });
   });
 
   it('acaba a partida e volta ao lobby sem perder os jogos usados', () => {

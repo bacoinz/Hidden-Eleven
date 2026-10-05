@@ -243,7 +243,7 @@ export const deveLimpar = (sala, agora) => sala.vaziaDesde != null && agora >= s
 
 /**
  * Palpite de um jogador. Devolve { resposta, mudou }: `resposta` vai só para quem escreveu
- * (null = ignorado em silêncio); `mudou` diz se o estado público mudou.
+ * ('devagar' se chegar antes do intervalo mínimo); `mudou` diz se o estado público mudou.
  */
 export function palpite(sala, jogadorId, texto, agora) {
   const j = jogador(sala, jogadorId);
@@ -252,7 +252,7 @@ export function palpite(sala, jogadorId, texto, agora) {
   const r = sala.partida.ronda;
   if (r.etapa !== 'corrida') return { resposta: { r: 'fora' }, mudou };
   if (agora < j.bloqueadoAte) return { resposta: { r: 'bloqueado', ate: j.bloqueadoAte }, mudou };
-  if (agora - j.ultimoPalpite < REGRAS.intervaloMinimoMs) return { resposta: null, mudou };
+  if (agora - j.ultimoPalpite < REGRAS.intervaloMinimoMs) return { resposta: { r: 'devagar' }, mudou };
   j.ultimoPalpite = agora;
 
   const res = motor.palpite(r, preparado(r), jogadorId, texto, agora);
