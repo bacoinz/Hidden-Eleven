@@ -478,9 +478,13 @@ select.campo option {
   text-overflow: ellipsis;
 }
 .barra-jogo-dados {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
-  margin-top: 2px;
+}
+.barra-jogo-dados::before {
+  content: '·';
+  margin: 0 6px;
+  color: #ffffff40;
 }
 .barra-jogo-dados .resultado {
   color: var(--text);
@@ -520,15 +524,15 @@ select.campo option {
   overflow: hidden;
 }
 .jogo-grelha {
-  --altura-painel: 196px;
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 0.95fr);
-  grid-template-rows: minmax(0, 1fr) var(--altura-painel);
+  grid-template-columns: clamp(250px, 19vw, 320px) minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   grid-template-areas:
-    'campo campo campo'
-    'controlo placar feed';
+    'placar campo'
+    'feed campo'
+    'feed controlo';
   gap: 12px;
   padding: 12px 16px 14px;
 }
@@ -573,6 +577,7 @@ select.campo option {
 .g-placar {
   grid-area: placar;
   min-height: 0;
+  max-height: 46vh;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -596,10 +601,25 @@ select.campo option {
   background: var(--panel-forte);
   border: 1px solid var(--panel-border);
   border-radius: var(--radius);
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  padding: 12px 14px;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr);
+  grid-template-areas:
+    'relogio palpite'
+    'relogio resposta';
+  column-gap: 18px;
+  row-gap: 4px;
+  align-items: center;
+}
+.g-controlo .relogio-bloco {
+  grid-area: relogio;
+}
+.g-controlo .palpite {
+  grid-area: palpite;
+}
+.g-controlo .resposta {
+  grid-area: resposta;
+  min-height: 18px;
 }
 .relogio-bloco {
   position: relative;
@@ -1000,6 +1020,25 @@ select.campo option {
 }
 .tabela-placar {
   margin: 0;
+  table-layout: fixed;
+}
+.tabela-placar th:nth-child(1),
+.tabela-placar td:nth-child(1) {
+  width: 30px;
+}
+.tabela-placar th:nth-child(3),
+.tabela-placar td:nth-child(3) {
+  width: 56px;
+}
+.tabela-placar th:nth-child(4),
+.tabela-placar td:nth-child(4) {
+  width: 50px;
+}
+.tabela-placar .celula-jogador {
+  min-width: 0;
+}
+.placar-lista {
+  overflow-x: hidden;
 }
 .tabela-placar th {
   position: sticky;
@@ -1266,10 +1305,22 @@ kbd {
   animation: entrar 0.25s ease-out;
 }
 
+/* Computadores com pouca largura: bancos mais estreitos para o relvado não encolher */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .jogo-grelha {
+    grid-template-columns: 230px minmax(0, 1fr);
+  }
+  .g-campo {
+    grid-template-columns: minmax(150px, 1fr) auto minmax(150px, 1fr);
+  }
+  .banco-coluna {
+    padding: 12px 8px;
+  }
+}
+
 /* Portáteis com pouca altura */
 @media (min-width: 960px) and (max-height: 780px) {
   .jogo-grelha {
-    --altura-painel: 168px;
     gap: 10px;
     padding: 10px 14px 12px;
   }
@@ -1357,6 +1408,8 @@ kbd {
     overflow: visible;
   }
   .g-controlo {
+    display: flex;
+    flex-direction: column;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -1394,10 +1447,19 @@ kbd {
     order: 3;
     flex-basis: 100%;
   }
-  .barra-jogo-dados {
+  .barra-linha {
     white-space: normal;
+  }
+  .barra-jogo-dados {
+    display: block;
     font-size: 12px;
     line-height: 1.35;
+  }
+  .barra-jogo-dados::before {
+    content: none;
+  }
+  .g-placar {
+    max-height: none;
   }
   .ecra-centro {
     justify-content: flex-start;
