@@ -1,10 +1,23 @@
 {
   "ucl-2004-final": {
     "equipas": [
-      { "cor": "#e2001a" },
+      {
+        "cor": "#e2001a"
+      },
       {
         "cor": "#0047ab",
-        "aceites": { "Dmitri Alenichev": ["alenitchev", "dmitri alenitchev"], "Benni McCarthy": ["benni"], "José Bosingwa": ["bosingwa"] }
+        "aceites": {
+          "Dmitri Alenichev": [
+            "alenitchev",
+            "dmitri alenitchev"
+          ],
+          "Benni McCarthy": [
+            "benni"
+          ],
+          "José Bosingwa": [
+            "bosingwa"
+          ]
+        }
       }
     ]
   },
@@ -13,12 +26,30 @@
     "equipas": [
       {
         "cor": "#da291c",
-        "nomes": { "Sir Alex Ferguson": "Alex Ferguson" },
-        "aceites": { "Edwin van der Sar": ["vds"], "Owen Hargreaves": ["hargreaves"] }
+        "nomes": {
+          "Sir Alex Ferguson": "Alex Ferguson"
+        },
+        "aceites": {
+          "Edwin van der Sar": [
+            "vds"
+          ],
+          "Owen Hargreaves": [
+            "hargreaves"
+          ]
+        }
       },
       {
         "cor": "#034694",
-        "aceites": { "Mikel John Obi": ["john obi mikel", "obi mikel", "mikel"], "Petr Čech": ["cech"] }
+        "aceites": {
+          "Mikel John Obi": [
+            "john obi mikel",
+            "obi mikel",
+            "mikel"
+          ],
+          "Petr Čech": [
+            "cech"
+          ]
+        }
       }
     ]
   },
@@ -27,32 +58,130 @@
       {
         "cor": "#6cabdd",
         "formacao": "4-3-3",
-        "pos": { "Bernardo Silva": "MC", "İlkay Gündoğan": "MDC", "Phil Foden": "MC", "Riyad Mahrez": "ED", "Kevin De Bruyne": "PL", "Raheem Sterling": "EE" },
-        "ordem": ["Ederson", "Kyle Walker", "John Stones", "Rúben Dias", "Oleksandr Zinchenko", "Bernardo Silva", "İlkay Gündoğan", "Phil Foden", "Riyad Mahrez", "Kevin De Bruyne", "Raheem Sterling"]
+        "pos": {
+          "Bernardo Silva": "MC",
+          "İlkay Gündoğan": "MDC",
+          "Phil Foden": "MC",
+          "Riyad Mahrez": "ED",
+          "Kevin De Bruyne": "PL",
+          "Raheem Sterling": "EE"
+        },
+        "ordem": [
+          "Ederson",
+          "Kyle Walker",
+          "John Stones",
+          "Rúben Dias",
+          "Oleksandr Zinchenko",
+          "Bernardo Silva",
+          "İlkay Gündoğan",
+          "Phil Foden",
+          "Riyad Mahrez",
+          "Kevin De Bruyne",
+          "Raheem Sterling"
+        ]
       },
-      { "cor": "#034694", "aceites": { "Édouard Mendy": ["edouard"] } }
+      {
+        "cor": "#034694",
+        "aceites": {
+          "Édouard Mendy": [
+            "edouard"
+          ]
+        }
+      }
     ]
   },
   "euro-2016-final": {
     "equipas": [
-      { "cor": "#c8102e", "nomes": { "Eder": "Éder" } },
-      { "cor": "#1e3a8a" }
+      {
+        "cor": "#c8102e",
+        "nomes": {
+          "Eder": "Éder"
+        }
+      },
+      {
+        "cor": "#1e3a8a"
+      }
     ]
   },
   "mundial-2010-final": {
     "equipas": [
       {
         "cor": "#f36c21",
-        "pos": { "Mark van Bommel": "MDC", "Nigel de Jong": "MDC" },
-        "aceites": { "Robin van Persie": ["rvp"], "Giovanni van Bronckhorst": ["gio"] }
+        "pos": {
+          "Mark van Bommel": "MDC",
+          "Nigel de Jong": "MDC"
+        },
+        "aceites": {
+          "Robin van Persie": [
+            "rvp"
+          ],
+          "Giovanni van Bronckhorst": [
+            "gio"
+          ]
+        }
       },
       {
         "cor": "#c60b1e",
         "formacao": "4-2-3-1",
-        "pos": { "Xavi": "MO" },
-        "ordem": ["Iker Casillas", "Sergio Ramos", "Gerard Piqué", "Carles Puyol", "Joan Capdevila", "Sergio Busquets", "Xabi Alonso", "Andrés Iniesta", "Xavi", "Pedro", "David Villa"],
-        "aceites": { "Pedro": ["pedro rodriguez"] }
+        "pos": {
+          "Xavi": "MO"
+        },
+        "ordem": [
+          "Iker Casillas",
+          "Sergio Ramos",
+          "Gerard Piqué",
+          "Carles Puyol",
+          "Joan Capdevila",
+          "Sergio Busquets",
+          "Xabi Alonso",
+          "Andrés Iniesta",
+          "Xavi",
+          "Pedro",
+          "David Villa"
+        ],
+        "aceites": {
+          "Pedro": [
+            "pedro rodriguez"
+          ]
+        }
       }
+    ]
+  },
+  "ucl-2000-final": {
+    "equipas": [
+      {},
+      {
+        "formacao": "4-4-2",
+        "pos": {
+          "Javier Farinós": "MC"
+        }
+      }
+    ]
+  },
+  "ucl-2005-final": {
+    "equipas": [
+      {},
+      {
+        "formacao": "4-4-2",
+        "pos": {
+          "Xabi Alonso": "MC"
+        }
+      }
+    ]
+  },
+  "euro-2012-final": {
+    "equipas": [
+      {
+        "formacao": "4-2-3-1",
+        "pos": {
+          "Xabi Alonso": "MDC",
+          "David Silva": "ED",
+          "Xavi": "MO",
+          "Andrés Iniesta": "EE",
+          "Cesc Fàbregas": "PL"
+        }
+      },
+      {}
     ]
   }
 }

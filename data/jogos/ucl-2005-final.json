@@ -39,7 +39,7 @@
       "nome": "Liverpool",
       "slug": "liverpool",
       "cor": "#f4f4f4",
-      "formacao": "4-4-2 losango",
+      "formacao": "4-4-2",
       "treinador": { "nome": "Rafael Benítez", "aceites": ["rafa benitez", "benitez"] },
       "onze": [
         { "nome": "Jerzy Dudek", "numero": 1, "pais": "PL", "pos": "GR" },
@@ -47,7 +47,7 @@
         { "nome": "Jamie Carragher", "numero": 23, "pais": "GB-ENG", "pos": "DC" },
         { "nome": "Sami Hyypiä", "numero": 4, "pais": "FI", "pos": "DC" },
         { "nome": "Djimi Traoré", "numero": 21, "pais": "ML", "pos": "DE" },
-        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC", "golos": [{ "minuto": 60 }] },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 60 }] },
         { "nome": "Luis García", "numero": 10, "pais": "ES", "pos": "MD" },
         { "nome": "Steven Gerrard", "numero": 8, "pais": "GB-ENG", "pos": "MC", "golos": [{ "minuto": 54 }] },
         { "nome": "John Arne Riise", "numero": 6, "pais": "NO", "pos": "ME" },

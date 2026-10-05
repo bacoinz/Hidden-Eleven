@@ -38,7 +38,7 @@
       "nome": "Valência",
       "slug": "valencia",
       "cor": "#1f2937",
-      "formacao": "4-4-2 losango",
+      "formacao": "4-4-2",
       "treinador": { "nome": "Héctor Cúper" },
       "onze": [
         { "nome": "Santiago Cañizares", "numero": 1, "pais": "ES", "pos": "GR" },
@@ -46,7 +46,7 @@
         { "nome": "Miroslav Đukić", "numero": 5, "pais": "ES", "pos": "DC" },
         { "nome": "Mauricio Pellegrino", "numero": 2, "pais": "AR", "pos": "DC" },
         { "nome": "Gerardo", "aceites": ["Gerardo García León"], "numero": 31, "pais": "ES", "pos": "DE" },
-        { "nome": "Javier Farinós", "numero": 8, "pais": "ES", "pos": "MDC" },
+        { "nome": "Javier Farinós", "numero": 8, "pais": "ES", "pos": "MC" },
         { "nome": "Gaizka Mendieta", "numero": 6, "pais": "ES", "pos": "MD" },
         { "nome": "Gerard López", "numero": 14, "pais": "ES", "pos": "MC" },
         { "nome": "Kily González", "numero": 18, "pais": "AR", "pos": "ME" },

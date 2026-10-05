@@ -13,7 +13,7 @@
       "nome": "Espanha",
       "slug": "espanha",
       "cor": "#c60b1e",
-      "formacao": "4-4-2 losango",
+      "formacao": "4-2-3-1",
       "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
       "onze": [
         { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
@@ -22,11 +22,11 @@
         { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DC" },
         { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE", "golos": [{ "minuto": 41 }] },
         { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MDC" },
-        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MC" },
-        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
-        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "pais": "ES", "pos": "MC" },
-        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "MO", "golos": [{ "minuto": 14 }] },
-        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "MO" }
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MO" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC" },
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "pais": "ES", "pos": "PL" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "ED", "golos": [{ "minuto": 14 }] },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
         { "nome": "Pedro", "numero": 7, "minuto": 59, "pais": "ES" },
