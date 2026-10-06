@@ -13,9 +13,13 @@ O frontend é HTML/CSS/JS simples, servido pelo próprio Worker.
   (dérbis, rivais e jogos míticos), **Equipa Mítica** (só a equipa escolhida em campo) ou **Aleatório** — e o número de rondas.
 - Ficha do jogo durante 7 s; depois toda a gente escreve nomes na mesma caixa. O servidor decide a posição:
   onze, suplentes que entraram (com o minuto visível) ou treinadores.
-- Pistas no onze por descobrir aos 20 %, 35 % e 50 % do tempo: número, bandeira, inicial do apelido.
+- Pistas no onze por descobrir quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial (2:24, 1:57 e 1:30
+  em multijogador): número, bandeira, inicial do apelido. Se os acertos forem dando tempo, as pistas esperam.
+  Nos jogos entre seleções não há a pista da bandeira.
 - Pontos: 5 sem pistas, depois 4, 3 e 2; suplentes e treinadores 3; quem fecha a última posição +2.
 - Nome errado bloqueia a caixa 1 s. "Já é de …!" e "Ficou no banco!" não penalizam.
+- Com o onze todo descoberto aparece **Terminar ronda**, para não ter de esperar pelo relógio nem adivinhar os
+  suplentes. Em multijogador, todos os jogadores ligados têm de confirmar.
 
 ## Correr localmente
 
@@ -50,12 +54,21 @@ Cada jogo é um ficheiro em `data/jogos/<id>.json` (formato descrito em `docs/su
    ```
    - `procurar`: nomes das equipas, quando a página tem vários jogos (ex.: "UEFA Euro 2004 knockout stage").
    - `plantel`: artigo e secções dos convocados, para seleções (a Wikipédia só lista as substituições feitas).
-2. `npm run importar -- <id>` escreve o rascunho (posições, números, nacionalidades, minutos, bancos, treinadores).
-3. Correções manuais (formação, nomes em português, alcunhas, cores) vão para `scripts/curadoria.json`,
-   para não se perderem quando se reimporta. `npm run importar -- <id> --forcar` volta a aplicar tudo.
-4. `npm run validar` tem de dizer "Tudo válido."
+2. `npm run importar -- <id>` escreve o rascunho (posições, números, nacionalidades, minutos, golos, bancos,
+   treinadores). As páginas ficam em `.cache/` para se poder reimportar sem as voltar a pedir (`--fresco` ignora a cache).
+3. Correções manuais vão para `scripts/curadoria.json`, para não se perderem quando se reimporta:
+   `nomes` (renomear, o nome antigo passa a alcunha aceite), `pos`, `onze` (onze completo, nome → sigla, pela ordem
+   no relvado), `formacao`, `aceites`, `golos`, `curto`, `ordem`, `cor`, `remover` (convocados que não estavam no banco)
+   e `estadio`. `npm run importar -- <id> --forcar` volta a aplicar tudo.
+4. `npm run resumo -- <filtro>` mostra cada jogo numa linha por equipa, para rever.
+5. `npm run validar` tem de dizer "Tudo válido."
 
-Jogos sem ficha na Wikipédia podem ser escritos à mão diretamente em `data/jogos/`.
+**Jogos sem ficha na Wikipédia** (dérbis, jornadas de campeonato): a entrada leva `"zerozero": <id da ficha>` em
+vez de `artigo` e importa-se com `npm run importar:zerozero -- <id>`. O zerozero dá os nomes como se escrevem em
+Portugal, os suplentes, os golos e os treinadores; a formação e as posições vêm do FotMob (`"fotmob": <id do jogo>`,
+cruzado pelo número da camisola). O FotMob só tem jogos a partir de 2010; para os mais antigos, ou quando as posições
+dele não batem certo com os relatos, o `onze` e a `formacao` escrevem-se na curadoria.
+
 As equipas da Equipa Mítica estão em `data/equipas.json` (aparecem a partir de 3 jogos).
 
 ## Publicar
@@ -73,11 +86,13 @@ O link fica `https://hidden-eleven.<subdominio>.workers.dev`; cada sala é `/sal
 src/        Worker (index.js), Durable Object (sala.js) e lógica pura: sala-logica.js, motor.js, nomes.js, catalogo.js, regras.js
 public/     frontend (index.html, css/, js/), bandeiras e fontes
 data/       jogos/*.json e equipas.json
-scripts/    importador da Wikipédia, curadoria, validador, gerador do índice de dados, e2e
+scripts/    importadores (Wikipédia; zerozero + FotMob), curadoria, validador, resumo, gerador do índice de dados, e2e
 test/       testes Vitest
 ```
 
 ## Créditos
 
 Bandeiras: [flag-icons](https://github.com/lipis/flag-icons) (MIT). Fontes: Anton e Inter (SIL OFL), via Fontsource.
-Onzes, suplentes e minutos: Wikipédia e, nos jogos sem ficha lá, zerozero.pt. Ver `public/LICENCAS.txt`.
+As licenças estão em `public/LICENCAS.txt`.
+Onzes, suplentes e minutos: Wikipédia e, nos jogos sem ficha lá, zerozero.pt (com as posições do FotMob);
+cada jogo guarda a página de origem no campo `fonte`.

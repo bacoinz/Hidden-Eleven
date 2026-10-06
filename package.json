@@ -11,6 +11,8 @@
     "test": "node scripts/gerar-dados.mjs && vitest run",
     "validar": "node scripts/validar-dados.mjs",
     "importar": "node scripts/importar-wikipedia.mjs",
+    "importar:zerozero": "node scripts/importar-zerozero.mjs",
+    "resumo": "node scripts/resumo-jogos.mjs",
     "assets": "node scripts/copiar-assets.mjs",
     "e2e": "node scripts/e2e.mjs"
   },
