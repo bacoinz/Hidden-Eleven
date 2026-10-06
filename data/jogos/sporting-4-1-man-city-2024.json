@@ -1,0 +1,73 @@
+{
+  "id": "sporting-4-1-man-city-2024",
+  "modos": ["classico", "equipa:sporting", "equipa:man-city"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Fase de liga (4.ª jornada)",
+  "titulo": "Quatro ao campeão inglês",
+  "data": "2024-11-05",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 4–1 Manchester City",
+  "fonte": "https://www.zerozero.pt/jogo/2024-11-05-sporting-manchester-city/10406328",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Rúben Amorim" },
+      "onze": [
+        { "nome": "Franco Israel", "numero": 1, "pais": "UY", "pos": "GR" },
+        { "nome": "Zeno Debast", "numero": 6, "pais": "BE", "pos": "DC" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Matheus Reis", "numero": 2, "pais": "BR", "pos": "DC" },
+        { "nome": "Geovany Quenda", "numero": 57, "pais": "PT", "pos": "MD" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MC" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "MC" },
+        { "nome": "Maxi Araújo", "numero": 20, "pais": "UY", "pos": "ME", "golos": [{ "minuto": 46 }] },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "ED" },
+        {
+          "nome": "Viktor Gyökeres",
+          "numero": 9,
+          "pais": "SE",
+          "pos": "PL",
+          "golos": [{ "minuto": 37 }, { "minuto": 49, "penalti": true }, { "minuto": 80, "penalti": true }]
+        },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 74, "pais": "NL" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 85, "pais": "PT" },
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 74, "pais": "PT" },
+        { "nome": "Geny Catamo", "numero": 21, "minuto": 74, "pais": "MZ" },
+        { "nome": "Conrad Harder", "numero": 19, "minuto": 88, "pais": "DK" }
+      ],
+      "nao_utilizados": ["Vladan Kovačević", "Diogo Pinto", "Iván Fresneda", "Ricardo Esgaio", "João Simões", "Marcus Edwards"]
+    },
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "cor": "#6cabdd",
+      "formacao": "4-1-4-1",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Ederson", "numero": 31, "pais": "BR", "pos": "GR", "aceites": ["Ederson Moraes"] },
+        { "nome": "Rico Lewis", "numero": 82, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Jahmai Simpson-Pusey", "numero": 66, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Manuel Akanji", "numero": 25, "pais": "CH", "pos": "DC" },
+        { "nome": "Joško Gvardiol", "numero": 24, "pais": "HR", "pos": "DE" },
+        { "nome": "Mateo Kovačić", "numero": 8, "pais": "HR", "pos": "MDC" },
+        { "nome": "Savinho", "numero": 26, "pais": "BR", "pos": "MD" },
+        { "nome": "Phil Foden", "numero": 47, "pais": "GB-ENG", "pos": "MC", "golos": [{ "minuto": 4 }] },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Matheus Nunes", "numero": 27, "pais": "PT", "pos": "ME" },
+        { "nome": "Erling Haaland", "numero": 9, "pais": "NO", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 17, "minuto": 84, "pais": "BE" },
+        { "nome": "İlkay Gündoğan", "numero": 19, "minuto": 77, "pais": "DE" },
+        { "nome": "Jérémy Doku", "numero": 11, "minuto": 77, "pais": "BE" }
+      ],
+      "nao_utilizados": ["Stefan Ortega", "Scott Carson", "Kyle Walker", "Nathan Aké", "Josh Wilson-Esbrand", "Jacob Wright", "Nico O'Reilly", "James McAtee"]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "mundial-2006-oitavos-portugal-holanda",
+  "modos": ["classico", "equipa:portugal", "equipa:holanda"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Oitavos de final",
+  "titulo": "A Batalha de Nuremberga",
+  "selecoes": true,
+  "data": "2006-06-25",
+  "estadio": "Frankenstadion, Nuremberga",
+  "resultado": "Portugal 1–0 Holanda",
+  "fonte": "https://en.wikipedia.org/wiki/Battle_of_Nuremberg_(2006_FIFA_World_Cup)",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Fernando Meira", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 23 }] },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 34, "pais": "PT" },
+        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "minuto": 84, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Hugo Viana", "Quim", "Luís Boa Morte", "Nuno Gomes", "Paulo Santos", "Hélder Postiga"]
+    },
+    {
+      "nome": "Holanda",
+      "slug": "holanda",
+      "cor": "#f36c21",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Marco van Basten" },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "Khalid Boulahrouz", "numero": 3, "pais": "NL", "pos": "DD" },
+        { "nome": "André Ooijer", "numero": 13, "pais": "NL", "pos": "DC" },
+        { "nome": "Joris Mathijsen", "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Giovanni van Bronckhorst", "numero": 5, "pais": "NL", "pos": "DE" },
+        { "nome": "Mark van Bommel", "numero": 18, "pais": "NL", "pos": "MC" },
+        { "nome": "Wesley Sneijder", "numero": 20, "pais": "NL", "pos": "MC" },
+        { "nome": "Phillip Cocu", "numero": 8, "pais": "NL", "pos": "MC" },
+        { "nome": "Robin van Persie", "numero": 17, "pais": "NL", "pos": "ED" },
+        { "nome": "Dirk Kuyt", "numero": 7, "pais": "NL", "pos": "PL" },
+        { "nome": "Arjen Robben", "numero": 11, "pais": "NL", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Rafael van der Vaart", "numero": 10, "minuto": 56, "pais": "NL" },
+        { "nome": "John Heitinga", "numero": 14, "minuto": 67, "pais": "NL" },
+        { "nome": "Jan Vennegoor of Hesselink", "aceites": ["vennegoor", "vennegoor of hesselink"], "numero": 19, "minuto": 84, "pais": "NL" }
+      ],
+      "nao_utilizados": [
+        "Kew Jaliens",
+        "Denny Landzaat",
+        "Ruud van Nistelrooy",
+        "Jan Kromkamp",
+        "Tim de Cler",
+        "Hedwiges Maduro",
+        "Ryan Babel",
+        "Henk Timmer",
+        "Maarten Stekelenburg"
+      ]
+    }
+  ]
+}

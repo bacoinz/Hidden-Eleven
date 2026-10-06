@@ -59,7 +59,7 @@
         { "nome": "Daley Blind", "numero": 17, "pais": "NL", "pos": "DE" },
         { "nome": "Marten de Roon", "numero": 15, "pais": "NL", "pos": "MC" },
         { "nome": "Frenkie de Jong", "numero": 21, "pais": "NL", "pos": "MC" },
-        { "nome": "Georginio Wijnaldum", "numero": 8, "pais": "NL", "pos": "MC" },
+        { "nome": "Georginio Wijnaldum", "aceites": ["gini"], "numero": 8, "pais": "NL", "pos": "MC" },
         { "nome": "Steven Bergwijn", "numero": 7, "pais": "NL", "pos": "ED" },
         { "nome": "Memphis Depay", "numero": 10, "pais": "NL", "pos": "PL" },
         { "nome": "Ryan Babel", "numero": 9, "pais": "NL", "pos": "EE" }

@@ -1,0 +1,64 @@
+{
+  "id": "man-utd-1-6-man-city-2011",
+  "modos": ["classico", "equipa:man-utd", "equipa:man-city"],
+  "competicao": "Premier League",
+  "fase": "Dérbi de Manchester",
+  "titulo": "Why always me?",
+  "data": "2011-10-23",
+  "estadio": "Old Trafford, Manchester",
+  "resultado": "Manchester United 1–6 Manchester City",
+  "fonte": "https://en.wikipedia.org/wiki/Manchester_United_F.C._1%E2%80%936_Manchester_City_F.C.",
+  "equipas": [
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "cor": "#da291c",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
+      "onze": [
+        { "nome": "David de Gea", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Chris Smalling", "numero": 12, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Jonny Evans", "numero": 6, "pais": "GB-NIR", "pos": "DC" },
+        { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "MD" },
+        { "nome": "Darren Fletcher", "numero": 24, "pais": "GB-SCT", "pos": "MC", "golos": [{ "minuto": 81 }] },
+        { "nome": "Anderson", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Ashley Young", "numero": 18, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Danny Welbeck", "numero": 19, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Phil Jones", "numero": 4, "minuto": 66, "pais": "GB-ENG" },
+        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 66, "pais": "MX" }
+      ],
+      "nao_utilizados": ["Anders Lindegaard", "Fábio", "Antonio Valencia", { "nome": "Park Ji-sung", "aceites": ["park"] }, "Dimitar Berbatov"]
+    },
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "cor": "#6cabdd",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roberto Mancini" },
+      "onze": [
+        { "nome": "Joe Hart", "numero": 25, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Micah Richards", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Vincent Kompany", "numero": 4, "pais": "BE", "pos": "DC" },
+        { "nome": "Joleon Lescott", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Gaël Clichy", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Yaya Touré", "numero": 42, "pais": "CI", "pos": "MC" },
+        { "nome": "Gareth Barry", "numero": 18, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "James Milner", "numero": 7, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "MO", "golos": [{ "minuto": "90+1" }] },
+        { "nome": "Mario Balotelli", "numero": 45, "pais": "IT", "pos": "EE", "golos": [{ "minuto": 22 }, { "minuto": 60 }] },
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 69 }] }
+      ],
+      "suplentes": [
+        { "nome": "Aleksandar Kolarov", "numero": 13, "minuto": 89, "pais": "RS" },
+        { "nome": "Samir Nasri", "numero": 19, "minuto": 76, "pais": "FR" },
+        { "nome": "Edin Džeko", "numero": 10, "minuto": 70, "pais": "BA", "golos": [{ "minuto": 89 }, { "minuto": "90+3" }] }
+      ],
+      "nao_utilizados": ["Costel Pantilimon", "Pablo Zabaleta", "Kolo Touré", "Nigel de Jong"]
+    }
+  ]
+}

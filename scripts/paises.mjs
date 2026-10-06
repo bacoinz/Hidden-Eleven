@@ -12,7 +12,7 @@ export const FIFA_PARA_ISO = {
   LUX: 'lu', LVA: 'lv', MAR: 'ma', MDA: 'md', MAD: 'mg', MEX: 'mx', MKD: 'mk', MLI: 'ml', MLT: 'mt', MNE: 'me',
   MOZ: 'mz', MTN: 'mr', NED: 'nl', NGA: 'ng', NIR: 'gb-nir', NOR: 'no', NZL: 'nz', OMA: 'om', PAN: 'pa', PAR: 'py',
   PER: 'pe', PHI: 'ph', POL: 'pl', POR: 'pt', PRK: 'kp', PUR: 'pr', QAT: 'qa', ROU: 'ro', RSA: 'za', RUS: 'ru',
-  RWA: 'rw', SCO: 'gb-sct', SEN: 'sn', SRB: 'rs', SCG: 'rs', SLE: 'sl', SLV: 'sv', SMR: 'sm', SUI: 'ch', SUR: 'sr',
+  RWA: 'rw', SCO: 'gb-sct', SEN: 'sn', SRB: 'rs', SER: 'rs', SCG: 'rs', SLE: 'sl', SLV: 'sv', SMR: 'sm', SUI: 'ch', SUR: 'sr',
   SVK: 'sk', SVN: 'si', SWE: 'se', SYR: 'sy', TAN: 'tz', THA: 'th', TOG: 'tg', TRI: 'tt', TUN: 'tn', TUR: 'tr',
   UAE: 'ae', UGA: 'ug', UKR: 'ua', URU: 'uy', USA: 'us', UZB: 'uz', VEN: 've', WAL: 'gb-wls', ZAM: 'zm', ZIM: 'zw',
   YUG: 'rs', SUD: 'sd', CTA: 'cf', CHA: 'td', COM: 'km', LBR: 'lr', NIG: 'ne', SOM: 'so', ERI: 'er', MWI: 'mw',

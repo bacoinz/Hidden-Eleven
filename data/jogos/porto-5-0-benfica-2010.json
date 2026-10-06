@@ -1,0 +1,65 @@
+{
+  "id": "porto-5-0-benfica-2010",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "10.ª jornada",
+  "titulo": "A manita do Dragão",
+  "data": "2010-11-07",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 5–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2010-11-07-fc-porto-benfica/1270550",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "André Villas-Boas", "aceites": ["villas boas", "avb"] },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Cristian Săpunaru", "numero": 21, "pais": "RO", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Álvaro Pereira", "numero": 5, "pais": "UY", "pos": "DE" },
+        { "nome": "Fernando Belluschi", "numero": 7, "pais": "AR", "pos": "MC" },
+        { "nome": "Fredy Guarín", "numero": 6, "pais": "CO", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "ED", "golos": [{ "minuto": 81, "penalti": true }, { "minuto": "90+2" }] },
+        { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 25 }, { "minuto": 29 }] },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 12 }] }
+      ],
+      "suplentes": [
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 82, "pais": "CO" },
+        { "nome": "Rúben Micael", "numero": 28, "minuto": 78, "pais": "PT" },
+        { "nome": "Walter", "numero": 18, "minuto": 87, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Beto", "Jorge Fucile", "Nicolás Otamendi", "Souza"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Roberto", "numero": 12, "pais": "ES", "pos": "GR", "aceites": ["Roberto Jiménez"] },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Sidnei", "numero": 27, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "David Luiz", "numero": 23, "pais": "BR", "pos": "DE" },
+        { "nome": "Carlos Martins", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "MDC" },
+        { "nome": "Pablo Aimar", "numero": 10, "pais": "AR", "pos": "MC" },
+        { "nome": "Eduardo Salvio", "numero": 8, "pais": "AR", "pos": "ED", "aceites": ["Toto Salvio"] },
+        { "nome": "Alan Kardec", "numero": 31, "pais": "BR", "pos": "PL" },
+        { "nome": "Fábio Coentrão", "numero": 18, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Roderick Miranda", "numero": 15, "minuto": 71, "pais": "PT" },
+        { "nome": "Rúben Amorim", "numero": 5, "minuto": 78, "pais": "PT" },
+        { "nome": "Nicolás Gaitán", "numero": 20, "minuto": 45, "pais": "AR", "aceites": ["Nico Gaitán"] }
+      ],
+      "nao_utilizados": ["Júlio César", "César Peixoto", "Javier Saviola", "Franco Jara"]
+    }
+  ]
+}

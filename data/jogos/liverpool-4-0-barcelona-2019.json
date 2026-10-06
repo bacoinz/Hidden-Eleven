@@ -1,0 +1,72 @@
+{
+  "id": "liverpool-4-0-barcelona-2019",
+  "modos": ["classico", "equipa:liverpool", "equipa:barcelona"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Meias-finais (2.ª mão)",
+  "titulo": "O milagre de Anfield",
+  "data": "2019-05-07",
+  "estadio": "Anfield, Liverpool",
+  "resultado": "Liverpool 4–0 Barcelona",
+  "fonte": "https://www.zerozero.pt/jogo/2019-05-07-liverpool-barcelona/6674018",
+  "equipas": [
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
+      "onze": [
+        { "nome": "Alisson", "numero": 13, "pais": "BR", "pos": "GR", "aceites": ["Alisson Becker"] },
+        { "nome": "Trent Alexander-Arnold", "numero": 66, "pais": "GB-ENG", "pos": "DD", "aceites": ["Alexander-Arnold"] },
+        { "nome": "Joël Matip", "numero": 32, "pais": "CM", "pos": "DC" },
+        { "nome": "Virgil van Dijk", "aceites": ["vvd"], "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Andy Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },
+        { "nome": "Jordan Henderson", "numero": 14, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Fabinho", "numero": 3, "pais": "BR", "pos": "MC" },
+        { "nome": "James Milner", "numero": 7, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Xherdan Shaqiri", "numero": 23, "pais": "CH", "pos": "ED" },
+        { "nome": "Divock Origi", "numero": 27, "pais": "BE", "pos": "PL", "golos": [{ "minuto": 7 }, { "minuto": 79 }] },
+        { "nome": "Sadio Mané", "numero": 10, "pais": "SN", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Joe Gomez", "numero": 12, "minuto": 85, "pais": "GB-ENG" },
+        {
+          "nome": "Georginio Wijnaldum",
+          "numero": 5,
+          "minuto": 46,
+          "pais": "NL",
+          "golos": [{ "minuto": 54 }, { "minuto": 56 }],
+          "aceites": ["Gini Wijnaldum"]
+        },
+        { "nome": "Daniel Sturridge", "numero": 15, "minuto": 90, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Simon Mignolet", "Dejan Lovren", "Rhian Brewster", "Ben Woodburn"]
+    },
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Ernesto Valverde" },
+      "onze": [
+        { "nome": "Marc-André ter Stegen", "numero": 1, "pais": "DE", "pos": "GR", "aceites": ["ter Stegen"] },
+        { "nome": "Sergi Roberto", "numero": 20, "pais": "ES", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Clément Lenglet", "numero": 15, "pais": "FR", "pos": "DC" },
+        { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE" },
+        { "nome": "Arturo Vidal", "numero": 22, "pais": "CL", "pos": "MC" },
+        { "nome": "Sergio Busquets", "numero": 5, "pais": "ES", "pos": "MC" },
+        { "nome": "Ivan Rakitić", "numero": 4, "pais": "HR", "pos": "MC" },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "ED" },
+        { "nome": "Luis Suárez", "numero": 9, "pais": "UY", "pos": "PL" },
+        { "nome": "Philippe Coutinho", "numero": 7, "pais": "BR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 60, "pais": "PT" },
+        { "nome": "Arthur", "numero": 8, "minuto": 75, "pais": "BR" },
+        { "nome": "Malcom", "numero": 14, "minuto": 80, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Jasper Cillessen", "Samuel Umtiti", "Thomas Vermaelen", "Carles Aleñà"]
+    }
+  ]
+}

@@ -45,7 +45,7 @@
 
   { "id": "euro-2004-quartos-portugal-inglaterra", "artigo": "UEFA Euro 2004 knockout stage", "procurar": ["Portugal", "England"], "competicao": "Campeonato da Europa", "fase": "Quartos de final", "titulo": "O penálti do Ricardo sem luvas", "modos": ["classico"], "plantel": { "artigo": "UEFA Euro 2004 squads", "seccoes": ["Portugal", "England"] } },
   { "id": "euro-2004-meias-portugal-holanda", "artigo": "UEFA Euro 2004 knockout stage", "procurar": ["Portugal", "Netherlands"], "competicao": "Campeonato da Europa", "fase": "Meia-final", "modos": ["classico"], "plantel": { "artigo": "UEFA Euro 2004 squads", "seccoes": ["Portugal", "Netherlands"] } },
-  { "id": "mundial-2006-oitavos-portugal-holanda", "artigo": "2006 FIFA World Cup knockout stage", "procurar": ["Portugal", "Netherlands"], "competicao": "Campeonato do Mundo", "fase": "Oitavos de final", "titulo": "A Batalha de Nuremberga", "modos": ["classico"], "plantel": { "artigo": "2006 FIFA World Cup squads", "seccoes": ["Portugal", "Netherlands"] } },
+  { "id": "mundial-2006-oitavos-portugal-holanda", "artigo": "Battle of Nuremberg (2006 FIFA World Cup)", "competicao": "Campeonato do Mundo", "fase": "Oitavos de final", "titulo": "A Batalha de Nuremberga", "modos": ["classico"], "plantel": { "artigo": "2006 FIFA World Cup squads", "seccoes": ["Portugal", "Netherlands"] } },
   { "id": "mundial-2006-meias-alemanha-italia", "artigo": "2006 FIFA World Cup knockout stage", "procurar": ["Germany", "Italy"], "competicao": "Campeonato do Mundo", "fase": "Meia-final", "modos": ["classico"], "plantel": { "artigo": "2006 FIFA World Cup squads", "seccoes": ["Germany", "Italy"] } },
   { "id": "mundial-2014-meias-brasil-alemanha", "artigo": "Brazil v Germany (2014 FIFA World Cup)", "competicao": "Campeonato do Mundo", "fase": "Meia-final", "titulo": "O Mineiraço", "modos": ["classico"], "plantel": { "artigo": "2014 FIFA World Cup squads", "seccoes": ["Brazil", "Germany"] } },
   { "id": "mundial-2018-portugal-espanha", "artigo": "2018 FIFA World Cup Group B", "procurar": ["Portugal", "Spain"], "competicao": "Campeonato do Mundo", "fase": "Fase de grupos", "titulo": "O hat-trick de Cristiano Ronaldo", "modos": ["classico"], "plantel": { "artigo": "2018 FIFA World Cup squads", "seccoes": ["Portugal", "Spain"] } },
@@ -60,5 +60,15 @@
   { "id": "barcelona-6-1-psg-2017", "artigo": "FC Barcelona 6–1 Paris Saint-Germain FC", "competicao": "Liga dos Campeões", "fase": "Oitavos de final (2.ª mão)", "titulo": "La Remontada", "modos": ["classico"] },
   { "id": "man-utd-1-6-man-city-2011", "artigo": "Manchester United F.C. 1–6 Manchester City F.C.", "competicao": "Premier League", "fase": "Dérbi de Manchester", "titulo": "Why always me?", "modos": ["classico"] },
   { "id": "man-utd-8-2-arsenal-2011", "artigo": "Manchester United F.C. 8–2 Arsenal F.C.", "competicao": "Premier League", "fase": "3.ª jornada", "modos": ["classico"] },
-  { "id": "man-city-3-2-qpr-2012", "artigo": "Manchester City F.C. 3–2 Queens Park Rangers F.C.", "competicao": "Premier League", "fase": "Última jornada", "titulo": "Agüerooooo! (93:20)", "modos": ["classico"] }
+  { "id": "man-city-3-2-qpr-2012", "artigo": "Manchester City F.C. 3–2 Queens Park Rangers F.C.", "competicao": "Premier League", "fase": "Última jornada", "titulo": "Agüerooooo! (93:20)", "modos": ["classico"] },
+  { "id": "taca-de-portugal-2008-final", "artigo": "2008 Taça de Portugal final", "competicao": "Taça de Portugal", "fase": "Final", "modos": ["classico"] },
+  { "id": "taca-de-portugal-2019-final", "artigo": "2019 Taça de Portugal final", "competicao": "Taça de Portugal", "fase": "Final", "modos": ["classico"] },
+  { "id": "porto-5-0-benfica-2010", "zerozero": 1270550, "fotmob": 859717, "competicao": "Primeira Liga", "fase": "10.ª jornada", "titulo": "A manita do Dragão", "modos": ["classico"] },
+  { "id": "porto-2-1-benfica-2013", "zerozero": 2256753, "fotmob": 1256810, "competicao": "Primeira Liga", "fase": "29.ª jornada", "titulo": "O golo aos 90+2", "modos": ["classico"] },
+  { "id": "benfica-1-0-sporting-2005", "zerozero": 87056, "competicao": "Primeira Liga", "fase": "33.ª jornada", "titulo": "O dérbi que decidiu o título", "modos": ["classico"] },
+  { "id": "liverpool-0-2-benfica-2006", "zerozero": 215224, "competicao": "Liga dos Campeões", "fase": "Oitavos de final (2.ª mão)", "modos": ["classico"] },
+  { "id": "sporting-4-1-man-city-2024", "zerozero": 10406328, "fotmob": 4621497, "competicao": "Liga dos Campeões", "fase": "Fase de liga (4.ª jornada)", "titulo": "Quatro ao campeão inglês", "modos": ["classico"] },
+  { "id": "barcelona-5-0-real-madrid-2010", "zerozero": 1286409, "fotmob": 875704, "competicao": "Liga espanhola", "fase": "13.ª jornada", "titulo": "La Manita", "modos": ["classico"] },
+  { "id": "real-madrid-2-6-barcelona-2009", "zerozero": 474154, "competicao": "Liga espanhola", "fase": "34.ª jornada", "titulo": "Seis no Bernabéu", "modos": ["classico"] },
+  { "id": "liverpool-4-0-barcelona-2019", "zerozero": 6674018, "fotmob": 3010098, "competicao": "Liga dos Campeões", "fase": "Meias-finais (2.ª mão)", "titulo": "O milagre de Anfield", "modos": ["classico"] }
 ]

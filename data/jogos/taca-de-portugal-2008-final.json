@@ -1,0 +1,69 @@
+{
+  "id": "taca-de-portugal-2008-final",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Taça de Portugal",
+  "fase": "Final",
+  "data": "2008-05-18",
+  "estadio": "Estádio Nacional, Oeiras",
+  "resultado": "FC Porto 0–2 Sporting (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2008_Ta%C3%A7a_de_Portugal_final",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Nuno", "aceites": ["nuno", "espirito santo", "Nuno Espírito Santo"], "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Pedro Emanuel", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "João Paulo", "aceites": ["João Paulo Andrade"], "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Paulo Assunção", "numero": 6, "pais": "BR", "pos": "MDC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "pais": "AR", "pos": "ED" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Lino", "numero": 15, "minuto": 79, "pais": "BR" },
+        { "nome": "Tarik Sektioui", "numero": 17, "minuto": 112, "pais": "MA" },
+        { "nome": "Przemysław Kaźmierczak", "numero": 25, "minuto": 104, "pais": "PL" }
+      ],
+      "nao_utilizados": ["Hugo Ventura", "Milan Stepanov", "Mario Bolatti", "Ernesto Farías"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Abel", "aceites": ["Abel Ferreira"], "numero": 78, "pais": "PT", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Ânderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Miguel Veloso", "numero": 24, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Marat Izmailov", "numero": 7, "pais": "RU", "pos": "MC" },
+        { "nome": "Leandro Romagnoli", "numero": 30, "pais": "AR", "pos": "MO" },
+        { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL" },
+        { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Gladstone", "numero": 26, "minuto": 113, "pais": "BR" },
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 76, "pais": "PT" },
+        { "nome": "Rodrigo Tiuí", "aceites": ["tiui"], "numero": 22, "minuto": 90, "pais": "BR", "golos": [{ "minuto": 111 }, { "minuto": 117 }] }
+      ],
+      "nao_utilizados": [
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Ferreira"] },
+        { "nome": "Ronny", "aceites": ["Ronny Heberson Furtado de Araújo"] },
+        "Simon Vukčević",
+        "Pontus Farnerud"
+      ]
+    }
+  ]
+}

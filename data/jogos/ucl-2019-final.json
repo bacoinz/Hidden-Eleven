@@ -58,7 +58,7 @@
         { "nome": "Andy Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },
         { "nome": "Jordan Henderson", "numero": 14, "pais": "GB-ENG", "pos": "MC" },
         { "nome": "Fabinho", "numero": 3, "pais": "BR", "pos": "MC" },
-        { "nome": "Georginio Wijnaldum", "numero": 5, "pais": "NL", "pos": "MC" },
+        { "nome": "Georginio Wijnaldum", "aceites": ["gini"], "numero": 5, "pais": "NL", "pos": "MC" },
         { "nome": "Mohamed Salah", "aceites": ["mo salah"], "numero": 11, "pais": "EG", "pos": "ED", "golos": [{ "minuto": 2, "penalti": true }] },
         { "nome": "Roberto Firmino", "numero": 9, "pais": "BR", "pos": "PL" },
         { "nome": "Sadio Mané", "numero": 10, "pais": "SN", "pos": "EE" }

@@ -1,0 +1,65 @@
+{
+  "id": "porto-2-1-benfica-2013",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "29.ª jornada",
+  "titulo": "O golo aos 90+2",
+  "data": "2013-05-11",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 2–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2013-05-11-fc-porto-benfica/2256753",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Vítor Pereira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Eliaquim Mangala", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 3, "pais": "AR", "pos": "MC" },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 10, "pais": "CO", "pos": "ED" },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Steven Defour", "numero": 35, "minuto": 73, "pais": "BE" },
+        { "nome": "Kelvin", "numero": 28, "minuto": 79, "pais": "BR", "golos": [{ "minuto": "90+2" }] },
+        { "nome": "Liedson", "numero": 19, "minuto": 85, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Fabiano Freitas", "Abdoulaye Ba", "André Castro", "Sebá"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Artur", "numero": 1, "pais": "BR", "pos": "GR", "aceites": ["Artur Moraes"] },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD", "golos": [{ "minuto": 26, "autogolo": true }] },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DE" },
+        { "nome": "Nemanja Matić", "numero": 21, "pais": "RS", "pos": "MC" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MC" },
+        { "nome": "Eduardo Salvio", "aceites": ["toto", "toto salvio"], "numero": 18, "pais": "AR", "pos": "ED" },
+        { "nome": "Nicolás Gaitán", "numero": 20, "pais": "AR", "pos": "MO", "aceites": ["Nico Gaitán"] },
+        { "nome": "Ola John", "numero": 15, "pais": "NL", "pos": "EE" },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 19 }] }
+      ],
+      "suplentes": [
+        { "nome": "Roderick Miranda", "numero": 3, "minuto": 66, "pais": "PT" },
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 85, "pais": "AR" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 73, "pais": "PY" }
+      ],
+      "nao_utilizados": ["Paulo Lopes", "Lorenzo Melgarejo", "Jonathan Urreta", "Rodrigo"]
+    }
+  ]
+}

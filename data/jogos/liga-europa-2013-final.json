@@ -23,7 +23,7 @@
         { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MD" },
         { "nome": "Nemanja Matić", "numero": 21, "pais": "RS", "pos": "MC" },
         { "nome": "Rodrigo", "numero": 19, "pais": "ES", "pos": "ME" },
-        { "nome": "Nicolás Gaitán", "numero": 20, "pais": "AR", "pos": "ED" },
+        { "nome": "Nicolás Gaitán", "aceites": ["nico gaitan"], "numero": 20, "pais": "AR", "pos": "ED" },
         { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 68, "penalti": true }] },
         { "nome": "Eduardo Salvio", "aceites": ["toto", "toto salvio"], "numero": 18, "pais": "AR", "pos": "EE" }
       ],

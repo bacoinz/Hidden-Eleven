@@ -1,0 +1,61 @@
+{
+  "id": "barcelona-5-0-real-madrid-2010",
+  "modos": ["classico", "equipa:barcelona", "equipa:real-madrid"],
+  "competicao": "Liga espanhola",
+  "fase": "13.ª jornada",
+  "titulo": "La Manita",
+  "data": "2010-11-29",
+  "estadio": "Camp Nou, Barcelona",
+  "resultado": "Barcelona 5–0 Real Madrid",
+  "fonte": "https://www.zerozero.pt/jogo/2010-11-29-barcelona-real-madrid/1286409",
+  "equipas": [
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Víctor Valdés", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Alves", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Eric Abidal", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 10 }] },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedro", "numero": 17, "pais": "ES", "pos": "ED", "golos": [{ "minuto": 18 }], "aceites": ["Pedro Rodríguez"] },
+        { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "PL" },
+        { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "EE", "golos": [{ "minuto": 55 }, { "minuto": 58 }] }
+      ],
+      "suplentes": [
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 87, "pais": "ML" },
+        { "nome": "Jeffrén", "numero": 11, "minuto": 87, "pais": "VE", "golos": [{ "minuto": "90+1" }], "aceites": ["Jeffrén Suárez"] },
+        { "nome": "Bojan", "numero": 9, "minuto": 77, "pais": "ES", "aceites": ["Bojan Krkić"] }
+      ],
+      "nao_utilizados": ["José Manuel Pinto", "Maxwell", "Adriano", { "nome": "Javier Mascherano", "aceites": ["masche"] }]
+    },
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Sami Khedira", "numero": 24, "pais": "DE", "pos": "MDC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MDC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 22, "pais": "AR", "pos": "ED" },
+        { "nome": "Mesut Özil", "numero": 23, "pais": "DE", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Álvaro Arbeloa", "numero": 17, "minuto": 59, "pais": "ES" }, { "nome": "Lassana Diarra", "numero": 10, "minuto": 46, "pais": "FR" }],
+      "nao_utilizados": ["Jerzy Dudek", "Raúl Albiol", "Mahamadou Diarra", "Pedro León", { "nome": "Gonzalo Higuaín", "aceites": ["pipita"] }]
+    }
+  ]
+}

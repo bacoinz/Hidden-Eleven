@@ -289,5 +289,237 @@
   },
   "taca-do-rei-2011-final": {
     "estadio": "Mestalla, Valência"
+  },
+  "porto-5-0-benfica-2010": {
+    "equipas": [
+      {},
+      {
+        "formacao": "4-3-3",
+        "nomes": {
+          "Roberto Jiménez": "Roberto",
+          "Toto Salvio": "Eduardo Salvio",
+          "Nico Gaitán": "Nicolás Gaitán"
+        },
+        "onze": {
+          "Roberto": "GR",
+          "Maxi Pereira": "DD",
+          "Sidnei": "DC",
+          "Luisão": "DC",
+          "David Luiz": "DE",
+          "Carlos Martins": "MC",
+          "Javi García": "MDC",
+          "Pablo Aimar": "MC",
+          "Eduardo Salvio": "ED",
+          "Alan Kardec": "PL",
+          "Fábio Coentrão": "EE"
+        }
+      }
+    ]
+  },
+  "porto-2-1-benfica-2013": {
+    "equipas": [
+      {
+        "pos": {
+          "Fernando": "MDC"
+        }
+      },
+      {
+        "formacao": "4-2-3-1",
+        "nomes": {
+          "Artur Moraes": "Artur",
+          "Nico Gaitán": "Nicolás Gaitán",
+          "Rodrigo Moreno": "Rodrigo"
+        },
+        "onze": {
+          "Artur": "GR",
+          "Maxi Pereira": "DD",
+          "Luisão": "DC",
+          "Ezequiel Garay": "DC",
+          "André Almeida": "DE",
+          "Nemanja Matić": "MC",
+          "Enzo Pérez": "MC",
+          "Eduardo Salvio": "ED",
+          "Nicolás Gaitán": "MO",
+          "Ola John": "EE",
+          "Lima": "PL"
+        }
+      }
+    ]
+  },
+  "benfica-1-0-sporting-2005": {
+    "estadio": "Estádio da Luz, Lisboa",
+    "equipas": [
+      {
+        "formacao": "4-4-1-1",
+        "nomes": {
+          "Simão Sabrosa": "Simão"
+        },
+        "onze": {
+          "Quim": "GR",
+          "Miguel": "DD",
+          "Ricardo Rocha": "DC",
+          "Luisão": "DC",
+          "Manuel dos Santos": "DE",
+          "Geovanni": "MD",
+          "Petit": "MC",
+          "Manuel Fernandes": "MC",
+          "Simão": "ME",
+          "Nuno Assis": "MO",
+          "Nuno Gomes": "PL"
+        }
+      },
+      {
+        "formacao": "4-4-2 losango",
+        "nomes": {
+          "Anderson Polga": "Ânderson Polga"
+        },
+        "onze": {
+          "Ricardo": "GR",
+          "Miguel Garcia": "DD",
+          "Beto": "DC",
+          "Ânderson Polga": "DC",
+          "Rui Jorge": "DE",
+          "Custódio": "MDC",
+          "Fábio Rochemback": "MC",
+          "João Moutinho": "MC",
+          "Pedro Barbosa": "MO",
+          "Sá Pinto": "PL",
+          "Douala": "PL"
+        }
+      }
+    ]
+  },
+  "liverpool-0-2-benfica-2006": {
+    "equipas": [
+      {
+        "formacao": "4-4-2",
+        "onze": {
+          "Pepe Reina": "GR",
+          "Steve Finnan": "DD",
+          "Jamie Carragher": "DC",
+          "Djimi Traoré": "DC",
+          "Stephen Warnock": "DE",
+          "Luis García": "MD",
+          "Steven Gerrard": "MC",
+          "Xabi Alonso": "MC",
+          "Harry Kewell": "ME",
+          "Peter Crouch": "PL",
+          "Fernando Morientes": "PL"
+        }
+      },
+      {
+        "formacao": "4-3-3",
+        "nomes": {
+          "Marcelo Moretto": "Moretto",
+          "Leo": "Léo",
+          "Simão Sabrosa": "Simão"
+        },
+        "onze": {
+          "Moretto": "GR",
+          "Alcides": "DD",
+          "Luisão": "DC",
+          "Anderson": "DC",
+          "Léo": "DE",
+          "Manuel Fernandes": "MC",
+          "Beto": "MDC",
+          "Laurent Robert": "MC",
+          "Geovanni": "ED",
+          "Nuno Gomes": "PL",
+          "Simão": "EE"
+        }
+      }
+    ]
+  },
+  "sporting-4-1-man-city-2024": {
+    "equipas": [
+      {
+        "nomes": {
+          "Ruben Amorim": "Rúben Amorim"
+        }
+      },
+      {
+        "nomes": {
+          "Ederson Moraes": "Ederson",
+          "Josko Gvardiol": "Joško Gvardiol",
+          "Mateo Kovacic": "Mateo Kovačić",
+          "Ilkay Gündogan": "İlkay Gündoğan"
+        }
+      }
+    ]
+  },
+  "barcelona-5-0-real-madrid-2010": {
+    "estadio": "Camp Nou, Barcelona",
+    "equipas": [
+      {
+        "nomes": {
+          "Pedro Rodríguez": "Pedro",
+          "Éric Abidal": "Eric Abidal",
+          "Jeffrén Suárez": "Jeffrén",
+          "Bojan Krkić": "Bojan",
+          "Pinto": "José Manuel Pinto"
+        }
+      },
+      {}
+    ]
+  },
+  "real-madrid-2-6-barcelona-2009": {
+    "equipas": [
+      {
+        "formacao": "4-4-2",
+        "nomes": {
+          "Raúl González": "Raúl"
+        },
+        "onze": {
+          "Iker Casillas": "GR",
+          "Sergio Ramos": "DD",
+          "Fabio Cannavaro": "DC",
+          "Christoph Metzelder": "DC",
+          "Gabriel Heinze": "DE",
+          "Arjen Robben": "MD",
+          "Fernando Gago": "MC",
+          "Lassana Diarra": "MC",
+          "Marcelo": "ME",
+          "Gonzalo Higuaín": "PL",
+          "Raúl": "PL"
+        }
+      },
+      {
+        "formacao": "4-3-3",
+        "nomes": {
+          "Éric Abidal": "Eric Abidal",
+          "Bojan Krkić": "Bojan"
+        },
+        "onze": {
+          "Víctor Valdés": "GR",
+          "Dani Alves": "DD",
+          "Carles Puyol": "DC",
+          "Gerard Piqué": "DC",
+          "Eric Abidal": "DE",
+          "Xavi": "MC",
+          "Yaya Touré": "MDC",
+          "Andrés Iniesta": "MC",
+          "Lionel Messi": "ED",
+          "Samuel Eto'o": "PL",
+          "Thierry Henry": "EE"
+        }
+      }
+    ]
+  },
+  "liverpool-4-0-barcelona-2019": {
+    "equipas": [
+      {
+        "nomes": {
+          "Alisson Becker": "Alisson",
+          "Alexander-Arnold": "Trent Alexander-Arnold",
+          "Joel Matip": "Joël Matip",
+          "Gini Wijnaldum": "Georginio Wijnaldum"
+        }
+      },
+      {
+        "nomes": {
+          "ter Stegen": "Marc-André ter Stegen"
+        }
+      }
+    ]
   }
 }

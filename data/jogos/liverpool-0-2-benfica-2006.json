@@ -1,0 +1,64 @@
+{
+  "id": "liverpool-0-2-benfica-2006",
+  "modos": ["classico", "equipa:liverpool", "equipa:benfica"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Oitavos de final (2.ª mão)",
+  "data": "2006-03-08",
+  "estadio": "Anfield, Liverpool",
+  "resultado": "Liverpool 0–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2006-03-08-liverpool-benfica/215224",
+  "equipas": [
+    {
+      "nome": "Liverpool",
+      "slug": "liverpool",
+      "cor": "#c8102e",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Rafa Benítez" },
+      "onze": [
+        { "nome": "Pepe Reina", "numero": 25, "pais": "ES", "pos": "GR" },
+        { "nome": "Steve Finnan", "numero": 3, "pais": "IE", "pos": "DD" },
+        { "nome": "Jamie Carragher", "numero": 23, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Djimi Traoré", "numero": 21, "pais": "ML", "pos": "DC" },
+        { "nome": "Stephen Warnock", "numero": 28, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "Luis García", "numero": 10, "pais": "ES", "pos": "MD" },
+        { "nome": "Steven Gerrard", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Harry Kewell", "numero": 7, "pais": "AU", "pos": "ME" },
+        { "nome": "Peter Crouch", "numero": 15, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Fernando Morientes", "numero": 19, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 70, "pais": "DE" },
+        { "nome": "Djibril Cissé", "numero": 9, "minuto": 63, "pais": "FR" },
+        { "nome": "Robbie Fowler", "numero": 11, "minuto": 70, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Jerzy Dudek", "Antonio Barragán", "Sami Hyypiä", "Paul Anderson"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Ronald Koeman" },
+      "onze": [
+        { "nome": "Moretto", "numero": 31, "pais": "BR", "pos": "GR", "aceites": ["Marcelo Moretto"] },
+        { "nome": "Alcides", "numero": 13, "pais": "BR", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Anderson", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Léo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Manuel Fernandes", "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Beto", "numero": 16, "pais": "BR", "pos": "MDC" },
+        { "nome": "Laurent Robert", "numero": 34, "pais": "FR", "pos": "MC" },
+        { "nome": "Geovanni", "numero": 11, "pais": "BR", "pos": "ED" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" },
+        { "nome": "Simão", "aceites": ["simao", "Simão Sabrosa"], "numero": 20, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 36 }] }
+      ],
+      "suplentes": [
+        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 70, "pais": "PT" },
+        { "nome": "Georgios Karagounis", "numero": 10, "minuto": 60, "pais": "GR" },
+        { "nome": "Fabrizio Miccoli", "numero": 30, "minuto": 77, "pais": "IT", "golos": [{ "minuto": 89 }] }
+      ],
+      "nao_utilizados": ["Quim", "Nélson", "Andrei Karyaka", "Marcel"]
+    }
+  ]
+}

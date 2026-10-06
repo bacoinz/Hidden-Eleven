@@ -47,7 +47,7 @@
         { "nome": "Guilherme Siqueira", "numero": 16, "pais": "BR", "pos": "DE" },
         { "nome": "Rúben Amorim", "numero": 6, "pais": "PT", "pos": "MD" },
         { "nome": "André Gomes", "numero": 30, "pais": "PT", "pos": "MC" },
-        { "nome": "Nicolás Gaitán", "numero": 20, "pais": "AR", "pos": "ME" },
+        { "nome": "Nicolás Gaitán", "aceites": ["nico gaitan"], "numero": 20, "pais": "AR", "pos": "ME" },
         { "nome": "Miralem Sulejmani", "numero": 8, "pais": "RS", "pos": "ED" },
         { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" },
         { "nome": "Rodrigo", "numero": 19, "pais": "ES", "pos": "EE" }

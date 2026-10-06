@@ -24,7 +24,7 @@ const POSICOES = {
 };
 
 // Nomes de equipas e cidades em pt-PT (o que não estiver aqui fica como vem e é revisto à mão).
-const EQUIPAS_PT = {
+export const EQUIPAS_PT = {
   Monaco: 'Mónaco', Porto: 'FC Porto', 'Bayern Munich': 'Bayern Munique', Germany: 'Alemanha', Spain: 'Espanha',
   France: 'França', Italy: 'Itália', Netherlands: 'Holanda', England: 'Inglaterra', Portugal: 'Portugal',
   Brazil: 'Brasil', Argentina: 'Argentina', Croatia: 'Croácia', Greece: 'Grécia', 'Manchester United': 'Manchester United',
@@ -48,7 +48,7 @@ const SELECOES_PT = {
 };
 
 // Equipas da Equipa Mítica (nome em pt-PT → slug de data/equipas.json).
-const SLUGS = {
+export const SLUGS = {
   'Real Madrid': 'real-madrid', Barcelona: 'barcelona', 'Manchester United': 'man-utd', 'Manchester City': 'man-city',
   Liverpool: 'liverpool', Chelsea: 'chelsea', Arsenal: 'arsenal', Tottenham: 'tottenham', 'Bayern Munique': 'bayern',
   'Borussia Dortmund': 'dortmund', Juventus: 'juventus', Milan: 'milan', Inter: 'inter', 'Atlético de Madrid': 'atletico',
@@ -70,7 +70,7 @@ const CORES = {
 };
 
 /** Cores das duas equipas; se forem parecidas, a segunda passa a branco (ou escuro, se a primeira já for clara). */
-function coresDoJogo(nomes) {
+export function coresDoJogo(nomes) {
   const cores = nomes.map((n) => CORES[n] ?? null);
   const rgb = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
   if (cores[0] && cores[1]) {
@@ -161,9 +161,15 @@ function dataDaCaixa(caixa) {
   const d = campoDaCaixa(caixa, 'date');
   const m = d.match(/(\d{4})\|(\d{1,2})\|(\d{1,2})/);
   if (m) return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
-  const t = Date.parse(limpar(d));
-  return Number.isNaN(t) ? '' : new Date(t).toISOString().slice(0, 10);
+  // Texto: "20 April 2011" ou "April 20, 2011" (sem passar por Date, que mudaria o dia com o fuso horário).
+  const texto = limpar(d);
+  const t = texto.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/) ?? texto.match(/([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if (!t) return '';
+  const [dia, nomeMes] = /^\d/.test(t[1]) ? [t[1], t[2]] : [t[2], t[1]];
+  const mes = MESES_EN.indexOf(nomeMes.slice(0, 3).toLowerCase()) + 1;
+  return mes ? `${t[3]}-${String(mes).padStart(2, '0')}-${dia.padStart(2, '0')}` : '';
 }
+const MESES_EN = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 
 function nomeEquipa(campo) {
   const nome = limpar(campo.replace(/\{\{#invoke:flagg?\|[^}]*\}\}/g, '').replace(/\{\{\s*(?:fbaicon|flagicon)[^}]*\}\}/gi, ''));
@@ -210,8 +216,9 @@ function lerOnzes(texto, desde) {
   for (const linha of linhas) {
     if (equipas.length === 2) break;
     if (/\{\{\s*(?:#invoke:\s*football\s*box|football\s*box|footballbox)/i.test(linha) && (atual.onze.length || equipas.length)) break;
-    if (/Substitutes:|Substitutions:/i.test(linha)) { seccao = 'banco'; continue; }
-    if (/(Managers?|Head coach(es)?|Coach(es)?):/i.test(linha)) { seccao = 'treinador'; continue; }
+    // "'''Substitutes:'''" ou, em alguns artigos, "|colspan=3|'''Substitutes'''".
+    if (/Substitutes:|Substitutions:|^\|.*'''\s*Substitut(?:es|ions)\s*'''/i.test(linha)) { seccao = 'banco'; continue; }
+    if (/(Managers?|Head coach(es)?|Coach(es)?):|^\|.*'''\s*(?:Managers?|Head coach(?:es)?|Coach(?:es)?)\s*'''/i.test(linha)) { seccao = 'treinador'; continue; }
     if (seccao === 'treinador' && /\[\[/.test(linha)) {
       const ligacaoTreinador = linha.match(/\[\[[^\]]+\]\]/)?.[0];
       atual.treinador = {
@@ -404,7 +411,7 @@ function atribuirPlanteis(onzes, planteis) {
 }
 
 // --- montagem do JSON ---
-function pessoa(j, extra = {}) {
+export function pessoa(j, extra = {}) {
   const aceites = new Set([...alcunhasDe(j.nome), ...(j.alvo ? alcunhasDe(j.alvo) : [])]);
   if (j.alvo && normalizar(j.alvo) !== normalizar(j.nome)) aceites.add(j.alvo);
   return { nome: j.nome, ...(aceites.size ? { aceites: [...aceites] } : {}), ...extra };
@@ -526,6 +533,14 @@ export function aplicarCuradoria(jogo, c) {
       const p = e.onze.find((x) => x.nome === nome);
       if (!p) throw new Error(`curadoria: "${nome}" não está no onze de ${e.nome}`);
       p.pos = pos;
+    }
+    // Onze completo (fontes sem posições, como o zerozero): nome → sigla, pela ordem em que ficam no relvado.
+    if (a.onze) {
+      const nomes = Object.keys(a.onze);
+      const falta = e.onze.filter((p) => !nomes.includes(p.nome)).map((p) => p.nome);
+      if (falta.length || nomes.length !== e.onze.length) throw new Error(`curadoria: onze de ${e.nome} não bate certo (${falta.join(', ')})`);
+      for (const p of e.onze) p.pos = a.onze[p.nome];
+      e.onze.sort((x, y) => nomes.indexOf(x.nome) - nomes.indexOf(y.nome));
     }
     for (const [nome, extra] of Object.entries(a.aceites ?? {})) {
       const p = todas().find((x) => x.nome === nome);

@@ -43,7 +43,7 @@
         { "nome": "João Félix", "aceites": ["felix"] },
         "José Sá",
         "Francisco Trincão",
-        "Pedro Gonçalves",
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"] },
         "Rui Silva",
         "Rodrigo Mora"
       ]

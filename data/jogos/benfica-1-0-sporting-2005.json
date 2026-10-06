@@ -1,0 +1,65 @@
+{
+  "id": "benfica-1-0-sporting-2005",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "33.ª jornada",
+  "titulo": "O dérbi que decidiu o título",
+  "data": "2005-05-14",
+  "estadio": "Estádio da Luz, Lisboa",
+  "resultado": "Benfica 1–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2005-05-14-benfica-sporting/87056",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-1-1",
+      "treinador": { "nome": "Giovanni Trapattoni", "aceites": ["trap", "trapattoni"] },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "numero": 23, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Rocha", "numero": 33, "pais": "PT", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC", "golos": [{ "minuto": 83 }] },
+        { "nome": "Manuel dos Santos", "numero": 18, "pais": "FR", "pos": "DE" },
+        { "nome": "Geovanni", "numero": 11, "pais": "BR", "pos": "MD" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Manuel Fernandes", "numero": 37, "pais": "PT", "pos": "MC" },
+        { "nome": "Simão", "aceites": ["simao", "Simão Sabrosa"], "numero": 20, "pais": "PT", "pos": "ME" },
+        { "nome": "Nuno Assis", "numero": 15, "pais": "PT", "pos": "MO" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Pereira", "numero": 47, "minuto": 86, "pais": "PT" },
+        { "nome": "Alcides", "numero": 13, "minuto": 88, "pais": "BR" },
+        { "nome": "Pedro Mantorras", "numero": 9, "minuto": 78, "pais": "AO" }
+      ],
+      "nao_utilizados": ["José Moreira", "Takis Fyssas", "Bruno Aguiar", "Andrija Delibasic"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "José Peseiro" },
+      "onze": [
+        { "nome": "Ricardo", "numero": 76, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel Garcia", "numero": 15, "pais": "PT", "pos": "DD" },
+        { "nome": "Beto", "numero": 22, "pais": "PT", "pos": "DC" },
+        { "nome": "Ânderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Rui Jorge", "numero": 23, "pais": "PT", "pos": "DE" },
+        { "nome": "Custódio", "numero": 27, "pais": "PT", "pos": "MDC" },
+        { "nome": "Fábio Rochemback", "numero": 26, "pais": "BR", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Barbosa", "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Sá Pinto", "numero": 10, "pais": "PT", "pos": "PL" },
+        { "nome": "Douala", "numero": 17, "pais": "CM", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Hugo Viana", "numero": 45, "minuto": 73, "pais": "PT" },
+        { "nome": "Rodrigo Tello", "numero": 11, "minuto": 66, "pais": "CL" },
+        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 70, "pais": "CL" }
+      ],
+      "nao_utilizados": ["Nélson", "Rogério", "Hugo", "Marius Niculae"]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "real-madrid-2-6-barcelona-2009",
+  "modos": ["classico", "equipa:real-madrid", "equipa:barcelona"],
+  "competicao": "Liga espanhola",
+  "fase": "34.ª jornada",
+  "titulo": "Seis no Bernabéu",
+  "data": "2009-05-02",
+  "estadio": "Santiago Bernabéu, Madrid",
+  "resultado": "Real Madrid 2–6 Barcelona",
+  "fonte": "https://www.zerozero.pt/jogo/2009-05-02-real-madrid-barcelona/474154",
+  "equipas": [
+    {
+      "nome": "Real Madrid",
+      "slug": "real-madrid",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Juande Ramos" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Sergio Ramos", "numero": 4, "pais": "ES", "pos": "DD", "golos": [{ "minuto": 56 }] },
+        { "nome": "Fabio Cannavaro", "numero": 5, "pais": "IT", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Gabriel Heinze", "numero": 16, "pais": "AR", "pos": "DE" },
+        { "nome": "Arjen Robben", "numero": 11, "pais": "NL", "pos": "MD" },
+        { "nome": "Fernando Gago", "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Lassana Diarra", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "Marcelo", "numero": 12, "pais": "BR", "pos": "ME" },
+        { "nome": "Gonzalo Higuaín", "aceites": ["pipita"], "numero": 20, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 14 }] },
+        { "nome": "Raúl", "numero": 7, "pais": "ES", "pos": "PL", "aceites": ["Raúl González"] }
+      ],
+      "suplentes": [
+        { "nome": "Javi García", "numero": 24, "minuto": 79, "pais": "ES" },
+        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 72, "pais": "NL" },
+        { "nome": "Klaas-Jan Huntelaar", "numero": 19, "minuto": 59, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Jerzy Dudek", "Julien Faubert", "Miguel Torres", "Royston Drenthe"]
+    },
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#a50044",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Víctor Valdés", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Dani Alves", "numero": 20, "pais": "BR", "pos": "DD" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DC", "golos": [{ "minuto": 20 }] },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC", "golos": [{ "minuto": 83 }] },
+        { "nome": "Eric Abidal", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "pais": "ES", "pos": "MC" },
+        { "nome": "Yaya Touré", "numero": 17, "pais": "CI", "pos": "MDC" },
+        { "nome": "Andrés Iniesta", "numero": 8, "pais": "ES", "pos": "MC" },
+        {
+          "nome": "Lionel Messi",
+          "aceites": ["leo messi", "leo"],
+          "numero": 10,
+          "pais": "AR",
+          "pos": "ED",
+          "golos": [{ "minuto": 36 }, { "minuto": 75 }]
+        },
+        { "nome": "Samuel Eto'o", "numero": 9, "pais": "CM", "pos": "PL" },
+        { "nome": "Thierry Henry", "numero": 14, "pais": "FR", "pos": "EE", "golos": [{ "minuto": 18 }, { "minuto": 58 }] }
+      ],
+      "suplentes": [
+        { "nome": "Sergio Busquets", "numero": 28, "minuto": 85, "pais": "ES" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 61, "pais": "ML" },
+        { "nome": "Bojan", "numero": 11, "minuto": 85, "pais": "ES", "aceites": ["Bojan Krkić"] }
+      ],
+      "nao_utilizados": ["Albert Jorquera", "Martín Cáceres", "Sylvinho", "Eidur Gudjohnsen"]
+    }
+  ]
+}
