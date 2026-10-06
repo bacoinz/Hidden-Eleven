@@ -8,6 +8,10 @@ const CONTEUDOS = [
   { id: 'aleatorio', nome: 'Aleatório', chave: 'aleatorio' },
 ];
 const RONDAS = [3, 5, 10];
+const MODOS = [
+  { id: 'normal', nome: 'Todos', ajuda: 'todos descobrem tudo' },
+  { id: 'duelo', nome: 'Duelo', ajuda: 'cada um a sua equipa' },
+];
 
 const plural = (n, um, varios) => `${n} ${n === 1 ? um : varios}`;
 
@@ -33,7 +37,8 @@ const chipJogador = (j, sala) =>
   el('li', { class: `chip-jogador${j.ligado ? '' : ' desligado'}` },
     el('span', { class: 'ponto', style: { background: j.cor } }),
     j.nome,
-    j.id === sala.anfitriao ? el('span', { class: 'coroa', title: 'Anfitrião', text: '👑' }) : null);
+    j.id === sala.anfitriao ? el('span', { class: 'coroa', title: 'Anfitrião', text: '👑' }) : null,
+    j.espectador ? el('span', { class: 'coroa', title: 'A ver', text: '👁' }) : null);
 
 // ---------------------------------------------------------------------------
 // Lobby
@@ -87,6 +92,23 @@ export function renderLobby(sala, eu, catalogo, enviar) {
     ),
   );
 
+  $('#cfg-modo-bloco').hidden = sala.solo;
+  const modo = sala.config.modo ?? 'normal';
+  $('#cfg-modo').replaceChildren(
+    ...MODOS.map((m) => {
+      const semDuelo = m.id === 'duelo' && sala.config.conteudo === 'equipa';
+      return el('button', {
+        class: 'segmento',
+        type: 'button',
+        role: 'radio',
+        'aria-checked': String(modo === m.id),
+        disabled: !anfitriao || semDuelo,
+        title: semDuelo ? 'O duelo precisa das duas equipas: escolhe outro conteúdo.' : m.ajuda,
+        onclick: () => enviar({ t: 'config', modo: m.id }),
+      }, m.nome, el('small', { text: m.ajuda }));
+    }),
+  );
+
   const duracao = sala.solo ? '5:00' : '3:00';
   const rondas = Math.min(sala.config.rondas, sala.disponiveis);
   $('#cfg-resumo').textContent = sala.disponiveis
@@ -123,11 +145,17 @@ function textoFeed(ev, nomeDe) {
     case 'pista':
       return [el('span', { class: 'sistema', text: `Pista: ${nomePista(ev)}` })];
     case 'fim':
-      return [el('span', { class: 'sistema', text: { completo: 'Tudo descoberto!', votacao: 'Ronda terminada com o onze completo.' }[ev.motivo] ?? 'Acabou o tempo!' })];
+      return [el('span', { class: 'sistema', text: { completo: 'Tudo descoberto!', votacao: 'Ronda terminada com o onze completo.', duelo: 'Onze fechado!' }[ev.motivo] ?? 'Acabou o tempo!' })];
+    case 'duelo':
+      return ev.equipa
+        ? [el('span', { class: 'sistema', text: `Duelo ganho pelo ${ev.equipa}: ` }), ...ev.vencedores.flatMap((id, i) => [i ? ', ' : '', quem(id)]), el('span', { class: 'pontos', text: ` +${ev.bonus}` })]
+        : [el('span', { class: 'sistema', text: 'Duelo empatado.' })];
+    case 'promovido':
+      return [quem(ev.jogador), el('span', { class: 'sistema', text: ' passou a jogar' })];
     case 'ronda':
       return [el('span', { class: 'sistema', text: `Começou a ronda ${ev.numero}` })];
     case 'entrou':
-      return [quem(ev.jogador), el('span', { class: 'sistema', text: ' entrou na sala' })];
+      return [quem(ev.jogador), el('span', { class: 'sistema', text: ev.espectador ? ' está a ver' : ' entrou na sala' })];
     case 'anfitriao':
       return [quem(ev.jogador), el('span', { class: 'sistema', text: ' é agora o anfitrião' })];
     case 'final':
@@ -182,19 +210,29 @@ export function renderPlacar(sala, eu, anterior, enviar) {
   $('#placar-resumo').textContent =
     terminou && r ? `Descobriram ${r.descobertos} de ${r.total} posições. O que ficou por descobrir está a cinzento.` : '';
 
+  const lados = r?.lados ?? null;
+  const equipaDe = (id) => (lados && lados[id] !== undefined ? r.equipas.find((e) => e.indice === lados[id]) : null);
   $('#placar-tabela').replaceChildren(
-    ...ordenar(sala.jogadores).map((j) => {
+    ...ordenar(sala.jogadores.filter((j) => !j.espectador)).map((j) => {
       const subiu = anterior?.get(j.id) !== undefined && anterior.get(j.id) < j.total;
       return el('tr', { class: [j.id === eu ? 'eu' : '', j.ligado ? '' : 'desligado', subiu ? 'subiu' : ''].filter(Boolean).join(' ') || null },
         el('td', { text: `${j.posicao}.` }),
         el('td', {},
           el('span', { class: 'celula-jogador' },
             el('span', { class: 'ponto', style: { background: j.cor } }),
-            el('span', { class: 'nome-jogador' }, j.nome, j.id === sala.anfitriao ? ' 👑' : '', j.id === eu ? ' (tu)' : ''))),
+            el('span', { class: 'nome-jogador' }, j.nome, j.id === sala.anfitriao ? ' 👑' : '', j.id === eu ? ' (tu)' : ''),
+            equipaDe(j.id) ? el('span', { class: 'lado', title: equipaDe(j.id).nome, style: { background: equipaDe(j.id).cor ?? '#e5e7eb' } }) : null)),
         el('td', { class: 'mais', text: j.ronda ? `+${j.ronda}` : '0' }),
         el('td', { class: 'total-celula', text: String(j.total) }));
     }),
   );
+
+  const espectadores = sala.jogadores.filter((j) => j.espectador && j.ligado).map((j) => j.nome);
+  if (espectadores.length) {
+    const resumo = $('#placar-resumo');
+    resumo.textContent = `${resumo.textContent}${resumo.textContent ? ' ' : ''}A ver: ${espectadores.join(', ')}.`;
+  }
+  renderEstatisticas(sala, eu, terminou);
 
   const anfitriao = sala.anfitriao === eu;
   const ultima = p && p.numero >= p.total;
@@ -208,7 +246,7 @@ export function renderPlacar(sala, eu, anterior, enviar) {
   } else if (sala.fase === 'ronda' && r?.onzeCompleto) {
     // Onze todo descoberto: pode terminar-se a ronda sem os suplentes e treinadores.
     const votos = r.votosTerminar ?? [];
-    const ligados = sala.jogadores.filter((j) => j.ligado);
+    const ligados = sala.jogadores.filter((j) => j.ligado && !j.espectador);
     const votei = votos.includes(eu);
     botao.hidden = false;
     botao.textContent = sala.solo
@@ -304,4 +342,121 @@ export function tick(sala, agora) {
     m.classList.toggle('ativa', r.nivelPista > i);
   });
   $('#contador').textContent = `${r.descobertos}/${r.total} descobertos`;
+}
+
+// ---------------------------------------------------------------------------
+// Estatísticas no fim da ronda
+// ---------------------------------------------------------------------------
+
+const precisao = (c, e) => (c + e ? `${Math.round((100 * c) / (c + e))}%` : '–');
+
+function renderEstatisticas(sala, eu, terminou) {
+  const bloco = $('#placar-stats');
+  const r = sala.ronda;
+  bloco.hidden = !terminou || !r;
+  if (bloco.hidden) return;
+  const final = sala.fase === 'final';
+  const jogadores = sala.jogadores.filter((j) => !j.espectador);
+  const st = (j) => (final ? { ...j.stats, primeiroMs: null } : r.stats?.[j.id] ?? { certos: 0, errados: 0, primeiroMs: null });
+  const taxa = (x) => x.certos / Math.max(1, x.certos + x.errados);
+  const linhas = [...jogadores].sort((a, b) => st(b).certos - st(a).certos || st(a).errados - st(b).errados);
+  const destaques = [];
+  const rapido = jogadores.filter((j) => st(j).primeiroMs != null).sort((a, b) => st(a).primeiroMs - st(b).primeiroMs)[0];
+  if (rapido) destaques.push(el('li', {}, '⚡ Primeiro acerto: ', el('strong', { style: { color: rapido.cor }, text: rapido.nome }), ` (${formatarTempo(st(rapido).primeiroMs)})`));
+  const certeiro = jogadores.filter((j) => st(j).certos >= 2).sort((a, b) => taxa(st(b)) - taxa(st(a)))[0];
+  if (certeiro && jogadores.length > 1) destaques.push(el('li', {}, '🎯 Mais certeiro: ', el('strong', { style: { color: certeiro.cor }, text: certeiro.nome }), ` (${precisao(st(certeiro).certos, st(certeiro).errados)})`));
+  bloco.replaceChildren(
+    el('h3', { class: 'painel-subtitulo', text: final ? 'Estatísticas do jogo' : 'Estatísticas da ronda' }),
+    destaques.length ? el('ul', { class: 'destaques' }, ...destaques) : null,
+    el('table', { class: 'tabela tabela-stats' },
+      el('thead', {}, el('tr', {},
+        el('th', { text: 'Jogador' }), el('th', { title: 'Acertos', text: '✓' }), el('th', { title: 'Nomes errados', text: '✗' }),
+        el('th', { title: 'Precisão', text: '%' }), el('th', { title: 'Tempo até ao primeiro acerto', text: '1.º' }))),
+      el('tbody', {},
+        ...linhas.map((j) => {
+          const x = st(j);
+          return el('tr', { class: j.id === eu ? 'eu' : null },
+            el('td', {}, el('span', { class: 'celula-jogador' }, el('span', { class: 'ponto', style: { background: j.cor } }), el('span', { class: 'nome-jogador', text: j.nome }))),
+            el('td', { text: String(x.certos ?? 0) }),
+            el('td', { text: String(x.errados ?? 0) }),
+            el('td', { text: precisao(x.certos ?? 0, x.errados ?? 0) }),
+            el('td', { text: x.primeiroMs != null ? formatarTempo(x.primeiroMs) : '–' }));
+        }))),
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Marcador no fim da ronda (golos e entradas do banco, por minuto)
+// ---------------------------------------------------------------------------
+
+/** "90+2" → 90.02; 105 → 105. */
+const valorMinuto = (m) => {
+  const [a, b] = String(m).split('+').map(Number);
+  return a + (b || 0) / 100;
+};
+
+export function eventosDoJogo(ronda) {
+  const eventos = [];
+  for (const e of ronda.equipas) {
+    for (const l of [...e.onze, ...e.suplentes]) {
+      for (const g of l.golos ?? []) {
+        // Autogolo: conta para a outra equipa.
+        const outra = ronda.equipas.find((x) => x.indice !== e.indice);
+        const marca = g.autogolo && outra ? outra.indice : e.indice;
+        eventos.push({ tipo: 'golo', minuto: g.minuto, equipa: marca, nome: l.curto ?? l.nome ?? '?', penalti: g.penalti, autogolo: g.autogolo });
+      }
+    }
+    for (const l of e.suplentes) eventos.push({ tipo: 'entrada', minuto: l.minuto, equipa: e.indice, nome: l.curto ?? l.nome ?? '?' });
+  }
+  eventos.sort((a, b) => valorMinuto(a.minuto) - valorMinuto(b.minuto) || (a.tipo === 'golo' ? -1 : 1));
+  const golos = Object.fromEntries(ronda.equipas.map((e) => [e.indice, 0]));
+  for (const ev of eventos) {
+    if (ev.tipo !== 'golo') continue;
+    golos[ev.equipa] = (golos[ev.equipa] ?? 0) + 1;
+    ev.marcador = ronda.equipas.map((e) => golos[e.indice]).join('–');
+  }
+  return eventos;
+}
+
+export function renderMarcador(sala) {
+  const r = sala.ronda;
+  const mostrar = Boolean(r) && (sala.fase === 'fim' || sala.fase === 'final');
+  $('#marcador').hidden = !mostrar;
+  $('#feed').hidden = mostrar;
+  $('#feed-titulo').textContent = mostrar ? 'Marcador' : 'Acontecimentos';
+  if (!mostrar) return;
+  const cor = (i) => r.equipas.find((e) => e.indice === i)?.cor ?? '#e5e7eb';
+  const eventos = eventosDoJogo(r);
+  $('#marcador').replaceChildren(
+    el('li', { class: 'marcador-topo', text: r.jogo.resultado }),
+    ...(eventos.length
+      ? eventos.map((ev) =>
+          el('li', { class: `marcador-ev ${ev.tipo}` },
+            el('span', { class: 'minuto', text: `${ev.minuto}'` }),
+            el('span', { class: 'lado', style: { background: cor(ev.equipa) } }),
+            ev.tipo === 'golo'
+              ? el('span', {}, '⚽ ', el('strong', { text: ev.nome }), ev.penalti ? ' (g.p.)' : '', ev.autogolo ? ' (p.b.)' : '', el('span', { class: 'parcial', text: ` ${ev.marcador}` }))
+              : el('span', { class: 'entrada' }, '⬆ ', ev.nome)))
+      : [el('li', { class: 'nota', text: 'Sem golos nem substituições registadas.' })]),
+  );
+}
+
+/** Aviso por baixo do relógio: a equipa no duelo, ou que estás a ver. */
+export function renderPapel(sala, eu) {
+  const papel = $('#papel');
+  const euJogador = sala.jogadores.find((j) => j.id === eu);
+  const r = sala.ronda;
+  let texto = '';
+  let cor = null;
+  if (euJogador?.espectador) texto = sala.solo ? '👁 Estás a ver' : '👁 Estás a ver · jogas a partir da próxima ronda';
+  else if (r?.lados && r.lados[eu] !== undefined) {
+    const e = r.equipas.find((x) => x.indice === r.lados[eu]);
+    if (e) {
+      texto = `⚔ Duelo · a tua equipa: ${e.nome}`;
+      cor = e.cor;
+    }
+  }
+  papel.hidden = !texto;
+  papel.textContent = texto;
+  papel.style.setProperty('--cor-lado', cor ?? 'transparent');
 }

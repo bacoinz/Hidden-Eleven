@@ -1,0 +1,62 @@
+{
+  "id": "sporting-newcastle-2005-04-14",
+  "modos": ["classico", "equipa:sporting"],
+  "competicao": "Taça UEFA",
+  "fase": "Quartos de final (2.ª mão)",
+  "data": "2005-04-14",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 4–1 Newcastle",
+  "fonte": "https://www.zerozero.pt/jogo/2005-04-14-sporting-newcastle/182754",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "José Peseiro" },
+      "onze": [
+        { "nome": "Ricardo", "numero": 76, "pais": "PT", "pos": "GR" },
+        { "nome": "Rogério", "numero": 37, "pais": "BR", "pos": "DD" },
+        { "nome": "Beto", "numero": 22, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 76 }] },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Rui Jorge", "numero": 23, "pais": "PT", "pos": "DE" },
+        { "nome": "Douala", "numero": 17, "pais": "CM", "pos": "MD" },
+        { "nome": "Fábio Rochemback", "numero": 26, "pais": "BR", "pos": "MC", "golos": [{ "minuto": 90 }] },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Carlos Martins", "numero": 5, "pais": "PT", "pos": "ME" },
+        { "nome": "Sá Pinto", "numero": 10, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 71 }] },
+        { "nome": "Marius Niculae", "numero": 9, "pais": "RO", "pos": "PL", "golos": [{ "minuto": 40 }] }
+      ],
+      "suplentes": [
+        { "nome": "Custódio", "numero": 27, "minuto": 87, "pais": "PT" },
+        { "nome": "Pedro Barbosa", "numero": 8, "minuto": 67, "pais": "PT" },
+        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 74, "pais": "CL" }
+      ],
+      "nao_utilizados": ["Nélson", "Miguel Garcia", "Rodrigo Tello", "Mota"]
+    },
+    {
+      "nome": "Newcastle",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Graeme Souness" },
+      "onze": [
+        { "nome": "Shay Given", "numero": 1, "pais": "IE", "pos": "GR" },
+        { "nome": "Stephen Carr", "numero": 2, "pais": "IE", "pos": "DD" },
+        { "nome": "Titus Bramble", "numero": 19, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Steven Taylor", "numero": 58, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Celestine Babayaro", "numero": 33, "pais": "NG", "pos": "DE" },
+        { "nome": "Charles N'Zogbia", "numero": 14, "pais": "FR", "pos": "MDC" },
+        { "nome": "Amdy Fayé", "numero": 15, "pais": "FR", "pos": "MDC" },
+        { "nome": "Kieron Dyer", "numero": 8, "pais": "GB-ENG", "pos": "ED", "golos": [{ "minuto": 20 }] },
+        { "nome": "Lee Bowyer", "numero": 29, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Jermaine Jenas", "numero": 7, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Alan Shearer", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Andy O'Brien", "numero": 5, "minuto": 55, "pais": "IE" },
+        { "nome": "James Milner", "numero": 11, "minuto": 46, "pais": "GB-ENG" },
+        { "nome": "Patrick Kluivert", "numero": 16, "minuto": 59, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Steve Harper", "Nicky Butt", "Darren Ambrose", "Shola Ameobi"]
+    }
+  ]
+}

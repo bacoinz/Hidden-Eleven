@@ -25,7 +25,7 @@ const POSICOES = {
 
 // Nomes de equipas e cidades em pt-PT (o que não estiver aqui fica como vem e é revisto à mão).
 export const EQUIPAS_PT = {
-  Monaco: 'Mónaco', Porto: 'FC Porto', 'Bayern Munich': 'Bayern Munique', Germany: 'Alemanha', Spain: 'Espanha',
+  Monaco: 'Mónaco', Porto: 'FC Porto', 'Bayern Munich': 'Bayern Munique', 'Bayern München': 'Bayern Munique', 'Newcastle United': 'Newcastle', Germany: 'Alemanha', Spain: 'Espanha',
   France: 'França', Italy: 'Itália', Netherlands: 'Holanda', England: 'Inglaterra', Portugal: 'Portugal',
   Brazil: 'Brasil', Argentina: 'Argentina', Croatia: 'Croácia', Greece: 'Grécia', 'Manchester United': 'Manchester United',
   'Manchester City': 'Manchester City', Chelsea: 'Chelsea', Liverpool: 'Liverpool', Arsenal: 'Arsenal',
@@ -559,6 +559,11 @@ export function aplicarCuradoria(jogo, c) {
       if (!p) throw new Error(`curadoria: "${nome}" não jogou por ${e.nome}`);
       if (golos.length) p.golos = golos;
       else delete p.golos;
+    }
+    for (const [nome, numero] of Object.entries(a.numeros ?? {})) {
+      const p = [...e.onze, ...e.suplentes].find((x) => x.nome === nome);
+      if (!p) throw new Error(`curadoria: "${nome}" não jogou por ${e.nome}`);
+      p.numero = numero;
     }
     for (const [nome, curto] of Object.entries(a.curto ?? {})) {
       const p = todas().find((x) => x.nome === nome);

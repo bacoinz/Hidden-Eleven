@@ -1558,3 +1558,124 @@ kbd {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Duelo, espectadores, estatísticas e marcador */
+.papel {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #ffffff10;
+  border-left: 4px solid var(--cor-lado, transparent);
+  width: fit-content;
+}
+.lado {
+  display: inline-block;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-left: 6px;
+  border: 1px solid #ffffff55;
+}
+.btn-som {
+  min-width: 36px;
+}
+.painel-subtitulo {
+  margin: 4px 0 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.placar-stats {
+  flex: none;
+}
+.jogo-grelha.terminada .g-placar {
+  max-height: 64vh;
+  overflow-y: auto;
+}
+.jogo-grelha.terminada .placar-lista {
+  flex: none;
+}
+.destaques {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+  font-size: 13px;
+  display: grid;
+  gap: 2px;
+}
+.tabela-stats {
+  margin: 0;
+  table-layout: fixed;
+  font-size: 13px;
+}
+.tabela-stats th:not(:first-child),
+.tabela-stats td:not(:first-child) {
+  width: 40px;
+  text-align: right;
+}
+.tabela-stats td {
+  padding: 4px 6px;
+}
+.tabela-stats .celula-jogador {
+  min-width: 0;
+}
+.tabela-stats tr.eu td {
+  background: var(--azul-suave);
+}
+.marcador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+.marcador li {
+  font-size: 13px;
+  color: #d5e0da;
+  padding: 5px 8px;
+  border-radius: 8px;
+  background: #ffffff08;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  animation: entrar 0.35s ease-out;
+}
+.marcador .marcador-topo {
+  justify-content: center;
+  font-family: var(--display);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background: #ffffff12;
+}
+.marcador .minuto {
+  width: 42px;
+  flex: none;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-weight: 700;
+}
+.marcador .lado {
+  margin-left: 0;
+}
+.marcador .entrada {
+  color: var(--muted);
+}
+.marcador .parcial {
+  color: #86efac;
+  font-weight: 800;
+}
+.camisola.outro-lado,
+.lugar-banco.outro-lado {
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}

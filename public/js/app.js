@@ -3,6 +3,7 @@ import { $, ler, guardar, novoId, nomePista } from './util.js';
 import { Ligacao } from './ligacao.js';
 import { Relvado } from './relvado.js';
 import * as ui from './ui.js';
+import { sons, somLigado, alternarSom } from './sons.js';
 
 const CHAVE_TOKEN = 'he.token';
 const CHAVE_NOME = 'he.nome';
@@ -69,7 +70,11 @@ async function abrirSala(codigo) {
   irPara(`/sala/${codigo}`);
   if (!ler(CHAVE_NOME)) {
     $('#nome-codigo').textContent = codigo;
-    $('#erro-nome').textContent = info.solo ? 'Esta sala é para jogar sozinho.' : info.cheia ? 'A sala está cheia.' : '';
+    $('#erro-nome').textContent = info.solo
+      ? 'Esta sala é para jogar sozinho: vais entrar a ver.'
+      : info.cheia
+        ? 'A sala está cheia: vais entrar a ver.'
+        : '';
     mostrar('nome');
     $('#nome-link').focus();
     estado.codigo = codigo;
@@ -158,13 +163,16 @@ function aoEstado(sala) {
   ui.renderCabecalho(sala);
   if (sala.ronda) {
     const jogadores = new Map(sala.jogadores.map((j) => [j.id, j]));
-    relvado.render(sala.ronda, jogadores);
+    const meuLado = sala.fase === 'ronda' ? sala.ronda.lados?.[estado.eu] ?? null : null;
+    relvado.render(sala.ronda, jogadores, meuLado);
   }
   ui.renderFicha(sala);
   ui.renderFinal(sala, estado.eu);
   ui.renderPlacar(sala, estado.eu, estado.totais, enviar);
   estado.totais = new Map(sala.jogadores.map((j) => [j.id, j.total]));
   ui.renderFeed(sala);
+  ui.renderMarcador(sala);
+  ui.renderPapel(sala, estado.eu);
   atualizarCaixa(sala, anterior);
 
   for (const ev of novos) {
@@ -175,7 +183,24 @@ function aoEstado(sala) {
       void extra.offsetWidth;
       extra.classList.add('mostrar');
     }
-    if (ev.tipo === 'pista') ui.toast(`Nova pista: ${nomePista(ev)}`);
+    if (ev.tipo === 'descoberta' && ev.jogador !== estado.eu) sons.outro();
+    if (ev.tipo === 'pista') {
+      ui.toast(`Nova pista: ${nomePista(ev)}`);
+      sons.pista();
+    }
+    if (ev.tipo === 'fim') sons.fim();
+    if (ev.tipo === 'duelo') {
+      const ganhei = ev.vencedores?.includes(estado.eu);
+      const joguei = sala.ronda?.lados?.[estado.eu] !== undefined;
+      if (ganhei) {
+        sons.vitoria();
+        ui.toast(`Ganhaste o duelo! +${ev.bonus}`);
+      } else if (joguei && ev.equipa) {
+        sons.derrota();
+        ui.toast(`O ${ev.equipa} fechou primeiro o onze.`);
+      }
+    }
+    if (ev.tipo === 'promovido' && ev.jogador === estado.eu) ui.toast('Agora estás a jogar!');
     if (ev.tipo === 'anfitriao' && ev.jogador === estado.eu) ui.toast('Agora és tu o anfitrião.');
   }
   if (sala.fase === 'ronda' && sala.ronda?.onzeCompleto && anterior?.ronda && !anterior.ronda.onzeCompleto) {
@@ -186,14 +211,17 @@ function aoEstado(sala) {
 
 function atualizarCaixa(sala, anterior) {
   const caixa = $('#palpite');
-  const aJogar = sala.fase === 'ronda';
+  const espectador = sala.jogadores.find((j) => j.id === estado.eu)?.espectador;
+  const aJogar = sala.fase === 'ronda' && !espectador;
   caixa.disabled = !aJogar;
   $('#form-palpite button').disabled = !aJogar;
-  caixa.placeholder = aJogar
-    ? 'Escreve um nome e carrega Enter'
-    : sala.fase === 'ficha'
-      ? 'Prepara-te…'
-      : 'Ronda terminada';
+  caixa.placeholder = espectador
+    ? 'Estás a ver esta ronda'
+    : aJogar
+      ? 'Escreve um nome e carrega Enter'
+      : sala.fase === 'ficha'
+        ? 'Prepara-te…'
+        : 'Ronda terminada';
   if (sala.fase !== anterior?.fase) $('#resposta').textContent = '';
   if (aJogar && anterior?.fase !== 'ronda') {
     caixa.value = '';
@@ -237,10 +265,19 @@ function aoResposta(msg) {
   switch (msg.r) {
     case 'certo':
       responder(`Boa! ${msg.nome} +${msg.pontos}${msg.bonus ? ` · fechaste o jogo +${msg.bonus}` : ''}`, 'certo');
+      sons.acerto();
       break;
     case 'errado':
       responder(`${enviado ?? 'Esse nome'} não está no jogo.`, 'errado');
       bloquear(msg.ate);
+      sons.erro();
+      break;
+    case 'outra':
+      responder('É da outra equipa!', 'info');
+      sons.aviso();
+      break;
+    case 'espectador':
+      responder('Estás a ver esta ronda. Jogas a partir da próxima.', 'info');
       break;
     case 'bloqueado':
       responder('Espera um segundo…', 'errado');
@@ -249,9 +286,11 @@ function aoResposta(msg) {
       break;
     case 'ja':
       responder(msg.porNome ? `Já é de ${msg.porNome}!` : 'Já é teu!', 'info');
+      sons.aviso();
       break;
     case 'banco':
       responder('Ficou no banco!', 'info');
+      sons.aviso();
       break;
     case 'ambiguo':
       responder('Há mais do que um com esse nome — escreve o nome completo!', 'info');
@@ -316,10 +355,7 @@ $('#form-entrar').addEventListener('submit', async (e) => {
     $('#erro-inicio').textContent = info.falhou ? 'Sem ligação ao servidor.' : `A sala ${codigo} não existe.`;
     return;
   }
-  if (info.solo) {
-    $('#erro-inicio').textContent = 'Essa sala é para jogar sozinho.';
-    return;
-  }
+  // Numa sala solo (ou cheia) entra-se a ver.
   irPara(`/sala/${codigo}`);
   ligar(codigo);
 });
@@ -349,9 +385,30 @@ $('#btn-ver-campo').addEventListener('click', () => ui.mostrarFinal(false));
 for (const b of document.querySelectorAll('.btn-sair')) b.addEventListener('click', () => voltarAoInicio());
 for (const b of document.querySelectorAll('[data-abrir]')) b.addEventListener('click', () => document.getElementById(b.dataset.abrir).showModal());
 
-// Relógio
+// Som e vibração
+function mostrarSom() {
+  const b = $('#btn-som');
+  b.textContent = somLigado() ? '🔊' : '🔇';
+  b.setAttribute('aria-pressed', String(somLigado()));
+  b.title = somLigado() ? 'Desligar som e vibração' : 'Ligar som e vibração';
+}
+$('#btn-som').addEventListener('click', () => {
+  alternarSom();
+  mostrarSom();
+});
+mostrarSom();
+
+// Relógio (e tique nos últimos 10 segundos)
+let ultimoSegundo = null;
 setInterval(() => {
-  if (estado.sala && estado.ligacao) ui.tick(estado.sala, estado.ligacao.agora());
+  if (!estado.sala || !estado.ligacao) return;
+  const agora = estado.ligacao.agora();
+  ui.tick(estado.sala, agora);
+  const r = estado.sala.ronda;
+  if (estado.sala.fase !== 'ronda' || !r) return;
+  const segundo = Math.ceil((r.fim - agora) / 1000);
+  if (segundo !== ultimoSegundo && segundo > 0 && segundo <= 10) sons.tique();
+  ultimoSegundo = segundo;
 }, 200);
 
 // ---------------------------------------------------------------------------

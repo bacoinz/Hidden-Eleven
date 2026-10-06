@@ -1,0 +1,64 @@
+{
+  "id": "man-utd-porto-2004-03-09",
+  "modos": ["classico", "equipa:man-utd", "equipa:porto"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Oitavos de final (2.ª mão)",
+  "data": "2004-03-09",
+  "estadio": "Old Trafford, Manchester",
+  "resultado": "Manchester United 1–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2004-03-09-manchester-united-fc-porto/4646",
+  "equipas": [
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "cor": "#da291c",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
+      "onze": [
+        { "nome": "Tim Howard", "numero": 14, "pais": "US", "pos": "GR" },
+        { "nome": "Gary Neville", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Wes Brown", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "John O'Shea", "numero": 22, "pais": "IE", "pos": "DC" },
+        { "nome": "Phil Neville", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "Darren Fletcher", "numero": 24, "pais": "GB-SCT", "pos": "MDC" },
+        { "nome": "Éric Djemba-Djemba", "numero": 19, "pais": "CM", "pos": "MDC" },
+        { "nome": "Nicky Butt", "numero": 8, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Paul Scholes", "numero": 18, "pais": "GB-ENG", "pos": "MO", "golos": [{ "minuto": 32 }] },
+        { "nome": "Ryan Giggs", "numero": 11, "pais": "GB-WLS", "pos": "EE" },
+        { "nome": "Ruud van Nistelrooy", "numero": 10, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ole Gunnar Solskjær", "numero": 20, "minuto": 83, "pais": "NO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 75, "pais": "PT" },
+        { "nome": "Louis Saha", "numero": 9, "minuto": 45, "pais": "FR" }
+      ],
+      "nao_utilizados": ["Roy Carroll", "Kléberson", "David Bellion", "Diego Forlán"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Vítor Baía", "aceites": ["baia"], "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Paulo Ferreira", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Costa", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 8, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MDC", "golos": [{ "minuto": 90 }] },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MDC" },
+        { "nome": "Deco", "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Dmitri Alenichev", "numero": 15, "pais": "RU", "pos": "MO" },
+        { "nome": "Carlos Alberto", "numero": 19, "pais": "BR", "pos": "EE" },
+        { "nome": "Benni McCarthy", "numero": 77, "pais": "ZA", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 37, "pais": "PT" },
+        { "nome": "Ricardo Fernandes", "numero": 25, "minuto": 81, "pais": "PT" },
+        { "nome": "Edgaras Jankauskas", "numero": 9, "minuto": 61, "pais": "LT" }
+      ],
+      "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "José Bosingwa", "Ricardo Costa", "Bruno Moraes"]
+    }
+  ]
+}

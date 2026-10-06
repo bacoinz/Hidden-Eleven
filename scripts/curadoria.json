@@ -664,5 +664,15 @@
         }
       }
     ]
+  },
+  "benfica-barcelona-2021-09-29": {
+    "equipas": [
+      {},
+      {
+        "numeros": {
+          "Nico González": 28
+        }
+      }
+    ]
   }
 }

@@ -154,5 +154,14 @@
   { "id": "sporting-porto-2023-02-12", "zerozero": 8745520, "fotmob": 3937515, "modos": ["classico"] },
   { "id": "porto-sporting-2024-05-26", "zerozero": 10021581, "fotmob": 4412647, "modos": ["classico"] },
   { "id": "porto-sporting-2025-02-07", "zerozero": 10239987, "fotmob": 4539177, "modos": ["classico"] },
-  { "id": "sporting-porto-2026-03-03", "zerozero": 11819215, "fotmob": 5074293, "modos": ["classico"] }
+  { "id": "sporting-porto-2026-03-03", "zerozero": 11819215, "fotmob": 5074293, "modos": ["classico"] },
+  { "id": "man-utd-porto-2004-03-09", "zerozero": 4646, "competicao": "Liga dos Campeões", "fase": "Oitavos de final (2.ª mão)", "modos": ["classico"] },
+  { "id": "porto-bayern-2015-04-15", "zerozero": 4421546, "fotmob": 1942819, "competicao": "Liga dos Campeões", "fase": "Quartos de final (1.ª mão)", "modos": ["classico"] },
+  { "id": "juventus-porto-2021-03-09", "zerozero": 7812053, "fotmob": 3497095, "competicao": "Liga dos Campeões", "fase": "Oitavos de final (2.ª mão)", "modos": ["classico"] },
+  { "id": "benfica-man-utd-2005-12-07", "zerozero": 205478, "competicao": "Liga dos Campeões", "fase": "Fase de grupos", "modos": ["classico"] },
+  { "id": "benfica-barcelona-2021-09-29", "zerozero": 8163005, "fotmob": 3714049, "competicao": "Liga dos Campeões", "fase": "Fase de grupos", "modos": ["classico"] },
+  { "id": "benfica-juventus-2022-10-25", "zerozero": 8882361, "fotmob": 4010238, "competicao": "Liga dos Campeões", "fase": "Fase de grupos", "modos": ["classico"] },
+  { "id": "sporting-newcastle-2005-04-14", "zerozero": 182754, "competicao": "Taça UEFA", "fase": "Quartos de final (2.ª mão)", "modos": ["classico"] },
+  { "id": "sporting-man-city-2012-03-08", "zerozero": 2092581, "fotmob": 1146749, "competicao": "Liga Europa", "fase": "Oitavos de final (1.ª mão)", "modos": ["classico"] },
+  { "id": "arsenal-sporting-2023-03-16", "zerozero": 9286742, "fotmob": 4128638, "competicao": "Liga Europa", "fase": "Oitavos de final (2.ª mão)", "modos": ["classico"] }
 ]

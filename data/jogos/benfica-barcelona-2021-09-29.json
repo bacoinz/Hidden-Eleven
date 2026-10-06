@@ -1,0 +1,68 @@
+{
+  "id": "benfica-barcelona-2021-09-29",
+  "modos": ["classico", "equipa:benfica", "equipa:barcelona"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Fase de grupos",
+  "data": "2021-09-29",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 3–0 Barcelona",
+  "fonte": "https://www.zerozero.pt/jogo/2021-09-29-benfica-barcelona/8163005",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Lucas Veríssimo", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Valentino Lázaro", "numero": 22, "pais": "AT", "pos": "MD" },
+        { "nome": "Julian Weigl", "numero": 28, "pais": "DE", "pos": "MC" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "ME" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 69 }] },
+        { "nome": "Roman Yaremchuk", "numero": 15, "pais": "UA", "pos": "PL" },
+        { "nome": "Darwin Núñez", "numero": 9, "pais": "UY", "pos": "EE", "golos": [{ "minuto": 3 }, { "minuto": 79, "penalti": true }] }
+      ],
+      "suplentes": [
+        { "nome": "Gilberto", "numero": 2, "minuto": "45+1", "pais": "BR" },
+        { "nome": "André Almeida", "numero": 34, "minuto": 75, "pais": "PT" },
+        { "nome": "Pizzi", "numero": 21, "minuto": 86, "pais": "PT" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 76, "pais": "MA" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "minuto": 86, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Helton Leite", "Morato", "Soualiho Meité", "Gedson Fernandes", "Nemanja Radonjic", "Rodrigo Pinho", "Everton Cebolinha"]
+    },
+    {
+      "nome": "Barcelona",
+      "slug": "barcelona",
+      "cor": "#f4f4f4",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Ronald Koeman" },
+      "onze": [
+        { "nome": "Marc ter Stegen", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Eric García", "numero": 24, "pais": "ES", "pos": "DC" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Ronald Araújo", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Sergi Roberto", "numero": 20, "pais": "ES", "pos": "MD" },
+        { "nome": "Frenkie de Jong", "numero": 21, "pais": "NL", "pos": "MC" },
+        { "nome": "Sergio Busquets", "numero": 5, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedri González", "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "Sergiño Dest", "numero": 2, "pais": "US", "pos": "ME" },
+        { "nome": "Memphis Depay", "numero": 9, "pais": "NL", "pos": "PL" },
+        { "nome": "Luuk de Jong", "numero": 17, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Óscar Mingueza", "numero": 22, "minuto": 89, "pais": "ES" },
+        { "nome": "Philippe Coutinho", "numero": 14, "minuto": 68, "pais": "BR" },
+        { "nome": "Nico González", "numero": 28, "minuto": 68, "pais": "ES" },
+        { "nome": "Pablo Gavi", "numero": 30, "minuto": 33, "pais": "ES" },
+        { "nome": "Ansu Fati", "numero": 10, "minuto": 68, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Neto", "Iñaki Peña", "Clément Lenglet", "Samuel Umtiti", "Riqui Puig", "Yusuf Demir"]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "juventus-porto-2021-03-09",
+  "modos": ["classico", "equipa:juventus", "equipa:porto"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Oitavos de final (2.ª mão)",
+  "data": "2021-03-09",
+  "estadio": "Juventus Stadium, Torino",
+  "resultado": "Juventus 3–2 FC Porto (a.p.)",
+  "fonte": "https://www.zerozero.pt/jogo/2021-03-09-juventus-fc-porto/7812053",
+  "equipas": [
+    {
+      "nome": "Juventus",
+      "slug": "juventus",
+      "cor": "#1a1a1a",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Andrea Pirlo" },
+      "onze": [
+        { "nome": "Wojciech Szczesny", "numero": 1, "pais": "PL", "pos": "GR" },
+        { "nome": "Juan Cuadrado", "numero": 16, "pais": "CO", "pos": "DD" },
+        { "nome": "Merih Demiral", "numero": 28, "pais": "TR", "pos": "DC" },
+        { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 12, "pais": "BR", "pos": "DE" },
+        { "nome": "Aaron Ramsey", "numero": 8, "pais": "GB-WLS", "pos": "MD" },
+        { "nome": "Adrien Rabiot", "numero": 25, "pais": "FR", "pos": "MC", "golos": [{ "minuto": 117 }] },
+        { "nome": "Arthur", "numero": 5, "pais": "BR", "pos": "MC" },
+        { "nome": "Federico Chiesa", "numero": 22, "pais": "IT", "pos": "ME", "golos": [{ "minuto": 49 }, { "minuto": 63 }] },
+        { "nome": "Álvaro Morata", "numero": 9, "pais": "ES", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Matthijs de Ligt", "numero": 4, "minuto": 75, "pais": "NL" },
+        { "nome": "Weston McKennie", "numero": 14, "minuto": 75, "pais": "US" },
+        { "nome": "Federico Bernardeschi", "numero": 33, "minuto": 102, "pais": "IT" },
+        { "nome": "Dejan Kulusevski", "numero": 44, "minuto": 102, "pais": "SE" }
+      ],
+      "nao_utilizados": [
+        "Carlo Pinsoglio",
+        { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"] },
+        "Giorgio Chiellini",
+        "Radu Dragusin",
+        "Gianluca Frabotta",
+        "Nicolò Fagioli",
+        "Alessandro Di Pardo"
+      ]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Agustín Marchesín", "numero": 1, "pais": "AR", "pos": "GR" },
+        { "nome": "Wilson Manafá", "numero": 18, "pais": "PT", "pos": "DD" },
+        { "nome": "Chancel Mbemba", "numero": 19, "pais": "CD", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "DE" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "MD" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 19, "penalti": true }, { "minuto": 115 }] },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC" },
+        { "nome": "Otávio", "numero": 25, "pais": "BR", "pos": "ME" },
+        { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "PL" },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Malang Sarr", "numero": 32, "minuto": 62, "pais": "FR" },
+        { "nome": "Diogo Leite", "numero": 4, "minuto": 118, "pais": "PT" },
+        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS" },
+        { "nome": "Mamadou Loum", "numero": 6, "minuto": 118, "pais": "SN" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 106, "pais": "ES" },
+        { "nome": "Luis Díaz", "numero": 7, "minuto": 71, "pais": "CO" }
+      ],
+      "nao_utilizados": ["Diogo Costa", "Nanú", "Fábio Vieira", "Francisco Conceição", "Evanilson", "Felipe Anderson"]
+    }
+  ]
+}

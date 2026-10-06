@@ -38,11 +38,13 @@ describe('entrada de jogadores', () => {
     expect(jogador).toMatchObject({ id: j.id, total: 42, cor: j.cor, nome: 'Jogador2', ligado: true });
   });
 
-  it('máximo de 10 jogadores; sala solo só aceita um', () => {
+  it('com 10 jogadores ou numa sala solo, quem entra fica a ver', () => {
     const cheia = salaCom(10);
-    expect(S.entrar(cheia, { token: tk(11), nome: 'X' }, T0).erro).toMatch(/cheia/);
+    expect(S.entrar(cheia, { token: tk(11), nome: 'X' }, T0).jogador.espectador).toBe(true);
+    for (let i = 12; i <= 20; i++) S.entrar(cheia, { token: tk(i), nome: `X${i}` }, T0);
+    expect(S.entrar(cheia, { token: tk(21), nome: 'Y' }, T0).erro).toMatch(/cheia/);
     const solo = salaCom(1, { solo: true });
-    expect(S.entrar(solo, { token: tk(2), nome: 'X' }, T0).erro).toMatch(/sozinho/);
+    expect(S.entrar(solo, { token: tk(2), nome: 'X' }, T0).jogador.espectador).toBe(true);
   });
 });
 
@@ -195,6 +197,114 @@ describe('terminar a ronda com o onze completo', () => {
   });
 });
 
+describe('espectadores', () => {
+  it('quem entra a meio fica a ver e joga a partir da ronda seguinte', () => {
+    const sala = salaCom(2);
+    const anf = sala.jogadores[0].id;
+    S.configurar(sala, anf, { conteudo: 'finais', rondas: 3 });
+    S.comecar(sala, anf, T0, primeiro);
+    const { jogador: ana } = S.entrar(sala, { token: tk(9), nome: 'Ana' }, T0 + 100);
+    expect(ana.espectador).toBe(true);
+    const r = sala.partida.ronda;
+    S.avancar(sala, r.inicio);
+    const nome = JOGOS.get(r.jogoId).equipas[0].onze[0].nome;
+    expect(S.palpite(sala, ana.id, nome, r.inicio + 500).resposta).toEqual({ r: 'espectador' });
+    expect(S.estadoPublico(sala, r.inicio).jogadores.find((j) => j.id === ana.id).espectador).toBe(true);
+    S.avancar(sala, r.fim);
+    S.proxima(sala, anf, r.fim + 1, primeiro);
+    expect(ana.espectador).toBe(false);
+    expect(sala.feed.some((ev) => ev.tipo === 'promovido' && ev.jogador === ana.id)).toBe(true);
+  });
+
+  it('os espectadores não contam para terminar a ronda', () => {
+    const sala = salaCom(1);
+    const anf = sala.jogadores[0].id;
+    S.comecar(sala, anf, T0, primeiro);
+    S.entrar(sala, { token: tk(9), nome: 'Ana' }, T0 + 100);
+    const r = sala.partida.ronda;
+    S.avancar(sala, r.inicio);
+    let t = r.inicio + 1000;
+    for (const e of JOGOS.get(r.jogoId).equipas) for (const p of e.onze) {
+      S.palpite(sala, anf, p.nome, t);
+      t += 200;
+    }
+    S.votarTerminar(sala, anf, t);
+    expect(S.faseVisivel(sala)).toBe('fim');
+  });
+});
+
+describe('duelo', () => {
+  function duelo() {
+    const sala = salaCom(2);
+    const [a, b] = sala.jogadores.map((j) => j.id);
+    S.configurar(sala, a, { conteudo: 'finais', rondas: 3, modo: 'duelo' });
+    S.comecar(sala, a, T0, primeiro);
+    const r = sala.partida.ronda;
+    S.avancar(sala, r.inicio);
+    return { sala, a, b, r, jogo: JOGOS.get(r.jogoId) };
+  }
+
+  it('cada jogador fica com uma equipa e nomes da outra não contam', () => {
+    const { sala, a, b, r, jogo } = duelo();
+    expect(new Set([r.lados[a], r.lados[b]])).toEqual(new Set([0, 1]));
+    const daOutra = jogo.equipas[1 - r.lados[a]].onze[0].nome;
+    expect(S.palpite(sala, a, daOutra, r.inicio + 500).resposta).toEqual({ r: 'outra' });
+    const daMinha = jogo.equipas[r.lados[a]].onze[0].nome;
+    expect(S.palpite(sala, a, daMinha, r.inicio + 800).resposta.r).toBe('certo');
+  });
+
+  it('quem fecha primeiro o onze ganha a ronda e o bónus', () => {
+    const { sala, a, b, r, jogo } = duelo();
+    let t = r.inicio + 1000;
+    for (const p of jogo.equipas[r.lados[b]].onze) {
+      S.palpite(sala, b, p.nome, t);
+      t += 200;
+    }
+    expect(S.faseVisivel(sala)).toBe('fim');
+    expect(r.vencedor).toBe(r.lados[b]);
+    const pb = sala.jogadores.find((j) => j.id === b);
+    expect(pb.total).toBe(11 * 5 + REGRAS.bonusDuelo);
+    expect(sala.feed.at(-1)).toMatchObject({ tipo: 'duelo', vencedores: [b] });
+    // E o lado troca na ronda seguinte.
+    const ladoAntes = r.lados[a];
+    S.proxima(sala, a, t + 1, primeiro);
+    expect(sala.partida.ronda.lados[a]).toBe(1 - ladoAntes);
+  });
+
+  it('se o tempo acabar ganha quem descobriu mais do seu onze', () => {
+    const { sala, a, r, jogo } = duelo();
+    S.palpite(sala, a, jogo.equipas[r.lados[a]].onze[0].nome, r.inicio + 500);
+    S.avancar(sala, r.fim + 10_000);
+    expect(r.vencedor).toBe(r.lados[a]);
+    expect(sala.jogadores.find((j) => j.id === a).total).toBe(5 + REGRAS.bonusDuelo);
+  });
+
+  it('não há duelo na Equipa Mítica nem com um só jogador', () => {
+    const sala = salaCom(1);
+    const a = sala.jogadores[0].id;
+    expect(S.configurar(sala, a, { conteudo: 'equipa', modo: 'duelo' }).erro).toMatch(/Equipa Mítica/);
+    S.configurar(sala, a, { conteudo: 'finais', modo: 'duelo' });
+    expect(S.comecar(sala, a, T0, primeiro).erro).toMatch(/2 jogadores/);
+  });
+});
+
+describe('estatísticas', () => {
+  it('conta acertos, erros e o tempo até ao primeiro acerto, por ronda e no total', () => {
+    const sala = salaCom(2);
+    const [a] = sala.jogadores.map((j) => j.id);
+    S.comecar(sala, a, T0, primeiro);
+    const r = sala.partida.ronda;
+    S.avancar(sala, r.inicio);
+    const nome = JOGOS.get(r.jogoId).equipas[0].onze[0].nome;
+    S.palpite(sala, a, 'Ninguém Conhecido', r.inicio + 1000);
+    S.palpite(sala, a, nome, r.inicio + 3000);
+    expect(r.stats[a]).toEqual({ certos: 1, errados: 1, outros: 0, primeiroMs: 3000 });
+    S.avancar(sala, r.fim + 60_000);
+    expect(sala.jogadores[0].stats).toEqual({ certos: 1, errados: 1 });
+    expect(S.estadoPublico(sala, r.fim).ronda.stats[a].certos).toBe(1);
+  });
+});
+
 describe('Equipa Mítica', () => {
   const original = REGRAS.minimoJogosEquipa;
   beforeEach(() => {
@@ -208,7 +318,7 @@ describe('Equipa Mítica', () => {
     const sala = salaCom(1);
     const anf = sala.jogadores[0].id;
     S.configurar(sala, anf, { conteudo: 'equipa', equipa: 'porto', rondas: 3 });
-    expect(sala.config).toEqual({ conteudo: 'equipa', equipa: 'porto', rondas: 3 });
+    expect(sala.config).toEqual({ conteudo: 'equipa', equipa: 'porto', rondas: 3, modo: 'normal' });
     S.comecar(sala, anf, T0, primeiro);
     const jogosPorto = [...JOGOS.values()].filter((j) => j.modos.includes('equipa:porto')).length;
     expect(sala.partida.total).toBe(Math.min(3, jogosPorto));

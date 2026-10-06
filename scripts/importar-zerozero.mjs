@@ -221,6 +221,9 @@ function lerFormacoes(html) {
 
 /** "Liga Sagres 10/11", "bwin LIGA 06/07", "Carlsberg Cup 08/09"… → nome da prova em pt-PT. */
 function competicaoPt(nome) {
+  if (/champions/i.test(nome)) return 'Liga dos Campeões';
+  if (/europa league|liga europa/i.test(nome)) return 'Liga Europa';
+  if (/uefa cup|ta[çc]a uefa/i.test(nome)) return 'Taça UEFA';
   if (/ta[çc]a\s+(de\s+)?portugal/i.test(nome)) return 'Taça de Portugal';
   if (/carlsberg|ta[çc]a da liga|ta[çc]a ctt|allianz cup|bwin cup/i.test(nome)) return 'Taça da Liga';
   if (/superta[çc]a/i.test(nome)) return 'Supertaça';

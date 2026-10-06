@@ -1,0 +1,64 @@
+{
+  "id": "benfica-man-utd-2005-12-07",
+  "modos": ["classico", "equipa:benfica", "equipa:man-utd"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Fase de grupos",
+  "data": "2005-12-07",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–1 Manchester United",
+  "fonte": "https://www.zerozero.pt/jogo/2005-12-07-benfica-manchester-united/205478",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Ronald Koeman" },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Nélson", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Alcides", "numero": 13, "pais": "BR", "pos": "DC" },
+        { "nome": "Anderson", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "Beto", "numero": 16, "pais": "BR", "pos": "MDC", "golos": [{ "minuto": 34 }] },
+        { "nome": "Leo", "numero": 5, "pais": "BR", "pos": "MDC" },
+        { "nome": "Geovanni", "numero": 11, "pais": "BR", "pos": "ED", "golos": [{ "minuto": 16 }] },
+        { "nome": "Nuno Assis", "numero": 15, "pais": "PT", "pos": "MO" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "EE" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Pereira", "numero": 27, "minuto": 73, "pais": "PT" },
+        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 90, "pais": "PT" },
+        { "nome": "Mantorras", "numero": 9, "minuto": 80, "pais": "AO" }
+      ],
+      "nao_utilizados": ["Rui Nereu", "Manuel dos Santos", "Hélio Roque", "Bruno Aguiar"]
+    },
+    {
+      "nome": "Manchester United",
+      "slug": "man-utd",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
+      "onze": [
+        { "nome": "Edwin van der Sar", "numero": 19, "pais": "NL", "pos": "GR" },
+        { "nome": "Gary Neville", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "John O'Shea", "numero": 22, "pais": "IE", "pos": "DC" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Mikaël Silvestre", "numero": 27, "pais": "FR", "pos": "DE" },
+        { "nome": "Paul Scholes", "numero": 18, "pais": "GB-ENG", "pos": "MD", "golos": [{ "minuto": 6 }] },
+        { "nome": "Alan Smith", "numero": 14, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Wayne Rooney", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Ryan Giggs", "numero": 11, "pais": "GB-WLS", "pos": "ME" },
+        { "nome": "Ruud van Nistelrooy", "numero": 10, "pais": "NL", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kieran Richardson", "numero": 23, "minuto": 86, "pais": "GB-ENG" },
+        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 67, "pais": "KR" },
+        { "nome": "Louis Saha", "numero": 9, "minuto": 61, "pais": "FR" }
+      ],
+      "nao_utilizados": ["Tim Howard", "Phil Bardsley", "Wes Brown", "Darren Fletcher"]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "arsenal-sporting-2023-03-16",
+  "modos": ["classico", "equipa:arsenal", "equipa:sporting"],
+  "competicao": "Liga Europa",
+  "fase": "Oitavos de final (2.ª mão)",
+  "data": "2023-03-16",
+  "estadio": "Emirates Stadium, London",
+  "resultado": "Arsenal 1–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2023-03-16-arsenal-sporting/9286742",
+  "equipas": [
+    {
+      "nome": "Arsenal",
+      "slug": "arsenal",
+      "cor": "#ef0107",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Mikel Arteta" },
+      "onze": [
+        { "nome": "Aaron Ramsdale", "numero": 1, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Takehiro Tomiyasu", "numero": 18, "pais": "JP", "pos": "DD" },
+        { "nome": "William Saliba", "numero": 12, "pais": "FR", "pos": "DC" },
+        { "nome": "Gabriel Magalhães", "aceites": ["gabriel"], "numero": 6, "pais": "BR", "pos": "DC" },
+        { "nome": "Oleksandr Zinchenko", "numero": 35, "pais": "UA", "pos": "DE" },
+        { "nome": "Fábio Vieira", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Jorginho", "numero": 20, "pais": "IT", "pos": "MC" },
+        { "nome": "Granit Xhaka", "numero": 34, "pais": "CH", "pos": "MC", "golos": [{ "minuto": 19 }] },
+        { "nome": "Reiss Nelson", "numero": 24, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Gabriel Jesus", "numero": 9, "pais": "BR", "pos": "PL" },
+        { "nome": "Gabriel Martinelli", "aceites": ["martinelli"], "numero": 11, "pais": "BR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Ben White", "numero": 4, "minuto": 9, "pais": "GB-ENG" },
+        { "nome": "Rob Holding", "numero": 16, "minuto": 21, "pais": "GB-ENG" },
+        { "nome": "Thomas Partey", "numero": 5, "minuto": 65, "pais": "GH" },
+        { "nome": "Martin Odegaard", "numero": 8, "minuto": 100, "pais": "NO" },
+        { "nome": "Bukayo Saka", "numero": 7, "minuto": 66, "pais": "GB-ENG" },
+        { "nome": "Leandro Trossard", "numero": 19, "minuto": 46, "pais": "BE" }
+      ],
+      "nao_utilizados": ["Matt Turner", "James Hillson", "Jakub Kiwior", "Kieran Tierney", "Emile Smith Rowe"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Jeremiah St. Juste", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Esgaio", "numero": 47, "pais": "PT", "pos": "MD" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 62 }] },
+        { "nome": "Manuel Ugarte", "numero": 15, "pais": "UY", "pos": "MC" },
+        { "nome": "Matheus Reis", "numero": 2, "pais": "BR", "pos": "ME" },
+        { "nome": "Marcus Edwards", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Paulinho", "numero": 20, "pais": "PT", "pos": "PL" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 93, "pais": "PT" },
+        { "nome": "Mateo Tanlongo", "numero": 32, "minuto": 119, "pais": "AR" },
+        { "nome": "Dário Essugo", "numero": 84, "minuto": 93, "pais": "PT" },
+        { "nome": "Youssef Chermiti", "numero": 79, "minuto": 89, "pais": "PT" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 105, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Franco Israel", "Luís Neto", "Sotiris Alexandropoulos", "Mateus Fernandes", "Rochinha", "Fatawu Issahaku", "Jovane Cabral"]
+    }
+  ]
+}

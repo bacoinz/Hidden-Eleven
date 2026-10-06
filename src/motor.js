@@ -61,8 +61,11 @@ export function inicial(p) {
 // Ronda
 // ---------------------------------------------------------------------------
 
-/** Nova ronda: ficha de 7 s e depois a corrida. `tipo`: 'multi' | 'solo'. */
-export function criarRonda({ jogo, equipa = null, tipo = 'multi', agora }) {
+/**
+ * Nova ronda: ficha de 7 s e depois a corrida. `tipo`: 'multi' | 'solo'.
+ * `lados` (duelo): { jogadorId: índice da equipa } — cada jogador só descobre a sua equipa.
+ */
+export function criarRonda({ jogo, equipa = null, tipo = 'multi', lados = null, agora }) {
   const duracaoBase = REGRAS.duracaoMs[tipo] ?? REGRAS.duracaoMs.multi;
   const fichaAte = agora + REGRAS.fichaMs;
   return {
@@ -78,6 +81,8 @@ export function criarRonda({ jogo, equipa = null, tipo = 'multi', agora }) {
     nivelPista: 0,
     descobertas: {},
     terminadaEm: null,
+    lados,
+    stats: {},
   };
 }
 
@@ -167,6 +172,8 @@ export function palpite(r, prep, jogadorId, texto, agora) {
   if (prep.bancoIds.has(achado.id)) return { r: 'banco' };
 
   const lugar = prep.porId.get(achado.id);
+  const meuLado = r.lados?.[jogadorId];
+  if (meuLado !== undefined && lugar.equipa !== meuLado) return { r: 'outra' };
   const ja = r.descobertas[lugar.id];
   if (ja) return { r: 'ja', por: ja.por, lugar: lugar.id };
 
@@ -185,13 +192,66 @@ export function palpite(r, prep, jogadorId, texto, agora) {
     descoberta.bonus = REGRAS.bonusFecho;
     terminar(r, agora);
   }
-  return { r: 'certo', lugar: lugar.id, nome: curto(lugar.pessoa), pontos, bonus: descoberta.bonus ?? 0, terminou: fechou };
+  // Duelo: quem fecha primeiro o onze da sua equipa ganha a ronda.
+  const ganhouDuelo = meuLado !== undefined && !fechou && onzeDaEquipaCompleto(r, prep, meuLado);
+  if (ganhouDuelo) {
+    r.vencedor = meuLado;
+    terminar(r, agora);
+  }
+  return {
+    r: 'certo',
+    lugar: lugar.id,
+    nome: curto(lugar.pessoa),
+    pontos,
+    bonus: descoberta.bonus ?? 0,
+    terminou: fechou || ganhouDuelo,
+    ...(ganhouDuelo ? { duelo: meuLado } : {}),
+  };
+}
+
+const onzeDaEquipaCompleto = (r, prep, equipa) =>
+  prep.lugares.every((l) => l.tipo !== 'onze' || l.equipa !== equipa || r.descobertas[l.id]);
+
+/** Jogadores do onze descobertos por equipa (índice → quantos). */
+export function onzeDescobertosPorEquipa(r, prep) {
+  const conta = {};
+  for (const l of prep.lugares) if (l.tipo === 'onze' && r.descobertas[l.id]) conta[l.equipa] = (conta[l.equipa] ?? 0) + 1;
+  return conta;
+}
+
+/**
+ * Fecha o duelo no fim da ronda: se ninguém fechou o onze, ganha a equipa com mais jogadores do onze descobertos
+ * (empate: ninguém). Cada jogador do lado vencedor recebe o bónus. Só faz algo uma vez.
+ */
+export function resolverDuelo(r, prep) {
+  if (!r.lados || r.bonusDuelo) return r.bonusDuelo ?? null;
+  if (r.vencedor === undefined) {
+    const conta = onzeDescobertosPorEquipa(r, prep);
+    const [a, b] = prep.incluidas.map((i) => conta[i] ?? 0);
+    r.vencedor = a === b ? null : a > b ? prep.incluidas[0] : prep.incluidas[1];
+  }
+  r.bonusDuelo = {};
+  if (r.vencedor != null) {
+    for (const [id, lado] of Object.entries(r.lados)) if (lado === r.vencedor) r.bonusDuelo[id] = REGRAS.bonusDuelo;
+  }
+  return r.bonusDuelo;
+}
+
+/** Conta o palpite nas estatísticas da ronda de quem o fez. */
+export function registarEstatistica(r, jogadorId, resposta, agora) {
+  const s = (r.stats[jogadorId] ??= { certos: 0, errados: 0, outros: 0, primeiroMs: null });
+  if (resposta === 'certo') {
+    s.certos += 1;
+    if (s.primeiroMs == null) s.primeiroMs = Math.max(0, agora - r.inicio);
+  } else if (resposta === 'errado') s.errados += 1;
+  else if (['ja', 'banco', 'ambiguo', 'outra'].includes(resposta)) s.outros += 1;
 }
 
 /** Pontos de cada jogador nesta ronda (inclui o bónus de fecho). */
 export function pontosDaRonda(r) {
   const pontos = {};
   for (const d of Object.values(r.descobertas)) pontos[d.por] = (pontos[d.por] ?? 0) + d.pontos + (d.bonus ?? 0);
+  for (const [id, b] of Object.entries(r.bonusDuelo ?? {})) pontos[id] = (pontos[id] ?? 0) + b;
   return pontos;
 }
 
@@ -268,5 +328,9 @@ export function estadoPublico(r, prep) {
     descobertos: Object.keys(r.descobertas).length,
     onzeCompleto: onzeCompleto(r, prep),
     votosTerminar: r.votosTerminar ?? [],
+    lados: r.lados ?? null,
+    vencedor: r.vencedor ?? null,
+    onzePorEquipa: onzeDescobertosPorEquipa(r, prep),
+    stats: r.stats ?? {},
   };
 }

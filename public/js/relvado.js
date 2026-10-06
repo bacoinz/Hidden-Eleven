@@ -151,9 +151,12 @@ export class Relvado {
     return Math.min(1.6, Math.max(1, LETRA_MINIMA_PX / (base * escala)));
   }
 
-  /** Desenha (ou atualiza) o jogo. `jogadores`: Map id → { nome, cor }. */
-  render(ronda, jogadores) {
-    this.ultimo = [ronda, jogadores];
+  /**
+   * Desenha (ou atualiza) o jogo. `jogadores`: Map id → { nome, cor }.
+   * `meuLado` (duelo): índice da equipa de quem joga; a outra fica esbatida.
+   */
+  render(ronda, jogadores, meuLado = null) {
+    this.ultimo = [ronda, jogadores, meuLado];
     this.vertical = this.decidirOrientacao();
     const chave = `${ronda.jogo.id}|${ronda.equipaMitica ?? ''}|${this.vertical}`;
     const novo = chave !== this.chave;
@@ -161,6 +164,9 @@ export class Relvado {
     for (const e of ronda.equipas) {
       for (const lugar of e.onze) this.atualizarCamisola(lugar, e, jogadores, !novo);
       for (const lugar of [...e.suplentes, e.treinador]) this.atualizarBanco(lugar, jogadores, !novo);
+      const fora = meuLado != null && e.indice !== meuLado;
+      for (const lugar of e.onze) this.camisolas.get(lugar.id)?.classList.toggle('outro-lado', fora);
+      for (const lugar of [...e.suplentes, e.treinador]) this.bancos.get(lugar.id)?.classList.toggle('outro-lado', fora);
     }
   }
 

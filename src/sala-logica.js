@@ -1,6 +1,6 @@
 // Lógica de uma sala (jogadores, anfitrião, configuração, rondas, palpites, feed).
 // Pura: o Durable Object (sala.js) só trata de sockets, persistência e alarmes.
-import { REGRAS, PALETA, CONTEUDOS } from './regras.js';
+import { REGRAS, PALETA, CONTEUDOS, MODOS } from './regras.js';
 import { JOGOS, NOMES_CONHECIDOS, sortear, disponiveis, equipasMiticas } from './catalogo.js';
 import * as motor from './motor.js';
 
@@ -24,7 +24,7 @@ export function novaSala({ codigo, solo = false, anfitriaoToken = null, agora })
     fase: 'lobby', // lobby | jogo | final
     anfitriao: null,
     anfitriaoToken,
-    config: { conteudo: 'finais', equipa: null, rondas: REGRAS.rondasPorOmissao },
+    config: { conteudo: 'finais', equipa: null, rondas: REGRAS.rondasPorOmissao, modo: 'normal' },
     jogadores: [],
     usados: [],
     partida: null, // { numero, total, ronda, historico: [{ jogoId, resultado, pontos }] }
@@ -36,6 +36,8 @@ export function novaSala({ codigo, solo = false, anfitriaoToken = null, agora })
 }
 
 const jogador = (sala, id) => sala.jogadores.find((j) => j.id === id);
+/** Quem joga (os espectadores só veem). */
+const aJogar = (sala) => sala.jogadores.filter((j) => !j.espectador);
 const erro = (msg) => ({ erro: msg });
 
 function noFeed(sala, evento) {
@@ -70,8 +72,10 @@ export function entrar(sala, { token, nome }, agora) {
   }
   const limpo = limparNome(nome);
   if (!limpo) return erro('Escolhe um nome.');
-  if (sala.solo && sala.jogadores.length >= 1) return erro('Esta sala é para jogar sozinho.');
-  if (sala.jogadores.length >= REGRAS.maxJogadores) return erro('A sala está cheia (máximo 10 jogadores).');
+  if (sala.jogadores.length >= REGRAS.maxJogadores + REGRAS.maxEspectadores) return erro('A sala está cheia.');
+  // Fica a ver quem entra numa sala solo, com a sala cheia ou com uma partida a decorrer (joga a partir da ronda seguinte).
+  const espectador =
+    (sala.solo && sala.jogadores.length >= 1) || aJogar(sala).length >= REGRAS.maxJogadores || sala.fase === 'jogo';
 
   const usados = new Set(sala.jogadores.map((j) => j.nome.toLowerCase()));
   let final = limpo;
@@ -87,11 +91,13 @@ export function entrar(sala, { token, nome }, agora) {
     desligadoEm: null,
     bloqueadoAte: 0,
     ultimoPalpite: 0,
+    espectador,
+    stats: { certos: 0, errados: 0 },
   };
   sala.jogadores.push(novo);
   sala.vaziaDesde = null;
   if (!sala.anfitriao || token === sala.anfitriaoToken) sala.anfitriao = novo.id;
-  noFeed(sala, { tipo: 'entrou', jogador: novo.id });
+  noFeed(sala, { tipo: 'entrou', jogador: novo.id, espectador });
   return { jogador: novo, novo: true };
 }
 
@@ -111,7 +117,7 @@ function verificarAnfitriao(sala, agora) {
   const atual = jogador(sala, sala.anfitriao);
   if (atual?.ligado) return false;
   if (atual && agora - (atual.desligadoEm ?? 0) < REGRAS.anfitriaoAusenteMs) return false;
-  const novo = sala.jogadores.find((j) => j.ligado);
+  const novo = sala.jogadores.find((j) => j.ligado && !j.espectador) ?? sala.jogadores.find((j) => j.ligado);
   if (!novo || novo.id === sala.anfitriao) return false;
   sala.anfitriao = novo.id;
   noFeed(sala, { tipo: 'anfitriao', jogador: novo.id });
@@ -135,7 +141,14 @@ export function configurar(sala, jogadorId, config) {
     equipa = slugs.includes(config?.equipa) ? config.equipa : slugs.includes(sala.config.equipa) ? sala.config.equipa : slugs[0] ?? null;
   }
   const rondas = Number.isInteger(config?.rondas) && config.rondas >= 1 && config.rondas <= 20 ? config.rondas : sala.config.rondas;
-  sala.config = { conteudo, equipa, rondas };
+  // O duelo precisa das duas equipas em campo: não há duelo na Equipa Mítica nem a solo.
+  let modo = MODOS.includes(config?.modo) ? config.modo : sala.config.modo ?? 'normal';
+  if (sala.solo) modo = 'normal';
+  if (modo === 'duelo' && conteudo === 'equipa') {
+    if (config?.modo === 'duelo') return erro('O duelo não dá com a Equipa Mítica: escolhe outro conteúdo.');
+    modo = 'normal';
+  }
+  sala.config = { conteudo, equipa, rondas, modo };
   return { ok: true };
 }
 
@@ -147,10 +160,23 @@ function iniciarRonda(sala, agora, aleatorio) {
   }
   sala.usados.push(jogo.id);
   sala.partida.numero += 1;
+  // Quem estava a ver passa a jogar (exceto a solo ou com a sala cheia).
+  for (const j of sala.jogadores) {
+    if (!j.espectador || sala.solo || aJogar(sala).length >= REGRAS.maxJogadores) continue;
+    j.espectador = false;
+    noFeed(sala, { tipo: 'promovido', jogador: j.id });
+  }
+  // Duelo: os jogadores dividem-se pelas duas equipas e trocam de lado em cada ronda.
+  let lados = null;
+  if (sala.config.modo === 'duelo') {
+    lados = {};
+    aJogar(sala).forEach((j, i) => (lados[j.id] = (i + sala.partida.numero) % 2));
+  }
   sala.partida.ronda = motor.criarRonda({
     jogo,
     equipa: sala.config.conteudo === 'equipa' ? sala.config.equipa : null,
     tipo: sala.solo ? 'solo' : 'multi',
+    lados,
     agora,
   });
   for (const j of sala.jogadores) j.bloqueadoAte = 0;
@@ -164,7 +190,11 @@ export function comecar(sala, jogadorId, agora, aleatorio = Math.random) {
   if (sala.config.conteudo === 'equipa' && !sala.config.equipa) return erro('Escolhe uma equipa.');
   const n = disponiveis(sala.config, sala.usados).length;
   if (!n) return erro('Já jogaram todos os jogos deste conteúdo nesta sala.');
-  for (const j of sala.jogadores) j.total = 0;
+  if (sala.config.modo === 'duelo' && aJogar(sala).filter((j) => j.ligado).length < 2) return erro('O duelo precisa de pelo menos 2 jogadores.');
+  for (const j of sala.jogadores) {
+    j.total = 0;
+    j.stats = { certos: 0, errados: 0 };
+  }
   sala.partida = { numero: 0, total: Math.min(sala.config.rondas, n), ronda: null, historico: [] };
   sala.fase = 'jogo';
   iniciarRonda(sala, agora, aleatorio);
@@ -176,6 +206,22 @@ function fecharRonda(sala) {
   const p = sala.partida;
   const r = p?.ronda;
   if (!r || r.etapa !== 'terminada' || p.historico.length >= p.numero) return;
+  const bonus = motor.resolverDuelo(r, preparado(r));
+  if (bonus) {
+    for (const [id, b] of Object.entries(bonus)) {
+      const j = jogador(sala, id);
+      if (j) j.total += b;
+    }
+    const nomeVencedor = r.vencedor == null ? null : preparado(r).jogo.equipas[r.vencedor].nome;
+    noFeed(sala, { tipo: 'duelo', equipa: nomeVencedor, vencedores: Object.keys(bonus), bonus: REGRAS.bonusDuelo });
+  }
+  for (const [id, st] of Object.entries(r.stats ?? {})) {
+    const j = jogador(sala, id);
+    if (!j) continue;
+    j.stats ??= { certos: 0, errados: 0 };
+    j.stats.certos += st.certos;
+    j.stats.errados += st.errados;
+  }
   p.historico.push({ jogoId: r.jogoId, resultado: JOGOS.get(r.jogoId)?.resultado ?? '', pontos: motor.pontosDaRonda(r) });
 }
 
@@ -226,6 +272,7 @@ const rondaACorrer = (sala) => {
 export function votarTerminar(sala, jogadorId, agora) {
   const r = rondaACorrer(sala);
   if (!r || !jogador(sala, jogadorId)) return erro('A ronda não está a decorrer.');
+  if (jogador(sala, jogadorId).espectador) return erro('Estás a ver esta ronda.');
   if (!motor.onzeCompleto(r, preparado(r))) return erro('Só se pode terminar a ronda com o onze todo descoberto.');
   const votos = new Set(r.votosTerminar ?? []);
   if (votos.has(jogadorId)) votos.delete(jogadorId);
@@ -238,7 +285,7 @@ export function votarTerminar(sala, jogadorId, agora) {
 function verificarVotos(sala, agora) {
   const r = rondaACorrer(sala);
   if (!r?.votosTerminar?.length) return false;
-  const ligados = sala.jogadores.filter((j) => j.ligado).map((j) => j.id);
+  const ligados = aJogar(sala).filter((j) => j.ligado).map((j) => j.id);
   if (!ligados.length || !ligados.every((id) => r.votosTerminar.includes(id))) return false;
   motor.terminar(r, agora);
   noFeed(sala, { tipo: 'fim', motivo: 'votacao' });
@@ -286,6 +333,7 @@ export const deveLimpar = (sala, agora) => sala.vaziaDesde != null && agora >= s
 export function palpite(sala, jogadorId, texto, agora) {
   const j = jogador(sala, jogadorId);
   if (!j || sala.fase !== 'jogo') return { resposta: { r: 'fora' }, mudou: false };
+  if (j.espectador) return { resposta: { r: 'espectador' }, mudou: false };
   let mudou = avancar(sala, agora);
   const r = sala.partida.ronda;
   if (r.etapa !== 'corrida') return { resposta: { r: 'fora' }, mudou };
@@ -294,6 +342,7 @@ export function palpite(sala, jogadorId, texto, agora) {
   j.ultimoPalpite = agora;
 
   const res = motor.palpite(r, preparado(r), jogadorId, texto, agora);
+  motor.registarEstatistica(r, jogadorId, res.r, agora);
   if (res.r === 'errado') {
     j.bloqueadoAte = agora + REGRAS.bloqueioMs;
     res.ate = j.bloqueadoAte;
@@ -303,11 +352,13 @@ export function palpite(sala, jogadorId, texto, agora) {
     j.total += res.pontos + res.bonus;
     noFeed(sala, { tipo: 'descoberta', jogador: j.id, lugar: res.lugar, nome: res.nome, pontos: res.pontos, bonus: res.bonus });
     if (res.terminou) {
-      noFeed(sala, { tipo: 'fim', motivo: 'completo' });
+      noFeed(sala, { tipo: 'fim', motivo: res.duelo !== undefined ? 'duelo' : 'completo' });
       fecharRonda(sala);
     }
     mudou = true;
   }
+  // As estatísticas da ronda também mudam com os erros.
+  if (res.r === 'errado') mudou = true;
   return { resposta: res, mudou };
 }
 
@@ -337,6 +388,8 @@ export function estadoPublico(sala, agora) {
       total: j.total,
       ronda: pontosRonda[j.id] ?? 0,
       ligado: j.ligado,
+      espectador: Boolean(j.espectador),
+      stats: j.stats ?? { certos: 0, errados: 0 },
     })),
     partida: sala.partida
       ? { numero: sala.partida.numero, total: sala.partida.total, historico: sala.partida.historico }

@@ -1,0 +1,64 @@
+{
+  "id": "sporting-man-city-2012-03-08",
+  "modos": ["classico", "equipa:sporting", "equipa:man-city"],
+  "competicao": "Liga Europa",
+  "fase": "Oitavos de final (1.ª mão)",
+  "data": "2012-03-08",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 Manchester City",
+  "fonte": "https://www.zerozero.pt/jogo/2012-03-08-sporting-manchester-city/2092581",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Ricardo Sá Pinto" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 47, "pais": "PT", "pos": "DD" },
+        { "nome": "Daniel Carriço", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Xandão", "numero": 93, "pais": "BR", "pos": "DE", "golos": [{ "minuto": 51 }] },
+        { "nome": "Stijn Schaars", "numero": 8, "pais": "NL", "pos": "MDC" },
+        { "nome": "Emiliano Insúa", "numero": 48, "pais": "AR", "pos": "MDC" },
+        { "nome": "Matías Fernández", "numero": 14, "pais": "CL", "pos": "ED" },
+        { "nome": "Marat Izmailov", "numero": 10, "pais": "RU", "pos": "MO" },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" },
+        { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 59, "pais": "PT" },
+        { "nome": "Renato Neto", "numero": 31, "minuto": 69, "pais": "BR" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 75, "pais": "PE" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Alberto Rodríguez", "Evaldo", "Diego Rubio"]
+    },
+    {
+      "nome": "Manchester City",
+      "slug": "man-city",
+      "cor": "#6cabdd",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Roberto Mancini" },
+      "onze": [
+        { "nome": "Joe Hart", "numero": 25, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Vincent Kompany", "numero": 4, "pais": "BE", "pos": "DD" },
+        { "nome": "Kolo Touré", "numero": 28, "pais": "CI", "pos": "DC" },
+        { "nome": "Aleksandar Kolarov", "numero": 13, "pais": "RS", "pos": "DC" },
+        { "nome": "Gaël Clichy", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "Gareth Barry", "numero": 18, "pais": "GB-ENG", "pos": "MDC" },
+        { "nome": "James Milner", "numero": 7, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Nigel de Jong", "numero": 34, "pais": "NL", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "MO" },
+        { "nome": "Edin Dzeko", "numero": 10, "pais": "BA", "pos": "PL" },
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Joleon Lescott", "numero": 6, "minuto": 12, "pais": "GB-ENG" },
+        { "nome": "Samir Nasri", "numero": 19, "minuto": 59, "pais": "FR" },
+        { "nome": "Mario Balotelli", "numero": 45, "minuto": 71, "pais": "IT" }
+      ],
+      "nao_utilizados": ["Costel Pantilimon", "Stefan Savić", "David Pizarro", "Adam Johnson"]
+    }
+  ]
+}

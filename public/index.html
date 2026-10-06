@@ -84,6 +84,10 @@
         </div>
         <p class="rotulo">Rondas</p>
         <div id="cfg-rondas" class="segmentos" role="radiogroup" aria-label="Rondas"></div>
+        <div id="cfg-modo-bloco">
+          <p class="rotulo">Modo</p>
+          <div id="cfg-modo" class="segmentos" role="radiogroup" aria-label="Modo"></div>
+        </div>
         <p id="cfg-resumo" class="nota"></p>
       </div>
       <button id="btn-comecar" class="btn btn-principal" type="button">Começar</button>
@@ -116,6 +120,7 @@
         </p>
       </div>
       <p id="jogo-sala" class="barra-sala"></p>
+      <button id="btn-som" class="btn btn-mini btn-som" type="button" aria-pressed="true" aria-label="Som e vibração">🔊</button>
       <button class="btn btn-mini btn-sair" type="button" aria-label="Sair da sala">Sair</button>
     </header>
     <div id="jogo-grelha" class="jogo-grelha">
@@ -137,6 +142,7 @@
               <span class="marca-pista" data-tipo="inicial" title="Pista: inicial do apelido">A</span>
             </div>
             <p id="contador" class="contador"></p>
+            <p id="papel" class="papel" hidden></p>
           </div>
           <span id="relogio-extra" class="relogio-extra" aria-hidden="true"></span>
         </div>
@@ -158,12 +164,14 @@
             <tbody id="placar-tabela"></tbody>
           </table>
         </div>
+        <div id="placar-stats" class="placar-stats" hidden></div>
         <button id="btn-proxima" class="btn btn-principal" type="button" hidden>Próxima ronda</button>
         <p id="placar-espera" class="nota centro" hidden>À espera do anfitrião…</p>
       </section>
       <section class="painel g-feed">
-        <h2 class="painel-titulo">Acontecimentos</h2>
+        <h2 id="feed-titulo" class="painel-titulo">Acontecimentos</h2>
         <ol id="feed" class="feed" aria-live="polite"></ol>
+        <ol id="marcador" class="marcador" hidden></ol>
       </section>
     </div>
 
@@ -208,6 +216,8 @@
       <li>Pontos: 5 sem pistas, depois 4, 3 e 2. Suplentes e treinadores valem 3. Quem fecha a última posição ganha +2.</li>
       <li>Cada acerto dá +5 segundos à ronda. Um nome errado bloqueia a tua caixa durante 1 segundo.</li>
       <li>Apelidos, alcunhas e pequenas gralhas contam. Se dois jogadores tiverem o mesmo apelido, escreve o nome completo.</li>
+      <li><strong>Duelo:</strong> cada jogador fica com uma das equipas (trocam em cada ronda) e só pode descobrir a sua. Quem fechar primeiro o seu onze ganha a ronda e +10; se o tempo acabar, ganha quem descobriu mais.</li>
+      <li>Quem entra com uma ronda a decorrer fica a ver e joga a partir da ronda seguinte.</li>
     </ol>
     <form method="dialog"><button class="btn btn-principal" type="submit">Percebi</button></form>
   </dialog>

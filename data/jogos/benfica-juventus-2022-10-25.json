@@ -1,0 +1,67 @@
+{
+  "id": "benfica-juventus-2022-10-25",
+  "modos": ["classico", "equipa:benfica", "equipa:juventus"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Fase de grupos",
+  "data": "2022-10-25",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 4–3 Juventus",
+  "fonte": "https://www.zerozero.pt/jogo/2022-10-25-benfica-juventus/8882361",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roger Schmidt" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Alexander Bah", "numero": 6, "pais": "DK", "pos": "DD" },
+        { "nome": "António Silva", "numero": 66, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 17 }] },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Enzo Fernández", "aceites": ["enzo"], "numero": 13, "pais": "AR", "pos": "MDC" },
+        { "nome": "Florentino Luís", "numero": 61, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 28, "penalti": true }] },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MO", "golos": [{ "minuto": 35 }, { "minuto": 50 }] },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "EE" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Gilberto", "numero": 2, "minuto": 81, "pais": "BR" },
+        { "nome": "Chiquinho", "numero": 22, "minuto": "90+4", "pais": "PT" },
+        { "nome": "David Neres", "numero": 7, "minuto": 87, "pais": "BR" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR" }
+      ],
+      "nao_utilizados": ["Helton Leite", "João Victor", "Lucas Veríssimo", "Mihailo Ristic", "Gil Dias", "Paulo Bernardo", "Diogo Gonçalves", "Henrique Araújo"]
+    },
+    {
+      "nome": "Juventus",
+      "slug": "juventus",
+      "cor": "#1a1a1a",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Massimiliano Allegri", "aceites": ["max allegri"] },
+      "onze": [
+        { "nome": "Wojciech Szczesny", "numero": 1, "pais": "PL", "pos": "GR" },
+        { "nome": "Federico Gatti", "numero": 15, "pais": "IT", "pos": "DC" },
+        { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC" },
+        { "nome": "Danilo", "numero": 6, "pais": "BR", "pos": "DC" },
+        { "nome": "Juan Cuadrado", "numero": 11, "pais": "CO", "pos": "MD" },
+        { "nome": "Filip Kostic", "numero": 17, "pais": "RS", "pos": "MC" },
+        { "nome": "Weston McKennie", "numero": 8, "pais": "US", "pos": "MC", "golos": [{ "minuto": 79 }] },
+        { "nome": "Manuel Locatelli", "numero": 5, "pais": "IT", "pos": "MC" },
+        { "nome": "Adrien Rabiot", "numero": 25, "pais": "FR", "pos": "ME" },
+        { "nome": "Dusan Vlahovic", "numero": 9, "pais": "RS", "pos": "PL" },
+        { "nome": "Moise Kean", "numero": 18, "pais": "IT", "pos": "PL", "golos": [{ "minuto": 22 }] }
+      ],
+      "suplentes": [
+        { "nome": "Alex Sandro", "numero": 12, "minuto": 60, "pais": "BR" },
+        { "nome": "Fabio Miretti", "numero": 20, "minuto": 60, "pais": "IT" },
+        { "nome": "Matìas Soulé", "numero": 30, "minuto": 70, "pais": "AR" },
+        { "nome": "Arkadiusz Milik", "numero": 14, "minuto": 46, "pais": "PL", "golos": [{ "minuto": 77 }] },
+        { "nome": "Samuel Iling", "numero": 43, "minuto": 70, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": ["Carlo Pinsoglio", "Mattia Perin", "Daniele Rugani", "Nicolò Fagioli"]
+    }
+  ]
+}

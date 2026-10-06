@@ -1,0 +1,70 @@
+{
+  "id": "porto-bayern-2015-04-15",
+  "modos": ["classico", "equipa:porto", "equipa:bayern"],
+  "competicao": "Liga dos Campeões",
+  "fase": "Quartos de final (1.ª mão)",
+  "data": "2015-04-15",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 3–1 Bayern Munique",
+  "fonte": "https://www.zerozero.pt/jogo/2015-04-15-fc-porto-bayern-munchen/4421546",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Julen Lopetegui" },
+      "onze": [
+        { "nome": "Fabiano Freitas", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Bruno Martins Indi", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC" },
+        { "nome": "Casemiro", "numero": 6, "pais": "BR", "pos": "MC" },
+        { "nome": "Óliver Torres", "numero": 30, "pais": "ES", "pos": "MC" },
+        {
+          "nome": "Ricardo Quaresma",
+          "aceites": ["quaresma"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "ED",
+          "golos": [{ "minuto": 3, "penalti": true }, { "minuto": 10 }]
+        },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 65 }] },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Rúben Neves", "numero": 36, "minuto": 75, "pais": "PT" },
+        { "nome": "Evandro", "numero": 15, "minuto": 84, "pais": "BR" },
+        { "nome": "Hernâni", "numero": 17, "minuto": 80, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Helton", "Diego Reyes", "Juan Quintero", "Vincent Aboubakar"]
+    },
+    {
+      "nome": "Bayern Munique",
+      "slug": "bayern",
+      "cor": "#dc052d",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Pep Guardiola", "aceites": ["pep"] },
+      "onze": [
+        { "nome": "Manuel Neuer", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Rafinha", "numero": 13, "pais": "BR", "pos": "DD" },
+        { "nome": "Jérôme Boateng", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Dante", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Juan Bernat", "numero": 18, "pais": "ES", "pos": "DE" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 3, "pais": "ES", "pos": "MDC" },
+        { "nome": "Philipp Lahm", "numero": 21, "pais": "DE", "pos": "MC" },
+        { "nome": "Thiago Alcântara", "aceites": ["thiago"], "numero": 6, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 28 }] },
+        { "nome": "Mario Gotze", "aceites": ["goetze"], "numero": 19, "pais": "DE", "pos": "MO" },
+        { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL" },
+        { "nome": "Thomas Muller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Holger Badstuber", "numero": 28, "minuto": 74, "pais": "DE" },
+        { "nome": "Sebastian Rode", "numero": 20, "minuto": 56, "pais": "DE" }
+      ],
+      "nao_utilizados": ["Ivan Lucic", "Pepe Reina", "Mitchell Weiser", "Gianluca Gaudino", "Claudio Pizarro"]
+    }
+  ]
+}
