@@ -20,6 +20,9 @@ O frontend é HTML/CSS/JS simples, servido pelo próprio Worker.
 - Nome errado bloqueia a caixa 1 s. "Já é de …!" e "Ficou no banco!" não penalizam.
 - Com o onze todo descoberto aparece **Terminar ronda**, para não ter de esperar pelo relógio nem adivinhar os
   suplentes. Em multijogador, todos os jogadores ligados têm de confirmar.
+- Antes disso há **Passar ronda** (solo e multijogador, também com todos a confirmar): a ronda acaba já e cada
+  jogador fica só com metade dos pontos que fez nela (arredondada para cima). O corte aparece nos acontecimentos.
+  No duelo, passar não dá vitória a ninguém.
 
 ## Correr localmente
 

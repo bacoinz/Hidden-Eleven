@@ -247,12 +247,30 @@ export function registarEstatistica(r, jogadorId, resposta, agora) {
   else if (['ja', 'banco', 'ambiguo', 'outra'].includes(resposta)) s.outros += 1;
 }
 
-/** Pontos de cada jogador nesta ronda (inclui o bónus de fecho). */
+/** Pontos de cada jogador nesta ronda (inclui o bónus de fecho, o do duelo e o corte de passar a ronda). */
 export function pontosDaRonda(r) {
   const pontos = {};
   for (const d of Object.values(r.descobertas)) pontos[d.por] = (pontos[d.por] ?? 0) + d.pontos + (d.bonus ?? 0);
   for (const [id, b] of Object.entries(r.bonusDuelo ?? {})) pontos[id] = (pontos[id] ?? 0) + b;
+  for (const [id, c] of Object.entries(r.cortes ?? {})) pontos[id] = (pontos[id] ?? 0) + c;
   return pontos;
+}
+
+/**
+ * Passar a ronda: termina-a já e cada jogador fica só com metade dos pontos que tinha nela
+ * (arredondada para cima). No duelo ninguém ganha. Devolve o corte (negativo) de cada jogador.
+ */
+export function passar(r, agora) {
+  if (r.etapa !== 'corrida') return null;
+  r.cortes = {};
+  for (const [id, p] of Object.entries(pontosDaRonda(r))) {
+    const corte = Math.floor(p / 2);
+    if (corte > 0) r.cortes[id] = -corte;
+  }
+  r.passada = true;
+  if (r.lados) r.vencedor = null;
+  terminar(r, agora);
+  return r.cortes;
 }
 
 // ---------------------------------------------------------------------------
@@ -328,6 +346,8 @@ export function estadoPublico(r, prep) {
     descobertos: Object.keys(r.descobertas).length,
     onzeCompleto: onzeCompleto(r, prep),
     votosTerminar: r.votosTerminar ?? [],
+    votosPassar: r.votosPassar ?? [],
+    passada: Boolean(r.passada),
     lados: r.lados ?? null,
     vencedor: r.vencedor ?? null,
     onzePorEquipa: onzeDescobertosPorEquipa(r, prep),

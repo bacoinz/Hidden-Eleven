@@ -145,7 +145,9 @@ function textoFeed(ev, nomeDe) {
     case 'pista':
       return [el('span', { class: 'sistema', text: `Pista: ${nomePista(ev)}` })];
     case 'fim':
-      return [el('span', { class: 'sistema', text: { completo: 'Tudo descoberto!', votacao: 'Ronda terminada com o onze completo.', duelo: 'Onze fechado!' }[ev.motivo] ?? 'Acabou o tempo!' })];
+      return [el('span', { class: 'sistema', text: { completo: 'Tudo descoberto!', votacao: 'Ronda terminada com o onze completo.', duelo: 'Onze fechado!', passou: 'Ronda passada: cada um fica com metade dos pontos dela.' }[ev.motivo] ?? 'Acabou o tempo!' })];
+    case 'corte':
+      return [quem(ev.jogador), ' passou a ronda ', el('span', { class: 'pontos negativo', text: `−${Math.abs(ev.pontos)}` })];
     case 'duelo':
       return ev.equipa
         ? [el('span', { class: 'sistema', text: `Duelo ganho pelo ${ev.equipa}: ` }), ...ev.vencedores.flatMap((id, i) => [i ? ', ' : '', quem(id)]), el('span', { class: 'pontos', text: ` +${ev.bonus}` })]
@@ -272,6 +274,36 @@ export function renderPlacar(sala, eu, anterior, enviar) {
       espera.textContent = 'À espera do anfitrião…';
     }
   }
+}
+
+/**
+ * Botão "Passar ronda": quando ninguém sabe mais, todos confirmam e a ronda acaba,
+ * ficando cada um com metade dos pontos que fez nela. Com o onze completo, usa-se o "Terminar ronda".
+ */
+export function renderPassar(sala, eu, enviar) {
+  const r = sala.ronda;
+  const euJogo = sala.jogadores.find((j) => j.id === eu);
+  const caixa = $('#passar');
+  caixa.hidden = !(sala.fase === 'ronda' && r && !r.onzeCompleto && euJogo && !euJogo.espectador);
+  if (caixa.hidden) return;
+  const votos = r.votosPassar ?? [];
+  const ligados = sala.jogadores.filter((j) => j.ligado && !j.espectador);
+  const votei = votos.includes(eu);
+  const botao = $('#btn-passar');
+  botao.classList.toggle('ativo', votei);
+  botao.textContent = sala.solo
+    ? 'Passar ronda'
+    : votei
+      ? `Cancelar · ${votos.length}/${ligados.length} querem passar`
+      : `Passar ronda (${votos.length}/${ligados.length})`;
+  botao.onclick = () => enviar({ t: 'passar' });
+  const faltam = ligados.filter((j) => !votos.includes(j.id)).map((j) => j.nome);
+  $('#passar-nota').textContent =
+    !sala.solo && votos.length && faltam.length
+      ? `À espera de: ${faltam.join(', ')} · ao passar, ficas com metade dos pontos da ronda.`
+      : sala.solo
+        ? 'Não sabes mais? Ao passar, ficas com metade dos pontos desta ronda.'
+        : 'Ninguém sabe mais? Todos têm de confirmar e cada um fica com metade dos pontos da ronda.';
 }
 
 let finalEscondido = false;
@@ -427,7 +459,12 @@ export function renderMarcador(sala) {
   if (!mostrar) return;
   const cor = (i) => r.equipas.find((e) => e.indice === i)?.cor ?? '#e5e7eb';
   const eventos = eventosDoJogo(r);
+  // Ronda passada: os cortes (metade dos pontos) ficam no topo, como no feed.
+  const desdeRonda = sala.feed.slice(sala.feed.findLastIndex((ev) => ev.tipo === 'ronda') + 1);
+  const porId = new Map(sala.jogadores.map((j) => [j.id, j]));
+  const cortes = r.passada ? desdeRonda.filter((ev) => ev.tipo === 'fim' || ev.tipo === 'corte') : [];
   $('#marcador').replaceChildren(
+    ...cortes.map((ev) => el('li', { class: 'marcador-corte' }, ...textoFeed(ev, (id) => porId.get(id)))),
     el('li', { class: 'marcador-topo', text: r.jogo.resultado }),
     ...(eventos.length
       ? eventos.map((ev) =>

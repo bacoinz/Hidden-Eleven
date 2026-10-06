@@ -207,7 +207,8 @@ function fecharRonda(sala) {
   const r = p?.ronda;
   if (!r || r.etapa !== 'terminada' || p.historico.length >= p.numero) return;
   const bonus = motor.resolverDuelo(r, preparado(r));
-  if (bonus) {
+  // Ao passar a ronda não há vencedor do duelo (nem linha no feed).
+  if (bonus && !r.passada) {
     for (const [id, b] of Object.entries(bonus)) {
       const j = jogador(sala, id);
       if (j) j.total += b;
@@ -282,13 +283,43 @@ export function votarTerminar(sala, jogadorId, agora) {
   return { ok: true };
 }
 
+/**
+ * Passar a ronda (ninguém sabe mais): todos os jogadores ligados têm de confirmar (a solo, logo à primeira).
+ * Ao passar, cada um fica só com metade dos pontos que fez nesta ronda.
+ */
+export function votarPassar(sala, jogadorId, agora) {
+  const r = rondaACorrer(sala);
+  if (!r || !jogador(sala, jogadorId)) return erro('A ronda não está a decorrer.');
+  if (jogador(sala, jogadorId).espectador) return erro('Estás a ver esta ronda.');
+  const votos = new Set(r.votosPassar ?? []);
+  if (votos.has(jogadorId)) votos.delete(jogadorId);
+  else votos.add(jogadorId);
+  r.votosPassar = [...votos];
+  verificarVotos(sala, agora);
+  return { ok: true };
+}
+
+const todosVotaram = (sala, votos) => {
+  if (!votos?.length) return false;
+  const ligados = aJogar(sala).filter((j) => j.ligado).map((j) => j.id);
+  return ligados.length > 0 && ligados.every((id) => votos.includes(id));
+};
+
 function verificarVotos(sala, agora) {
   const r = rondaACorrer(sala);
-  if (!r?.votosTerminar?.length) return false;
-  const ligados = aJogar(sala).filter((j) => j.ligado).map((j) => j.id);
-  if (!ligados.length || !ligados.every((id) => r.votosTerminar.includes(id))) return false;
-  motor.terminar(r, agora);
-  noFeed(sala, { tipo: 'fim', motivo: 'votacao' });
+  if (!r) return false;
+  if (todosVotaram(sala, r.votosTerminar)) {
+    motor.terminar(r, agora);
+    noFeed(sala, { tipo: 'fim', motivo: 'votacao' });
+  } else if (todosVotaram(sala, r.votosPassar)) {
+    const cortes = motor.passar(r, agora);
+    noFeed(sala, { tipo: 'fim', motivo: 'passou' });
+    for (const [id, corte] of Object.entries(cortes)) {
+      const j = jogador(sala, id);
+      if (j) j.total += corte;
+      noFeed(sala, { tipo: 'corte', jogador: id, pontos: corte });
+    }
+  } else return false;
   fecharRonda(sala);
   return true;
 }

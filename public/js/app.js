@@ -169,6 +169,7 @@ function aoEstado(sala) {
   ui.renderFicha(sala);
   ui.renderFinal(sala, estado.eu);
   ui.renderPlacar(sala, estado.eu, estado.totais, enviar);
+  ui.renderPassar(sala, estado.eu, enviar);
   estado.totais = new Map(sala.jogadores.map((j) => [j.id, j.total]));
   ui.renderFeed(sala);
   ui.renderMarcador(sala);

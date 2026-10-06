@@ -197,6 +197,65 @@ describe('terminar a ronda com o onze completo', () => {
   });
 });
 
+describe('passar ronda', () => {
+  /** Faz `n` acertos (onze da equipa 0) de `jogadorId` e devolve o instante seguinte. */
+  function acertar(sala, jogadorId, n, t) {
+    const jogo = JOGOS.get(sala.partida.ronda.jogoId);
+    for (const p of jogo.equipas[0].onze.slice(0, n)) {
+      expect(S.palpite(sala, jogadorId, p.nome, t).resposta.r).toBe('certo');
+      t += 200;
+    }
+    return t;
+  }
+
+  it('a solo passa logo e fica metade dos pontos (arredondada para cima)', () => {
+    const sala = salaCom(1, { solo: true });
+    const eu = sala.jogadores[0].id;
+    S.comecar(sala, eu, T0, primeiro);
+    S.avancar(sala, sala.partida.ronda.inicio);
+    const t = acertar(sala, eu, 3, sala.partida.ronda.inicio + 500); // 3 × 5 = 15
+    expect(sala.jogadores[0].total).toBe(15);
+    expect(S.votarPassar(sala, eu, t)).toEqual({ ok: true });
+    expect(S.faseVisivel(sala)).toBe('fim');
+    expect(sala.jogadores[0].total).toBe(8);
+    expect(S.estadoPublico(sala, t).jogadores[0].ronda).toBe(8);
+    expect(sala.feed.slice(-2)).toMatchObject([
+      { tipo: 'fim', motivo: 'passou' },
+      { tipo: 'corte', jogador: eu, pontos: -7 },
+    ]);
+    expect(sala.partida.historico.at(-1).pontos[eu]).toBe(8);
+  });
+
+  it('em multijogador todos têm de confirmar; quem não tem pontos não perde nada', () => {
+    const sala = salaCom(2);
+    const [a, b] = sala.jogadores.map((j) => j.id);
+    S.comecar(sala, a, T0, primeiro);
+    S.avancar(sala, sala.partida.ronda.inicio);
+    const t = acertar(sala, a, 2, sala.partida.ronda.inicio + 500); // 10
+    S.votarPassar(sala, a, t);
+    expect(S.faseVisivel(sala)).toBe('ronda');
+    expect(S.estadoPublico(sala, t).ronda.votosPassar).toEqual([a]);
+    S.votarPassar(sala, b, t);
+    expect(S.faseVisivel(sala)).toBe('fim');
+    expect(sala.jogadores.map((j) => j.total)).toEqual([5, 0]);
+    expect(sala.feed.filter((ev) => ev.tipo === 'corte')).toEqual([expect.objectContaining({ jogador: a, pontos: -5 })]);
+  });
+
+  it('no duelo, passar não dá vitória a ninguém', () => {
+    const sala = salaCom(2);
+    const [a, b] = sala.jogadores.map((j) => j.id);
+    S.configurar(sala, a, { modo: 'duelo' });
+    S.comecar(sala, a, T0, primeiro);
+    const r = sala.partida.ronda;
+    S.avancar(sala, r.inicio);
+    S.votarPassar(sala, a, r.inicio + 500);
+    S.votarPassar(sala, b, r.inicio + 500);
+    expect(S.faseVisivel(sala)).toBe('fim');
+    expect(r.vencedor).toBeNull();
+    expect(sala.feed.some((ev) => ev.tipo === 'duelo')).toBe(false);
+  });
+});
+
 describe('espectadores', () => {
   it('quem entra a meio fica a ver e joga a partir da ronda seguinte', () => {
     const sala = salaCom(2);
