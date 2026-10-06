@@ -1,0 +1,74 @@
+{
+  "id": "benfica-porto-2024-11-10",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "11.ª jornada",
+  "data": "2024-11-10",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 4–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2024-11-10-benfica-fc-porto/10240108",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Bruno Lage" },
+      "onze": [
+        { "nome": "Anatoliy Trubin", "numero": 1, "pais": "UA", "pos": "GR" },
+        { "nome": "Alexander Bah", "numero": 6, "pais": "DK", "pos": "DD" },
+        { "nome": "Tomás Araújo", "numero": 44, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Álvaro Carreras", "numero": 3, "pais": "ES", "pos": "DE", "golos": [{ "minuto": 29 }] },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "MDC" },
+        { "nome": "Florentino Luís", "numero": 61, "pais": "PT", "pos": "MDC" },
+        {
+          "nome": "Ángel Di María",
+          "aceites": ["di maria", "fideo"],
+          "numero": 11,
+          "pais": "AR",
+          "pos": "ED",
+          "golos": [{ "minuto": 54 }, { "minuto": 81, "penalti": true }]
+        },
+        { "nome": "Orkun Kökçü", "numero": 10, "pais": "TR", "pos": "MO" },
+        { "nome": "Kerem Aktürkoğlu", "numero": 17, "pais": "TR", "pos": "EE" },
+        { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Jan-Niklas Beste", "numero": 37, "minuto": 73, "pais": "DE" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 84, "pais": "PT" },
+        { "nome": "Benjamín Rollheiser", "numero": 32, "minuto": 87, "pais": "AR" },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 84, "pais": "BR" },
+        { "nome": "Zeki Amdouni", "numero": 7, "minuto": 87, "pais": "CH" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "Issa Kaboré", "António Silva", "Andreas Schjelderup"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Vítor Bruno" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Martim Fernandes", "numero": 52, "pais": "PT", "pos": "DD" },
+        { "nome": "Nehuén Pérez", "numero": 24, "pais": "AR", "pos": "DC", "golos": [{ "minuto": 61, "autogolo": true }] },
+        { "nome": "Tiago Djaló", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Francisco Moura", "numero": 74, "pais": "PT", "pos": "DE" },
+        { "nome": "Alan Varela", "numero": 22, "pais": "AR", "pos": "MDC" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "pais": "CA", "pos": "MDC" },
+        { "nome": "Fábio Vieira", "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Nico González", "numero": 16, "pais": "ES", "pos": "MO" },
+        { "nome": "Wenderson Galeno", "numero": 13, "pais": "BR", "pos": "EE" },
+        { "nome": "Samu Aghehowa", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 43 }] }
+      ],
+      "suplentes": [
+        { "nome": "João Mário", "numero": 23, "minuto": 62, "pais": "PT" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 86, "pais": "PT" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 72, "pais": "CM" },
+        { "nome": "Pepê", "numero": 11, "minuto": 62, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Zé Pedro", "André Franco", "Vasco Sousa", "Deniz Gül"]
+    }
+  ]
+}

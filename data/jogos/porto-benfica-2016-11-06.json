@@ -1,0 +1,64 @@
+{
+  "id": "porto-benfica-2016-11-06",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "10.ª jornada",
+  "data": "2016-11-06",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 1–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2016-11-06-fc-porto-benfica/5003754",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-1-3-2",
+      "treinador": { "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 2, "pais": "UY", "pos": "DD" },
+        { "nome": "Felipe", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Alex Telles", "numero": 13, "pais": "BR", "pos": "DE" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "pais": "PT", "pos": "MDC" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "MC" },
+        { "nome": "Óliver Torres", "numero": 30, "pais": "ES", "pos": "MC" },
+        { "nome": "Otávio", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "André Silva", "numero": 10, "pais": "PT", "pos": "PL" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 19, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 50 }] }
+      ],
+      "suplentes": [
+        { "nome": "Miguel Layún", "numero": 21, "minuto": 76, "pais": "MX" },
+        { "nome": "Rúben Neves", "numero": 6, "minuto": 67, "pais": "PT" },
+        { "nome": "Héctor Herrera", "numero": 16, "minuto": 87, "pais": "MX" }
+      ],
+      "nao_utilizados": ["José Sá", "Willy Boly", "Laurent Depoitre", "Yacine Brahimi"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Ederson Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Nélson Semedo", "numero": 50, "pais": "PT", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Victor Lindelof", "numero": 14, "pais": "SE", "pos": "DC" },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Toto Salvio", "numero": 18, "pais": "AR", "pos": "MD" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Franco Cervi", "numero": 22, "pais": "AR", "pos": "ME" },
+        { "nome": "Gonçalo Guedes", "numero": 20, "pais": "PT", "pos": "PL" },
+        { "nome": "Kostas Mitroglou", "numero": 11, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 2, "minuto": 17, "pais": "AR", "golos": [{ "minuto": "90+2" }] },
+        { "nome": "André Horta", "numero": 8, "minuto": 59, "pais": "PT" },
+        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 73, "pais": "MX" }
+      ],
+      "nao_utilizados": ["Júlio César", "André Almeida", "Danilo Silva", "André Carrillo"]
+    }
+  ]
+}

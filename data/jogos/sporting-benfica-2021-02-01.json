@@ -1,0 +1,66 @@
+{
+  "id": "sporting-benfica-2021-02-01",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "16.ª jornada",
+  "data": "2021-02-01",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2021-02-01-sporting-benfica/7643006",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Luís Neto", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Zouhair Feddal", "numero": 3, "pais": "MA", "pos": "DC" },
+        { "nome": "Pedro Porro", "numero": 24, "pais": "ES", "pos": "MD" },
+        { "nome": "Matheus Nunes", "numero": 8, "pais": "BR", "pos": "MC", "golos": [{ "minuto": "90+2" }] },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Nuno Mendes", "numero": 5, "pais": "PT", "pos": "ME" },
+        { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "PL" },
+        { "nome": "Tiago Tomás", "numero": 19, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Palhinha", "numero": 6, "minuto": 61, "pais": "PT" },
+        { "nome": "Daniel Bragança", "numero": 68, "minuto": "90+1", "pais": "PT" },
+        { "nome": "Bruno Tabata", "numero": 7, "minuto": 74, "pais": "BR" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 61, "pais": "CV" }
+      ],
+      "nao_utilizados": ["Luís Maximiano", "Gonçalo Inácio", "Eduardo Quaresma", "Antunes", "Joelson Fernandes"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Gilberto", "numero": 2, "pais": "BR", "pos": "MD" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MC" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Julian Weigl", "numero": 28, "pais": "DE", "pos": "MC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "ME" },
+        { "nome": "Darwin Núñez", "numero": 9, "pais": "UY", "pos": "PL" },
+        { "nome": "Franco Cervi", "numero": 11, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nuno Tavares", "numero": 71, "minuto": 79, "pais": "PT" },
+        { "nome": "Gabriel", "numero": 8, "minuto": 11, "pais": "BR" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 64, "pais": "MA" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 79, "pais": "CH" }
+      ],
+      "nao_utilizados": ["Mile Svilar", "Diogo Gonçalves", "Chiquinho", "Pedrinho", "Gonçalo Ramos"]
+    }
+  ]
+}

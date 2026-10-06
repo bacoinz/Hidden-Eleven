@@ -1,0 +1,70 @@
+{
+  "id": "sporting-porto-2009-02-04",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Taça da Liga",
+  "fase": "Meia-final",
+  "data": "2009-02-04",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 4–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2009-02-04-sporting-fc-porto/691975",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Tiago", "aceites": ["tiago mendes"], "numero": 16, "pais": "PT", "pos": "GR" },
+        { "nome": "Pedro Silva", "numero": 5, "pais": "BR", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MDC" },
+        { "nome": "Simon Vukcevic", "numero": 10, "pais": "ME", "pos": "ED" },
+        {
+          "nome": "Leandro Romagnoli",
+          "numero": 30,
+          "pais": "AR",
+          "pos": "MO",
+          "golos": [{ "minuto": 36, "penalti": true }, { "minuto": 48, "penalti": true }]
+        },
+        { "nome": "Marat Izmailov", "numero": 7, "pais": "RU", "pos": "EE" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 64, "pais": "PT" },
+        { "nome": "Fábio Rochemback", "numero": 26, "minuto": 79, "pais": "BR" },
+        { "nome": "Derlei", "numero": 11, "minuto": 64, "pais": "BR", "golos": [{ "minuto": 66 }, { "minuto": 81 }] }
+      ],
+      "nao_utilizados": ["Rui Patrício", "Daniel Carriço", "Marco Caneira", { "nome": "Rodrigo Tiuí", "aceites": ["tiui"] }]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"], "numero": 33, "pais": "PT", "pos": "GR" },
+        { "nome": "Cristian Sapunaru", "numero": 21, "pais": "RO", "pos": "DD" },
+        { "nome": "Pedro Emanuel", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Milan Stepanov", "numero": 4, "pais": "RS", "pos": "DC" },
+        { "nome": "Nelson Benítez", "numero": 5, "pais": "AR", "pos": "DE" },
+        { "nome": "Tomás Costa", "numero": 20, "pais": "AR", "pos": "MC" },
+        { "nome": "Andrés Madrid", "numero": 22, "pais": "AR", "pos": "MC" },
+        { "nome": "Fredy Guarín", "numero": 6, "pais": "CO", "pos": "MC" },
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "pais": "AR", "pos": "ED" },
+        { "nome": "Tarik Sektioui", "numero": 17, "pais": "MA", "pos": "PL", "golos": [{ "minuto": 9 }] },
+        { "nome": "Ernesto Farías", "numero": 19, "pais": "AR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Ivo Pinto", "numero": 34, "minuto": 88, "pais": "PT" },
+        { "nome": "Diogo Viana", "numero": 50, "minuto": 72, "pais": "PT" },
+        { "nome": "Josué", "numero": 37, "minuto": 71, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Hugo Ventura", "Ricardo Dias", "Sérgio Oliveira", "Rabiola"]
+    }
+  ]
+}

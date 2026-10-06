@@ -1,0 +1,64 @@
+{
+  "id": "benfica-sporting-2016-12-11",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "13.ª jornada",
+  "data": "2016-12-11",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2016-12-11-benfica-sporting/5003778",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-1-3-2",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Ederson Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Nélson Semedo", "numero": 50, "pais": "PT", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Victor Lindelöf", "numero": 14, "pais": "SE", "pos": "DC" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DE" },
+        { "nome": "Ljubomir Fejsa", "numero": 5, "pais": "RS", "pos": "MDC" },
+        { "nome": "Toto Salvio", "numero": 18, "pais": "AR", "pos": "MC", "golos": [{ "minuto": 24 }] },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MC" },
+        { "nome": "Raúl Jiménez", "numero": 9, "pais": "MX", "pos": "PL", "golos": [{ "minuto": 47 }] },
+        { "nome": "Gonçalo Guedes", "numero": 20, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Danilo Barbosa", "numero": 37, "minuto": 55, "pais": "BR" },
+        { "nome": "Andreas Samaris", "numero": 7, "minuto": "90+1", "pais": "GR" },
+        { "nome": "Franco Cervi", "numero": 22, "minuto": 65, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Paulo Lopes", "Jardel", "André Carrillo", "Kostas Mitroglou"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-1-3-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Sebastián Coates", "numero": 13, "pais": "UY", "pos": "DC" },
+        { "nome": "Rúben Semedo", "numero": 35, "pais": "PT", "pos": "DC" },
+        { "nome": "Marvin Zeegelaar", "numero": 31, "pais": "NL", "pos": "DE" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MDC" },
+        { "nome": "Gelson Martins", "numero": 77, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno César", "numero": 11, "pais": "BR", "pos": "MC" },
+        { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 69 }] },
+        { "nome": "Bryan Ruiz", "numero": 10, "pais": "CR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alan Ruiz", "numero": 99, "minuto": 60, "pais": "AR" },
+        { "nome": "Joel Campbell", "numero": 7, "minuto": 46, "pais": "CR" },
+        { "nome": "André", "numero": 16, "minuto": 84, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Beto", "Ricardo Esgaio", "Paulo Oliveira", "Elias"]
+    }
+  ]
+}

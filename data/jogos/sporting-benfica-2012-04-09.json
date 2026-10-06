@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2012-04-09",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "26.ª jornada",
+  "data": "2012-04-09",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2012-04-09-sporting-benfica/1730586",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Ricardo Sá Pinto" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 47, "pais": "PT", "pos": "DD" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Xandão", "numero": 93, "pais": "BR", "pos": "DC" },
+        { "nome": "Emiliano Insúa", "numero": 48, "pais": "AR", "pos": "DE" },
+        { "nome": "Matías Fernández", "numero": 14, "pais": "CL", "pos": "MC" },
+        { "nome": "Elias", "numero": 77, "pais": "BR", "pos": "MC" },
+        { "nome": "Stijn Schaars", "numero": 8, "pais": "NL", "pos": "MC" },
+        { "nome": "Marat Izmailov", "numero": 10, "pais": "RU", "pos": "ED" },
+        { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 18, "penalti": true }] },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Daniel Carriço", "numero": 3, "minuto": 65, "pais": "PT" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 89, "pais": "PE" },
+        { "nome": "Diego Rubio", "numero": 33, "minuto": 73, "pais": "CL" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Evaldo", "Renato Neto", "André Martins"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "5-3-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "Émerson Conceição", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "DE" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "MC" },
+        { "nome": "Axel Witsel", "numero": 28, "pais": "BE", "pos": "MC" },
+        { "nome": "Bruno César", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Rodrigo Moreno", "numero": 19, "pais": "ES", "pos": "PL" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Yannick Djaló", "numero": 12, "minuto": 45, "pais": "PT" },
+        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 62, "pais": "PT" },
+        { "nome": "Nolito", "numero": 9, "minuto": 73, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Eduardo", "Jardel", "Joan Capdevila", "Nemanja Matic"]
+    }
+  ]
+}

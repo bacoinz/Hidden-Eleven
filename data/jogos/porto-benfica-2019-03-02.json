@@ -1,0 +1,64 @@
+{
+  "id": "porto-benfica-2019-03-02",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "24.ª jornada",
+  "data": "2019-03-02",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 1–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2019-03-02-fc-porto-benfica/6067663",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Wilson Manafá", "numero": 12, "pais": "PT", "pos": "DD" },
+        { "nome": "Felipe", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "Pepe", "numero": 33, "pais": "PT", "pos": "DC" },
+        { "nome": "Alex Telles", "numero": 13, "pais": "BR", "pos": "DE" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "MD" },
+        { "nome": "Óliver Torres", "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "ME" },
+        { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "PL" },
+        { "nome": "Adrián López", "numero": 20, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 18 }] }
+      ],
+      "suplentes": [
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "minuto": 81, "pais": "PT" },
+        { "nome": "Otávio", "numero": 25, "minuto": 61, "pais": "BR" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "minuto": 61, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Vaná Alves", "Éder Militão", "Hernâni", "Fernando Andrade"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-1-3-2",
+      "treinador": { "nome": "Bruno Lage" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Ferro", "numero": 97, "pais": "PT", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Andreas Samaris", "numero": 22, "pais": "GR", "pos": "MDC" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Gabriel", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 52 }] },
+        { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 79, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 26 }] }
+      ],
+      "suplentes": [
+        { "nome": "Sébastien Corchia", "numero": 7, "minuto": 88, "pais": "FR" },
+        { "nome": "Gedson Fernandes", "numero": 83, "minuto": 71, "pais": "PT" },
+        { "nome": "Franco Cervi", "numero": 11, "minuto": "90+2", "pais": "AR" }
+      ],
+      "nao_utilizados": ["Mile Svilar", "Florentino Luís", "Jonas", "João Filipe"]
+    }
+  ]
+}

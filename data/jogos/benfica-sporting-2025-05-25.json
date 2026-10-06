@@ -1,0 +1,70 @@
+{
+  "id": "benfica-sporting-2025-05-25",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Taça de Portugal",
+  "fase": "Final",
+  "data": "2025-05-25",
+  "estadio": "Estádio Nacional do Jamor, Oeiras",
+  "resultado": "Benfica 1–3 Sporting (a.p.)",
+  "fonte": "https://www.zerozero.pt/jogo/2025-05-25-benfica-sporting/10712226",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Bruno Lage" },
+      "onze": [
+        { "nome": "Samuel Soares", "numero": 24, "pais": "PT", "pos": "GR" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "António Silva", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Álvaro Carreras", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Tomás Araújo", "numero": 44, "pais": "PT", "pos": "MD" },
+        { "nome": "Florentino Luís", "numero": 61, "pais": "PT", "pos": "MC" },
+        { "nome": "Orkun Kökçü", "numero": 10, "pais": "TR", "pos": "MC", "golos": [{ "minuto": 47 }] },
+        { "nome": "Samuel Dahl", "numero": 26, "pais": "SE", "pos": "ME" },
+        { "nome": "Bruma", "numero": 27, "pais": "PT", "pos": "MO" },
+        { "nome": "Kerem Aktürkoğlu", "numero": 17, "pais": "TR", "pos": "MO" },
+        { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Leandro Barreiro", "numero": 18, "minuto": "90+1", "pais": "LU" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "minuto": 77, "pais": "NO" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 69, "pais": "PT" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 103, "pais": "AR" },
+        { "nome": "Andrea Belotti", "numero": 19, "minuto": 77, "pais": "IT" },
+        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 69, "pais": "NO" }
+      ],
+      "nao_utilizados": ["Anatoliy Trubin", "Adrian Bajrami", "Arthur Cabral"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Rui Borges" },
+      "onze": [
+        { "nome": "Rui Silva", "numero": 24, "pais": "PT", "pos": "GR" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "pais": "PT", "pos": "DC" },
+        { "nome": "Jeremiah St. Juste", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Geny Catamo", "numero": 21, "pais": "MZ", "pos": "MD" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MC" },
+        { "nome": "Zeno Debast", "numero": 6, "pais": "BE", "pos": "MC" },
+        { "nome": "Maxi Araújo", "numero": 20, "pais": "UY", "pos": "ME" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "MO", "golos": [{ "minuto": "120+1" }] },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL", "golos": [{ "minuto": "90+10", "penalti": true }] }
+      ],
+      "suplentes": [
+        { "nome": "Iván Fresneda", "numero": 22, "minuto": 83, "pais": "ES" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 83, "pais": "BR" },
+        { "nome": "David Moreira", "numero": 46, "minuto": 115, "pais": "PT" },
+        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 58, "pais": "JP" },
+        { "nome": "Conrad Harder", "numero": 19, "minuto": 75, "pais": "DK", "golos": [{ "minuto": 99 }] },
+        { "nome": "Geovany Quenda", "numero": 57, "minuto": 75, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Franco Israel", "Eduardo Felicíssimo", "Biel Teixeira"]
+    }
+  ]
+}

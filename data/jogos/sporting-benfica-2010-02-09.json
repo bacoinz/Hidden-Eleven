@@ -1,0 +1,60 @@
+{
+  "id": "sporting-benfica-2010-02-09",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Taça da Liga",
+  "fase": "Meia-final",
+  "data": "2010-02-09",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–4 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2010-02-09-sporting-benfica/1154984",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Carlos Carvalhal" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Daniel Carriço", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Pedro Mendes", "numero": 2, "pais": "PT", "pos": "MD" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Marat Izmailov", "numero": 7, "pais": "RU", "pos": "ME" },
+        { "nome": "Sinama Pongolle", "numero": 22, "pais": "FR", "pos": "PL" },
+        { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 37 }] }
+      ],
+      "suplentes": [{ "nome": "Pedro Silva", "numero": 5, "minuto": 25, "pais": "BR" }, { "nome": "Yannick Djaló", "numero": 20, "minuto": 63, "pais": "PT" }],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Tonel", "Matías Fernández", "Simon Vukcevic", "Carlos Saleiro"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Júlio César", "numero": 13, "pais": "BR", "pos": "GR" },
+        { "nome": "David Luiz", "numero": 23, "pais": "BR", "pos": "DD", "golos": [{ "minuto": 8 }] },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC", "golos": [{ "minuto": 68 }] },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "DC" },
+        { "nome": "Rúben Amorim", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Carlos Martins", "numero": 17, "pais": "PT", "pos": "MDC" },
+        { "nome": "Ramires", "numero": 8, "pais": "BR", "pos": "MDC", "golos": [{ "minuto": 30 }] },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "pais": "AR", "pos": "ED" },
+        { "nome": "Éder Luís", "numero": 32, "pais": "BR", "pos": "MO" },
+        { "nome": "César Peixoto", "numero": 25, "pais": "PT", "pos": "EE" },
+        { "nome": "Alan Kardec", "numero": 31, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 72, "pais": "AR" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 70, "pais": "PY", "golos": [{ "minuto": 90 }] },
+        { "nome": "Javier Saviola", "numero": 30, "minuto": 70, "pais": "AR" }
+      ],
+      "nao_utilizados": ["José Moreira", "Miguel Vítor", "Fábio Coentrão", "Weldon"]
+    }
+  ]
+}

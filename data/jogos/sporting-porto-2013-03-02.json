@@ -1,0 +1,64 @@
+{
+  "id": "sporting-porto-2013-03-02",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "21.ª jornada",
+  "data": "2013-03-02",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 0–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2013-03-02-sporting-fc-porto/2256691",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel Lopes", "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Tiago Ilori", "numero": 34, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcos Rojo", "numero": 15, "pais": "AR", "pos": "DC" },
+        { "nome": "Joãozinho", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Fito Rinaudo", "numero": 21, "pais": "AR", "pos": "MC" },
+        { "nome": "Eric Dier", "numero": 54, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Zakaria Labyad", "numero": 20, "pais": "MA", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "ED" },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "PL" },
+        { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Fabrice Fokobo", "numero": 71, "minuto": 79, "pais": "CM" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 74, "pais": "PE" },
+        { "nome": "Bruma", "numero": 51, "minuto": 60, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", { "nome": "Cédric Soares", "aceites": ["cedric"] }, "Zezinho", "Gaël Etock"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Vítor Pereira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 3, "pais": "AR", "pos": "MC" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "Steven Defour", "numero": 35, "pais": "BE", "pos": "MC" },
+        { "nome": "Marat Izmailov", "numero": 15, "pais": "RU", "pos": "ED" },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 10, "minuto": 55, "pais": "CO" },
+        { "nome": "Liedson", "numero": 19, "minuto": 81, "pais": "PT" },
+        { "nome": "Christian Atsu", "numero": 27, "minuto": 66, "pais": "GH" }
+      ],
+      "nao_utilizados": ["Fabiano Freitas", "Abdoulaye Ba", "André Castro", "Sebá"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "porto-benfica-2024-03-03",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "24.ª jornada",
+  "data": "2024-03-03",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 5–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2024-03-03-fc-porto-benfica/9429549",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "João Mário Lopes", "numero": 23, "pais": "PT", "pos": "DD", "aceites": ["João Mário"], "curto": "João Mário" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Otávio Ataíde", "numero": 31, "pais": "BR", "pos": "DC" },
+        { "nome": "Wendell", "numero": 18, "pais": "BR", "pos": "DE", "golos": [{ "minuto": 55 }] },
+        { "nome": "Nico González", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Alan Varela", "numero": 22, "pais": "AR", "pos": "MDC" },
+        { "nome": "Francisco Conceição", "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Pepê Aquino", "numero": 11, "pais": "BR", "pos": "MO", "golos": [{ "minuto": 75 }], "aceites": ["Pepê"], "curto": "Pepê" },
+        { "nome": "Wenderson Galeno", "numero": 13, "pais": "BR", "pos": "EE", "golos": [{ "minuto": 20 }, { "minuto": 44 }] },
+        { "nome": "Evanilson", "numero": 30, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Jorge Sánchez", "numero": 15, "minuto": 83, "pais": "MX" },
+        { "nome": "Iván Jaime", "numero": 17, "minuto": 82, "pais": "ES" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 82, "pais": "CA" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 82, "pais": "GB-ENG", "golos": [{ "minuto": 90 }] },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 87, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Fábio Cardoso", "Marko Grujić", "Gonçalo Borges"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roger Schmidt" },
+      "onze": [
+        { "nome": "Anatoliy Trubin", "numero": 1, "pais": "UA", "pos": "GR" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "DD" },
+        { "nome": "António Silva", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Morato", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "João Neves", "numero": 87, "pais": "PT", "pos": "MDC" },
+        { "nome": "Orkun Kökçü", "numero": 10, "pais": "TR", "pos": "MDC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "pais": "AR", "pos": "ED" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MO" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "EE" },
+        { "nome": "Casper Tengstedt", "numero": 19, "pais": "DK", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Tomás Araújo", "numero": 44, "minuto": 63, "pais": "PT" },
+        { "nome": "Álvaro Carreras", "numero": 3, "minuto": 46, "pais": "ES" },
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 46, "pais": "PT" },
+        { "nome": "David Neres", "numero": 7, "minuto": 57, "pais": "BR" },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 56, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "Tiago Gouveia", "Benjamín Rollheiser", "Marcos Leonardo"]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "sporting-porto-2016-01-02",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "15.ª jornada",
+  "data": "2016-01-02",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 2–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2016-01-02-sporting-fc-porto/4516792",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Paulo Oliveira", "numero": 15, "pais": "PT", "pos": "DC" },
+        { "nome": "Naldo", "numero": 44, "pais": "BR", "pos": "DC" },
+        { "nome": "Jefferson", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MD" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Matheus Pereira", "numero": 73, "pais": "BR", "pos": "ME" },
+        { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL", "golos": [{ "minuto": 27 }, { "minuto": 85 }] },
+        { "nome": "Bryan Ruiz", "numero": 20, "pais": "CR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alberto Aquilani", "numero": 6, "minuto": 90, "pais": "IT" },
+        { "nome": "Gelson Martins", "numero": 60, "minuto": 62, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Ricardo Esgaio", "Ewerton", "Fredy Montero", "Carlos Mané"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Julen Lopetegui" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 12, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 2, "pais": "UY", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Bruno Martins Indi", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Miguel Layún", "numero": 21, "pais": "MX", "pos": "DE" },
+        { "nome": "Rúben Neves", "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "pais": "PT", "pos": "MDC" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "ED" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MO" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "pais": "CM", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "André André", "numero": 20, "minuto": 54, "pais": "PT" },
+        { "nome": "André Silva", "numero": 19, "minuto": 71, "pais": "PT" },
+        { "nome": "Cristian Tello", "numero": 11, "minuto": 80, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Helton", "Iván Marcano", "Evandro", { "nome": "Silvestre Varela", "aceites": ["varela"] }]
+    }
+  ]
+}

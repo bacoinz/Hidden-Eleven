@@ -1,0 +1,66 @@
+{
+  "id": "porto-sporting-2025-02-07",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "21.ª jornada",
+  "data": "2025-02-07",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 1–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2025-02-07-fc-porto-sporting/10239987",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Martín Anselmi" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Zé Pedro", "numero": 97, "pais": "PT", "pos": "DC" },
+        { "nome": "Nehuén Pérez", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "Tiago Djaló", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "João Mário", "numero": 23, "pais": "PT", "pos": "MD" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "pais": "CA", "pos": "MC" },
+        { "nome": "Alan Varela", "numero": 22, "pais": "AR", "pos": "MC" },
+        { "nome": "Rodrigo Mora", "numero": 86, "pais": "PT", "pos": "MC" },
+        { "nome": "Francisco Moura", "numero": 74, "pais": "PT", "pos": "ME" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "PL" },
+        { "nome": "Samu Aghehowa", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Fábio Vieira", "numero": 10, "minuto": 62, "pais": "PT" },
+        { "nome": "William Gomes", "numero": 7, "minuto": 78, "pais": "BR" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 68, "pais": "PT" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 78, "pais": "CM", "golos": [{ "minuto": "90+4" }] }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Zaidu Sanusi", "Tomás Pérez", "Vasco Sousa", "Deniz Gül"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Rui Borges" },
+      "onze": [
+        { "nome": "Rui Silva", "numero": 24, "pais": "PT", "pos": "GR" },
+        { "nome": "Iván Fresneda", "numero": 22, "pais": "ES", "pos": "DD", "golos": [{ "minuto": 42 }] },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Maxi Araújo", "numero": 20, "pais": "UY", "pos": "DE" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MDC" },
+        { "nome": "João Simões", "numero": 52, "pais": "PT", "pos": "MDC" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Daniel Bragança", "numero": 23, "pais": "PT", "pos": "MO" },
+        { "nome": "Geovany Quenda", "numero": 57, "pais": "PT", "pos": "EE" },
+        { "nome": "Conrad Harder", "numero": 19, "pais": "DK", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Zeno Debast", "numero": 6, "minuto": 23, "pais": "BE" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 86, "pais": "BR" },
+        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 69, "pais": "JP" },
+        { "nome": "Viktor Gyökeres", "numero": 9, "minuto": 69, "pais": "SE" }
+      ],
+      "nao_utilizados": ["Franco Israel", "Ricardo Esgaio", "Jeremiah St. Juste", "Eduardo Quaresma", "Biel Teixeira"]
+    }
+  ]
+}

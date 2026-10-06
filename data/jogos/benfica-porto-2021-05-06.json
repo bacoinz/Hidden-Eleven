@@ -1,0 +1,67 @@
+{
+  "id": "benfica-porto-2021-05-06",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "31.ª jornada",
+  "data": "2021-05-06",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 1–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2021-05-06-benfica-fc-porto/7642913",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Helton Leite", "numero": 77, "pais": "BR", "pos": "GR" },
+        { "nome": "Lucas Veríssimo", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Everton Cebolinha", "numero": 7, "pais": "BR", "pos": "MD", "golos": [{ "minuto": 23 }] },
+        { "nome": "Diogo Gonçalves", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Julian Weigl", "numero": 28, "pais": "DE", "pos": "MC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "ME" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "PL" },
+        { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Gilberto", "numero": 2, "minuto": "90+5", "pais": "BR" },
+        { "nome": "Gabriel", "numero": 8, "minuto": 68, "pais": "BR" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 68, "pais": "MA" },
+        { "nome": "Pedrinho", "numero": 38, "minuto": "90+5", "pais": "BR" },
+        { "nome": "Darwin Núñez", "numero": 9, "minuto": 85, "pais": "UY" }
+      ],
+      "nao_utilizados": ["Odysseas Vlachodimos", "Nuno Tavares", "Chiquinho", "Luca Waldschmidt"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Agustín Marchesín", "numero": 1, "pais": "AR", "pos": "GR" },
+        { "nome": "Wilson Manafá", "numero": 18, "pais": "PT", "pos": "DD" },
+        { "nome": "Chancel Mbemba", "numero": 19, "pais": "CD", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "DE" },
+        { "nome": "Otávio", "numero": 25, "pais": "BR", "pos": "MD" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "pais": "PT", "pos": "MC" },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC", "golos": [{ "minuto": 75 }] },
+        { "nome": "Luis Díaz", "numero": 7, "pais": "CO", "pos": "ME" },
+        { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "PL" },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Francisco Conceição", "numero": 85, "minuto": 84, "pais": "PT" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 69, "pais": "ES" },
+        { "nome": "Evanilson", "numero": 30, "minuto": 83, "pais": "BR" },
+        { "nome": "João Mário", "numero": 23, "minuto": 69, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Diogo Costa", "Nanú", "Diogo Leite", "Marko Grujic", "Fábio Vieira"]
+    }
+  ]
+}

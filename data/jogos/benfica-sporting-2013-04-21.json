@@ -1,0 +1,64 @@
+{
+  "id": "benfica-sporting-2013-04-21",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "26.ª jornada",
+  "data": "2013-04-21",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2013-04-21-benfica-sporting/2256729",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "Lorenzo Melgarejo", "numero": 25, "pais": "PY", "pos": "DE" },
+        { "nome": "Toto Salvio", "numero": 18, "pais": "AR", "pos": "MD", "golos": [{ "minuto": 36 }] },
+        { "nome": "Nemanja Matic", "numero": 21, "pais": "RS", "pos": "MC" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MC" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "ME" },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 75 }] },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Jardel", "numero": 33, "minuto": "90+2", "pais": "BR" },
+        { "nome": "André Gomes", "numero": 89, "minuto": 80, "pais": "PT" },
+        { "nome": "Ola John", "numero": 15, "minuto": 69, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Paulo Lopes", "André Almeida", "Pablo Aimar", "Rodrigo Moreno"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel Lopes", "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Tiago Ilori", "numero": 34, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcos Rojo", "numero": 15, "pais": "AR", "pos": "DC" },
+        { "nome": "Joãozinho", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "André Martins", "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Fito Rinaudo", "numero": 21, "pais": "AR", "pos": "MC" },
+        { "nome": "Eric Dier", "numero": 54, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "ED" },
+        { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL" },
+        { "nome": "Bruma", "numero": 51, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Khalid Boulahrouz", "numero": 6, "minuto": 74, "pais": "NL" },
+        { "nome": "Stijn Schaars", "numero": 8, "minuto": 65, "pais": "NL" },
+        { "nome": "Valentin Viola", "numero": 16, "minuto": 65, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", { "nome": "Adrien Silva", "aceites": ["adrien"] }, "Zakaria Labyad", "André Carrillo"]
+    }
+  ]
+}

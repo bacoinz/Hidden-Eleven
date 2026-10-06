@@ -1,0 +1,64 @@
+{
+  "id": "benfica-porto-2009-12-20",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "14.ª jornada",
+  "data": "2009-12-20",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 1–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2009-12-20-benfica-fc-porto/853045",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "David Luiz", "numero": 23, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "DE" },
+        { "nome": "Carlos Martins", "numero": 17, "pais": "PT", "pos": "MD" },
+        { "nome": "Ramires", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Jonathan Urreta", "numero": 16, "pais": "UY", "pos": "MC" },
+        { "nome": "César Peixoto", "numero": 25, "pais": "PT", "pos": "ME" },
+        { "nome": "Javier Saviola", "numero": 30, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 23 }] },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Luís Filipe", "numero": 22, "minuto": 67, "pais": "PT" },
+        { "nome": "Felipe Menezes", "numero": 24, "minuto": 72, "pais": "BR" },
+        { "nome": "Weldon", "numero": 19, "minuto": 67, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Júlio César", "Roderick Miranda", "Miguel Vítor", "Nuno Gomes"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Álvaro Pereira", "numero": 15, "pais": "UY", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 3, "pais": "PT", "pos": "MC" },
+        { "nome": "Fredy Guarín", "numero": 6, "pais": "CO", "pos": "MC" },
+        { "nome": "Cristián Rodríguez", "numero": 10, "pais": "UY", "pos": "ED" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "PL" },
+        { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 79, "pais": "AR" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "minuto": 45, "pais": "PT" },
+        { "nome": "Ernesto Farías", "numero": 19, "minuto": 77, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Beto", "Cristian Săpunaru", "Nuno André Coelho", { "nome": "Mariano González", "aceites": ["mariano"] }]
+    }
+  ]
+}

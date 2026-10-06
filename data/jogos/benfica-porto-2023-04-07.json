@@ -1,0 +1,66 @@
+{
+  "id": "benfica-porto-2023-04-07",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "27.ª jornada",
+  "data": "2023-04-07",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 1–2 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2023-04-07-benfica-fc-porto/8745608",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roger Schmidt" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Alexander Bah", "numero": 6, "pais": "DK", "pos": "DD" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "António Silva", "numero": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Florentino Luís", "numero": 61, "pais": "PT", "pos": "MDC" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "MDC" },
+        { "nome": "Chiquinho", "numero": 22, "pais": "PT", "pos": "ED" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "EE" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Gilberto", "numero": 2, "minuto": 26, "pais": "BR" },
+        { "nome": "David Neres", "numero": 7, "minuto": 56, "pais": "BR" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "Lucas Veríssimo", "Morato", "João Neves", "Casper Tengstedt", "Andreas Schjelderup"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR", "golos": [{ "minuto": 10, "autogolo": true }] },
+        { "nome": "Wilson Manafá", "numero": 18, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Wendell", "numero": 22, "pais": "BR", "pos": "DE" },
+        { "nome": "Otávio", "numero": 25, "pais": "PT", "pos": "MD" },
+        { "nome": "Marko Grujic", "numero": 16, "pais": "RS", "pos": "MC" },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC", "golos": [{ "minuto": 45 }] },
+        { "nome": "Wenderson Galeno", "numero": 13, "pais": "BR", "pos": "ME" },
+        { "nome": "Pepê Aquino", "numero": 11, "pais": "BR", "pos": "PL", "aceites": ["Pepê"], "curto": "Pepê" },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 54 }] }
+      ],
+      "suplentes": [
+        { "nome": "João Mário Lopes", "numero": 23, "minuto": 56, "pais": "PT", "aceites": ["João Mário"], "curto": "João Mário" },
+        { "nome": "Fábio Cardoso", "numero": 2, "minuto": 88, "pais": "PT" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "minuto": 71, "pais": "NG" },
+        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 56, "pais": "CA" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 72, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Gonçalo Borges", "Danny Namaso", "Evanilson"]
+    }
+  ]
+}

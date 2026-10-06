@@ -1,0 +1,64 @@
+{
+  "id": "benfica-porto-2012-03-02",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "21.ª jornada",
+  "data": "2012-03-02",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–3 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2012-03-02-benfica-fc-porto/1730548",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Émerson Conceição", "numero": 3, "pais": "BR", "pos": "DD" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "MDC" },
+        { "nome": "Axel Witsel", "numero": 28, "pais": "BE", "pos": "MDC" },
+        { "nome": "Pablo Aimar", "numero": 10, "pais": "AR", "pos": "ED" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "MO" },
+        { "nome": "Nolito", "numero": 9, "pais": "ES", "pos": "EE" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 42 }, { "minuto": 47 }] }
+      ],
+      "suplentes": [
+        { "nome": "Miguel Vítor", "numero": 27, "minuto": 71, "pais": "PT" },
+        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 90, "pais": "PT" },
+        { "nome": "Rodrigo Moreno", "numero": 19, "minuto": 52, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Eduardo", "Nemanja Matić", "Bruno César", "Javier Saviola"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Vítor Pereira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DD", "golos": [{ "minuto": 87 }] },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Álvaro Pereira", "numero": 5, "pais": "UY", "pos": "DE" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 3, "pais": "AR", "pos": "MC" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "ED", "golos": [{ "minuto": 7 }] },
+        { "nome": "Marc Janko", "numero": 29, "pais": "AT", "pos": "PL" },
+        { "nome": "Djalma", "numero": 20, "pais": "AO", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Cristian Săpunaru", "numero": 21, "minuto": "90+2", "pais": "RO" },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 58, "pais": "CO", "golos": [{ "minuto": 64 }] },
+        { "nome": "Kléber", "numero": 11, "minuto": 86, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Rafael Bracali", "Alex Sandro", "Steven Defour", "Cristián Rodríguez"]
+    }
+  ]
+}

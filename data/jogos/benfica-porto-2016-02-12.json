@@ -1,0 +1,64 @@
+{
+  "id": "benfica-porto-2016-02-12",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "22.ª jornada",
+  "data": "2016-02-12",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 1–2 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2016-02-12-benfica-fc-porto/4516699",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Júlio César", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Victor Lindelof", "numero": 14, "pais": "SE", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MD" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "pais": "PT", "pos": "MC" },
+        { "nome": "Nico Gaitán", "numero": 10, "pais": "AR", "pos": "ME" },
+        { "nome": "Kostas Mitroglou", "numero": 11, "pais": "GR", "pos": "PL", "golos": [{ "minuto": 18 }] },
+        { "nome": "Jonas", "numero": 17, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Anderson Talisca", "numero": 30, "minuto": 69, "pais": "BR" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 80, "pais": "AR" },
+        { "nome": "Mehdi Carcela", "numero": 39, "minuto": 69, "pais": "MA" }
+      ],
+      "nao_utilizados": ["Ederson Moraes", "Sílvio", "Nélson Semedo", "Raúl Jiménez"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "José Peseiro" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 12, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 2, "pais": "UY", "pos": "DD" },
+        { "nome": "Chidozie Awaziem", "numero": 63, "pais": "NG", "pos": "DC" },
+        { "nome": "Martins Indi", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Miguel Layún", "numero": 21, "pais": "MX", "pos": "DE" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC", "golos": [{ "minuto": 28 }] },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "pais": "PT", "pos": "MC" },
+        { "nome": "André André", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "ED" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "pais": "CM", "pos": "PL", "golos": [{ "minuto": 65 }] },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Rúben Neves", "numero": 6, "minuto": 74, "pais": "PT" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 7, "minuto": 86, "pais": "PT" },
+        { "nome": "Moussa Marega", "numero": 11, "minuto": 59, "pais": "ML" }
+      ],
+      "nao_utilizados": ["Helton", "José Ángel", "Sérgio Oliveira", "Suk Hyun-jun"]
+    }
+  ]
+}

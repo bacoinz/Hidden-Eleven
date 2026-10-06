@@ -1,0 +1,66 @@
+{
+  "id": "sporting-porto-2021-01-19",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Taça da Liga",
+  "fase": "Meia-final",
+  "data": "2021-01-19",
+  "estadio": "Estádio Dr. Magalhães Pessoa, Leiria",
+  "resultado": "Sporting 2–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2021-01-19-sporting-fc-porto/7815561",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Zouhair Feddal", "numero": 3, "pais": "MA", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "João Palhinha", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "MD" },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Tiago Tomás", "numero": 19, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Porro", "numero": 24, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "ME" },
+        { "nome": "Gonçalo Inácio", "numero": 52, "pais": "PT", "pos": "PL" },
+        { "nome": "Antunes", "numero": 55, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Daniel Bragança", "numero": 68, "minuto": 85, "pais": "PT" },
+        { "nome": "Matheus Nunes", "numero": 8, "minuto": 69, "pais": "BR" },
+        { "nome": "Gonzalo Plata", "numero": 20, "minuto": 85, "pais": "EC" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 78, "pais": "CV", "golos": [{ "minuto": 86 }, { "minuto": "90+4" }] }
+      ],
+      "nao_utilizados": ["André Paulo", "Luís Maximiano", "Eduardo Quaresma", "Cristián Borja"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Felipe Anderson", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "João Mário Lopes", "numero": 23, "pais": "PT", "pos": "DC", "aceites": ["João Mário"], "curto": "João Mário" },
+        { "nome": "Chancel Mbemba", "numero": 19, "pais": "CD", "pos": "DC" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "MD" },
+        { "nome": "Marko Grujic", "numero": 16, "pais": "RS", "pos": "MC" },
+        { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "MC", "golos": [{ "minuto": 79 }] },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC" },
+        { "nome": "Diogo Leite", "numero": 4, "pais": "PT", "pos": "ME" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "PL" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 79, "pais": "PT" },
+        { "nome": "Nanu", "numero": 31, "minuto": 85, "pais": "GW" },
+        { "nome": "Fábio Vieira", "numero": 50, "minuto": "90+1", "pais": "PT" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 85, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Agustín Marchesín", "Malang Sarr", "Mamadou Loum", "Romário Baró", "Francisco Conceição"]
+    }
+  ]
+}

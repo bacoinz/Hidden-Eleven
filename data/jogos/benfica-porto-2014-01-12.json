@@ -1,0 +1,59 @@
+{
+  "id": "benfica-porto-2014-01-12",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "15.ª jornada",
+  "data": "2014-01-12",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2014-01-12-benfica-fc-porto/2838167",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Jan Oblak", "numero": 41, "pais": "SI", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC", "golos": [{ "minuto": 53 }] },
+        { "nome": "Guilherme Siqueira", "numero": 16, "pais": "BR", "pos": "DE" },
+        { "nome": "Lazar Markovic", "numero": 50, "pais": "RS", "pos": "MD" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "MC" },
+        { "nome": "Nemanja Matic", "numero": 21, "pais": "RS", "pos": "MC" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "ME" },
+        { "nome": "Rodrigo Moreno", "numero": 19, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 13 }] },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Jardel", "numero": 33, "minuto": 84, "pais": "BR" }, { "nome": "Rúben Amorim", "numero": 6, "minuto": 86, "pais": "PT" }],
+      "nao_utilizados": ["Artur Moraes", "Sílvio", "Ljubomir Fejsa", "Filip Djuricic", "Miralem Sulejmani"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Paulo Fonseca" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Eliaquim Mangala", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 3, "pais": "AR", "pos": "MC" },
+        { "nome": "Carlos Eduardo", "numero": 20, "pais": "BR", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Licá", "numero": 19, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Josué", "numero": 8, "minuto": 70, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 53, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Fabiano", "Maicon", "Steven Defour", "Nabil Ghilas", "Kelvin"]
+    }
+  ]
+}

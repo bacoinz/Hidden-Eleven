@@ -1,0 +1,70 @@
+{
+  "id": "porto-sporting-2024-05-26",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Taça de Portugal",
+  "fase": "Final",
+  "data": "2024-05-26",
+  "estadio": "Estádio Nacional do Jamor, Oeiras",
+  "resultado": "FC Porto 2–1 Sporting (a.p.)",
+  "fonte": "https://www.zerozero.pt/jogo/2024-05-26-fc-porto-sporting/10021581",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "João Mário", "numero": 23, "pais": "PT", "pos": "DD" },
+        { "nome": "Zé Pedro", "numero": 97, "pais": "PT", "pos": "DC" },
+        { "nome": "Otávio Ataíde", "numero": 31, "pais": "BR", "pos": "DC" },
+        { "nome": "Wendell", "numero": 18, "pais": "BR", "pos": "DE" },
+        { "nome": "Alan Varela", "numero": 22, "pais": "AR", "pos": "MDC" },
+        { "nome": "Nico González", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Francisco Conceição", "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "MO" },
+        { "nome": "Wenderson Galeno", "numero": 13, "pais": "BR", "pos": "EE" },
+        { "nome": "Evanilson", "numero": 30, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 25 }] }
+      ],
+      "suplentes": [
+        { "nome": "Martim Fernandes", "numero": 52, "minuto": 113, "pais": "PT" },
+        { "nome": "Marko Grujic", "numero": 8, "minuto": 85, "pais": "RS" },
+        { "nome": "Romário Baró", "numero": 28, "minuto": 104, "pais": "PT" },
+        { "nome": "Stephen Eustaquio", "numero": 6, "minuto": 85, "pais": "CA" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 119, "pais": "PT" },
+        { "nome": "Mehdi Taremi", "numero": 9, "minuto": 46, "pais": "IR", "golos": [{ "minuto": 100, "penalti": true }] }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Fábio Cardoso", "Danny Namaso"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Diogo Pinto", "numero": 51, "pais": "PT", "pos": "GR" },
+        { "nome": "Jeremiah St. Juste", "numero": 3, "pais": "NL", "pos": "DC", "golos": [{ "minuto": 20 }] },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Geny Catamo", "numero": 21, "pais": "MZ", "pos": "MD" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MC" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "MC" },
+        { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "ME" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "MO" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 83, "pais": "PT" },
+        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 71, "pais": "CI" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 35, "pais": "PT" },
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 71, "pais": "PT" },
+        { "nome": "Koba Koindredi", "numero": 80, "minuto": 91, "pais": "FR" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 103, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Francisco Silva", "Luís Neto", "Marcus Edwards"]
+    }
+  ]
+}

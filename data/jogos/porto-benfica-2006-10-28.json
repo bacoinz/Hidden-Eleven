@@ -1,0 +1,60 @@
+{
+  "id": "porto-benfica-2006-10-28",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "8.ª jornada",
+  "data": "2006-10-28",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 3–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2006-10-28-fc-porto-benfica/225281",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Bruno Alves", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Marek Cech", "numero": 5, "pais": "SK", "pos": "DE" },
+        { "nome": "Paulo Assunção", "numero": 18, "pais": "BR", "pos": "MD" },
+        { "nome": "Anderson", "numero": 10, "pais": "BR", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "ME", "golos": [{ "minuto": 21 }] },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" },
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 11 }] }
+      ],
+      "suplentes": [
+        { "nome": "Raul Meireles", "numero": 16, "minuto": 30, "pais": "PT" },
+        { "nome": "Tarik Sektioui", "numero": 11, "minuto": 73, "pais": "MA" },
+        { "nome": "Bruno Moraes", "numero": 29, "minuto": 83, "pais": "BR", "golos": [{ "minuto": "90+2" }] }
+      ],
+      "nao_utilizados": [{ "nome": "Vítor Baía", "aceites": ["baia"] }, "Ricardo Costa", "Jorginho", "Alan"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Nélson", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Rocha", "numero": 33, "pais": "PT", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Léo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Paulo Jorge", "numero": 15, "pais": "PT", "pos": "MD" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Kostas Katsouranis", "numero": 8, "pais": "GR", "pos": "MC", "golos": [{ "minuto": 62 }] },
+        { "nome": "Simão Sabrosa", "aceites": ["simao"], "numero": 20, "pais": "PT", "pos": "ME" },
+        { "nome": "Kikin Fonseca", "numero": 17, "pais": "MX", "pos": "PL" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 81 }] }
+      ],
+      "suplentes": [{ "nome": "Nuno Assis", "numero": 25, "minuto": 53, "pais": "PT" }, { "nome": "Pedro Mantorras", "numero": 9, "minuto": 61, "pais": "AO" }],
+      "nao_utilizados": ["Marcelo Moretto", "Anderson Luís", "Miguelito", "Beto", "Andrei Karyaka"]
+    }
+  ]
+}

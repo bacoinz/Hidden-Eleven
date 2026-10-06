@@ -1,0 +1,64 @@
+{
+  "id": "benfica-sporting-2011-03-02",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Taça da Liga",
+  "fase": "Meia-final",
+  "data": "2011-03-02",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2011-03-02-benfica-sporting/1537442",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Roberto Jiménez", "numero": 12, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Sidnei", "numero": 27, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 18, "pais": "PT", "pos": "DE" },
+        { "nome": "Toto Salvio", "numero": 8, "pais": "AR", "pos": "MD" },
+        { "nome": "Javi García", "numero": 6, "pais": "ES", "pos": "MC", "golos": [{ "minuto": "90+2" }] },
+        { "nome": "Carlos Martins", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "ME" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 34 }] },
+        { "nome": "Javier Saviola", "numero": 30, "pais": "AR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 66, "pais": "AR" },
+        { "nome": "Felipe Menezes", "numero": 16, "minuto": 78, "pais": "BR" },
+        { "nome": "Franco Jara", "numero": 11, "minuto": 66, "pais": "AR" }
+      ],
+      "nao_utilizados": ["José Moreira", "Roderick Miranda", "Weldon", "Alan Kardec"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Couceiro" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 47, "pais": "PT", "pos": "DD" },
+        { "nome": "Marco Torsiglieri", "numero": 2, "pais": "AR", "pos": "DC" },
+        { "nome": "Daniel Carriço", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Evaldo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Alberto Zapater", "numero": 21, "pais": "ES", "pos": "MDC" },
+        { "nome": "André Santos", "numero": 26, "pais": "PT", "pos": "MDC" },
+        { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Simon Vukcevic", "numero": 77, "pais": "ME", "pos": "MO" },
+        { "nome": "Matías Fernández", "numero": 14, "pais": "CL", "pos": "EE" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 21 }] }
+      ],
+      "suplentes": [
+        { "nome": "Abel Ferreira", "numero": 78, "minuto": 85, "pais": "PT" },
+        { "nome": "Anderson Polga", "numero": 4, "minuto": 14, "pais": "BR" },
+        { "nome": "Jaime Valdés", "numero": 15, "minuto": 63, "pais": "CL" }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Cristiano", "Maniche", "Carlos Saleiro"]
+    }
+  ]
+}

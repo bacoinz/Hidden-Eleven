@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2019-02-03",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "20.ª jornada",
+  "data": "2019-02-03",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 2–4 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2019-02-03-sporting-benfica/6067627",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Marcel Keizer" },
+      "onze": [
+        { "nome": "Renan Ribeiro", "numero": 40, "pais": "BR", "pos": "GR" },
+        { "nome": "Bruno Gaspar", "numero": 76, "pais": "AO", "pos": "DD" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "André Pinto", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Jefferson", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Nemanja Gudelj", "numero": 86, "pais": "RS", "pos": "MC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 43 }] },
+        { "nome": "Wendel", "numero": 37, "pais": "BR", "pos": "MC" },
+        { "nome": "Raphinha", "numero": 21, "pais": "BR", "pos": "ED" },
+        { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 89, "penalti": true }] },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Luiz Phellype", "numero": 29, "minuto": 90, "pais": "BR" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 86, "pais": "CV" },
+        { "nome": "Abdoulay Diaby", "numero": 23, "minuto": 46, "pais": "ML" }
+      ],
+      "nao_utilizados": ["Romain Salin", "Tiago Ilori", "Cristián Borja", "Radosav Petrovic"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Bruno Lage" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 6, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 47 }] },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MD", "golos": [{ "minuto": 73, "penalti": true }] },
+        { "nome": "Andreas Samaris", "numero": 22, "pais": "GR", "pos": "MC" },
+        { "nome": "Gabriel Pires", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "ME" },
+        { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL", "golos": [{ "minuto": 11 }] },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 79, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 36 }] }
+      ],
+      "suplentes": [
+        { "nome": "Mile Svilar", "numero": 1, "minuto": 88, "pais": "RS" },
+        { "nome": "Franco Cervi", "numero": 11, "minuto": 77, "pais": "AR" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": "90+4", "pais": "AR" }
+      ],
+      "nao_utilizados": ["Ferro", "Filip Krovinovic", "Gedson Fernandes", "Jota"]
+    }
+  ]
+}

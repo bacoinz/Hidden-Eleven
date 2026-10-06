@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2015-02-08",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "20.ª jornada",
+  "data": "2015-02-08",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2015-02-08-sporting-benfica/3597315",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Marco Silva" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric Soares", "aceites": ["cedric"], "numero": 41, "pais": "PT", "pos": "DD" },
+        { "nome": "Paulo Oliveira", "numero": 26, "pais": "PT", "pos": "DC" },
+        { "nome": "Tobias Figueiredo", "numero": 55, "pais": "PT", "pos": "DC" },
+        { "nome": "Jefferson", "numero": 4, "pais": "BR", "pos": "DE", "golos": [{ "minuto": 87 }] },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "André Carrillo", "numero": 18, "pais": "PE", "pos": "ED" },
+        { "nome": "Fredy Montero", "numero": 10, "pais": "CO", "pos": "PL" },
+        { "nome": "Nani", "numero": 77, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Diego Capel", "numero": 11, "minuto": "90+2", "pais": "ES" },
+        { "nome": "Carlos Mané", "numero": 36, "minuto": 78, "pais": "PT" },
+        { "nome": "Junya Tanaka", "numero": 19, "minuto": 89, "pais": "JP" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Naby Sarr", "Oriol Rosell", "André Martins"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC", "golos": [{ "minuto": "90+3" }] },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Toto Salvio", "numero": 18, "pais": "AR", "pos": "MD" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "MC" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Ola John", "numero": 15, "pais": "NL", "pos": "ME" },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" },
+        { "nome": "Jonas", "numero": 17, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Pizzi", "numero": 21, "minuto": 87, "pais": "PT" },
+        { "nome": "Anderson Talisca", "numero": 30, "minuto": 64, "pais": "BR" },
+        { "nome": "Derley", "numero": 9, "minuto": "90+1", "pais": "BR" }
+      ],
+      "nao_utilizados": ["Paulo Lopes", { "nome": "Lisandro López", "aceites": ["lisandro"] }, "Bryan Cristante", "Gonçalo Guedes"]
+    }
+  ]
+}

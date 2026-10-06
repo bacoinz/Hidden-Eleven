@@ -1,0 +1,67 @@
+{
+  "id": "porto-sporting-2022-02-11",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "22.ª jornada",
+  "data": "2022-02-11",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 2–2 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2022-02-11-fc-porto-sporting/8050224",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "João Mário", "numero": 23, "pais": "PT", "pos": "DD" },
+        { "nome": "Chancel Mbemba", "numero": 19, "pais": "CD", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "DE" },
+        { "nome": "Otávio", "numero": 25, "pais": "PT", "pos": "MD" },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Fábio Vieira", "numero": 50, "pais": "PT", "pos": "ME", "golos": [{ "minuto": 38 }] },
+        { "nome": "Evanilson", "numero": 30, "pais": "BR", "pos": "PL" },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 78 }] }
+      ],
+      "suplentes": [
+        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS" },
+        { "nome": "Francisco Conceição", "numero": 10, "minuto": 74, "pais": "PT" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 90, "pais": "ES" },
+        { "nome": "Pepê Aquino", "numero": 11, "minuto": 74, "pais": "BR", "aceites": ["Pepê"], "curto": "Pepê" },
+        { "nome": "Wenderson Galeno", "numero": 13, "minuto": 57, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Agustín Marchesín", "Fábio Cardoso", "Wendell", "Stephen Eustaquio"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Zouhair Feddal", "numero": 3, "pais": "MA", "pos": "DC" },
+        { "nome": "Ricardo Esgaio", "numero": 47, "pais": "PT", "pos": "MD" },
+        { "nome": "Matheus Nunes", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Manuel Ugarte", "numero": 15, "pais": "UY", "pos": "MC" },
+        { "nome": "Matheus Reis", "numero": 2, "pais": "BR", "pos": "ME" },
+        { "nome": "Pablo Sarabia", "numero": 17, "pais": "ES", "pos": "ED" },
+        { "nome": "Paulinho", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 8 }] },
+        { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 34 }] }
+      ],
+      "suplentes": [
+        { "nome": "Luís Neto", "numero": 13, "minuto": 66, "pais": "PT" },
+        { "nome": "João Palhinha", "numero": 6, "minuto": 55, "pais": "PT" },
+        { "nome": "Bruno Tabata", "numero": 7, "minuto": "90+2", "pais": "BR" },
+        { "nome": "Islam Slimani", "numero": 9, "minuto": 66, "pais": "DZ" }
+      ],
+      "nao_utilizados": ["João Virgínia", "Gonçalo Esteves", "Rúben Vinagre", "Daniel Bragança", "Marcus Edwards"]
+    }
+  ]
+}

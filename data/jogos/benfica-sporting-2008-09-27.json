@@ -1,0 +1,64 @@
+{
+  "id": "benfica-sporting-2008-09-27",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "4.ª jornada",
+  "data": "2008-09-27",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2008-09-27-benfica-sporting/468563",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Quique Flores" },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Sidnei", "numero": 27, "pais": "BR", "pos": "DC", "golos": [{ "minuto": 72 }] },
+        { "nome": "Miguel Vítor", "numero": 28, "pais": "IL", "pos": "DC" },
+        { "nome": "Jorge Ribeiro", "numero": 25, "pais": "PT", "pos": "DE" },
+        { "nome": "José Antonio Reyes", "numero": 6, "pais": "ES", "pos": "MD", "golos": [{ "minuto": 67 }] },
+        { "nome": "Hassan Yebda", "numero": 26, "pais": "DZ", "pos": "MC" },
+        { "nome": "Carlos Martins", "numero": 24, "pais": "PT", "pos": "MC" },
+        { "nome": "Rúben Amorim", "numero": 15, "pais": "PT", "pos": "ME" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kostas Katsouranis", "numero": 8, "minuto": 46, "pais": "GR" },
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 60, "pais": "AR" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 75, "pais": "AR" }
+      ],
+      "nao_utilizados": ["José Moreira", "Léo", "Gilles Binya", "Ariza Makukula"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Abel Ferreira", "numero": 78, "pais": "PT", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Miguel Veloso", "numero": 24, "pais": "PT", "pos": "MDC" },
+        { "nome": "Fábio Rochemback", "numero": 26, "pais": "BR", "pos": "MDC" },
+        { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Leandro Romagnoli", "numero": 30, "pais": "AR", "pos": "MO" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "EE" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 72, "pais": "PT" },
+        { "nome": "Derlei", "numero": 11, "minuto": 68, "pais": "BR" },
+        { "nome": "Liedson", "numero": 31, "minuto": 72, "pais": "PT" }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Pedro Silva", "Daniel Carriço", { "nome": "Adrien Silva", "aceites": ["adrien"] }]
+    }
+  ]
+}

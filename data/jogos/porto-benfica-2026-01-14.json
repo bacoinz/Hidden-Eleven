@@ -1,0 +1,66 @@
+{
+  "id": "porto-benfica-2026-01-14",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Taça de Portugal",
+  "fase": "Quartos de final",
+  "data": "2026-01-14",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 1–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2026-01-14-fc-porto-benfica/11819211",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Francesco Farioli" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Martim Fernandes", "numero": 52, "pais": "PT", "pos": "DD" },
+        { "nome": "Jan Bednarek", "numero": 5, "pais": "PL", "pos": "DC", "golos": [{ "minuto": 15 }] },
+        { "nome": "Thiago Silva", "aceites": ["thiago"], "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Jakub Kiwior", "numero": 4, "pais": "PL", "pos": "DE" },
+        { "nome": "Victor Froholdt", "numero": 8, "pais": "DK", "pos": "MC" },
+        { "nome": "Pablo Rosario", "numero": 13, "pais": "DO", "pos": "MC" },
+        { "nome": "Gabri Veiga", "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "ED" },
+        { "nome": "Samu", "numero": 9, "pais": "ES", "pos": "PL" },
+        { "nome": "Borja Sainz", "numero": 17, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Alberto Costa", "numero": 20, "minuto": 75, "pais": "PT" },
+        { "nome": "Alan Varela", "numero": 22, "minuto": 76, "pais": "AR" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 88, "pais": "CA" },
+        { "nome": "Rodrigo Mora", "numero": 86, "minuto": 62, "pais": "PT" },
+        { "nome": "William Gomes", "numero": 7, "minuto": 62, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Dominik Prpić", "Deniz Gül", "Oskar Pietuszewski"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Anatoliy Trubin", "numero": 1, "pais": "UA", "pos": "GR" },
+        { "nome": "Amar Dedic", "numero": 17, "pais": "BA", "pos": "DD" },
+        { "nome": "António Silva", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Tomás Araújo", "numero": 44, "pais": "PT", "pos": "DC" },
+        { "nome": "Samuel Dahl", "numero": 26, "pais": "SE", "pos": "DE" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "MDC" },
+        { "nome": "Richard Ríos", "numero": 20, "pais": "CO", "pos": "MDC" },
+        { "nome": "Gianluca Prestianni", "numero": 25, "pais": "AR", "pos": "ED" },
+        { "nome": "Leandro Barreiro", "numero": 18, "pais": "LU", "pos": "MO" },
+        { "nome": "Sidny Cabral", "numero": 15, "pais": "CV", "pos": "EE" },
+        { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Georgiy Sudakov", "numero": 10, "minuto": 44, "pais": "UA" },
+        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 83, "pais": "HR" },
+        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 74, "pais": "NO" }
+      ],
+      "nao_utilizados": ["Diogo Ferreira", "João Fonseca", "Gonçalo Oliveira", "Manu Silva", "Enzo Barrenechea", "João Rego"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "benfica-porto-2018-04-15",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "30.ª jornada",
+  "data": "2018-04-15",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 0–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2018-04-15-benfica-fc-porto/5442727",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Bruno Varela", "numero": 30, "pais": "PT", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Ljubomir Fejsa", "numero": 5, "pais": "RS", "pos": "MC" },
+        { "nome": "Andrija Zivkovic", "numero": 17, "pais": "RS", "pos": "MC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "ED" },
+        { "nome": "Raúl Jiménez", "numero": 9, "pais": "MX", "pos": "PL" },
+        { "nome": "Franco Cervi", "numero": 22, "pais": "AR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Andreas Samaris", "numero": 7, "minuto": 74, "pais": "GR" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 66, "pais": "AR" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 87, "pais": "CH" }
+      ],
+      "nao_utilizados": ["Mile Svilar", "Luisão", "Eliseu", "João Carvalho"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Ricardo Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Felipe", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Alex Telles", "numero": 13, "pais": "BR", "pos": "DE" },
+        { "nome": "Otávio", "numero": 25, "pais": "BR", "pos": "MD" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC", "golos": [{ "minuto": 90 }] },
+        { "nome": "Sérgio Oliveira", "numero": 27, "pais": "PT", "pos": "MC" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "ME" },
+        { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "PL" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Óliver Torres", "numero": 10, "minuto": 74, "pais": "ES" },
+        { "nome": "Jesús Corona", "numero": 17, "minuto": 80, "pais": "MX" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 83, "pais": "CM" }
+      ],
+      "nao_utilizados": ["Vaná Alves", { "nome": "Maxi Pereira", "aceites": ["maxi"] }, "Diego Reyes", "Hernâni"]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "porto-sporting-2007-03-17",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "22.ª jornada",
+  "data": "2007-03-17",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 0–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2007-03-17-fc-porto-sporting/225393",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Bruno Alves", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "BR", "pos": "DC" },
+        { "nome": "Marek Čech", "numero": 5, "pais": "SK", "pos": "DE" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Paulo Assunção", "numero": 18, "pais": "BR", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Alan", "numero": 21, "pais": "BR", "pos": "ED" },
+        { "nome": "Adriano Louzada", "numero": 28, "pais": "BR", "pos": "PL" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Jorginho", "numero": 20, "minuto": 73, "pais": "BR" },
+        { "nome": "Bruno Moraes", "numero": 29, "minuto": 77, "pais": "BR" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 45, "pais": "PT" }
+      ],
+      "nao_utilizados": [{ "nome": "Vítor Baía", "aceites": ["baia"] }, "Ricardo Costa", "João Paulo", "Wason Rentería"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Abel", "numero": 78, "pais": "PT", "pos": "DD" },
+        { "nome": "Marco Caneira", "numero": 12, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Rodrigo Tello", "numero": 11, "pais": "CL", "pos": "DE", "golos": [{ "minuto": 71 }] },
+        { "nome": "Miguel Veloso", "numero": 24, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MDC" },
+        { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Leandro Romagnoli", "numero": 30, "pais": "AR", "pos": "MO" },
+        { "nome": "Nani", "numero": 18, "pais": "PT", "pos": "EE" },
+        { "nome": "Alecsandro", "numero": 19, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Bruno Pereirinha", "numero": 47, "minuto": 67, "pais": "PT" }, { "nome": "Custódio", "numero": 27, "minuto": 82, "pais": "PT" }],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Miguel Garcia", "Carlos Paredes", "Pontus Farnerud", "Carlos Bueno"]
+    }
+  ]
+}

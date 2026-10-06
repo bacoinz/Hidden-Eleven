@@ -572,5 +572,97 @@
       },
       {}
     ]
+  },
+  "benfica-porto-2023-04-07": {
+    "equipas": [
+      {},
+      {
+        "nomes": {
+          "João Mário": "João Mário Lopes",
+          "Pepê": "Pepê Aquino"
+        },
+        "curto": {
+          "João Mário Lopes": "João Mário",
+          "Pepê Aquino": "Pepê"
+        }
+      }
+    ]
+  },
+  "porto-benfica-2021-12-30": {
+    "equipas": [
+      {
+        "nomes": {
+          "João Mário": "João Mário Lopes"
+        },
+        "curto": {
+          "João Mário Lopes": "João Mário"
+        }
+      },
+      {}
+    ]
+  },
+  "porto-benfica-2024-03-03": {
+    "equipas": [
+      {
+        "nomes": {
+          "João Mário": "João Mário Lopes",
+          "Pepê": "Pepê Aquino"
+        },
+        "curto": {
+          "João Mário Lopes": "João Mário",
+          "Pepê Aquino": "Pepê"
+        }
+      },
+      {}
+    ]
+  },
+  "porto-sporting-2022-02-11": {
+    "equipas": [
+      {
+        "nomes": {
+          "Pepê": "Pepê Aquino"
+        },
+        "curto": {
+          "Pepê Aquino": "Pepê"
+        }
+      },
+      {}
+    ]
+  },
+  "sporting-porto-2021-01-19": {
+    "equipas": [
+      {},
+      {
+        "nomes": {
+          "João Mário": "João Mário Lopes"
+        },
+        "curto": {
+          "João Mário Lopes": "João Mário"
+        }
+      }
+    ]
+  },
+  "sporting-porto-2023-02-12": {
+    "equipas": [
+      {},
+      {
+        "nomes": {
+          "Pepê": "Pepê Aquino"
+        },
+        "curto": {
+          "Pepê Aquino": "Pepê"
+        }
+      }
+    ]
+  },
+  "porto-benfica-2006-10-28": {
+    "equipas": [
+      {},
+      {
+        "nomes": {
+          "Anderson": "Anderson Luís"
+        }
+      }
+    ]
   }
 }

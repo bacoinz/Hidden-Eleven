@@ -1,0 +1,64 @@
+{
+  "id": "porto-sporting-2010-02-02",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Taça de Portugal",
+  "fase": "Quartos de final",
+  "data": "2010-02-02",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 5–2 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2010-02-02-fc-porto-sporting/1154534",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Beto Pimparel", "numero": 24, "pais": "PT", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 18 }] },
+        { "nome": "Maicon", "numero": 16, "pais": "BR", "pos": "DC" },
+        { "nome": "Álvaro Pereira", "numero": 15, "pais": "UY", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MDC" },
+        { "nome": "Rúben Micael", "numero": 28, "pais": "PT", "pos": "MDC" },
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "pais": "AR", "pos": "ED", "golos": [{ "minuto": 57 }] },
+        { "nome": "Fernando Belluschi", "numero": 7, "pais": "AR", "pos": "MO" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 48 }] },
+        { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 34 }, { "minuto": 42 }] }
+      ],
+      "suplentes": [
+        { "nome": "Tomás Costa", "numero": 20, "minuto": 72, "pais": "AR" },
+        { "nome": "Diego Valeri", "numero": 8, "minuto": 76, "pais": "AR" },
+        { "nome": "Orlando Sá", "numero": 29, "minuto": 76, "pais": "PT" }
+      ],
+      "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Nuno André Coelho", "Miguel Lopes", "Fredy Guarín"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Carlos Carvalhal" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Daniel Carriço", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Miguel Veloso", "numero": 24, "pais": "PT", "pos": "MD" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Marat Izmailov", "numero": 7, "pais": "RU", "pos": "ME", "golos": [{ "minuto": 22 }] },
+        { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 90 }] },
+        { "nome": "Carlos Saleiro", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Matías Fernández", "numero": 14, "minuto": 40, "pais": "CL" },
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 79, "pais": "PT" },
+        { "nome": "Sinama Pongolle", "numero": 22, "minuto": 46, "pais": "FR" }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Anderson Polga", "Abel Ferreira", "Hélder Postiga"]
+    }
+  ]
+}

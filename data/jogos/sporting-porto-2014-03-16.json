@@ -1,0 +1,64 @@
+{
+  "id": "sporting-porto-2014-03-16",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "23.ª jornada",
+  "data": "2014-03-16",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2014-03-16-sporting-fc-porto/2838233",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Leonardo Jardim" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric Soares", "aceites": ["cedric"], "numero": 41, "pais": "PT", "pos": "DD" },
+        { "nome": "Marcos Rojo", "numero": 5, "pais": "AR", "pos": "DC" },
+        { "nome": "Eric Dier", "numero": 15, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Jefferson", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "André Martins", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Carlos Mané", "numero": 36, "pais": "PT", "pos": "ED" },
+        { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL", "golos": [{ "minuto": 51 }] },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "André Carrillo", "numero": 18, "minuto": 69, "pais": "PE" },
+        { "nome": "Wilson Eduardo", "numero": 28, "minuto": 86, "pais": "AO" },
+        { "nome": "Fredy Montero", "numero": 17, "minuto": 74, "pais": "CO" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Rúben Semedo", "Gerson Magrão", "Heldon"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luís Castro" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Abdoulaye Ba", "numero": 23, "pais": "SN", "pos": "DC" },
+        { "nome": "Eliaquim Mangala", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Steven Defour", "numero": 35, "pais": "BE", "pos": "MC" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "Carlos Eduardo", "numero": 20, "pais": "BR", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Fabiano Freitas", "numero": 24, "minuto": 62, "pais": "BR" },
+        { "nome": "Juan Quintero", "numero": 10, "minuto": 59, "pais": "CO" },
+        { "nome": "Nabil Ghilas", "numero": 11, "minuto": 77, "pais": "DZ" }
+      ],
+      "nao_utilizados": ["Ricardo Pereira", "Diego Reyes", "Héctor Herrera", "Licá"]
+    }
+  ]
+}

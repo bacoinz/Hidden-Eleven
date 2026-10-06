@@ -1,0 +1,67 @@
+{
+  "id": "sporting-porto-2023-02-12",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "20.ª jornada",
+  "data": "2023-02-12",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–2 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2023-02-12-sporting-fc-porto/8745520",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Matheus Reis", "numero": 2, "pais": "BR", "pos": "DC" },
+        { "nome": "Héctor Bellerín", "numero": 19, "pais": "ES", "pos": "MD" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "MC" },
+        { "nome": "Manuel Ugarte", "numero": 15, "pais": "UY", "pos": "MC" },
+        { "nome": "Fatawu Issahaku", "numero": 18, "pais": "GH", "pos": "ME" },
+        { "nome": "Marcus Edwards", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Youssef Chermiti", "numero": 79, "pais": "PT", "pos": "PL", "golos": [{ "minuto": "90+7" }] },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 55, "pais": "PT" },
+        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 70, "pais": "CI" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 46, "pais": "PT" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 34, "pais": "PT" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 70, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Franco Israel", "Jeremiah St. Juste", "Mateo Tanlongo", "Mateus Fernandes"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "João Mário", "numero": 23, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "DE" },
+        { "nome": "Pepê Aquino", "numero": 11, "pais": "BR", "pos": "MD", "golos": [{ "minuto": "90+4" }], "aceites": ["Pepê"], "curto": "Pepê" },
+        { "nome": "Marko Grujic", "numero": 16, "pais": "RS", "pos": "MC" },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC", "golos": [{ "minuto": 60 }] },
+        { "nome": "Wenderson Galeno", "numero": 13, "pais": "BR", "pos": "ME" },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL" },
+        { "nome": "André Franco", "numero": 20, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 83, "pais": "PT" },
+        { "nome": "David Carmo", "numero": 4, "minuto": 89, "pais": "PT" },
+        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 84, "pais": "CA" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 75, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Rodrigo Conceição", "Bernardo Folha", "Gonçalo Borges", "Danny Namaso"]
+    }
+  ]
+}

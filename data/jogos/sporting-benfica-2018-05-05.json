@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2018-05-05",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "33.ª jornada",
+  "data": "2018-05-05",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 0–0 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2018-05-05-sporting-benfica/5442751",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cristiano Piccini", "numero": 92, "pais": "IT", "pos": "DD" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Jérémy Mathieu", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Rodrigo Battaglia", "numero": 16, "pais": "AR", "pos": "MDC" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MDC" },
+        { "nome": "Gelson Martins", "numero": 77, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Bryan Ruiz", "numero": 20, "pais": "CR", "pos": "EE" },
+        { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Lumor Agbenyenu", "numero": 15, "minuto": 90, "pais": "GH" },
+        { "nome": "Marcos Acuña", "numero": 9, "minuto": 63, "pais": "AR" },
+        { "nome": "Josip Misic", "numero": 27, "minuto": 83, "pais": "HR" }
+      ],
+      "nao_utilizados": ["Romain Salin", "Stefan Ristovski", "Radosav Petrovic", "Fredy Montero"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Bruno Varela", "numero": 30, "pais": "CV", "pos": "GR" },
+        { "nome": "Douglas", "numero": 8, "pais": "BR", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Ljubomir Fejsa", "numero": 5, "pais": "RS", "pos": "MC" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "ED" },
+        { "nome": "Raúl Jiménez", "numero": 9, "pais": "MX", "pos": "PL" },
+        { "nome": "Andrija Zivkovic", "numero": 17, "pais": "RS", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 66, "pais": "AR" },
+        { "nome": "Jonas", "numero": 10, "minuto": 81, "pais": "BR" },
+        { "nome": "Franco Cervi", "numero": 22, "minuto": 88, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Mile Svilar", "Luisão", "Keaton Parks", "Haris Seferovic"]
+    }
+  ]
+}

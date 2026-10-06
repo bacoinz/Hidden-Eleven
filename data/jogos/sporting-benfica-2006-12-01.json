@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2006-12-01",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "12.ª jornada",
+  "data": "2006-12-01",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 0–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2006-12-01-sporting-benfica/225315",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel Garcia", "numero": 15, "pais": "PT", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Rodrigo Tello", "numero": 11, "pais": "CL", "pos": "DE" },
+        { "nome": "Custódio", "numero": 27, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MDC" },
+        { "nome": "Leandro Romagnoli", "numero": 30, "pais": "AR", "pos": "ED" },
+        { "nome": "Carlos Bueno", "numero": 80, "pais": "UY", "pos": "MO" },
+        { "nome": "Nani", "numero": 18, "pais": "PT", "pos": "EE" },
+        { "nome": "Liedson", "numero": 31, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Carlos Martins", "numero": 10, "minuto": 46, "pais": "PT" },
+        { "nome": "Yannick Djaló", "numero": 20, "minuto": 46, "pais": "PT" },
+        { "nome": "Alecsandro", "numero": 19, "minuto": 66, "pais": "BR" }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Miguel Veloso", "Carlos Paredes", "Ronny"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Nélson", "numero": 22, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Rocha", "numero": 33, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 2 }] },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Leo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Kostas Katsouranis", "numero": 8, "pais": "GR", "pos": "MD" },
+        { "nome": "Nuno Assis", "numero": 25, "pais": "PT", "pos": "MC" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Simão Sabrosa", "aceites": ["simao"], "numero": 20, "pais": "PT", "pos": "ME", "golos": [{ "minuto": 36 }] },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" },
+        { "nome": "Fabrizio Miccoli", "numero": 30, "pais": "IT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Beto", "numero": 16, "minuto": "90+1", "pais": "BR" },
+        { "nome": "Giorgos Karagounis", "numero": 26, "minuto": 89, "pais": "GR" },
+        { "nome": "Paulo Jorge", "numero": 15, "minuto": 68, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Marcelo Moretto", "Anderson", "Miguelito", "Kikin Fonseca"]
+    }
+  ]
+}

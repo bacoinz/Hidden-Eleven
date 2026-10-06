@@ -1,0 +1,64 @@
+{
+  "id": "porto-sporting-2015-03-01",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "23.ª jornada",
+  "data": "2015-03-01",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 3–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2015-03-01-fc-porto-sporting/3597348",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Julen Lopetegui" },
+      "onze": [
+        { "nome": "Fabiano Freitas", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC" },
+        { "nome": "Casemiro", "numero": 6, "pais": "BR", "pos": "MC" },
+        { "nome": "Evandro", "numero": 15, "pais": "BR", "pos": "MC" },
+        { "nome": "Cristian Tello", "numero": 11, "pais": "ES", "pos": "ED", "golos": [{ "minuto": 31 }, { "minuto": 58 }, { "minuto": 82 }] },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Bruno Martins Indi", "numero": 3, "minuto": 83, "pais": "NL" },
+        { "nome": "Rúben Neves", "numero": 36, "minuto": 70, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 57, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Helton", "Juan Quintero", "Hernâni Fortes", "Gonçalo Paciência"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Marco Silva" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric Soares", "aceites": ["cedric"], "numero": 41, "pais": "PT", "pos": "DD" },
+        { "nome": "Tobias Figueiredo", "numero": 55, "pais": "PT", "pos": "DC" },
+        { "nome": "Paulo Oliveira", "numero": 26, "pais": "PT", "pos": "DC" },
+        { "nome": "Jonathan Silva", "numero": 33, "pais": "AR", "pos": "DE" },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MC" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 77, "pais": "PT", "pos": "ED" },
+        { "nome": "Fredy Montero", "numero": 10, "pais": "CO", "pos": "PL" },
+        { "nome": "André Carrillo", "numero": 18, "pais": "PE", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "André Martins", "numero": 8, "minuto": 79, "pais": "PT" },
+        { "nome": "Islam Slimani", "numero": 9, "minuto": 60, "pais": "DZ" },
+        { "nome": "Diego Capel", "numero": 11, "minuto": 60, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Miguel Lopes", "Oriol Rosell", "Junya Tanaka"]
+    }
+  ]
+}

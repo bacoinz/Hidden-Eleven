@@ -1,0 +1,68 @@
+{
+  "id": "porto-benfica-2026-09-20",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "7.ª jornada",
+  "data": "2026-09-20",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 3–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2026-09-20-fc-porto-benfica/12278065",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Francesco Farioli" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Alberto Costa", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Jan Bednarek", "numero": 5, "pais": "PL", "pos": "DC" },
+        { "nome": "Jakub Kiwior", "numero": 4, "pais": "PL", "pos": "DC" },
+        { "nome": "Martim Fernandes", "numero": 52, "pais": "PT", "pos": "DE" },
+        { "nome": "Victor Froholdt", "numero": 8, "pais": "DK", "pos": "MC", "golos": [{ "minuto": 54 }] },
+        { "nome": "Pablo Rosario", "numero": 13, "pais": "DO", "pos": "MC" },
+        { "nome": "Gabri Veiga", "numero": 10, "pais": "ES", "pos": "MC", "golos": [{ "minuto": 31 }] },
+        { "nome": "William Gomes", "numero": 7, "pais": "BR", "pos": "ED" },
+        { "nome": "André Silva", "numero": 19, "pais": "PT", "pos": "PL" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Francisco Moura", "numero": 74, "minuto": 69, "pais": "PT" },
+        { "nome": "Hwang Inbeom", "numero": 16, "minuto": 38, "pais": "KR", "golos": [{ "minuto": 59 }] },
+        { "nome": "Samu", "numero": 9, "minuto": 84, "pais": "ES" },
+        { "nome": "Borja Sainz", "numero": 17, "minuto": 69, "pais": "ES" },
+        { "nome": "Oskar Pietuszewski", "numero": 77, "minuto": 84, "pais": "PL" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Dominik Prpić", "Luís Gomes", "João Souza", "Alan Varela", "Santiago Gimenez", "Gabriel Mec"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Marco Silva" },
+      "onze": [
+        { "nome": "Samuel Soares", "numero": 24, "pais": "PT", "pos": "GR" },
+        { "nome": "Alexander Bah", "numero": 6, "pais": "DK", "pos": "DD", "golos": [{ "minuto": 51 }] },
+        { "nome": "Tomás Araújo", "numero": 44, "pais": "PT", "pos": "DC" },
+        { "nome": "Clément Lenglet", "numero": 2, "pais": "FR", "pos": "DC" },
+        { "nome": "Samuel Dahl", "numero": 26, "pais": "SE", "pos": "DE" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "MDC" },
+        { "nome": "João Palhinha", "numero": 36, "pais": "PT", "pos": "MDC" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "ED" },
+        { "nome": "Georgiy Sudakov", "numero": 10, "pais": "UA", "pos": "MO" },
+        { "nome": "Gianluca Prestianni", "numero": 25, "pais": "AR", "pos": "EE" },
+        { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alessandro Circati", "numero": 3, "minuto": 38, "pais": "AU" },
+        { "nome": "Souffian El Karouani", "numero": 34, "minuto": 85, "pais": "MA" },
+        { "nome": "Leandro Barreiro", "numero": 18, "minuto": 74, "pais": "LU" },
+        { "nome": "Dodi Lukebakio", "numero": 11, "minuto": 74, "pais": "BE" },
+        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 74, "pais": "NO" }
+      ],
+      "nao_utilizados": ["Anatoliy Trubin", "Daniel Banjaqui", "Manu Silva", "Claudio Echeverri", "Jhon Durán", "Anísio Cabral", "Jakub Kamiński"]
+    }
+  ]
+}

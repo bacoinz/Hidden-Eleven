@@ -1,0 +1,66 @@
+{
+  "id": "benfica-sporting-2020-07-25",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "34.ª jornada",
+  "data": "2020-07-25",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2020-07-25-benfica-sporting/6958812",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Nélson Veríssimo" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Tomás Tavares", "numero": 84, "pais": "PT", "pos": "DE" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MD" },
+        { "nome": "Julian Weigl", "numero": 28, "pais": "DE", "pos": "MC" },
+        { "nome": "Gabriel Pires", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Franco Cervi", "numero": 11, "pais": "AR", "pos": "ME" },
+        { "nome": "Chiquinho", "numero": 19, "pais": "PT", "pos": "PL" },
+        { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL", "golos": [{ "minuto": 28 }] }
+      ],
+      "suplentes": [
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 66, "pais": "PT" },
+        { "nome": "Carlos Vinícius", "numero": 95, "minuto": 66, "pais": "BR", "golos": [{ "minuto": 88 }] },
+        { "nome": "Jota", "numero": 73, "minuto": "90+1", "pais": "PT" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "minuto": 76, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Ivan Zlobin", "João Ferreira", "Ferro", "Andrija Zivkovic", "Dyego Sousa"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "5-3-2",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Luís Maximiano", "numero": 81, "pais": "PT", "pos": "GR" },
+        { "nome": "Stefan Ristovski", "numero": 13, "pais": "MK", "pos": "DD" },
+        { "nome": "Luís Neto", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "pais": "PT", "pos": "DC" },
+        { "nome": "Marcos Acuña", "numero": 9, "pais": "AR", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 35, "pais": "PT", "pos": "DE" },
+        { "nome": "Wendel", "numero": 37, "pais": "BR", "pos": "MC" },
+        { "nome": "Matheus Nunes", "numero": 73, "pais": "BR", "pos": "MC" },
+        { "nome": "Jovane Cabral", "numero": 77, "pais": "CV", "pos": "MC" },
+        { "nome": "Gonzalo Plata", "numero": 20, "pais": "EC", "pos": "PL" },
+        { "nome": "Andraz Sporar", "numero": 90, "pais": "SI", "pos": "PL", "golos": [{ "minuto": 69 }] }
+      ],
+      "suplentes": [
+        { "nome": "Cristián Borja", "numero": 26, "minuto": 82, "pais": "CO" },
+        { "nome": "Rodrigo Battaglia", "numero": 16, "minuto": 87, "pais": "AR" },
+        { "nome": "Tiago Tomás", "numero": 51, "minuto": 46, "pais": "PT" },
+        { "nome": "Luciano Vietto", "numero": 10, "minuto": 82, "pais": "AR" }
+      ],
+      "nao_utilizados": ["Renan Ribeiro", "Idrissa Doumbia", "Francisco Geraldes", "Rafael Camacho"]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "porto-benfica-2009-02-08",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "17.ª jornada",
+  "data": "2009-02-08",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 1–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2009-02-08-fc-porto-benfica/468668",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DD" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Aly Cissokho", "numero": 28, "pais": "FR", "pos": "DE" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 8, "pais": "AR", "pos": "MC", "golos": [{ "minuto": 72, "penalti": true }] },
+        { "nome": "Cristián Rodríguez", "numero": 10, "pais": "UY", "pos": "ED" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "PL" },
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 65, "pais": "AR" },
+        { "nome": "Ernesto Farías", "numero": 19, "minuto": 89, "pais": "AR" }
+      ],
+      "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Pedro Emanuel", "Milan Stepanov", "Fredy Guarín", "Tomás Costa"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Quique Flores" },
+      "onze": [
+        { "nome": "José Moreira", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "David Luiz", "numero": 23, "pais": "BR", "pos": "DC" },
+        { "nome": "Sidnei", "numero": 27, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "Hassan Yebda", "numero": 26, "pais": "DZ", "pos": "MDC", "golos": [{ "minuto": 45 }] },
+        { "nome": "Kostas Katsouranis", "numero": 8, "pais": "GR", "pos": "MDC" },
+        { "nome": "José Antonio Reyes", "numero": 6, "pais": "ES", "pos": "ED" },
+        { "nome": "Pablo Aimar", "numero": 10, "pais": "AR", "pos": "MO" },
+        { "nome": "Rúben Amorim", "numero": 15, "pais": "PT", "pos": "EE" },
+        { "nome": "David Suazo", "numero": 30, "pais": "HN", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Carlos Martins", "numero": 24, "minuto": 93, "pais": "PT" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 62, "pais": "AR" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 86, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Quim", "Jorge Ribeiro", "Gilles Binya", { "nome": "Óscar Cardozo", "aceites": ["tacuara"] }]
+    }
+  ]
+}

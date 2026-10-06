@@ -1,0 +1,63 @@
+{
+  "id": "sporting-benfica-2008-04-16",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Taça de Portugal",
+  "fase": "Meia-final",
+  "data": "2008-04-16",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 5–3 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2008-04-16-sporting-benfica/333518",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Abel Ferreira", "numero": 78, "pais": "PT", "pos": "DD" },
+        { "nome": "Tonel", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Miguel Veloso", "numero": 24, "pais": "PT", "pos": "DC" },
+        { "nome": "Leandro Grimi", "numero": 18, "pais": "AR", "pos": "DE" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 28, "pais": "PT", "pos": "MDC" },
+        { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 68 }, { "minuto": 84 }] },
+        { "nome": "Simon Vukcevic", "numero": 10, "pais": "ME", "pos": "MO", "golos": [{ "minuto": "90+3" }] },
+        { "nome": "Leandro Romagnoli", "numero": 30, "pais": "AR", "pos": "EE" },
+        { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 76 }] }
+      ],
+      "suplentes": [
+        { "nome": "Gladstone", "numero": 26, "minuto": 86, "pais": "BR" },
+        { "nome": "Marat Izmailov", "numero": 7, "minuto": 35, "pais": "RU" },
+        { "nome": "Derlei", "numero": 11, "minuto": 61, "pais": "BR", "golos": [{ "minuto": 79 }] }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Pedro Silva", "Bruno Pereirinha", { "nome": "Rodrigo Tiuí", "aceites": ["tiui"] }]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Fernando Chalana" },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Nélson", "numero": 22, "pais": "PT", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Léo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "Kostas Katsouranis", "numero": 8, "pais": "GR", "pos": "MDC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "pais": "AR", "pos": "ED" },
+        { "nome": "Cristián Rodríguez", "numero": 26, "pais": "UY", "pos": "MO", "golos": [{ "minuto": 82 }] },
+        { "nome": "Rui Costa", "numero": 10, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 19 }] },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 31 }] }
+      ],
+      "suplentes": [
+        { "nome": "Laszlo Sepsi", "numero": 33, "minuto": 66, "pais": "RO" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY" }
+      ],
+      "nao_utilizados": ["Hans-Jörg Butt", "Luís Filipe", "Edcarlos", "Gilles Binya", "Pedro Mantorras"]
+    }
+  ]
+}

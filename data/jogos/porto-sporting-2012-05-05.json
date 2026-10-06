@@ -1,0 +1,64 @@
+{
+  "id": "porto-sporting-2012-05-05",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "29.ª jornada",
+  "data": "2012-05-05",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 2–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2012-05-05-fc-porto-sporting/1730610",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Vítor Pereira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Cristian Sapunaru", "numero": 21, "pais": "RO", "pos": "DD" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 3, "pais": "AR", "pos": "MC" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 82, "penalti": true }, { "minuto": 90 }] },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "pais": "CO", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Danilo", "numero": 2, "minuto": 58, "pais": "BR" },
+        { "nome": "Steven Defour", "numero": 35, "minuto": 65, "pais": "BE" },
+        { "nome": "Marc Janko", "numero": 29, "minuto": 58, "pais": "AT" }
+      ],
+      "nao_utilizados": ["Rafael Bracali", "Rolando", "Djalma Campos", "Kléber"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Ricardo Sá Pinto" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Bruno Pereirinha", "numero": 25, "pais": "PT", "pos": "DD" },
+        { "nome": "Oguchi Onyewu", "numero": 5, "pais": "US", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Emiliano Insúa", "numero": 48, "pais": "AR", "pos": "DE" },
+        { "nome": "Elias", "numero": 77, "pais": "BR", "pos": "MDC" },
+        { "nome": "Stijn Schaars", "numero": 8, "pais": "NL", "pos": "MDC" },
+        { "nome": "André Carrillo", "numero": 18, "pais": "PE", "pos": "ED" },
+        { "nome": "Matías Fernández", "numero": 14, "pais": "CL", "pos": "MO" },
+        { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" },
+        { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "André Martins", "numero": 28, "minuto": 71, "pais": "PT" },
+        { "nome": "Jeffrén Suárez", "numero": 17, "minuto": 61, "pais": "VE" },
+        { "nome": "Diego Rubio", "numero": 33, "minuto": 79, "pais": "CL" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Daniel Carriço", "Xandão", "Evaldo"]
+    }
+  ]
+}

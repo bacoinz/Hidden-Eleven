@@ -1,0 +1,67 @@
+{
+  "id": "sporting-porto-2026-03-03",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Taça de Portugal",
+  "fase": "Meia-final",
+  "data": "2026-03-03",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2026-03-03-sporting-fc-porto/11819215",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Rui Borges" },
+      "onze": [
+        { "nome": "Rui Silva", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Iván Fresneda", "numero": 22, "pais": "ES", "pos": "DD" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Maxi Araújo", "numero": 20, "pais": "UY", "pos": "DE" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MDC" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "MDC" },
+        { "nome": "Luís Guilherme", "numero": 31, "pais": "BR", "pos": "ED" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "MO" },
+        { "nome": "Geny Catamo", "numero": 10, "pais": "MZ", "pos": "EE" },
+        { "nome": "Luis Suárez", "numero": 97, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 61, "penalti": true }] }
+      ],
+      "suplentes": [
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 84, "pais": "PT" },
+        { "nome": "João Simões", "numero": 52, "minuto": 65, "pais": "PT" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 85, "pais": "PT" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "minuto": 66, "pais": "PT" }
+      ],
+      "nao_utilizados": ["João Virgínia", "Georgios Vagiannidis", "Eduardo Quaresma", "Souleymane Faye", "Rafael Nel"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Francesco Farioli" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "Alberto Costa", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Jan Bednarek", "numero": 5, "pais": "PL", "pos": "DC" },
+        { "nome": "Pablo Rosario", "numero": 13, "pais": "DO", "pos": "DC" },
+        { "nome": "Francisco Moura", "numero": 74, "pais": "PT", "pos": "DE" },
+        { "nome": "Seko Fofana", "numero": 42, "pais": "CI", "pos": "MC" },
+        { "nome": "Alan Varela", "numero": 22, "pais": "AR", "pos": "MC" },
+        { "nome": "Rodrigo Mora", "numero": 86, "pais": "PT", "pos": "MC" },
+        { "nome": "William Gomes", "numero": 7, "pais": "BR", "pos": "ED" },
+        { "nome": "Terem Moffi", "numero": 29, "pais": "NG", "pos": "PL" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Jakub Kiwior", "numero": 4, "minuto": 44, "pais": "PL" },
+        { "nome": "Gabri Veiga", "numero": 10, "minuto": 64, "pais": "ES" },
+        { "nome": "Victor Froholdt", "numero": 8, "minuto": 46, "pais": "DK" },
+        { "nome": "Deniz Gül", "numero": 27, "minuto": 64, "pais": "TR" },
+        { "nome": "Oskar Pietuszewski", "numero": 77, "minuto": 72, "pais": "PL" }
+      ],
+      "nao_utilizados": ["Cláudio Ramos", "Dominik Prpić", "Zaidu Sanusi", "André Miranda"]
+    }
+  ]
+}

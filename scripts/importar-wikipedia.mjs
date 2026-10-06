@@ -345,7 +345,7 @@ const CANONICAS = {
   '4-1-3-2': '4-4-2 losango', '4-1-3-1-1': '4-4-1-1', '4-2-2-1-1': '4-4-1-1', '4-1-1-3-1': '4-2-3-1', '4-2-4': '4-4-2',
   '3-1-2-3-1': '3-4-3 losango',
 };
-function deduzirFormacao(onze) {
+export function deduzirFormacao(onze) {
   const conta = (...ps) => onze.filter((j) => ps.includes(j.pos)).length;
   const D = conta('DD', 'DC', 'DE');
   const MDC = conta('MDC');

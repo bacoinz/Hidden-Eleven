@@ -1,0 +1,64 @@
+{
+  "id": "porto-sporting-2017-02-04",
+  "modos": ["classico", "equipa:porto", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "20.ª jornada",
+  "data": "2017-02-04",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 2–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2017-02-04-fc-porto-sporting/5003847",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 2, "pais": "UY", "pos": "DD" },
+        { "nome": "Felipe", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Alex Telles", "numero": 13, "pais": "BR", "pos": "DE" },
+        { "nome": "Jesús Corona", "numero": 17, "pais": "MX", "pos": "MD" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "pais": "PT", "pos": "MC" },
+        { "nome": "Óliver Torres", "numero": 30, "pais": "ES", "pos": "MC" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "ME" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 6 }, { "minuto": 40 }] },
+        { "nome": "André Silva", "numero": 10, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Carlos Teixeira", "numero": 18, "minuto": 83, "pais": "PT" },
+        { "nome": "André André", "numero": 20, "minuto": 64, "pais": "PT" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 19, "minuto": 70, "pais": "PT" }
+      ],
+      "nao_utilizados": ["José Sá", "Willy Boly", "Héctor Herrera", "Rui Pedro"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Ezequiel Schelotto", "numero": 2, "pais": "IT", "pos": "DD" },
+        { "nome": "Rúben Semedo", "numero": 35, "pais": "PT", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 13, "pais": "UY", "pos": "DC" },
+        { "nome": "Marvin Zeegelaar", "numero": 31, "pais": "NL", "pos": "DE" },
+        { "nome": "Gelson Martins", "numero": 77, "pais": "PT", "pos": "MD" },
+        { "nome": "João Palhinha", "numero": 66, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Bryan Ruiz", "numero": 10, "pais": "CR", "pos": "ME" },
+        { "nome": "Matheus Pereira", "numero": 73, "pais": "BR", "pos": "PL" },
+        { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 57, "pais": "PT" },
+        { "nome": "Alan Ruiz", "numero": 99, "minuto": 46, "pais": "AR", "golos": [{ "minuto": 60 }] },
+        { "nome": "Daniel Podence", "numero": 56, "minuto": 81, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Beto", "Paulo Oliveira", "Francisco Geraldes", "Luc Castaignos"]
+    }
+  ]
+}

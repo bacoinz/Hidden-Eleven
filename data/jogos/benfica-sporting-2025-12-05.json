@@ -1,0 +1,65 @@
+{
+  "id": "benfica-sporting-2025-12-05",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "13.ª jornada",
+  "data": "2025-12-05",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 1–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2025-12-05-benfica-sporting/11071675",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Mourinho", "aceites": ["mourinho", "special one"] },
+      "onze": [
+        { "nome": "Anatoliy Trubin", "numero": 1, "pais": "UA", "pos": "GR" },
+        { "nome": "Amar Dedic", "numero": 17, "pais": "BA", "pos": "DD" },
+        { "nome": "António Silva", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Samuel Dahl", "numero": 26, "pais": "SE", "pos": "DE" },
+        { "nome": "Enzo Barrenechea", "numero": 5, "pais": "AR", "pos": "MDC" },
+        { "nome": "Richard Ríos", "numero": 20, "pais": "CO", "pos": "MDC" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "ED" },
+        { "nome": "Leandro Barreiro", "numero": 18, "pais": "LU", "pos": "MO" },
+        { "nome": "Georgiy Sudakov", "numero": 10, "pais": "UA", "pos": "EE", "golos": [{ "minuto": 27 }] },
+        { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Manu Silva", "numero": 16, "minuto": 88, "pais": "PT" },
+        { "nome": "Gianluca Prestianni", "numero": 25, "minuto": 81, "pais": "AR" },
+        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 86, "pais": "HR" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "Tomás Araújo", "Gonçalo Oliveira", "Rodrigo Rêgo", "João Rego", "Andreas Schjelderup"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Rui Borges" },
+      "onze": [
+        { "nome": "Rui Silva", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Iván Fresneda", "numero": 22, "pais": "ES", "pos": "DD" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Maxi Araújo", "numero": 20, "pais": "UY", "pos": "DE" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "MDC" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MDC" },
+        { "nome": "Geny Catamo", "numero": 10, "pais": "MZ", "pos": "ED" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "MO" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 12 }] },
+        { "nome": "Luis Suárez", "numero": 97, "pais": "CO", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Simões", "numero": 52, "minuto": 60, "pais": "PT" },
+        { "nome": "Fotis Ioannidis", "numero": 89, "minuto": 85, "pais": "GR" },
+        { "nome": "Alisson Santos", "numero": 27, "minuto": 85, "pais": "BR" },
+        { "nome": "Geovany Quenda", "numero": 7, "minuto": 60, "pais": "PT" }
+      ],
+      "nao_utilizados": ["João Virgínia", "Georgios Vagiannidis", "Eduardo Quaresma", "Matheus Reis", "Giorgi Kochorashvili"]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "porto-benfica-2021-12-30",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "16.ª jornada",
+  "data": "2021-12-30",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 3–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2021-12-30-fc-porto-benfica/8050333",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 99, "pais": "PT", "pos": "GR" },
+        { "nome": "João Mário Lopes", "numero": 23, "pais": "PT", "pos": "DD", "aceites": ["João Mário"], "curto": "João Mário" },
+        { "nome": "Chancel Mbemba", "numero": 19, "pais": "CD", "pos": "DC" },
+        { "nome": "Fábio Cardoso", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "DE" },
+        { "nome": "Otávio", "numero": 25, "pais": "PT", "pos": "MD" },
+        { "nome": "Vitinha", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Matheus Uribe", "numero": 8, "pais": "CO", "pos": "MC" },
+        { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "ME", "golos": [{ "minuto": 37 }] },
+        { "nome": "Fábio Vieira", "numero": 50, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 34 }] },
+        { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 69 }] }
+      ],
+      "suplentes": [
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 29, "pais": "PT" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 83, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 10, "minuto": 83, "pais": "PT" },
+        { "nome": "Jesús Corona", "numero": 17, "minuto": 60, "pais": "MX" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 83, "pais": "ES" }
+      ],
+      "nao_utilizados": ["Agustín Marchesín", "João Marcelo", "Wendell", "Bruno Costa"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Nélson Veríssimo" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Gilberto", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Morato", "numero": 91, "pais": "BR", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DE" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MD" },
+        { "nome": "Julian Weigl", "numero": 28, "pais": "DE", "pos": "MC" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Everton Cebolinha", "numero": 7, "pais": "BR", "pos": "ME" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" },
+        { "nome": "Roman Yaremchuk", "numero": 15, "pais": "UA", "pos": "PL", "golos": [{ "minuto": 47 }] }
+      ],
+      "suplentes": [
+        { "nome": "Valentino Lázaro", "numero": 22, "minuto": 52, "pais": "AT" },
+        { "nome": "Pizzi", "numero": 21, "minuto": 66, "pais": "PT" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 66, "pais": "MA" },
+        { "nome": "Diogo Gonçalves", "numero": 17, "minuto": 87, "pais": "PT" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 66, "pais": "CH" }
+      ],
+      "nao_utilizados": ["Helton Leite", "Ferro", "Paulo Bernardo", "Soualiho Meité"]
+    }
+  ]
+}

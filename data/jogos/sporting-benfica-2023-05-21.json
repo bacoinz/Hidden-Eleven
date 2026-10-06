@@ -1,0 +1,68 @@
+{
+  "id": "sporting-benfica-2023-05-21",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "33.ª jornada",
+  "data": "2023-05-21",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 2–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2023-05-21-sporting-benfica/8745800",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Franco Israel", "numero": 12, "pais": "UY", "pos": "GR" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC", "golos": [{ "minuto": 44 }] },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Esgaio", "numero": 47, "pais": "PT", "pos": "MD" },
+        { "nome": "Manuel Ugarte", "numero": 15, "pais": "UY", "pos": "MC" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "MC" },
+        { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "ME" },
+        { "nome": "Marcus Edwards", "numero": 10, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 39 }] },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Héctor Bellerín", "numero": 19, "minuto": 72, "pais": "ES" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 72, "pais": "BR" },
+        { "nome": "Dário Essugo", "numero": 84, "minuto": 79, "pais": "PT" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 54, "pais": "PT" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 79, "pais": "BR" }
+      ],
+      "nao_utilizados": ["Diego Callai", "Luís Neto", "Youssef Chermiti", "Fatawu Issahaku"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roger Schmidt" },
+      "onze": [
+        { "nome": "Odysseas Vlachodimos", "numero": 99, "pais": "GR", "pos": "GR" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "DD", "golos": [{ "minuto": 71 }] },
+        { "nome": "António Silva", "numero": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Álex Grimaldo", "numero": 3, "pais": "ES", "pos": "DE" },
+        { "nome": "João Neves", "numero": 87, "pais": "PT", "pos": "MDC", "golos": [{ "minuto": "90+4" }] },
+        { "nome": "Chiquinho", "numero": 22, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "ED" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MO" },
+        { "nome": "David Neres", "numero": 7, "pais": "BR", "pos": "EE" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Alexander Bah", "numero": 6, "minuto": 46, "pais": "DK" },
+        { "nome": "Mihailo Ristic", "numero": 23, "minuto": 86, "pais": "RS" },
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 81, "pais": "PT" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 66, "pais": "HR" },
+        { "nome": "Gonçalo Guedes", "numero": 15, "minuto": 66, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "Gilberto", "Lucas Veríssimo", "Morato"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "porto-benfica-2014-12-14",
+  "modos": ["classico", "equipa:porto", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "13.ª jornada",
+  "data": "2014-12-14",
+  "estadio": "Estádio do Dragão, Porto",
+  "resultado": "FC Porto 0–2 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2014-12-14-fc-porto-benfica/3597243",
+  "equipas": [
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Julen Lopetegui" },
+      "onze": [
+        { "nome": "Fabiano Freitas", "numero": 12, "pais": "BR", "pos": "GR" },
+        { "nome": "Danilo", "numero": 2, "pais": "BR", "pos": "DD" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Martins Indi", "numero": 3, "pais": "NL", "pos": "DC" },
+        { "nome": "Alex Sandro", "numero": 26, "pais": "BR", "pos": "DE" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MC" },
+        { "nome": "Casemiro", "numero": 6, "pais": "BR", "pos": "MC" },
+        { "nome": "Óliver Torres", "numero": 30, "pais": "ES", "pos": "MC" },
+        { "nome": "Cristian Tello", "numero": 11, "pais": "ES", "pos": "ED" },
+        { "nome": "Jackson Martínez", "aceites": ["jackson"], "numero": 9, "pais": "CO", "pos": "PL" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Juan Quintero", "numero": 10, "minuto": 58, "pais": "CO" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 58, "pais": "PT" },
+        { "nome": "Vincent Aboubakar", "numero": 99, "minuto": 77, "pais": "CM" }
+      ],
+      "nao_utilizados": ["Andrés Fernández", "Diego Reyes", "Maicon", "Evandro"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Júlio César", "numero": 20, "pais": "BR", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DE" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MDC" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MDC" },
+        { "nome": "Toto Salvio", "numero": 18, "pais": "AR", "pos": "ED" },
+        { "nome": "Anderson Talisca", "numero": 30, "pais": "BR", "pos": "MO" },
+        { "nome": "Nico Gaitán", "numero": 10, "pais": "AR", "pos": "EE" },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 36 }, { "minuto": 55 }] }
+      ],
+      "suplentes": [
+        { "nome": "César", "numero": 37, "minuto": 76, "pais": "BR" },
+        { "nome": "Pizzi", "numero": 21, "minuto": "90+4", "pais": "PT" },
+        { "nome": "Ola John", "numero": 15, "minuto": 80, "pais": "NL" }
+      ],
+      "nao_utilizados": ["Artur Moraes", "Loris Benito", "Jonas", "Derley"]
+    }
+  ]
+}

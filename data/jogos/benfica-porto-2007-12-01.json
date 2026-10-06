@@ -1,0 +1,64 @@
+{
+  "id": "benfica-porto-2007-12-01",
+  "modos": ["classico", "equipa:benfica", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "12.ª jornada",
+  "data": "2007-12-01",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 0–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2007-12-01-benfica-fc-porto/265459",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "José Antonio Camacho" },
+      "onze": [
+        { "nome": "Quim", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luís Filipe", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "David Luiz", "numero": 23, "pais": "BR", "pos": "DC" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "Petit", "numero": 6, "pais": "PT", "pos": "MDC" },
+        { "nome": "Léo", "numero": 5, "pais": "BR", "pos": "MDC" },
+        { "nome": "Cristián Rodríguez", "numero": 26, "pais": "UY", "pos": "ED" },
+        { "nome": "Kostas Katsouranis", "numero": 8, "pais": "GR", "pos": "MO" },
+        { "nome": "Rui Costa", "numero": 10, "pais": "PT", "pos": "EE" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 71, "pais": "AR" },
+        { "nome": "Freddy Adu", "numero": 30, "minuto": 79, "pais": "US" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 65, "pais": "PY" }
+      ],
+      "nao_utilizados": ["Hans-Jörg Butt", "Nélson", "Edcarlos", "Gilles Binya"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Jesualdo Ferreira" },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "José Bosingwa", "numero": 12, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Fucile", "numero": 13, "pais": "UY", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Pedro Emanuel", "numero": 3, "pais": "PT", "pos": "DE" },
+        { "nome": "Paulo Assunção", "numero": 6, "pais": "BR", "pos": "MC" },
+        { "nome": "Lucho González", "aceites": ["lucho"], "numero": 8, "pais": "AR", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Tarik Sektioui", "numero": 17, "pais": "MA", "pos": "ED" },
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "PL" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 42 }] }
+      ],
+      "suplentes": [
+        { "nome": "Mario Bolatti", "numero": 18, "minuto": 82, "pais": "AR" },
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 69, "pais": "AR" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 60, "pais": "PT" }
+      ],
+      "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Milan Stepanov", "Marek Cech", "Przemyslaw Kazmierczak"]
+    }
+  ]
+}

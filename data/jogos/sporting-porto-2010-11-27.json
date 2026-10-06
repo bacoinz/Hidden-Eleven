@@ -1,0 +1,64 @@
+{
+  "id": "sporting-porto-2010-11-27",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Primeira Liga",
+  "fase": "12.ª jornada",
+  "data": "2010-11-27",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–1 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2010-11-27-sporting-fc-porto/1270568",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Paulo Sérgio" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 47, "pais": "PT", "pos": "DD" },
+        { "nome": "Daniel Carriço", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Anderson Polga", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Evaldo", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "André Santos", "numero": 26, "pais": "PT", "pos": "MD" },
+        { "nome": "Pedro Mendes", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Jaime Valdés", "numero": 15, "pais": "CL", "pos": "MC", "golos": [{ "minuto": 37 }] },
+        { "nome": "Maniche", "numero": 8, "pais": "PT", "pos": "ME" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" },
+        { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Yannick Djaló", "numero": 20, "minuto": 65, "pais": "PT" },
+        { "nome": "Simon Vukcevic", "numero": 77, "minuto": 68, "pais": "ME" },
+        { "nome": "Carlos Saleiro", "numero": 9, "minuto": 82, "pais": "PT" }
+      ],
+      "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Marco Torsiglieri", "Nuno André Coelho", "Alberto Zapater"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "André Villas-Boas", "aceites": ["villas boas", "avb"] },
+      "onze": [
+        { "nome": "Helton", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "Cristian Sapunaru", "numero": 21, "pais": "RO", "pos": "DD" },
+        { "nome": "Rolando", "numero": 14, "pais": "PT", "pos": "DC" },
+        { "nome": "Maicon", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Emídio Rafael", "numero": 15, "pais": "PT", "pos": "DE" },
+        { "nome": "Fernando Belluschi", "numero": 7, "pais": "AR", "pos": "MC" },
+        { "nome": "Fernando", "numero": 25, "pais": "BR", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Hulk", "numero": 12, "pais": "BR", "pos": "ED" },
+        { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 57 }] },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Jorge Fucile", "numero": 13, "minuto": 86, "pais": "UY" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "minuto": 71, "pais": "AR" },
+        { "nome": "Fredy Guarín", "numero": 6, "minuto": 65, "pais": "CO" }
+      ],
+      "nao_utilizados": ["Beto", { "nome": "James Rodríguez", "aceites": ["james"] }, "Rúben Micael", "Cristián Rodríguez"]
+    }
+  ]
+}

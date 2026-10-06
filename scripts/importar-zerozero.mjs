@@ -12,8 +12,8 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { paraCodigoJson } from './paises.mjs';
 import { formatarJogo } from './formato.mjs';
-import { aplicarCuradoria, pessoa, coresDoJogo, SLUGS, EQUIPAS_PT } from './importar-wikipedia.mjs';
-import { problemasDaFormacao } from '../public/js/formacao.js';
+import { aplicarCuradoria, pessoa, coresDoJogo, deduzirFormacao, SLUGS, EQUIPAS_PT } from './importar-wikipedia.mjs';
+import { problemasDaFormacao, linhasDaFormacao, PROFUNDIDADE } from '../public/js/formacao.js';
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) HiddenEleven/1.0 (jogo entre amigos)';
@@ -88,6 +88,70 @@ export function posicoesFotmob(equipa) {
   return { formacao: FORMACOES_FOTMOB[equipa.formation] ?? equipa.formation, posicoes, ordem };
 }
 
+// --- posições habituais (página de cada jogador no zerozero), para jogos sem FotMob ---
+const ficheiroPosicoes = join(raiz, '.cache', 'zerozero', 'posicoes.json');
+let posicoesEmCache = null;
+const dorme = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const SUBPOSICOES = [
+  [/guarda/i, 'GR'], [/(defesa|lateral) direito/i, 'DD'], [/(defesa|lateral) esquerdo/i, 'DE'], [/defesa/i, 'DC'],
+  [/m[eé]dio defensivo|trinco/i, 'MDC'], [/m[eé]dio ofensivo|m[eé]dio atacante/i, 'MO'], [/m[eé]dio direito|ala direito/i, 'MD'],
+  [/m[eé]dio esquerdo|ala esquerdo/i, 'ME'], [/m[eé]dio/i, 'MC'], [/extremo direito/i, 'ED'], [/extremo esquerdo/i, 'EE'],
+  [/extremo/i, 'ED'], [/avan[cç]ado|ponta/i, 'PL'],
+];
+
+async function posicaoHabitual(perfil) {
+  posicoesEmCache ??= existsSync(ficheiroPosicoes) ? JSON.parse(readFileSync(ficheiroPosicoes, 'utf8')) : {};
+  if (!perfil) return null;
+  if (!(perfil in posicoesEmCache)) {
+    const r = await fetch(`https://www.zerozero.pt${perfil}`, { headers: { 'User-Agent': UA } });
+    const html = r.ok ? await r.text() : '';
+    posicoesEmCache[perfil] = html.match(/<img alt="([^"]+)" src="\/img\/subposicao\//)?.[1] ?? null;
+    mkdirSync(dirname(ficheiroPosicoes), { recursive: true });
+    writeFileSync(ficheiroPosicoes, JSON.stringify(posicoesEmCache, null, 1));
+    await dorme(400);
+  }
+  const sub = posicoesEmCache[perfil];
+  return SUBPOSICOES.find(([re]) => re.test(sub ?? ''))?.[1] ?? null;
+}
+
+const LADO = { DD: 0, MD: 0, ED: 0, DE: 2, ME: 2, EE: 2 };
+/**
+ * Onze (o primeiro é o guarda-redes) a partir das posições habituais. A formação é uma das habituais, escolhida
+ * pelo número de defesas e de avançados (as posições habituais não dizem como a equipa jogou nesse dia).
+ */
+export function formacaoHabitual(gs) {
+  const conta = (...ps) => gs.filter((g) => ps.includes(g)).length;
+  // Só se usa nos dérbis anteriores ao FotMob (até 2010), todos com quatro defesas.
+  const pontas = conta('PL');
+  const extremos = conta('ED', 'EE');
+  if (pontas >= 2) return conta('MDC') === 1 && conta('MO') === 1 && !conta('MD', 'ME') && !extremos ? '4-4-2 losango' : '4-4-2';
+  if (extremos >= 2 && conta('MO') === 0) return '4-3-3';
+  return '4-2-3-1';
+}
+
+export function posicoesHabituais(gerais) {
+  const campo = gerais.slice(1).map((g, k) => ({ k: k + 1, g: g && g !== 'GR' ? g : 'MC' }));
+  const formacao = formacaoHabitual(campo.map((x) => x.g));
+  const tamanhos = linhasDaFormacao(formacao);
+  const pos = ['GR', ...campo.map((x) => x.g)];
+  const ordem = gerais.map((_, k) => k);
+  if (tamanhos.reduce((s, n) => s + n, 0) !== campo.length) return { formacao, pos, ordem };
+  const lado = (x) => LADO[x.g] ?? 1;
+  campo.sort((a, b) => PROFUNDIDADE[a.g] - PROFUNDIDADE[b.g] || lado(a) - lado(b) || a.k - b.k);
+  const siglas = siglasDasLinhas(tamanhos);
+  let n = 0;
+  let posicao = 1;
+  tamanhos.forEach((tam, i) => {
+    campo.slice(n, n + tam).sort((a, b) => lado(a) - lado(b) || a.k - b.k).forEach((x, j) => {
+      pos[x.k] = siglas[i][j];
+      ordem[x.k] = posicao++;
+    });
+    n += tam;
+  });
+  return { formacao, pos, ordem };
+}
+
 // --- texto ---
 const MARCAS = { acute: '́', grave: '̀', circ: '̂', tilde: '̃', uml: '̈', cedil: '̧', ring: '̊' };
 const ENTIDADES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', szlig: 'ß', oslash: 'ø', Oslash: 'Ø', aelig: 'æ', AElig: 'Æ' };
@@ -116,7 +180,8 @@ function lerJogador(bloco) {
   const iso = bloco.match(/class="flag:([A-Z]{2})"/)?.[1] ?? BANDEIRAS_IMAGEM[bloco.match(/flag_\d+_([a-z]{3})_/)?.[1]] ?? null;
   // "Morten Hjulmand&nbsp;(C)" → sem a marca de capitão; "Eto´o" → "Eto'o".
   const nome = texto(ligacao[1]).replace(/\s*\(C\)$/, '').replace(/[´`’]/g, "'");
-  const j = { nome, numero: Number(bloco.match(/<div class="number[^"]*"[^>]*>\s*(\d+)\s*</)?.[1]) || null, iso };
+  const perfil = bloco.match(/<a href="(\/jogador\/[^"]+)"/)?.[1];
+  const j = { nome, perfil, numero: Number(bloco.match(/<div class="number[^"]*"[^>]*>\s*(\d+)\s*</)?.[1]) || null, iso };
   const eventos = bloco.slice(bloco.indexOf('<div class="events">'));
   for (const [, atributos, icone, valor] of eventos.matchAll(/<span([^>]*)>([^<]*)<\/span>\s*<div>([^<]*)<\/div>/g)) {
     const titulo = atributos.match(/title="([^"]*)"/)?.[1] ?? '';
@@ -154,11 +219,29 @@ function lerFormacoes(html) {
     });
 }
 
+/** "Liga Sagres 10/11", "bwin LIGA 06/07", "Carlsberg Cup 08/09"… → nome da prova em pt-PT. */
+function competicaoPt(nome) {
+  if (/ta[çc]a\s+(de\s+)?portugal/i.test(nome)) return 'Taça de Portugal';
+  if (/carlsberg|ta[çc]a da liga|ta[çc]a ctt|allianz cup|bwin cup/i.test(nome)) return 'Taça da Liga';
+  if (/superta[çc]a/i.test(nome)) return 'Supertaça';
+  if (/liga|superliga|primeira/i.test(nome)) return 'Primeira Liga';
+  return nome.replace(/\s+\d{2}\/\d{2}$/, '');
+}
+function fasePt(fase) {
+  const f = fase.toLowerCase();
+  if (/meias?-finais|meia-final/.test(f)) return 'Meia-final';
+  if (/quartos/.test(f)) return 'Quartos de final';
+  if (/oitavos|1\/8/.test(f)) return 'Oitavos de final';
+  if (/^final$/.test(f)) return 'Final';
+  return fase;
+}
+
 function lerCabecalho(html) {
   const ld = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
     .map((m) => {
       try {
-        return JSON.parse(m[1]);
+        // "name": "Benfica 1-3<span class="prol">(a.p.)</span> Sporting" — o HTML lá dentro estraga o JSON.
+        return JSON.parse(m[1].replace(/<[^>]+>/g, ' '));
       } catch {
         return null;
       }
@@ -170,9 +253,17 @@ function lerCabecalho(html) {
   const estadioBloco = html.slice(html.indexOf('id="stadium"'));
   const estadio = texto(estadioBloco.match(/<a href="\/estadio[^"]*">([\s\S]*?)<\/a>/)?.[1] ?? ld.location?.name ?? '');
   const cidade = texto(estadioBloco.match(/<div class="text">([\s\S]*?)<\/div>/)?.[1] ?? '');
+  // "Fase<span>Meias-Finais</span>", "Jornada<span>Jornada 10</span>"; prolongamento e penáltis no cabeçalho.
+  const info = (rotulo) => texto(html.match(new RegExp(`>${rotulo}<span[^>]*>([^<]*)</span>`))?.[1] ?? '');
+  const jornada = info('Jornada').match(/\d+/)?.[0];
+  const cabecalho = `${ld.name} ${texto(html.slice(html.indexOf('match-header'), html.indexOf('match-header-info')))}`;
+  const penaltis = cabecalho.match(/(\d+)\s*-\s*(\d+)\s*g\.p\./) ?? cabecalho.match(/g\.p\.\s*(\d+)\s*-\s*(\d+)/);
   return {
     casa: texto(ld.homeTeam.name),
     fora: texto(ld.awayTeam.name),
+    competicao: competicaoPt(texto(ld.organizer?.name ?? '')),
+    fase: jornada ? `${jornada}.ª jornada` : fasePt(info('Fase')),
+    extra: penaltis ? ` (${penaltis[1]}–${penaltis[2]} g.p.)` : /\ba\.p\./.test(cabecalho) ? ' (a.p.)' : '',
     golos: placar ? [placar[1], placar[2]] : null,
     data: url.match(/\/jogo\/(\d{4}-\d{2}-\d{2})-/)?.[1] ?? ld.startDate.slice(0, 10),
     estadio: [estadio, cidade].filter(Boolean).join(', '),
@@ -219,28 +310,46 @@ export async function importar(entrada) {
   const equipas = [0, 1].map((i) =>
     montarEquipa(titular.colunas[i], suplentes?.colunas[i] ?? [], treinadores?.colunas[i]?.[0], nomes[i], slugs[i], cores[i]),
   );
-  if (entrada.fotmob) {
-    // Posições do FotMob, cruzadas pelo número da camisola.
-    const fm = (await jogoFotmob(entrada.fotmob)).content.lineup;
-    [fm.homeTeam, fm.awayTeam].forEach((t, i) => {
+  const fm = entrada.fotmob ? (await jogoFotmob(entrada.fotmob)).content?.lineup ?? null : null;
+  for (const [i, e] of equipas.entries()) {
+    const perfis = titular.colunas[i].map((j) => j.perfil);
+    // Os dados antigos do FotMob às vezes encaixam os jogadores na formação pela ordem (ex.: Benfica 2010 em 5-3-2);
+    // até 2013/14 confirmam-se com as posições habituais de cada jogador no zerozero.
+    let escolha = null;
+    const t = i === 0 ? fm?.homeTeam : fm?.awayTeam;
+    if (t?.starters?.length === 11) {
       const { formacao, posicoes, ordem } = posicoesFotmob(t);
-      const e = equipas[i];
       const semPar = e.onze.filter((p) => !posicoes.has(p.numero)).map((p) => `${p.nome} #${p.numero}`);
-      if (semPar.length) throw new Error(`${e.nome}: sem par no FotMob (${semPar.join(', ')})`);
-      e.formacao = formacao;
-      for (const p of e.onze) p.pos = posicoes.get(p.numero);
-      e.onze.sort((a, b) => ordem.indexOf(a.numero) - ordem.indexOf(b.numero));
-    });
+      if (semPar.length) console.log(`   · ${e.nome}: números diferentes no FotMob (${semPar.join(', ')}); uso as posições habituais`);
+      else escolha = { formacao, pos: e.onze.map((p) => posicoes.get(p.numero)), ordem: e.onze.map((p) => ordem.indexOf(p.numero)) };
+    }
+    if (!escolha || (fm && cab.data < '2014-07-01')) {
+      const gerais = [];
+      for (const perfil of perfis) gerais.push(await posicaoHabitual(perfil));
+      const habitual = posicoesHabituais(gerais);
+      const grupo = (s) => (/^D/.test(s) ? 'D' : /^(ED|EE|PL)$/.test(s) ? 'A' : s === 'GR' ? 'G' : 'M');
+      const diferencas = escolha ? escolha.pos.filter((s, k) => grupo(s) !== grupo(habitual.pos[k])).length : 99;
+      if (diferencas >= 3) {
+        if (escolha) console.log(`   · ${e.nome}: FotMob (${escolha.formacao}) não bate com as posições habituais; uso ${habitual.formacao}`);
+        escolha = habitual;
+      }
+    }
+    if (!escolha) continue;
+    e.formacao = escolha.formacao;
+    e.onze.forEach((p, k) => (p.pos = escolha.pos[k]));
+    const ordem = new Map(e.onze.map((p, k) => [p, escolha.ordem[k]]));
+    e.onze.sort((a, b) => ordem.get(a) - ordem.get(b));
   }
+  const fase = entrada.fase ?? cab.fase;
   return {
     id: entrada.id,
     modos,
-    competicao: entrada.competicao,
-    ...(entrada.fase ? { fase: entrada.fase } : {}),
+    competicao: entrada.competicao ?? cab.competicao,
+    ...(fase ? { fase } : {}),
     ...(entrada.titulo ? { titulo: entrada.titulo } : {}),
     data: cab.data,
     estadio: entrada.estadio ?? cab.estadio,
-    resultado: entrada.resultado ?? resultado,
+    resultado: entrada.resultado ?? resultado + cab.extra,
     fonte: cab.url,
     equipas,
   };

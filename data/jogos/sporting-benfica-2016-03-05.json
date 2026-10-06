@@ -1,0 +1,64 @@
+{
+  "id": "sporting-benfica-2016-03-05",
+  "modos": ["classico", "equipa:sporting", "equipa:benfica"],
+  "competicao": "Primeira Liga",
+  "fase": "25.ª jornada",
+  "data": "2016-03-05",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 0–1 Benfica",
+  "fonte": "https://www.zerozero.pt/jogo/2016-03-05-sporting-benfica/4516723",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Ewerton", "numero": 5, "pais": "BR", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 13, "pais": "UY", "pos": "DC" },
+        { "nome": "Jefferson", "numero": 4, "pais": "BR", "pos": "DE" },
+        { "nome": "João Mário", "numero": 17, "pais": "PT", "pos": "MD" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno César", "numero": 11, "pais": "BR", "pos": "ME" },
+        { "nome": "Bryan Ruiz", "numero": 20, "pais": "CR", "pos": "PL" },
+        { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ezequiel Schelotto", "numero": 2, "minuto": 77, "pais": "IT" },
+        { "nome": "Gelson Martins", "numero": 60, "minuto": 77, "pais": "PT" },
+        { "nome": "Teofilo Gutiérrez", "numero": 19, "minuto": 59, "pais": "CO" }
+      ],
+      "nao_utilizados": ["Ažbe Jug", "Naldo", "Alberto Aquilani", "Hernán Barcos"]
+    },
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Rui Vitória" },
+      "onze": [
+        { "nome": "Ederson Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
+        { "nome": "André Almeida", "numero": 34, "pais": "PT", "pos": "DD" },
+        { "nome": "Victor Lindelöf", "numero": 14, "pais": "SE", "pos": "DC" },
+        { "nome": "Jardel", "numero": 33, "pais": "BR", "pos": "DC" },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Pizzi", "numero": 21, "pais": "PT", "pos": "MD" },
+        { "nome": "Andreas Samaris", "numero": 7, "pais": "GR", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "pais": "PT", "pos": "MC" },
+        { "nome": "Nico Gaitán", "numero": 10, "pais": "AR", "pos": "ME" },
+        { "nome": "Jonas", "numero": 17, "pais": "BR", "pos": "PL" },
+        { "nome": "Kostas Mitroglou", "numero": 11, "pais": "GR", "pos": "PL", "golos": [{ "minuto": 20 }] }
+      ],
+      "suplentes": [
+        { "nome": "Ljubomir Fejsa", "numero": 5, "minuto": 73, "pais": "RS" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 78, "pais": "AR" },
+        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 67, "pais": "MX" }
+      ],
+      "nao_utilizados": ["Paulo Lopes", "Nélson Semedo", "Anderson Talisca", "Gonçalo Guedes"]
+    }
+  ]
+}

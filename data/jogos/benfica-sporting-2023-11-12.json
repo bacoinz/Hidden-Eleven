@@ -1,0 +1,65 @@
+{
+  "id": "benfica-sporting-2023-11-12",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "11.ª jornada",
+  "data": "2023-11-12",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–1 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2023-11-12-benfica-sporting/9429620",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roger Schmidt" },
+      "onze": [
+        { "nome": "Anatoliy Trubin", "numero": 1, "pais": "UA", "pos": "GR" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "pais": "NO", "pos": "DD" },
+        { "nome": "António Silva", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "pais": "AR", "pos": "DC" },
+        { "nome": "Morato", "numero": 5, "pais": "BR", "pos": "DE" },
+        { "nome": "Florentino Luís", "numero": 61, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Neves", "numero": 87, "pais": "PT", "pos": "MDC", "golos": [{ "minuto": "90+4" }] },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "pais": "AR", "pos": "ED" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "pais": "PT", "pos": "MO" },
+        { "nome": "João Mário", "numero": 20, "pais": "PT", "pos": "EE" },
+        { "nome": "Petar Musa", "numero": 33, "pais": "HR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Casper Tengstedt", "numero": 19, "minuto": 64, "pais": "DK", "golos": [{ "minuto": "90+8" }] },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 64, "pais": "BR" },
+        { "nome": "Gonçalo Guedes", "numero": 17, "minuto": 86, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Samuel Soares", "João Victor", "Tomás Araújo", "David Jurásek", "Tiago Gouveia", "Chiquinho"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "3-4-2-1",
+      "treinador": { "nome": "Ruben Amorim" },
+      "onze": [
+        { "nome": "Antonio Adán", "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Ousmane Diomande", "numero": 26, "pais": "CI", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC" },
+        { "nome": "Gonçalo Inácio", "numero": 25, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Esgaio", "numero": 47, "pais": "PT", "pos": "MD" },
+        { "nome": "Matheus Reis", "numero": 2, "pais": "BR", "pos": "MC" },
+        { "nome": "Morten Hjulmand", "numero": 42, "pais": "DK", "pos": "MC" },
+        { "nome": "Hidemasa Morita", "numero": 5, "pais": "JP", "pos": "ME" },
+        { "nome": "Marcus Edwards", "numero": 10, "pais": "GB-ENG", "pos": "MO" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL", "golos": [{ "minuto": 45 }] }
+      ],
+      "suplentes": [
+        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 57, "pais": "NL" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 73, "pais": "PT" },
+        { "nome": "Francisco Trincão", "numero": 17, "minuto": 73, "pais": "PT" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 85, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Franco Israel", "Luís Neto", "Dário Essugo", "Daniel Bragança", "Afonso Moreira"]
+    }
+  ]
+}

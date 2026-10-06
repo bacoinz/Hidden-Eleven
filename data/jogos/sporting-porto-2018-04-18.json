@@ -1,0 +1,64 @@
+{
+  "id": "sporting-porto-2018-04-18",
+  "modos": ["classico", "equipa:sporting", "equipa:porto"],
+  "competicao": "Taça de Portugal",
+  "fase": "Meia-final",
+  "data": "2018-04-18",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Sporting 1–0 FC Porto",
+  "fonte": "https://www.zerozero.pt/jogo/2018-04-18-sporting-fc-porto/5894911",
+  "equipas": [
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cristiano Piccini", "numero": 92, "pais": "IT", "pos": "DD" },
+        { "nome": "Jérémy Mathieu", "numero": 22, "pais": "FR", "pos": "DC" },
+        { "nome": "Sebastián Coates", "numero": 4, "pais": "UY", "pos": "DC", "golos": [{ "minuto": 85 }] },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Gelson Martins", "numero": 77, "pais": "PT", "pos": "MD" },
+        { "nome": "Rodrigo Battaglia", "numero": 16, "pais": "AR", "pos": "MC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Marcos Acuña", "numero": 9, "pais": "AR", "pos": "ME" },
+        { "nome": "Bryan Ruiz", "numero": 20, "pais": "CR", "pos": "PL" },
+        { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Stefan Ristovski", "numero": 13, "minuto": 72, "pais": "MK" },
+        { "nome": "Fredy Montero", "numero": 40, "minuto": 76, "pais": "CO" },
+        { "nome": "Seydou Doumbia", "numero": 88, "minuto": 106, "pais": "CI" }
+      ],
+      "nao_utilizados": ["Romain Salin", "Radosav Petrovic", "Josip Misic", "João Palhinha"]
+    },
+    {
+      "nome": "FC Porto",
+      "slug": "porto",
+      "cor": "#0047ab",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Sérgio Conceição" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 2, "pais": "UY", "pos": "DD" },
+        { "nome": "Ricardo Pereira", "numero": 21, "pais": "PT", "pos": "DC" },
+        { "nome": "Felipe", "numero": 28, "pais": "BR", "pos": "DC" },
+        { "nome": "Iván Marcano", "numero": 5, "pais": "ES", "pos": "DE" },
+        { "nome": "Héctor Herrera", "numero": 16, "pais": "MX", "pos": "MDC" },
+        { "nome": "Alex Telles", "numero": 13, "pais": "BR", "pos": "MDC" },
+        { "nome": "Óliver Torres", "numero": 10, "pais": "ES", "pos": "ED" },
+        { "nome": "Otávio", "numero": 25, "pais": "BR", "pos": "MO" },
+        { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Diego Reyes", "numero": 23, "minuto": 83, "pais": "MX" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 76, "pais": "PT" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 66, "pais": "CM" }
+      ],
+      "nao_utilizados": ["Vaná Alves", "Diogo Dalot", "Jesús Corona", "Moussa Marega"]
+    }
+  ]
+}

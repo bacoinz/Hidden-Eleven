@@ -1,0 +1,63 @@
+{
+  "id": "benfica-sporting-2014-02-11",
+  "modos": ["classico", "equipa:benfica", "equipa:sporting"],
+  "competicao": "Primeira Liga",
+  "fase": "18.ª jornada",
+  "data": "2014-02-11",
+  "estadio": "Estádio do Sport Lisboa e Benfica, Lisboa",
+  "resultado": "Benfica 2–0 Sporting",
+  "fonte": "https://www.zerozero.pt/jogo/2014-02-11-benfica-sporting/2838189",
+  "equipas": [
+    {
+      "nome": "Benfica",
+      "slug": "benfica",
+      "cor": "#e30613",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
+      "onze": [
+        { "nome": "Jan Oblak", "numero": 41, "pais": "SI", "pos": "GR" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
+        { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
+        { "nome": "Guilherme Siqueira", "numero": 16, "pais": "BR", "pos": "DE" },
+        { "nome": "Nico Gaitán", "numero": 20, "pais": "AR", "pos": "MD", "golos": [{ "minuto": 28 }] },
+        { "nome": "Ljubomir Fejsa", "numero": 5, "pais": "RS", "pos": "MC" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MC", "golos": [{ "minuto": 76 }] },
+        { "nome": "Lazar Markovic", "numero": 50, "pais": "RS", "pos": "ME" },
+        { "nome": "Rodrigo Moreno", "numero": 19, "pais": "ES", "pos": "PL" },
+        { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Rúben Amorim", "numero": 6, "minuto": 78, "pais": "PT" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY" }
+      ],
+      "nao_utilizados": ["Artur Moraes", "Sílvio", "Jardel", "André Gomes", "Miralem Sulejmani"]
+    },
+    {
+      "nome": "Sporting",
+      "slug": "sporting",
+      "cor": "#008057",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Leonardo Jardim" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Iván Piris", "numero": 30, "pais": "PY", "pos": "DD" },
+        { "nome": "Cédric Soares", "aceites": ["cedric"], "numero": 41, "pais": "PT", "pos": "DC" },
+        { "nome": "Eric Dier", "numero": 15, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Maurício", "numero": 3, "pais": "BR", "pos": "DE" },
+        { "nome": "Marcos Rojo", "numero": 5, "pais": "AR", "pos": "MD" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "André Martins", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Heldon", "numero": 20, "pais": "CV", "pos": "ME" },
+        { "nome": "Fredy Montero", "numero": 17, "pais": "CO", "pos": "PL" },
+        { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Gerson Magrão", "numero": 10, "minuto": 73, "pais": "BR" },
+        { "nome": "Diego Capel", "numero": 11, "minuto": 62, "pais": "ES" },
+        { "nome": "Carlos Mané", "numero": 36, "minuto": 81, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Marcelo Boeck", "Rúben Semedo", "André Carrillo", "Wilson Eduardo"]
+    }
+  ]
+}
