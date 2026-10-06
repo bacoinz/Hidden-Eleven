@@ -45,6 +45,7 @@ const SELECOES_PT = {
   'gb-sct': 'Escócia', ie: 'Irlanda', at: 'Áustria', hu: 'Hungria', ro: 'Roménia', rs: 'Sérvia', sk: 'Eslováquia',
   si: 'Eslovénia', ec: 'Equador', py: 'Paraguai', pe: 'Peru', cr: 'Costa Rica', sa: 'Arábia Saudita', ir: 'Irão',
   qa: 'Catar', ca: 'Canadá', tn: 'Tunísia', dz: 'Argélia', eg: 'Egito', fi: 'Finlândia', ge: 'Geórgia', al: 'Albânia',
+  kp: 'Coreia do Norte', ao: 'Angola', uz: 'Usbequistão', cd: 'RD Congo',
 };
 
 // Equipas da Equipa Mítica (nome em pt-PT → slug de data/equipas.json).

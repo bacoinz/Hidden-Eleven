@@ -1,0 +1,80 @@
+{
+  "id": "euro-2012-quartos-chequia-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2012-06-21",
+  "estadio": "National Stadium, Varsóvia",
+  "resultado": "Chéquia 0–1 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2012_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Chéquia",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Michal Bílek" },
+      "onze": [
+        { "nome": "Petr Čech", "numero": 1, "pais": "CZ", "pos": "GR" },
+        { "nome": "Theodor Gebre Selassie", "numero": 2, "pais": "CZ", "pos": "DD" },
+        { "nome": "Tomáš Sivok", "numero": 6, "pais": "CZ", "pos": "DC" },
+        { "nome": "Michal Kadlec", "numero": 3, "pais": "CZ", "pos": "DC" },
+        { "nome": "David Limberský", "numero": 8, "pais": "CZ", "pos": "DE" },
+        { "nome": "Tomáš Hübschman", "numero": 17, "pais": "CZ", "pos": "MC" },
+        { "nome": "Jaroslav Plašil", "numero": 13, "pais": "CZ", "pos": "MC" },
+        { "nome": "Petr Jiráček", "numero": 19, "pais": "CZ", "pos": "ED" },
+        { "nome": "Vladimír Darida", "numero": 22, "pais": "CZ", "pos": "MO" },
+        { "nome": "Václav Pilař", "numero": 14, "pais": "CZ", "pos": "EE" },
+        { "nome": "Milan Baroš", "numero": 15, "pais": "CZ", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Jan Rezek", "numero": 9, "minuto": 61, "pais": "CZ" }, { "nome": "Tomáš Pekhart", "numero": 20, "minuto": 86, "pais": "CZ" }],
+      "nao_utilizados": [
+        "Marek Suchý",
+        "Roman Hubník",
+        "Tomáš Necid",
+        "Tomáš Rosický",
+        "Milan Petržela",
+        "František Rajtoral",
+        "Jan Laštůvka",
+        "Daniel Kolář",
+        "David Lafata",
+        "Jaroslav Drobný"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Miguel Veloso", "numero": 4, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 79 }] }
+      ],
+      "suplentes": [
+        { "nome": "Hugo Almeida", "numero": 9, "minuto": 40, "pais": "PT" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 84, "pais": "PT" },
+        { "nome": "Rolando", "numero": 14, "minuto": 88, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"] },
+        "Nélson Oliveira",
+        "Ricardo Costa",
+        "Rúben Micael",
+        { "nome": "Silvestre Varela", "aceites": ["varela"] },
+        "Miguel Lopes",
+        "Hugo Viana",
+        "Beto"
+      ]
+    }
+  ]
+}

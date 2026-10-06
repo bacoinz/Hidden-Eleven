@@ -1,0 +1,89 @@
+{
+  "id": "mundial-2022-quartos-marrocos-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2022-12-10",
+  "estadio": "Al Thumama Stadium, Doha",
+  "resultado": "Marrocos 1–0 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Marrocos",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Walid Regragui" },
+      "onze": [
+        { "nome": "Yassine Bounou", "numero": 1, "pais": "MA", "pos": "GR" },
+        { "nome": "Achraf Hakimi", "numero": 2, "pais": "MA", "pos": "DD" },
+        { "nome": "Jawad El Yamiq", "numero": 18, "pais": "MA", "pos": "DC" },
+        { "nome": "Romain Saïss", "numero": 6, "pais": "MA", "pos": "DC" },
+        { "nome": "Yahia Attiyat Allah", "numero": 25, "pais": "MA", "pos": "DE" },
+        { "nome": "Sofyan Amrabat", "numero": 4, "pais": "MA", "pos": "MDC" },
+        { "nome": "Azzedine Ounahi", "numero": 8, "pais": "MA", "pos": "MC" },
+        { "nome": "Selim Amallah", "numero": 15, "pais": "MA", "pos": "MC" },
+        { "nome": "Hakim Ziyech", "numero": 7, "pais": "MA", "pos": "ED" },
+        { "nome": "Youssef En-Nesyri", "numero": 19, "pais": "MA", "pos": "PL", "golos": [{ "minuto": 42 }] },
+        { "nome": "Sofiane Boufal", "numero": 17, "pais": "MA", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Achraf Dari", "numero": 20, "minuto": 57, "pais": "MA" },
+        { "nome": "Walid Cheddira", "numero": 21, "minuto": 65, "pais": "MA" },
+        { "nome": "Badr Benoun", "numero": 24, "minuto": 65, "pais": "MA" },
+        { "nome": "Zakaria Aboukhlal", "numero": 14, "minuto": 82, "pais": "MA" },
+        { "nome": "Yahya Jabrane", "numero": 26, "minuto": 82, "pais": "MA" }
+      ],
+      "nao_utilizados": [
+        "Noussair Mazraoui",
+        "Nayef Aguerd",
+        "Abderrazak Hamdallah",
+        "Anass Zaroury",
+        "Abdelhamid Sabiri",
+        "Munir Mohamedi",
+        "Ilias Chair",
+        "Abde Ezzalzouli",
+        "Ahmed Reda Tagnaouti",
+        "Bilal El Khannous"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "Diogo Dalot", "numero": 2, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Rúben Neves", "numero": 18, "pais": "PT", "pos": "MDC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Otávio", "numero": 25, "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "ED" },
+        { "nome": "Gonçalo Ramos", "numero": 26, "pais": "PT", "pos": "PL" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "João Cancelo", "numero": 20, "minuto": 51, "pais": "PT" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 51, "pais": "PT" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 69, "pais": "PT" },
+        { "nome": "Vitinha", "numero": 16, "minuto": 69, "pais": "PT" },
+        { "nome": "Ricardo Horta", "numero": 21, "minuto": 79, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Rui Patrício",
+        "João Palhinha",
+        "André Silva",
+        "José Sá",
+        { "nome": "Danilo Pereira", "aceites": ["danilo"] },
+        { "nome": "William Carvalho", "aceites": ["william"] },
+        "João Mário",
+        "Nuno Mendes",
+        "Matheus Nunes",
+        "António Silva"
+      ]
+    }
+  ]
+}

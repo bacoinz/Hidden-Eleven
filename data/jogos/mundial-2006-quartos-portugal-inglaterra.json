@@ -1,0 +1,75 @@
+{
+  "id": "mundial-2006-quartos-portugal-inglaterra",
+  "modos": ["classico", "equipa:inglaterra", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2006-07-01",
+  "estadio": "Arena AufSchalke, Gelsenkirchen",
+  "resultado": "Inglaterra 0–0 Portugal (1–3 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Inglaterra",
+      "slug": "inglaterra",
+      "cor": "#f4f4f4",
+      "formacao": "4-5-1",
+      "treinador": { "nome": "Sven-Göran Eriksson" },
+      "onze": [
+        { "nome": "Paul Robinson", "numero": 1, "pais": "GB-ENG", "pos": "GR" },
+        { "nome": "Gary Neville", "numero": 2, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Rio Ferdinand", "numero": 5, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "John Terry", "numero": 6, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
+        { "nome": "David Beckham", "numero": 7, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Steven Gerrard", "numero": 4, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Owen Hargreaves", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Frank Lampard", "numero": 8, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Joe Cole", "numero": 11, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Wayne Rooney", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Aaron Lennon", "numero": 19, "minuto": 52, "pais": "GB-ENG" },
+        { "nome": "Peter Crouch", "numero": 21, "minuto": 65, "pais": "GB-ENG" },
+        { "nome": "Jamie Carragher", "numero": 15, "minuto": 119, "pais": "GB-ENG" }
+      ],
+      "nao_utilizados": [
+        "Michael Owen",
+        "Sol Campbell",
+        "David James",
+        "Wayne Bridge",
+        "Jermaine Jenas",
+        "Michael Carrick",
+        "Stewart Downing",
+        "Scott Carson",
+        "Theo Walcott"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-2-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Fernando Meira", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "pais": "PT", "pos": "MC" },
+        { "nome": "Petit", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "MO" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 63, "pais": "PT" },
+        { "nome": "Hugo Viana", "numero": 10, "minuto": 74, "pais": "PT" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 86, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Costinha", "Quim", "Luís Boa Morte", "Deco", "Nuno Gomes", "Paulo Santos"]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "euro-2024-quartos-portugal-franca",
+  "modos": ["classico", "equipa:portugal", "equipa:franca"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2024-07-05",
+  "estadio": "Volksparkstadion, Hamburg",
+  "resultado": "Portugal 0–0 França (3–5 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "João Palhinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 74, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 74, "pais": "PT" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": "90+2", "pais": "PT" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "minuto": 106, "pais": "PT" },
+        { "nome": "Matheus Nunes", "numero": 16, "minuto": 119, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Rui Patrício",
+        "Diogo Dalot",
+        "Gonçalo Ramos",
+        "José Sá",
+        { "nome": "Danilo Pereira", "aceites": ["danilo"] },
+        "Gonçalo Inácio",
+        "João Neves",
+        { "nome": "Diogo Jota", "aceites": ["jota"] },
+        "António Silva",
+        "Pedro Neto"
+      ]
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#1e3a8a",
+      "formacao": "4-3-1-2",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Mike Maignan", "numero": 16, "pais": "FR", "pos": "GR" },
+        { "nome": "Jules Koundé", "numero": 5, "pais": "FR", "pos": "DD" },
+        { "nome": "Dayot Upamecano", "numero": 4, "pais": "FR", "pos": "DC" },
+        { "nome": "William Saliba", "numero": 17, "pais": "FR", "pos": "DC" },
+        { "nome": "Théo Hernandez", "numero": 22, "pais": "FR", "pos": "DE" },
+        { "nome": "N'Golo Kanté", "aceites": ["kante"], "numero": 13, "pais": "FR", "pos": "MC" },
+        { "nome": "Aurélien Tchouaméni", "numero": 8, "pais": "FR", "pos": "MC" },
+        { "nome": "Eduardo Camavinga", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "MO" },
+        { "nome": "Randal Kolo Muani", "numero": 12, "pais": "FR", "pos": "PL" },
+        { "nome": "Kylian Mbappé", "numero": 10, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ousmane Dembélé", "numero": 11, "minuto": 67, "pais": "FR" },
+        { "nome": "Marcus Thuram", "numero": 15, "minuto": 86, "pais": "FR" },
+        { "nome": "Youssouf Fofana", "numero": 19, "minuto": 91, "pais": "FR" },
+        { "nome": "Bradley Barcola", "numero": 25, "minuto": 106, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Brice Samba",
+        "Benjamin Pavard",
+        "Ferland Mendy",
+        "Olivier Giroud",
+        "Adrien Rabiot",
+        "Warren Zaïre-Emery",
+        "Kingsley Coman",
+        "Jonathan Clauss",
+        "Alphonse Areola",
+        "Ibrahima Konaté"
+      ]
+    }
+  ]
+}

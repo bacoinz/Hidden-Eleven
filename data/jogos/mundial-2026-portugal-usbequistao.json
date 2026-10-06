@@ -1,0 +1,96 @@
+{
+  "id": "mundial-2026-portugal-usbequistao",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2026-06-23",
+  "estadio": "NRG Stadium, Houston",
+  "resultado": "Portugal 5–0 Usbequistão",
+  "fonte": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_Group_K",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Renato Veiga", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE", "golos": [{ "minuto": 17 }] },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "João Neves", "numero": 15, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Neto", "numero": 18, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "pais": "PT", "pos": "EE" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "PL",
+          "golos": [{ "minuto": 6 }, { "minuto": 39 }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 46, "pais": "PT" },
+        { "nome": "Francisco Trincão", "numero": 16, "minuto": 63, "pais": "PT" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 76, "pais": "PT" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 83, "pais": "PT", "golos": [{ "minuto": 87 }] }
+      ],
+      "nao_utilizados": [
+        "Tomás Araújo",
+        "Diogo Dalot",
+        "Matheus Nunes",
+        "Gonçalo Ramos",
+        "José Sá",
+        "Gonçalo Inácio",
+        "Gonçalo Guedes",
+        "Rúben Neves",
+        "Rui Silva",
+        "Samú Costa"
+      ]
+    },
+    {
+      "nome": "Usbequistão",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Fabio Cannavaro" },
+      "onze": [
+        { "nome": "Abduvohid Nematov", "numero": 12, "pais": "UZ", "pos": "GR", "golos": [{ "minuto": 60, "autogolo": true }] },
+        { "nome": "Abdukodir Khusanov", "numero": 2, "pais": "UZ", "pos": "DC" },
+        { "nome": "Abdulla Abdullaev", "numero": 18, "pais": "UZ", "pos": "DC" },
+        { "nome": "Rustam Ashurmatov", "numero": 5, "pais": "UZ", "pos": "DC" },
+        { "nome": "Bekhruz Karimov", "numero": 24, "pais": "UZ", "pos": "MD" },
+        { "nome": "Odiljon Hamrobekov", "numero": 9, "pais": "UZ", "pos": "MC" },
+        { "nome": "Otabek Shukurov", "numero": 7, "pais": "UZ", "pos": "MC" },
+        { "nome": "Sherzod Nasrullaev", "numero": 13, "pais": "UZ", "pos": "ME" },
+        { "nome": "Azizjon Ganiev", "numero": 19, "pais": "UZ", "pos": "ED" },
+        { "nome": "Eldor Shomurodov", "numero": 14, "pais": "UZ", "pos": "PL" },
+        { "nome": "Abbosbek Fayzullaev", "numero": 22, "pais": "UZ", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Khojiakbar Alijonov", "numero": 3, "minuto": 46, "pais": "UZ" },
+        { "nome": "Akmal Mozgovoy", "numero": 6, "minuto": 46, "pais": "UZ" },
+        { "nome": "Igor Sergeev", "numero": 21, "minuto": 73, "pais": "UZ" },
+        { "nome": "Ruslanbek Jiyanov", "numero": 10, "minuto": "90+2", "pais": "UZ" },
+        { "nome": "Sherzod Esanov", "numero": 23, "minuto": "90+2", "pais": "UZ" }
+      ],
+      "nao_utilizados": [
+        "Utkir Yusupov",
+        "Farrukh Sayfiev",
+        "Jamshid Iskanderov",
+        "Oston Urunov",
+        "Umar Eshmurodov",
+        "Botirali Ergashev",
+        "Dostonbek Khamdamov",
+        "Azizbek Amonov",
+        "Avazbek Ulmasaliev",
+        "Jakhongir Urozov"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "mundial-2002-portugal-eua",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2002-06-05",
+  "estadio": "Suwon World Cup Stadium, Suwon",
+  "resultado": "Estados Unidos 3–2 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_Group_D",
+  "equipas": [
+    {
+      "nome": "Estados Unidos",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Bruce Arena" },
+      "onze": [
+        { "nome": "Brad Friedel", "numero": 1, "pais": "US", "pos": "GR" },
+        { "nome": "Tony Sanneh", "numero": 22, "pais": "US", "pos": "DD" },
+        { "nome": "Eddie Pope", "numero": 23, "pais": "US", "pos": "DC" },
+        { "nome": "Jeff Agoos", "numero": 12, "pais": "US", "pos": "DC", "golos": [{ "minuto": 71, "autogolo": true }] },
+        { "nome": "Frankie Hejduk", "numero": 2, "pais": "US", "pos": "DE" },
+        { "nome": "Earnie Stewart", "numero": 8, "pais": "US", "pos": "MD" },
+        { "nome": "John O'Brien", "numero": 5, "pais": "US", "pos": "MC", "golos": [{ "minuto": 4 }] },
+        { "nome": "Pablo Mastroeni", "numero": 4, "pais": "US", "pos": "MC" },
+        { "nome": "DaMarcus Beasley", "numero": 17, "pais": "US", "pos": "ME" },
+        { "nome": "Brian McBride", "numero": 20, "pais": "US", "pos": "PL", "golos": [{ "minuto": 36 }] },
+        { "nome": "Landon Donovan", "numero": 21, "pais": "US", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Cobi Jones", "numero": 13, "minuto": 46, "pais": "US" },
+        { "nome": "Joe-Max Moore", "numero": 9, "minuto": 75, "pais": "US" },
+        { "nome": "Carlos Llamosa", "numero": 16, "minuto": 80, "pais": "US" }
+      ],
+      "nao_utilizados": [
+        "Gregg Berhalter",
+        "David Regis",
+        "Eddie Lewis",
+        "Claudio Reyna",
+        "Clint Mathis",
+        "Steve Cherundolo",
+        "Josh Wolff",
+        "Kasey Keller",
+        "Tony Meola"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "António Oliveira", "aceites": ["António Luís Alves Ribeiro Oliveira"] },
+      "onze": [
+        { "nome": "Vítor Baía", "aceites": ["baia"], "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Beto", "numero": 22, "pais": "PT", "pos": "DD", "golos": [{ "minuto": 39 }] },
+        { "nome": "Fernando Couto", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Jorge Costa", "numero": 2, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 29, "autogolo": true }] },
+        { "nome": "Rui Jorge", "numero": 23, "pais": "PT", "pos": "DE" },
+        { "nome": "Sérgio Conceição", "numero": 11, "pais": "PT", "pos": "MD" },
+        { "nome": "Rui Costa", "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Petit", "numero": 20, "pais": "PT", "pos": "MC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "ME" },
+        { "nome": "João Pinto", "aceites": ["João Vieira Pinto"], "numero": 8, "pais": "PT", "pos": "PL" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paulo Bento", "numero": 17, "minuto": 69, "pais": "PT" },
+        { "nome": "Jorge Andrade", "numero": 13, "minuto": 74, "pais": "PT" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 80, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Abel Xavier", "Marco Caneira", "Paulo Sousa", "Hugo Viana", "Pedro Barbosa", "Nélson Pereira", "Ricardo", "Nuno Frechaut", "Capucho"]
+    }
+  ]
+}

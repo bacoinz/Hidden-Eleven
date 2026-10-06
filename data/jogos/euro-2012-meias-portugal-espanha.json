@@ -1,0 +1,85 @@
+{
+  "id": "euro-2012-meias-portugal-espanha",
+  "modos": ["classico", "equipa:portugal", "equipa:espanha"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Meia-final",
+  "selecoes": true,
+  "data": "2012-06-27",
+  "estadio": "Donbas Arena, Donetsk",
+  "resultado": "Portugal 0–0 Espanha (2–4 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2012_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Miguel Veloso", "numero": 4, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Hugo Almeida", "numero": 9, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 81, "pais": "PT" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 106, "pais": "PT" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 113, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"] },
+        "Ricardo Costa",
+        "Rolando",
+        "Rúben Micael",
+        "Miguel Lopes",
+        "Hugo Viana",
+        "Beto",
+        "Hélder Postiga"
+      ]
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Álvaro Arbeloa", "numero": 17, "pais": "ES", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DC" },
+        { "nome": "Jordi Alba", "numero": 18, "pais": "ES", "pos": "DE" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "MC" },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "David Silva", "numero": 21, "pais": "ES", "pos": "ED" },
+        { "nome": "Álvaro Negredo", "numero": 11, "pais": "ES", "pos": "PL" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 54, "pais": "ES" },
+        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES" },
+        { "nome": "Pedro", "numero": 7, "minuto": 87, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Raúl Albiol",
+        "Javi Martínez",
+        "Juanfran",
+        "Fernando Torres",
+        "Víctor Valdés",
+        "Juan Mata",
+        "Fernando Llorente",
+        "Santi Cazorla",
+        "Pepe Reina"
+      ]
+    }
+  ]
+}

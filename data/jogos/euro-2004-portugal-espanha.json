@@ -1,0 +1,85 @@
+{
+  "id": "euro-2004-portugal-espanha",
+  "modos": ["classico", "equipa:espanha", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2004-06-20",
+  "estadio": "Estádio José Alvalade, Lisboa",
+  "resultado": "Espanha 0–1 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2004_Group_A",
+  "equipas": [
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Iñaki Sáez" },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 23, "pais": "ES", "pos": "GR" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DD" },
+        { "nome": "Iván Helguera", "numero": 6, "pais": "ES", "pos": "DC" },
+        { "nome": "Juanito", "numero": 22, "pais": "ES", "pos": "DC" },
+        { "nome": "Raúl Bravo", "numero": 15, "pais": "ES", "pos": "DE" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "David Albelda", "numero": 4, "pais": "ES", "pos": "MC" },
+        { "nome": "Joaquín", "numero": 19, "pais": "ES", "pos": "ED" },
+        { "nome": "Raúl", "numero": 7, "pais": "ES", "pos": "MO" },
+        { "nome": "Vicente", "aceites": ["Vicente Rodríguez"], "numero": 14, "pais": "ES", "pos": "EE" },
+        { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Rubén Baraja", "numero": 8, "minuto": 65, "pais": "ES" },
+        { "nome": "Albert Luque", "numero": 11, "minuto": 71, "pais": "ES" },
+        { "nome": "Fernando Morientes", "numero": 10, "minuto": 79, "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Santiago Cañizares",
+        "Joan Capdevila",
+        "Carlos Marchena",
+        "Gabri",
+        "Daniel Aranzubia",
+        "Joseba Etxeberria",
+        "César Martín",
+        { "nome": "Xavi", "aceites": ["xavi hernandez"] },
+        "Juan Carlos Valerón"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Jorge Andrade", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 57 }] },
+        { "nome": "Petit", "numero": 8, "minuto": 77, "pais": "PT" },
+        { "nome": "Fernando Couto", "numero": 5, "minuto": 84, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Paulo Ferreira",
+        "Rui Jorge",
+        "Rui Costa",
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"] },
+        "Quim",
+        "Beto",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "José Moreira",
+        "Hélder Postiga"
+      ]
+    }
+  ]
+}

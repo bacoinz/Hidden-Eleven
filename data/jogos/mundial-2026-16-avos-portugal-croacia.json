@@ -1,0 +1,91 @@
+{
+  "id": "mundial-2026-16-avos-portugal-croacia",
+  "modos": ["classico", "equipa:portugal", "equipa:croacia"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "16 avos de final",
+  "selecoes": true,
+  "data": "2026-07-02",
+  "estadio": "BMO Field, Toronto",
+  "resultado": "Portugal 2–1 Croácia",
+  "fonte": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_round_of_32",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Renato Veiga", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE" },
+        { "nome": "João Neves", "numero": 15, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Neto", "numero": 18, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 68 }] }
+      ],
+      "suplentes": [
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 62, "pais": "PT" },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 62, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 62, "pais": "PT" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 62, "pais": "PT", "golos": [{ "minuto": "90+4" }] },
+        { "nome": "Rúben Neves", "numero": 21, "minuto": 81, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Tomás Araújo",
+        "Diogo Dalot",
+        "Matheus Nunes",
+        { "nome": "João Félix", "aceites": ["felix"] },
+        "José Sá",
+        "Gonçalo Inácio",
+        "Francisco Trincão",
+        "Gonçalo Guedes",
+        "Rui Silva",
+        "Samú Costa"
+      ]
+    },
+    {
+      "nome": "Croácia",
+      "slug": "croacia",
+      "cor": "#f4f4f4",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Zlatko Dalić" },
+      "onze": [
+        { "nome": "Dominik Livaković", "numero": 1, "pais": "HR", "pos": "GR" },
+        { "nome": "Josip Stanišić", "numero": 2, "pais": "HR", "pos": "DD" },
+        { "nome": "Josip Šutalo", "numero": 6, "pais": "HR", "pos": "DC" },
+        { "nome": "Marin Pongračić", "numero": 3, "pais": "HR", "pos": "DC" },
+        { "nome": "Ivan Perišić", "numero": 14, "pais": "HR", "pos": "DE", "golos": [{ "minuto": 53 }] },
+        { "nome": "Luka Modrić", "numero": 10, "pais": "HR", "pos": "MC" },
+        { "nome": "Mateo Kovačić", "numero": 8, "pais": "HR", "pos": "MC" },
+        { "nome": "Nikola Vlašić", "numero": 13, "pais": "HR", "pos": "ED" },
+        { "nome": "Petar Sučić", "numero": 17, "pais": "HR", "pos": "MO" },
+        { "nome": "Martin Baturina", "numero": 16, "pais": "HR", "pos": "EE" },
+        { "nome": "Ante Budimir", "numero": 11, "pais": "HR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Igor Matanović", "numero": 20, "minuto": 46, "pais": "HR" },
+        { "nome": "Mario Pašalić", "numero": 15, "minuto": 68, "pais": "HR" },
+        { "nome": "Joško Gvardiol", "numero": 4, "minuto": "90+2", "pais": "HR" },
+        { "nome": "Andrej Kramarić", "numero": 9, "minuto": "90+6", "pais": "HR" }
+      ],
+      "nao_utilizados": [
+        "Duje Ćaleta-Car",
+        "Nikola Moro",
+        "Ivor Pandur",
+        "Kristijan Jakić",
+        "Toni Fruk",
+        "Luka Sučić",
+        "Luka Vušković",
+        "Dominik Kotarski",
+        "Marco Pašalić",
+        "Martin Erlić",
+        "Petar Musa"
+      ]
+    }
+  ]
+}

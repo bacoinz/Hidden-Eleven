@@ -1,0 +1,89 @@
+{
+  "id": "euro-2024-portugal-chequia",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2024-06-18",
+  "estadio": "Red Bull Arena, Leipzig",
+  "resultado": "Portugal 2–1 Chéquia",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_Group_F",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "Diogo Dalot", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "MD" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Nuno Mendes", "numero": 19, "pais": "PT", "pos": "ME" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 63, "pais": "PT" },
+        { "nome": "Gonçalo Inácio", "numero": 14, "minuto": 63, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 90, "pais": "PT", "golos": [{ "minuto": "90+2" }] },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 90, "pais": "PT" },
+        { "nome": "Pedro Neto", "numero": 25, "minuto": 90, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Rui Patrício",
+        "João Palhinha",
+        "Gonçalo Ramos",
+        { "nome": "João Félix", "aceites": ["felix"] },
+        "José Sá",
+        { "nome": "Danilo Pereira", "aceites": ["danilo"] },
+        "João Neves",
+        "Matheus Nunes",
+        "Rúben Neves",
+        "António Silva"
+      ]
+    },
+    {
+      "nome": "Chéquia",
+      "formacao": "3-4-1-2",
+      "treinador": { "nome": "Ivan Hašek" },
+      "onze": [
+        { "nome": "Jindřich Staněk", "numero": 1, "pais": "CZ", "pos": "GR" },
+        { "nome": "Tomáš Holeš", "numero": 3, "pais": "CZ", "pos": "DC" },
+        { "nome": "Robin Hranáč", "numero": 4, "pais": "CZ", "pos": "DC", "golos": [{ "minuto": 69, "autogolo": true }] },
+        { "nome": "Ladislav Krejčí", "numero": 18, "pais": "CZ", "pos": "DC" },
+        { "nome": "Tomáš Souček", "numero": 22, "pais": "CZ", "pos": "MC" },
+        { "nome": "Vladimír Coufal", "numero": 5, "pais": "CZ", "pos": "MD" },
+        { "nome": "David Douděra", "numero": 12, "pais": "CZ", "pos": "ME" },
+        { "nome": "Pavel Šulc", "numero": 25, "pais": "CZ", "pos": "MO" },
+        { "nome": "Lukáš Provod", "numero": 14, "pais": "CZ", "pos": "MC", "golos": [{ "minuto": 62 }] },
+        { "nome": "Jan Kuchta", "numero": 11, "pais": "CZ", "pos": "PL" },
+        { "nome": "Patrik Schick", "numero": 10, "pais": "CZ", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Ondřej Lingr", "numero": 20, "minuto": 60, "pais": "CZ" },
+        { "nome": "Mojmír Chytil", "numero": 13, "minuto": 60, "pais": "CZ" },
+        { "nome": "Antonín Barák", "numero": 7, "minuto": 79, "pais": "CZ" },
+        { "nome": "Petr Ševčík", "numero": 8, "minuto": 79, "pais": "CZ" },
+        { "nome": "Tomáš Chorý", "numero": 19, "minuto": "90+3", "pais": "CZ" }
+      ],
+      "nao_utilizados": [
+        "David Zima",
+        "Martin Vitík",
+        "Adam Hložek",
+        "David Jurásek",
+        "Matěj Kovář",
+        "Václav Černý",
+        "Lukáš Červ",
+        "Vítězslav Jaroš",
+        "Tomáš Vlček",
+        "Matěj Jurásek"
+      ]
+    }
+  ]
+}

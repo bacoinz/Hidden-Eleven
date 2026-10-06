@@ -1,0 +1,73 @@
+{
+  "id": "euro-2008-portugal-turquia",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2008-06-07",
+  "estadio": "Stade de Genève, Geneva",
+  "resultado": "Portugal 2–0 Turquia",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2008_Group_A",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "José Bosingwa", "numero": 4, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 15, "pais": "PT", "pos": "DC", "golos": [{ "minuto": 61 }] },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Paulo Ferreira", "numero": 2, "pais": "PT", "pos": "DE" },
+        { "nome": "Petit", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "pais": "PT", "pos": "EE" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nani", "numero": 19, "minuto": 69, "pais": "PT" },
+        { "nome": "Raul Meireles", "numero": 6, "minuto": 83, "pais": "PT", "golos": [{ "minuto": "90+3" }] },
+        { "nome": "Fernando Meira", "numero": 5, "minuto": "90+2", "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "Hugo Almeida",
+        { "nome": "Nuno", "aceites": ["nuno", "espirito santo", "Nuno Espírito Santo"] },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"] },
+        "Jorge Ribeiro",
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"] },
+        "Miguel Veloso",
+        "Rui Patrício",
+        "Hélder Postiga"
+      ]
+    },
+    {
+      "nome": "Turquia",
+      "formacao": "4-3-2-1",
+      "treinador": { "nome": "Fatih Terim" },
+      "onze": [
+        { "nome": "Volkan Demirel", "numero": 23, "pais": "TR", "pos": "GR" },
+        { "nome": "Hamit Altıntop", "numero": 22, "pais": "TR", "pos": "DD" },
+        { "nome": "Servet Çetin", "numero": 2, "pais": "TR", "pos": "DC" },
+        { "nome": "Gökhan Zan", "numero": 4, "pais": "TR", "pos": "DC" },
+        { "nome": "Hakan Balta", "numero": 3, "pais": "TR", "pos": "DE" },
+        { "nome": "Colin Kazim-Richards", "numero": 18, "pais": "TR", "pos": "MD" },
+        { "nome": "Emre Belözoğlu", "numero": 5, "pais": "TR", "pos": "MC" },
+        { "nome": "Mehmet Aurélio", "numero": 7, "pais": "TR", "pos": "ME" },
+        { "nome": "Mevlüt Erdinç", "numero": 21, "pais": "TR", "pos": "MO" },
+        { "nome": "Tuncay Şanlı", "numero": 17, "pais": "TR", "pos": "MO" },
+        { "nome": "Nihat Kahveci", "numero": 8, "pais": "TR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Sabri Sarıoğlu", "numero": 20, "minuto": 46, "pais": "TR" },
+        { "nome": "Emre Aşık", "numero": 15, "minuto": 55, "pais": "TR" },
+        { "nome": "Semih Şentürk", "numero": 9, "minuto": 76, "pais": "TR" }
+      ],
+      "nao_utilizados": ["Rüştü Reçber", "Mehmet Topal", "Gökdeniz Karadeniz", "Tümer Metin", "Tolga Zengin", "Emre Güngör", "Arda Turan", "Uğur Boral", "Ayhan Akman"]
+    }
+  ]
+}

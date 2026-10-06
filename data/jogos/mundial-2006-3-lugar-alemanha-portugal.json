@@ -1,0 +1,92 @@
+{
+  "id": "mundial-2006-3-lugar-alemanha-portugal",
+  "modos": ["classico", "equipa:alemanha", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Jogo do 3.º lugar",
+  "selecoes": true,
+  "data": "2006-07-08",
+  "estadio": "Gottlieb-Daimler-Stadion, Stuttgart",
+  "resultado": "Alemanha 3–1 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Jürgen Klinsmann" },
+      "onze": [
+        { "nome": "Oliver Kahn", "numero": 12, "pais": "DE", "pos": "GR" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DD" },
+        { "nome": "Jens Nowotny", "numero": 6, "pais": "DE", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Marcell Jansen", "numero": 2, "pais": "DE", "pos": "DE" },
+        { "nome": "Bernd Schneider", "numero": 19, "pais": "DE", "pos": "MD" },
+        { "nome": "Sebastian Kehl", "numero": 5, "pais": "DE", "pos": "MC" },
+        { "nome": "Torsten Frings", "numero": 8, "pais": "DE", "pos": "MC" },
+        {
+          "nome": "Bastian Schweinsteiger",
+          "aceites": ["schweini"],
+          "numero": 7,
+          "pais": "DE",
+          "pos": "ME",
+          "golos": [{ "minuto": 56 }, { "minuto": 78 }]
+        },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" },
+        { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Oliver Neuville", "numero": 10, "minuto": 65, "pais": "DE" },
+        { "nome": "Mike Hanke", "numero": 9, "minuto": 71, "pais": "DE" },
+        { "nome": "Thomas Hitzlsperger", "numero": 15, "minuto": 79, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Jens Lehmann",
+        "Arne Friedrich",
+        "Robert Huth",
+        "Michael Ballack",
+        "Gerald Asamoah",
+        "Per Mertesacker",
+        "Tim Borowski",
+        "David Odonkor",
+        "Timo Hildebrand"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Paulo Ferreira", "numero": 2, "pais": "PT", "pos": "DD" },
+        { "nome": "Fernando Meira", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Costa", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 60, "autogolo": true }] },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 69, "pais": "PT", "golos": [{ "minuto": 88 }] },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "minuto": 77, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Marco Caneira",
+        "Hugo Viana",
+        "Quim",
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"] },
+        "Luís Boa Morte",
+        "Ricardo Carvalho",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "Paulo Santos",
+        "Hélder Postiga"
+      ]
+    }
+  ]
+}

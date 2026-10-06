@@ -1,0 +1,90 @@
+{
+  "id": "euro-2016-hungria-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2016-06-22",
+  "estadio": "Parc Olympique Lyonnais, Décines-Charpieu",
+  "resultado": "Hungria 3–3 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2016_Group_F",
+  "equipas": [
+    {
+      "nome": "Hungria",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Bernd Storck" },
+      "onze": [
+        { "nome": "Gábor Király", "numero": 1, "pais": "HU", "pos": "GR" },
+        { "nome": "Ádám Lang", "numero": 2, "pais": "HU", "pos": "DD" },
+        { "nome": "Richárd Guzmics", "numero": 20, "pais": "HU", "pos": "DC" },
+        { "nome": "Roland Juhász", "numero": 23, "pais": "HU", "pos": "DC" },
+        { "nome": "Mihály Korhut", "numero": 3, "pais": "HU", "pos": "DE" },
+        { "nome": "Ákos Elek", "numero": 6, "pais": "HU", "pos": "MC" },
+        { "nome": "Zoltán Gera", "numero": 10, "pais": "HU", "pos": "MC", "golos": [{ "minuto": 19 }] },
+        { "nome": "Ádám Pintér", "numero": 16, "pais": "HU", "pos": "MC" },
+        { "nome": "Gergő Lovrencsics", "numero": 14, "pais": "HU", "pos": "ED" },
+        { "nome": "Balázs Dzsudzsák", "numero": 7, "pais": "HU", "pos": "EE", "golos": [{ "minuto": 47 }, { "minuto": 55 }] },
+        { "nome": "Ádám Szalai", "numero": 9, "pais": "HU", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Barnabás Bese", "numero": 21, "minuto": 46, "pais": "HU" },
+        { "nome": "Krisztián Németh", "numero": 11, "minuto": 71, "pais": "HU" },
+        { "nome": "Zoltán Stieber", "numero": 18, "minuto": 83, "pais": "HU" }
+      ],
+      "nao_utilizados": [
+        "Tamás Kádár",
+        "Attila Fiola",
+        "Ádám Nagy",
+        "Dénes Dibusz",
+        "Dániel Böde",
+        "László Kleinheisler",
+        "Nemanja Nikolić",
+        "Tamás Priskin",
+        "Péter Gulácsi"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Vieirinha", "numero": 11, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "André Gomes", "numero": 15, "pais": "PT", "pos": "MD" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "João Mário", "numero": 10, "pais": "PT", "pos": "ME" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "PL",
+          "golos": [{ "minuto": 50 }, { "minuto": 62 }]
+        },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 42 }] }
+      ],
+      "suplentes": [
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 46, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 61, "pais": "PT" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 81, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "José Fonte",
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"] },
+        "Eder",
+        "Anthony Lopes",
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Cédric",
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
+        { "nome": "Adrien Silva", "aceites": ["adrien"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "mundial-2006-portugal-angola",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2006-06-11",
+  "estadio": "RheinEnergieStadion, Cologne",
+  "resultado": "Angola 0–1 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_Group_D",
+  "equipas": [
+    {
+      "nome": "Angola",
+      "formacao": "4-5-1",
+      "treinador": { "nome": "Luís Oliveira Gonçalves" },
+      "onze": [
+        { "nome": "João Ricardo", "numero": 1, "pais": "AO", "pos": "GR" },
+        { "nome": "Locó", "numero": 20, "pais": "AO", "pos": "DD" },
+        { "nome": "Jamba", "numero": 3, "pais": "AO", "pos": "DC" },
+        { "nome": "Kali", "numero": 5, "pais": "AO", "pos": "DC" },
+        { "nome": "Luís Delgado", "aceites": ["Luís Manuel Ferreira Delgado"], "numero": 21, "pais": "AO", "pos": "DE" },
+        { "nome": "Zé Kalanga", "numero": 17, "pais": "AO", "pos": "MD" },
+        { "nome": "André Macanga", "numero": 8, "pais": "AO", "pos": "MC" },
+        { "nome": "Mateus", "aceites": ["Mateus Galiano da Costa"], "numero": 11, "pais": "AO", "pos": "MC" },
+        { "nome": "Paulo Figueiredo", "numero": 7, "pais": "AO", "pos": "MC" },
+        { "nome": "António Mendonça", "numero": 14, "pais": "AO", "pos": "ME" },
+        { "nome": "Akwá", "numero": 10, "pais": "AO", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Mantorras", "numero": 9, "minuto": 60, "pais": "AO" },
+        { "nome": "Édson", "aceites": ["Édson Nobre"], "numero": 13, "minuto": 70, "pais": "AO" },
+        { "nome": "Miloy", "numero": 6, "minuto": 80, "pais": "AO" }
+      ],
+      "nao_utilizados": [
+        "Marco Airosa",
+        { "nome": "Lebo Lebo", "aceites": ["António Lebo Lebo"] },
+        "Lamá",
+        "Rui Marques",
+        { "nome": "Flávio", "aceites": ["Flávio Amado"] },
+        "Love",
+        "Titi Buengo",
+        "Mário Hipólito",
+        "Marco Abreu"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Fernando Meira", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "pais": "PT", "pos": "MC" },
+        { "nome": "Petit", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "MO" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 4 }] }
+      ],
+      "suplentes": [
+        { "nome": "Costinha", "numero": 6, "minuto": 60, "pais": "PT" },
+        { "nome": "Maniche", "numero": 18, "minuto": 72, "pais": "PT" },
+        { "nome": "Hugo Viana", "numero": 10, "minuto": 83, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Quim", "Luís Boa Morte", "Deco", "Nuno Gomes", "Paulo Santos", "Hélder Postiga"]
+    }
+  ]
+}

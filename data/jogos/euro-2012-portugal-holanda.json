@@ -1,0 +1,90 @@
+{
+  "id": "euro-2012-portugal-holanda",
+  "modos": ["classico", "equipa:portugal", "equipa:holanda"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2012-06-17",
+  "estadio": "Metalist Stadium, Kharkiv",
+  "resultado": "Portugal 2–1 Holanda",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2012_Group_B",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 12, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Miguel Veloso", "numero": 4, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "ED" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "EE",
+          "golos": [{ "minuto": 28 }, { "minuto": 74 }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 64, "pais": "PT" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 72, "pais": "PT" },
+        { "nome": "Rolando", "numero": 14, "minuto": 87, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
+        "Hugo Almeida",
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"] },
+        "Ricardo Costa",
+        "Rúben Micael",
+        { "nome": "Silvestre Varela", "aceites": ["varela"] },
+        "Miguel Lopes",
+        "Hugo Viana",
+        "Beto"
+      ]
+    },
+    {
+      "nome": "Holanda",
+      "slug": "holanda",
+      "cor": "#f36c21",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Bert van Marwijk" },
+      "onze": [
+        { "nome": "Maarten Stekelenburg", "numero": 1, "pais": "NL", "pos": "GR" },
+        { "nome": "Gregory van der Wiel", "numero": 2, "pais": "NL", "pos": "DD" },
+        { "nome": "Ron Vlaar", "numero": 13, "pais": "NL", "pos": "DC" },
+        { "nome": "Joris Mathijsen", "numero": 4, "pais": "NL", "pos": "DC" },
+        { "nome": "Jetro Willems", "numero": 15, "pais": "NL", "pos": "DE" },
+        { "nome": "Nigel de Jong", "numero": 8, "pais": "NL", "pos": "MDC" },
+        { "nome": "Rafael van der Vaart", "numero": 23, "pais": "NL", "pos": "MC", "golos": [{ "minuto": 11 }] },
+        { "nome": "Arjen Robben", "numero": 11, "pais": "NL", "pos": "ED" },
+        { "nome": "Robin van Persie", "numero": 16, "pais": "NL", "pos": "MO" },
+        { "nome": "Wesley Sneijder", "numero": 10, "pais": "NL", "pos": "EE" },
+        { "nome": "Klaas-Jan Huntelaar", "numero": 9, "pais": "NL", "pos": "PL" }
+      ],
+      "suplentes": [{ "nome": "Ibrahim Afellay", "numero": 20, "minuto": 67, "pais": "NL" }],
+      "nao_utilizados": [
+        "John Heitinga",
+        "Wilfred Bouma",
+        "Mark van Bommel",
+        "Dirk Kuyt",
+        "Michel Vorm",
+        "Stijn Schaars",
+        "Kevin Strootman",
+        "Luuk de Jong",
+        "Luciano Narsingh",
+        "Khalid Boulahrouz",
+        "Tim Krul"
+      ]
+    }
+  ]
+}

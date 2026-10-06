@@ -1,0 +1,89 @@
+{
+  "id": "euro-2024-oitavos-portugal-eslovenia",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Oitavos de final",
+  "selecoes": true,
+  "data": "2024-07-01",
+  "estadio": "Waldstadion, Frankfurt",
+  "resultado": "Portugal 0–0 Eslovénia (3–0 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "João Palhinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 65, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 76, "pais": "PT" },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 117, "pais": "PT" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 117, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Rui Patrício",
+        "Diogo Dalot",
+        "Gonçalo Ramos",
+        { "nome": "João Félix", "aceites": ["felix"] },
+        "José Sá",
+        { "nome": "Danilo Pereira", "aceites": ["danilo"] },
+        "Gonçalo Inácio",
+        "João Neves",
+        "Matheus Nunes",
+        "António Silva",
+        "Pedro Neto"
+      ]
+    },
+    {
+      "nome": "Eslovénia",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Matjaž Kek" },
+      "onze": [
+        { "nome": "Jan Oblak", "numero": 1, "pais": "SI", "pos": "GR" },
+        { "nome": "Žan Karničnik", "numero": 2, "pais": "SI", "pos": "DD" },
+        { "nome": "Vanja Drkušić", "numero": 21, "pais": "SI", "pos": "DC" },
+        { "nome": "Jaka Bijol", "numero": 6, "pais": "SI", "pos": "DC" },
+        { "nome": "Jure Balkovec", "numero": 3, "pais": "SI", "pos": "DE" },
+        { "nome": "Petar Stojanović", "numero": 20, "pais": "SI", "pos": "MD" },
+        { "nome": "Adam Gnezda Čerin", "numero": 22, "pais": "SI", "pos": "MC" },
+        { "nome": "Timi Max Elšnik", "numero": 10, "pais": "SI", "pos": "MC" },
+        { "nome": "Jan Mlakar", "numero": 17, "pais": "SI", "pos": "ME" },
+        { "nome": "Andraž Šporar", "numero": 9, "pais": "SI", "pos": "PL" },
+        { "nome": "Benjamin Šeško", "numero": 11, "pais": "SI", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Jon Gorenc Stanković", "numero": 5, "minuto": 74, "pais": "SI" },
+        { "nome": "Žan Celar", "numero": 19, "minuto": 74, "pais": "SI" },
+        { "nome": "Benjamin Verbič", "numero": 7, "minuto": 87, "pais": "SI" },
+        { "nome": "Josip Iličić", "numero": 26, "minuto": 106, "pais": "SI" }
+      ],
+      "nao_utilizados": [
+        "Miha Blažič",
+        "Sandi Lovrić",
+        "Vid Belec",
+        "Erik Janža",
+        "Jasmin Kurtić",
+        "Tomi Horvat",
+        "Igor Vekić",
+        "Žan Vipotnik",
+        "David Brekalo",
+        "Nino Žugelj",
+        "Adrian Zeljković"
+      ]
+    }
+  ]
+}

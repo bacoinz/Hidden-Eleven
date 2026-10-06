@@ -1,0 +1,89 @@
+{
+  "id": "euro-2020-oitavos-belgica-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Oitavos de final",
+  "selecoes": true,
+  "data": "2021-06-27",
+  "estadio": "Estadio de La Cartuja, Sevilha",
+  "resultado": "Bélgica 1–0 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2020_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Bélgica",
+      "formacao": "3-4-3",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Thibaut Courtois", "numero": 1, "pais": "BE", "pos": "GR" },
+        { "nome": "Toby Alderweireld", "numero": 2, "pais": "BE", "pos": "DC" },
+        { "nome": "Jan Vertonghen", "numero": 5, "pais": "BE", "pos": "DC" },
+        { "nome": "Thomas Vermaelen", "numero": 3, "pais": "BE", "pos": "DC" },
+        { "nome": "Thomas Meunier", "numero": 15, "pais": "BE", "pos": "MD" },
+        { "nome": "Youri Tielemans", "numero": 8, "pais": "BE", "pos": "MC" },
+        { "nome": "Axel Witsel", "numero": 6, "pais": "BE", "pos": "MC" },
+        { "nome": "Thorgan Hazard", "numero": 16, "pais": "BE", "pos": "ME", "golos": [{ "minuto": 42 }] },
+        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 7, "pais": "BE", "pos": "ED" },
+        { "nome": "Eden Hazard", "numero": 10, "pais": "BE", "pos": "EE" },
+        { "nome": "Romelu Lukaku", "numero": 9, "pais": "BE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Dries Mertens", "numero": 14, "minuto": 48, "pais": "BE" },
+        { "nome": "Yannick Carrasco", "numero": 11, "minuto": 87, "pais": "BE" },
+        { "nome": "Leander Dendoncker", "numero": 19, "minuto": "90+5", "pais": "BE" }
+      ],
+      "nao_utilizados": [
+        "Dedryck Boyata",
+        "Simon Mignolet",
+        "Thomas Kaminski",
+        "Matz Sels",
+        "Hans Vanaken",
+        "Jason Denayer",
+        "Christian Benteke",
+        "Nacer Chadli",
+        "Michy Batshuayi",
+        "Leandro Trossard",
+        "Jérémy Doku",
+        "Dennis Praet"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Diogo Dalot", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "João Palhinha", "numero": 26, "pais": "PT", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "ED" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "pais": "PT", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 23, "minuto": 55, "pais": "PT" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 55, "pais": "PT" },
+        { "nome": "André Silva", "numero": 9, "minuto": 70, "pais": "PT" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "minuto": 78, "pais": "PT" },
+        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 78, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Nélson Semedo",
+        "José Fonte",
+        "Anthony Lopes",
+        { "nome": "William Carvalho", "aceites": ["william"] },
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Gonçalo Guedes",
+        "Rúben Neves",
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"] },
+        "Rui Silva",
+        "Nuno Mendes"
+      ]
+    }
+  ]
+}

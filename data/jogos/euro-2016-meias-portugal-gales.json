@@ -1,0 +1,83 @@
+{
+  "id": "euro-2016-meias-portugal-gales",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Meia-final",
+  "selecoes": true,
+  "data": "2016-07-06",
+  "estadio": "Parc Olympique Lyonnais, Décines-Charpieu",
+  "resultado": "Portugal 2–0 País de Gales",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2016_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric", "aceites": ["cedric", "Cédric Soares"], "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "José Fonte", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Mário", "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "pais": "PT", "pos": "MO" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 53 }] },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 50 }] }
+      ],
+      "suplentes": [
+        { "nome": "André Gomes", "numero": 15, "minuto": 74, "pais": "PT" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 79, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 86, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Pepe",
+        "Ricardo Carvalho",
+        "Eder",
+        "Vieirinha",
+        "Anthony Lopes",
+        { "nome": "William Carvalho", "aceites": ["william"] },
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Eliseu",
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
+      ]
+    },
+    {
+      "nome": "País de Gales",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Chris Coleman" },
+      "onze": [
+        { "nome": "Wayne Hennessey", "numero": 1, "pais": "GB-WLS", "pos": "GR" },
+        { "nome": "James Chester", "numero": 5, "pais": "GB-WLS", "pos": "DC" },
+        { "nome": "James Collins", "numero": 19, "pais": "GB-WLS", "pos": "DC" },
+        { "nome": "Ashley Williams", "numero": 6, "pais": "GB-WLS", "pos": "DC" },
+        { "nome": "Chris Gunter", "numero": 2, "pais": "GB-WLS", "pos": "MD" },
+        { "nome": "Neil Taylor", "numero": 3, "pais": "GB-WLS", "pos": "ME" },
+        { "nome": "Joe Ledley", "numero": 16, "pais": "GB-WLS", "pos": "MDC" },
+        { "nome": "Joe Allen", "numero": 7, "pais": "GB-WLS", "pos": "MC" },
+        { "nome": "Andy King", "numero": 8, "pais": "GB-WLS", "pos": "MC" },
+        { "nome": "Hal Robson-Kanu", "numero": 9, "pais": "GB-WLS", "pos": "PL" },
+        { "nome": "Gareth Bale", "numero": 11, "pais": "GB-WLS", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Sam Vokes", "numero": 18, "minuto": 58, "pais": "GB-WLS" },
+        { "nome": "Simon Church", "numero": 23, "minuto": 63, "pais": "GB-WLS" },
+        { "nome": "Jonny Williams", "numero": 20, "minuto": 66, "pais": "GB-WLS" }
+      ],
+      "nao_utilizados": [
+        "Ben Davies",
+        "Aaron Ramsey",
+        "Owain Fôn Williams",
+        "George Williams",
+        "David Edwards",
+        "Jazz Richards",
+        "David Cotterill",
+        "Danny Ward",
+        "David Vaughan"
+      ]
+    }
+  ]
+}

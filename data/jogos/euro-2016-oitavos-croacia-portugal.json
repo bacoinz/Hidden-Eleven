@@ -1,0 +1,75 @@
+{
+  "id": "euro-2016-oitavos-croacia-portugal",
+  "modos": ["classico", "equipa:croacia", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Oitavos de final",
+  "selecoes": true,
+  "data": "2016-06-25",
+  "estadio": "Stade Bollaert-Delelis, Lens",
+  "resultado": "Croácia 0–1 Portugal (a.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2016_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Croácia",
+      "slug": "croacia",
+      "cor": "#e5242a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Ante Čačić" },
+      "onze": [
+        { "nome": "Danijel Subašić", "numero": 23, "pais": "HR", "pos": "GR" },
+        { "nome": "Darijo Srna", "numero": 11, "pais": "HR", "pos": "DD" },
+        { "nome": "Vedran Ćorluka", "numero": 5, "pais": "HR", "pos": "DC" },
+        { "nome": "Domagoj Vida", "numero": 21, "pais": "HR", "pos": "DC" },
+        { "nome": "Ivan Strinić", "numero": 3, "pais": "HR", "pos": "DE" },
+        { "nome": "Luka Modrić", "numero": 10, "pais": "HR", "pos": "MC" },
+        { "nome": "Milan Badelj", "numero": 19, "pais": "HR", "pos": "MC" },
+        { "nome": "Marcelo Brozović", "numero": 14, "pais": "HR", "pos": "ED" },
+        { "nome": "Ivan Rakitić", "numero": 7, "pais": "HR", "pos": "MO" },
+        { "nome": "Ivan Perišić", "numero": 4, "pais": "HR", "pos": "EE" },
+        { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nikola Kalinić", "numero": 16, "minuto": 88, "pais": "HR" },
+        { "nome": "Marko Pjaca", "numero": 20, "minuto": 110, "pais": "HR" },
+        { "nome": "Andrej Kramarić", "numero": 9, "minuto": 120, "pais": "HR" }
+      ],
+      "nao_utilizados": ["Ivan Vargić", "Šime Vrsaljko", "Tin Jedvaj", "Mateo Kovačić", "Lovre Kalinić", "Gordon Schildenfeld", "Marko Rog", "Ante Ćorić", "Duje Čop"]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric", "aceites": ["cedric", "Cédric Soares"], "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "José Fonte", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "João Mário", "numero": 10, "pais": "PT", "pos": "MD" },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
+        { "nome": "André Gomes", "numero": 15, "pais": "PT", "pos": "ME" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 50, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 87, "pais": "PT", "golos": [{ "minuto": 117 }] },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 108, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "Ricardo Carvalho",
+        { "nome": "João Moutinho", "aceites": ["moutinho"] },
+        "Eder",
+        "Vieirinha",
+        "Anthony Lopes",
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Eliseu",
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
+      ]
+    }
+  ]
+}

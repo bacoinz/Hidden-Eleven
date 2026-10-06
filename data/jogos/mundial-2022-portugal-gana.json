@@ -1,0 +1,85 @@
+{
+  "id": "mundial-2022-portugal-gana",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2022-11-24",
+  "estadio": "Stadium 974, Doha",
+  "resultado": "Portugal 3–2 Gana",
+  "fonte": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_H",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "Rúben Neves", "numero": 18, "pais": "PT", "pos": "MDC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Otávio", "numero": 25, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "MO" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 78 }] },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "PL",
+          "golos": [{ "minuto": 65, "penalti": true }]
+        }
+      ],
+      "suplentes": [
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "minuto": 56, "pais": "PT" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 80 }] },
+        { "nome": "João Palhinha", "numero": 6, "minuto": 88, "pais": "PT" },
+        { "nome": "Gonçalo Ramos", "numero": 26, "minuto": 88, "pais": "PT" },
+        { "nome": "João Mário", "numero": 17, "minuto": 88, "pais": "PT" }
+      ],
+      "nao_utilizados": ["Rui Patrício", "Diogo Dalot", "Pepe", "André Silva", "José Sá", "Vitinha", "Nuno Mendes", "Ricardo Horta", "Matheus Nunes", "António Silva"]
+    },
+    {
+      "nome": "Gana",
+      "formacao": "3-5-2",
+      "treinador": { "nome": "Otto Addo" },
+      "onze": [
+        { "nome": "Lawrence Ati-Zigi", "numero": 1, "pais": "GH", "pos": "GR" },
+        { "nome": "Daniel Amartey", "numero": 18, "pais": "GH", "pos": "DC" },
+        { "nome": "Alexander Djiku", "numero": 23, "pais": "GH", "pos": "DC" },
+        { "nome": "Mohammed Salisu", "numero": 4, "pais": "GH", "pos": "DC" },
+        { "nome": "Alidu Seidu", "numero": 26, "pais": "GH", "pos": "MD" },
+        { "nome": "Baba Rahman", "numero": 17, "pais": "GH", "pos": "ME" },
+        { "nome": "Thomas Partey", "numero": 5, "pais": "GH", "pos": "MC" },
+        { "nome": "Mohammed Kudus", "numero": 20, "pais": "GH", "pos": "MC" },
+        { "nome": "Salis Abdul Samed", "numero": 21, "pais": "GH", "pos": "MC" },
+        { "nome": "André Ayew", "numero": 10, "pais": "GH", "pos": "PL", "golos": [{ "minuto": 73 }] },
+        { "nome": "Iñaki Williams", "numero": 19, "pais": "GH", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Tariq Lamptey", "numero": 2, "minuto": 66, "pais": "GH" },
+        { "nome": "Osman Bukari", "numero": 11, "minuto": 77, "pais": "GH", "golos": [{ "minuto": 89 }] },
+        { "nome": "Jordan Ayew", "numero": 9, "minuto": 77, "pais": "GH" },
+        { "nome": "Daniel-Kofi Kyereh", "numero": 8, "minuto": "90+2", "pais": "GH" },
+        { "nome": "Antoine Semenyo", "numero": 25, "minuto": "90+2", "pais": "GH" }
+      ],
+      "nao_utilizados": [
+        "Denis Odoi",
+        "Elisha Owusu",
+        "Abdul Fatawu Issahaku",
+        "Ibrahim Danlad",
+        "Daniel Afriyie",
+        "Gideon Mensah",
+        "Joseph Aidoo",
+        "Abdul Manaf Nurudeen",
+        "Kamaldeen Sulemana",
+        "Kamal Sowah"
+      ]
+    }
+  ]
+}

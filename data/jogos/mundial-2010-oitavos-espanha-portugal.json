@@ -1,0 +1,85 @@
+{
+  "id": "mundial-2010-oitavos-espanha-portugal",
+  "modos": ["classico", "equipa:espanha", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Oitavos de final",
+  "selecoes": true,
+  "data": "2010-06-29",
+  "estadio": "Cape Town Stadium, Cape Town",
+  "resultado": "Espanha 1–0 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#c60b1e",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Vicente del Bosque", "aceites": ["del bosque"] },
+      "onze": [
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "pais": "ES", "pos": "GR" },
+        { "nome": "Sergio Ramos", "numero": 15, "pais": "ES", "pos": "DD" },
+        { "nome": "Gerard Piqué", "numero": 3, "pais": "ES", "pos": "DC" },
+        { "nome": "Carles Puyol", "numero": 5, "pais": "ES", "pos": "DC" },
+        { "nome": "Joan Capdevila", "numero": 11, "pais": "ES", "pos": "DE" },
+        { "nome": "Sergio Busquets", "numero": 16, "pais": "ES", "pos": "MC" },
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "pais": "ES", "pos": "MC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 8, "pais": "ES", "pos": "ED" },
+        { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" },
+        { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 63 }] },
+        { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Fernando Llorente", "numero": 19, "minuto": 58, "pais": "ES" },
+        { "nome": "Pedro", "numero": 18, "minuto": 88, "pais": "ES" },
+        { "nome": "Carlos Marchena", "numero": 4, "minuto": "90+3", "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "Raúl Albiol",
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"] },
+        "Víctor Valdés",
+        "Juan Mata",
+        "Álvaro Arbeloa",
+        "Javi Martínez",
+        "David Silva",
+        { "nome": "Jesús Navas", "aceites": ["navas"] },
+        "Pepe Reina"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Carlos Queiroz" },
+      "onze": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"], "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Ricardo Costa", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Carvalho", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 23, "pais": "PT", "pos": "DE" },
+        { "nome": "Pepe", "numero": 15, "pais": "PT", "pos": "MDC" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "pais": "PT", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "pais": "PT", "pos": "ED" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Hugo Almeida", "numero": 18, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Danny", "numero": 10, "minuto": 58, "pais": "PT" },
+        { "nome": "Liédson", "numero": 9, "minuto": 72, "pais": "PT" },
+        { "nome": "Pedro Mendes", "numero": 8, "minuto": 72, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Paulo Ferreira",
+        "Rolando",
+        "Duda",
+        "Beto",
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"] },
+        "Miguel Veloso",
+        "Ruben Amorim",
+        "Deco",
+        "Daniel Fernandes"
+      ]
+    }
+  ]
+}

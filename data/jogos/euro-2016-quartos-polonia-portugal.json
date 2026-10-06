@@ -1,0 +1,83 @@
+{
+  "id": "euro-2016-quartos-polonia-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2016-06-30",
+  "estadio": "Stade Vélodrome, Marseille",
+  "resultado": "Polónia 1–1 Portugal (3–5 g.p.)",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2016_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Polónia",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Adam Nawałka" },
+      "onze": [
+        { "nome": "Łukasz Fabiański", "numero": 22, "pais": "PL", "pos": "GR" },
+        { "nome": "Łukasz Piszczek", "numero": 20, "pais": "PL", "pos": "DD" },
+        { "nome": "Kamil Glik", "numero": 15, "pais": "PL", "pos": "DC" },
+        { "nome": "Michał Pazdan", "numero": 2, "pais": "PL", "pos": "DC" },
+        { "nome": "Artur Jędrzejczyk", "numero": 3, "pais": "PL", "pos": "DE" },
+        { "nome": "Jakub Błaszczykowski", "aceites": ["kuba"], "numero": 16, "pais": "PL", "pos": "MD" },
+        { "nome": "Grzegorz Krychowiak", "numero": 10, "pais": "PL", "pos": "MC" },
+        { "nome": "Krzysztof Mączyński", "numero": 5, "pais": "PL", "pos": "MC" },
+        { "nome": "Kamil Grosicki", "numero": 11, "pais": "PL", "pos": "ME" },
+        { "nome": "Arkadiusz Milik", "numero": 7, "pais": "PL", "pos": "PL" },
+        { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL", "golos": [{ "minuto": 2 }] }
+      ],
+      "suplentes": [
+        { "nome": "Bartosz Kapustka", "numero": 21, "minuto": 82, "pais": "PL" },
+        { "nome": "Tomasz Jodłowiec", "numero": 6, "minuto": 98, "pais": "PL" }
+      ],
+      "nao_utilizados": [
+        "Wojciech Szczęsny",
+        "Thiago Cionek",
+        "Karol Linetty",
+        "Artur Boruc",
+        "Mariusz Stępiński",
+        "Jakub Wawrzyniak",
+        "Sławomir Peszko",
+        "Bartosz Salamon",
+        "Piotr Zieliński",
+        "Filip Starzyński"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-4-2 losango",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Cédric", "aceites": ["cedric", "Cédric Soares"], "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "José Fonte", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Eliseu", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Mário", "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 33 }] },
+        { "nome": "Adrien Silva", "aceites": ["adrien"], "numero": 23, "pais": "PT", "pos": "MO" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 73, "pais": "PT" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 80, "pais": "PT" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 96, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"] },
+        "Ricardo Carvalho",
+        "Eder",
+        "Vieirinha",
+        "Anthony Lopes",
+        "André Gomes",
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
+      ]
+    }
+  ]
+}

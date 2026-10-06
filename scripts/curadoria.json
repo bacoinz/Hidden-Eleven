@@ -144,17 +144,6 @@
       }
     ]
   },
-  "ucl-2000-final": {
-    "equipas": [
-      {},
-      {
-        "formacao": "4-4-2",
-        "pos": {
-          "Javier Farinós": "MC"
-        }
-      }
-    ]
-  },
   "ucl-2005-final": {
     "equipas": [
       {
@@ -232,18 +221,6 @@
       {
         "cor": "#c1121f"
       }
-    ]
-  },
-  "ucl-2001-final": {
-    "equipas": [
-      {
-        "formacao": "3-4-2-1",
-        "pos": {
-          "Hasan Salihamidžić": "MO",
-          "Mehmet Scholl": "MO"
-        }
-      },
-      {}
     ]
   },
   "euro-2008-final": {
@@ -520,6 +497,80 @@
           "ter Stegen": "Marc-André ter Stegen"
         }
       }
+    ]
+  },
+  "euro-2016-quartos-polonia-portugal": {
+    "equipas": [
+      {},
+      {
+        "pos": {
+          "João Mário": "MC",
+          "Adrien Silva": "MO"
+        }
+      }
+    ]
+  },
+  "mundial-2026-portugal-usbequistao": {
+    "equipas": [
+      {},
+      {
+        "golos": {
+          "Abduvohid Nematov": [
+            {
+              "minuto": 60,
+              "autogolo": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "mundial-2010-portugal-coreia-do-norte": {
+    "equipas": [
+      {},
+      {
+        "formacao": "5-4-1",
+        "pos": {
+          "An Yong-hak": "MC"
+        }
+      }
+    ]
+  },
+  "euro-2024-portugal-chequia": {
+    "equipas": [
+      {
+        "formacao": "3-4-3",
+        "onze": {
+          "Diogo Costa": "GR",
+          "Diogo Dalot": "DC",
+          "Pepe": "DC",
+          "Rúben Dias": "DC",
+          "João Cancelo": "MD",
+          "Bruno Fernandes": "MC",
+          "Vitinha": "MC",
+          "Nuno Mendes": "ME",
+          "Bernardo Silva": "ED",
+          "Cristiano Ronaldo": "PL",
+          "Rafael Leão": "EE"
+        }
+      },
+      {
+        "formacao": "3-4-1-2",
+        "pos": {
+          "Tomáš Souček": "MC",
+          "Lukáš Provod": "MC"
+        }
+      }
+    ]
+  },
+  "euro-2020-oitavos-belgica-portugal": {
+    "equipas": [
+      {
+        "remover": [
+          "Timothy Castagne"
+        ]
+      },
+      {}
     ]
   }
 }

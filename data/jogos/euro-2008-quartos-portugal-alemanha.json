@@ -1,0 +1,85 @@
+{
+  "id": "euro-2008-quartos-portugal-alemanha",
+  "modos": ["classico", "equipa:portugal", "equipa:alemanha"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Quartos de final",
+  "selecoes": true,
+  "data": "2008-06-19",
+  "estadio": "St. Jakob-Park, Basileia",
+  "resultado": "Portugal 2–3 Alemanha",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2008_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "José Bosingwa", "numero": 4, "pais": "PT", "pos": "DD" },
+        { "nome": "Pepe", "numero": 15, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Paulo Ferreira", "numero": 2, "pais": "PT", "pos": "DE" },
+        { "nome": "Petit", "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 10, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "pais": "PT", "pos": "EE" },
+        { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 40 }] }
+      ],
+      "suplentes": [
+        { "nome": "Raul Meireles", "numero": 6, "minuto": 31, "pais": "PT" },
+        { "nome": "Nani", "numero": 19, "minuto": 67, "pais": "PT" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 73, "pais": "PT", "golos": [{ "minuto": 87 }] }
+      ],
+      "nao_utilizados": [
+        "Bruno Alves",
+        "Fernando Meira",
+        "Hugo Almeida",
+        { "nome": "Nuno", "aceites": ["nuno", "espirito santo", "Nuno Espírito Santo"] },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"] },
+        "Jorge Ribeiro",
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"] },
+        "Miguel Veloso",
+        "Rui Patrício"
+      ]
+    },
+    {
+      "nome": "Alemanha",
+      "slug": "alemanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-4-2",
+      "treinador": { "nome": "Joachim Löw", "aceites": ["loew", "jogi"] },
+      "onze": [
+        { "nome": "Jens Lehmann", "numero": 1, "pais": "DE", "pos": "GR" },
+        { "nome": "Arne Friedrich", "numero": 3, "pais": "DE", "pos": "DD" },
+        { "nome": "Per Mertesacker", "numero": 17, "pais": "DE", "pos": "DC" },
+        { "nome": "Christoph Metzelder", "numero": 21, "pais": "DE", "pos": "DC" },
+        { "nome": "Philipp Lahm", "numero": 16, "pais": "DE", "pos": "DE" },
+        { "nome": "Simon Rolfes", "numero": 6, "pais": "DE", "pos": "MC" },
+        { "nome": "Michael Ballack", "numero": 13, "pais": "DE", "pos": "MC", "golos": [{ "minuto": 61 }] },
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "pais": "DE", "pos": "ED", "golos": [{ "minuto": 22 }] },
+        { "nome": "Thomas Hitzlsperger", "numero": 15, "pais": "DE", "pos": "EE" },
+        { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL", "golos": [{ "minuto": 26 }] },
+        { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Tim Borowski", "numero": 18, "minuto": 73, "pais": "DE" },
+        { "nome": "Clemens Fritz", "numero": 4, "minuto": 83, "pais": "DE" },
+        { "nome": "Marcell Jansen", "numero": 2, "minuto": 89, "pais": "DE" }
+      ],
+      "nao_utilizados": [
+        "Heiko Westermann",
+        "Torsten Frings",
+        "Mario Gómez",
+        "Oliver Neuville",
+        "Robert Enke",
+        "Piotr Trochowski",
+        "David Odonkor",
+        "Kevin Kurányi",
+        "René Adler"
+      ]
+    }
+  ]
+}

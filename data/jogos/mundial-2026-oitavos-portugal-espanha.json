@@ -1,0 +1,91 @@
+{
+  "id": "mundial-2026-oitavos-portugal-espanha",
+  "modos": ["classico", "equipa:portugal", "equipa:espanha"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Oitavos de final",
+  "selecoes": true,
+  "data": "2026-07-06",
+  "estadio": "AT&T Stadium, Arlington",
+  "resultado": "Portugal 0–1 Espanha",
+  "fonte": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Roberto Martínez" },
+      "onze": [
+        { "nome": "Diogo Costa", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "João Cancelo", "numero": 20, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Renato Veiga", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Mendes", "numero": 25, "pais": "PT", "pos": "DE" },
+        { "nome": "João Neves", "numero": 15, "pais": "PT", "pos": "MC" },
+        { "nome": "Vitinha", "numero": 23, "pais": "PT", "pos": "MC" },
+        { "nome": "Pedro Neto", "numero": 18, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 8, "pais": "PT", "pos": "MO" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "pais": "PT", "pos": "EE" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 56, "pais": "PT" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 71, "pais": "PT" },
+        { "nome": "Diogo Dalot", "numero": 5, "minuto": 71, "pais": "PT" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 83, "pais": "PT" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 83, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Tomás Araújo",
+        "Matheus Nunes",
+        "Gonçalo Ramos",
+        "José Sá",
+        "Gonçalo Inácio",
+        "Francisco Trincão",
+        "Gonçalo Guedes",
+        "Rúben Neves",
+        "Rui Silva",
+        "Samú Costa"
+      ]
+    },
+    {
+      "nome": "Espanha",
+      "slug": "espanha",
+      "cor": "#f4f4f4",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Luis de la Fuente" },
+      "onze": [
+        { "nome": "Unai Simón", "numero": 23, "pais": "ES", "pos": "GR" },
+        { "nome": "Pedro Porro", "numero": 12, "pais": "ES", "pos": "DD" },
+        { "nome": "Pau Cubarsí", "numero": 22, "pais": "ES", "pos": "DC" },
+        { "nome": "Aymeric Laporte", "numero": 14, "pais": "ES", "pos": "DC" },
+        { "nome": "Marc Cucurella", "numero": 24, "pais": "ES", "pos": "DE" },
+        { "nome": "Rodri", "numero": 16, "pais": "ES", "pos": "MDC" },
+        { "nome": "Dani Olmo", "numero": 10, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedri", "numero": 20, "pais": "ES", "pos": "MC" },
+        { "nome": "Lamine Yamal", "aceites": ["yamal", "lamine"], "numero": 19, "pais": "ES", "pos": "ED" },
+        { "nome": "Mikel Oyarzabal", "numero": 21, "pais": "ES", "pos": "PL" },
+        { "nome": "Álex Baena", "numero": 15, "pais": "ES", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 75, "pais": "ES" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 85, "pais": "ES", "golos": [{ "minuto": "90+1" }] },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "minuto": 85, "pais": "ES" },
+        { "nome": "Borja Iglesias", "numero": 26, "minuto": "90+7", "pais": "ES" }
+      ],
+      "nao_utilizados": [
+        "David Raya",
+        "Marc Pubill",
+        "Álex Grimaldo",
+        "Eric García",
+        "Marcos Llorente",
+        "Gavi",
+        "Yéremy Pino",
+        "Joan Garcia",
+        "Nico Williams",
+        "Martín Zubimendi",
+        "Víctor Muñoz"
+      ]
+    }
+  ]
+}

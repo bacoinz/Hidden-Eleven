@@ -1,0 +1,77 @@
+{
+  "id": "mundial-2010-portugal-coreia-do-norte",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2010-06-21",
+  "estadio": "Cape Town Stadium, Cape Town",
+  "resultado": "Portugal 7–0 Coreia do Norte",
+  "fonte": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_G",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Carlos Queiroz" },
+      "onze": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"], "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Carvalho", "numero": 6, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "Fábio Coentrão", "numero": 23, "pais": "PT", "pos": "DE" },
+        { "nome": "Pedro Mendes", "numero": 8, "pais": "PT", "pos": "MDC" },
+        {
+          "nome": "Tiago",
+          "aceites": ["tiago mendes", "Tiago Mendes"],
+          "numero": 19,
+          "pais": "PT",
+          "pos": "MC",
+          "golos": [{ "minuto": 60 }, { "minuto": 89 }]
+        },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC", "golos": [{ "minuto": 29 }] },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 87 }] },
+        {
+          "nome": "Simão",
+          "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"],
+          "numero": 11,
+          "pais": "PT",
+          "pos": "EE",
+          "golos": [{ "minuto": 53 }]
+        },
+        { "nome": "Hugo Almeida", "numero": 18, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 56 }] }
+      ],
+      "suplentes": [
+        { "nome": "Miguel Veloso", "numero": 14, "minuto": 70, "pais": "PT" },
+        { "nome": "Duda", "numero": 5, "minuto": 74, "pais": "PT" },
+        { "nome": "Liédson", "numero": 9, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 81 }] }
+      ],
+      "nao_utilizados": ["Paulo Ferreira", "Rolando", "Danny", "Beto", "Pepe", "Ruben Amorim", "Deco", "Ricardo Costa", "Daniel Fernandes"]
+    },
+    {
+      "nome": "Coreia do Norte",
+      "formacao": "5-4-1",
+      "treinador": { "nome": "Kim Jong-hun" },
+      "onze": [
+        { "nome": "Ri Myong-guk", "numero": 1, "pais": "KP", "pos": "GR" },
+        { "nome": "Cha Jong-hyok", "numero": 2, "pais": "KP", "pos": "DD" },
+        { "nome": "Pak Chol-jin", "numero": 13, "pais": "KP", "pos": "DC" },
+        { "nome": "Ri Jun-il", "numero": 3, "pais": "KP", "pos": "DC" },
+        { "nome": "Ji Yun-nam", "numero": 8, "pais": "KP", "pos": "DC" },
+        { "nome": "Ri Kwang-chon", "numero": 5, "pais": "KP", "pos": "DE" },
+        { "nome": "An Yong-hak", "numero": 17, "pais": "KP", "pos": "MC" },
+        { "nome": "Mun In-guk", "numero": 11, "pais": "KP", "pos": "MD" },
+        { "nome": "Pak Nam-chol", "numero": 4, "pais": "KP", "pos": "MC" },
+        { "nome": "Hong Yong-jo", "numero": 10, "pais": "KP", "pos": "ME" },
+        { "nome": "Jong Tae-se", "numero": 9, "pais": "KP", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Kim Kum-il", "numero": 6, "minuto": 58, "pais": "KP" },
+        { "nome": "Kim Yong-jun", "numero": 15, "minuto": 58, "pais": "KP" },
+        { "nome": "Nam Song-chol", "numero": 16, "minuto": 75, "pais": "KP" }
+      ],
+      "nao_utilizados": ["An Chol-hyok", "Choe Kum-chol", "Kim Myong-gil", "Ri Chol-myong", "Kim Myong-won", "Ri Kwang-hyok", "Kim Kyong-il", "Pak Sung-hyok"]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "mundial-2014-eua-portugal",
+  "modos": ["classico", "equipa:portugal"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2014-06-22",
+  "estadio": "Arena da Amazônia, Manaus",
+  "resultado": "Estados Unidos 2–2 Portugal",
+  "fonte": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_G",
+  "equipas": [
+    {
+      "nome": "Estados Unidos",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Jürgen Klinsmann" },
+      "onze": [
+        { "nome": "Tim Howard", "numero": 1, "pais": "US", "pos": "GR" },
+        { "nome": "Fabian Johnson", "numero": 23, "pais": "US", "pos": "DD" },
+        { "nome": "Geoff Cameron", "numero": 20, "pais": "US", "pos": "DC" },
+        { "nome": "Matt Besler", "numero": 5, "pais": "US", "pos": "DC" },
+        { "nome": "DaMarcus Beasley", "numero": 7, "pais": "US", "pos": "DE" },
+        { "nome": "Kyle Beckerman", "numero": 15, "pais": "US", "pos": "MC" },
+        { "nome": "Jermaine Jones", "numero": 13, "pais": "US", "pos": "MC", "golos": [{ "minuto": 64 }] },
+        { "nome": "Alejandro Bedoya", "numero": 11, "pais": "US", "pos": "ED" },
+        { "nome": "Michael Bradley", "numero": 4, "pais": "US", "pos": "MO" },
+        { "nome": "Graham Zusi", "numero": 19, "pais": "US", "pos": "EE" },
+        { "nome": "Clint Dempsey", "numero": 8, "pais": "US", "pos": "PL", "golos": [{ "minuto": 81 }] }
+      ],
+      "suplentes": [
+        { "nome": "DeAndre Yedlin", "numero": 2, "minuto": 72, "pais": "US" },
+        { "nome": "Chris Wondolowski", "numero": 18, "minuto": 87, "pais": "US" },
+        { "nome": "Omar Gonzalez", "numero": 3, "minuto": "90+1", "pais": "US" }
+      ],
+      "nao_utilizados": [
+        "John Brooks",
+        "Aron Jóhannsson",
+        "Mix Diskerud",
+        "Brad Guzan",
+        "Brad Davis",
+        "Julian Green",
+        "Jozy Altidore",
+        "Timothy Chandler",
+        "Nick Rimando"
+      ]
+    },
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Paulo Bento" },
+      "onze": [
+        { "nome": "Beto", "numero": 22, "pais": "PT", "pos": "GR" },
+        { "nome": "João Pereira", "numero": 21, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Costa", "numero": 13, "pais": "PT", "pos": "DC" },
+        { "nome": "Bruno Alves", "numero": 2, "pais": "PT", "pos": "DC" },
+        { "nome": "André Almeida", "numero": 19, "pais": "PT", "pos": "DE" },
+        { "nome": "Miguel Veloso", "numero": 4, "pais": "PT", "pos": "MDC" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Raul Meireles", "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "ED", "golos": [{ "minuto": 5 }] },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" },
+        { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Eder", "numero": 11, "minuto": 16, "pais": "PT" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 6, "minuto": 46, "pais": "PT" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 69, "pais": "PT", "golos": [{ "minuto": "90+5" }] }
+      ],
+      "nao_utilizados": [
+        { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
+        "Pepe",
+        "Fábio Coentrão",
+        "Hugo Almeida",
+        "Vieirinha",
+        "Rui Patrício",
+        "Luís Neto",
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Ruben Amorim"
+      ]
+    }
+  ]
+}

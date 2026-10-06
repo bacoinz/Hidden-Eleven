@@ -1,0 +1,98 @@
+{
+  "id": "euro-2020-portugal-franca",
+  "modos": ["classico", "equipa:portugal", "equipa:franca"],
+  "competicao": "Campeonato da Europa",
+  "fase": "Fase de grupos",
+  "selecoes": true,
+  "data": "2021-06-23",
+  "estadio": "Puskás Aréna, Budapeste",
+  "resultado": "Portugal 2–2 França",
+  "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_F",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-3-3",
+      "treinador": { "nome": "Fernando Santos", "aceites": ["engenheiro"] },
+      "onze": [
+        { "nome": "Rui Patrício", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Nélson Semedo", "numero": 2, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
+        { "nome": "Pepe", "numero": 3, "pais": "PT", "pos": "DC" },
+        { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "pais": "PT", "pos": "MC" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "pais": "PT", "pos": "MC" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "pais": "PT", "pos": "MC" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "ED" },
+        {
+          "nome": "Cristiano Ronaldo",
+          "aceites": ["cristiano", "cr7"],
+          "numero": 7,
+          "pais": "PT",
+          "pos": "PL",
+          "golos": [{ "minuto": 31, "penalti": true }, { "minuto": 60, "penalti": true }]
+        },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "pais": "PT", "pos": "EE" }
+      ],
+      "suplentes": [
+        { "nome": "João Palhinha", "numero": 26, "minuto": 46, "pais": "PT" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 72, "pais": "PT" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 72, "pais": "PT" },
+        { "nome": "Diogo Dalot", "numero": 20, "minuto": 79, "pais": "PT" },
+        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 88, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "José Fonte",
+        "André Silva",
+        "Anthony Lopes",
+        { "nome": "William Carvalho", "aceites": ["william"] },
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
+        "Gonçalo Guedes",
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"] },
+        "Rui Silva",
+        { "nome": "João Félix", "aceites": ["felix"] },
+        "Nuno Mendes"
+      ]
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#1e3a8a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Didier Deschamps" },
+      "onze": [
+        { "nome": "Hugo Lloris", "numero": 1, "pais": "FR", "pos": "GR" },
+        { "nome": "Jules Koundé", "numero": 25, "pais": "FR", "pos": "DD" },
+        { "nome": "Raphaël Varane", "numero": 4, "pais": "FR", "pos": "DC" },
+        { "nome": "Presnel Kimpembe", "numero": 3, "pais": "FR", "pos": "DC" },
+        { "nome": "Lucas Hernandez", "numero": 21, "pais": "FR", "pos": "DE" },
+        { "nome": "Paul Pogba", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "N'Golo Kanté", "aceites": ["kante"], "numero": 13, "pais": "FR", "pos": "MC" },
+        { "nome": "Corentin Tolisso", "numero": 12, "pais": "FR", "pos": "ED" },
+        { "nome": "Antoine Griezmann", "numero": 7, "pais": "FR", "pos": "MO" },
+        { "nome": "Kylian Mbappé", "numero": 10, "pais": "FR", "pos": "EE" },
+        { "nome": "Karim Benzema", "numero": 19, "pais": "FR", "pos": "PL", "golos": [{ "minuto": "45+2", "penalti": true }, { "minuto": 47 }] }
+      ],
+      "suplentes": [
+        { "nome": "Lucas Digne", "numero": 18, "minuto": 46, "pais": "FR" },
+        { "nome": "Adrien Rabiot", "numero": 14, "minuto": 52, "pais": "FR" },
+        { "nome": "Kingsley Coman", "numero": 20, "minuto": 66, "pais": "FR" },
+        { "nome": "Moussa Sissoko", "numero": 17, "minuto": 87, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Benjamin Pavard",
+        "Clément Lenglet",
+        "Thomas Lemar",
+        "Olivier Giroud",
+        "Ousmane Dembélé",
+        "Kurt Zouma",
+        "Steve Mandanda",
+        "Wissam Ben Yedder",
+        "Mike Maignan",
+        "Léo Dubois",
+        "Marcus Thuram"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "mundial-2006-meias-portugal-franca",
+  "modos": ["classico", "equipa:portugal", "equipa:franca"],
+  "competicao": "Campeonato do Mundo",
+  "fase": "Meia-final",
+  "selecoes": true,
+  "data": "2006-07-05",
+  "estadio": "Allianz Arena, Munique",
+  "resultado": "Portugal 0–1 França",
+  "fonte": "https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_knockout_stage",
+  "equipas": [
+    {
+      "nome": "Portugal",
+      "slug": "portugal",
+      "cor": "#c8102e",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Luiz Felipe Scolari", "aceites": ["scolari", "felipao", "big phil"] },
+      "onze": [
+        { "nome": "Ricardo", "numero": 1, "pais": "PT", "pos": "GR" },
+        { "nome": "Miguel", "aceites": ["Miguel Monteiro"], "numero": 13, "pais": "PT", "pos": "DD" },
+        { "nome": "Fernando Meira", "numero": 5, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Carvalho", "numero": 16, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Valente", "numero": 14, "pais": "PT", "pos": "DE" },
+        { "nome": "Costinha", "numero": 6, "pais": "PT", "pos": "MC" },
+        { "nome": "Maniche", "numero": 18, "pais": "PT", "pos": "MC" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "pais": "PT", "pos": "ED" },
+        { "nome": "Deco", "numero": 20, "pais": "PT", "pos": "MO" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 17, "pais": "PT", "pos": "EE" },
+        { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 62, "pais": "PT" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 68, "pais": "PT" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 75, "pais": "PT" }
+      ],
+      "nao_utilizados": [
+        "Marco Caneira",
+        "Ricardo Costa",
+        "Petit",
+        "Hugo Viana",
+        "Quim",
+        "Luís Boa Morte",
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
+        "Nuno Gomes",
+        "Paulo Santos"
+      ]
+    },
+    {
+      "nome": "França",
+      "slug": "franca",
+      "cor": "#1e3a8a",
+      "formacao": "4-2-3-1",
+      "treinador": { "nome": "Raymond Domenech" },
+      "onze": [
+        { "nome": "Fabien Barthez", "numero": 16, "pais": "FR", "pos": "GR" },
+        { "nome": "Willy Sagnol", "numero": 19, "pais": "FR", "pos": "DD" },
+        { "nome": "Lilian Thuram", "numero": 15, "pais": "FR", "pos": "DC" },
+        { "nome": "William Gallas", "numero": 5, "pais": "FR", "pos": "DC" },
+        { "nome": "Eric Abidal", "numero": 3, "pais": "FR", "pos": "DE" },
+        { "nome": "Patrick Vieira", "numero": 4, "pais": "FR", "pos": "MC" },
+        { "nome": "Claude Makélélé", "numero": 6, "pais": "FR", "pos": "MC" },
+        { "nome": "Franck Ribéry", "numero": 22, "pais": "FR", "pos": "ED" },
+        {
+          "nome": "Zinedine Zidane",
+          "aceites": ["zidane", "zizou"],
+          "numero": 10,
+          "pais": "FR",
+          "pos": "MO",
+          "golos": [{ "minuto": 33, "penalti": true }]
+        },
+        { "nome": "Florent Malouda", "numero": 7, "pais": "FR", "pos": "EE" },
+        { "nome": "Thierry Henry", "numero": 12, "pais": "FR", "pos": "PL" }
+      ],
+      "suplentes": [
+        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 69, "pais": "FR" },
+        { "nome": "Sidney Govou", "numero": 9, "minuto": 72, "pais": "FR" },
+        { "nome": "Louis Saha", "numero": 14, "minuto": 85, "pais": "FR" }
+      ],
+      "nao_utilizados": [
+        "Mickaël Landreau",
+        "Jean-Alain Boumsong",
+        "Vikash Dhorasoo",
+        "Mikaël Silvestre",
+        "Gaël Givet",
+        "Alou Diarra",
+        "David Trezeguet",
+        "Pascal Chimbonda",
+        "Grégory Coupet"
+      ]
+    }
+  ]
+}
