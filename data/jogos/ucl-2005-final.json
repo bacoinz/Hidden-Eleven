@@ -5,14 +5,14 @@
   "fase": "Final",
   "titulo": "O milagre de Istambul",
   "data": "2005-05-25",
-  "estadio": "Atatürk Olympic Stadium, Istambul",
+  "estadio": "Estádio Olímpico Atatürk, Istambul",
   "resultado": "Milan 3–3 Liverpool (2–3 g.p.)",
   "fonte": "https://en.wikipedia.org/wiki/2005_UEFA_Champions_League_final",
   "equipas": [
     {
       "nome": "Milan",
       "slug": "milan",
-      "cor": "#d4021d",
+      "cor": "#f4f4f4",
       "formacao": "4-4-2 losango",
       "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
       "onze": [
@@ -38,7 +38,7 @@
     {
       "nome": "Liverpool",
       "slug": "liverpool",
-      "cor": "#f4f4f4",
+      "cor": "#c8102e",
       "formacao": "4-4-2",
       "treinador": { "nome": "Rafael Benítez", "aceites": ["rafa benitez", "benitez"] },
       "onze": [

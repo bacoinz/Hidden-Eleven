@@ -49,7 +49,7 @@
     {
       "nome": "Alemanha",
       "slug": "alemanha",
-      "cor": "#f4f4f4",
+      "cor": "#c1121f",
       "formacao": "4-2-3-1",
       "treinador": { "nome": "Joachim Löw", "aceites": ["loew", "jogi"] },
       "onze": [

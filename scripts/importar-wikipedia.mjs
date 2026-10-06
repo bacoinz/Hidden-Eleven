@@ -4,8 +4,8 @@
 // Uso:
 //   node scripts/importar-wikipedia.mjs <id>            importa a entrada <id> de scripts/fontes.json
 //   node scripts/importar-wikipedia.mjs --todos         importa todas as entradas sem ficheiro
-//   opções: --forcar (reescreve o ficheiro), --mostrar (só imprime, não escreve)
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+//   opções: --forcar (reescreve o ficheiro), --mostrar (só imprime, não escreve), --fresco (ignora a cache)
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { paraIso, paraCodigoJson } from './paises.mjs';
@@ -89,11 +89,33 @@ const CIDADES_PT = {
   Kyiv: 'Kiev', Kiev: 'Kiev', 'Saint-Denis': 'Saint-Denis', Yokohama: 'Yokohama', Cardiff: 'Cardiff',
 };
 
+// As páginas descarregadas ficam em .cache/wikipedia para que rever a curadoria não volte a pedir tudo.
+// Usa --fresco para ignorar a cache.
+const pastaCache = join(raiz, '.cache', 'wikipedia');
+const fresco = process.argv.includes('--fresco');
+
+// Estádios com nome traduzível (os nomes próprios ficam como estão).
+const ESTADIOS_PT = {
+  'Wembley Stadium': 'Estádio de Wembley', Olympiastadion: 'Estádio Olímpico', 'Olympic Stadium': 'Estádio Olímpico',
+  'Stadio Olimpico': 'Estádio Olímpico', 'NSC Olimpiyskiy': 'Estádio Olímpico', 'Atatürk Olympic Stadium': 'Estádio Olímpico Atatürk',
+  'Luzhniki Stadium': 'Estádio Luzhniki', 'Maracanã Stadium': 'Estádio do Maracanã', 'International Stadium': 'Estádio Internacional',
+  'Fisht Olympic Stadium': 'Estádio Olímpico Fisht', 'Lusail Stadium': 'Estádio de Lusail', 'Estadio Metropolitano': 'Estádio Metropolitano',
+  'Stadio San Siro': 'San Siro', 'City of Manchester Stadium': 'Etihad Stadium', 'Munich Football Arena': 'Allianz Arena',
+  'Estadio Olímpico de Sevilla': 'Estádio Olímpico', 'Ernst-Happel-Stadion': 'Estádio Ernst Happel',
+};
+
 async function wikitext(lingua, titulo, saltos = 0) {
   const url = `https://${lingua}.wikipedia.org/w/index.php?title=${encodeURIComponent(titulo.replace(/ /g, '_'))}&action=raw`;
-  const r = await fetch(url, { headers: { 'User-Agent': UA } });
-  if (!r.ok) throw new Error(`HTTP ${r.status} em ${url}`);
-  const texto = await r.text();
+  const ficheiroCache = join(pastaCache, `${lingua}-${titulo.replace(/[^\p{L}\p{N}]+/gu, '_')}.txt`);
+  let texto;
+  if (!fresco && existsSync(ficheiroCache)) texto = readFileSync(ficheiroCache, 'utf8');
+  else {
+    const r = await fetch(url, { headers: { 'User-Agent': UA } });
+    if (!r.ok) throw new Error(`HTTP ${r.status} em ${url}`);
+    texto = await r.text();
+    mkdirSync(pastaCache, { recursive: true });
+    writeFileSync(ficheiroCache, texto);
+  }
   const redirect = texto.match(/^#REDIRECT\s*\[\[([^\]#|]+)/i);
   if (redirect && saltos < 3) return wikitext(lingua, redirect[1], saltos + 1);
   return { texto, url: `https://${lingua}.wikipedia.org/wiki/${encodeURIComponent(titulo.replace(/ /g, '_'))}` };
@@ -193,7 +215,8 @@ function lerOnzes(texto, desde) {
     if (seccao === 'treinador' && /\[\[/.test(linha)) {
       const ligacaoTreinador = linha.match(/\[\[[^\]]+\]\]/)?.[0];
       atual.treinador = {
-        nome: limpar(linha.replace(/^\|[^|]*\|/, '')),
+        // "|colspan=3|{{flagicon|ESP}} [[Roberto Martínez]] || {{yel|110}}": o cartão fica de fora; "Sir" também.
+        nome: limpar(linha.replace(/^\|[^|]*\|/, '').split('||')[0]).replace(/^Sir\s+/, ''),
         alvo: ligacaoTreinador ? alvoDeLigacao(ligacaoTreinador) : undefined,
         iso: bandeira(linha),
       };
@@ -230,9 +253,14 @@ function lerGolos(caixa, campo) {
   const inicio = linhas.findIndex((l) => new RegExp(`^\\|\\s*${campo}\\s*=`).test(l));
   if (inicio < 0) return [];
   const golos = [];
+  const segmentos = [];
   for (let k = inicio; k < linhas.length; k++) {
     const linha = k === inicio ? linhas[k].replace(/^\|[^=]*=/, '') : linhas[k];
     if (k > inicio && /^\s*\|/.test(linha)) break; // começou outro campo
+    // Vários marcadores na mesma linha: "[[A]] {{goal|22}}<br />[[B]] {{goal|28}}".
+    segmentos.push(...semRefs(linha).split(/<br\s*\/?>/i));
+  }
+  for (const linha of segmentos) {
     const ligacao = linha.match(/\[\[[^\]]+\]\]/)?.[0];
     if (!ligacao) continue;
     for (const g of linha.matchAll(/\{\{\s*(?:goal|golden\s*goal|goldengoal|silver\s*goal|silvergoal)\s*\|([^}]*)\}\}/gi)) {
@@ -303,9 +331,11 @@ function mapearPosicoes(onze) {
   });
 }
 
+// Nomes habituais para as linhas deduzidas das posições (o trinco junta-se aos médios quando é assim que se diz).
 const CANONICAS = {
-  '4-1-2-1-2': '4-4-2 losango', '4-1-2-3': '4-3-3', '4-2-1-3': '4-3-3', '3-1-4-2': '3-5-2', '5-1-2-2': '5-3-2',
-  '4-1-3-2': '4-4-2 losango',
+  '4-1-2-1-2': '4-4-2 losango', '4-1-2-3': '4-3-3', '4-2-1-3': '4-2-3-1', '3-1-4-2': '3-5-2', '5-1-2-2': '5-3-2',
+  '4-1-3-2': '4-4-2 losango', '4-1-3-1-1': '4-4-1-1', '4-2-2-1-1': '4-4-1-1', '4-1-1-3-1': '4-2-3-1', '4-2-4': '4-4-2',
+  '3-1-2-3-1': '3-4-3 losango',
 };
 function deduzirFormacao(onze) {
   const conta = (...ps) => onze.filter((j) => ps.includes(j.pos)).length;
@@ -438,8 +468,8 @@ export async function importar(entrada) {
   else if (prolongamento) resultado += ' (a.p.)';
 
   const estadio = limpar(campoDaCaixa(caixa, 'stadium'))
-    .split(', ')
-    .map((p) => CIDADES_PT[p] ?? p)
+    .split(/\s*,\s*/)
+    .map((p) => ESTADIOS_PT[p] ?? CIDADES_PT[p] ?? p)
     .join(', ');
 
   // Slugs automáticos pelo nome; `slugs` explícitos ganham; `semEquipa` exclui (ex.: Portugal antes de 2004).
@@ -485,6 +515,12 @@ export function aplicarCuradoria(jogo, c) {
       const k = e.nao_utilizados.findIndex((x) => (typeof x === 'string' ? x : x.nome) === antigo);
       if (k < 0) throw new Error(`curadoria: "${antigo}" não existe em ${e.nome}`);
       e.nao_utilizados[k] = typeof e.nao_utilizados[k] === 'string' ? novo : { ...e.nao_utilizados[k], nome: novo };
+    }
+    // Convocados que não estavam no banco (lesionados, nomes repetidos na lista do plantel).
+    for (const nome of a.remover ?? []) {
+      const k = e.nao_utilizados.findIndex((x) => (typeof x === 'string' ? x : x.nome) === nome);
+      if (k < 0) throw new Error(`curadoria: "${nome}" não está no banco de ${e.nome}`);
+      e.nao_utilizados.splice(k, 1);
     }
     for (const [nome, pos] of Object.entries(a.pos ?? {})) {
       const p = e.onze.find((x) => x.nome === nome);

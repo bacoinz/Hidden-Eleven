@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2002-06-30",
-  "estadio": "International Stadium, Yokohama",
+  "estadio": "Estádio Internacional, Yokohama",
   "resultado": "Alemanha 0–2 Brasil",
   "fonte": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_final",
   "equipas": [
@@ -58,7 +58,7 @@
         { "nome": "Roque Júnior", "numero": 4, "pais": "BR", "pos": "DC" },
         { "nome": "Cafu", "numero": 2, "pais": "BR", "pos": "MD" },
         { "nome": "Roberto Carlos", "numero": 6, "pais": "BR", "pos": "ME" },
-        { "nome": "Gilberto Silva", "numero": 8, "pais": "BR", "pos": "MC" },
+        { "nome": "Gilberto Silva", "aceites": ["gilberto"], "numero": 8, "pais": "BR", "pos": "MC" },
         { "nome": "Kléberson", "aceites": ["José Kléberson"], "numero": 15, "pais": "BR", "pos": "MC" },
         { "nome": "Ronaldinho", "aceites": ["ronaldinho gaucho", "dinho"], "numero": 11, "pais": "BR", "pos": "MO" },
         { "nome": "Rivaldo", "numero": 10, "pais": "BR", "pos": "PL" },
@@ -71,7 +71,10 @@
           "golos": [{ "minuto": 67 }, { "minuto": 79 }]
         }
       ],
-      "suplentes": [{ "nome": "Juninho Paulista", "numero": 19, "minuto": 85, "pais": "BR" }, { "nome": "Denílson", "numero": 17, "minuto": 90, "pais": "BR" }],
+      "suplentes": [
+        { "nome": "Juninho Paulista", "aceites": ["juninho"], "numero": 19, "minuto": 85, "pais": "BR" },
+        { "nome": "Denílson", "numero": 17, "minuto": 90, "pais": "BR" }
+      ],
       "nao_utilizados": ["Ricardinho", "Dida", "Juliano Belletti", "Ânderson Polga", "Júnior", "Vampeta", "Edílson", "Luizão", "Rogério Ceni", "Kaká"]
     }
   ]

@@ -21,7 +21,7 @@
         { "nome": "Rúben Dias", "numero": 4, "pais": "PT", "pos": "DC" },
         { "nome": "José Fonte", "numero": 6, "pais": "PT", "pos": "DC" },
         { "nome": "Raphaël Guerreiro", "aceites": ["rafael guerreiro", "guerreiro"], "numero": 5, "pais": "PT", "pos": "DE" },
-        { "nome": "Danilo Pereira", "numero": 13, "pais": "PT", "pos": "MC" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "pais": "PT", "pos": "MC" },
         { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "pais": "PT", "pos": "MC" },
         { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 16, "pais": "PT", "pos": "MC" },
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "ED" },
@@ -29,11 +29,21 @@
         { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Rafa Silva", "numero": 15, "minuto": 75, "pais": "PT" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 15, "minuto": 75, "pais": "PT" },
         { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 81, "pais": "PT" },
         { "nome": "Rúben Neves", "numero": 18, "minuto": "90+3", "pais": "PT" }
       ],
-      "nao_utilizados": []
+      "nao_utilizados": [
+        "João Cancelo",
+        "Pepe",
+        "Dyego Sousa",
+        { "nome": "Diogo Jota", "aceites": ["jota"] },
+        "José Sá",
+        "Mário Rui",
+        "Pizzi",
+        "Beto",
+        { "nome": "João Félix", "aceites": ["felix"] }
+      ]
     },
     {
       "nome": "Holanda",
@@ -59,7 +69,17 @@
         { "nome": "Donny van de Beek", "numero": 20, "minuto": 60, "pais": "NL" },
         { "nome": "Luuk de Jong", "numero": 19, "minuto": 81, "pais": "NL" }
       ],
-      "nao_utilizados": []
+      "nao_utilizados": [
+        "Hans Hateboer",
+        "Nathan Aké",
+        "Davy Pröpper",
+        "Patrick van Aanholt",
+        "Kenneth Vermeer",
+        "Stefan de Vrij",
+        "Kevin Strootman",
+        "Tonny Vilhena",
+        "Marco Bizot"
+      ]
     }
   ]
 }

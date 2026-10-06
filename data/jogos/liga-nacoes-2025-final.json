@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2025-06-08",
-  "estadio": "Munich Football Arena , Munique",
+  "estadio": "Allianz Arena, Munique",
   "resultado": "Portugal 2–2 Espanha (5–3 g.p.)",
   "fonte": "https://en.wikipedia.org/wiki/2025_UEFA_Nations_League_final",
   "equipas": [
@@ -14,7 +14,7 @@
       "slug": "portugal",
       "cor": "#c8102e",
       "formacao": "4-2-3-1",
-      "treinador": { "nome": "Roberto Martínez ||" },
+      "treinador": { "nome": "Roberto Martínez" },
       "onze": [
         { "nome": "Diogo Costa", "numero": 1, "pais": "PT", "pos": "GR" },
         { "nome": "João Neves", "numero": 15, "pais": "PT", "pos": "DD" },
@@ -36,7 +36,17 @@
         { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 88, "pais": "PT" },
         { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 106, "pais": "PT" }
       ],
-      "nao_utilizados": []
+      "nao_utilizados": [
+        "António Silva",
+        "Diogo Dalot",
+        "João Palhinha",
+        { "nome": "João Félix", "aceites": ["felix"] },
+        "José Sá",
+        "Francisco Trincão",
+        "Pedro Gonçalves",
+        "Rui Silva",
+        "Rodrigo Mora"
+      ]
     },
     {
       "nome": "Espanha",
@@ -65,7 +75,7 @@
         { "nome": "Yéremy Pino", "numero": 15, "minuto": 106, "pais": "ES" },
         { "nome": "Álvaro Morata", "numero": 7, "minuto": 111, "pais": "ES" }
       ],
-      "nao_utilizados": []
+      "nao_utilizados": ["David Raya", "Pau Cubarsí", "Daniel Vivian", "Gavi", "Dani Olmo", "Álex Remiro", "Álex Grimaldo", "Fermín López", "Samu Aghehowa"]
     }
   ]
 }

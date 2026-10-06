@@ -25,7 +25,7 @@
         { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "ME" },
         { "nome": "Désiré Doué", "numero": 14, "pais": "FR", "pos": "ED" },
         { "nome": "Ousmane Dembélé", "numero": 10, "pais": "FR", "pos": "PL", "golos": [{ "minuto": 65, "penalti": true }] },
-        { "nome": "Khvicha Kvaratskhelia", "numero": 7, "pais": "GE", "pos": "EE" }
+        { "nome": "Khvicha Kvaratskhelia", "aceites": ["kvara"], "numero": 7, "pais": "GE", "pos": "EE" }
       ],
       "suplentes": [
         { "nome": "Lucas Beraldo", "numero": 4, "minuto": 106, "pais": "BR" },
@@ -49,7 +49,7 @@
       "slug": "arsenal",
       "cor": "#ef0107",
       "formacao": "4-2-3-1",
-      "treinador": { "nome": "Mikel Arteta ||" },
+      "treinador": { "nome": "Mikel Arteta" },
       "onze": [
         { "nome": "David Raya", "numero": 1, "pais": "ES", "pos": "GR" },
         { "nome": "Cristhian Mosquera", "numero": 3, "pais": "ES", "pos": "DD" },

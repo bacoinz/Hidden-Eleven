@@ -37,7 +37,7 @@
     {
       "nome": "Milan",
       "slug": "milan",
-      "cor": "#d4021d",
+      "cor": "#f4f4f4",
       "formacao": "4-3-1-2",
       "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
       "onze": [

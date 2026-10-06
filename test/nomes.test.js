@@ -70,6 +70,17 @@ describe('chavesDe', () => {
     expect(db).toEqual(expect.arrayContaining(['de bruyne', 'bruyne']));
   });
 
+  it('nomes com três ou mais termos também aceitam os dois últimos', () => {
+    expect(chavesDe(p('x', 'Ricardo Sá Pinto')).map((c) => c.chave)).toEqual(expect.arrayContaining(['sa pinto', 'pinto']));
+    expect(chavesDe(p('y', 'Randal Kolo Muani')).map((c) => c.chave)).toContain('kolo muani');
+    expect(chavesDe(p('z', 'Trent Alexander-Arnold')).map((c) => c.chave)).toContain('alexander arnold');
+  });
+
+  it('"Júnior" e "Filho" no fim: o termo anterior também conta como apelido', () => {
+    expect(chavesDe(p('x', 'Roque Júnior')).map((c) => c.chave)).toEqual(expect.arrayContaining(['roque', 'junior']));
+    expect(chavesDe(p('y', 'Vinícius Júnior')).find((c) => c.chave === 'vinicius')).toEqual({ chave: 'vinicius', prioridade: 1 });
+  });
+
   it('um só nome não gera apelido extra', () => {
     expect(chavesDe(p('x', 'Deco'))).toEqual([{ chave: 'deco', prioridade: 3 }]);
   });

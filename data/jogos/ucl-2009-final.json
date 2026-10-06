@@ -4,7 +4,7 @@
   "competicao": "Liga dos Campeões",
   "fase": "Final",
   "data": "2009-05-27",
-  "estadio": "Stadio Olimpico, Roma",
+  "estadio": "Estádio Olímpico, Roma",
   "resultado": "Barcelona 2–0 Manchester United",
   "fonte": "https://en.wikipedia.org/wiki/2009_UEFA_Champions_League_final",
   "equipas": [
@@ -35,7 +35,7 @@
       "slug": "man-utd",
       "cor": "#f4f4f4",
       "formacao": "4-3-3",
-      "treinador": { "nome": "Sir Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson"] },
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
       "onze": [
         { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR" },
         { "nome": "John O'Shea", "numero": 22, "pais": "IE", "pos": "DD" },
@@ -45,7 +45,7 @@
         { "nome": "Anderson", "numero": 8, "pais": "BR", "pos": "MC" },
         { "nome": "Michael Carrick", "numero": 16, "pais": "GB-ENG", "pos": "MC" },
         { "nome": "Ryan Giggs", "numero": 11, "pais": "GB-WLS", "pos": "MC" },
-        { "nome": "Park Ji-sung", "numero": 13, "pais": "KR", "pos": "ED" },
+        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "pais": "KR", "pos": "ED" },
         { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "EE" },
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],

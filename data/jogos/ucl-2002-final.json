@@ -11,7 +11,7 @@
     {
       "nome": "Bayer Leverkusen",
       "cor": "#e32221",
-      "formacao": "4-1-3-1-1",
+      "formacao": "4-4-1-1",
       "treinador": { "nome": "Klaus Toppmöller" },
       "onze": [
         { "nome": "Hans-Jörg Butt", "numero": 1, "pais": "DE", "pos": "GR" },

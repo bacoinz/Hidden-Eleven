@@ -37,7 +37,7 @@
         "Rui Jorge",
         "Fernando Couto",
         "Petit",
-        { "nome": "Simão", "aceites": ["simao sabrosa", "Simão Sabrosa"] },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"] },
         "Quim",
         "Beto",
         { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },
@@ -48,7 +48,7 @@
     {
       "nome": "Grécia",
       "slug": "grecia",
-      "cor": "#0d5eaf",
+      "cor": "#f4f4f4",
       "formacao": "4-3-3",
       "treinador": { "nome": "Otto Rehhagel", "aceites": ["rehakles"] },
       "onze": [

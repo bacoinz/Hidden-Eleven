@@ -4,14 +4,14 @@
   "competicao": "Liga dos Campeões",
   "fase": "Final",
   "data": "2007-05-23",
-  "estadio": "Olympic Stadium, Atenas",
+  "estadio": "Estádio Olímpico, Atenas",
   "resultado": "Milan 2–1 Liverpool",
   "fonte": "https://en.wikipedia.org/wiki/2007_UEFA_Champions_League_final",
   "equipas": [
     {
       "nome": "Milan",
       "slug": "milan",
-      "cor": "#d4021d",
+      "cor": "#f4f4f4",
       "formacao": "4-4-2",
       "treinador": { "nome": "Carlo Ancelotti", "aceites": ["ancelotti", "carletto"] },
       "onze": [
@@ -44,8 +44,8 @@
     {
       "nome": "Liverpool",
       "slug": "liverpool",
-      "cor": "#f4f4f4",
-      "formacao": "4-2-2-1-1",
+      "cor": "#c8102e",
+      "formacao": "4-4-1-1",
       "treinador": { "nome": "Rafael Benítez", "aceites": ["rafa benitez", "benitez"] },
       "onze": [
         { "nome": "Pepe Reina", "numero": 25, "pais": "ES", "pos": "GR" },

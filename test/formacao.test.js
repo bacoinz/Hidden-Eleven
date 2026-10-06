@@ -11,12 +11,14 @@ const FORMACOES = {
   '3-5-2': onze('GR', 'DC', 'DC', 'DC', 'MD', 'MC', 'MDC', 'MC', 'ME', 'PL', 'PL'),
   '3-4-3': onze('GR', 'DC', 'DC', 'DC', 'MD', 'MC', 'MC', 'ME', 'ED', 'PL', 'EE'),
   '5-3-2': onze('GR', 'DD', 'DC', 'DC', 'DC', 'DE', 'MC', 'MC', 'MC', 'PL', 'PL'),
+  '3-4-3 losango': onze('GR', 'DC', 'DC', 'DC', 'MDC', 'MD', 'ME', 'MO', 'ED', 'PL', 'EE'),
 };
 
 describe('linhasDaFormacao', () => {
   it('lê os números e trata o losango', () => {
     expect(linhasDaFormacao('4-2-3-1')).toEqual([4, 2, 3, 1]);
     expect(linhasDaFormacao('4-4-2 losango')).toEqual([4, 1, 2, 1, 2]);
+    expect(linhasDaFormacao('3-4-3 losango')).toEqual([3, 1, 2, 1, 3]);
     expect(linhasDaFormacao('3-5-2')).toEqual([3, 5, 2]);
   });
 });

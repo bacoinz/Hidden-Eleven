@@ -13,7 +13,7 @@
       "slug": "juventus",
       "cor": "#1a1a1a",
       "formacao": "3-4-1-2",
-      "treinador": { "nome": "Massimiliano Allegri" },
+      "treinador": { "nome": "Massimiliano Allegri", "aceites": ["max allegri"] },
       "onze": [
         { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
         { "nome": "Andrea Barzagli", "numero": 15, "pais": "IT", "pos": "DC" },

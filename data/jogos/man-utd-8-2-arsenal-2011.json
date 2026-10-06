@@ -13,39 +13,30 @@
       "slug": "man-utd",
       "cor": "#da291c",
       "formacao": "4-4-2",
-      "treinador": { "nome": "Sir Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson"] },
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
       "onze": [
         { "nome": "David de Gea", "numero": 1, "pais": "ES", "pos": "GR" },
         { "nome": "Chris Smalling", "numero": 12, "pais": "GB-ENG", "pos": "DD" },
         { "nome": "Phil Jones", "numero": 4, "pais": "GB-ENG", "pos": "DC" },
         { "nome": "Jonny Evans", "numero": 6, "pais": "GB-NIR", "pos": "DC" },
         { "nome": "Patrice Evra", "numero": 3, "pais": "FR", "pos": "DE" },
-        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "MD" },
+        { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "MD", "golos": [{ "minuto": 67 }] },
         { "nome": "Tom Cleverley", "numero": 23, "pais": "GB-ENG", "pos": "MC" },
         { "nome": "Anderson", "numero": 8, "pais": "BR", "pos": "MC" },
-        { "nome": "Ashley Young", "numero": 18, "pais": "GB-ENG", "pos": "ME" },
-        { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Ashley Young", "numero": 18, "pais": "GB-ENG", "pos": "ME", "golos": [{ "minuto": 28 }, { "minuto": "90+1" }] },
         {
-          "nome": "Danny Welbeck",
-          "numero": 19,
+          "nome": "Wayne Rooney",
+          "numero": 10,
           "pais": "GB-ENG",
           "pos": "PL",
-          "golos": [
-            { "minuto": 22 },
-            { "minuto": 28 },
-            { "minuto": "90+1" },
-            { "minuto": 41 },
-            { "minuto": 64 },
-            { "minuto": 82, "penalti": true },
-            { "minuto": 67 },
-            { "minuto": 70 }
-          ]
-        }
+          "golos": [{ "minuto": 41 }, { "minuto": 64 }, { "minuto": 82, "penalti": true }]
+        },
+        { "nome": "Danny Welbeck", "numero": 19, "pais": "GB-ENG", "pos": "PL", "golos": [{ "minuto": 22 }] }
       ],
       "suplentes": [
         { "nome": "Ryan Giggs", "numero": 11, "minuto": 68, "pais": "GB-WLS" },
-        { "nome": "Park Ji-sung", "numero": 13, "minuto": 68, "pais": "KR" },
-        { "nome": "Javier Hernández", "numero": 14, "minuto": 36, "pais": "MX" }
+        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 68, "pais": "KR", "golos": [{ "minuto": 70 }] },
+        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 36, "pais": "MX" }
       ],
       "nao_utilizados": ["Anders Lindegaard", "Rio Ferdinand", "Fábio", "Dimitar Berbatov"]
     },
@@ -64,8 +55,8 @@
         { "nome": "Aaron Ramsey", "numero": 16, "pais": "GB-WLS", "pos": "MC" },
         { "nome": "Francis Coquelin", "numero": 39, "pais": "FR", "pos": "MC" },
         { "nome": "Tomáš Rosický", "numero": 7, "pais": "CZ", "pos": "MC" },
-        { "nome": "Theo Walcott", "numero": 14, "pais": "GB-ENG", "pos": "ED", "golos": [{ "minuto": "45+3" }, { "minuto": 74 }] },
-        { "nome": "Robin van Persie", "numero": 10, "pais": "NL", "pos": "PL" },
+        { "nome": "Theo Walcott", "numero": 14, "pais": "GB-ENG", "pos": "ED", "golos": [{ "minuto": "45+3" }] },
+        { "nome": "Robin van Persie", "numero": 10, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 74 }] },
         { "nome": "Andrey Arshavin", "numero": 23, "pais": "RU", "pos": "EE" }
       ],
       "suplentes": [

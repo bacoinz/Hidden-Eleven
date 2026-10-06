@@ -4,7 +4,7 @@
   "competicao": "Liga dos Campeões",
   "fase": "Final",
   "data": "2023-06-10",
-  "estadio": "Atatürk Olympic Stadium, Istambul",
+  "estadio": "Estádio Olímpico Atatürk, Istambul",
   "resultado": "Manchester City 1–0 Inter",
   "fonte": "https://en.wikipedia.org/wiki/2023_UEFA_Champions_League_final",
   "equipas": [
@@ -46,7 +46,7 @@
       "slug": "inter",
       "cor": "#0068a8",
       "formacao": "3-5-2",
-      "treinador": { "nome": "Simone Inzaghi ||" },
+      "treinador": { "nome": "Simone Inzaghi" },
       "onze": [
         { "nome": "André Onana", "numero": 24, "pais": "CM", "pos": "GR" },
         { "nome": "Matteo Darmian", "numero": 36, "pais": "IT", "pos": "DC" },

@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2022-12-18",
-  "estadio": "Lusail Stadium, Lusail",
+  "estadio": "Estádio de Lusail, Lusail",
   "resultado": "Argentina 3–3 França (4–2 g.p.)",
   "fonte": "https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final",
   "equipas": [
@@ -18,7 +18,7 @@
       "onze": [
         { "nome": "Emiliano Martínez", "aceites": ["dibu", "dibu martinez"], "numero": 23, "pais": "AR", "pos": "GR" },
         { "nome": "Nahuel Molina", "numero": 26, "pais": "AR", "pos": "DD" },
-        { "nome": "Cristian Romero", "numero": 13, "pais": "AR", "pos": "DC" },
+        { "nome": "Cristian Romero", "aceites": ["cuti", "cuti romero"], "numero": 13, "pais": "AR", "pos": "DC" },
         { "nome": "Nicolás Otamendi", "numero": 19, "pais": "AR", "pos": "DC" },
         { "nome": "Nicolás Tagliafico", "numero": 3, "pais": "AR", "pos": "DE" },
         { "nome": "Enzo Fernández", "aceites": ["enzo"], "numero": 24, "pais": "AR", "pos": "MDC" },
@@ -89,16 +89,7 @@
         { "nome": "Ibrahima Konaté", "numero": 24, "minuto": 113, "pais": "FR" },
         { "nome": "Axel Disasi", "numero": 3, "minuto": "120+1", "pais": "FR" }
       ],
-      "nao_utilizados": [
-        "Benjamin Pavard",
-        "Mattéo Guendouzi",
-        "Jordan Veretout",
-        "Steve Mandanda",
-        "William Saliba",
-        "Karim Benzema",
-        "Lucas Hernandez",
-        "Alphonse Areola"
-      ]
+      "nao_utilizados": ["Benjamin Pavard", "Mattéo Guendouzi", "Jordan Veretout", "Steve Mandanda", "William Saliba", "Alphonse Areola"]
     }
   ]
 }

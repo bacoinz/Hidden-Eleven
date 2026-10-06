@@ -37,7 +37,7 @@
     {
       "nome": "Arsenal",
       "slug": "arsenal",
-      "cor": "#ef0107",
+      "cor": "#f5c400",
       "formacao": "4-4-2",
       "treinador": { "nome": "Arsène Wenger" },
       "onze": [
@@ -47,7 +47,7 @@
         { "nome": "Sol Campbell", "numero": 23, "pais": "GB-ENG", "pos": "DC", "golos": [{ "minuto": 37 }] },
         { "nome": "Ashley Cole", "numero": 3, "pais": "GB-ENG", "pos": "DE" },
         { "nome": "Robert Pires", "numero": 7, "pais": "FR", "pos": "MD" },
-        { "nome": "Gilberto Silva", "numero": 19, "pais": "BR", "pos": "MC" },
+        { "nome": "Gilberto Silva", "aceites": ["gilberto"], "numero": 19, "pais": "BR", "pos": "MC" },
         { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 15, "pais": "ES", "pos": "MC" },
         { "nome": "Alexander Hleb", "numero": 13, "pais": "BY", "pos": "ME" },
         { "nome": "Freddie Ljungberg", "numero": 8, "pais": "SE", "pos": "PL" },

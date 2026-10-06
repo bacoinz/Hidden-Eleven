@@ -37,7 +37,7 @@
         "Paulo Ferreira",
         "Rui Jorge",
         "Rui Costa",
-        { "nome": "Simão", "aceites": ["simao sabrosa", "Simão Sabrosa"] },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"] },
         "Quim",
         "Beto",
         { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"] },

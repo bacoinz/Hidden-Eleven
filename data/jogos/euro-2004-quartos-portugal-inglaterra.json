@@ -30,7 +30,7 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Simão Sabrosa", "numero": 11, "minuto": 63, "pais": "PT" },
+        { "nome": "Simão Sabrosa", "aceites": ["simao"], "numero": 11, "minuto": 63, "pais": "PT" },
         { "nome": "Hélder Postiga", "numero": 23, "minuto": 75, "pais": "PT", "golos": [{ "minuto": 83 }] },
         { "nome": "Rui Costa", "numero": 10, "minuto": 79, "pais": "PT", "golos": [{ "minuto": 110 }] }
       ],

@@ -15,7 +15,7 @@
       "formacao": "4-3-3",
       "treinador": { "nome": "Luis Enrique", "aceites": ["lucho"] },
       "onze": [
-        { "nome": "Gianluigi Donnarumma", "numero": 1, "pais": "IT", "pos": "GR" },
+        { "nome": "Gianluigi Donnarumma", "aceites": ["gigio"], "numero": 1, "pais": "IT", "pos": "GR" },
         { "nome": "Achraf Hakimi", "numero": 2, "pais": "MA", "pos": "DD", "golos": [{ "minuto": 12 }] },
         { "nome": "Marquinhos", "numero": 5, "pais": "BR", "pos": "DC" },
         { "nome": "Willian Pacho", "numero": 51, "pais": "EC", "pos": "DC" },
@@ -25,7 +25,7 @@
         { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "pais": "ES", "pos": "MC" },
         { "nome": "Désiré Doué", "numero": 14, "pais": "FR", "pos": "ED", "golos": [{ "minuto": 20 }, { "minuto": 63 }] },
         { "nome": "Ousmane Dembélé", "numero": 10, "pais": "FR", "pos": "PL" },
-        { "nome": "Khvicha Kvaratskhelia", "numero": 7, "pais": "GE", "pos": "EE", "golos": [{ "minuto": 73 }] }
+        { "nome": "Khvicha Kvaratskhelia", "aceites": ["kvara"], "numero": 7, "pais": "GE", "pos": "EE", "golos": [{ "minuto": 73 }] }
       ],
       "suplentes": [
         { "nome": "Lucas Hernandez", "numero": 21, "minuto": 78, "pais": "FR" },
@@ -48,7 +48,7 @@
       "slug": "inter",
       "cor": "#f4f4f4",
       "formacao": "3-5-2",
-      "treinador": { "nome": "Simone Inzaghi ||" },
+      "treinador": { "nome": "Simone Inzaghi" },
       "onze": [
         { "nome": "Yann Sommer", "numero": 1, "pais": "CH", "pos": "GR" },
         { "nome": "Benjamin Pavard", "numero": 28, "pais": "FR", "pos": "DC" },

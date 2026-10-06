@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2024-07-14",
-  "estadio": "Olympiastadion, Berlim",
+  "estadio": "Estádio Olímpico, Berlim",
   "resultado": "Espanha 2–1 Inglaterra",
   "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2024_final",
   "equipas": [
@@ -73,7 +73,7 @@
         { "nome": "Ivan Toney", "numero": 17, "minuto": 89, "pais": "GB-ENG" }
       ],
       "nao_utilizados": [
-        "Trent Alexander-Arnold",
+        { "nome": "Trent Alexander-Arnold", "aceites": ["trent", "taa"] },
         "Kieran Trippier",
         "Aaron Ramsdale",
         "Ezri Konsa",

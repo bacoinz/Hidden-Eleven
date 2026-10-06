@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2021-07-11",
-  "estadio": "Wembley Stadium, Londres",
+  "estadio": "Estádio de Wembley, Londres",
   "resultado": "Itália 1–1 Inglaterra (3–2 g.p.)",
   "fonte": "https://en.wikipedia.org/wiki/UEFA_Euro_2020_final",
   "equipas": [
@@ -16,7 +16,7 @@
       "formacao": "4-3-3",
       "treinador": { "nome": "Roberto Mancini" },
       "onze": [
-        { "nome": "Gianluigi Donnarumma", "numero": 21, "pais": "IT", "pos": "GR" },
+        { "nome": "Gianluigi Donnarumma", "aceites": ["gigio"], "numero": 21, "pais": "IT", "pos": "GR" },
         { "nome": "Giovanni Di Lorenzo", "numero": 2, "pais": "IT", "pos": "DD" },
         { "nome": "Leonardo Bonucci", "numero": 19, "pais": "IT", "pos": "DC", "golos": [{ "minuto": 67 }] },
         { "nome": "Giorgio Chiellini", "numero": 3, "pais": "IT", "pos": "DC" },
@@ -75,7 +75,6 @@
         { "nome": "Jadon Sancho", "numero": 17, "minuto": 120, "pais": "GB-ENG" }
       ],
       "nao_utilizados": [
-        "Dean Henderson",
         "Aaron Ramsdale",
         "Tyrone Mings",
         "Conor Coady",

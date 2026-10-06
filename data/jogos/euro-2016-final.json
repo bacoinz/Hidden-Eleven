@@ -38,9 +38,9 @@
         "Ricardo Carvalho",
         "Vieirinha",
         "Anthony Lopes",
-        { "nome": "Danilo", "aceites": ["Danilo Pereira"] },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"] },
         "André Gomes",
-        "Rafa Silva",
+        { "nome": "Rafa Silva", "aceites": ["rafa"] },
         "Eliseu",
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] }
       ]

@@ -12,7 +12,7 @@
       "nome": "Bayern Munique",
       "slug": "bayern",
       "cor": "#dc052d",
-      "formacao": "3-1-5-1",
+      "formacao": "3-4-2-1",
       "treinador": { "nome": "Ottmar Hitzfeld" },
       "onze": [
         { "nome": "Oliver Kahn", "numero": 1, "pais": "DE", "pos": "GR" },
@@ -22,9 +22,9 @@
         { "nome": "Willy Sagnol", "numero": 2, "pais": "FR", "pos": "MD" },
         { "nome": "Bixente Lizarazu", "numero": 3, "pais": "FR", "pos": "ME" },
         { "nome": "Owen Hargreaves", "numero": 23, "pais": "GB-ENG", "pos": "MDC" },
-        { "nome": "Hasan Salihamidžić", "numero": 20, "pais": "BA", "pos": "MD" },
+        { "nome": "Hasan Salihamidžić", "numero": 20, "pais": "BA", "pos": "MO" },
         { "nome": "Stefan Effenberg", "numero": 11, "pais": "DE", "pos": "MC", "golos": [{ "minuto": 50, "penalti": true }] },
-        { "nome": "Mehmet Scholl", "numero": 7, "pais": "DE", "pos": "ME" },
+        { "nome": "Mehmet Scholl", "numero": 7, "pais": "DE", "pos": "MO" },
         { "nome": "Giovane Élber", "numero": 9, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [

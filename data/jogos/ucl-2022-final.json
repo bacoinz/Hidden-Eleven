@@ -16,7 +16,7 @@
       "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
       "onze": [
         { "nome": "Alisson", "numero": 1, "pais": "BR", "pos": "GR" },
-        { "nome": "Trent Alexander-Arnold", "numero": 66, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Trent Alexander-Arnold", "aceites": ["trent", "taa"], "numero": 66, "pais": "GB-ENG", "pos": "DD" },
         { "nome": "Ibrahima Konaté", "numero": 5, "pais": "FR", "pos": "DC" },
         { "nome": "Virgil van Dijk", "aceites": ["vvd"], "numero": 4, "pais": "NL", "pos": "DC" },
         { "nome": "Andrew Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },

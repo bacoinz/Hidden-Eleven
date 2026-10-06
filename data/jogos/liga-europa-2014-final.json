@@ -11,7 +11,7 @@
     {
       "nome": "Sevilha",
       "cor": "#f4f4f4",
-      "formacao": "4-3-3",
+      "formacao": "4-2-3-1",
       "treinador": { "nome": "Unai Emery" },
       "onze": [
         { "nome": "Beto", "numero": 13, "pais": "PT", "pos": "GR" },
@@ -41,11 +41,11 @@
       "treinador": { "nome": "Jorge Jesus", "aceites": ["jj"] },
       "onze": [
         { "nome": "Jan Oblak", "numero": 41, "pais": "SI", "pos": "GR" },
-        { "nome": "Maxi Pereira", "numero": 14, "pais": "UY", "pos": "DD" },
+        { "nome": "Maxi Pereira", "aceites": ["maxi"], "numero": 14, "pais": "UY", "pos": "DD" },
         { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
         { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
         { "nome": "Guilherme Siqueira", "numero": 16, "pais": "BR", "pos": "DE" },
-        { "nome": "Ruben Amorim", "numero": 6, "pais": "PT", "pos": "MD" },
+        { "nome": "Rúben Amorim", "numero": 6, "pais": "PT", "pos": "MD" },
         { "nome": "André Gomes", "numero": 30, "pais": "PT", "pos": "MC" },
         { "nome": "Nicolás Gaitán", "numero": 20, "pais": "AR", "pos": "ME" },
         { "nome": "Miralem Sulejmani", "numero": 8, "pais": "RS", "pos": "ED" },
@@ -54,7 +54,7 @@
       ],
       "suplentes": [
         { "nome": "André Almeida", "numero": 34, "minuto": 25, "pais": "PT" },
-        { "nome": "Óscar Cardozo", "numero": 7, "minuto": 99, "pais": "PY" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 99, "pais": "PY" },
         { "nome": "Ivan Cavaleiro", "numero": 90, "minuto": 119, "pais": "PT" }
       ],
       "nao_utilizados": [{ "nome": "Artur", "aceites": ["Artur Moraes"] }, "Steven Vitória", "Jardel", "Filip Đuričić"]

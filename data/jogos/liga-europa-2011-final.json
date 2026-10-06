@@ -43,7 +43,7 @@
       "nome": "SC Braga",
       "cor": "#e30613",
       "formacao": "4-2-3-1",
-      "treinador": { "nome": "Domingos Paciência" },
+      "treinador": { "nome": "Domingos Paciência", "aceites": ["domingos"] },
       "onze": [
         { "nome": "Artur Moraes", "numero": 1, "pais": "BR", "pos": "GR" },
         { "nome": "Miguel Garcia", "numero": 15, "pais": "PT", "pos": "DD" },

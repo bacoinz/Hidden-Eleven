@@ -13,7 +13,7 @@
       "slug": "man-utd",
       "cor": "#da291c",
       "formacao": "4-4-2",
-      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie", "Alex Ferguson", "Sir Alex Ferguson"] },
+      "treinador": { "nome": "Alex Ferguson", "aceites": ["sir alex", "sir alex ferguson", "fergie"] },
       "onze": [
         { "nome": "Edwin van der Sar", "numero": 1, "pais": "NL", "pos": "GR", "aceites": ["vds"] },
         { "nome": "Wes Brown", "numero": 6, "pais": "GB-ENG", "pos": "DD" },

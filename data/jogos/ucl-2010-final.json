@@ -12,7 +12,7 @@
       "nome": "Bayern Munique",
       "slug": "bayern",
       "cor": "#dc052d",
-      "formacao": "4-2-4",
+      "formacao": "4-4-2",
       "treinador": { "nome": "Louis van Gaal", "aceites": ["lvg"] },
       "onze": [
         { "nome": "Hans-Jörg Butt", "numero": 22, "pais": "DE", "pos": "GR" },

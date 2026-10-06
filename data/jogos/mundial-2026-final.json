@@ -43,11 +43,11 @@
       "slug": "argentina",
       "cor": "#75aadb",
       "formacao": "4-4-2",
-      "treinador": { "nome": "Lionel Scaloni ||" },
+      "treinador": { "nome": "Lionel Scaloni" },
       "onze": [
         { "nome": "Emiliano Martínez", "aceites": ["dibu", "dibu martinez"], "numero": 23, "pais": "AR", "pos": "GR" },
         { "nome": "Gonzalo Montiel", "numero": 4, "pais": "AR", "pos": "DD" },
-        { "nome": "Cristian Romero", "numero": 13, "pais": "AR", "pos": "DC" },
+        { "nome": "Cristian Romero", "aceites": ["cuti", "cuti romero"], "numero": 13, "pais": "AR", "pos": "DC" },
         { "nome": "Lisandro Martínez", "numero": 6, "pais": "AR", "pos": "DC" },
         { "nome": "Nicolás Tagliafico", "numero": 3, "pais": "AR", "pos": "DE" },
         { "nome": "Rodrigo De Paul", "aceites": ["de paul"], "numero": 7, "pais": "AR", "pos": "MD" },

@@ -5,7 +5,7 @@
   "fase": "Final",
   "selecoes": true,
   "data": "2014-07-13",
-  "estadio": "Maracanã Stadium, Rio de Janeiro",
+  "estadio": "Estádio do Maracanã, Rio de Janeiro",
   "resultado": "Alemanha 1–0 Argentina (a.p.)",
   "fonte": "https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_final",
   "equipas": [
@@ -48,7 +48,7 @@
     {
       "nome": "Argentina",
       "slug": "argentina",
-      "cor": "#75aadb",
+      "cor": "#1b2a55",
       "formacao": "4-2-3-1",
       "treinador": { "nome": "Alejandro Sabella" },
       "onze": [
@@ -59,7 +59,7 @@
         { "nome": "Marcos Rojo", "numero": 16, "pais": "AR", "pos": "DE" },
         { "nome": "Javier Mascherano", "aceites": ["masche"], "numero": 14, "pais": "AR", "pos": "MC" },
         { "nome": "Lucas Biglia", "numero": 6, "pais": "AR", "pos": "MC" },
-        { "nome": "Enzo Pérez", "numero": 8, "pais": "AR", "pos": "ED" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 8, "pais": "AR", "pos": "ED" },
         { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "MO" },
         { "nome": "Ezequiel Lavezzi", "numero": 22, "pais": "AR", "pos": "EE" },
         { "nome": "Gonzalo Higuaín", "aceites": ["pipita"], "numero": 9, "pais": "AR", "pos": "PL" }

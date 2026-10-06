@@ -4,7 +4,7 @@
   "competicao": "Liga dos Campeões",
   "fase": "Final",
   "data": "2019-06-01",
-  "estadio": "Estadio Metropolitano, Madrid",
+  "estadio": "Estádio Metropolitano, Madrid",
   "resultado": "Tottenham 0–2 Liverpool",
   "fonte": "https://en.wikipedia.org/wiki/2019_UEFA_Champions_League_final",
   "equipas": [
@@ -52,7 +52,7 @@
       "treinador": { "nome": "Jürgen Klopp", "aceites": ["klopp"] },
       "onze": [
         { "nome": "Alisson", "aceites": ["Alisson Becker"], "numero": 13, "pais": "BR", "pos": "GR" },
-        { "nome": "Trent Alexander-Arnold", "numero": 66, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Trent Alexander-Arnold", "aceites": ["trent", "taa"], "numero": 66, "pais": "GB-ENG", "pos": "DD" },
         { "nome": "Joël Matip", "numero": 32, "pais": "CM", "pos": "DC" },
         { "nome": "Virgil van Dijk", "aceites": ["vvd"], "numero": 4, "pais": "NL", "pos": "DC" },
         { "nome": "Andy Robertson", "numero": 26, "pais": "GB-SCT", "pos": "DE" },

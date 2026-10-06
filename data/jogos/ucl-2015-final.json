@@ -4,7 +4,7 @@
   "competicao": "Liga dos Campeões",
   "fase": "Final",
   "data": "2015-06-06",
-  "estadio": "Olympiastadion, Berlim",
+  "estadio": "Estádio Olímpico, Berlim",
   "resultado": "Juventus 1–3 Barcelona",
   "fonte": "https://en.wikipedia.org/wiki/2015_UEFA_Champions_League_final",
   "equipas": [
@@ -13,7 +13,7 @@
       "slug": "juventus",
       "cor": "#1a1a1a",
       "formacao": "4-4-2 losango",
-      "treinador": { "nome": "Massimiliano Allegri" },
+      "treinador": { "nome": "Massimiliano Allegri", "aceites": ["max allegri"] },
       "onze": [
         { "nome": "Gianluigi Buffon", "aceites": ["gigi buffon", "gigi"], "numero": 1, "pais": "IT", "pos": "GR" },
         { "nome": "Stephan Lichtsteiner", "numero": 26, "pais": "CH", "pos": "DD" },

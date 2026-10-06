@@ -14,14 +14,12 @@ const Y_GR = 0.05;
 const Y_PRIMEIRA = 0.27;
 const Y_ULTIMA = 0.9;
 
-/** "4-2-3-1" → [4,2,3,1]; "4-4-2 losango" → [4,1,2,1,2]. */
+/** "4-2-3-1" → [4,2,3,1]; no losango, o meio-campo de 4 abre em 1-2-1: "4-4-2 losango" → [4,1,2,1,2]. */
 export function linhasDaFormacao(formacao) {
   const texto = String(formacao ?? '');
-  if (/losango|diamante|diamond/i.test(texto)) {
-    const d = texto.match(/\d/g)?.map(Number) ?? [];
-    if (d.join('-') === '4-4-2') return [4, 1, 2, 1, 2];
-  }
-  return texto.match(/\d/g)?.map(Number) ?? [];
+  const linhas = texto.match(/\d/g)?.map(Number) ?? [];
+  if (/losango|diamante|diamond/i.test(texto) && linhas[1] === 4) return [linhas[0], 1, 2, 1, ...linhas.slice(2)];
+  return linhas;
 }
 
 const largura = (n) => (n <= 1 ? 0 : n === 2 ? 0.36 : n === 3 ? 0.6 : n === 4 ? 0.8 : 0.86);

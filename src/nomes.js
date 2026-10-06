@@ -64,14 +64,26 @@ export function distancia(a, b, max = Infinity) {
   return anterior[m];
 }
 
-/** Apelido automático: último termo, com e sem as partículas que o antecedem ("van der sar", "sar"). */
+const SUFIXOS = new Set(['junior', 'jr', 'filho', 'sobrinho']);
+
+/**
+ * Apelidos automáticos:
+ * - o último termo, com e sem as partículas que o antecedem ("van der sar", "sar");
+ * - com três ou mais termos, os dois últimos ("sa pinto", "kolo muani", "alexander arnold");
+ * - se o último termo for um sufixo ("Júnior", "Filho"), também o que vem antes ("roque").
+ */
 function apelidos(termos) {
   if (termos.length < 2) return [];
   const ultimo = termos[termos.length - 1];
   const inicio = inicioDoApelido(termos);
   const resultado = [];
   if (inicio < termos.length - 1) resultado.push(termos.slice(inicio).join(' '));
+  else if (termos.length >= 3) resultado.push(termos.slice(-2).join(' '));
   resultado.push(ultimo);
+  if (SUFIXOS.has(ultimo)) {
+    const semSufixo = termos.slice(0, -1);
+    resultado.push(semSufixo.join(' '), ...apelidos(semSufixo));
+  }
   return resultado.filter((c) => letras(c) >= 3);
 }
 

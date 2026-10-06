@@ -20,12 +20,12 @@
         { "nome": "Luisão", "numero": 4, "pais": "BR", "pos": "DC" },
         { "nome": "Ezequiel Garay", "numero": 24, "pais": "AR", "pos": "DC" },
         { "nome": "Lorenzo Melgarejo", "numero": 25, "pais": "PY", "pos": "DE" },
-        { "nome": "Enzo Pérez", "numero": 35, "pais": "AR", "pos": "MD" },
+        { "nome": "Enzo Pérez", "aceites": ["enzo"], "numero": 35, "pais": "AR", "pos": "MD" },
         { "nome": "Nemanja Matić", "numero": 21, "pais": "RS", "pos": "MC" },
         { "nome": "Rodrigo", "numero": 19, "pais": "ES", "pos": "ME" },
         { "nome": "Nicolás Gaitán", "numero": 20, "pais": "AR", "pos": "ED" },
-        { "nome": "Óscar Cardozo", "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 68, "penalti": true }] },
-        { "nome": "Eduardo Salvio", "numero": 18, "pais": "AR", "pos": "EE" }
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 68, "penalti": true }] },
+        { "nome": "Eduardo Salvio", "aceites": ["toto", "toto salvio"], "numero": 18, "pais": "AR", "pos": "EE" }
       ],
       "suplentes": [
         { "nome": "Jardel", "numero": 33, "minuto": 78, "pais": "BR" },

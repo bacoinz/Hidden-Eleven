@@ -26,9 +26,6 @@
     "equipas": [
       {
         "cor": "#da291c",
-        "nomes": {
-          "Sir Alex Ferguson": "Alex Ferguson"
-        },
         "aceites": {
           "Edwin van der Sar": [
             "vds"
@@ -160,12 +157,15 @@
   },
   "ucl-2005-final": {
     "equipas": [
-      {},
+      {
+        "cor": "#f4f4f4"
+      },
       {
         "formacao": "4-4-2",
         "pos": {
           "Xabi Alonso": "MC"
-        }
+        },
+        "cor": "#c8102e"
       }
     ]
   },
@@ -183,5 +183,111 @@
       },
       {}
     ]
+  },
+  "ucl-2003-final": {
+    "equipas": [
+      {},
+      {
+        "cor": "#f4f4f4"
+      }
+    ]
+  },
+  "ucl-2007-final": {
+    "equipas": [
+      {
+        "cor": "#f4f4f4"
+      },
+      {
+        "cor": "#c8102e"
+      }
+    ]
+  },
+  "ucl-2006-final": {
+    "equipas": [
+      {},
+      {
+        "cor": "#f5c400"
+      }
+    ]
+  },
+  "euro-2004-final": {
+    "equipas": [
+      {},
+      {
+        "cor": "#f4f4f4"
+      }
+    ]
+  },
+  "mundial-2014-final": {
+    "equipas": [
+      {},
+      {
+        "cor": "#1b2a55"
+      }
+    ]
+  },
+  "mundial-2014-meias-brasil-alemanha": {
+    "equipas": [
+      {},
+      {
+        "cor": "#c1121f"
+      }
+    ]
+  },
+  "ucl-2001-final": {
+    "equipas": [
+      {
+        "formacao": "3-4-2-1",
+        "pos": {
+          "Hasan Salihamidžić": "MO",
+          "Mehmet Scholl": "MO"
+        }
+      },
+      {}
+    ]
+  },
+  "euro-2008-final": {
+    "equipas": [
+      {},
+      {
+        "remover": [
+          "Daniel Güiza"
+        ]
+      }
+    ]
+  },
+  "euro-2020-final": {
+    "equipas": [
+      {},
+      {
+        "remover": [
+          "Dean Henderson"
+        ]
+      }
+    ]
+  },
+  "mundial-2022-final": {
+    "equipas": [
+      {},
+      {
+        "remover": [
+          "Karim Benzema",
+          "Lucas Hernandez"
+        ]
+      }
+    ]
+  },
+  "liga-europa-2014-final": {
+    "equipas": [
+      {},
+      {
+        "nomes": {
+          "Ruben Amorim": "Rúben Amorim"
+        }
+      }
+    ]
+  },
+  "taca-do-rei-2011-final": {
+    "estadio": "Mestalla, Valência"
   }
 }
