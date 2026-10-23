@@ -97,7 +97,7 @@ describe('partida', () => {
     const solo = salaCom(1, { solo: true });
     S.comecar(solo, solo.jogadores[0].id, T0, primeiro);
     const r = solo.partida.ronda;
-    expect(r.fim - r.inicio).toBe(300_000);
+    expect(r.fim - r.inicio).toBe(360_000);
   });
 
   it('palpites: errado bloqueia 1 s, "já é de", pontos e feed', () => {

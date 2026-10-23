@@ -109,7 +109,7 @@ export function renderLobby(sala, eu, catalogo, enviar) {
     }),
   );
 
-  const duracao = sala.solo ? '5:00' : '3:00';
+  const duracao = sala.solo ? '6:00' : '4:00';
   const rondas = Math.min(sala.config.rondas, sala.disponiveis);
   $('#cfg-resumo').textContent = sala.disponiveis
     ? `${plural(sala.disponiveis, 'jogo', 'jogos')} por jogar · ${plural(rondas, 'ronda', 'rondas')} de ${duracao} (+1 s por acerto)`

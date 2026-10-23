@@ -31,19 +31,19 @@ describe('prepararJogo', () => {
 });
 
 describe('tempo da ronda', () => {
-  it('começa com 7 s de ficha e dura 3:00 (multi) ou 5:00 (solo)', () => {
+  it('começa com 7 s de ficha e dura 4:00 (multi) ou 6:00 (solo)', () => {
     const { r } = rondaNova();
     expect(r.etapa).toBe('ficha');
     expect(r.fichaAte).toBe(INICIO);
-    expect(r.fim - r.inicio).toBe(180_000);
-    expect(rondaNova({ tipo: 'solo' }).r.fim - INICIO).toBe(300_000);
+    expect(r.fim - r.inicio).toBe(240_000);
+    expect(rondaNova({ tipo: 'solo' }).r.fim - INICIO).toBe(360_000);
   });
 
   it('pistas quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial', () => {
     const { r } = rondaNova();
-    expect(motor.limiaresPistas(r)).toEqual([144_000, 117_000, 90_000]); // 2:24, 1:57, 1:30
+    expect(motor.limiaresPistas(r)).toEqual([192_000, 156_000, 120_000]); // 3:12, 2:36, 2:00
     const solo = rondaNova({ tipo: 'solo' }).r;
-    expect(motor.limiaresPistas(solo)).toEqual([240_000, 195_000, 150_000]); // 4:00, 3:15, 2:30
+    expect(motor.limiaresPistas(solo)).toEqual([288_000, 234_000, 180_000]); // 4:48, 3:54, 3:00
   });
 
   it('cada acerto atrasa as pistas (o relógio sobe 1 s)', () => {
@@ -51,17 +51,17 @@ describe('tempo da ronda', () => {
     motor.avancar(r, INICIO);
     motor.palpite(r, prep, 'a', 'Deco', INICIO + 1000);
     motor.palpite(r, prep, 'a', 'Maniche', INICIO + 2000);
-    expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000 + 2_000);
-    expect(motor.avancar(r, INICIO + 37_000)).toEqual([]);
-    expect(motor.avancar(r, INICIO + 38_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
+    expect(motor.proximoPrazo(r)).toBe(INICIO + 48_000 + 2_000);
+    expect(motor.avancar(r, INICIO + 49_000)).toEqual([]);
+    expect(motor.avancar(r, INICIO + 50_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
   });
 
   it('uma pista revelada não volta a esconder-se quando o relógio sobe', () => {
     const { prep, r } = rondaNova();
-    motor.avancar(r, INICIO + 36_000);
+    motor.avancar(r, INICIO + 48_000);
     expect(r.nivelPista).toBe(1);
-    motor.palpite(r, prep, 'a', 'Deco', INICIO + 36_500);
-    expect(motor.nivelPistaEm(r, INICIO + 36_600)).toBe(1);
+    motor.palpite(r, prep, 'a', 'Deco', INICIO + 48_500);
+    expect(motor.nivelPistaEm(r, INICIO + 48_600)).toBe(1);
     expect(motor.estadoPublico(r, prep).equipas[1].onze[0].numero).toBe(99);
   });
 
@@ -69,10 +69,10 @@ describe('tempo da ronda', () => {
     const { r } = rondaNova();
     expect(motor.avancar(r, INICIO - 1)).toEqual([]);
     expect(motor.avancar(r, INICIO)).toEqual([{ tipo: 'inicio' }]);
-    expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000);
-    expect(motor.avancar(r, INICIO + 36_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
-    expect(motor.avancar(r, INICIO + 36_500)).toEqual([]);
-    expect(motor.avancar(r, INICIO + 95_000)).toEqual([
+    expect(motor.proximoPrazo(r)).toBe(INICIO + 48_000);
+    expect(motor.avancar(r, INICIO + 48_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
+    expect(motor.avancar(r, INICIO + 48_500)).toEqual([]);
+    expect(motor.avancar(r, INICIO + 125_000)).toEqual([
       { tipo: 'pista', nivel: 2, pista: 'pais' },
       { tipo: 'pista', nivel: 3, pista: 'inicial' },
     ]);
@@ -131,7 +131,7 @@ describe('palpites', () => {
     const p = motor.prepararJogo(euro);
     const ronda = motor.criarRonda({ jogo: euro, agora: T0 });
     expect(ronda.pistas.map((x) => x.tipo)).toEqual(['numero', 'inicial']);
-    expect(motor.limiaresPistas(ronda)).toEqual([144_000, 90_000]);
+    expect(motor.limiaresPistas(ronda)).toEqual([192_000, 120_000]);
     motor.avancar(ronda, INICIO);
     expect(motor.avancar(ronda, INICIO + 63_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
     const [, l2] = motor.limiaresPistas(ronda);
@@ -167,7 +167,7 @@ describe('estado público', () => {
     const { prep, r } = rondaNova();
     motor.avancar(r, INICIO);
     motor.palpite(r, prep, 'rui', 'Deco', INICIO + 1000);
-    motor.avancar(r, INICIO + 95_000); // as 3 pistas
+    motor.avancar(r, INICIO + 125_000); // as 3 pistas
     const json = JSON.stringify(motor.estadoPublico(r, prep));
     expect(json).toContain('Deco');
     for (const p of escondidos(prep, r)) {
@@ -185,9 +185,9 @@ describe('estado público', () => {
     motor.avancar(r, INICIO);
     const antes = motor.estadoPublico(r, prep);
     expect(antes.equipas[1].onze[0]).toEqual({ id: '1o0', tipo: 'onze', pos: 'GR' });
-    motor.avancar(r, INICIO + 36_000);
+    motor.avancar(r, INICIO + 48_000);
     expect(motor.estadoPublico(r, prep).equipas[1].onze[0]).toEqual({ id: '1o0', tipo: 'onze', pos: 'GR', numero: 99 });
-    motor.avancar(r, INICIO + 90_000);
+    motor.avancar(r, INICIO + 120_000);
     const depois = motor.estadoPublico(r, prep);
     expect(depois.equipas[1].onze[0]).toEqual({ id: '1o0', tipo: 'onze', pos: 'GR', numero: 99, pais: 'PT', inicial: 'B' });
     expect(antes.equipas[1].suplentes[0]).toEqual({ id: '1s0', tipo: 'suplente', pos: 'DC', minuto: 85 });

@@ -89,7 +89,7 @@ export function criarRonda({ jogo, equipa = null, tipo = 'multi', lados = null, 
 // ---------------------------------------------------------------------------
 // Pistas
 // ---------------------------------------------------------------------------
-// Cada pista sai quando o relógio desce até uma meta do tempo inicial (3:00 → 2:24, 1:57, 1:30).
+// Cada pista sai quando o relógio desce até uma meta do tempo inicial (4:00 → 3:12, 2:36, 2:00).
 // Como cada acerto acrescenta 1 s ao relógio, acertar seguido atrasa um pouco as pistas.
 // Depois de reveladas, ficam. Nos jogos entre seleções não há pista da bandeira.
 

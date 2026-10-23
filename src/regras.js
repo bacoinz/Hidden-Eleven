@@ -1,7 +1,7 @@
 // Constantes do jogo (tempos, pontos, limites).
 export const REGRAS = {
   fichaMs: 7_000,
-  duracaoMs: { multi: 180_000, solo: 300_000 },
+  duracaoMs: { multi: 240_000, solo: 360_000 },
   extraPorAcertoMs: 1_000,
   /** Pistas em frações da duração base: número, bandeira, inicial do apelido. */
   pistas: [0.2, 0.35, 0.5],

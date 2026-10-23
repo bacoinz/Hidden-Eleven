@@ -23,9 +23,9 @@ function caminhoCamisola(S) {
 }
 
 export function camisolaMini(cor = '#ffffff22', contorno = '#ffffff99', numero = null) {
-  return svg('svg', { width: 22, height: 22, viewBox: '-12 -12 24 24', 'aria-hidden': 'true' },
-    svg('path', { d: caminhoCamisola(22), fill: cor, stroke: contorno, 'stroke-width': 1.5, 'stroke-linejoin': 'round' }),
-    numero != null ? svg('text', { class: 'numero-mini', x: 0, y: 4, 'font-size': String(numero).length > 1 ? 9 : 10 }, String(numero)) : null);
+  return svg('svg', { class: 'camisola-mini', width: 32, height: 32, viewBox: '-12 -12 24 24', 'aria-hidden': 'true' },
+    svg('path', { d: caminhoCamisola(22), fill: cor, stroke: contorno, 'stroke-width': 1.2, 'stroke-linejoin': 'round' }),
+    numero != null ? svg('text', { class: 'numero-mini', x: 0, y: 4.2, 'font-size': String(numero).length > 1 ? 10 : 11.5 }, String(numero)) : null);
 }
 
 /** Bola de futebol centrada em (0,0); vermelha nos autogolos. */

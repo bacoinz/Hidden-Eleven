@@ -8,12 +8,12 @@ O frontend é HTML/CSS/JS simples, servido pelo próprio Worker.
 
 ## Como se joga
 
-- **Criar sala** (multijogador, rondas de 3:00) ou **Jogar sozinho** (rondas de 5:00). Cada acerto acrescenta 1 s.
+- **Criar sala** (multijogador, rondas de 4:00) ou **Jogar sozinho** (rondas de 6:00). Cada acerto acrescenta 1 s.
 - O anfitrião escolhe o conteúdo — **Finais** (Liga dos Campeões, Mundial e Euro desde 2000), **Clássicos**
   (dérbis, rivais e jogos míticos), **Equipa Mítica** (só a equipa escolhida em campo) ou **Aleatório** — e o número de rondas.
 - Ficha do jogo durante 7 s; depois toda a gente escreve nomes na mesma caixa. O servidor decide a posição:
   onze, suplentes que entraram (com o minuto visível) ou treinadores.
-- Pistas no onze e nos suplentes por descobrir quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial (2:24, 1:57 e 1:30
+- Pistas no onze e nos suplentes por descobrir quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial (3:12, 2:36 e 2:00
   em multijogador): número, bandeira, inicial do apelido; o treinador só recebe a inicial. A posição dos suplentes
   (a de quem substituíram) vê-se desde o início. Cada acerto dá +1 s e atrasa as pistas outro tanto.
   Nos jogos entre seleções não há a pista da bandeira.
