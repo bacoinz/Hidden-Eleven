@@ -36,11 +36,11 @@
         }
       ],
       "suplentes": [
-        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "minuto": 56, "pais": "PT" },
-        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 80 }] },
-        { "nome": "João Palhinha", "numero": 6, "minuto": 88, "pais": "PT" },
-        { "nome": "Gonçalo Ramos", "numero": 26, "minuto": 88, "pais": "PT" },
-        { "nome": "João Mário", "numero": 17, "minuto": 88, "pais": "PT" }
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 14, "minuto": 56, "pais": "PT", "pos": "MC" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 80 }], "pos": "MDC" },
+        { "nome": "João Palhinha", "numero": 6, "minuto": 88, "pais": "PT", "pos": "MO" },
+        { "nome": "Gonçalo Ramos", "numero": 26, "minuto": 88, "pais": "PT", "pos": "PL" },
+        { "nome": "João Mário", "numero": 17, "minuto": 88, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Rui Patrício", "Diogo Dalot", "Pepe", "André Silva", "José Sá", "Vitinha", "Nuno Mendes", "Ricardo Horta", "Matheus Nunes", "António Silva"]
     },
@@ -62,11 +62,11 @@
         { "nome": "Iñaki Williams", "numero": 19, "pais": "GH", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Tariq Lamptey", "numero": 2, "minuto": 66, "pais": "GH" },
-        { "nome": "Osman Bukari", "numero": 11, "minuto": 77, "pais": "GH", "golos": [{ "minuto": 89 }] },
-        { "nome": "Jordan Ayew", "numero": 9, "minuto": 77, "pais": "GH" },
-        { "nome": "Daniel-Kofi Kyereh", "numero": 8, "minuto": "90+2", "pais": "GH" },
-        { "nome": "Antoine Semenyo", "numero": 25, "minuto": "90+2", "pais": "GH" }
+        { "nome": "Tariq Lamptey", "numero": 2, "minuto": 66, "pais": "GH", "pos": "DC" },
+        { "nome": "Osman Bukari", "numero": 11, "minuto": 77, "pais": "GH", "golos": [{ "minuto": 89 }], "pos": "MC" },
+        { "nome": "Jordan Ayew", "numero": 9, "minuto": 77, "pais": "GH", "pos": "PL" },
+        { "nome": "Daniel-Kofi Kyereh", "numero": 8, "minuto": "90+2", "pais": "GH", "pos": "MC" },
+        { "nome": "Antoine Semenyo", "numero": 25, "minuto": "90+2", "pais": "GH", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Denis Odoi",

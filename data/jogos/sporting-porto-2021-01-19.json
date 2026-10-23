@@ -28,10 +28,10 @@
         { "nome": "Antunes", "numero": 55, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Daniel Bragança", "numero": 68, "minuto": 85, "pais": "PT" },
-        { "nome": "Matheus Nunes", "numero": 8, "minuto": 69, "pais": "BR" },
-        { "nome": "Gonzalo Plata", "numero": 20, "minuto": 85, "pais": "EC" },
-        { "nome": "Jovane Cabral", "numero": 77, "minuto": 78, "pais": "CV", "golos": [{ "minuto": 86 }, { "minuto": "90+4" }] }
+        { "nome": "Daniel Bragança", "numero": 68, "minuto": 85, "pais": "PT", "pos": "MC" },
+        { "nome": "Matheus Nunes", "numero": 8, "minuto": 69, "pais": "BR", "pos": "DD" },
+        { "nome": "Gonzalo Plata", "numero": 20, "minuto": 85, "pais": "EC", "pos": "PL" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 78, "pais": "CV", "golos": [{ "minuto": 86 }, { "minuto": "90+4" }], "pos": "MC" }
       ],
       "nao_utilizados": ["André Paulo", "Luís Maximiano", "Eduardo Quaresma", "Cristián Borja"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Zaidu Sanusi", "numero": 12, "pais": "NG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Wilson Manafá", "numero": 18, "minuto": 79, "pais": "PT" },
-        { "nome": "Nanu", "numero": 31, "minuto": 85, "pais": "GW" },
-        { "nome": "Fábio Vieira", "numero": 50, "minuto": "90+1", "pais": "PT" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 85, "pais": "ES" }
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 79, "pais": "PT", "pos": "DD" },
+        { "nome": "Nanu", "numero": 31, "minuto": 85, "pais": "GW", "pos": "MD" },
+        { "nome": "Fábio Vieira", "numero": 50, "minuto": "90+1", "pais": "PT", "pos": "ED" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 85, "pais": "ES", "pos": "MC" }
       ],
       "nao_utilizados": ["Agustín Marchesín", "Malang Sarr", "Mamadou Loum", "Romário Baró", "Francisco Conceição"]
     }

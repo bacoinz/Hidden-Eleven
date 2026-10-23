@@ -37,9 +37,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "João Mário", "numero": 10, "minuto": 68, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 69, "pais": "PT" },
-        { "nome": "André Silva", "numero": 9, "minuto": 80, "pais": "PT" }
+        { "nome": "João Mário", "numero": 10, "minuto": 68, "pais": "PT", "pos": "EE" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 69, "pais": "PT", "pos": "ED" },
+        { "nome": "André Silva", "numero": 9, "minuto": 80, "pais": "PT", "pos": "MO" }
       ],
       "nao_utilizados": [
         "Bruno Alves",
@@ -73,9 +73,9 @@
         { "nome": "Diego Costa", "numero": 19, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 24 }, { "minuto": 55 }] }
       ],
       "suplentes": [
-        { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"], "numero": 10, "minuto": 70, "pais": "ES" },
-        { "nome": "Iago Aspas", "numero": 17, "minuto": 77, "pais": "ES" },
-        { "nome": "Lucas Vázquez", "numero": 11, "minuto": 86, "pais": "ES" }
+        { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"], "numero": 10, "minuto": 70, "pais": "ES", "pos": "EE" },
+        { "nome": "Iago Aspas", "numero": 17, "minuto": 77, "pais": "ES", "pos": "PL" },
+        { "nome": "Lucas Vázquez", "numero": 11, "minuto": 86, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Dani Carvajal",

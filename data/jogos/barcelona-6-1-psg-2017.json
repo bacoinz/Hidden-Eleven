@@ -43,9 +43,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Sergi Roberto", "numero": 20, "minuto": 76, "pais": "ES", "golos": [{ "minuto": "90+5" }] },
-        { "nome": "Arda Turan", "numero": 7, "minuto": 65, "pais": "TR" },
-        { "nome": "André Gomes", "numero": 21, "minuto": 84, "pais": "PT" }
+        { "nome": "Sergi Roberto", "numero": 20, "minuto": 76, "pais": "ES", "golos": [{ "minuto": "90+5" }], "pos": "DC" },
+        { "nome": "Arda Turan", "numero": 7, "minuto": 65, "pais": "TR", "pos": "ME" },
+        { "nome": "André Gomes", "numero": 21, "minuto": 84, "pais": "PT", "pos": "MD" }
       ],
       "nao_utilizados": ["Jasper Cillessen", "Jordi Alba", "Lucas Digne", "Paco Alcácer"]
     },
@@ -69,9 +69,9 @@
         { "nome": "Edinson Cavani", "numero": 9, "pais": "UY", "pos": "PL", "golos": [{ "minuto": 62 }] }
       ],
       "suplentes": [
-        { "nome": "Serge Aurier", "numero": 19, "minuto": 75, "pais": "CI" },
-        { "nome": "Grzegorz Krychowiak", "numero": 4, "minuto": "90+3", "pais": "PL" },
-        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 55, "pais": "AR" }
+        { "nome": "Serge Aurier", "numero": 19, "minuto": 75, "pais": "CI", "pos": "DC" },
+        { "nome": "Grzegorz Krychowiak", "numero": 4, "minuto": "90+3", "pais": "PL", "pos": "MC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 55, "pais": "AR", "pos": "ED" }
       ],
       "nao_utilizados": ["Alphonse Areola", "Presnel Kimpembe", "Javier Pastore", "Hatem Ben Arfa"]
     }

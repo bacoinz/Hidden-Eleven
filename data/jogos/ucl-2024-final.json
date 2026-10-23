@@ -28,10 +28,10 @@
         { "nome": "Niclas Füllkrug", "numero": 14, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Marco Reus", "numero": 11, "minuto": 72, "pais": "DE" },
-        { "nome": "Jamie Bynoe-Gittens", "numero": 43, "minuto": 87, "pais": "GB-ENG" },
-        { "nome": "Sébastien Haller", "numero": 9, "minuto": 80, "pais": "CI" },
-        { "nome": "Donyell Malen", "numero": 21, "minuto": 80, "pais": "NL" }
+        { "nome": "Marco Reus", "numero": 11, "minuto": 72, "pais": "DE", "pos": "EE" },
+        { "nome": "Jamie Bynoe-Gittens", "numero": 43, "minuto": 87, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Sébastien Haller", "numero": 9, "minuto": 80, "pais": "CI", "pos": "MC" },
+        { "nome": "Donyell Malen", "numero": 21, "minuto": 80, "pais": "NL", "pos": "MO" }
       ],
       "nao_utilizados": ["Alexander Meyer", "Marcel Lotka", "Niklas Süle", "Salih Özcan", "Felix Nmecha", "Marius Wolf", "Kjell Wätjen", "Youssoufa Moukoko"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Vinícius Júnior", "aceites": ["vinicius", "vini", "vini jr"], "numero": 7, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 83 }] }
       ],
       "suplentes": [
-        { "nome": "Éder Militão", "numero": 3, "minuto": 90, "pais": "BR" },
-        { "nome": "Lucas Vázquez", "numero": 17, "minuto": "90+4", "pais": "ES" },
-        { "nome": "Luka Modrić", "numero": 10, "minuto": 85, "pais": "HR" },
-        { "nome": "Joselu", "numero": 14, "minuto": 85, "pais": "ES" }
+        { "nome": "Éder Militão", "numero": 3, "minuto": 90, "pais": "BR", "pos": "DC" },
+        { "nome": "Lucas Vázquez", "numero": 17, "minuto": "90+4", "pais": "ES", "pos": "DC" },
+        { "nome": "Luka Modrić", "numero": 10, "minuto": 85, "pais": "HR", "pos": "MC" },
+        { "nome": "Joselu", "numero": 14, "minuto": 85, "pais": "ES", "pos": "MO" }
       ],
       "nao_utilizados": ["Andriy Lunin", "Kepa Arrizabalaga", "David Alaba", "Fran García", "Aurélien Tchouaméni", "Dani Ceballos", "Brahim Díaz", "Arda Güler"]
     }

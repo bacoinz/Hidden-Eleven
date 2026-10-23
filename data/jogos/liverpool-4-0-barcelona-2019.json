@@ -29,16 +29,17 @@
         { "nome": "Sadio Mané", "numero": 10, "pais": "SN", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Joe Gomez", "numero": 12, "minuto": 85, "pais": "GB-ENG" },
+        { "nome": "Joe Gomez", "numero": 12, "minuto": 85, "pais": "GB-ENG", "pos": "DC" },
         {
           "nome": "Georginio Wijnaldum",
           "numero": 5,
           "minuto": 46,
           "pais": "NL",
           "golos": [{ "minuto": 54 }, { "minuto": 56 }],
-          "aceites": ["Gini Wijnaldum"]
+          "aceites": ["Gini Wijnaldum"],
+          "pos": "MC"
         },
-        { "nome": "Daniel Sturridge", "numero": 15, "minuto": 90, "pais": "GB-ENG" }
+        { "nome": "Daniel Sturridge", "numero": 15, "minuto": 90, "pais": "GB-ENG", "pos": "ED" }
       ],
       "nao_utilizados": ["Simon Mignolet", "Dejan Lovren", "Rhian Brewster", "Ben Woodburn"]
     },
@@ -62,9 +63,9 @@
         { "nome": "Philippe Coutinho", "numero": 7, "pais": "BR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 60, "pais": "PT" },
-        { "nome": "Arthur", "numero": 8, "minuto": 75, "pais": "BR" },
-        { "nome": "Malcom", "numero": 14, "minuto": 80, "pais": "BR" }
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 60, "pais": "PT", "pos": "DD" },
+        { "nome": "Arthur", "numero": 8, "minuto": 75, "pais": "BR", "pos": "MC" },
+        { "nome": "Malcom", "numero": 14, "minuto": 80, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Jasper Cillessen", "Samuel Umtiti", "Thomas Vermaelen", "Carles Aleñà"]
     }

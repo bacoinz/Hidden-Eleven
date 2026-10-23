@@ -27,9 +27,9 @@
         { "nome": "Akwá", "numero": 10, "pais": "AO", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Mantorras", "numero": 9, "minuto": 60, "pais": "AO" },
-        { "nome": "Édson", "aceites": ["Édson Nobre"], "numero": 13, "minuto": 70, "pais": "AO" },
-        { "nome": "Miloy", "numero": 6, "minuto": 80, "pais": "AO" }
+        { "nome": "Mantorras", "numero": 9, "minuto": 60, "pais": "AO", "pos": "PL" },
+        { "nome": "Édson", "aceites": ["Édson Nobre"], "numero": 13, "minuto": 70, "pais": "AO", "pos": "MD" },
+        { "nome": "Miloy", "numero": 6, "minuto": 80, "pais": "AO", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Marco Airosa",
@@ -63,9 +63,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 4 }] }
       ],
       "suplentes": [
-        { "nome": "Costinha", "numero": 6, "minuto": 60, "pais": "PT" },
-        { "nome": "Maniche", "numero": 18, "minuto": 72, "pais": "PT" },
-        { "nome": "Hugo Viana", "numero": 10, "minuto": 83, "pais": "PT" }
+        { "nome": "Costinha", "numero": 6, "minuto": 60, "pais": "PT", "pos": "ED" },
+        { "nome": "Maniche", "numero": 18, "minuto": 72, "pais": "PT", "pos": "MC" },
+        { "nome": "Hugo Viana", "numero": 10, "minuto": 83, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Quim", "Luís Boa Morte", "Deco", "Nuno Gomes", "Paulo Santos", "Hélder Postiga"]
     }

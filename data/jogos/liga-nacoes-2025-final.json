@@ -29,12 +29,12 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 61 }] }
       ],
       "suplentes": [
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": 46, "pais": "PT" },
-        { "nome": "Renato Veiga", "numero": 13, "minuto": 74, "pais": "PT" },
-        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 74, "pais": "PT" },
-        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 88, "pais": "PT" },
-        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 106, "pais": "PT" }
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 46, "pais": "PT", "pos": "EE" },
+        { "nome": "Renato Veiga", "numero": 13, "minuto": 74, "pais": "PT", "pos": "DC" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 88, "pais": "PT", "pos": "PL" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 106, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": [
         "António Silva",
@@ -68,12 +68,12 @@
         { "nome": "Nico Williams", "numero": 11, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Isco", "numero": 22, "minuto": 75, "pais": "ES" },
-        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES" },
-        { "nome": "Álex Baena", "numero": 16, "minuto": 92, "pais": "ES" },
-        { "nome": "Pedro Porro", "numero": 2, "minuto": 92, "pais": "ES" },
-        { "nome": "Yéremy Pino", "numero": 15, "minuto": 106, "pais": "ES" },
-        { "nome": "Álvaro Morata", "numero": 7, "minuto": 111, "pais": "ES" }
+        { "nome": "Isco", "numero": 22, "minuto": 75, "pais": "ES", "pos": "MC" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES", "pos": "MC" },
+        { "nome": "Álex Baena", "numero": 16, "minuto": 92, "pais": "ES", "pos": "EE" },
+        { "nome": "Pedro Porro", "numero": 2, "minuto": 92, "pais": "ES", "pos": "DD" },
+        { "nome": "Yéremy Pino", "numero": 15, "minuto": 106, "pais": "ES", "pos": "ED" },
+        { "nome": "Álvaro Morata", "numero": 7, "minuto": 111, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["David Raya", "Pau Cubarsí", "Daniel Vivian", "Gavi", "Dani Olmo", "Álex Remiro", "Álex Grimaldo", "Fermín López", "Samu Aghehowa"]
     }

@@ -29,10 +29,10 @@
         { "nome": "Álvaro Morata", "numero": 7, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 46, "pais": "ES" },
-        { "nome": "Mikel Oyarzabal", "numero": 21, "minuto": 68, "pais": "ES", "golos": [{ "minuto": 86 }] },
-        { "nome": "Nacho", "numero": 4, "minuto": 83, "pais": "ES" },
-        { "nome": "Mikel Merino", "numero": 6, "minuto": 89, "pais": "ES" }
+        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 46, "pais": "ES", "pos": "MC" },
+        { "nome": "Mikel Oyarzabal", "numero": 21, "minuto": 68, "pais": "ES", "golos": [{ "minuto": 86 }], "pos": "PL" },
+        { "nome": "Nacho", "numero": 4, "minuto": 83, "pais": "ES", "pos": "DC" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 89, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": [
         "David Raya",
@@ -68,9 +68,9 @@
         { "nome": "Harry Kane", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ollie Watkins", "numero": 19, "minuto": 61, "pais": "GB-ENG" },
-        { "nome": "Cole Palmer", "numero": 24, "minuto": 70, "pais": "GB-ENG", "golos": [{ "minuto": 73 }] },
-        { "nome": "Ivan Toney", "numero": 17, "minuto": 89, "pais": "GB-ENG" }
+        { "nome": "Ollie Watkins", "numero": 19, "minuto": 61, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Cole Palmer", "numero": 24, "minuto": 70, "pais": "GB-ENG", "golos": [{ "minuto": 73 }], "pos": "MC" },
+        { "nome": "Ivan Toney", "numero": 17, "minuto": 89, "pais": "GB-ENG", "pos": "MO" }
       ],
       "nao_utilizados": [
         { "nome": "Trent Alexander-Arnold", "aceites": ["trent", "taa"] },

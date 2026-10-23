@@ -28,9 +28,9 @@
         { "nome": "Gonçalo Guedes", "numero": 20, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Danilo Barbosa", "numero": 37, "minuto": 55, "pais": "BR" },
-        { "nome": "Andreas Samaris", "numero": 7, "minuto": "90+1", "pais": "GR" },
-        { "nome": "Franco Cervi", "numero": 22, "minuto": 65, "pais": "AR" }
+        { "nome": "Danilo Barbosa", "numero": 37, "minuto": 55, "pais": "BR", "pos": "MC" },
+        { "nome": "Andreas Samaris", "numero": 7, "minuto": "90+1", "pais": "GR", "pos": "MC" },
+        { "nome": "Franco Cervi", "numero": 22, "minuto": 65, "pais": "AR", "pos": "PL" }
       ],
       "nao_utilizados": ["Paulo Lopes", "Jardel", "André Carrillo", "Kostas Mitroglou"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Bryan Ruiz", "numero": 10, "pais": "CR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alan Ruiz", "numero": 99, "minuto": 60, "pais": "AR" },
-        { "nome": "Joel Campbell", "numero": 7, "minuto": 46, "pais": "CR" },
-        { "nome": "André", "numero": 16, "minuto": 84, "pais": "BR" }
+        { "nome": "Alan Ruiz", "numero": 99, "minuto": 60, "pais": "AR", "pos": "PL" },
+        { "nome": "Joel Campbell", "numero": 7, "minuto": 46, "pais": "CR", "pos": "MC" },
+        { "nome": "André", "numero": 16, "minuto": 84, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Beto", "Ricardo Esgaio", "Paulo Oliveira", "Elias"]
     }

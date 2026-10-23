@@ -28,9 +28,9 @@
         { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Gilberto", "numero": 2, "minuto": 26, "pais": "BR" },
-        { "nome": "David Neres", "numero": 7, "minuto": 56, "pais": "BR" },
-        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR" }
+        { "nome": "Gilberto", "numero": 2, "minuto": 26, "pais": "BR", "pos": "DD" },
+        { "nome": "David Neres", "numero": 7, "minuto": 56, "pais": "BR", "pos": "MDC" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR", "pos": "EE" }
       ],
       "nao_utilizados": ["Samuel Soares", "Lucas Veríssimo", "Morato", "João Neves", "Casper Tengstedt", "Andreas Schjelderup"]
     },
@@ -54,11 +54,11 @@
         { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 54 }] }
       ],
       "suplentes": [
-        { "nome": "João Mário Lopes", "numero": 23, "minuto": 56, "pais": "PT", "aceites": ["João Mário"], "curto": "João Mário" },
-        { "nome": "Fábio Cardoso", "numero": 2, "minuto": 88, "pais": "PT" },
-        { "nome": "Zaidu Sanusi", "numero": 12, "minuto": 71, "pais": "NG" },
-        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 56, "pais": "CA" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 72, "pais": "ES" }
+        { "nome": "João Mário Lopes", "numero": 23, "minuto": 56, "pais": "PT", "aceites": ["João Mário"], "curto": "João Mário", "pos": "DD" },
+        { "nome": "Fábio Cardoso", "numero": 2, "minuto": 88, "pais": "PT", "pos": "DC" },
+        { "nome": "Zaidu Sanusi", "numero": 12, "minuto": 71, "pais": "NG", "pos": "DD" },
+        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 56, "pais": "CA", "pos": "MC" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 72, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Gonçalo Borges", "Danny Namaso", "Evanilson"]
     }

@@ -29,9 +29,9 @@
         { "nome": "Raúl", "numero": 7, "pais": "ES", "pos": "PL", "aceites": ["Raúl González"] }
       ],
       "suplentes": [
-        { "nome": "Javi García", "numero": 24, "minuto": 79, "pais": "ES" },
-        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 72, "pais": "NL" },
-        { "nome": "Klaas-Jan Huntelaar", "numero": 19, "minuto": 59, "pais": "NL" }
+        { "nome": "Javi García", "numero": 24, "minuto": 79, "pais": "ES", "pos": "MD" },
+        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 72, "pais": "NL", "pos": "MO" },
+        { "nome": "Klaas-Jan Huntelaar", "numero": 19, "minuto": 59, "pais": "NL", "pos": "ME" }
       ],
       "nao_utilizados": ["Jerzy Dudek", "Julien Faubert", "Miguel Torres", "Royston Drenthe"]
     },
@@ -62,9 +62,9 @@
         { "nome": "Thierry Henry", "numero": 14, "pais": "FR", "pos": "EE", "golos": [{ "minuto": 18 }, { "minuto": 58 }] }
       ],
       "suplentes": [
-        { "nome": "Sergio Busquets", "numero": 28, "minuto": 85, "pais": "ES" },
-        { "nome": "Seydou Keita", "numero": 15, "minuto": 61, "pais": "ML" },
-        { "nome": "Bojan", "numero": 11, "minuto": 85, "pais": "ES", "aceites": ["Bojan Krkić"] }
+        { "nome": "Sergio Busquets", "numero": 28, "minuto": 85, "pais": "ES", "pos": "MDC" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 61, "pais": "ML", "pos": "EE" },
+        { "nome": "Bojan", "numero": 11, "minuto": 85, "pais": "ES", "aceites": ["Bojan Krkić"], "pos": "MC" }
       ],
       "nao_utilizados": ["Albert Jorquera", "Martín Cáceres", "Sylvinho", "Eidur Gudjohnsen"]
     }

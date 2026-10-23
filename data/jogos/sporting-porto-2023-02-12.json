@@ -28,11 +28,11 @@
         { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 55, "pais": "PT" },
-        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 70, "pais": "CI" },
-        { "nome": "Nuno Santos", "numero": 11, "minuto": 46, "pais": "PT" },
-        { "nome": "Paulinho", "numero": 20, "minuto": 34, "pais": "PT" },
-        { "nome": "Arthur Gomes", "numero": 33, "minuto": 70, "pais": "BR" }
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 55, "pais": "PT", "pos": "MD" },
+        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 70, "pais": "CI", "pos": "DC" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 46, "pais": "PT", "pos": "ME" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 34, "pais": "PT", "pos": "EE" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 70, "pais": "BR", "pos": "MD" }
       ],
       "nao_utilizados": ["Franco Israel", "Jeremiah St. Juste", "Mateo Tanlongo", "Mateus Fernandes"]
     },
@@ -56,10 +56,10 @@
         { "nome": "André Franco", "numero": 20, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Wilson Manafá", "numero": 18, "minuto": 83, "pais": "PT" },
-        { "nome": "David Carmo", "numero": 4, "minuto": 89, "pais": "PT" },
-        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 84, "pais": "CA" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 75, "pais": "ES" }
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 83, "pais": "PT", "pos": "DD" },
+        { "nome": "David Carmo", "numero": 4, "minuto": 89, "pais": "PT", "pos": "DD" },
+        { "nome": "Stephen Eustaquio", "numero": 46, "minuto": 84, "pais": "CA", "pos": "PL" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 75, "pais": "ES", "pos": "ME" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Rodrigo Conceição", "Bernardo Folha", "Gonçalo Borges", "Danny Namaso"]
     }

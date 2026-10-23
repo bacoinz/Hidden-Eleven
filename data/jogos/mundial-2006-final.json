@@ -29,9 +29,9 @@
         { "nome": "Luca Toni", "numero": 9, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Daniele De Rossi", "numero": 4, "minuto": 61, "pais": "IT" },
-        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 61, "pais": "IT" },
-        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 7, "minuto": 86, "pais": "IT" }
+        { "nome": "Daniele De Rossi", "numero": 4, "minuto": 61, "pais": "IT", "pos": "ME" },
+        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 61, "pais": "IT", "pos": "MO" },
+        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 7, "minuto": 86, "pais": "IT", "pos": "MD" }
       ],
       "nao_utilizados": [
         "Cristian Zaccardo",
@@ -72,9 +72,9 @@
         { "nome": "Thierry Henry", "numero": 12, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alou Diarra", "numero": 18, "minuto": 56, "pais": "FR" },
-        { "nome": "David Trezeguet", "numero": 20, "minuto": 100, "pais": "FR" },
-        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 107, "pais": "FR" }
+        { "nome": "Alou Diarra", "numero": 18, "minuto": 56, "pais": "FR", "pos": "MC" },
+        { "nome": "David Trezeguet", "numero": 20, "minuto": 100, "pais": "FR", "pos": "ED" },
+        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 107, "pais": "FR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Mickaël Landreau",

@@ -28,9 +28,9 @@
         { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 19, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 50 }] }
       ],
       "suplentes": [
-        { "nome": "Miguel Layún", "numero": 21, "minuto": 76, "pais": "MX" },
-        { "nome": "Rúben Neves", "numero": 6, "minuto": 67, "pais": "PT" },
-        { "nome": "Héctor Herrera", "numero": 16, "minuto": 87, "pais": "MX" }
+        { "nome": "Miguel Layún", "numero": 21, "minuto": 76, "pais": "MX", "pos": "DD" },
+        { "nome": "Rúben Neves", "numero": 6, "minuto": 67, "pais": "PT", "pos": "MC" },
+        { "nome": "Héctor Herrera", "numero": 16, "minuto": 87, "pais": "MX", "pos": "PL" }
       ],
       "nao_utilizados": ["José Sá", "Willy Boly", "Laurent Depoitre", "Yacine Brahimi"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Kostas Mitroglou", "numero": 11, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 2, "minuto": 17, "pais": "AR", "golos": [{ "minuto": "90+2" }] },
-        { "nome": "André Horta", "numero": 8, "minuto": 59, "pais": "PT" },
-        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 73, "pais": "MX" }
+        { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 2, "minuto": 17, "pais": "AR", "golos": [{ "minuto": "90+2" }], "pos": "DC" },
+        { "nome": "André Horta", "numero": 8, "minuto": 59, "pais": "PT", "pos": "ME" },
+        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 73, "pais": "MX", "pos": "MD" }
       ],
       "nao_utilizados": ["Júlio César", "André Almeida", "Danilo Silva", "André Carrillo"]
     }

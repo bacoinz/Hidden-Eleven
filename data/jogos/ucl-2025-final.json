@@ -28,11 +28,11 @@
         { "nome": "Khvicha Kvaratskhelia", "aceites": ["kvara"], "numero": 7, "pais": "GE", "pos": "EE", "golos": [{ "minuto": 73 }] }
       ],
       "suplentes": [
-        { "nome": "Lucas Hernandez", "numero": 21, "minuto": 78, "pais": "FR" },
-        { "nome": "Senny Mayulu", "numero": 24, "minuto": 84, "pais": "FR", "golos": [{ "minuto": 86 }] },
-        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 84, "pais": "FR" },
-        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 84, "pais": "PT" },
-        { "nome": "Bradley Barcola", "numero": 29, "minuto": 66, "pais": "FR" }
+        { "nome": "Lucas Hernandez", "numero": 21, "minuto": 78, "pais": "FR", "pos": "DE" },
+        { "nome": "Senny Mayulu", "numero": 24, "minuto": 84, "pais": "FR", "golos": [{ "minuto": 86 }], "pos": "MC" },
+        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 84, "pais": "FR", "pos": "MC" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 84, "pais": "PT", "pos": "EE" },
+        { "nome": "Bradley Barcola", "numero": 29, "minuto": 66, "pais": "FR", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Matvey Safonov",
@@ -63,11 +63,11 @@
         { "nome": "Lautaro Martínez", "aceites": ["lautaro"], "numero": 10, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Carlos Augusto", "numero": 30, "minuto": 62, "pais": "BR" },
-        { "nome": "Yann Aurel Bisseck", "numero": 31, "minuto": 53, "pais": "DE" },
-        { "nome": "Matteo Darmian", "numero": 36, "minuto": 62, "pais": "IT" },
-        { "nome": "Kristjan Asllani", "numero": 21, "minuto": 70, "pais": "AL" },
-        { "nome": "Nicola Zalewski", "numero": 59, "minuto": 53, "pais": "PL" }
+        { "nome": "Carlos Augusto", "numero": 30, "minuto": 62, "pais": "BR", "pos": "DC" },
+        { "nome": "Yann Aurel Bisseck", "numero": 31, "minuto": 53, "pais": "DE", "pos": "DC" },
+        { "nome": "Matteo Darmian", "numero": 36, "minuto": 62, "pais": "IT", "pos": "DC" },
+        { "nome": "Kristjan Asllani", "numero": 21, "minuto": 70, "pais": "AL", "pos": "MC" },
+        { "nome": "Nicola Zalewski", "numero": 59, "minuto": 53, "pais": "PL", "pos": "ME" }
       ],
       "nao_utilizados": ["Raffaele Di Gennaro", "Josep Martínez", "Stefan de Vrij", "Piotr Zieliński", "Davide Frattesi", "Marko Arnautović", "Mehdi Taremi"]
     }

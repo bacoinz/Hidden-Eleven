@@ -29,9 +29,9 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Pereira", "numero": 47, "minuto": 86, "pais": "PT" },
-        { "nome": "Alcides", "numero": 13, "minuto": 88, "pais": "BR" },
-        { "nome": "Pedro Mantorras", "numero": 9, "minuto": 78, "pais": "AO" }
+        { "nome": "João Pereira", "numero": 47, "minuto": 86, "pais": "PT", "pos": "DD" },
+        { "nome": "Alcides", "numero": 13, "minuto": 88, "pais": "BR", "pos": "DC" },
+        { "nome": "Pedro Mantorras", "numero": 9, "minuto": 78, "pais": "AO", "pos": "PL" }
       ],
       "nao_utilizados": ["José Moreira", "Takis Fyssas", "Bruno Aguiar", "Andrija Delibasic"]
     },
@@ -55,9 +55,9 @@
         { "nome": "Douala", "numero": 17, "pais": "CM", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Hugo Viana", "numero": 45, "minuto": 73, "pais": "PT" },
-        { "nome": "Rodrigo Tello", "numero": 11, "minuto": 66, "pais": "CL" },
-        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 70, "pais": "CL" }
+        { "nome": "Hugo Viana", "numero": 45, "minuto": 73, "pais": "PT", "pos": "MC" },
+        { "nome": "Rodrigo Tello", "numero": 11, "minuto": 66, "pais": "CL", "pos": "DE" },
+        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 70, "pais": "CL", "pos": "PL" }
       ],
       "nao_utilizados": ["Nélson", "Rogério", "Hugo", "Marius Niculae"]
     }

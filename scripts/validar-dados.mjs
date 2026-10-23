@@ -108,7 +108,9 @@ export function validarJogo(jogo, { ficheiro, equipas = {} } = {}) {
       verAceites(s, onde);
       verGolos(s, onde);
       if (!MINUTO.test(String(s.minuto ?? '')) || Number.parseInt(s.minuto, 10) > 125) erro(`${onde}: minuto inválido "${s.minuto}"`);
+      if (!SIGLAS.includes(s.pos)) erro(`${onde}: posição "${s.pos}" inválida`);
       if (!temBandeira(s.pais)) erro(`${onde}: país "${s.pais}" sem bandeira`);
+      if (s.inicial !== undefined && !/^\p{Lu}$/u.test(s.inicial)) erro(`${onde}: inicial inválida`);
       if (s.numero !== undefined && s.numero !== null) {
         if (numeros.has(s.numero)) erro(`${eq}: número ${s.numero} repetido`);
         numeros.set(s.numero, s.nome);

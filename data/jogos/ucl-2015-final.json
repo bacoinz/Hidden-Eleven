@@ -28,9 +28,9 @@
         { "nome": "Álvaro Morata", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 55 }] }
       ],
       "suplentes": [
-        { "nome": "Kingsley Coman", "numero": 11, "minuto": 89, "pais": "FR" },
-        { "nome": "Roberto Pereyra", "numero": 37, "minuto": 79, "pais": "AR" },
-        { "nome": "Fernando Llorente", "numero": 14, "minuto": 85, "pais": "ES" }
+        { "nome": "Kingsley Coman", "numero": 11, "minuto": 89, "pais": "FR", "pos": "MC" },
+        { "nome": "Roberto Pereyra", "numero": 37, "minuto": 79, "pais": "AR", "pos": "MO" },
+        { "nome": "Fernando Llorente", "numero": 14, "minuto": 85, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Marco Storari", "Angelo Ogbonna", "Simone Padoin", "Stefano Sturaro"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Neymar", "aceites": ["neymar jr"], "numero": 11, "pais": "BR", "pos": "EE", "golos": [{ "minuto": "90+7" }] }
       ],
       "suplentes": [
-        { "nome": "Jérémy Mathieu", "numero": 24, "minuto": "90+1", "pais": "FR" },
-        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "minuto": 78, "pais": "ES" },
-        { "nome": "Pedro", "numero": 7, "minuto": "90+6", "pais": "ES" }
+        { "nome": "Jérémy Mathieu", "numero": 24, "minuto": "90+1", "pais": "FR", "pos": "DC" },
+        { "nome": "Xavi", "aceites": ["xavi hernandez"], "numero": 6, "minuto": 78, "pais": "ES", "pos": "MC" },
+        { "nome": "Pedro", "numero": 7, "minuto": "90+6", "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Claudio Bravo", "Marc Bartra", "Adriano", "Rafinha"]
     }

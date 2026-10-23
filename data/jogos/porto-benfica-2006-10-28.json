@@ -28,9 +28,9 @@
         { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 11 }] }
       ],
       "suplentes": [
-        { "nome": "Raul Meireles", "numero": 16, "minuto": 30, "pais": "PT" },
-        { "nome": "Tarik Sektioui", "numero": 11, "minuto": 73, "pais": "MA" },
-        { "nome": "Bruno Moraes", "numero": 29, "minuto": 83, "pais": "BR", "golos": [{ "minuto": "90+2" }] }
+        { "nome": "Raul Meireles", "numero": 16, "minuto": 30, "pais": "PT", "pos": "MC" },
+        { "nome": "Tarik Sektioui", "numero": 11, "minuto": 73, "pais": "MA", "pos": "ME" },
+        { "nome": "Bruno Moraes", "numero": 29, "minuto": 83, "pais": "BR", "golos": [{ "minuto": "90+2" }], "pos": "MD" }
       ],
       "nao_utilizados": [{ "nome": "Vítor Baía", "aceites": ["baia"] }, "Ricardo Costa", "Jorginho", "Alan"]
     },
@@ -53,7 +53,10 @@
         { "nome": "Kikin Fonseca", "numero": 17, "pais": "MX", "pos": "PL" },
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 81 }] }
       ],
-      "suplentes": [{ "nome": "Nuno Assis", "numero": 25, "minuto": 53, "pais": "PT" }, { "nome": "Pedro Mantorras", "numero": 9, "minuto": 61, "pais": "AO" }],
+      "suplentes": [
+        { "nome": "Nuno Assis", "numero": 25, "minuto": 53, "pais": "PT", "pos": "MD" },
+        { "nome": "Pedro Mantorras", "numero": 9, "minuto": 61, "pais": "AO", "pos": "PL" }
+      ],
       "nao_utilizados": ["Marcelo Moretto", "Anderson Luís", "Miguelito", "Beto", "Andrei Karyaka"]
     }
   ]

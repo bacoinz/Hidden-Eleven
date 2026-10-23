@@ -28,12 +28,12 @@
         { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Leandro Barreiro", "numero": 18, "minuto": "90+1", "pais": "LU" },
-        { "nome": "Fredrik Aursnes", "numero": 8, "minuto": 77, "pais": "NO" },
-        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 69, "pais": "PT" },
-        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 103, "pais": "AR" },
-        { "nome": "Andrea Belotti", "numero": 19, "minuto": 77, "pais": "IT" },
-        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 69, "pais": "NO" }
+        { "nome": "Leandro Barreiro", "numero": 18, "minuto": "90+1", "pais": "LU", "pos": "MO" },
+        { "nome": "Fredrik Aursnes", "numero": 8, "minuto": 77, "pais": "NO", "pos": "MD" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 69, "pais": "PT", "pos": "MC" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 11, "minuto": 103, "pais": "AR", "pos": "ME" },
+        { "nome": "Andrea Belotti", "numero": 19, "minuto": 77, "pais": "IT", "pos": "PL" },
+        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 69, "pais": "NO", "pos": "MO" }
       ],
       "nao_utilizados": ["Anatoliy Trubin", "Adrian Bajrami", "Arthur Cabral"]
     },
@@ -57,12 +57,12 @@
         { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL", "golos": [{ "minuto": "90+10", "penalti": true }] }
       ],
       "suplentes": [
-        { "nome": "Iván Fresneda", "numero": 22, "minuto": 83, "pais": "ES" },
-        { "nome": "Matheus Reis", "numero": 2, "minuto": 83, "pais": "BR" },
-        { "nome": "David Moreira", "numero": 46, "minuto": 115, "pais": "PT" },
-        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 58, "pais": "JP" },
-        { "nome": "Conrad Harder", "numero": 19, "minuto": 75, "pais": "DK", "golos": [{ "minuto": 99 }] },
-        { "nome": "Geovany Quenda", "numero": 57, "minuto": 75, "pais": "PT" }
+        { "nome": "Iván Fresneda", "numero": 22, "minuto": 83, "pais": "ES", "pos": "DC" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 83, "pais": "BR", "pos": "DC" },
+        { "nome": "David Moreira", "numero": 46, "minuto": 115, "pais": "PT", "pos": "ME" },
+        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 58, "pais": "JP", "pos": "MC" },
+        { "nome": "Conrad Harder", "numero": 19, "minuto": 75, "pais": "DK", "golos": [{ "minuto": 99 }], "pos": "MD" },
+        { "nome": "Geovany Quenda", "numero": 57, "minuto": 75, "pais": "PT", "pos": "MO" }
       ],
       "nao_utilizados": ["Franco Israel", "Eduardo Felicíssimo", "Biel Teixeira"]
     }

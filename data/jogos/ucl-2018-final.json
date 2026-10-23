@@ -28,9 +28,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nacho", "numero": 6, "minuto": 37, "pais": "ES" },
-        { "nome": "Marco Asensio", "numero": 20, "minuto": 89, "pais": "ES" },
-        { "nome": "Gareth Bale", "numero": 11, "minuto": 61, "pais": "GB-WLS", "golos": [{ "minuto": 63 }, { "minuto": 83 }] }
+        { "nome": "Nacho", "numero": 6, "minuto": 37, "pais": "ES", "pos": "DD" },
+        { "nome": "Marco Asensio", "numero": 20, "minuto": 89, "pais": "ES", "pos": "PL" },
+        { "nome": "Gareth Bale", "numero": 11, "minuto": 61, "pais": "GB-WLS", "golos": [{ "minuto": 63 }, { "minuto": 83 }], "pos": "MO" }
       ],
       "nao_utilizados": ["Kiko Casilla", "Théo Hernandez", "Mateo Kovačić", "Lucas Vázquez"]
     },
@@ -53,7 +53,10 @@
         { "nome": "Roberto Firmino", "numero": 9, "pais": "BR", "pos": "PL" },
         { "nome": "Sadio Mané", "numero": 19, "pais": "SN", "pos": "EE", "golos": [{ "minuto": 55 }] }
       ],
-      "suplentes": [{ "nome": "Adam Lallana", "numero": 20, "minuto": 31, "pais": "GB-ENG" }, { "nome": "Emre Can", "numero": 23, "minuto": 83, "pais": "DE" }],
+      "suplentes": [
+        { "nome": "Adam Lallana", "numero": 20, "minuto": 31, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Emre Can", "numero": 23, "minuto": 83, "pais": "DE", "pos": "MC" }
+      ],
       "nao_utilizados": ["Simon Mignolet", "Nathaniel Clyne", "Ragnar Klavan", "Alberto Moreno", "Dominic Solanke"]
     }
   ]

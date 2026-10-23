@@ -29,9 +29,9 @@
         { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Marcell Jansen", "numero": 2, "minuto": 46, "pais": "DE" },
-        { "nome": "Kevin Kurányi", "numero": 22, "minuto": 58, "pais": "DE" },
-        { "nome": "Mario Gómez", "numero": 9, "minuto": 79, "pais": "DE" }
+        { "nome": "Marcell Jansen", "numero": 2, "minuto": 46, "pais": "DE", "pos": "DE" },
+        { "nome": "Kevin Kurányi", "numero": 22, "minuto": 58, "pais": "DE", "pos": "MC" },
+        { "nome": "Mario Gómez", "numero": 9, "minuto": 79, "pais": "DE", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Clemens Fritz",
@@ -65,9 +65,9 @@
         { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 33 }] }
       ],
       "suplentes": [
-        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "minuto": 63, "pais": "ES" },
-        { "nome": "Santi Cazorla", "numero": 12, "minuto": 66, "pais": "ES" },
-        { "nome": "Dani Güiza", "numero": 17, "minuto": 78, "pais": "ES" }
+        { "nome": "Xabi Alonso", "aceites": ["xabi"], "numero": 14, "minuto": 63, "pais": "ES", "pos": "MC" },
+        { "nome": "Santi Cazorla", "numero": 12, "minuto": 66, "pais": "ES", "pos": "ME" },
+        { "nome": "Dani Güiza", "numero": 17, "minuto": 78, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Raúl Albiol",

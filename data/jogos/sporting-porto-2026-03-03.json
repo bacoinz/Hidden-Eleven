@@ -28,10 +28,10 @@
         { "nome": "Luis Suárez", "numero": 97, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 61, "penalti": true }] }
       ],
       "suplentes": [
-        { "nome": "Daniel Bragança", "numero": 23, "minuto": 84, "pais": "PT" },
-        { "nome": "João Simões", "numero": 52, "minuto": 65, "pais": "PT" },
-        { "nome": "Nuno Santos", "numero": 11, "minuto": 85, "pais": "PT" },
-        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "minuto": 66, "pais": "PT" }
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 84, "pais": "PT", "pos": "MO" },
+        { "nome": "João Simões", "numero": 52, "minuto": 65, "pais": "PT", "pos": "MDC" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 85, "pais": "PT", "pos": "DE" },
+        { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "minuto": 66, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": ["João Virgínia", "Georgios Vagiannidis", "Eduardo Quaresma", "Souleymane Faye", "Rafael Nel"]
     },
@@ -55,11 +55,11 @@
         { "nome": "Pepê", "numero": 11, "pais": "BR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Jakub Kiwior", "numero": 4, "minuto": 44, "pais": "PL" },
-        { "nome": "Gabri Veiga", "numero": 10, "minuto": 64, "pais": "ES" },
-        { "nome": "Victor Froholdt", "numero": 8, "minuto": 46, "pais": "DK" },
-        { "nome": "Deniz Gül", "numero": 27, "minuto": 64, "pais": "TR" },
-        { "nome": "Oskar Pietuszewski", "numero": 77, "minuto": 72, "pais": "PL" }
+        { "nome": "Jakub Kiwior", "numero": 4, "minuto": 44, "pais": "PL", "pos": "DC" },
+        { "nome": "Gabri Veiga", "numero": 10, "minuto": 64, "pais": "ES", "pos": "MC" },
+        { "nome": "Victor Froholdt", "numero": 8, "minuto": 46, "pais": "DK", "pos": "MC" },
+        { "nome": "Deniz Gül", "numero": 27, "minuto": 64, "pais": "TR", "pos": "PL" },
+        { "nome": "Oskar Pietuszewski", "numero": 77, "minuto": 72, "pais": "PL", "pos": "MC" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Dominik Prpić", "Zaidu Sanusi", "André Miranda"]
     }

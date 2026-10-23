@@ -28,9 +28,9 @@
         { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Bruno Martins Indi", "numero": 3, "minuto": 83, "pais": "NL" },
-        { "nome": "Rúben Neves", "numero": 36, "minuto": 70, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 57, "pais": "PT" }
+        { "nome": "Bruno Martins Indi", "numero": 3, "minuto": 83, "pais": "NL", "pos": "DD" },
+        { "nome": "Rúben Neves", "numero": 36, "minuto": 70, "pais": "PT", "pos": "MC" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 57, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["Helton", "Juan Quintero", "Hernâni Fortes", "Gonçalo Paciência"]
     },
@@ -54,9 +54,9 @@
         { "nome": "André Carrillo", "numero": 18, "pais": "PE", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "André Martins", "numero": 8, "minuto": 79, "pais": "PT" },
-        { "nome": "Islam Slimani", "numero": 9, "minuto": 60, "pais": "DZ" },
-        { "nome": "Diego Capel", "numero": 11, "minuto": 60, "pais": "ES" }
+        { "nome": "André Martins", "numero": 8, "minuto": 79, "pais": "PT", "pos": "EE" },
+        { "nome": "Islam Slimani", "numero": 9, "minuto": 60, "pais": "DZ", "pos": "PL" },
+        { "nome": "Diego Capel", "numero": 11, "minuto": 60, "pais": "ES", "pos": "MC" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Miguel Lopes", "Oriol Rosell", "Junya Tanaka"]
     }

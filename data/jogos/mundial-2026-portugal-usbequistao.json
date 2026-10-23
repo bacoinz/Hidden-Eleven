@@ -36,11 +36,11 @@
         }
       ],
       "suplentes": [
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 46, "pais": "PT" },
-        { "nome": "Francisco Trincão", "numero": 16, "minuto": 63, "pais": "PT" },
-        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 76, "pais": "PT" },
-        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 83, "pais": "PT", "golos": [{ "minuto": 87 }] }
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 46, "pais": "PT", "pos": "DD" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 46, "pais": "PT", "pos": "ED" },
+        { "nome": "Francisco Trincão", "numero": 16, "minuto": 63, "pais": "PT", "pos": "EE" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 76, "pais": "PT", "pos": "MC" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 83, "pais": "PT", "golos": [{ "minuto": 87 }], "pos": "MC" }
       ],
       "nao_utilizados": [
         "Tomás Araújo",
@@ -73,11 +73,11 @@
         { "nome": "Abbosbek Fayzullaev", "numero": 22, "pais": "UZ", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Khojiakbar Alijonov", "numero": 3, "minuto": 46, "pais": "UZ" },
-        { "nome": "Akmal Mozgovoy", "numero": 6, "minuto": 46, "pais": "UZ" },
-        { "nome": "Igor Sergeev", "numero": 21, "minuto": 73, "pais": "UZ" },
-        { "nome": "Ruslanbek Jiyanov", "numero": 10, "minuto": "90+2", "pais": "UZ" },
-        { "nome": "Sherzod Esanov", "numero": 23, "minuto": "90+2", "pais": "UZ" }
+        { "nome": "Khojiakbar Alijonov", "numero": 3, "minuto": 46, "pais": "UZ", "pos": "DC" },
+        { "nome": "Akmal Mozgovoy", "numero": 6, "minuto": 46, "pais": "UZ", "pos": "MC" },
+        { "nome": "Igor Sergeev", "numero": 21, "minuto": 73, "pais": "UZ", "pos": "EE" },
+        { "nome": "Ruslanbek Jiyanov", "numero": 10, "minuto": "90+2", "pais": "UZ", "pos": "MC" },
+        { "nome": "Sherzod Esanov", "numero": 23, "minuto": "90+2", "pais": "UZ", "pos": "MD" }
       ],
       "nao_utilizados": [
         "Utkir Yusupov",

@@ -29,9 +29,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Petit", "numero": 8, "minuto": 68, "pais": "PT" },
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 75, "pais": "PT" },
-        { "nome": "Fernando Couto", "numero": 5, "minuto": 87, "pais": "PT" }
+        { "nome": "Petit", "numero": 8, "minuto": 68, "pais": "PT", "pos": "ED" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 75, "pais": "PT", "pos": "PL" },
+        { "nome": "Fernando Couto", "numero": 5, "minuto": 87, "pais": "PT", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Paulo Ferreira",
@@ -65,9 +65,9 @@
         { "nome": "Ruud van Nistelrooy", "numero": 10, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Roy Makaay", "numero": 12, "minuto": 46, "pais": "NL" },
-        { "nome": "Rafael van der Vaart", "numero": 11, "minuto": 56, "pais": "NL" },
-        { "nome": "Pierre van Hooijdonk", "numero": 17, "minuto": 81, "pais": "NL" }
+        { "nome": "Roy Makaay", "numero": 12, "minuto": 46, "pais": "NL", "pos": "ED" },
+        { "nome": "Rafael van der Vaart", "numero": 11, "minuto": 56, "pais": "NL", "pos": "MC" },
+        { "nome": "Pierre van Hooijdonk", "numero": 17, "minuto": 81, "pais": "NL", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Andy van der Meyde",

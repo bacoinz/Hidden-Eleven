@@ -29,9 +29,9 @@
         { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL", "golos": [{ "minuto": "90+4" }] }
       ],
       "suplentes": [
-        { "nome": "Nigel de Jong", "numero": 34, "minuto": 45, "pais": "NL" },
-        { "nome": "Edin Džeko", "numero": 10, "minuto": 69, "pais": "BA", "golos": [{ "minuto": "90+2" }] },
-        { "nome": "Mario Balotelli", "numero": 45, "minuto": 76, "pais": "IT" }
+        { "nome": "Nigel de Jong", "numero": 34, "minuto": 45, "pais": "NL", "pos": "MC" },
+        { "nome": "Edin Džeko", "numero": 10, "minuto": 69, "pais": "BA", "golos": [{ "minuto": "90+2" }], "pos": "MC" },
+        { "nome": "Mario Balotelli", "numero": 45, "minuto": 76, "pais": "IT", "pos": "PL" }
       ],
       "nao_utilizados": ["Costel Pantilimon", "Micah Richards", "Aleksandar Kolarov", "James Milner"]
     },
@@ -54,8 +54,8 @@
         { "nome": "Bobby Zamora", "numero": 52, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Armand Traoré", "numero": 13, "minuto": 59, "pais": "SN" },
-        { "nome": "Jay Bothroyd", "numero": 10, "minuto": 76, "pais": "GB-ENG" }
+        { "nome": "Armand Traoré", "numero": 13, "minuto": 59, "pais": "SN", "pos": "DC" },
+        { "nome": "Jay Bothroyd", "numero": 10, "minuto": 76, "pais": "GB-ENG", "pos": "PL" }
       ],
       "nao_utilizados": ["Radek Černý", "Danny Gabbidon", "Adel Taarabt", "Ákos Buzsáky", "DJ Campbell"]
     }

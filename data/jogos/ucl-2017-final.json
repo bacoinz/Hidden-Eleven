@@ -28,9 +28,9 @@
         { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 27 }] }
       ],
       "suplentes": [
-        { "nome": "Juan Cuadrado", "numero": 7, "minuto": 66, "pais": "CO" },
-        { "nome": "Claudio Marchisio", "numero": 8, "minuto": 71, "pais": "IT" },
-        { "nome": "Mario Lemina", "numero": 18, "minuto": 78, "pais": "GA" }
+        { "nome": "Juan Cuadrado", "numero": 7, "minuto": 66, "pais": "CO", "pos": "MC" },
+        { "nome": "Claudio Marchisio", "numero": 8, "minuto": 71, "pais": "IT", "pos": "MC" },
+        { "nome": "Mario Lemina", "numero": 18, "minuto": 78, "pais": "GA", "pos": "MO" }
       ],
       "nao_utilizados": ["Neto", "Medhi Benatia", "Stephan Lichtsteiner", "Kwadwo Asamoah"]
     },
@@ -61,9 +61,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Marco Asensio", "numero": 20, "minuto": 82, "pais": "ES", "golos": [{ "minuto": 90 }] },
-        { "nome": "Gareth Bale", "numero": 11, "minuto": 77, "pais": "GB-WLS" },
-        { "nome": "Álvaro Morata", "numero": 21, "minuto": 89, "pais": "ES" }
+        { "nome": "Marco Asensio", "numero": 20, "minuto": 82, "pais": "ES", "golos": [{ "minuto": 90 }], "pos": "ED" },
+        { "nome": "Gareth Bale", "numero": 11, "minuto": 77, "pais": "GB-WLS", "pos": "PL" },
+        { "nome": "Álvaro Morata", "numero": 21, "minuto": 89, "pais": "ES", "pos": "MC" }
       ],
       "nao_utilizados": ["Kiko Casilla", "Nacho", "Danilo", "Mateo Kovačić"]
     }

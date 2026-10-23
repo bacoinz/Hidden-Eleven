@@ -29,9 +29,9 @@
         { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 12 }] }
       ],
       "suplentes": [
-        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 82, "pais": "CO" },
-        { "nome": "Rúben Micael", "numero": 28, "minuto": 78, "pais": "PT" },
-        { "nome": "Walter", "numero": 18, "minuto": 87, "pais": "BR" }
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 82, "pais": "CO", "pos": "EE" },
+        { "nome": "Rúben Micael", "numero": 28, "minuto": 78, "pais": "PT", "pos": "MC" },
+        { "nome": "Walter", "numero": 18, "minuto": 87, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Beto", "Jorge Fucile", "Nicolás Otamendi", "Souza"]
     },
@@ -55,9 +55,9 @@
         { "nome": "Fábio Coentrão", "numero": 18, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Roderick Miranda", "numero": 15, "minuto": 71, "pais": "PT" },
-        { "nome": "Rúben Amorim", "numero": 5, "minuto": 78, "pais": "PT" },
-        { "nome": "Nicolás Gaitán", "numero": 20, "minuto": 45, "pais": "AR", "aceites": ["Nico Gaitán"] }
+        { "nome": "Roderick Miranda", "numero": 15, "minuto": 71, "pais": "PT", "pos": "DC" },
+        { "nome": "Rúben Amorim", "numero": 5, "minuto": 78, "pais": "PT", "pos": "ED" },
+        { "nome": "Nicolás Gaitán", "numero": 20, "minuto": 45, "pais": "AR", "aceites": ["Nico Gaitán"], "pos": "MO" }
       ],
       "nao_utilizados": ["Júlio César", "César Peixoto", "Javier Saviola", "Franco Jara"]
     }

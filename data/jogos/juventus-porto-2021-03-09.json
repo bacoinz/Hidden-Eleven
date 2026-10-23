@@ -28,10 +28,10 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Matthijs de Ligt", "numero": 4, "minuto": 75, "pais": "NL" },
-        { "nome": "Weston McKennie", "numero": 14, "minuto": 75, "pais": "US" },
-        { "nome": "Federico Bernardeschi", "numero": 33, "minuto": 102, "pais": "IT" },
-        { "nome": "Dejan Kulusevski", "numero": 44, "minuto": 102, "pais": "SE" }
+        { "nome": "Matthijs de Ligt", "numero": 4, "minuto": 75, "pais": "NL", "pos": "DC" },
+        { "nome": "Weston McKennie", "numero": 14, "minuto": 75, "pais": "US", "pos": "MD" },
+        { "nome": "Federico Bernardeschi", "numero": 33, "minuto": 102, "pais": "IT", "pos": "MC" },
+        { "nome": "Dejan Kulusevski", "numero": 44, "minuto": 102, "pais": "SE", "pos": "ME" }
       ],
       "nao_utilizados": [
         "Carlo Pinsoglio",
@@ -63,12 +63,12 @@
         { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Malang Sarr", "numero": 32, "minuto": 62, "pais": "FR" },
-        { "nome": "Diogo Leite", "numero": 4, "minuto": 118, "pais": "PT" },
-        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS" },
-        { "nome": "Mamadou Loum", "numero": 6, "minuto": 118, "pais": "SN" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 106, "pais": "ES" },
-        { "nome": "Luis Díaz", "numero": 7, "minuto": 71, "pais": "CO" }
+        { "nome": "Malang Sarr", "numero": 32, "minuto": 62, "pais": "FR", "pos": "DC" },
+        { "nome": "Diogo Leite", "numero": 4, "minuto": 118, "pais": "PT", "pos": "DC" },
+        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS", "pos": "MC" },
+        { "nome": "Mamadou Loum", "numero": 6, "minuto": 118, "pais": "SN", "pos": "MD" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 106, "pais": "ES", "pos": "PL" },
+        { "nome": "Luis Díaz", "numero": 7, "minuto": 71, "pais": "CO", "pos": "EE" }
       ],
       "nao_utilizados": ["Diogo Costa", "Nanú", "Fábio Vieira", "Francisco Conceição", "Evanilson", "Felipe Anderson"]
     }

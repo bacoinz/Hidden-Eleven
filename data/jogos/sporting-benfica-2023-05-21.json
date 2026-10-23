@@ -28,11 +28,11 @@
         { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 28, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Héctor Bellerín", "numero": 19, "minuto": 72, "pais": "ES" },
-        { "nome": "Matheus Reis", "numero": 2, "minuto": 72, "pais": "BR" },
-        { "nome": "Dário Essugo", "numero": 84, "minuto": 79, "pais": "PT" },
-        { "nome": "Paulinho", "numero": 20, "minuto": 54, "pais": "PT" },
-        { "nome": "Arthur Gomes", "numero": 33, "minuto": 79, "pais": "BR" }
+        { "nome": "Héctor Bellerín", "numero": 19, "minuto": 72, "pais": "ES", "pos": "MD" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 72, "pais": "BR", "pos": "DE" },
+        { "nome": "Dário Essugo", "numero": 84, "minuto": 79, "pais": "PT", "pos": "MC" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 54, "pais": "PT", "pos": "ED" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 79, "pais": "BR", "pos": "ME" }
       ],
       "nao_utilizados": ["Diego Callai", "Luís Neto", "Youssef Chermiti", "Fatawu Issahaku"]
     },
@@ -56,11 +56,11 @@
         { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alexander Bah", "numero": 6, "minuto": 46, "pais": "DK" },
-        { "nome": "Mihailo Ristic", "numero": 23, "minuto": 86, "pais": "RS" },
-        { "nome": "Florentino Luís", "numero": 61, "minuto": 81, "pais": "PT" },
-        { "nome": "Petar Musa", "numero": 33, "minuto": 66, "pais": "HR" },
-        { "nome": "Gonçalo Guedes", "numero": 15, "minuto": 66, "pais": "PT" }
+        { "nome": "Alexander Bah", "numero": 6, "minuto": 46, "pais": "DK", "pos": "DD" },
+        { "nome": "Mihailo Ristic", "numero": 23, "minuto": 86, "pais": "RS", "pos": "DE" },
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 81, "pais": "PT", "pos": "MDC" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 66, "pais": "HR", "pos": "PL" },
+        { "nome": "Gonçalo Guedes", "numero": 15, "minuto": 66, "pais": "PT", "pos": "MO" }
       ],
       "nao_utilizados": ["Samuel Soares", "Gilberto", "Lucas Veríssimo", "Morato"]
     }

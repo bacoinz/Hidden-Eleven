@@ -28,9 +28,9 @@
         { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Luiz Phellype", "numero": 29, "minuto": 90, "pais": "BR" },
-        { "nome": "Jovane Cabral", "numero": 77, "minuto": 86, "pais": "CV" },
-        { "nome": "Abdoulay Diaby", "numero": 23, "minuto": 46, "pais": "ML" }
+        { "nome": "Luiz Phellype", "numero": 29, "minuto": 90, "pais": "BR", "pos": "PL" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 86, "pais": "CV", "pos": "ED" },
+        { "nome": "Abdoulay Diaby", "numero": 23, "minuto": 46, "pais": "ML", "pos": "EE" }
       ],
       "nao_utilizados": ["Romain Salin", "Tiago Ilori", "Cristián Borja", "Radosav Petrovic"]
     },
@@ -54,9 +54,9 @@
         { "nome": "João Félix", "aceites": ["felix"], "numero": 79, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 36 }] }
       ],
       "suplentes": [
-        { "nome": "Mile Svilar", "numero": 1, "minuto": 88, "pais": "RS" },
-        { "nome": "Franco Cervi", "numero": 11, "minuto": 77, "pais": "AR" },
-        { "nome": "Toto Salvio", "numero": 18, "minuto": "90+4", "pais": "AR" }
+        { "nome": "Mile Svilar", "numero": 1, "minuto": 88, "pais": "RS", "pos": "ME" },
+        { "nome": "Franco Cervi", "numero": 11, "minuto": 77, "pais": "AR", "pos": "PL" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": "90+4", "pais": "AR", "pos": "MD" }
       ],
       "nao_utilizados": ["Ferro", "Filip Krovinovic", "Gedson Fernandes", "Jota"]
     }

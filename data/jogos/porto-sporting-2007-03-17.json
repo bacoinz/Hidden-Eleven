@@ -28,9 +28,9 @@
         { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Jorginho", "numero": 20, "minuto": 73, "pais": "BR" },
-        { "nome": "Bruno Moraes", "numero": 29, "minuto": 77, "pais": "BR" },
-        { "nome": "Hélder Postiga", "numero": 23, "minuto": 45, "pais": "PT" }
+        { "nome": "Jorginho", "numero": 20, "minuto": 73, "pais": "BR", "pos": "MC" },
+        { "nome": "Bruno Moraes", "numero": 29, "minuto": 77, "pais": "BR", "pos": "PL" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 45, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": [{ "nome": "Vítor Baía", "aceites": ["baia"] }, "Ricardo Costa", "João Paulo", "Wason Rentería"]
     },
@@ -53,7 +53,10 @@
         { "nome": "Nani", "numero": 18, "pais": "PT", "pos": "EE" },
         { "nome": "Alecsandro", "numero": 19, "pais": "BR", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Bruno Pereirinha", "numero": 47, "minuto": 67, "pais": "PT" }, { "nome": "Custódio", "numero": 27, "minuto": 82, "pais": "PT" }],
+      "suplentes": [
+        { "nome": "Bruno Pereirinha", "numero": 47, "minuto": 67, "pais": "PT", "pos": "DD" },
+        { "nome": "Custódio", "numero": 27, "minuto": 82, "pais": "PT", "pos": "PL" }
+      ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Miguel Garcia", "Carlos Paredes", "Pontus Farnerud", "Carlos Bueno"]
     }
   ]

@@ -29,9 +29,9 @@
         { "nome": "Mesut Özil", "numero": 8, "pais": "DE", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "André Schürrle", "numero": 9, "minuto": 32, "pais": "DE" },
-        { "nome": "Mario Götze", "aceites": ["goetze"], "numero": 19, "minuto": 88, "pais": "DE", "golos": [{ "minuto": 113 }] },
-        { "nome": "Per Mertesacker", "numero": 17, "minuto": 120, "pais": "DE" }
+        { "nome": "André Schürrle", "numero": 9, "minuto": 32, "pais": "DE", "pos": "MD" },
+        { "nome": "Mario Götze", "aceites": ["goetze"], "numero": 19, "minuto": 88, "pais": "DE", "golos": [{ "minuto": 113 }], "pos": "PL" },
+        { "nome": "Per Mertesacker", "numero": 17, "minuto": 120, "pais": "DE", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Kevin Großkreutz",
@@ -65,9 +65,9 @@
         { "nome": "Gonzalo Higuaín", "aceites": ["pipita"], "numero": 9, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 20, "minuto": 46, "pais": "AR" },
-        { "nome": "Rodrigo Palacio", "numero": 18, "minuto": 78, "pais": "AR" },
-        { "nome": "Fernando Gago", "numero": 5, "minuto": 86, "pais": "AR" }
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 20, "minuto": 46, "pais": "AR", "pos": "EE" },
+        { "nome": "Rodrigo Palacio", "numero": 18, "minuto": 78, "pais": "AR", "pos": "PL" },
+        { "nome": "Fernando Gago", "numero": 5, "minuto": 86, "pais": "AR", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Hugo Campagnaro",

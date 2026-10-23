@@ -27,7 +27,10 @@
         { "nome": "Jack Grealish", "numero": 10, "pais": "GB-ENG", "pos": "EE" },
         { "nome": "Erling Haaland", "numero": 9, "pais": "NO", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Kyle Walker", "numero": 2, "minuto": 82, "pais": "GB-ENG" }, { "nome": "Phil Foden", "numero": 47, "minuto": 36, "pais": "GB-ENG" }],
+      "suplentes": [
+        { "nome": "Kyle Walker", "numero": 2, "minuto": 82, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Phil Foden", "numero": 47, "minuto": 36, "pais": "GB-ENG", "pos": "MO" }
+      ],
       "nao_utilizados": [
         "Stefan Ortega",
         "Scott Carson",
@@ -61,11 +64,11 @@
         { "nome": "Edin Džeko", "numero": 9, "pais": "BA", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Raoul Bellanova", "numero": 12, "minuto": 76, "pais": "IT" },
-        { "nome": "Danilo D'Ambrosio", "numero": 33, "minuto": 84, "pais": "IT" },
-        { "nome": "Robin Gosens", "numero": 8, "minuto": 76, "pais": "DE" },
-        { "nome": "Henrikh Mkhitaryan", "numero": 22, "minuto": 84, "pais": "AM" },
-        { "nome": "Romelu Lukaku", "numero": 90, "minuto": 57, "pais": "BE" }
+        { "nome": "Raoul Bellanova", "numero": 12, "minuto": 76, "pais": "IT", "pos": "DC" },
+        { "nome": "Danilo D'Ambrosio", "numero": 33, "minuto": 84, "pais": "IT", "pos": "DC" },
+        { "nome": "Robin Gosens", "numero": 8, "minuto": 76, "pais": "DE", "pos": "MD" },
+        { "nome": "Henrikh Mkhitaryan", "numero": 22, "minuto": 84, "pais": "AM", "pos": "MC" },
+        { "nome": "Romelu Lukaku", "numero": 90, "minuto": 57, "pais": "BE", "pos": "PL" }
       ],
       "nao_utilizados": ["Samir Handanović", "Alex Cordaz", "Stefan de Vrij", "Milan Škriniar", "Roberto Gagliardini", "Kristjan Asllani", "Joaquín Correa"]
     }

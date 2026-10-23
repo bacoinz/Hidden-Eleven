@@ -29,9 +29,9 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nani", "numero": 19, "minuto": 69, "pais": "PT" },
-        { "nome": "Raul Meireles", "numero": 6, "minuto": 83, "pais": "PT", "golos": [{ "minuto": "90+3" }] },
-        { "nome": "Fernando Meira", "numero": 5, "minuto": "90+2", "pais": "PT" }
+        { "nome": "Nani", "numero": 19, "minuto": 69, "pais": "PT", "pos": "PL" },
+        { "nome": "Raul Meireles", "numero": 6, "minuto": 83, "pais": "PT", "golos": [{ "minuto": "90+3" }], "pos": "EE" },
+        { "nome": "Fernando Meira", "numero": 5, "minuto": "90+2", "pais": "PT", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Bruno Alves",
@@ -63,9 +63,9 @@
         { "nome": "Nihat Kahveci", "numero": 8, "pais": "TR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Sabri Sarıoğlu", "numero": 20, "minuto": 46, "pais": "TR" },
-        { "nome": "Emre Aşık", "numero": 15, "minuto": 55, "pais": "TR" },
-        { "nome": "Semih Şentürk", "numero": 9, "minuto": 76, "pais": "TR" }
+        { "nome": "Sabri Sarıoğlu", "numero": 20, "minuto": 46, "pais": "TR", "pos": "DC" },
+        { "nome": "Emre Aşık", "numero": 15, "minuto": 55, "pais": "TR", "pos": "DC" },
+        { "nome": "Semih Şentürk", "numero": 9, "minuto": 76, "pais": "TR", "pos": "PL" }
       ],
       "nao_utilizados": ["Rüştü Reçber", "Mehmet Topal", "Gökdeniz Karadeniz", "Tümer Metin", "Tolga Zengin", "Emre Güngör", "Arda Turan", "Uğur Boral", "Ayhan Akman"]
     }

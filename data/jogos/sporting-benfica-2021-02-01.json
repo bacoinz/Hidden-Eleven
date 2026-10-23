@@ -28,10 +28,10 @@
         { "nome": "Tiago Tomás", "numero": 19, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Palhinha", "numero": 6, "minuto": 61, "pais": "PT" },
-        { "nome": "Daniel Bragança", "numero": 68, "minuto": "90+1", "pais": "PT" },
-        { "nome": "Bruno Tabata", "numero": 7, "minuto": 74, "pais": "BR" },
-        { "nome": "Jovane Cabral", "numero": 77, "minuto": 61, "pais": "CV" }
+        { "nome": "João Palhinha", "numero": 6, "minuto": 61, "pais": "PT", "pos": "MC" },
+        { "nome": "Daniel Bragança", "numero": 68, "minuto": "90+1", "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno Tabata", "numero": 7, "minuto": 74, "pais": "BR", "pos": "PL" },
+        { "nome": "Jovane Cabral", "numero": 77, "minuto": 61, "pais": "CV", "pos": "PL" }
       ],
       "nao_utilizados": ["Luís Maximiano", "Gonçalo Inácio", "Eduardo Quaresma", "Antunes", "Joelson Fernandes"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Franco Cervi", "numero": 11, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nuno Tavares", "numero": 71, "minuto": 79, "pais": "PT" },
-        { "nome": "Gabriel", "numero": 8, "minuto": 11, "pais": "BR" },
-        { "nome": "Adel Taarabt", "numero": 49, "minuto": 64, "pais": "MA" },
-        { "nome": "Haris Seferovic", "numero": 14, "minuto": 79, "pais": "CH" }
+        { "nome": "Nuno Tavares", "numero": 71, "minuto": 79, "pais": "PT", "pos": "ME" },
+        { "nome": "Gabriel", "numero": 8, "minuto": 11, "pais": "BR", "pos": "MC" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 64, "pais": "MA", "pos": "PL" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 79, "pais": "CH", "pos": "PL" }
       ],
       "nao_utilizados": ["Mile Svilar", "Diogo Gonçalves", "Chiquinho", "Pedrinho", "Gonçalo Ramos"]
     }

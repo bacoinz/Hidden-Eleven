@@ -28,9 +28,9 @@
         { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 59, "pais": "PT" },
-        { "nome": "Renato Neto", "numero": 31, "minuto": 69, "pais": "BR" },
-        { "nome": "André Carrillo", "numero": 18, "minuto": 75, "pais": "PE" }
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 59, "pais": "PT", "pos": "DD" },
+        { "nome": "Renato Neto", "numero": 31, "minuto": 69, "pais": "BR", "pos": "ED" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 75, "pais": "PE", "pos": "EE" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Alberto Rodríguez", "Evaldo", "Diego Rubio"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Joleon Lescott", "numero": 6, "minuto": 12, "pais": "GB-ENG" },
-        { "nome": "Samir Nasri", "numero": 19, "minuto": 59, "pais": "FR" },
-        { "nome": "Mario Balotelli", "numero": 45, "minuto": 71, "pais": "IT" }
+        { "nome": "Joleon Lescott", "numero": 6, "minuto": 12, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Samir Nasri", "numero": 19, "minuto": 59, "pais": "FR", "pos": "MDC" },
+        { "nome": "Mario Balotelli", "numero": 45, "minuto": 71, "pais": "IT", "pos": "PL" }
       ],
       "nao_utilizados": ["Costel Pantilimon", "Stefan Savić", "David Pizarro", "Adam Johnson"]
     }

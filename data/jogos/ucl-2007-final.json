@@ -35,9 +35,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Kakha Kaladze", "numero": 4, "minuto": 80, "pais": "GE" },
-        { "nome": "Giuseppe Favalli", "numero": 19, "minuto": "90+2", "pais": "IT" },
-        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 88, "pais": "IT" }
+        { "nome": "Kakha Kaladze", "numero": 4, "minuto": 80, "pais": "GE", "pos": "DE" },
+        { "nome": "Giuseppe Favalli", "numero": 19, "minuto": "90+2", "pais": "IT", "pos": "DC" },
+        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 88, "pais": "IT", "pos": "PL" }
       ],
       "nao_utilizados": ["Zeljko Kalac", "Cafu", "Serginho", "Cristian Brocchi"]
     },
@@ -61,9 +61,9 @@
         { "nome": "Dirk Kuyt", "numero": 18, "pais": "NL", "pos": "PL", "golos": [{ "minuto": 89 }] }
       ],
       "suplentes": [
-        { "nome": "Álvaro Arbeloa", "numero": 2, "minuto": 88, "pais": "ES" },
-        { "nome": "Harry Kewell", "numero": 7, "minuto": 59, "pais": "AU" },
-        { "nome": "Peter Crouch", "numero": 15, "minuto": 78, "pais": "GB-ENG" }
+        { "nome": "Álvaro Arbeloa", "numero": 2, "minuto": 88, "pais": "ES", "pos": "DD" },
+        { "nome": "Harry Kewell", "numero": 7, "minuto": 59, "pais": "AU", "pos": "ME" },
+        { "nome": "Peter Crouch", "numero": 15, "minuto": 78, "pais": "GB-ENG", "pos": "MDC" }
       ],
       "nao_utilizados": ["Jerzy Dudek", "Sami Hyypiä", "Mark González", "Craig Bellamy"]
     }

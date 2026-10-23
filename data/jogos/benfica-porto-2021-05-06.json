@@ -28,11 +28,11 @@
         { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Gilberto", "numero": 2, "minuto": "90+5", "pais": "BR" },
-        { "nome": "Gabriel", "numero": 8, "minuto": 68, "pais": "BR" },
-        { "nome": "Adel Taarabt", "numero": 49, "minuto": 68, "pais": "MA" },
-        { "nome": "Pedrinho", "numero": 38, "minuto": "90+5", "pais": "BR" },
-        { "nome": "Darwin Núñez", "numero": 9, "minuto": 85, "pais": "UY" }
+        { "nome": "Gilberto", "numero": 2, "minuto": "90+5", "pais": "BR", "pos": "DD" },
+        { "nome": "Gabriel", "numero": 8, "minuto": 68, "pais": "BR", "pos": "MC" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 68, "pais": "MA", "pos": "PL" },
+        { "nome": "Pedrinho", "numero": 38, "minuto": "90+5", "pais": "BR", "pos": "MC" },
+        { "nome": "Darwin Núñez", "numero": 9, "minuto": 85, "pais": "UY", "pos": "MD" }
       ],
       "nao_utilizados": ["Odysseas Vlachodimos", "Nuno Tavares", "Chiquinho", "Luca Waldschmidt"]
     },
@@ -56,10 +56,10 @@
         { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Francisco Conceição", "numero": 85, "minuto": 84, "pais": "PT" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 69, "pais": "ES" },
-        { "nome": "Evanilson", "numero": 30, "minuto": 83, "pais": "BR" },
-        { "nome": "João Mário", "numero": 23, "minuto": 69, "pais": "PT" }
+        { "nome": "Francisco Conceição", "numero": 85, "minuto": 84, "pais": "PT", "pos": "MC" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 69, "pais": "ES", "pos": "PL" },
+        { "nome": "Evanilson", "numero": 30, "minuto": 83, "pais": "BR", "pos": "PL" },
+        { "nome": "João Mário", "numero": 23, "minuto": 69, "pais": "PT", "pos": "DE" }
       ],
       "nao_utilizados": ["Diogo Costa", "Nanú", "Diogo Leite", "Marko Grujic", "Fábio Vieira"]
     }

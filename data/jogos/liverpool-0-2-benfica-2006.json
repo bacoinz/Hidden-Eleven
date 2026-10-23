@@ -28,9 +28,9 @@
         { "nome": "Fernando Morientes", "numero": 19, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 70, "pais": "DE" },
-        { "nome": "Djibril Cissé", "numero": 9, "minuto": 63, "pais": "FR" },
-        { "nome": "Robbie Fowler", "numero": 11, "minuto": 70, "pais": "GB-ENG" }
+        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 70, "pais": "DE", "pos": "MDC" },
+        { "nome": "Djibril Cissé", "numero": 9, "minuto": 63, "pais": "FR", "pos": "ME" },
+        { "nome": "Robbie Fowler", "numero": 11, "minuto": 70, "pais": "GB-ENG", "pos": "PL" }
       ],
       "nao_utilizados": ["Jerzy Dudek", "Antonio Barragán", "Sami Hyypiä", "Paul Anderson"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Simão", "aceites": ["simao", "Simão Sabrosa"], "numero": 20, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 36 }] }
       ],
       "suplentes": [
-        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 70, "pais": "PT" },
-        { "nome": "Georgios Karagounis", "numero": 10, "minuto": 60, "pais": "GR" },
-        { "nome": "Fabrizio Miccoli", "numero": 30, "minuto": 77, "pais": "IT", "golos": [{ "minuto": 89 }] }
+        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 70, "pais": "PT", "pos": "DC" },
+        { "nome": "Georgios Karagounis", "numero": 10, "minuto": 60, "pais": "GR", "pos": "ED" },
+        { "nome": "Fabrizio Miccoli", "numero": 30, "minuto": 77, "pais": "IT", "golos": [{ "minuto": 89 }], "pos": "PL" }
       ],
       "nao_utilizados": ["Quim", "Nélson", "Andrei Karyaka", "Marcel"]
     }

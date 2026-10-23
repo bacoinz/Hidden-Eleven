@@ -29,9 +29,9 @@
         { "nome": "Hernán Crespo", "numero": 11, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 39 }, { "minuto": 44 }] }
       ],
       "suplentes": [
-        { "nome": "Rui Costa", "numero": 10, "minuto": 112, "pais": "PT" },
-        { "nome": "Serginho", "numero": 27, "minuto": 86, "pais": "BR" },
-        { "nome": "Jon Dahl Tomasson", "numero": 15, "minuto": 85, "pais": "DK" }
+        { "nome": "Rui Costa", "numero": 10, "minuto": 112, "pais": "PT", "pos": "MD" },
+        { "nome": "Serginho", "numero": 27, "minuto": 86, "pais": "BR", "pos": "ME" },
+        { "nome": "Jon Dahl Tomasson", "numero": 15, "minuto": 85, "pais": "DK", "pos": "PL" }
       ],
       "nao_utilizados": ["Christian Abbiati", "Kakha Kaladze", "Alessandro Costacurta", "Vikash Dhorasoo"]
     },
@@ -55,9 +55,9 @@
         { "nome": "Milan Baroš", "numero": 5, "pais": "CZ", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 46, "pais": "DE" },
-        { "nome": "Djibril Cissé", "numero": 9, "minuto": 85, "pais": "FR" },
-        { "nome": "Vladimír Šmicer", "numero": 11, "minuto": 23, "pais": "CZ", "golos": [{ "minuto": 56 }] }
+        { "nome": "Dietmar Hamann", "numero": 16, "minuto": 46, "pais": "DE", "pos": "MC" },
+        { "nome": "Djibril Cissé", "numero": 9, "minuto": 85, "pais": "FR", "pos": "PL" },
+        { "nome": "Vladimír Šmicer", "numero": 11, "minuto": 23, "pais": "CZ", "golos": [{ "minuto": 56 }], "pos": "PL" }
       ],
       "nao_utilizados": ["Scott Carson", "Josemi", { "nome": "Antonio Núñez", "aceites": ["Antonio Núñez Tena"] }, "Igor Bišćan"]
     }

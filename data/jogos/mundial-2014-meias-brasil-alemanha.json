@@ -30,9 +30,9 @@
         { "nome": "Fred", "numero": 9, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Paulinho", "numero": 8, "minuto": 46, "pais": "BR" },
-        { "nome": "Ramires", "numero": 16, "minuto": 46, "pais": "BR" },
-        { "nome": "Willian", "numero": 19, "minuto": 70, "pais": "BR" }
+        { "nome": "Paulinho", "numero": 8, "minuto": 46, "pais": "BR", "pos": "MC" },
+        { "nome": "Ramires", "numero": 16, "minuto": 46, "pais": "BR", "pos": "ED" },
+        { "nome": "Willian", "numero": 19, "minuto": 70, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Jefferson",
@@ -66,9 +66,9 @@
         { "nome": "Miroslav Klose", "numero": 11, "pais": "DE", "pos": "PL", "golos": [{ "minuto": 23 }] }
       ],
       "suplentes": [
-        { "nome": "André Schürrle", "numero": 9, "minuto": 58, "pais": "DE", "golos": [{ "minuto": 69 }, { "minuto": 79 }] },
-        { "nome": "Julian Draxler", "numero": 14, "minuto": 76, "pais": "DE" },
-        { "nome": "Per Mertesacker", "numero": 17, "minuto": 46, "pais": "DE" }
+        { "nome": "André Schürrle", "numero": 9, "minuto": 58, "pais": "DE", "golos": [{ "minuto": 69 }, { "minuto": 79 }], "pos": "PL" },
+        { "nome": "Julian Draxler", "numero": 14, "minuto": 76, "pais": "DE", "pos": "MC" },
+        { "nome": "Per Mertesacker", "numero": 17, "minuto": 46, "pais": "DE", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Kevin Großkreutz",

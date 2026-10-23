@@ -90,7 +90,7 @@ export function criarRonda({ jogo, equipa = null, tipo = 'multi', lados = null, 
 // Pistas
 // ---------------------------------------------------------------------------
 // Cada pista sai quando o relógio desce até uma meta do tempo inicial (3:00 → 2:24, 1:57, 1:30).
-// Como cada acerto acrescenta 5 s ao relógio, enquanto se for acertando as pistas não aparecem.
+// Como cada acerto acrescenta 1 s ao relógio, acertar seguido atrasa um pouco as pistas.
 // Depois de reveladas, ficam. Nos jogos entre seleções não há pista da bandeira.
 
 export const TIPOS_PISTA = ['numero', 'pais', 'inicial'];
@@ -286,7 +286,7 @@ export function estadoPublico(r, prep) {
   const publico = (l) => {
     const p = l.pessoa;
     const lugar = { id: l.id, tipo: l.tipo };
-    if (l.tipo === 'onze') lugar.pos = p.pos;
+    if (l.tipo !== 'treinador' && p.pos) lugar.pos = p.pos;
     if (l.tipo === 'suplente') lugar.minuto = p.minuto;
     const d = r.descobertas[l.id];
     if (d || acabou) {
@@ -302,11 +302,12 @@ export function estadoPublico(r, prep) {
       } else lugar.revelado = true;
       return lugar;
     }
-    if (l.tipo === 'onze') {
-      if (reveladas.has('numero')) lugar.numero = p.numero;
-      if (reveladas.has('pais')) lugar.pais = p.pais;
-      if (reveladas.has('inicial')) lugar.inicial = inicial(p);
+    // Onze e suplentes recebem as três pistas; o treinador só a inicial (não tem número e o país quase não ajuda).
+    if (l.tipo !== 'treinador') {
+      if (reveladas.has('numero') && p.numero != null) lugar.numero = p.numero;
+      if (reveladas.has('pais') && p.pais) lugar.pais = p.pais;
     }
+    if (reveladas.has('inicial')) lugar.inicial = inicial(p);
     return lugar;
   };
 

@@ -27,7 +27,10 @@
         { "nome": "Sinama Pongolle", "numero": 22, "pais": "FR", "pos": "PL" },
         { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 37 }] }
       ],
-      "suplentes": [{ "nome": "Pedro Silva", "numero": 5, "minuto": 25, "pais": "BR" }, { "nome": "Yannick Djaló", "numero": 20, "minuto": 63, "pais": "PT" }],
+      "suplentes": [
+        { "nome": "Pedro Silva", "numero": 5, "minuto": 25, "pais": "BR", "pos": "DD" },
+        { "nome": "Yannick Djaló", "numero": 20, "minuto": 63, "pais": "PT", "pos": "PL" }
+      ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Tonel", "Matías Fernández", "Simon Vukcevic", "Carlos Saleiro"]
     },
     {
@@ -50,9 +53,9 @@
         { "nome": "Alan Kardec", "numero": 31, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Pablo Aimar", "numero": 10, "minuto": 72, "pais": "AR" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 70, "pais": "PY", "golos": [{ "minuto": 90 }] },
-        { "nome": "Javier Saviola", "numero": 30, "minuto": 70, "pais": "AR" }
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 72, "pais": "AR", "pos": "MDC" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 70, "pais": "PY", "golos": [{ "minuto": 90 }], "pos": "PL" },
+        { "nome": "Javier Saviola", "numero": 30, "minuto": 70, "pais": "AR", "pos": "MO" }
       ],
       "nao_utilizados": ["José Moreira", "Miguel Vítor", "Fábio Coentrão", "Weldon"]
     }

@@ -28,8 +28,8 @@
         { "nome": "Bryan Ruiz", "numero": 20, "pais": "CR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alberto Aquilani", "numero": 6, "minuto": 90, "pais": "IT" },
-        { "nome": "Gelson Martins", "numero": 60, "minuto": 62, "pais": "PT" }
+        { "nome": "Alberto Aquilani", "numero": 6, "minuto": 90, "pais": "IT", "pos": "MC" },
+        { "nome": "Gelson Martins", "numero": 60, "minuto": 62, "pais": "PT", "pos": "ME" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Ricardo Esgaio", "Ewerton", "Fredy Montero", "Carlos Mané"]
     },
@@ -53,9 +53,9 @@
         { "nome": "Vincent Aboubakar", "numero": 9, "pais": "CM", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "André André", "numero": 20, "minuto": 54, "pais": "PT" },
-        { "nome": "André Silva", "numero": 19, "minuto": 71, "pais": "PT" },
-        { "nome": "Cristian Tello", "numero": 11, "minuto": 80, "pais": "ES" }
+        { "nome": "André André", "numero": 20, "minuto": 54, "pais": "PT", "pos": "MDC" },
+        { "nome": "André Silva", "numero": 19, "minuto": 71, "pais": "PT", "pos": "PL" },
+        { "nome": "Cristian Tello", "numero": 11, "minuto": 80, "pais": "ES", "pos": "MO" }
       ],
       "nao_utilizados": ["Helton", "Iván Marcano", "Evandro", { "nome": "Silvestre Varela", "aceites": ["varela"] }]
     }

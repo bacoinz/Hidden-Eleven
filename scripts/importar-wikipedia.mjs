@@ -13,6 +13,7 @@ import { alcunhasDe } from './alcunhas.mjs';
 import { formatarJogo } from './formato.mjs';
 import { normalizar } from '../src/nomes.js';
 import { problemasDaFormacao } from '../public/js/formacao.js';
+import { atribuirPosicoesSuplentes } from './suplentes.mjs';
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
 const UA = 'HiddenEleven/1.0 (jogo entre amigos; importação de onzes)';
@@ -22,6 +23,8 @@ const POSICOES = {
   DM: 'MDC', CM: 'MC', RM: 'MD', LM: 'ME', AM: 'MO', RW: 'ED', LW: 'EE',
   RF: 'PL', LF: 'PL', CF: 'PL', ST: 'PL', SS: 'PL', FW: 'PL',
 };
+// Posições genéricas dos suplentes (só dizem a linha).
+const LINHAS_WIKI = { DF: 'D', MF: 'M' };
 
 // Nomes de equipas e cidades em pt-PT (o que não estiver aqui fica como vem e é revisto à mão).
 export const EQUIPAS_PT = {
@@ -443,9 +446,18 @@ function montarEquipa(bruta, nomeEquipa, isoEquipa, slug, plantel, cor) {
     ...(cor ? { cor } : {}),
     formacao: deduzirFormacao(onze),
     treinador: pessoa(bruta.treinador ?? { nome: '?' }),
-    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: j.pos, ...(j.golos ? { golos: j.golos } : {}) })),
+    // _saiu, _entrou e _dica servem só para dar a posição aos suplentes (scripts/suplentes.mjs) e não ficam no ficheiro.
+    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: j.pos, ...(j.golos ? { golos: j.golos } : {}), _saiu: j.saiu })),
     suplentes: usados.map((j) =>
-      pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j), ...(j.golos ? { golos: j.golos } : {}) }),
+      pessoa(j, {
+        numero: j.numero,
+        minuto: minuto(j.entrou),
+        pais: pais(j),
+        ...(j.golos ? { golos: j.golos } : {}),
+        _entrou: j.entrou,
+        _saiu: j.saiu,
+        _dica: POSICOES[j.posWiki] ?? LINHAS_WIKI[j.posWiki] ?? null,
+      }),
     ),
     nao_utilizados: naoUsados.map((j) => {
       const p = pessoa(j);
@@ -530,9 +542,10 @@ export function aplicarCuradoria(jogo, c) {
       if (k < 0) throw new Error(`curadoria: "${nome}" não está no banco de ${e.nome}`);
       e.nao_utilizados.splice(k, 1);
     }
+    // Posição de um jogador do onze ou de um suplente utilizado.
     for (const [nome, pos] of Object.entries(a.pos ?? {})) {
-      const p = e.onze.find((x) => x.nome === nome);
-      if (!p) throw new Error(`curadoria: "${nome}" não está no onze de ${e.nome}`);
+      const p = [...e.onze, ...e.suplentes].find((x) => x.nome === nome);
+      if (!p) throw new Error(`curadoria: "${nome}" não jogou por ${e.nome}`);
       p.pos = pos;
     }
     // Onze completo (fontes sem posições, como o zerozero): nome → sigla, pela ordem em que ficam no relvado.
@@ -600,6 +613,7 @@ async function principal() {
     if (existsSync(destino) && !forcar && !mostrar) { console.log(`· ${id}: já existe (usa --forcar para reescrever)`); continue; }
     try {
       const jogo = aplicarCuradoria(await importar(entrada), curadoria[id]);
+      for (const a of await atribuirPosicoesSuplentes(jogo)) console.log(`   ⚠ ${id}: ${a}`);
       const json = formatarJogo(jogo);
       if (mostrar) console.log(json);
       else writeFileSync(destino, json);

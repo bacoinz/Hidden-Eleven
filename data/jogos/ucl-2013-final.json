@@ -28,8 +28,8 @@
         { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nuri Şahin", "numero": 18, "minuto": "90+2", "pais": "TR" },
-        { "nome": "Julian Schieber", "numero": 23, "minuto": 90, "pais": "DE" }
+        { "nome": "Nuri Şahin", "numero": 18, "minuto": "90+2", "pais": "TR", "pos": "MC" },
+        { "nome": "Julian Schieber", "numero": 23, "minuto": 90, "pais": "DE", "pos": "ED" }
       ],
       "nao_utilizados": ["Mitchell Langerak", "Felipe Santana", "Sebastian Kehl", "Moritz Leitner", "Oliver Kirch"]
     },
@@ -53,8 +53,8 @@
         { "nome": "Mario Mandžukić", "numero": 9, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 60 }] }
       ],
       "suplentes": [
-        { "nome": "Luiz Gustavo", "numero": 30, "minuto": "90+1", "pais": "BR" },
-        { "nome": "Mario Gómez", "numero": 33, "minuto": "90+4", "pais": "DE" }
+        { "nome": "Luiz Gustavo", "numero": 30, "minuto": "90+1", "pais": "BR", "pos": "EE" },
+        { "nome": "Mario Gómez", "numero": 33, "minuto": "90+4", "pais": "DE", "pos": "PL" }
       ],
       "nao_utilizados": ["Tom Starke", "Daniel Van Buyten", "Xherdan Shaqiri", "Anatoliy Tymoshchuk", "Claudio Pizarro"]
     }

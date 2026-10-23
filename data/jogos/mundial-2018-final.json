@@ -29,9 +29,9 @@
         { "nome": "Olivier Giroud", "numero": 9, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Steven Nzonzi", "numero": 15, "minuto": 55, "pais": "FR" },
-        { "nome": "Corentin Tolisso", "numero": 12, "minuto": 73, "pais": "FR" },
-        { "nome": "Nabil Fekir", "numero": 18, "minuto": 81, "pais": "FR" }
+        { "nome": "Steven Nzonzi", "numero": 15, "minuto": 55, "pais": "FR", "pos": "MC" },
+        { "nome": "Corentin Tolisso", "numero": 12, "minuto": 73, "pais": "FR", "pos": "EE" },
+        { "nome": "Nabil Fekir", "numero": 18, "minuto": 81, "pais": "FR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Presnel Kimpembe",
@@ -64,7 +64,10 @@
         { "nome": "Ivan Perišić", "numero": 4, "pais": "HR", "pos": "EE", "golos": [{ "minuto": 28 }] },
         { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL", "golos": [{ "minuto": 18, "autogolo": true }, { "minuto": 69 }] }
       ],
-      "suplentes": [{ "nome": "Andrej Kramarić", "numero": 9, "minuto": 71, "pais": "HR" }, { "nome": "Marko Pjaca", "numero": 20, "minuto": 81, "pais": "HR" }],
+      "suplentes": [
+        { "nome": "Andrej Kramarić", "numero": 9, "minuto": 71, "pais": "HR", "pos": "ED" },
+        { "nome": "Marko Pjaca", "numero": 20, "minuto": 81, "pais": "HR", "pos": "PL" }
+      ],
       "nao_utilizados": [
         "Dominik Livaković",
         "Vedran Ćorluka",

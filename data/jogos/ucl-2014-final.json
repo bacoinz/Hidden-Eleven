@@ -36,9 +36,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Marcelo", "numero": 12, "minuto": 59, "pais": "BR", "golos": [{ "minuto": 118 }] },
-        { "nome": "Isco", "numero": 23, "minuto": 59, "pais": "ES" },
-        { "nome": "Álvaro Morata", "numero": 21, "minuto": 79, "pais": "ES" }
+        { "nome": "Marcelo", "numero": 12, "minuto": 59, "pais": "BR", "golos": [{ "minuto": 118 }], "pos": "DE" },
+        { "nome": "Isco", "numero": 23, "minuto": 59, "pais": "ES", "pos": "MC" },
+        { "nome": "Álvaro Morata", "numero": 21, "minuto": 79, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Diego López", "Pepe", "Álvaro Arbeloa", "Asier Illarramendi"]
     },
@@ -62,9 +62,9 @@
         { "nome": "David Villa", "numero": 9, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Toby Alderweireld", "numero": 12, "minuto": 83, "pais": "BE" },
-        { "nome": "José Sosa", "numero": 24, "minuto": 66, "pais": "AR" },
-        { "nome": "Adrián", "aceites": ["Adrián López"], "numero": 7, "minuto": 9, "pais": "ES" }
+        { "nome": "Toby Alderweireld", "numero": 12, "minuto": 83, "pais": "BE", "pos": "DE" },
+        { "nome": "José Sosa", "numero": 24, "minuto": 66, "pais": "AR", "pos": "MD" },
+        { "nome": "Adrián", "aceites": ["Adrián López"], "numero": 7, "minuto": 9, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Dani Aranzubia", "Mario Suárez", "Cristian Rodríguez", "Diego"]
     }

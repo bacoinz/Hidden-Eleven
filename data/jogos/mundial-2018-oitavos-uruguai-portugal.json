@@ -27,9 +27,9 @@
         { "nome": "Edinson Cavani", "numero": 21, "pais": "UY", "pos": "PL", "golos": [{ "minuto": 7 }, { "minuto": 62 }] }
       ],
       "suplentes": [
-        { "nome": "Cristian Rodríguez", "numero": 7, "minuto": 63, "pais": "UY" },
-        { "nome": "Cristhian Stuani", "numero": 11, "minuto": 74, "pais": "UY" },
-        { "nome": "Carlos Sánchez", "numero": 5, "minuto": 81, "pais": "UY" }
+        { "nome": "Cristian Rodríguez", "numero": 7, "minuto": 63, "pais": "UY", "pos": "ME" },
+        { "nome": "Cristhian Stuani", "numero": 11, "minuto": 74, "pais": "UY", "pos": "PL" },
+        { "nome": "Carlos Sánchez", "numero": 5, "minuto": 81, "pais": "UY", "pos": "MD" }
       ],
       "nao_utilizados": [
         "Guillermo Varela",
@@ -63,9 +63,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 65, "pais": "PT" },
-        { "nome": "André Silva", "numero": 9, "minuto": 74, "pais": "PT" },
-        { "nome": "Manuel Fernandes", "numero": 4, "minuto": 84, "pais": "PT" }
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 65, "pais": "PT", "pos": "MC" },
+        { "nome": "André Silva", "numero": 9, "minuto": 74, "pais": "PT", "pos": "PL" },
+        { "nome": "Manuel Fernandes", "numero": 4, "minuto": 84, "pais": "PT", "pos": "ME" }
       ],
       "nao_utilizados": [
         "Bruno Alves",

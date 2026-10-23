@@ -36,9 +36,9 @@
         { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Oliver Neuville", "numero": 10, "minuto": 65, "pais": "DE" },
-        { "nome": "Mike Hanke", "numero": 9, "minuto": 71, "pais": "DE" },
-        { "nome": "Thomas Hitzlsperger", "numero": 15, "minuto": 79, "pais": "DE" }
+        { "nome": "Oliver Neuville", "numero": 10, "minuto": 65, "pais": "DE", "pos": "PL" },
+        { "nome": "Mike Hanke", "numero": 9, "minuto": 71, "pais": "DE", "pos": "PL" },
+        { "nome": "Thomas Hitzlsperger", "numero": 15, "minuto": 79, "pais": "DE", "pos": "ME" }
       ],
       "nao_utilizados": [
         "Jens Lehmann",
@@ -72,9 +72,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 60, "autogolo": true }] },
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 69, "pais": "PT", "golos": [{ "minuto": 88 }] },
-        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "minuto": 77, "pais": "PT" }
+        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 60, "autogolo": true }], "pos": "MC" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 69, "pais": "PT", "golos": [{ "minuto": 88 }], "pos": "PL" },
+        { "nome": "Luís Figo", "aceites": ["figo"], "numero": 7, "minuto": 77, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Marco Caneira",

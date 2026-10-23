@@ -27,9 +27,9 @@
         { "nome": "Oliver Neuville", "numero": 27, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Marko Babić", "numero": 3, "minuto": "90+1", "pais": "HR" },
-        { "nome": "Ulf Kirsten", "numero": 9, "minuto": 65, "pais": "DE" },
-        { "nome": "Dimitar Berbatov", "numero": 12, "minuto": 39, "pais": "BG" }
+        { "nome": "Marko Babić", "numero": 3, "minuto": "90+1", "pais": "HR", "pos": "MC" },
+        { "nome": "Ulf Kirsten", "numero": 9, "minuto": 65, "pais": "DE", "pos": "PL" },
+        { "nome": "Dimitar Berbatov", "numero": 12, "minuto": 39, "pais": "BG", "pos": "ME" }
       ],
       "nao_utilizados": ["Frank Juric", "Thomas Kleine", "Jurica Vranješ", "Anel Džaka"]
     },
@@ -53,9 +53,9 @@
         { "nome": "Fernando Morientes", "numero": 9, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "minuto": 68, "pais": "ES" },
-        { "nome": "Steve McManaman", "numero": 8, "minuto": 61, "pais": "GB-ENG" },
-        { "nome": "Flávio Conceição", "numero": 16, "minuto": 73, "pais": "BR" }
+        { "nome": "Iker Casillas", "aceites": ["iker"], "numero": 1, "minuto": 68, "pais": "ES", "pos": "GR" },
+        { "nome": "Steve McManaman", "numero": 8, "minuto": 61, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Flávio Conceição", "numero": 16, "minuto": 73, "pais": "BR", "pos": "MDC" }
       ],
       "nao_utilizados": ["Aitor Karanka", "Francisco Pavón", "Guti", "Pedro Munitis"]
     }

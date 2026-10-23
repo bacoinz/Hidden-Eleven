@@ -28,10 +28,10 @@
         { "nome": "Samu Aghehowa", "numero": 9, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Fábio Vieira", "numero": 10, "minuto": 62, "pais": "PT" },
-        { "nome": "William Gomes", "numero": 7, "minuto": 78, "pais": "BR" },
-        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 68, "pais": "PT" },
-        { "nome": "Danny Namaso", "numero": 19, "minuto": 78, "pais": "CM", "golos": [{ "minuto": "90+4" }] }
+        { "nome": "Fábio Vieira", "numero": 10, "minuto": 62, "pais": "PT", "pos": "ED" },
+        { "nome": "William Gomes", "numero": 7, "minuto": 78, "pais": "BR", "pos": "MD" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 68, "pais": "PT", "pos": "ME" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 78, "pais": "CM", "golos": [{ "minuto": "90+4" }], "pos": "MC" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Zaidu Sanusi", "Tomás Pérez", "Vasco Sousa", "Deniz Gül"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Conrad Harder", "numero": 19, "pais": "DK", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Zeno Debast", "numero": 6, "minuto": 23, "pais": "BE" },
-        { "nome": "Matheus Reis", "numero": 2, "minuto": 86, "pais": "BR" },
-        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 69, "pais": "JP" },
-        { "nome": "Viktor Gyökeres", "numero": 9, "minuto": 69, "pais": "SE" }
+        { "nome": "Zeno Debast", "numero": 6, "minuto": 23, "pais": "BE", "pos": "DC" },
+        { "nome": "Matheus Reis", "numero": 2, "minuto": 86, "pais": "BR", "pos": "DE" },
+        { "nome": "Hidemasa Morita", "numero": 5, "minuto": 69, "pais": "JP", "pos": "MO" },
+        { "nome": "Viktor Gyökeres", "numero": 9, "minuto": 69, "pais": "SE", "pos": "PL" }
       ],
       "nao_utilizados": ["Franco Israel", "Ricardo Esgaio", "Jeremiah St. Juste", "Eduardo Quaresma", "Biel Teixeira"]
     }

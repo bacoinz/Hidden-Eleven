@@ -27,8 +27,8 @@
         { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL", "golos": [{ "minuto": 2 }] }
       ],
       "suplentes": [
-        { "nome": "Bartosz Kapustka", "numero": 21, "minuto": 82, "pais": "PL" },
-        { "nome": "Tomasz Jodłowiec", "numero": 6, "minuto": 98, "pais": "PL" }
+        { "nome": "Bartosz Kapustka", "numero": 21, "minuto": 82, "pais": "PL", "pos": "ME" },
+        { "nome": "Tomasz Jodłowiec", "numero": 6, "minuto": 98, "pais": "PL", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Wojciech Szczęsny",
@@ -63,9 +63,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 73, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 80, "pais": "PT" },
-        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 96, "pais": "PT" }
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 73, "pais": "PT", "pos": "MO" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 80, "pais": "PT", "pos": "MC" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 96, "pais": "PT", "pos": "MDC" }
       ],
       "nao_utilizados": [
         "Bruno Alves",

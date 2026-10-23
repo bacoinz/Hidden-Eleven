@@ -28,9 +28,9 @@
         { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Luís Filipe", "numero": 22, "minuto": 67, "pais": "PT" },
-        { "nome": "Felipe Menezes", "numero": 24, "minuto": 72, "pais": "BR" },
-        { "nome": "Weldon", "numero": 19, "minuto": 67, "pais": "BR" }
+        { "nome": "Luís Filipe", "numero": 22, "minuto": 67, "pais": "PT", "pos": "MD" },
+        { "nome": "Felipe Menezes", "numero": 24, "minuto": 72, "pais": "BR", "pos": "MC" },
+        { "nome": "Weldon", "numero": 19, "minuto": 67, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Júlio César", "Roderick Miranda", "Miguel Vítor", "Nuno Gomes"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 79, "pais": "AR" },
-        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "minuto": 45, "pais": "PT" },
-        { "nome": "Ernesto Farías", "numero": 19, "minuto": 77, "pais": "AR" }
+        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 79, "pais": "AR", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "minuto": 45, "pais": "PT", "pos": "MC" },
+        { "nome": "Ernesto Farías", "numero": 19, "minuto": 77, "pais": "AR", "pos": "PL" }
       ],
       "nao_utilizados": ["Beto", "Cristian Săpunaru", "Nuno André Coelho", { "nome": "Mariano González", "aceites": ["mariano"] }]
     }

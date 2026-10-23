@@ -28,11 +28,11 @@
         { "nome": "Moussa Marega", "numero": 11, "pais": "ML", "pos": "PL", "golos": [{ "minuto": "90+1" }] }
       ],
       "suplentes": [
-        { "nome": "João Mário", "numero": 57, "minuto": 85, "pais": "PT" },
-        { "nome": "Diogo Leite", "numero": 4, "minuto": 84, "pais": "PT" },
-        { "nome": "Vitinha", "numero": 77, "minuto": 72, "pais": "PT" },
-        { "nome": "Romário Baró", "numero": 8, "minuto": "90+3", "pais": "PT" },
-        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "minuto": "90+3", "pais": "BR" }
+        { "nome": "João Mário", "numero": 57, "minuto": 85, "pais": "PT", "pos": "MD" },
+        { "nome": "Diogo Leite", "numero": 4, "minuto": 84, "pais": "PT", "pos": "DE" },
+        { "nome": "Vitinha", "numero": 77, "minuto": 72, "pais": "PT", "pos": "PL" },
+        { "nome": "Romário Baró", "numero": 8, "minuto": "90+3", "pais": "PT", "pos": "ME" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "minuto": "90+3", "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Diogo Costa", "Tomás Esteves", "Zé Luís", "Fábio Silva"]
     },
@@ -56,10 +56,10 @@
         { "nome": "Gonzalo Plata", "numero": 20, "pais": "EC", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Francisco Geraldes", "numero": 17, "minuto": 54, "pais": "PT" },
-        { "nome": "Rafael Camacho", "numero": 7, "minuto": 73, "pais": "PT" },
-        { "nome": "Tiago Tomás", "numero": 51, "minuto": 78, "pais": "PT" },
-        { "nome": "Joelson Fernandes", "numero": 96, "minuto": 78, "pais": "PT" }
+        { "nome": "Francisco Geraldes", "numero": 17, "minuto": 54, "pais": "PT", "pos": "EE" },
+        { "nome": "Rafael Camacho", "numero": 7, "minuto": 73, "pais": "PT", "pos": "ED" },
+        { "nome": "Tiago Tomás", "numero": 51, "minuto": 78, "pais": "PT", "pos": "ED" },
+        { "nome": "Joelson Fernandes", "numero": 96, "minuto": 78, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["Renan Ribeiro", "Luís Neto", "Gonçalo Inácio", "Rodrigo Battaglia", "Idrissa Doumbia"]
     }

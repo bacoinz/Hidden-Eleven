@@ -28,9 +28,9 @@
         { "nome": "Pedro", "numero": 17, "pais": "ES", "pos": "EE", "golos": [{ "minuto": 27 }] }
       ],
       "suplentes": [
-        { "nome": "Carles Puyol", "numero": 5, "minuto": 88, "pais": "ES" },
-        { "nome": "Seydou Keita", "numero": 15, "minuto": 86, "pais": "ML" },
-        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": "90+2", "pais": "NL" }
+        { "nome": "Carles Puyol", "numero": 5, "minuto": 88, "pais": "ES", "pos": "DD" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 86, "pais": "ML", "pos": "ED" },
+        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": "90+2", "pais": "NL", "pos": "EE" }
       ],
       "nao_utilizados": [
         { "nome": "Oier", "aceites": ["Oier Olazábal"] },
@@ -58,7 +58,10 @@
         { "nome": "Wayne Rooney", "numero": 10, "pais": "GB-ENG", "pos": "PL", "golos": [{ "minuto": 34 }] },
         { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "pais": "MX", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Nani", "numero": 17, "minuto": 69, "pais": "PT" }, { "nome": "Paul Scholes", "numero": 18, "minuto": 77, "pais": "GB-ENG" }],
+      "suplentes": [
+        { "nome": "Nani", "numero": 17, "minuto": 69, "pais": "PT", "pos": "MC" },
+        { "nome": "Paul Scholes", "numero": 18, "minuto": 77, "pais": "GB-ENG", "pos": "MC" }
+      ],
       "nao_utilizados": ["Tomasz Kuszczak", "Chris Smalling", "Anderson", "Darren Fletcher", "Michael Owen"]
     }
   ]

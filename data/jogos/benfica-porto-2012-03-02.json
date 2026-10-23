@@ -28,9 +28,9 @@
         { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL", "golos": [{ "minuto": 42 }, { "minuto": 47 }] }
       ],
       "suplentes": [
-        { "nome": "Miguel Vítor", "numero": 27, "minuto": 71, "pais": "PT" },
-        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 90, "pais": "PT" },
-        { "nome": "Rodrigo Moreno", "numero": 19, "minuto": 52, "pais": "ES" }
+        { "nome": "Miguel Vítor", "numero": 27, "minuto": 71, "pais": "PT", "pos": "DC" },
+        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 90, "pais": "PT", "pos": "MDC" },
+        { "nome": "Rodrigo Moreno", "numero": 19, "minuto": 52, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": ["Eduardo", "Nemanja Matić", "Bruno César", "Javier Saviola"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Djalma", "numero": 20, "pais": "AO", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Cristian Săpunaru", "numero": 21, "minuto": "90+2", "pais": "RO" },
-        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 58, "pais": "CO", "golos": [{ "minuto": 64 }] },
-        { "nome": "Kléber", "numero": 11, "minuto": 86, "pais": "BR" }
+        { "nome": "Cristian Săpunaru", "numero": 21, "minuto": "90+2", "pais": "RO", "pos": "DD" },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 58, "pais": "CO", "golos": [{ "minuto": 64 }], "pos": "MO" },
+        { "nome": "Kléber", "numero": 11, "minuto": 86, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Rafael Bracali", "Alex Sandro", "Steven Defour", "Cristián Rodríguez"]
     }

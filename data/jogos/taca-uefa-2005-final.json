@@ -28,9 +28,9 @@
         { "nome": "Liédson", "numero": 31, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Hugo Viana", "numero": 45, "minuto": 88, "pais": "PT" },
-        { "nome": "Marius Niculae", "numero": 9, "minuto": 73, "pais": "RO" },
-        { "nome": "Roudolphe Douala", "numero": 17, "minuto": 80, "pais": "CM" }
+        { "nome": "Hugo Viana", "numero": 45, "minuto": 88, "pais": "PT", "pos": "MC" },
+        { "nome": "Marius Niculae", "numero": 9, "minuto": 73, "pais": "RO", "pos": "ED" },
+        { "nome": "Roudolphe Douala", "numero": 17, "minuto": 80, "pais": "CM", "pos": "PL" }
       ],
       "nao_utilizados": [{ "nome": "Nélson", "aceites": ["Nélson Pereira"] }, "Ânderson Polga", "Rui Jorge", { "nome": "Custódio", "aceites": ["Custódio Castro"] }]
     },
@@ -53,9 +53,9 @@
         { "nome": "Ivica Olić", "numero": 9, "pais": "HR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Deividas Šemberas", "numero": 2, "minuto": 82, "pais": "LT" },
-        { "nome": "Rolan Gusev", "numero": 8, "minuto": 86, "pais": "RU" },
-        { "nome": "Miloš Krasić", "numero": 17, "minuto": 67, "pais": "RS" }
+        { "nome": "Deividas Šemberas", "numero": 2, "minuto": 82, "pais": "LT", "pos": "MO" },
+        { "nome": "Rolan Gusev", "numero": 8, "minuto": 86, "pais": "RU", "pos": "MC" },
+        { "nome": "Miloš Krasić", "numero": 17, "minuto": 67, "pais": "RS", "pos": "PL" }
       ],
       "nao_utilizados": ["Veniamin Mandrykin", "Osmar Ferreyra", "Juris Laizāns", "Aleksandr Salugin"]
     }

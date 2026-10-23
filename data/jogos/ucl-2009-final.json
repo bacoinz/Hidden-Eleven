@@ -27,7 +27,10 @@
         { "nome": "Thierry Henry", "numero": 14, "pais": "FR", "pos": "EE" },
         { "nome": "Samuel Eto'o", "numero": 9, "pais": "CM", "pos": "PL", "golos": [{ "minuto": 10 }] }
       ],
-      "suplentes": [{ "nome": "Seydou Keita", "numero": 15, "minuto": 72, "pais": "ML" }, { "nome": "Pedro", "numero": 27, "minuto": "90+2", "pais": "ES" }],
+      "suplentes": [
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 72, "pais": "ML", "pos": "EE" },
+        { "nome": "Pedro", "numero": 27, "minuto": "90+2", "pais": "ES", "pos": "MC" }
+      ],
       "nao_utilizados": ["José Manuel Pinto", "Martín Cáceres", "Marc Muniesa", "Eiður Guðjohnsen", { "nome": "Bojan", "aceites": ["Bojan Krkić"] }]
     },
     {
@@ -50,9 +53,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Paul Scholes", "numero": 18, "minuto": 75, "pais": "GB-ENG" },
-        { "nome": "Dimitar Berbatov", "numero": 9, "minuto": 66, "pais": "BG" },
-        { "nome": "Carlos Tevez", "numero": 32, "minuto": 46, "pais": "AR" }
+        { "nome": "Paul Scholes", "numero": 18, "minuto": 75, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Dimitar Berbatov", "numero": 9, "minuto": 66, "pais": "BG", "pos": "ED" },
+        { "nome": "Carlos Tevez", "numero": 32, "minuto": 46, "pais": "AR", "pos": "MC" }
       ],
       "nao_utilizados": ["Tomasz Kuszczak", "Rafael", "Jonny Evans", "Nani"]
     }

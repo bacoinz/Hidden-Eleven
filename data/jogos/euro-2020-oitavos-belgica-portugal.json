@@ -27,9 +27,9 @@
         { "nome": "Romelu Lukaku", "numero": 9, "pais": "BE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Dries Mertens", "numero": 14, "minuto": 48, "pais": "BE" },
-        { "nome": "Yannick Carrasco", "numero": 11, "minuto": 87, "pais": "BE" },
-        { "nome": "Leander Dendoncker", "numero": 19, "minuto": "90+5", "pais": "BE" }
+        { "nome": "Dries Mertens", "numero": 14, "minuto": 48, "pais": "BE", "pos": "ED" },
+        { "nome": "Yannick Carrasco", "numero": 11, "minuto": 87, "pais": "BE", "pos": "EE" },
+        { "nome": "Leander Dendoncker", "numero": 19, "minuto": "90+5", "pais": "BE", "pos": "ME" }
       ],
       "nao_utilizados": [
         "Dedryck Boyata",
@@ -66,11 +66,11 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Félix", "aceites": ["felix"], "numero": 23, "minuto": 55, "pais": "PT" },
-        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 55, "pais": "PT" },
-        { "nome": "André Silva", "numero": 9, "minuto": 70, "pais": "PT" },
-        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "minuto": 78, "pais": "PT" },
-        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 78, "pais": "PT" }
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 23, "minuto": 55, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 55, "pais": "PT", "pos": "MC" },
+        { "nome": "André Silva", "numero": 9, "minuto": 70, "pais": "PT", "pos": "EE" },
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 13, "minuto": 78, "pais": "PT", "pos": "MC" },
+        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 78, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Nélson Semedo",

@@ -28,9 +28,9 @@
         { "nome": "Carlos Tevez", "numero": 32, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Anderson", "numero": 8, "minuto": "120+5", "pais": "BR" },
-        { "nome": "Ryan Giggs", "numero": 11, "minuto": 87, "pais": "GB-WLS" },
-        { "nome": "Nani", "numero": 17, "minuto": 101, "pais": "PT" }
+        { "nome": "Anderson", "numero": 8, "minuto": "120+5", "pais": "BR", "pos": "MC" },
+        { "nome": "Ryan Giggs", "numero": 11, "minuto": 87, "pais": "GB-WLS", "pos": "MC" },
+        { "nome": "Nani", "numero": 17, "minuto": 101, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Tomasz Kuszczak", "John O'Shea", "Mikaël Silvestre", "Darren Fletcher"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Didier Drogba", "numero": 11, "pais": "CI", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Juliano Belletti", "numero": 35, "minuto": "120+4", "pais": "BR" },
-        { "nome": "Salomon Kalou", "numero": 21, "minuto": 92, "pais": "CI" },
-        { "nome": "Nicolas Anelka", "numero": 39, "minuto": 99, "pais": "FR" }
+        { "nome": "Juliano Belletti", "numero": 35, "minuto": "120+4", "pais": "BR", "pos": "DC" },
+        { "nome": "Salomon Kalou", "numero": 21, "minuto": 92, "pais": "CI", "pos": "EE" },
+        { "nome": "Nicolas Anelka", "numero": 39, "minuto": 99, "pais": "FR", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Carlo Cudicini",

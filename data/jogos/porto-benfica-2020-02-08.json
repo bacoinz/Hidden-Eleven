@@ -28,9 +28,9 @@
         { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Wilson Manafá", "numero": 18, "minuto": 81, "pais": "PT" },
-        { "nome": "Chancel Mbemba", "numero": 19, "minuto": 69, "pais": "CD" },
-        { "nome": "Vitinha", "numero": 77, "minuto": 85, "pais": "PT" }
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 81, "pais": "PT", "pos": "DD" },
+        { "nome": "Chancel Mbemba", "numero": 19, "minuto": 69, "pais": "CD", "pos": "DC" },
+        { "nome": "Vitinha", "numero": 77, "minuto": 85, "pais": "PT", "pos": "MD" }
       ],
       "nao_utilizados": ["Diogo Costa", "Mamadou Loum", "Zé Luís", "Shoya Nakajima"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Carlos Vinícius", "numero": 95, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 18 }, { "minuto": 50 }] }
       ],
       "suplentes": [
-        { "nome": "Andreas Samaris", "numero": 22, "minuto": 76, "pais": "GR" },
-        { "nome": "Haris Seferović", "numero": 14, "minuto": 66, "pais": "CH" },
-        { "nome": "Dyego Sousa", "numero": 20, "minuto": 84, "pais": "PT" }
+        { "nome": "Andreas Samaris", "numero": 22, "minuto": 76, "pais": "GR", "pos": "MC" },
+        { "nome": "Haris Seferović", "numero": 14, "minuto": 66, "pais": "CH", "pos": "MC" },
+        { "nome": "Dyego Sousa", "numero": 20, "minuto": 84, "pais": "PT", "pos": "DD" }
       ],
       "nao_utilizados": ["Ivan Zlobin", "Tomás Tavares", "Florentino Luís", "Franco Cervi"]
     }

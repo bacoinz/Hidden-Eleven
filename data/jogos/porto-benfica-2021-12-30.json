@@ -28,11 +28,11 @@
         { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 69 }] }
       ],
       "suplentes": [
-        { "nome": "Wilson Manafá", "numero": 18, "minuto": 29, "pais": "PT" },
-        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 83, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 10, "minuto": 83, "pais": "PT" },
-        { "nome": "Jesús Corona", "numero": 17, "minuto": 60, "pais": "MX" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 83, "pais": "ES" }
+        { "nome": "Wilson Manafá", "numero": 18, "minuto": 29, "pais": "PT", "pos": "DD" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 83, "pais": "PT", "pos": "ME" },
+        { "nome": "Francisco Conceição", "numero": 10, "minuto": 83, "pais": "PT", "pos": "PL" },
+        { "nome": "Jesús Corona", "numero": 17, "minuto": 60, "pais": "MX", "pos": "ED" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 83, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Agustín Marchesín", "João Marcelo", "Wendell", "Bruno Costa"]
     },
@@ -56,11 +56,11 @@
         { "nome": "Roman Yaremchuk", "numero": 15, "pais": "UA", "pos": "PL", "golos": [{ "minuto": 47 }] }
       ],
       "suplentes": [
-        { "nome": "Valentino Lázaro", "numero": 22, "minuto": 52, "pais": "AT" },
-        { "nome": "Pizzi", "numero": 21, "minuto": 66, "pais": "PT" },
-        { "nome": "Adel Taarabt", "numero": 49, "minuto": 66, "pais": "MA" },
-        { "nome": "Diogo Gonçalves", "numero": 17, "minuto": 87, "pais": "PT" },
-        { "nome": "Haris Seferovic", "numero": 14, "minuto": 66, "pais": "CH" }
+        { "nome": "Valentino Lázaro", "numero": 22, "minuto": 52, "pais": "AT", "pos": "DD" },
+        { "nome": "Pizzi", "numero": 21, "minuto": 66, "pais": "PT", "pos": "MD" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 66, "pais": "MA", "pos": "MC" },
+        { "nome": "Diogo Gonçalves", "numero": 17, "minuto": 87, "pais": "PT", "pos": "ME" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 66, "pais": "CH", "pos": "PL" }
       ],
       "nao_utilizados": ["Helton Leite", "Ferro", "Paulo Bernardo", "Soualiho Meité"]
     }

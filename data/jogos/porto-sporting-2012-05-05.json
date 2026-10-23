@@ -28,9 +28,9 @@
         { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "pais": "CO", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Danilo", "numero": 2, "minuto": 58, "pais": "BR" },
-        { "nome": "Steven Defour", "numero": 35, "minuto": 65, "pais": "BE" },
-        { "nome": "Marc Janko", "numero": 29, "minuto": 58, "pais": "AT" }
+        { "nome": "Danilo", "numero": 2, "minuto": 58, "pais": "BR", "pos": "DD" },
+        { "nome": "Steven Defour", "numero": 35, "minuto": 65, "pais": "BE", "pos": "MC" },
+        { "nome": "Marc Janko", "numero": 29, "minuto": 58, "pais": "AT", "pos": "ED" }
       ],
       "nao_utilizados": ["Rafael Bracali", "Rolando", "Djalma Campos", "Kléber"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "André Martins", "numero": 28, "minuto": 71, "pais": "PT" },
-        { "nome": "Jeffrén Suárez", "numero": 17, "minuto": 61, "pais": "VE" },
-        { "nome": "Diego Rubio", "numero": 33, "minuto": 79, "pais": "CL" }
+        { "nome": "André Martins", "numero": 28, "minuto": 71, "pais": "PT", "pos": "MO" },
+        { "nome": "Jeffrén Suárez", "numero": 17, "minuto": 61, "pais": "VE", "pos": "ED" },
+        { "nome": "Diego Rubio", "numero": 33, "minuto": 79, "pais": "CL", "pos": "MDC" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Daniel Carriço", "Xandão", "Evaldo"]
     }

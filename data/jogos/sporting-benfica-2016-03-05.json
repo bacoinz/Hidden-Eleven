@@ -28,9 +28,9 @@
         { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ezequiel Schelotto", "numero": 2, "minuto": 77, "pais": "IT" },
-        { "nome": "Gelson Martins", "numero": 60, "minuto": 77, "pais": "PT" },
-        { "nome": "Teofilo Gutiérrez", "numero": 19, "minuto": 59, "pais": "CO" }
+        { "nome": "Ezequiel Schelotto", "numero": 2, "minuto": 77, "pais": "IT", "pos": "DD" },
+        { "nome": "Gelson Martins", "numero": 60, "minuto": 77, "pais": "PT", "pos": "MC" },
+        { "nome": "Teofilo Gutiérrez", "numero": 19, "minuto": 59, "pais": "CO", "pos": "ME" }
       ],
       "nao_utilizados": ["Ažbe Jug", "Naldo", "Alberto Aquilani", "Hernán Barcos"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Kostas Mitroglou", "numero": 11, "pais": "GR", "pos": "PL", "golos": [{ "minuto": 20 }] }
       ],
       "suplentes": [
-        { "nome": "Ljubomir Fejsa", "numero": 5, "minuto": 73, "pais": "RS" },
-        { "nome": "Toto Salvio", "numero": 18, "minuto": 78, "pais": "AR" },
-        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 67, "pais": "MX" }
+        { "nome": "Ljubomir Fejsa", "numero": 5, "minuto": 73, "pais": "RS", "pos": "MD" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 78, "pais": "AR", "pos": "PL" },
+        { "nome": "Raúl Jiménez", "numero": 9, "minuto": 67, "pais": "MX", "pos": "PL" }
       ],
       "nao_utilizados": ["Paulo Lopes", "Nélson Semedo", "Anderson Talisca", "Gonçalo Guedes"]
     }

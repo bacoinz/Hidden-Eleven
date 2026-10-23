@@ -112,7 +112,7 @@ export function renderLobby(sala, eu, catalogo, enviar) {
   const duracao = sala.solo ? '5:00' : '3:00';
   const rondas = Math.min(sala.config.rondas, sala.disponiveis);
   $('#cfg-resumo').textContent = sala.disponiveis
-    ? `${plural(sala.disponiveis, 'jogo', 'jogos')} por jogar · ${plural(rondas, 'ronda', 'rondas')} de ${duracao} (+5 s por acerto)`
+    ? `${plural(sala.disponiveis, 'jogo', 'jogos')} por jogar · ${plural(rondas, 'ronda', 'rondas')} de ${duracao} (+1 s por acerto)`
     : 'Já jogaram todos os jogos deste conteúdo nesta sala.';
   $('#btn-comecar').hidden = !anfitriao;
   $('#btn-comecar').disabled = !sala.disponiveis;
@@ -362,7 +362,7 @@ export function tick(sala, agora) {
   const relogio = $('#relogio');
   relogio.textContent = formatarTempo(restante);
   relogio.classList.toggle('urgente', correr && restante <= 30_000);
-  // A barra mostra quanto do tempo inicial já se gastou: recua quando um acerto dá +5 s.
+  // A barra mostra quanto do tempo inicial já se gastou: recua quando um acerto dá +1 s.
   const consumido = sala.fase === 'ficha' ? 0 : correr ? 1 - restante / r.duracaoBase : 1;
   $('#barra-tempo-enchimento').style.width = `${Math.min(100, Math.max(0, consumido * 100))}%`;
   const pistas = r.pistas ?? [];

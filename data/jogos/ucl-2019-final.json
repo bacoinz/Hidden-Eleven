@@ -28,9 +28,9 @@
         { "nome": "Harry Kane", "numero": 10, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Eric Dier", "numero": 15, "minuto": 74, "pais": "GB-ENG" },
-        { "nome": "Lucas Moura", "numero": 27, "minuto": 66, "pais": "BR" },
-        { "nome": "Fernando Llorente", "numero": 18, "minuto": 81, "pais": "ES" }
+        { "nome": "Eric Dier", "numero": 15, "minuto": 74, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Lucas Moura", "numero": 27, "minuto": 66, "pais": "BR", "pos": "MC" },
+        { "nome": "Fernando Llorente", "numero": 18, "minuto": 81, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Michel Vorm",
@@ -64,9 +64,9 @@
         { "nome": "Sadio Mané", "numero": 10, "pais": "SN", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Joe Gomez", "numero": 12, "minuto": 90, "pais": "GB-ENG" },
-        { "nome": "James Milner", "numero": 7, "minuto": 62, "pais": "GB-ENG" },
-        { "nome": "Divock Origi", "numero": 27, "minuto": 58, "pais": "BE", "golos": [{ "minuto": 87 }] }
+        { "nome": "Joe Gomez", "numero": 12, "minuto": 90, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "James Milner", "numero": 7, "minuto": 62, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Divock Origi", "numero": 27, "minuto": 58, "pais": "BE", "golos": [{ "minuto": 87 }], "pos": "PL" }
       ],
       "nao_utilizados": [
         "Simon Mignolet",

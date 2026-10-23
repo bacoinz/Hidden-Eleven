@@ -28,11 +28,11 @@
         { "nome": "Borja Sainz", "numero": 17, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Alberto Costa", "numero": 20, "minuto": 75, "pais": "PT" },
-        { "nome": "Alan Varela", "numero": 22, "minuto": 76, "pais": "AR" },
-        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 88, "pais": "CA" },
-        { "nome": "Rodrigo Mora", "numero": 86, "minuto": 62, "pais": "PT" },
-        { "nome": "William Gomes", "numero": 7, "minuto": 62, "pais": "BR" }
+        { "nome": "Alberto Costa", "numero": 20, "minuto": 75, "pais": "PT", "pos": "DC" },
+        { "nome": "Alan Varela", "numero": 22, "minuto": 76, "pais": "AR", "pos": "MDC" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 88, "pais": "CA", "pos": "ED" },
+        { "nome": "Rodrigo Mora", "numero": 86, "minuto": 62, "pais": "PT", "pos": "MC" },
+        { "nome": "William Gomes", "numero": 7, "minuto": 62, "pais": "BR", "pos": "EE" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Dominik Prpić", "Deniz Gül", "Oskar Pietuszewski"]
     },
@@ -56,9 +56,9 @@
         { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Georgiy Sudakov", "numero": 10, "minuto": 44, "pais": "UA" },
-        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 83, "pais": "HR" },
-        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 74, "pais": "NO" }
+        { "nome": "Georgiy Sudakov", "numero": 10, "minuto": 44, "pais": "UA", "pos": "MDC" },
+        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 83, "pais": "HR", "pos": "EE" },
+        { "nome": "Andreas Schjelderup", "numero": 21, "minuto": 74, "pais": "NO", "pos": "ED" }
       ],
       "nao_utilizados": ["Diogo Ferreira", "João Fonseca", "Gonçalo Oliveira", "Manu Silva", "Enzo Barrenechea", "João Rego"]
     }

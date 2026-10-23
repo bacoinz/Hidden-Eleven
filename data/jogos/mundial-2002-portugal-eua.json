@@ -27,9 +27,9 @@
         { "nome": "Landon Donovan", "numero": 21, "pais": "US", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Cobi Jones", "numero": 13, "minuto": 46, "pais": "US" },
-        { "nome": "Joe-Max Moore", "numero": 9, "minuto": 75, "pais": "US" },
-        { "nome": "Carlos Llamosa", "numero": 16, "minuto": 80, "pais": "US" }
+        { "nome": "Cobi Jones", "numero": 13, "minuto": 46, "pais": "US", "pos": "MD" },
+        { "nome": "Joe-Max Moore", "numero": 9, "minuto": 75, "pais": "US", "pos": "PL" },
+        { "nome": "Carlos Llamosa", "numero": 16, "minuto": 80, "pais": "US", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Gregg Berhalter",
@@ -63,9 +63,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Paulo Bento", "numero": 17, "minuto": 69, "pais": "PT" },
-        { "nome": "Jorge Andrade", "numero": 13, "minuto": 74, "pais": "PT" },
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 80, "pais": "PT" }
+        { "nome": "Paulo Bento", "numero": 17, "minuto": 69, "pais": "PT", "pos": "MC" },
+        { "nome": "Jorge Andrade", "numero": 13, "minuto": 74, "pais": "PT", "pos": "DC" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 80, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": ["Abel Xavier", "Marco Caneira", "Paulo Sousa", "Hugo Viana", "Pedro Barbosa", "Nélson Pereira", "Ricardo", "Nuno Frechaut", "Capucho"]
     }

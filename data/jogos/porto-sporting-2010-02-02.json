@@ -28,9 +28,9 @@
         { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 34 }, { "minuto": 42 }] }
       ],
       "suplentes": [
-        { "nome": "Tomás Costa", "numero": 20, "minuto": 72, "pais": "AR" },
-        { "nome": "Diego Valeri", "numero": 8, "minuto": 76, "pais": "AR" },
-        { "nome": "Orlando Sá", "numero": 29, "minuto": 76, "pais": "PT" }
+        { "nome": "Tomás Costa", "numero": 20, "minuto": 72, "pais": "AR", "pos": "MO" },
+        { "nome": "Diego Valeri", "numero": 8, "minuto": 76, "pais": "AR", "pos": "MDC" },
+        { "nome": "Orlando Sá", "numero": 29, "minuto": 76, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Nuno André Coelho", "Miguel Lopes", "Fredy Guarín"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Carlos Saleiro", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Matías Fernández", "numero": 14, "minuto": 40, "pais": "CL" },
-        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 79, "pais": "PT" },
-        { "nome": "Sinama Pongolle", "numero": 22, "minuto": 46, "pais": "FR" }
+        { "nome": "Matías Fernández", "numero": 14, "minuto": 40, "pais": "CL", "pos": "MC" },
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 79, "pais": "PT", "pos": "ME" },
+        { "nome": "Sinama Pongolle", "numero": 22, "minuto": 46, "pais": "FR", "pos": "PL" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Anderson Polga", "Abel Ferreira", "Hélder Postiga"]
     }

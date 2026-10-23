@@ -28,9 +28,9 @@
         { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 10, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alessandro Birindelli", "numero": 15, "minuto": 42, "pais": "IT" },
-        { "nome": "Antonio Conte", "numero": 8, "minuto": 46, "pais": "IT" },
-        { "nome": "Marcelo Zalayeta", "numero": 25, "minuto": 65, "pais": "UY" }
+        { "nome": "Alessandro Birindelli", "numero": 15, "minuto": 42, "pais": "IT", "pos": "DC" },
+        { "nome": "Antonio Conte", "numero": 8, "minuto": 46, "pais": "IT", "pos": "MD" },
+        { "nome": "Marcelo Zalayeta", "numero": 25, "minuto": 65, "pais": "UY", "pos": "MC" }
       ],
       "nao_utilizados": ["Antonio Chimenti", "Gianluca Pessotto", "Mark Iuliano", "Marco Di Vaio"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Filippo Inzaghi", "aceites": ["pippo inzaghi", "pippo"], "numero": 9, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Roque Júnior", "numero": 25, "minuto": 66, "pais": "BR" },
-        { "nome": "Massimo Ambrosini", "numero": 23, "minuto": 87, "pais": "IT" },
-        { "nome": "Serginho", "numero": 27, "minuto": 71, "pais": "BR" }
+        { "nome": "Roque Júnior", "numero": 25, "minuto": 66, "pais": "BR", "pos": "DD" },
+        { "nome": "Massimo Ambrosini", "numero": 23, "minuto": 87, "pais": "IT", "pos": "MO" },
+        { "nome": "Serginho", "numero": 27, "minuto": 71, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Christian Abbiati", "Martin Laursen", "Cristian Brocchi", "Rivaldo"]
     }

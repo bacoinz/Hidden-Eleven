@@ -28,9 +28,9 @@
         { "nome": "Samuel Eto'o", "numero": 9, "pais": "CM", "pos": "PL", "golos": [{ "minuto": 76 }] }
       ],
       "suplentes": [
-        { "nome": "Juliano Belletti", "numero": 2, "minuto": 71, "pais": "BR", "golos": [{ "minuto": 80 }] },
-        { "nome": "Andrés Iniesta", "numero": 24, "minuto": 46, "pais": "ES" },
-        { "nome": "Henrik Larsson", "numero": 7, "minuto": 61, "pais": "SE" }
+        { "nome": "Juliano Belletti", "numero": 2, "minuto": 71, "pais": "BR", "golos": [{ "minuto": 80 }], "pos": "DD" },
+        { "nome": "Andrés Iniesta", "numero": 24, "minuto": 46, "pais": "ES", "pos": "MDC" },
+        { "nome": "Henrik Larsson", "numero": 7, "minuto": 61, "pais": "SE", "pos": "MC" }
       ],
       "nao_utilizados": ["Albert Jorquera", "Sylvinho", "Thiago Motta", { "nome": "Xavi", "aceites": ["xavi hernandez"] }]
     },
@@ -54,9 +54,9 @@
         { "nome": "Thierry Henry", "numero": 14, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Manuel Almunia", "numero": 24, "minuto": 18, "pais": "ES" },
-        { "nome": "Mathieu Flamini", "numero": 16, "minuto": 74, "pais": "FR" },
-        { "nome": "José Antonio Reyes", "numero": 9, "minuto": 85, "pais": "ES" }
+        { "nome": "Manuel Almunia", "numero": 24, "minuto": 18, "pais": "ES", "pos": "MD" },
+        { "nome": "Mathieu Flamini", "numero": 16, "minuto": 74, "pais": "FR", "pos": "MC" },
+        { "nome": "José Antonio Reyes", "numero": 9, "minuto": 85, "pais": "ES", "pos": "ME" }
       ],
       "nao_utilizados": ["Philippe Senderos", "Gaël Clichy", "Dennis Bergkamp", "Robin van Persie"]
     }

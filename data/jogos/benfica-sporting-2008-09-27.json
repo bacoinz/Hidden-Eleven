@@ -28,9 +28,9 @@
         { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kostas Katsouranis", "numero": 8, "minuto": 46, "pais": "GR" },
-        { "nome": "Pablo Aimar", "numero": 10, "minuto": 60, "pais": "AR" },
-        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 75, "pais": "AR" }
+        { "nome": "Kostas Katsouranis", "numero": 8, "minuto": 46, "pais": "GR", "pos": "ME" },
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 60, "pais": "AR", "pos": "PL" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 75, "pais": "AR", "pos": "MD" }
       ],
       "nao_utilizados": ["José Moreira", "Léo", "Gilles Binya", "Ariza Makukula"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 72, "pais": "PT" },
-        { "nome": "Derlei", "numero": 11, "minuto": 68, "pais": "BR" },
-        { "nome": "Liedson", "numero": 31, "minuto": 72, "pais": "PT" }
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 72, "pais": "PT", "pos": "DD" },
+        { "nome": "Derlei", "numero": 11, "minuto": 68, "pais": "BR", "pos": "PL" },
+        { "nome": "Liedson", "numero": 31, "minuto": 72, "pais": "PT", "pos": "MO" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Pedro Silva", "Daniel Carriço", { "nome": "Adrien Silva", "aceites": ["adrien"] }]
     }

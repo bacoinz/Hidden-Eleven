@@ -29,9 +29,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 62, "pais": "PT" },
-        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 68, "pais": "PT" },
-        { "nome": "Hélder Postiga", "numero": 23, "minuto": 75, "pais": "PT" }
+        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 62, "pais": "PT", "pos": "DD" },
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 68, "pais": "PT", "pos": "PL" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 75, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Marco Caneira",
@@ -72,9 +72,9 @@
         { "nome": "Thierry Henry", "numero": 12, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 69, "pais": "FR" },
-        { "nome": "Sidney Govou", "numero": 9, "minuto": 72, "pais": "FR" },
-        { "nome": "Louis Saha", "numero": 14, "minuto": 85, "pais": "FR" }
+        { "nome": "Sylvain Wiltord", "numero": 11, "minuto": 69, "pais": "FR", "pos": "EE" },
+        { "nome": "Sidney Govou", "numero": 9, "minuto": 72, "pais": "FR", "pos": "ED" },
+        { "nome": "Louis Saha", "numero": 14, "minuto": 85, "pais": "FR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Mickaël Landreau",

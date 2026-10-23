@@ -28,10 +28,10 @@
         { "nome": "Haris Seferovic", "numero": 14, "pais": "CH", "pos": "PL", "golos": [{ "minuto": 28 }] }
       ],
       "suplentes": [
-        { "nome": "Florentino Luís", "numero": 61, "minuto": 66, "pais": "PT" },
-        { "nome": "Carlos Vinícius", "numero": 95, "minuto": 66, "pais": "BR", "golos": [{ "minuto": 88 }] },
-        { "nome": "Jota", "numero": 73, "minuto": "90+1", "pais": "PT" },
-        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "minuto": 76, "pais": "PT" }
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 66, "pais": "PT", "pos": "MC" },
+        { "nome": "Carlos Vinícius", "numero": 95, "minuto": 66, "pais": "BR", "golos": [{ "minuto": 88 }], "pos": "PL" },
+        { "nome": "Jota", "numero": 73, "minuto": "90+1", "pais": "PT", "pos": "ME" },
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 27, "minuto": 76, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Ivan Zlobin", "João Ferreira", "Ferro", "Andrija Zivkovic", "Dyego Sousa"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Andraz Sporar", "numero": 90, "pais": "SI", "pos": "PL", "golos": [{ "minuto": 69 }] }
       ],
       "suplentes": [
-        { "nome": "Cristián Borja", "numero": 26, "minuto": 82, "pais": "CO" },
-        { "nome": "Rodrigo Battaglia", "numero": 16, "minuto": 87, "pais": "AR" },
-        { "nome": "Tiago Tomás", "numero": 51, "minuto": 46, "pais": "PT" },
-        { "nome": "Luciano Vietto", "numero": 10, "minuto": 82, "pais": "AR" }
+        { "nome": "Cristián Borja", "numero": 26, "minuto": 82, "pais": "CO", "pos": "DE" },
+        { "nome": "Rodrigo Battaglia", "numero": 16, "minuto": 87, "pais": "AR", "pos": "MDC" },
+        { "nome": "Tiago Tomás", "numero": 51, "minuto": 46, "pais": "PT", "pos": "PL" },
+        { "nome": "Luciano Vietto", "numero": 10, "minuto": 82, "pais": "AR", "pos": "MC" }
       ],
       "nao_utilizados": ["Renan Ribeiro", "Idrissa Doumbia", "Francisco Geraldes", "Rafael Camacho"]
     }

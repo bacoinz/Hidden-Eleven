@@ -28,9 +28,9 @@
         { "nome": "Nani", "numero": 77, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Diego Capel", "numero": 11, "minuto": "90+2", "pais": "ES" },
-        { "nome": "Carlos Mané", "numero": 36, "minuto": 78, "pais": "PT" },
-        { "nome": "Junya Tanaka", "numero": 19, "minuto": 89, "pais": "JP" }
+        { "nome": "Diego Capel", "numero": 11, "minuto": "90+2", "pais": "ES", "pos": "EE" },
+        { "nome": "Carlos Mané", "numero": 36, "minuto": 78, "pais": "PT", "pos": "ED" },
+        { "nome": "Junya Tanaka", "numero": 19, "minuto": 89, "pais": "JP", "pos": "PL" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Naby Sarr", "Oriol Rosell", "André Martins"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Jonas", "numero": 17, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Pizzi", "numero": 21, "minuto": 87, "pais": "PT" },
-        { "nome": "Anderson Talisca", "numero": 30, "minuto": 64, "pais": "BR" },
-        { "nome": "Derley", "numero": 9, "minuto": "90+1", "pais": "BR" }
+        { "nome": "Pizzi", "numero": 21, "minuto": 87, "pais": "PT", "pos": "MC" },
+        { "nome": "Anderson Talisca", "numero": 30, "minuto": 64, "pais": "BR", "pos": "ME" },
+        { "nome": "Derley", "numero": 9, "minuto": "90+1", "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Paulo Lopes", { "nome": "Lisandro López", "aceites": ["lisandro"] }, "Bryan Cristante", "Gonçalo Guedes"]
     }

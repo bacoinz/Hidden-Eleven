@@ -28,9 +28,9 @@
         { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Lino", "numero": 15, "minuto": 79, "pais": "BR" },
-        { "nome": "Tarik Sektioui", "numero": 17, "minuto": 112, "pais": "MA" },
-        { "nome": "Przemysław Kaźmierczak", "numero": 25, "minuto": 104, "pais": "PL" }
+        { "nome": "Lino", "numero": 15, "minuto": 79, "pais": "BR", "pos": "DC" },
+        { "nome": "Tarik Sektioui", "numero": 17, "minuto": 112, "pais": "MA", "pos": "MDC" },
+        { "nome": "Przemysław Kaźmierczak", "numero": 25, "minuto": 104, "pais": "PL", "pos": "MC" }
       ],
       "nao_utilizados": ["Hugo Ventura", "Milan Stepanov", "Mario Bolatti", "Ernesto Farías"]
     },
@@ -54,9 +54,17 @@
         { "nome": "Yannick Djaló", "numero": 20, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Gladstone", "numero": 26, "minuto": 113, "pais": "BR" },
-        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 76, "pais": "PT" },
-        { "nome": "Rodrigo Tiuí", "aceites": ["tiui"], "numero": 22, "minuto": 90, "pais": "BR", "golos": [{ "minuto": 111 }, { "minuto": 117 }] }
+        { "nome": "Gladstone", "numero": 26, "minuto": 113, "pais": "BR", "pos": "DC" },
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 76, "pais": "PT", "pos": "MC" },
+        {
+          "nome": "Rodrigo Tiuí",
+          "aceites": ["tiui"],
+          "numero": 22,
+          "minuto": 90,
+          "pais": "BR",
+          "golos": [{ "minuto": 111 }, { "minuto": 117 }],
+          "pos": "PL"
+        }
       ],
       "nao_utilizados": [
         { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Ferreira"] },

@@ -28,9 +28,9 @@
         { "nome": "Lionel Messi", "aceites": ["leo messi", "leo"], "numero": 10, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Maxwell", "numero": 19, "minuto": 115, "pais": "BR" },
-        { "nome": "Seydou Keita", "numero": 15, "minuto": 107, "pais": "ML" },
-        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": 104, "pais": "NL" }
+        { "nome": "Maxwell", "numero": 19, "minuto": 115, "pais": "BR", "pos": "DD" },
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 107, "pais": "ML", "pos": "MDC" },
+        { "nome": "Ibrahim Afellay", "numero": 20, "minuto": 104, "pais": "NL", "pos": "EE" }
       ],
       "nao_utilizados": ["Víctor Valdés", "Carles Puyol", "Gabriel Milito", { "nome": "Thiago", "aceites": ["thiago", "Thiago Alcântara"] }]
     },
@@ -54,9 +54,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 103 }] }
       ],
       "suplentes": [
-        { "nome": "Ezequiel Garay", "numero": 19, "minuto": 119, "pais": "AR" },
-        { "nome": "Esteban Granero", "numero": 11, "minuto": 104, "pais": "ES" },
-        { "nome": "Emmanuel Adebayor", "numero": 6, "minuto": 69, "pais": "TG" }
+        { "nome": "Ezequiel Garay", "numero": 19, "minuto": 119, "pais": "AR", "pos": "DC" },
+        { "nome": "Esteban Granero", "numero": 11, "minuto": 104, "pais": "ES", "pos": "MC" },
+        { "nome": "Emmanuel Adebayor", "numero": 6, "minuto": 69, "pais": "TG", "pos": "ED" }
       ],
       "nao_utilizados": ["Jerzy Dudek", "Kaká", "Karim Benzema", { "nome": "Gonzalo Higuaín", "aceites": ["pipita"] }]
     }

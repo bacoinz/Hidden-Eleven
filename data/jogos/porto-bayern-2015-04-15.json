@@ -35,9 +35,9 @@
         { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Rúben Neves", "numero": 36, "minuto": 75, "pais": "PT" },
-        { "nome": "Evandro", "numero": 15, "minuto": 84, "pais": "BR" },
-        { "nome": "Hernâni", "numero": 17, "minuto": 80, "pais": "PT" }
+        { "nome": "Rúben Neves", "numero": 36, "minuto": 75, "pais": "PT", "pos": "MC" },
+        { "nome": "Evandro", "numero": 15, "minuto": 84, "pais": "BR", "pos": "ED" },
+        { "nome": "Hernâni", "numero": 17, "minuto": 80, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["Helton", "Diego Reyes", "Juan Quintero", "Vincent Aboubakar"]
     },
@@ -61,8 +61,8 @@
         { "nome": "Thomas Muller", "aceites": ["mueller"], "numero": 25, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Holger Badstuber", "numero": 28, "minuto": 74, "pais": "DE" },
-        { "nome": "Sebastian Rode", "numero": 20, "minuto": 56, "pais": "DE" }
+        { "nome": "Holger Badstuber", "numero": 28, "minuto": 74, "pais": "DE", "pos": "DC" },
+        { "nome": "Sebastian Rode", "numero": 20, "minuto": 56, "pais": "DE", "pos": "MO" }
       ],
       "nao_utilizados": ["Ivan Lucic", "Pepe Reina", "Mitchell Weiser", "Gianluca Gaudino", "Claudio Pizarro"]
     }

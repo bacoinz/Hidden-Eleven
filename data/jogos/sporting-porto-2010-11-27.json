@@ -28,9 +28,9 @@
         { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Yannick Djaló", "numero": 20, "minuto": 65, "pais": "PT" },
-        { "nome": "Simon Vukcevic", "numero": 77, "minuto": 68, "pais": "ME" },
-        { "nome": "Carlos Saleiro", "numero": 9, "minuto": 82, "pais": "PT" }
+        { "nome": "Yannick Djaló", "numero": 20, "minuto": 65, "pais": "PT", "pos": "MC" },
+        { "nome": "Simon Vukcevic", "numero": 77, "minuto": 68, "pais": "ME", "pos": "ME" },
+        { "nome": "Carlos Saleiro", "numero": 9, "minuto": 82, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Marco Torsiglieri", "Nuno André Coelho", "Alberto Zapater"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Jorge Fucile", "numero": 13, "minuto": 86, "pais": "UY" },
-        { "nome": "Nicolás Otamendi", "numero": 30, "minuto": 71, "pais": "AR" },
-        { "nome": "Fredy Guarín", "numero": 6, "minuto": 65, "pais": "CO" }
+        { "nome": "Jorge Fucile", "numero": 13, "minuto": 86, "pais": "UY", "pos": "DD" },
+        { "nome": "Nicolás Otamendi", "numero": 30, "minuto": 71, "pais": "AR", "pos": "DC" },
+        { "nome": "Fredy Guarín", "numero": 6, "minuto": 65, "pais": "CO", "pos": "EE" }
       ],
       "nao_utilizados": ["Beto", { "nome": "James Rodríguez", "aceites": ["james"] }, "Rúben Micael", "Cristián Rodríguez"]
     }

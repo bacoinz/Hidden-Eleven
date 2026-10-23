@@ -28,12 +28,12 @@
         { "nome": "Evanilson", "numero": 30, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 25 }] }
       ],
       "suplentes": [
-        { "nome": "Martim Fernandes", "numero": 52, "minuto": 113, "pais": "PT" },
-        { "nome": "Marko Grujic", "numero": 8, "minuto": 85, "pais": "RS" },
-        { "nome": "Romário Baró", "numero": 28, "minuto": 104, "pais": "PT" },
-        { "nome": "Stephen Eustaquio", "numero": 6, "minuto": 85, "pais": "CA" },
-        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 119, "pais": "PT" },
-        { "nome": "Mehdi Taremi", "numero": 9, "minuto": 46, "pais": "IR", "golos": [{ "minuto": 100, "penalti": true }] }
+        { "nome": "Martim Fernandes", "numero": 52, "minuto": 113, "pais": "PT", "pos": "DD" },
+        { "nome": "Marko Grujic", "numero": 8, "minuto": 85, "pais": "RS", "pos": "MDC" },
+        { "nome": "Romário Baró", "numero": 28, "minuto": 104, "pais": "PT", "pos": "PL" },
+        { "nome": "Stephen Eustaquio", "numero": 6, "minuto": 85, "pais": "CA", "pos": "MDC" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 119, "pais": "PT", "pos": "ED" },
+        { "nome": "Mehdi Taremi", "numero": 9, "minuto": 46, "pais": "IR", "golos": [{ "minuto": 100, "penalti": true }], "pos": "PL" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Fábio Cardoso", "Danny Namaso"]
     },
@@ -57,12 +57,12 @@
         { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 83, "pais": "PT" },
-        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 71, "pais": "CI" },
-        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 35, "pais": "PT" },
-        { "nome": "Daniel Bragança", "numero": 23, "minuto": 71, "pais": "PT" },
-        { "nome": "Koba Koindredi", "numero": 80, "minuto": 91, "pais": "FR" },
-        { "nome": "Paulinho", "numero": 20, "minuto": 103, "pais": "PT" }
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 83, "pais": "PT", "pos": "ME" },
+        { "nome": "Ousmane Diomande", "numero": 26, "minuto": 71, "pais": "CI", "pos": "DC" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 35, "pais": "PT", "pos": "DC" },
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 71, "pais": "PT", "pos": "MD" },
+        { "nome": "Koba Koindredi", "numero": 80, "minuto": 91, "pais": "FR", "pos": "MO" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 103, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Francisco Silva", "Luís Neto", "Marcus Edwards"]
     }

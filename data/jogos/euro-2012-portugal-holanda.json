@@ -36,9 +36,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 64, "pais": "PT" },
-        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 72, "pais": "PT" },
-        { "nome": "Rolando", "numero": 14, "minuto": 87, "pais": "PT" }
+        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 64, "pais": "PT", "pos": "PL" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 72, "pais": "PT", "pos": "MC" },
+        { "nome": "Rolando", "numero": 14, "minuto": 87, "pais": "PT", "pos": "DC" }
       ],
       "nao_utilizados": [
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
@@ -71,7 +71,7 @@
         { "nome": "Wesley Sneijder", "numero": 10, "pais": "NL", "pos": "EE" },
         { "nome": "Klaas-Jan Huntelaar", "numero": 9, "pais": "NL", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Ibrahim Afellay", "numero": 20, "minuto": 67, "pais": "NL" }],
+      "suplentes": [{ "nome": "Ibrahim Afellay", "numero": 20, "minuto": 67, "pais": "NL", "pos": "MC" }],
       "nao_utilizados": [
         "John Heitinga",
         "Wilfred Bouma",

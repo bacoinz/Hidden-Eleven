@@ -28,9 +28,9 @@
         { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Daniel Carriço", "numero": 3, "minuto": 65, "pais": "PT" },
-        { "nome": "André Carrillo", "numero": 18, "minuto": 89, "pais": "PE" },
-        { "nome": "Diego Rubio", "numero": 33, "minuto": 73, "pais": "CL" }
+        { "nome": "Daniel Carriço", "numero": 3, "minuto": 65, "pais": "PT", "pos": "DC" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 89, "pais": "PE", "pos": "EE" },
+        { "nome": "Diego Rubio", "numero": 33, "minuto": 73, "pais": "CL", "pos": "PL" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Evaldo", "Renato Neto", "André Martins"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "pais": "PY", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Yannick Djaló", "numero": 12, "minuto": 45, "pais": "PT" },
-        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 62, "pais": "PT" },
-        { "nome": "Nolito", "numero": 9, "minuto": 73, "pais": "ES" }
+        { "nome": "Yannick Djaló", "numero": 12, "minuto": 45, "pais": "PT", "pos": "PL" },
+        { "nome": "Nélson Oliveira", "numero": 16, "minuto": 62, "pais": "PT", "pos": "PL" },
+        { "nome": "Nolito", "numero": 9, "minuto": 73, "pais": "ES", "pos": "MC" }
       ],
       "nao_utilizados": ["Eduardo", "Jardel", "Joan Capdevila", "Nemanja Matic"]
     }

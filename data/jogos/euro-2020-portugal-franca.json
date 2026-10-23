@@ -36,11 +36,11 @@
         { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "João Palhinha", "numero": 26, "minuto": 46, "pais": "PT" },
-        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 72, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": 72, "pais": "PT" },
-        { "nome": "Diogo Dalot", "numero": 20, "minuto": 79, "pais": "PT" },
-        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 88, "pais": "PT" }
+        { "nome": "João Palhinha", "numero": 26, "minuto": 46, "pais": "PT", "pos": "MC" },
+        { "nome": "Bruno Fernandes", "aceites": ["bruno"], "numero": 11, "minuto": 72, "pais": "PT", "pos": "MC" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 72, "pais": "PT", "pos": "ED" },
+        { "nome": "Diogo Dalot", "numero": 20, "minuto": 79, "pais": "PT", "pos": "DD" },
+        { "nome": "Sérgio Oliveira", "numero": 24, "minuto": 88, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "José Fonte",
@@ -75,10 +75,10 @@
         { "nome": "Karim Benzema", "numero": 19, "pais": "FR", "pos": "PL", "golos": [{ "minuto": "45+2", "penalti": true }, { "minuto": 47 }] }
       ],
       "suplentes": [
-        { "nome": "Lucas Digne", "numero": 18, "minuto": 46, "pais": "FR" },
-        { "nome": "Adrien Rabiot", "numero": 14, "minuto": 52, "pais": "FR" },
-        { "nome": "Kingsley Coman", "numero": 20, "minuto": 66, "pais": "FR" },
-        { "nome": "Moussa Sissoko", "numero": 17, "minuto": 87, "pais": "FR" }
+        { "nome": "Lucas Digne", "numero": 18, "minuto": 46, "pais": "FR", "pos": "DE" },
+        { "nome": "Adrien Rabiot", "numero": 14, "minuto": 52, "pais": "FR", "pos": "MC" },
+        { "nome": "Kingsley Coman", "numero": 20, "minuto": 66, "pais": "FR", "pos": "ED" },
+        { "nome": "Moussa Sissoko", "numero": 17, "minuto": 87, "pais": "FR", "pos": "MO" }
       ],
       "nao_utilizados": [
         "Benjamin Pavard",

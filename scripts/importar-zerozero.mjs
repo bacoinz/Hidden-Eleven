@@ -14,6 +14,7 @@ import { paraCodigoJson } from './paises.mjs';
 import { formatarJogo } from './formato.mjs';
 import { aplicarCuradoria, pessoa, coresDoJogo, deduzirFormacao, SLUGS, EQUIPAS_PT } from './importar-wikipedia.mjs';
 import { problemasDaFormacao, linhasDaFormacao, PROFUNDIDADE } from '../public/js/formacao.js';
+import { atribuirPosicoesSuplentes } from './suplentes.mjs';
 
 const raiz = join(dirname(fileURLToPath(import.meta.url)), '..');
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) HiddenEleven/1.0 (jogo entre amigos)';
@@ -284,8 +285,11 @@ function montarEquipa(onze, banco, treinador, nome, slug, cor) {
     ...(cor ? { cor } : {}),
     formacao: '?',
     treinador: pessoa(treinador ?? { nome: '?' }),
-    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: '?', ...extra(j) })),
-    suplentes: usados.map((j) => pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j), ...extra(j) })),
+    // _saiu, _entrou e _perfil servem só para dar a posição aos suplentes (scripts/suplentes.mjs) e não ficam no ficheiro.
+    onze: onze.map((j) => pessoa(j, { numero: j.numero, pais: pais(j), pos: '?', ...extra(j), _saiu: j.saiu })),
+    suplentes: usados.map((j) =>
+      pessoa(j, { numero: j.numero, minuto: minuto(j.entrou), pais: pais(j), ...extra(j), _entrou: j.entrou, _saiu: j.saiu, _perfil: j.perfil }),
+    ),
     nao_utilizados: banco
       .filter((j) => !j.entrou)
       .map((j) => {
@@ -377,6 +381,8 @@ async function principal() {
     if (existsSync(destino) && !forcar && !mostrar) { console.log(`· ${id}: já existe (usa --forcar para reescrever)`); continue; }
     try {
       const jogo = aplicarCuradoria(await importar(entrada), curadoria[id]);
+      // A dica de cada suplente é a posição habitual dele no zerozero.
+      for (const a of await atribuirPosicoesSuplentes(jogo, (s) => posicaoHabitual(s._perfil))) console.log(`   ⚠ ${id}: ${a}`);
       const semPosicoes = jogo.equipas.filter((e) => e.formacao === '?' || e.onze.some((p) => p.pos === '?'));
       if (semPosicoes.length) {
         // Sem posições não há jogo: mostra os onzes para escrever a curadoria (ou indicar o jogo no FotMob).

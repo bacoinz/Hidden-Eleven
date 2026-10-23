@@ -27,9 +27,9 @@
         { "nome": "Clint Dempsey", "numero": 8, "pais": "US", "pos": "PL", "golos": [{ "minuto": 81 }] }
       ],
       "suplentes": [
-        { "nome": "DeAndre Yedlin", "numero": 2, "minuto": 72, "pais": "US" },
-        { "nome": "Chris Wondolowski", "numero": 18, "minuto": 87, "pais": "US" },
-        { "nome": "Omar Gonzalez", "numero": 3, "minuto": "90+1", "pais": "US" }
+        { "nome": "DeAndre Yedlin", "numero": 2, "minuto": 72, "pais": "US", "pos": "DC" },
+        { "nome": "Chris Wondolowski", "numero": 18, "minuto": 87, "pais": "US", "pos": "PL" },
+        { "nome": "Omar Gonzalez", "numero": 3, "minuto": "90+1", "pais": "US", "pos": "DC" }
       ],
       "nao_utilizados": [
         "John Brooks",
@@ -63,9 +63,9 @@
         { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Eder", "numero": 11, "minuto": 16, "pais": "PT" },
-        { "nome": "William Carvalho", "aceites": ["william"], "numero": 6, "minuto": 46, "pais": "PT" },
-        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 69, "pais": "PT", "golos": [{ "minuto": "90+5" }] }
+        { "nome": "Eder", "numero": 11, "minuto": 16, "pais": "PT", "pos": "PL" },
+        { "nome": "William Carvalho", "aceites": ["william"], "numero": 6, "minuto": 46, "pais": "PT", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 69, "pais": "PT", "golos": [{ "minuto": "90+5" }], "pos": "MC" }
       ],
       "nao_utilizados": [
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },

@@ -28,9 +28,9 @@
         { "nome": "Franco Cervi", "numero": 22, "pais": "AR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Andreas Samaris", "numero": 7, "minuto": 74, "pais": "GR" },
-        { "nome": "Toto Salvio", "numero": 18, "minuto": 66, "pais": "AR" },
-        { "nome": "Haris Seferovic", "numero": 14, "minuto": 87, "pais": "CH" }
+        { "nome": "Andreas Samaris", "numero": 7, "minuto": 74, "pais": "GR", "pos": "EE" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 66, "pais": "AR", "pos": "ED" },
+        { "nome": "Haris Seferovic", "numero": 14, "minuto": 87, "pais": "CH", "pos": "MC" }
       ],
       "nao_utilizados": ["Mile Svilar", "Luisão", "Eliseu", "João Carvalho"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Óliver Torres", "numero": 10, "minuto": 74, "pais": "ES" },
-        { "nome": "Jesús Corona", "numero": 17, "minuto": 80, "pais": "MX" },
-        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 83, "pais": "CM" }
+        { "nome": "Óliver Torres", "numero": 10, "minuto": 74, "pais": "ES", "pos": "MC" },
+        { "nome": "Jesús Corona", "numero": 17, "minuto": 80, "pais": "MX", "pos": "MD" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 83, "pais": "CM", "pos": "PL" }
       ],
       "nao_utilizados": ["Vaná Alves", { "nome": "Maxi Pereira", "aceites": ["maxi"] }, "Diego Reyes", "Hernâni"]
     }

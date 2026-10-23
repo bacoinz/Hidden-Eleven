@@ -28,9 +28,9 @@
         { "nome": "Ricky van Wolfswinkel", "numero": 9, "pais": "NL", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Fabrice Fokobo", "numero": 71, "minuto": 79, "pais": "CM" },
-        { "nome": "André Carrillo", "numero": 18, "minuto": 74, "pais": "PE" },
-        { "nome": "Bruma", "numero": 51, "minuto": 60, "pais": "PT" }
+        { "nome": "Fabrice Fokobo", "numero": 71, "minuto": 79, "pais": "CM", "pos": "PL" },
+        { "nome": "André Carrillo", "numero": 18, "minuto": 74, "pais": "PE", "pos": "ED" },
+        { "nome": "Bruma", "numero": 51, "minuto": 60, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": ["Marcelo Boeck", { "nome": "Cédric Soares", "aceites": ["cedric"] }, "Zezinho", "Gaël Etock"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 10, "minuto": 55, "pais": "CO" },
-        { "nome": "Liedson", "numero": 19, "minuto": 81, "pais": "PT" },
-        { "nome": "Christian Atsu", "numero": 27, "minuto": 66, "pais": "GH" }
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 10, "minuto": 55, "pais": "CO", "pos": "ED" },
+        { "nome": "Liedson", "numero": 19, "minuto": 81, "pais": "PT", "pos": "MC" },
+        { "nome": "Christian Atsu", "numero": 27, "minuto": 66, "pais": "GH", "pos": "EE" }
       ],
       "nao_utilizados": ["Fabiano Freitas", "Abdoulaye Ba", "André Castro", "Sebá"]
     }

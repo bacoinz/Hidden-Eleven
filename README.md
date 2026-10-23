@@ -8,13 +8,14 @@ O frontend é HTML/CSS/JS simples, servido pelo próprio Worker.
 
 ## Como se joga
 
-- **Criar sala** (multijogador, rondas de 3:00) ou **Jogar sozinho** (rondas de 5:00). Cada acerto acrescenta 5 s.
+- **Criar sala** (multijogador, rondas de 3:00) ou **Jogar sozinho** (rondas de 5:00). Cada acerto acrescenta 1 s.
 - O anfitrião escolhe o conteúdo — **Finais** (Liga dos Campeões, Mundial e Euro desde 2000), **Clássicos**
   (dérbis, rivais e jogos míticos), **Equipa Mítica** (só a equipa escolhida em campo) ou **Aleatório** — e o número de rondas.
 - Ficha do jogo durante 7 s; depois toda a gente escreve nomes na mesma caixa. O servidor decide a posição:
   onze, suplentes que entraram (com o minuto visível) ou treinadores.
-- Pistas no onze por descobrir quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial (2:24, 1:57 e 1:30
-  em multijogador): número, bandeira, inicial do apelido. Se os acertos forem dando tempo, as pistas esperam.
+- Pistas no onze e nos suplentes por descobrir quando o relógio desce a 80 %, 65 % e 50 % do tempo inicial (2:24, 1:57 e 1:30
+  em multijogador): número, bandeira, inicial do apelido; o treinador só recebe a inicial. A posição dos suplentes
+  (a de quem substituíram) vê-se desde o início. Cada acerto dá +1 s e atrasa as pistas outro tanto.
   Nos jogos entre seleções não há a pista da bandeira.
 - Pontos: 5 sem pistas, depois 4, 3 e 2; suplentes e treinadores 3; quem fecha a última posição +2.
 - Nome errado bloqueia a caixa 1 s. "Já é de …!" e "Ficou no banco!" não penalizam.
@@ -60,9 +61,11 @@ Cada jogo é um ficheiro em `data/jogos/<id>.json` (formato descrito em `docs/su
 2. `npm run importar -- <id>` escreve o rascunho (posições, números, nacionalidades, minutos, golos, bancos,
    treinadores). As páginas ficam em `.cache/` para se poder reimportar sem as voltar a pedir (`--fresco` ignora a cache).
 3. Correções manuais vão para `scripts/curadoria.json`, para não se perderem quando se reimporta:
-   `nomes` (renomear, o nome antigo passa a alcunha aceite), `pos`, `onze` (onze completo, nome → sigla, pela ordem
-   no relvado), `formacao`, `aceites`, `golos`, `curto`, `ordem`, `cor`, `remover` (convocados que não estavam no banco)
-   e `estadio`. `npm run importar -- <id> --forcar` volta a aplicar tudo.
+   `nomes` (renomear, o nome antigo passa a alcunha aceite), `pos` (onze ou suplentes), `onze` (onze completo, nome → sigla, pela ordem
+   no relvado), `formacao`, `aceites`, `golos`, `curto`, `ordem`, `cor`, `remover` (convocados que não estavam no banco),
+   `numeros` e `estadio`. `npm run importar -- <id> --forcar` volta a aplicar tudo.
+   A posição de cada suplente é a de quem ele substituiu (`scripts/suplentes.mjs`, pelo minuto da troca).
+   Se for um defesa a entrar para o lugar de um médio ou avançado (ou o contrário), fica a posição da fonte.
 4. `npm run resumo -- <filtro>` mostra cada jogo numa linha por equipa, para rever.
 5. `npm run validar` tem de dizer "Tudo válido."
 

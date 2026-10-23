@@ -34,9 +34,9 @@
         { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 64, "pais": "PT" },
-        { "nome": "Fábio Rochemback", "numero": 26, "minuto": 79, "pais": "BR" },
-        { "nome": "Derlei", "numero": 11, "minuto": 64, "pais": "BR", "golos": [{ "minuto": 66 }, { "minuto": 81 }] }
+        { "nome": "Bruno Pereirinha", "numero": 25, "minuto": 64, "pais": "PT", "pos": "DD" },
+        { "nome": "Fábio Rochemback", "numero": 26, "minuto": 79, "pais": "BR", "pos": "ED" },
+        { "nome": "Derlei", "numero": 11, "minuto": 64, "pais": "BR", "golos": [{ "minuto": 66 }, { "minuto": 81 }], "pos": "PL" }
       ],
       "nao_utilizados": ["Rui Patrício", "Daniel Carriço", "Marco Caneira", { "nome": "Rodrigo Tiuí", "aceites": ["tiui"] }]
     },
@@ -60,9 +60,9 @@
         { "nome": "Ernesto Farías", "numero": 19, "pais": "AR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ivo Pinto", "numero": 34, "minuto": 88, "pais": "PT" },
-        { "nome": "Diogo Viana", "numero": 50, "minuto": 72, "pais": "PT" },
-        { "nome": "Josué", "numero": 37, "minuto": 71, "pais": "PT" }
+        { "nome": "Ivo Pinto", "numero": 34, "minuto": 88, "pais": "PT", "pos": "DD" },
+        { "nome": "Diogo Viana", "numero": 50, "minuto": 72, "pais": "PT", "pos": "DD" },
+        { "nome": "Josué", "numero": 37, "minuto": 71, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Hugo Ventura", "Ricardo Dias", "Sérgio Oliveira", "Rabiola"]
     }

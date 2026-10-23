@@ -29,9 +29,9 @@
         { "nome": "Wayne Rooney", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Aaron Lennon", "numero": 19, "minuto": 52, "pais": "GB-ENG" },
-        { "nome": "Peter Crouch", "numero": 21, "minuto": 65, "pais": "GB-ENG" },
-        { "nome": "Jamie Carragher", "numero": 15, "minuto": 119, "pais": "GB-ENG" }
+        { "nome": "Aaron Lennon", "numero": 19, "minuto": 52, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Peter Crouch", "numero": 21, "minuto": 65, "pais": "GB-ENG", "pos": "ME" },
+        { "nome": "Jamie Carragher", "numero": 15, "minuto": 119, "pais": "GB-ENG", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Michael Owen",
@@ -65,9 +65,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 63, "pais": "PT" },
-        { "nome": "Hugo Viana", "numero": 10, "minuto": 74, "pais": "PT" },
-        { "nome": "Hélder Postiga", "numero": 23, "minuto": 86, "pais": "PT" }
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 63, "pais": "PT", "pos": "PL" },
+        { "nome": "Hugo Viana", "numero": 10, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 86, "pais": "PT", "pos": "MO" }
       ],
       "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Costinha", "Quim", "Luís Boa Morte", "Deco", "Nuno Gomes", "Paulo Santos"]
     }

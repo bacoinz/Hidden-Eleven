@@ -28,9 +28,9 @@
         { "nome": "Javier Saviola", "numero": 30, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Pablo Aimar", "numero": 10, "minuto": 66, "pais": "AR" },
-        { "nome": "Felipe Menezes", "numero": 16, "minuto": 78, "pais": "BR" },
-        { "nome": "Franco Jara", "numero": 11, "minuto": 66, "pais": "AR" }
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 66, "pais": "AR", "pos": "MC" },
+        { "nome": "Felipe Menezes", "numero": 16, "minuto": 78, "pais": "BR", "pos": "MC" },
+        { "nome": "Franco Jara", "numero": 11, "minuto": 66, "pais": "AR", "pos": "ME" }
       ],
       "nao_utilizados": ["José Moreira", "Roderick Miranda", "Weldon", "Alan Kardec"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Hélder Postiga", "numero": 23, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 21 }] }
       ],
       "suplentes": [
-        { "nome": "Abel Ferreira", "numero": 78, "minuto": 85, "pais": "PT" },
-        { "nome": "Anderson Polga", "numero": 4, "minuto": 14, "pais": "BR" },
-        { "nome": "Jaime Valdés", "numero": 15, "minuto": 63, "pais": "CL" }
+        { "nome": "Abel Ferreira", "numero": 78, "minuto": 85, "pais": "PT", "pos": "DD" },
+        { "nome": "Anderson Polga", "numero": 4, "minuto": 14, "pais": "BR", "pos": "DC" },
+        { "nome": "Jaime Valdés", "numero": 15, "minuto": 63, "pais": "CL", "pos": "MO" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Cristiano", "Maniche", "Carlos Saleiro"]
     }

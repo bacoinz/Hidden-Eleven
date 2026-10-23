@@ -35,11 +35,11 @@
         { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Jan-Niklas Beste", "numero": 37, "minuto": 73, "pais": "DE" },
-        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 84, "pais": "PT" },
-        { "nome": "Benjamín Rollheiser", "numero": 32, "minuto": 87, "pais": "AR" },
-        { "nome": "Arthur Cabral", "numero": 9, "minuto": 84, "pais": "BR" },
-        { "nome": "Zeki Amdouni", "numero": 7, "minuto": 87, "pais": "CH" }
+        { "nome": "Jan-Niklas Beste", "numero": 37, "minuto": 73, "pais": "DE", "pos": "DE" },
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 85, "minuto": 84, "pais": "PT", "pos": "MO" },
+        { "nome": "Benjamín Rollheiser", "numero": 32, "minuto": 87, "pais": "AR", "pos": "ED" },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 84, "pais": "BR", "pos": "PL" },
+        { "nome": "Zeki Amdouni", "numero": 7, "minuto": 87, "pais": "CH", "pos": "MDC" }
       ],
       "nao_utilizados": ["Samuel Soares", "Issa Kaboré", "António Silva", "Andreas Schjelderup"]
     },
@@ -63,10 +63,10 @@
         { "nome": "Samu Aghehowa", "numero": 9, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 43 }] }
       ],
       "suplentes": [
-        { "nome": "João Mário", "numero": 23, "minuto": 62, "pais": "PT" },
-        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 86, "pais": "PT" },
-        { "nome": "Danny Namaso", "numero": 19, "minuto": 72, "pais": "CM" },
-        { "nome": "Pepê", "numero": 11, "minuto": 62, "pais": "BR" }
+        { "nome": "João Mário", "numero": 23, "minuto": 62, "pais": "PT", "pos": "DD" },
+        { "nome": "Gonçalo Borges", "numero": 70, "minuto": 86, "pais": "PT", "pos": "ED" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 72, "pais": "CM", "pos": "PL" },
+        { "nome": "Pepê", "numero": 11, "minuto": 62, "pais": "BR", "pos": "MDC" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Zé Pedro", "André Franco", "Vasco Sousa", "Deniz Gül"]
     }

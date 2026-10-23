@@ -28,9 +28,9 @@
         { "nome": "Jonas", "numero": 17, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Anderson Talisca", "numero": 30, "minuto": 69, "pais": "BR" },
-        { "nome": "Toto Salvio", "numero": 18, "minuto": 80, "pais": "AR" },
-        { "nome": "Mehdi Carcela", "numero": 39, "minuto": 69, "pais": "MA" }
+        { "nome": "Anderson Talisca", "numero": 30, "minuto": 69, "pais": "BR", "pos": "MD" },
+        { "nome": "Toto Salvio", "numero": 18, "minuto": 80, "pais": "AR", "pos": "ED" },
+        { "nome": "Mehdi Carcela", "numero": 39, "minuto": 69, "pais": "MA", "pos": "MC" }
       ],
       "nao_utilizados": ["Ederson Moraes", "Sílvio", "Nélson Semedo", "Raúl Jiménez"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Rúben Neves", "numero": 6, "minuto": 74, "pais": "PT" },
-        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 7, "minuto": 86, "pais": "PT" },
-        { "nome": "Moussa Marega", "numero": 11, "minuto": 59, "pais": "ML" }
+        { "nome": "Rúben Neves", "numero": 6, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 7, "minuto": 86, "pais": "PT", "pos": "EE" },
+        { "nome": "Moussa Marega", "numero": 11, "minuto": 59, "pais": "ML", "pos": "ED" }
       ],
       "nao_utilizados": ["Helton", "José Ángel", "Sérgio Oliveira", "Suk Hyun-jun"]
     }

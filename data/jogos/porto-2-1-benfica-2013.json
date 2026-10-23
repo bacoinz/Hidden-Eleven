@@ -29,9 +29,9 @@
         { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Steven Defour", "numero": 35, "minuto": 73, "pais": "BE" },
-        { "nome": "Kelvin", "numero": 28, "minuto": 79, "pais": "BR", "golos": [{ "minuto": "90+2" }] },
-        { "nome": "Liedson", "numero": 19, "minuto": 85, "pais": "PT" }
+        { "nome": "Steven Defour", "numero": 35, "minuto": 73, "pais": "BE", "pos": "MDC" },
+        { "nome": "Kelvin", "numero": 28, "minuto": 79, "pais": "BR", "golos": [{ "minuto": "90+2" }], "pos": "MC" },
+        { "nome": "Liedson", "numero": 19, "minuto": 85, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Fabiano Freitas", "Abdoulaye Ba", "André Castro", "Sebá"]
     },
@@ -55,9 +55,9 @@
         { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 19 }] }
       ],
       "suplentes": [
-        { "nome": "Roderick Miranda", "numero": 3, "minuto": 66, "pais": "PT" },
-        { "nome": "Pablo Aimar", "numero": 10, "minuto": 85, "pais": "AR" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 73, "pais": "PY" }
+        { "nome": "Roderick Miranda", "numero": 3, "minuto": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "Pablo Aimar", "numero": 10, "minuto": 85, "pais": "AR", "pos": "EE" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 73, "pais": "PY", "pos": "PL" }
       ],
       "nao_utilizados": ["Paulo Lopes", "Lorenzo Melgarejo", "Jonathan Urreta", "Rodrigo"]
     }

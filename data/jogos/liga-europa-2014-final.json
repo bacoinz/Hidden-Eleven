@@ -27,9 +27,9 @@
         { "nome": "Carlos Bacca", "numero": 9, "pais": "CO", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Diogo Figueiras", "numero": 5, "minuto": 110, "pais": "PT" },
-        { "nome": "Marko Marin", "numero": 7, "minuto": 78, "pais": "DE" },
-        { "nome": "Kevin Gameiro", "numero": 18, "minuto": 104, "pais": "FR" }
+        { "nome": "Diogo Figueiras", "numero": 5, "minuto": 110, "pais": "PT", "pos": "DC" },
+        { "nome": "Marko Marin", "numero": 7, "minuto": 78, "pais": "DE", "pos": "ED" },
+        { "nome": "Kevin Gameiro", "numero": 18, "minuto": 104, "pais": "FR", "pos": "ED" }
       ],
       "nao_utilizados": ["Javi Varas", "Fernando Navarro", "Vicente Iborra", "Piotr Trochowski"]
     },
@@ -53,9 +53,9 @@
         { "nome": "Rodrigo", "numero": 19, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "André Almeida", "numero": 34, "minuto": 25, "pais": "PT" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 99, "pais": "PY" },
-        { "nome": "Ivan Cavaleiro", "numero": 90, "minuto": 119, "pais": "PT" }
+        { "nome": "André Almeida", "numero": 34, "minuto": 25, "pais": "PT", "pos": "ED" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 99, "pais": "PY", "pos": "PL" },
+        { "nome": "Ivan Cavaleiro", "numero": 90, "minuto": 119, "pais": "PT", "pos": "ME" }
       ],
       "nao_utilizados": [{ "nome": "Artur", "aceites": ["Artur Moraes"] }, "Steven Vitória", "Jardel", "Filip Đuričić"]
     }

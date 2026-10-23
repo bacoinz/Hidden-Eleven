@@ -29,11 +29,11 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 68 }] }
       ],
       "suplentes": [
-        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 62, "pais": "PT" },
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 62, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 62, "pais": "PT" },
-        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 62, "pais": "PT", "golos": [{ "minuto": "90+4" }] },
-        { "nome": "Rúben Neves", "numero": 21, "minuto": 81, "pais": "PT" }
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 62, "pais": "PT", "pos": "MC" },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 62, "pais": "PT", "pos": "DD" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 62, "pais": "PT", "pos": "ED" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": 62, "pais": "PT", "golos": [{ "minuto": "90+4" }], "pos": "MO" },
+        { "nome": "Rúben Neves", "numero": 21, "minuto": 81, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Tomás Araújo",
@@ -68,10 +68,10 @@
         { "nome": "Ante Budimir", "numero": 11, "pais": "HR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Igor Matanović", "numero": 20, "minuto": 46, "pais": "HR" },
-        { "nome": "Mario Pašalić", "numero": 15, "minuto": 68, "pais": "HR" },
-        { "nome": "Joško Gvardiol", "numero": 4, "minuto": "90+2", "pais": "HR" },
-        { "nome": "Andrej Kramarić", "numero": 9, "minuto": "90+6", "pais": "HR" }
+        { "nome": "Igor Matanović", "numero": 20, "minuto": 46, "pais": "HR", "pos": "PL" },
+        { "nome": "Mario Pašalić", "numero": 15, "minuto": 68, "pais": "HR", "pos": "EE" },
+        { "nome": "Joško Gvardiol", "numero": 4, "minuto": "90+2", "pais": "HR", "pos": "DC" },
+        { "nome": "Andrej Kramarić", "numero": 9, "minuto": "90+6", "pais": "HR", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Duje Ćaleta-Car",

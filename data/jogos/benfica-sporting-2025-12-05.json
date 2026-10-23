@@ -28,9 +28,9 @@
         { "nome": "Vangelis Pavlidis", "numero": 14, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Manu Silva", "numero": 16, "minuto": 88, "pais": "PT" },
-        { "nome": "Gianluca Prestianni", "numero": 25, "minuto": 81, "pais": "AR" },
-        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 86, "pais": "HR" }
+        { "nome": "Manu Silva", "numero": 16, "minuto": 88, "pais": "PT", "pos": "MDC" },
+        { "nome": "Gianluca Prestianni", "numero": 25, "minuto": 81, "pais": "AR", "pos": "EE" },
+        { "nome": "Franjo Ivanovic", "numero": 9, "minuto": 86, "pais": "HR", "pos": "PL" }
       ],
       "nao_utilizados": ["Samuel Soares", "Tomás Araújo", "Gonçalo Oliveira", "Rodrigo Rêgo", "João Rego", "Andreas Schjelderup"]
     },
@@ -54,10 +54,10 @@
         { "nome": "Luis Suárez", "numero": 97, "pais": "CO", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Simões", "numero": 52, "minuto": 60, "pais": "PT" },
-        { "nome": "Fotis Ioannidis", "numero": 89, "minuto": 85, "pais": "GR" },
-        { "nome": "Alisson Santos", "numero": 27, "minuto": 85, "pais": "BR" },
-        { "nome": "Geovany Quenda", "numero": 7, "minuto": 60, "pais": "PT" }
+        { "nome": "João Simões", "numero": 52, "minuto": 60, "pais": "PT", "pos": "MDC" },
+        { "nome": "Fotis Ioannidis", "numero": 89, "minuto": 85, "pais": "GR", "pos": "PL" },
+        { "nome": "Alisson Santos", "numero": 27, "minuto": 85, "pais": "BR", "pos": "MO" },
+        { "nome": "Geovany Quenda", "numero": 7, "minuto": 60, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["João Virgínia", "Georgios Vagiannidis", "Eduardo Quaresma", "Matheus Reis", "Giorgi Kochorashvili"]
     }

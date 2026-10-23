@@ -28,9 +28,9 @@
         { "nome": "Yacine Brahimi", "numero": 8, "pais": "DZ", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Juan Quintero", "numero": 10, "minuto": 58, "pais": "CO" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 58, "pais": "PT" },
-        { "nome": "Vincent Aboubakar", "numero": 99, "minuto": 77, "pais": "CM" }
+        { "nome": "Juan Quintero", "numero": 10, "minuto": 58, "pais": "CO", "pos": "ED" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 58, "pais": "PT", "pos": "MC" },
+        { "nome": "Vincent Aboubakar", "numero": 99, "minuto": 77, "pais": "CM", "pos": "PL" }
       ],
       "nao_utilizados": ["Andrés Fernández", "Diego Reyes", "Maicon", "Evandro"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": 36 }, { "minuto": 55 }] }
       ],
       "suplentes": [
-        { "nome": "César", "numero": 37, "minuto": 76, "pais": "BR" },
-        { "nome": "Pizzi", "numero": 21, "minuto": "90+4", "pais": "PT" },
-        { "nome": "Ola John", "numero": 15, "minuto": 80, "pais": "NL" }
+        { "nome": "César", "numero": 37, "minuto": 76, "pais": "BR", "pos": "DC" },
+        { "nome": "Pizzi", "numero": 21, "minuto": "90+4", "pais": "PT", "pos": "ED" },
+        { "nome": "Ola John", "numero": 15, "minuto": 80, "pais": "NL", "pos": "MO" }
       ],
       "nao_utilizados": ["Artur Moraes", "Loris Benito", "Jonas", "Derley"]
     }

@@ -29,12 +29,12 @@
         { "nome": "Ciro Immobile", "numero": 17, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bryan Cristante", "numero": 16, "minuto": 54, "pais": "IT" },
-        { "nome": "Domenico Berardi", "numero": 11, "minuto": 54, "pais": "IT" },
-        { "nome": "Federico Bernardeschi", "numero": 20, "minuto": 86, "pais": "IT" },
-        { "nome": "Andrea Belotti", "numero": 9, "minuto": 91, "pais": "IT" },
-        { "nome": "Manuel Locatelli", "numero": 5, "minuto": 96, "pais": "IT" },
-        { "nome": "Alessandro Florenzi", "numero": 24, "minuto": 118, "pais": "IT" }
+        { "nome": "Bryan Cristante", "numero": 16, "minuto": 54, "pais": "IT", "pos": "MC" },
+        { "nome": "Domenico Berardi", "numero": 11, "minuto": 54, "pais": "IT", "pos": "PL" },
+        { "nome": "Federico Bernardeschi", "numero": 20, "minuto": 86, "pais": "IT", "pos": "ED" },
+        { "nome": "Andrea Belotti", "numero": 9, "minuto": 91, "pais": "IT", "pos": "EE" },
+        { "nome": "Manuel Locatelli", "numero": 5, "minuto": 96, "pais": "IT", "pos": "MC" },
+        { "nome": "Alessandro Florenzi", "numero": 24, "minuto": 118, "pais": "IT", "pos": "DE" }
       ],
       "nao_utilizados": [
         "Salvatore Sirigu",
@@ -68,11 +68,11 @@
         { "nome": "Harry Kane", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bukayo Saka", "numero": 25, "minuto": 71, "pais": "GB-ENG" },
-        { "nome": "Jordan Henderson", "numero": 8, "minuto": 74, "pais": "GB-ENG" },
-        { "nome": "Jack Grealish", "numero": 7, "minuto": 99, "pais": "GB-ENG" },
-        { "nome": "Marcus Rashford", "numero": 11, "minuto": 120, "pais": "GB-ENG" },
-        { "nome": "Jadon Sancho", "numero": 17, "minuto": 120, "pais": "GB-ENG" }
+        { "nome": "Bukayo Saka", "numero": 25, "minuto": 71, "pais": "GB-ENG", "pos": "MD" },
+        { "nome": "Jordan Henderson", "numero": 8, "minuto": 74, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Jack Grealish", "numero": 7, "minuto": 99, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Marcus Rashford", "numero": 11, "minuto": 120, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Jadon Sancho", "numero": 17, "minuto": 120, "pais": "GB-ENG", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Aaron Ramsdale",

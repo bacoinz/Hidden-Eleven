@@ -46,14 +46,14 @@ describe('tempo da ronda', () => {
     expect(motor.limiaresPistas(solo)).toEqual([240_000, 195_000, 150_000]); // 4:00, 3:15, 2:30
   });
 
-  it('cada acerto atrasa as pistas (o relógio sobe 5 s)', () => {
+  it('cada acerto atrasa as pistas (o relógio sobe 1 s)', () => {
     const { prep, r } = rondaNova();
     motor.avancar(r, INICIO);
     motor.palpite(r, prep, 'a', 'Deco', INICIO + 1000);
     motor.palpite(r, prep, 'a', 'Maniche', INICIO + 2000);
-    expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000 + 10_000);
-    expect(motor.avancar(r, INICIO + 40_000)).toEqual([]);
-    expect(motor.avancar(r, INICIO + 46_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
+    expect(motor.proximoPrazo(r)).toBe(INICIO + 36_000 + 2_000);
+    expect(motor.avancar(r, INICIO + 37_000)).toEqual([]);
+    expect(motor.avancar(r, INICIO + 38_000)).toEqual([{ tipo: 'pista', nivel: 1, pista: 'numero' }]);
   });
 
   it('uma pista revelada não volta a esconder-se quando o relógio sobe', () => {
@@ -95,11 +95,11 @@ describe('palpites', () => {
     expect(motor.palpite(outra.r, outra.prep, 'a', 'Deco', T0 + 1000)).toEqual({ r: 'fora' });
   });
 
-  it('acerto sem pistas vale 5 e acrescenta 5 s', () => {
+  it('acerto sem pistas vale 5 e acrescenta 1 s', () => {
     const fimAntes = r.fim;
     const res = motor.palpite(r, prep, 'rui', 'Deco', INICIO + 1000);
     expect(res).toMatchObject({ r: 'certo', pontos: 5, bonus: 0, terminou: false, nome: 'Deco' });
-    expect(r.fim).toBe(fimAntes + 5_000);
+    expect(r.fim).toBe(fimAntes + 1_000);
   });
 
   it('"Já é de…" quando alguém já descobriu, sem mexer no tempo', () => {
@@ -180,7 +180,7 @@ describe('estado público', () => {
     expect(json).not.toContain('Jankauskas');
   });
 
-  it('mostra as pistas reveladas só no onze escondido', () => {
+  it('mostra as pistas reveladas no onze e nos suplentes escondidos; ao treinador só a inicial', () => {
     const { prep, r } = rondaNova();
     motor.avancar(r, INICIO);
     const antes = motor.estadoPublico(r, prep);
@@ -190,8 +190,10 @@ describe('estado público', () => {
     motor.avancar(r, INICIO + 90_000);
     const depois = motor.estadoPublico(r, prep);
     expect(depois.equipas[1].onze[0]).toEqual({ id: '1o0', tipo: 'onze', pos: 'GR', numero: 99, pais: 'PT', inicial: 'B' });
-    expect(depois.equipas[1].suplentes[0]).toEqual({ id: '1s0', tipo: 'suplente', minuto: 85 });
-    expect(depois.equipas[1].treinador).toEqual({ id: '1t', tipo: 'treinador' });
+    expect(antes.equipas[1].suplentes[0]).toEqual({ id: '1s0', tipo: 'suplente', pos: 'DC', minuto: 85 });
+    expect(antes.equipas[1].treinador).toEqual({ id: '1t', tipo: 'treinador' });
+    expect(depois.equipas[1].suplentes[0]).toEqual({ id: '1s0', tipo: 'suplente', pos: 'DC', minuto: 85, numero: 3, pais: 'PT', inicial: 'E' });
+    expect(depois.equipas[1].treinador).toEqual({ id: '1t', tipo: 'treinador', inicial: 'M' });
   });
 
   it('os golos só aparecem depois de a posição ser descoberta', () => {

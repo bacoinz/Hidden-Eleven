@@ -28,11 +28,11 @@
         { "nome": "Darwin Núñez", "numero": 9, "pais": "UY", "pos": "EE", "golos": [{ "minuto": 3 }, { "minuto": 79, "penalti": true }] }
       ],
       "suplentes": [
-        { "nome": "Gilberto", "numero": 2, "minuto": "45+1", "pais": "BR" },
-        { "nome": "André Almeida", "numero": 34, "minuto": 75, "pais": "PT" },
-        { "nome": "Pizzi", "numero": 21, "minuto": 86, "pais": "PT" },
-        { "nome": "Adel Taarabt", "numero": 49, "minuto": 76, "pais": "MA" },
-        { "nome": "Gonçalo Ramos", "numero": 88, "minuto": 86, "pais": "PT" }
+        { "nome": "Gilberto", "numero": 2, "minuto": "45+1", "pais": "BR", "pos": "MD" },
+        { "nome": "André Almeida", "numero": 34, "minuto": 75, "pais": "PT", "pos": "ME" },
+        { "nome": "Pizzi", "numero": 21, "minuto": 86, "pais": "PT", "pos": "EE" },
+        { "nome": "Adel Taarabt", "numero": 49, "minuto": 76, "pais": "MA", "pos": "PL" },
+        { "nome": "Gonçalo Ramos", "numero": 88, "minuto": 86, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": ["Helton Leite", "Morato", "Soualiho Meité", "Gedson Fernandes", "Nemanja Radonjic", "Rodrigo Pinho", "Everton Cebolinha"]
     },
@@ -56,11 +56,11 @@
         { "nome": "Luuk de Jong", "numero": 17, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Óscar Mingueza", "numero": 22, "minuto": 89, "pais": "ES" },
-        { "nome": "Philippe Coutinho", "numero": 14, "minuto": 68, "pais": "BR" },
-        { "nome": "Nico González", "numero": 28, "minuto": 68, "pais": "ES" },
-        { "nome": "Pablo Gavi", "numero": 30, "minuto": 33, "pais": "ES" },
-        { "nome": "Ansu Fati", "numero": 10, "minuto": 68, "pais": "ES" }
+        { "nome": "Óscar Mingueza", "numero": 22, "minuto": 89, "pais": "ES", "pos": "MD" },
+        { "nome": "Philippe Coutinho", "numero": 14, "minuto": 68, "pais": "BR", "pos": "MC" },
+        { "nome": "Nico González", "numero": 28, "minuto": 68, "pais": "ES", "pos": "MC" },
+        { "nome": "Pablo Gavi", "numero": 30, "minuto": 33, "pais": "ES", "pos": "MC" },
+        { "nome": "Ansu Fati", "numero": 10, "minuto": 68, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": ["Neto", "Iñaki Peña", "Clément Lenglet", "Samuel Umtiti", "Riqui Puig", "Yusuf Demir"]
     }

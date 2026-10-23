@@ -27,7 +27,10 @@
         { "nome": "Rodrigo Moreno", "numero": 19, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 13 }] },
         { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Jardel", "numero": 33, "minuto": 84, "pais": "BR" }, { "nome": "Rúben Amorim", "numero": 6, "minuto": 86, "pais": "PT" }],
+      "suplentes": [
+        { "nome": "Jardel", "numero": 33, "minuto": 84, "pais": "BR", "pos": "DC" },
+        { "nome": "Rúben Amorim", "numero": 6, "minuto": 86, "pais": "PT", "pos": "PL" }
+      ],
       "nao_utilizados": ["Artur Moraes", "Sílvio", "Ljubomir Fejsa", "Filip Djuricic", "Miralem Sulejmani"]
     },
     {
@@ -50,8 +53,8 @@
         { "nome": "Licá", "numero": 19, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Josué", "numero": 8, "minuto": 70, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 53, "pais": "PT" }
+        { "nome": "Josué", "numero": 8, "minuto": 70, "pais": "PT", "pos": "MC" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "minuto": 53, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["Fabiano", "Maicon", "Steven Defour", "Nabil Ghilas", "Kelvin"]
     }

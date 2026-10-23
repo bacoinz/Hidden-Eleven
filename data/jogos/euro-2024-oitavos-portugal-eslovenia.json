@@ -29,10 +29,10 @@
         { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 65, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 76, "pais": "PT" },
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 117, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": 117, "pais": "PT" }
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 65, "pais": "PT", "pos": "MC" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 76, "pais": "PT", "pos": "EE" },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 117, "pais": "PT", "pos": "DD" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 117, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Rui Patrício",
@@ -66,10 +66,10 @@
         { "nome": "Benjamin Šeško", "numero": 11, "pais": "SI", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Jon Gorenc Stanković", "numero": 5, "minuto": 74, "pais": "SI" },
-        { "nome": "Žan Celar", "numero": 19, "minuto": 74, "pais": "SI" },
-        { "nome": "Benjamin Verbič", "numero": 7, "minuto": 87, "pais": "SI" },
-        { "nome": "Josip Iličić", "numero": 26, "minuto": 106, "pais": "SI" }
+        { "nome": "Jon Gorenc Stanković", "numero": 5, "minuto": 74, "pais": "SI", "pos": "ME" },
+        { "nome": "Žan Celar", "numero": 19, "minuto": 74, "pais": "SI", "pos": "PL" },
+        { "nome": "Benjamin Verbič", "numero": 7, "minuto": 87, "pais": "SI", "pos": "MD" },
+        { "nome": "Josip Iličić", "numero": 26, "minuto": 106, "pais": "SI", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Miha Blažič",

@@ -43,9 +43,9 @@
         { "nome": "Hugo Almeida", "numero": 18, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 56 }] }
       ],
       "suplentes": [
-        { "nome": "Miguel Veloso", "numero": 14, "minuto": 70, "pais": "PT" },
-        { "nome": "Duda", "numero": 5, "minuto": 74, "pais": "PT" },
-        { "nome": "Liédson", "numero": 9, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 81 }] }
+        { "nome": "Miguel Veloso", "numero": 14, "minuto": 70, "pais": "PT", "pos": "MC" },
+        { "nome": "Duda", "numero": 5, "minuto": 74, "pais": "PT", "pos": "DC" },
+        { "nome": "Liédson", "numero": 9, "minuto": 77, "pais": "PT", "golos": [{ "minuto": 81 }], "pos": "PL" }
       ],
       "nao_utilizados": ["Paulo Ferreira", "Rolando", "Danny", "Beto", "Pepe", "Ruben Amorim", "Deco", "Ricardo Costa", "Daniel Fernandes"]
     },
@@ -67,9 +67,9 @@
         { "nome": "Jong Tae-se", "numero": 9, "pais": "KP", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kim Kum-il", "numero": 6, "minuto": 58, "pais": "KP" },
-        { "nome": "Kim Yong-jun", "numero": 15, "minuto": 58, "pais": "KP" },
-        { "nome": "Nam Song-chol", "numero": 16, "minuto": 75, "pais": "KP" }
+        { "nome": "Kim Kum-il", "numero": 6, "minuto": 58, "pais": "KP", "pos": "MC" },
+        { "nome": "Kim Yong-jun", "numero": 15, "minuto": 58, "pais": "KP", "pos": "MD" },
+        { "nome": "Nam Song-chol", "numero": 16, "minuto": 75, "pais": "KP", "pos": "DD" }
       ],
       "nao_utilizados": ["An Chol-hyok", "Choe Kum-chol", "Kim Myong-gil", "Ri Chol-myong", "Kim Myong-won", "Ri Kwang-hyok", "Kim Kyong-il", "Pak Sung-hyok"]
     }

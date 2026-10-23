@@ -28,8 +28,8 @@
         { "nome": "Lima", "numero": 11, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Rúben Amorim", "numero": 6, "minuto": 78, "pais": "PT" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY" }
+        { "nome": "Rúben Amorim", "numero": 6, "minuto": 78, "pais": "PT", "pos": "PL" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY", "pos": "MC" }
       ],
       "nao_utilizados": ["Artur Moraes", "Sílvio", "Jardel", "André Gomes", "Miralem Sulejmani"]
     },
@@ -53,9 +53,9 @@
         { "nome": "Islam Slimani", "numero": 9, "pais": "DZ", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Gerson Magrão", "numero": 10, "minuto": 73, "pais": "BR" },
-        { "nome": "Diego Capel", "numero": 11, "minuto": 62, "pais": "ES" },
-        { "nome": "Carlos Mané", "numero": 36, "minuto": 81, "pais": "PT" }
+        { "nome": "Gerson Magrão", "numero": 10, "minuto": 73, "pais": "BR", "pos": "MO" },
+        { "nome": "Diego Capel", "numero": 11, "minuto": 62, "pais": "ES", "pos": "MC" },
+        { "nome": "Carlos Mané", "numero": 36, "minuto": 81, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Rúben Semedo", "André Carrillo", "Wilson Eduardo"]
     }

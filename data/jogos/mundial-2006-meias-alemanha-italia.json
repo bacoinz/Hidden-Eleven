@@ -29,9 +29,9 @@
         { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "minuto": 73, "pais": "DE" },
-        { "nome": "David Odonkor", "numero": 22, "minuto": 83, "pais": "DE" },
-        { "nome": "Oliver Neuville", "numero": 10, "minuto": 111, "pais": "DE" }
+        { "nome": "Bastian Schweinsteiger", "aceites": ["schweini"], "numero": 7, "minuto": 73, "pais": "DE", "pos": "ME" },
+        { "nome": "David Odonkor", "numero": 22, "minuto": 83, "pais": "DE", "pos": "MD" },
+        { "nome": "Oliver Neuville", "numero": 10, "minuto": 111, "pais": "DE", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Marcell Jansen",
@@ -65,9 +65,17 @@
         { "nome": "Luca Toni", "numero": 9, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 74, "pais": "IT" },
-        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 91, "pais": "IT" },
-        { "nome": "Alessandro Del Piero", "aceites": ["del piero"], "numero": 7, "minuto": 104, "pais": "IT", "golos": [{ "minuto": "120+1" }] }
+        { "nome": "Alberto Gilardino", "numero": 11, "minuto": 74, "pais": "IT", "pos": "PL" },
+        { "nome": "Vincenzo Iaquinta", "numero": 15, "minuto": 91, "pais": "IT", "pos": "MD" },
+        {
+          "nome": "Alessandro Del Piero",
+          "aceites": ["del piero"],
+          "numero": 7,
+          "minuto": 104,
+          "pais": "IT",
+          "golos": [{ "minuto": "120+1" }],
+          "pos": "ME"
+        }
       ],
       "nao_utilizados": [
         "Cristian Zaccardo",

@@ -28,9 +28,9 @@
         { "nome": "Liedson", "numero": 31, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 76 }] }
       ],
       "suplentes": [
-        { "nome": "Gladstone", "numero": 26, "minuto": 86, "pais": "BR" },
-        { "nome": "Marat Izmailov", "numero": 7, "minuto": 35, "pais": "RU" },
-        { "nome": "Derlei", "numero": 11, "minuto": 61, "pais": "BR", "golos": [{ "minuto": 79 }] }
+        { "nome": "Gladstone", "numero": 26, "minuto": 86, "pais": "BR", "pos": "DC" },
+        { "nome": "Marat Izmailov", "numero": 7, "minuto": 35, "pais": "RU", "pos": "MDC" },
+        { "nome": "Derlei", "numero": 11, "minuto": 61, "pais": "BR", "golos": [{ "minuto": 79 }], "pos": "EE" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Pedro Silva", "Bruno Pereirinha", { "nome": "Rodrigo Tiuí", "aceites": ["tiui"] }]
     },
@@ -54,8 +54,8 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 31 }] }
       ],
       "suplentes": [
-        { "nome": "Laszlo Sepsi", "numero": 33, "minuto": 66, "pais": "RO" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY" }
+        { "nome": "Laszlo Sepsi", "numero": 33, "minuto": 66, "pais": "RO", "pos": "DE" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 85, "pais": "PY", "pos": "MDC" }
       ],
       "nao_utilizados": ["Hans-Jörg Butt", "Luís Filipe", "Edcarlos", "Gilles Binya", "Pedro Mantorras"]
     }

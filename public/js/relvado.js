@@ -22,9 +22,10 @@ function caminhoCamisola(S) {
   return `M${pontos.map(([x, y]) => f(x, y)).join(' L')} Q${f(50, 22)} ${f(33, 6)} Z`;
 }
 
-export function camisolaMini(cor = '#ffffff22', contorno = '#ffffff99') {
+export function camisolaMini(cor = '#ffffff22', contorno = '#ffffff99', numero = null) {
   return svg('svg', { width: 22, height: 22, viewBox: '-12 -12 24 24', 'aria-hidden': 'true' },
-    svg('path', { d: caminhoCamisola(22), fill: cor, stroke: contorno, 'stroke-width': 1.5, 'stroke-linejoin': 'round' }));
+    svg('path', { d: caminhoCamisola(22), fill: cor, stroke: contorno, 'stroke-width': 1.5, 'stroke-linejoin': 'round' }),
+    numero != null ? svg('text', { class: 'numero-mini', x: 0, y: 4, 'font-size': String(numero).length > 1 ? 9 : 10 }, String(numero)) : null);
 }
 
 /** Bola de futebol centrada em (0,0); vermelha nos autogolos. */
@@ -326,7 +327,7 @@ export class Relvado {
     if (!chip) return;
     const dono = lugar.por ? jogadores.get(lugar.por) : null;
     const estado = lugar.por ? 'descoberta' : lugar.revelado ? 'revelada' : 'escondida';
-    const assinatura = JSON.stringify([estado, lugar.curto, dono?.cor, dono?.nome, lugar.golos]);
+    const assinatura = JSON.stringify([estado, lugar.curto, dono?.cor, dono?.nome, lugar.golos, lugar.pos, lugar.numero, lugar.pais, lugar.inicial]);
     const anterior = this.assinaturas.get(lugar.id);
     if (anterior === assinatura) return;
     this.assinaturas.set(lugar.id, assinatura);
@@ -336,12 +337,19 @@ export class Relvado {
     chip.style.setProperty('--cor', dono?.cor ?? '');
     const corEquipa = this.coresEquipa[this.indiceEquipa.get(lugar.id)];
     const corCamisola = estado === 'descoberta' ? corEquipa : estado === 'revelada' ? '#4b5563' : '#ffffff1f';
+    // Por descobrir: a posição desde o início e, com as pistas, o número, a bandeira e a inicial (ao treinador, só a inicial).
     const partes = treinador
       ? [el('span', { class: 'minuto', text: 'Treinador' })]
-      : [camisolaMini(corCamisola), el('span', { class: 'minuto', text: `⬆ ${lugar.minuto}'` })];
+      : [
+          camisolaMini(corCamisola, '#ffffff99', lugar.numero),
+          el('span', { class: 'minuto', text: `⬆ ${lugar.minuto}'` }),
+          lugar.pos ? el('span', { class: 'pos-banco', text: lugar.pos }) : null,
+        ];
+    const escondida = estado === 'escondida';
     const filhos = [
       ...partes,
-      el('span', { class: 'quem', text: estado === 'escondida' ? '?' : lugar.curto ?? lugar.nome }),
+      escondida && lugar.pais ? el('img', { class: 'bandeira-banco', src: bandeira(lugar.pais), alt: '', width: 18, height: 12 }) : null,
+      el('span', { class: 'quem', text: escondida ? (lugar.inicial ? `${lugar.inicial}.` : '?') : lugar.curto ?? lugar.nome }),
       ...bolasHtml(lugar.golos),
       estado === 'descoberta' && dono ? el('span', { class: 'dono', style: { color: dono.cor }, text: dono.nome }) : null,
     ];

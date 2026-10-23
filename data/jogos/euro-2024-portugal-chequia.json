@@ -29,11 +29,11 @@
         { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 63, "pais": "PT" },
-        { "nome": "Gonçalo Inácio", "numero": 14, "minuto": 63, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 90, "pais": "PT", "golos": [{ "minuto": "90+2" }] },
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 90, "pais": "PT" },
-        { "nome": "Pedro Neto", "numero": 25, "minuto": 90, "pais": "PT" }
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 21, "minuto": 63, "pais": "PT", "pos": "EE" },
+        { "nome": "Gonçalo Inácio", "numero": 14, "minuto": 63, "pais": "PT", "pos": "DC" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 90, "pais": "PT", "golos": [{ "minuto": "90+2" }], "pos": "MC" },
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 90, "pais": "PT", "pos": "DC" },
+        { "nome": "Pedro Neto", "numero": 25, "minuto": 90, "pais": "PT", "pos": "MD" }
       ],
       "nao_utilizados": [
         "Rui Patrício",
@@ -66,11 +66,11 @@
         { "nome": "Patrik Schick", "numero": 10, "pais": "CZ", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ondřej Lingr", "numero": 20, "minuto": 60, "pais": "CZ" },
-        { "nome": "Mojmír Chytil", "numero": 13, "minuto": 60, "pais": "CZ" },
-        { "nome": "Antonín Barák", "numero": 7, "minuto": 79, "pais": "CZ" },
-        { "nome": "Petr Ševčík", "numero": 8, "minuto": 79, "pais": "CZ" },
-        { "nome": "Tomáš Chorý", "numero": 19, "minuto": "90+3", "pais": "CZ" }
+        { "nome": "Ondřej Lingr", "numero": 20, "minuto": 60, "pais": "CZ", "pos": "PL" },
+        { "nome": "Mojmír Chytil", "numero": 13, "minuto": 60, "pais": "CZ", "pos": "PL" },
+        { "nome": "Antonín Barák", "numero": 7, "minuto": 79, "pais": "CZ", "pos": "MO" },
+        { "nome": "Petr Ševčík", "numero": 8, "minuto": 79, "pais": "CZ", "pos": "MC" },
+        { "nome": "Tomáš Chorý", "numero": 19, "minuto": "90+3", "pais": "CZ", "pos": "PL" }
       ],
       "nao_utilizados": [
         "David Zima",

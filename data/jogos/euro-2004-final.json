@@ -29,9 +29,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 43, "pais": "PT" },
-        { "nome": "Rui Costa", "numero": 10, "minuto": 60, "pais": "PT" },
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 74, "pais": "PT" }
+        { "nome": "Paulo Ferreira", "numero": 2, "minuto": 43, "pais": "PT", "pos": "DD" },
+        { "nome": "Rui Costa", "numero": 10, "minuto": 60, "pais": "PT", "pos": "MC" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 74, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Rui Jorge",
@@ -65,8 +65,8 @@
         { "nome": "Zisis Vryzas", "numero": 15, "pais": "GR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Stylianos Venetidis", "numero": 3, "minuto": 76, "pais": "GR" },
-        { "nome": "Dimitrios Papadopoulos", "numero": 22, "minuto": 81, "pais": "GR" }
+        { "nome": "Stylianos Venetidis", "numero": 3, "minuto": 76, "pais": "GR", "pos": "DC" },
+        { "nome": "Dimitrios Papadopoulos", "numero": 22, "minuto": 81, "pais": "GR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Nikos Dabizas",

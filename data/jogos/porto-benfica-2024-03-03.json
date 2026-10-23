@@ -28,11 +28,11 @@
         { "nome": "Evanilson", "numero": 30, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Jorge Sánchez", "numero": 15, "minuto": 83, "pais": "MX" },
-        { "nome": "Iván Jaime", "numero": 17, "minuto": 82, "pais": "ES" },
-        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 82, "pais": "CA" },
-        { "nome": "Danny Namaso", "numero": 19, "minuto": 82, "pais": "GB-ENG", "golos": [{ "minuto": 90 }] },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 87, "pais": "ES" }
+        { "nome": "Jorge Sánchez", "numero": 15, "minuto": 83, "pais": "MX", "pos": "DD" },
+        { "nome": "Iván Jaime", "numero": 17, "minuto": 82, "pais": "ES", "pos": "EE" },
+        { "nome": "Stephen Eustáquio", "numero": 6, "minuto": 82, "pais": "CA", "pos": "MDC" },
+        { "nome": "Danny Namaso", "numero": 19, "minuto": 82, "pais": "GB-ENG", "golos": [{ "minuto": 90 }], "pos": "PL" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 87, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": ["Cláudio Ramos", "Fábio Cardoso", "Marko Grujić", "Gonçalo Borges"]
     },
@@ -56,11 +56,11 @@
         { "nome": "Casper Tengstedt", "numero": 19, "pais": "DK", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Tomás Araújo", "numero": 44, "minuto": 63, "pais": "PT" },
-        { "nome": "Álvaro Carreras", "numero": 3, "minuto": 46, "pais": "ES" },
-        { "nome": "Florentino Luís", "numero": 61, "minuto": 46, "pais": "PT" },
-        { "nome": "David Neres", "numero": 7, "minuto": 57, "pais": "BR" },
-        { "nome": "Arthur Cabral", "numero": 9, "minuto": 56, "pais": "BR" }
+        { "nome": "Tomás Araújo", "numero": 44, "minuto": 63, "pais": "PT", "pos": "DC" },
+        { "nome": "Álvaro Carreras", "numero": 3, "minuto": 46, "pais": "ES", "pos": "DE" },
+        { "nome": "Florentino Luís", "numero": 61, "minuto": 46, "pais": "PT", "pos": "MDC" },
+        { "nome": "David Neres", "numero": 7, "minuto": 57, "pais": "BR", "pos": "ED" },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 56, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Samuel Soares", "Tiago Gouveia", "Benjamín Rollheiser", "Marcos Leonardo"]
     }

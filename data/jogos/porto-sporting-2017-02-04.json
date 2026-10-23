@@ -28,9 +28,9 @@
         { "nome": "André Silva", "numero": 10, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Carlos Teixeira", "numero": 18, "minuto": 83, "pais": "PT" },
-        { "nome": "André André", "numero": 20, "minuto": 64, "pais": "PT" },
-        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 19, "minuto": 70, "pais": "PT" }
+        { "nome": "João Carlos Teixeira", "numero": 18, "minuto": 83, "pais": "PT", "pos": "MD" },
+        { "nome": "André André", "numero": 20, "minuto": 64, "pais": "PT", "pos": "PL" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 19, "minuto": 70, "pais": "PT", "pos": "ME" }
       ],
       "nao_utilizados": ["José Sá", "Willy Boly", "Héctor Herrera", "Rui Pedro"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 57, "pais": "PT" },
-        { "nome": "Alan Ruiz", "numero": 99, "minuto": 46, "pais": "AR", "golos": [{ "minuto": 60 }] },
-        { "nome": "Daniel Podence", "numero": 56, "minuto": 81, "pais": "PT" }
+        { "nome": "Ricardo Esgaio", "numero": 47, "minuto": 57, "pais": "PT", "pos": "DE" },
+        { "nome": "Alan Ruiz", "numero": 99, "minuto": 46, "pais": "AR", "golos": [{ "minuto": 60 }], "pos": "PL" },
+        { "nome": "Daniel Podence", "numero": 56, "minuto": 81, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": ["Beto", "Paulo Oliveira", "Francisco Geraldes", "Luc Castaignos"]
     }

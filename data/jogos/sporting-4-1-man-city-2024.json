@@ -35,11 +35,11 @@
         { "nome": "Pedro Gonçalves", "aceites": ["pote"], "numero": 8, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 74, "pais": "NL" },
-        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 85, "pais": "PT" },
-        { "nome": "Daniel Bragança", "numero": 23, "minuto": 74, "pais": "PT" },
-        { "nome": "Geny Catamo", "numero": 21, "minuto": 74, "pais": "MZ" },
-        { "nome": "Conrad Harder", "numero": 19, "minuto": 88, "pais": "DK" }
+        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 74, "pais": "NL", "pos": "DC" },
+        { "nome": "Eduardo Quaresma", "numero": 72, "minuto": 85, "pais": "PT", "pos": "DC" },
+        { "nome": "Daniel Bragança", "numero": 23, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Geny Catamo", "numero": 21, "minuto": 74, "pais": "MZ", "pos": "ME" },
+        { "nome": "Conrad Harder", "numero": 19, "minuto": 88, "pais": "DK", "pos": "ED" }
       ],
       "nao_utilizados": ["Vladan Kovačević", "Diogo Pinto", "Iván Fresneda", "Ricardo Esgaio", "João Simões", "Marcus Edwards"]
     },
@@ -63,9 +63,9 @@
         { "nome": "Erling Haaland", "numero": 9, "pais": "NO", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 17, "minuto": 84, "pais": "BE" },
-        { "nome": "İlkay Gündoğan", "numero": 19, "minuto": 77, "pais": "DE" },
-        { "nome": "Jérémy Doku", "numero": 11, "minuto": 77, "pais": "BE" }
+        { "nome": "Kevin De Bruyne", "aceites": ["kdb"], "numero": 17, "minuto": 84, "pais": "BE", "pos": "MDC" },
+        { "nome": "İlkay Gündoğan", "numero": 19, "minuto": 77, "pais": "DE", "pos": "MD" },
+        { "nome": "Jérémy Doku", "numero": 11, "minuto": 77, "pais": "BE", "pos": "MC" }
       ],
       "nao_utilizados": ["Stefan Ortega", "Scott Carson", "Kyle Walker", "Nathan Aké", "Josh Wilson-Esbrand", "Jacob Wright", "Nico O'Reilly", "James McAtee"]
     }

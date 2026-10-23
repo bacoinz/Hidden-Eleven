@@ -27,9 +27,9 @@
         { "nome": "Henrik Larsson", "numero": 7, "pais": "SE", "pos": "PL", "golos": [{ "minuto": 47 }, { "minuto": 57 }] }
       ],
       "suplentes": [
-        { "nome": "Jackie McNamara", "numero": 4, "minuto": 76, "pais": "GB-SCT" },
-        { "nome": "Ulrik Laursen", "numero": 16, "minuto": 64, "pais": "DK" },
-        { "nome": "Shaun Maloney", "numero": 29, "minuto": 105, "pais": "GB-SCT" }
+        { "nome": "Jackie McNamara", "numero": 4, "minuto": 76, "pais": "GB-SCT", "pos": "DC" },
+        { "nome": "Ulrik Laursen", "numero": 16, "minuto": 64, "pais": "DK", "pos": "DC" },
+        { "nome": "Shaun Maloney", "numero": 29, "minuto": 105, "pais": "GB-SCT", "pos": "MC" }
       ],
       "nao_utilizados": ["Magnus Hedman", "Mohammed Sylla", "Jamie Smith", "David Fernández"]
     },
@@ -53,9 +53,9 @@
         { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL", "golos": [{ "minuto": "45+1" }, { "minuto": 115 }] }
       ],
       "suplentes": [
-        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 71, "pais": "PT" },
-        { "nome": "Ricardo Costa", "numero": 5, "minuto": 9, "pais": "PT" },
-        { "nome": "Marco Ferreira", "numero": 78, "minuto": 98, "pais": "PT" }
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 71, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Costa", "numero": 5, "minuto": 9, "pais": "PT", "pos": "DC" },
+        { "nome": "Marco Ferreira", "numero": 78, "minuto": 98, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [
         { "nome": "Nuno", "aceites": ["nuno", "espirito santo", "Nuno Espírito Santo"] },

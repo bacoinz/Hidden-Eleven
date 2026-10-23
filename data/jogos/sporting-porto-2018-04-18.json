@@ -28,9 +28,9 @@
         { "nome": "Bas Dost", "numero": 28, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Stefan Ristovski", "numero": 13, "minuto": 72, "pais": "MK" },
-        { "nome": "Fredy Montero", "numero": 40, "minuto": 76, "pais": "CO" },
-        { "nome": "Seydou Doumbia", "numero": 88, "minuto": 106, "pais": "CI" }
+        { "nome": "Stefan Ristovski", "numero": 13, "minuto": 72, "pais": "MK", "pos": "DD" },
+        { "nome": "Fredy Montero", "numero": 40, "minuto": 76, "pais": "CO", "pos": "PL" },
+        { "nome": "Seydou Doumbia", "numero": 88, "minuto": 106, "pais": "CI", "pos": "PL" }
       ],
       "nao_utilizados": ["Romain Salin", "Radosav Petrovic", "Josip Misic", "João Palhinha"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Diego Reyes", "numero": 23, "minuto": 83, "pais": "MX" },
-        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 76, "pais": "PT" },
-        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 66, "pais": "CM" }
+        { "nome": "Diego Reyes", "numero": 23, "minuto": 83, "pais": "MX", "pos": "DC" },
+        { "nome": "Sérgio Oliveira", "numero": 27, "minuto": 76, "pais": "PT", "pos": "MO" },
+        { "nome": "Vincent Aboubakar", "numero": 9, "minuto": 66, "pais": "CM", "pos": "PL" }
       ],
       "nao_utilizados": ["Vaná Alves", "Diogo Dalot", "Jesús Corona", "Moussa Marega"]
     }

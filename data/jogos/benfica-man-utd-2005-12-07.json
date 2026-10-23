@@ -28,9 +28,9 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "João Pereira", "numero": 27, "minuto": 73, "pais": "PT" },
-        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 90, "pais": "PT" },
-        { "nome": "Mantorras", "numero": 9, "minuto": 80, "pais": "AO" }
+        { "nome": "João Pereira", "numero": 27, "minuto": 73, "pais": "PT", "pos": "DD" },
+        { "nome": "Ricardo Rocha", "numero": 33, "minuto": 90, "pais": "PT", "pos": "DC" },
+        { "nome": "Mantorras", "numero": 9, "minuto": 80, "pais": "AO", "pos": "ED" }
       ],
       "nao_utilizados": ["Rui Nereu", "Manuel dos Santos", "Hélio Roque", "Bruno Aguiar"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kieran Richardson", "numero": 23, "minuto": 86, "pais": "GB-ENG" },
-        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 67, "pais": "KR" },
-        { "nome": "Louis Saha", "numero": 9, "minuto": 61, "pais": "FR" }
+        { "nome": "Kieran Richardson", "numero": 23, "minuto": 86, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 67, "pais": "KR", "pos": "PL" },
+        { "nome": "Louis Saha", "numero": 9, "minuto": 61, "pais": "FR", "pos": "ME" }
       ],
       "nao_utilizados": ["Tim Howard", "Phil Bardsley", "Wes Brown", "Darren Fletcher"]
     }

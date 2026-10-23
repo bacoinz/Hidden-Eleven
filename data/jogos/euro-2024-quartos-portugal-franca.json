@@ -29,11 +29,11 @@
         { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 74, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 74, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": "90+2", "pais": "PT" },
-        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "minuto": 106, "pais": "PT" },
-        { "nome": "Matheus Nunes", "numero": 16, "minuto": 119, "pais": "PT" }
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 74, "pais": "PT", "pos": "DD" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": "90+2", "pais": "PT", "pos": "MC" },
+        { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "minuto": 106, "pais": "PT", "pos": "EE" },
+        { "nome": "Matheus Nunes", "numero": 16, "minuto": 119, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Rui Patrício",
@@ -68,10 +68,10 @@
         { "nome": "Kylian Mbappé", "numero": 10, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ousmane Dembélé", "numero": 11, "minuto": 67, "pais": "FR" },
-        { "nome": "Marcus Thuram", "numero": 15, "minuto": 86, "pais": "FR" },
-        { "nome": "Youssouf Fofana", "numero": 19, "minuto": 91, "pais": "FR" },
-        { "nome": "Bradley Barcola", "numero": 25, "minuto": 106, "pais": "FR" }
+        { "nome": "Ousmane Dembélé", "numero": 11, "minuto": 67, "pais": "FR", "pos": "MO" },
+        { "nome": "Marcus Thuram", "numero": 15, "minuto": 86, "pais": "FR", "pos": "PL" },
+        { "nome": "Youssouf Fofana", "numero": 19, "minuto": 91, "pais": "FR", "pos": "MC" },
+        { "nome": "Bradley Barcola", "numero": 25, "minuto": 106, "pais": "FR", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Brice Samba",

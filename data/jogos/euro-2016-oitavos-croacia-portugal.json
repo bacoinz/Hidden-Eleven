@@ -29,9 +29,9 @@
         { "nome": "Mario Mandžukić", "numero": 17, "pais": "HR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nikola Kalinić", "numero": 16, "minuto": 88, "pais": "HR" },
-        { "nome": "Marko Pjaca", "numero": 20, "minuto": 110, "pais": "HR" },
-        { "nome": "Andrej Kramarić", "numero": 9, "minuto": 120, "pais": "HR" }
+        { "nome": "Nikola Kalinić", "numero": 16, "minuto": 88, "pais": "HR", "pos": "PL" },
+        { "nome": "Marko Pjaca", "numero": 20, "minuto": 110, "pais": "HR", "pos": "MO" },
+        { "nome": "Andrej Kramarić", "numero": 9, "minuto": 120, "pais": "HR", "pos": "PL" }
       ],
       "nao_utilizados": ["Ivan Vargić", "Šime Vrsaljko", "Tin Jedvaj", "Mateo Kovačić", "Lovre Kalinić", "Gordon Schildenfeld", "Marko Rog", "Ante Ćorić", "Duje Čop"]
     },
@@ -55,9 +55,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 50, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 87, "pais": "PT", "golos": [{ "minuto": 117 }] },
-        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 108, "pais": "PT" }
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 50, "pais": "PT", "pos": "ME" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 87, "pais": "PT", "golos": [{ "minuto": 117 }], "pos": "MD" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 108, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Bruno Alves",

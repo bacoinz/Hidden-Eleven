@@ -27,7 +27,10 @@
         { "nome": "Franck Ribéry", "numero": 7, "pais": "FR", "pos": "EE" },
         { "nome": "Mario Gómez", "numero": 33, "pais": "DE", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Daniel Van Buyten", "numero": 5, "minuto": 87, "pais": "BE" }, { "nome": "Ivica Olić", "numero": 11, "minuto": 97, "pais": "HR" }],
+      "suplentes": [
+        { "nome": "Daniel Van Buyten", "numero": 5, "minuto": 87, "pais": "BE", "pos": "DC" },
+        { "nome": "Ivica Olić", "numero": 11, "minuto": 97, "pais": "HR", "pos": "EE" }
+      ],
       "nao_utilizados": ["Hans-Jörg Butt", "Rafinha", "Takashi Usami", "Danijel Pranjić", "Nils Petersen"]
     },
     {
@@ -50,8 +53,8 @@
         { "nome": "Didier Drogba", "numero": 11, "pais": "CI", "pos": "PL", "golos": [{ "minuto": 88 }] }
       ],
       "suplentes": [
-        { "nome": "Florent Malouda", "numero": 15, "minuto": 73, "pais": "FR" },
-        { "nome": "Fernando Torres", "numero": 9, "minuto": 84, "pais": "ES" }
+        { "nome": "Florent Malouda", "numero": 15, "minuto": 73, "pais": "FR", "pos": "EE" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 84, "pais": "ES", "pos": "ED" }
       ],
       "nao_utilizados": ["Ross Turnbull", "Paulo Ferreira", "Michael Essien", "Oriol Romeu", "Daniel Sturridge"]
     }

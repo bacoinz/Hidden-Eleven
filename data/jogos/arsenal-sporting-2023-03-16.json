@@ -28,12 +28,12 @@
         { "nome": "Gabriel Martinelli", "aceites": ["martinelli"], "numero": 11, "pais": "BR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ben White", "numero": 4, "minuto": 9, "pais": "GB-ENG" },
-        { "nome": "Rob Holding", "numero": 16, "minuto": 21, "pais": "GB-ENG" },
-        { "nome": "Thomas Partey", "numero": 5, "minuto": 65, "pais": "GH" },
-        { "nome": "Martin Odegaard", "numero": 8, "minuto": 100, "pais": "NO" },
-        { "nome": "Bukayo Saka", "numero": 7, "minuto": 66, "pais": "GB-ENG" },
-        { "nome": "Leandro Trossard", "numero": 19, "minuto": 46, "pais": "BE" }
+        { "nome": "Ben White", "numero": 4, "minuto": 9, "pais": "GB-ENG", "pos": "DD" },
+        { "nome": "Rob Holding", "numero": 16, "minuto": 21, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Thomas Partey", "numero": 5, "minuto": 65, "pais": "GH", "pos": "MC" },
+        { "nome": "Martin Odegaard", "numero": 8, "minuto": 100, "pais": "NO", "pos": "MC" },
+        { "nome": "Bukayo Saka", "numero": 7, "minuto": 66, "pais": "GB-ENG", "pos": "ED" },
+        { "nome": "Leandro Trossard", "numero": 19, "minuto": 46, "pais": "BE", "pos": "PL" }
       ],
       "nao_utilizados": ["Matt Turner", "James Hillson", "Jakub Kiwior", "Kieran Tierney", "Emile Smith Rowe"]
     },
@@ -57,11 +57,11 @@
         { "nome": "Francisco Trincão", "numero": 17, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Nuno Santos", "numero": 11, "minuto": 93, "pais": "PT" },
-        { "nome": "Mateo Tanlongo", "numero": 32, "minuto": 119, "pais": "AR" },
-        { "nome": "Dário Essugo", "numero": 84, "minuto": 93, "pais": "PT" },
-        { "nome": "Youssef Chermiti", "numero": 79, "minuto": 89, "pais": "PT" },
-        { "nome": "Arthur Gomes", "numero": 33, "minuto": 105, "pais": "BR" }
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 93, "pais": "PT", "pos": "ME" },
+        { "nome": "Mateo Tanlongo", "numero": 32, "minuto": 119, "pais": "AR", "pos": "ED" },
+        { "nome": "Dário Essugo", "numero": 84, "minuto": 93, "pais": "PT", "pos": "MC" },
+        { "nome": "Youssef Chermiti", "numero": 79, "minuto": 89, "pais": "PT", "pos": "PL" },
+        { "nome": "Arthur Gomes", "numero": 33, "minuto": 105, "pais": "BR", "pos": "EE" }
       ],
       "nao_utilizados": ["Franco Israel", "Luís Neto", "Sotiris Alexandropoulos", "Mateus Fernandes", "Rochinha", "Fatawu Issahaku", "Jovane Cabral"]
     }

@@ -29,9 +29,9 @@
         { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Rubén Baraja", "numero": 8, "minuto": 65, "pais": "ES" },
-        { "nome": "Albert Luque", "numero": 11, "minuto": 71, "pais": "ES" },
-        { "nome": "Fernando Morientes", "numero": 10, "minuto": 79, "pais": "ES" }
+        { "nome": "Rubén Baraja", "numero": 8, "minuto": 65, "pais": "ES", "pos": "MC" },
+        { "nome": "Albert Luque", "numero": 11, "minuto": 71, "pais": "ES", "pos": "ED" },
+        { "nome": "Fernando Morientes", "numero": 10, "minuto": 79, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Santiago Cañizares",
@@ -65,9 +65,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 57 }] },
-        { "nome": "Petit", "numero": 8, "minuto": 77, "pais": "PT" },
-        { "nome": "Fernando Couto", "numero": 5, "minuto": 84, "pais": "PT" }
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 46, "pais": "PT", "golos": [{ "minuto": 57 }], "pos": "PL" },
+        { "nome": "Petit", "numero": 8, "minuto": 77, "pais": "PT", "pos": "ED" },
+        { "nome": "Fernando Couto", "numero": 5, "minuto": 84, "pais": "PT", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Paulo Ferreira",

@@ -29,9 +29,9 @@
         { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 15, "minuto": 75, "pais": "PT" },
-        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 81, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": "90+3", "pais": "PT" }
+        { "nome": "Rafa Silva", "aceites": ["rafa"], "numero": 15, "minuto": 75, "pais": "PT", "pos": "PL" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 81, "pais": "PT", "pos": "MC" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": "90+3", "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "João Cancelo",
@@ -65,9 +65,9 @@
         { "nome": "Ryan Babel", "numero": 9, "pais": "NL", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Quincy Promes", "numero": 11, "minuto": 46, "pais": "NL" },
-        { "nome": "Donny van de Beek", "numero": 20, "minuto": 60, "pais": "NL" },
-        { "nome": "Luuk de Jong", "numero": 19, "minuto": 81, "pais": "NL" }
+        { "nome": "Quincy Promes", "numero": 11, "minuto": 46, "pais": "NL", "pos": "EE" },
+        { "nome": "Donny van de Beek", "numero": 20, "minuto": 60, "pais": "NL", "pos": "ED" },
+        { "nome": "Luuk de Jong", "numero": 19, "minuto": 81, "pais": "NL", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Hans Hateboer",

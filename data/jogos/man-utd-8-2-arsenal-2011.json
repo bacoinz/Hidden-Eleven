@@ -34,9 +34,9 @@
         { "nome": "Danny Welbeck", "numero": 19, "pais": "GB-ENG", "pos": "PL", "golos": [{ "minuto": 22 }] }
       ],
       "suplentes": [
-        { "nome": "Ryan Giggs", "numero": 11, "minuto": 68, "pais": "GB-WLS" },
-        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 68, "pais": "KR", "golos": [{ "minuto": 70 }] },
-        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 36, "pais": "MX" }
+        { "nome": "Ryan Giggs", "numero": 11, "minuto": 68, "pais": "GB-WLS", "pos": "MD" },
+        { "nome": "Park Ji-sung", "aceites": ["park"], "numero": 13, "minuto": 68, "pais": "KR", "golos": [{ "minuto": 70 }], "pos": "MC" },
+        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 36, "pais": "MX", "pos": "PL" }
       ],
       "nao_utilizados": ["Anders Lindegaard", "Rio Ferdinand", "Fábio", "Dimitar Berbatov"]
     },
@@ -60,9 +60,9 @@
         { "nome": "Andrey Arshavin", "numero": 23, "pais": "RU", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Henri Lansbury", "numero": 46, "minuto": 84, "pais": "GB-ENG" },
-        { "nome": "Alex Oxlade-Chamberlain", "numero": 15, "minuto": 62, "pais": "GB-ENG" },
-        { "nome": "Marouane Chamakh", "numero": 29, "minuto": 84, "pais": "MA" }
+        { "nome": "Henri Lansbury", "numero": 46, "minuto": 84, "pais": "GB-ENG", "pos": "PL" },
+        { "nome": "Alex Oxlade-Chamberlain", "numero": 15, "minuto": 62, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Marouane Chamakh", "numero": 29, "minuto": 84, "pais": "MA", "pos": "ED" }
       ],
       "nao_utilizados": ["Łukasz Fabiański", "Ignasi Miquel", "Oğuzhan Özyakup", "Gilles Sunu"]
     }

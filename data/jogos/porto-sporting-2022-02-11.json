@@ -28,11 +28,11 @@
         { "nome": "Mehdi Taremi", "numero": 9, "pais": "IR", "pos": "PL", "golos": [{ "minuto": 78 }] }
       ],
       "suplentes": [
-        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS" },
-        { "nome": "Francisco Conceição", "numero": 10, "minuto": 74, "pais": "PT" },
-        { "nome": "Toni Martínez", "numero": 29, "minuto": 90, "pais": "ES" },
-        { "nome": "Pepê Aquino", "numero": 11, "minuto": 74, "pais": "BR", "aceites": ["Pepê"], "curto": "Pepê" },
-        { "nome": "Wenderson Galeno", "numero": 13, "minuto": 57, "pais": "BR" }
+        { "nome": "Marko Grujic", "numero": 16, "minuto": 90, "pais": "RS", "pos": "ME" },
+        { "nome": "Francisco Conceição", "numero": 10, "minuto": 74, "pais": "PT", "pos": "ED" },
+        { "nome": "Toni Martínez", "numero": 29, "minuto": 90, "pais": "ES", "pos": "PL" },
+        { "nome": "Pepê Aquino", "numero": 11, "minuto": 74, "pais": "BR", "aceites": ["Pepê"], "curto": "Pepê", "pos": "MC" },
+        { "nome": "Wenderson Galeno", "numero": 13, "minuto": 57, "pais": "BR", "pos": "MC" }
       ],
       "nao_utilizados": ["Agustín Marchesín", "Fábio Cardoso", "Wendell", "Stephen Eustaquio"]
     },
@@ -56,10 +56,10 @@
         { "nome": "Nuno Santos", "numero": 11, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 34 }] }
       ],
       "suplentes": [
-        { "nome": "Luís Neto", "numero": 13, "minuto": 66, "pais": "PT" },
-        { "nome": "João Palhinha", "numero": 6, "minuto": 55, "pais": "PT" },
-        { "nome": "Bruno Tabata", "numero": 7, "minuto": "90+2", "pais": "BR" },
-        { "nome": "Islam Slimani", "numero": 9, "minuto": 66, "pais": "DZ" }
+        { "nome": "Luís Neto", "numero": 13, "minuto": 66, "pais": "PT", "pos": "DC" },
+        { "nome": "João Palhinha", "numero": 6, "minuto": 55, "pais": "PT", "pos": "ED" },
+        { "nome": "Bruno Tabata", "numero": 7, "minuto": "90+2", "pais": "BR", "pos": "MC" },
+        { "nome": "Islam Slimani", "numero": 9, "minuto": 66, "pais": "DZ", "pos": "PL" }
       ],
       "nao_utilizados": ["João Virgínia", "Gonçalo Esteves", "Rúben Vinagre", "Daniel Bragança", "Marcus Edwards"]
     }

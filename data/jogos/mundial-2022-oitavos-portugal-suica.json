@@ -36,11 +36,11 @@
         { "nome": "João Félix", "aceites": ["felix"], "numero": 11, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Horta", "numero": 21, "minuto": 74, "pais": "PT" },
-        { "nome": "Vitinha", "numero": 16, "minuto": 74, "pais": "PT" },
-        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 74, "pais": "PT" },
-        { "nome": "Rúben Neves", "numero": 18, "minuto": 81, "pais": "PT" },
-        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 87, "pais": "PT", "golos": [{ "minuto": "90+2" }] }
+        { "nome": "Ricardo Horta", "numero": 21, "minuto": 74, "pais": "PT", "pos": "PL" },
+        { "nome": "Vitinha", "numero": 16, "minuto": 74, "pais": "PT", "pos": "MC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 74, "pais": "PT", "pos": "EE" },
+        { "nome": "Rúben Neves", "numero": 18, "minuto": 81, "pais": "PT", "pos": "MC" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 15, "minuto": 87, "pais": "PT", "golos": [{ "minuto": "90+2" }], "pos": "ED" }
       ],
       "nao_utilizados": [
         "Rui Patrício",
@@ -74,11 +74,11 @@
         { "nome": "Xherdan Shaqiri", "numero": 23, "pais": "CH", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Eray Cömert", "numero": 18, "minuto": 46, "pais": "CH" },
-        { "nome": "Denis Zakaria", "numero": 6, "minuto": 54, "pais": "CH" },
-        { "nome": "Haris Seferovic", "numero": 9, "minuto": 54, "pais": "CH" },
-        { "nome": "Noah Okafor", "numero": 19, "minuto": 66, "pais": "CH" },
-        { "nome": "Ardon Jashari", "numero": 26, "minuto": 89, "pais": "CH" }
+        { "nome": "Eray Cömert", "numero": 18, "minuto": 46, "pais": "CH", "pos": "DC" },
+        { "nome": "Denis Zakaria", "numero": 6, "minuto": 54, "pais": "CH", "pos": "MC" },
+        { "nome": "Haris Seferovic", "numero": 9, "minuto": 54, "pais": "CH", "pos": "MC" },
+        { "nome": "Noah Okafor", "numero": 19, "minuto": 66, "pais": "CH", "pos": "ME" },
+        { "nome": "Ardon Jashari", "numero": 26, "minuto": 89, "pais": "CH", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Silvan Widmer",

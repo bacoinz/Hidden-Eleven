@@ -29,9 +29,9 @@
         { "nome": "Robin van Persie", "numero": 9, "pais": "NL", "pos": "PL", "aceites": ["rvp"] }
       ],
       "suplentes": [
-        { "nome": "Eljero Elia", "numero": 17, "minuto": 71, "pais": "NL" },
-        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 99, "pais": "NL" },
-        { "nome": "Edson Braafheid", "numero": 15, "minuto": 105, "pais": "NL" }
+        { "nome": "Eljero Elia", "numero": 17, "minuto": 71, "pais": "NL", "pos": "EE" },
+        { "nome": "Rafael van der Vaart", "numero": 23, "minuto": 99, "pais": "NL", "pos": "MDC" },
+        { "nome": "Edson Braafheid", "numero": 15, "minuto": 105, "pais": "NL", "pos": "DE" }
       ],
       "nao_utilizados": [
         "Khalid Boulahrouz",
@@ -65,9 +65,9 @@
         { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES" },
-        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 87, "pais": "ES" },
-        { "nome": "Fernando Torres", "numero": 9, "minuto": 106, "pais": "ES" }
+        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES", "pos": "EE" },
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 87, "pais": "ES", "pos": "MDC" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 106, "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Raúl Albiol",

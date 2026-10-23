@@ -28,10 +28,10 @@
         { "nome": "Neymar", "aceites": ["neymar jr"], "numero": 10, "pais": "BR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Layvin Kurzawa", "numero": 20, "minuto": 80, "pais": "FR" },
-        { "nome": "Marco Verratti", "numero": 6, "minuto": 65, "pais": "IT" },
-        { "nome": "Julian Draxler", "numero": 23, "minuto": 72, "pais": "DE" },
-        { "nome": "Eric Maxim Choupo-Moting", "numero": 17, "minuto": 80, "pais": "CM" }
+        { "nome": "Layvin Kurzawa", "numero": 20, "minuto": 80, "pais": "FR", "pos": "DE" },
+        { "nome": "Marco Verratti", "numero": 6, "minuto": 65, "pais": "IT", "pos": "MC" },
+        { "nome": "Julian Draxler", "numero": 23, "minuto": 72, "pais": "DE", "pos": "MC" },
+        { "nome": "Eric Maxim Choupo-Moting", "numero": 17, "minuto": 80, "pais": "CM", "pos": "ED" }
       ],
       "nao_utilizados": ["Sergio Rico", "Marcin Bułka", "Abdou Diallo", "Mitchel Bakker", "Colin Dagba", "Pablo Sarabia", "Idrissa Gueye", "Mauro Icardi"]
     },
@@ -55,10 +55,10 @@
         { "nome": "Robert Lewandowski", "aceites": ["lewy"], "numero": 9, "pais": "PL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Niklas Süle", "numero": 4, "minuto": 25, "pais": "DE" },
-        { "nome": "Philippe Coutinho", "numero": 10, "minuto": 68, "pais": "BR" },
-        { "nome": "Ivan Perišić", "numero": 14, "minuto": 68, "pais": "HR" },
-        { "nome": "Corentin Tolisso", "numero": 24, "minuto": 86, "pais": "FR" }
+        { "nome": "Niklas Süle", "numero": 4, "minuto": 25, "pais": "DE", "pos": "DC" },
+        { "nome": "Philippe Coutinho", "numero": 10, "minuto": 68, "pais": "BR", "pos": "ED" },
+        { "nome": "Ivan Perišić", "numero": 14, "minuto": 68, "pais": "HR", "pos": "EE" },
+        { "nome": "Corentin Tolisso", "numero": 24, "minuto": 86, "pais": "FR", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Sven Ulreich",

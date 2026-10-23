@@ -29,9 +29,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 25, "pais": "PT" },
-        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 66, "pais": "PT" },
-        { "nome": "Éder", "numero": 9, "minuto": 79, "pais": "PT", "golos": [{ "minuto": 109 }] }
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 25, "pais": "PT", "pos": "PL" },
+        { "nome": "João Moutinho", "aceites": ["moutinho"], "numero": 8, "minuto": 66, "pais": "PT", "pos": "MO" },
+        { "nome": "Éder", "numero": 9, "minuto": 79, "pais": "PT", "golos": [{ "minuto": 109 }], "pos": "MC" }
       ],
       "nao_utilizados": [
         "Bruno Alves",
@@ -65,9 +65,9 @@
         { "nome": "Olivier Giroud", "numero": 9, "pais": "FR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kingsley Coman", "numero": 20, "minuto": 58, "pais": "FR" },
-        { "nome": "André-Pierre Gignac", "numero": 10, "minuto": 78, "pais": "FR" },
-        { "nome": "Anthony Martial", "numero": 11, "minuto": 110, "pais": "FR" }
+        { "nome": "Kingsley Coman", "numero": 20, "minuto": 58, "pais": "FR", "pos": "ME" },
+        { "nome": "André-Pierre Gignac", "numero": 10, "minuto": 78, "pais": "FR", "pos": "PL" },
+        { "nome": "Anthony Martial", "numero": 11, "minuto": 110, "pais": "FR", "pos": "MD" }
       ],
       "nao_utilizados": [
         "Christophe Jallet",

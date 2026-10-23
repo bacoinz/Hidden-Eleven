@@ -28,9 +28,9 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 71, "pais": "AR" },
-        { "nome": "Freddy Adu", "numero": 30, "minuto": 79, "pais": "US" },
-        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 65, "pais": "PY" }
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 71, "pais": "AR", "pos": "ED" },
+        { "nome": "Freddy Adu", "numero": 30, "minuto": 79, "pais": "US", "pos": "PL" },
+        { "nome": "Óscar Cardozo", "aceites": ["tacuara"], "numero": 7, "minuto": 65, "pais": "PY", "pos": "MO" }
       ],
       "nao_utilizados": ["Hans-Jörg Butt", "Nélson", "Edcarlos", "Gilles Binya"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 42 }] }
       ],
       "suplentes": [
-        { "nome": "Mario Bolatti", "numero": 18, "minuto": 82, "pais": "AR" },
-        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 69, "pais": "AR" },
-        { "nome": "Hélder Postiga", "numero": 23, "minuto": 60, "pais": "PT" }
+        { "nome": "Mario Bolatti", "numero": 18, "minuto": 82, "pais": "AR", "pos": "MC" },
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 69, "pais": "AR", "pos": "EE" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 60, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Milan Stepanov", "Marek Cech", "Przemyslaw Kazmierczak"]
     }

@@ -29,9 +29,9 @@
         { "nome": "Fernando Torres", "numero": 9, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Fernando Llorente", "numero": 19, "minuto": 58, "pais": "ES" },
-        { "nome": "Pedro", "numero": 18, "minuto": 88, "pais": "ES" },
-        { "nome": "Carlos Marchena", "numero": 4, "minuto": "90+3", "pais": "ES" }
+        { "nome": "Fernando Llorente", "numero": 19, "minuto": 58, "pais": "ES", "pos": "PL" },
+        { "nome": "Pedro", "numero": 18, "minuto": 88, "pais": "ES", "pos": "PL" },
+        { "nome": "Carlos Marchena", "numero": 4, "minuto": "90+3", "pais": "ES", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Raúl Albiol",
@@ -65,9 +65,9 @@
         { "nome": "Hugo Almeida", "numero": 18, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Danny", "numero": 10, "minuto": 58, "pais": "PT" },
-        { "nome": "Liédson", "numero": 9, "minuto": 72, "pais": "PT" },
-        { "nome": "Pedro Mendes", "numero": 8, "minuto": 72, "pais": "PT" }
+        { "nome": "Danny", "numero": 10, "minuto": 58, "pais": "PT", "pos": "PL" },
+        { "nome": "Liédson", "numero": 9, "minuto": 72, "pais": "PT", "pos": "ED" },
+        { "nome": "Pedro Mendes", "numero": 8, "minuto": 72, "pais": "PT", "pos": "MDC" }
       ],
       "nao_utilizados": [
         "Paulo Ferreira",

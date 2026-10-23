@@ -28,9 +28,9 @@
         { "nome": "Eduardo Salvio", "aceites": ["toto", "toto salvio"], "numero": 18, "pais": "AR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Jardel", "numero": 33, "minuto": 78, "pais": "BR" },
-        { "nome": "Ola John", "numero": 15, "minuto": 66, "pais": "NL" },
-        { "nome": "Lima", "numero": 11, "minuto": 66, "pais": "BR" }
+        { "nome": "Jardel", "numero": 33, "minuto": 78, "pais": "BR", "pos": "DC" },
+        { "nome": "Ola John", "numero": 15, "minuto": 66, "pais": "NL", "pos": "ME" },
+        { "nome": "Lima", "numero": 11, "minuto": 66, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Paulo Lopes", "Pablo Aimar", "Jonathan Urretaviscaya", "André Gomes"]
     },

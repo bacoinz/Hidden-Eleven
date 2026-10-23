@@ -29,12 +29,12 @@
         { "nome": "Álex Baena", "numero": 15, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 62, "pais": "ES", "golos": [{ "minuto": 106 }] },
-        { "nome": "Pedri", "numero": 20, "minuto": 62, "pais": "ES" },
-        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES" },
-        { "nome": "Nico Williams", "numero": 17, "minuto": 75, "pais": "ES" },
-        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 99, "pais": "ES" },
-        { "nome": "Eric Garcia", "numero": 4, "minuto": 99, "pais": "ES" }
+        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 62, "pais": "ES", "golos": [{ "minuto": 106 }], "pos": "PL" },
+        { "nome": "Pedri", "numero": 20, "minuto": 62, "pais": "ES", "pos": "MC" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 75, "pais": "ES", "pos": "MC" },
+        { "nome": "Nico Williams", "numero": 17, "minuto": 75, "pais": "ES", "pos": "EE" },
+        { "nome": "Martín Zubimendi", "numero": 18, "minuto": 99, "pais": "ES", "pos": "MDC" },
+        { "nome": "Eric Garcia", "numero": 4, "minuto": 99, "pais": "ES", "pos": "DC" }
       ],
       "nao_utilizados": ["David Raya", "Marc Pubill", "Álex Grimaldo", "Marcos Llorente", "Gavi", "Yéremy Pino", "Joan Garcia", "Víctor Muñoz", "Borja Iglesias"]
     },
@@ -58,12 +58,12 @@
         { "nome": "Julián Alvarez", "aceites": ["julian", "la arana"], "numero": 9, "pais": "AR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nicolás Otamendi", "numero": 19, "minuto": 44, "pais": "AR" },
-        { "nome": "Leandro Paredes", "numero": 5, "minuto": 46, "pais": "AR" },
-        { "nome": "Nahuel Molina", "numero": 26, "minuto": 58, "pais": "AR" },
-        { "nome": "Facundo Medina", "numero": 25, "minuto": 70, "pais": "AR" },
-        { "nome": "Giuliano Simeone", "numero": 17, "minuto": 70, "pais": "AR" },
-        { "nome": "Marcos Senesi", "numero": 2, "minuto": 102, "pais": "AR" }
+        { "nome": "Nicolás Otamendi", "numero": 19, "minuto": 44, "pais": "AR", "pos": "DC" },
+        { "nome": "Leandro Paredes", "numero": 5, "minuto": 46, "pais": "AR", "pos": "ME" },
+        { "nome": "Nahuel Molina", "numero": 26, "minuto": 58, "pais": "AR", "pos": "DD" },
+        { "nome": "Facundo Medina", "numero": 25, "minuto": 70, "pais": "AR", "pos": "DC" },
+        { "nome": "Giuliano Simeone", "numero": 17, "minuto": 70, "pais": "AR", "pos": "MD" },
+        { "nome": "Marcos Senesi", "numero": 2, "minuto": 102, "pais": "AR", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Juan Musso",

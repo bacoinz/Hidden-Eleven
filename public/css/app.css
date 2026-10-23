@@ -969,6 +969,31 @@ select.campo option {
 .lugar-banco.revelada .quem {
   color: #cbd5e1;
 }
+.lugar-banco .pos-banco {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #e5e7eb;
+  background: #ffffff1a;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+.lugar-banco .bandeira-banco {
+  flex: none;
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.lugar-banco.escondida .quem:not(:empty) {
+  font-weight: 800;
+}
+.numero-mini {
+  fill: #fff;
+  font-weight: 800;
+  text-anchor: middle;
+  font-family: var(--display, sans-serif);
+}
 .lugar-banco.treinador .minuto {
   color: #fde68a;
 }

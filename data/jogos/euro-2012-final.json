@@ -29,9 +29,9 @@
         { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Pedro", "numero": 7, "minuto": 59, "pais": "ES" },
-        { "nome": "Fernando Torres", "numero": 9, "minuto": 75, "pais": "ES", "golos": [{ "minuto": 84 }] },
-        { "nome": "Juan Mata", "numero": 13, "minuto": 87, "pais": "ES", "golos": [{ "minuto": 88 }] }
+        { "nome": "Pedro", "numero": 7, "minuto": 59, "pais": "ES", "pos": "ED" },
+        { "nome": "Fernando Torres", "numero": 9, "minuto": 75, "pais": "ES", "golos": [{ "minuto": 84 }], "pos": "PL" },
+        { "nome": "Juan Mata", "numero": 13, "minuto": 87, "pais": "ES", "golos": [{ "minuto": 88 }], "pos": "EE" }
       ],
       "nao_utilizados": [
         "Raúl Albiol",
@@ -65,9 +65,9 @@
         { "nome": "Antonio Cassano", "numero": 10, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Federico Balzaretti", "numero": 6, "minuto": 21, "pais": "IT" },
-        { "nome": "Antonio Di Natale", "numero": 11, "minuto": 46, "pais": "IT" },
-        { "nome": "Thiago Motta", "numero": 5, "minuto": 57, "pais": "IT" }
+        { "nome": "Federico Balzaretti", "numero": 6, "minuto": 21, "pais": "IT", "pos": "DE" },
+        { "nome": "Antonio Di Natale", "numero": 11, "minuto": 46, "pais": "IT", "pos": "PL" },
+        { "nome": "Thiago Motta", "numero": 5, "minuto": 57, "pais": "IT", "pos": "MO" }
       ],
       "nao_utilizados": [
         "Christian Maggio",

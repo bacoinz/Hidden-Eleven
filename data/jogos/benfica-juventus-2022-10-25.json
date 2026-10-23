@@ -28,10 +28,10 @@
         { "nome": "Gonçalo Ramos", "numero": 88, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Gilberto", "numero": 2, "minuto": 81, "pais": "BR" },
-        { "nome": "Chiquinho", "numero": 22, "minuto": "90+4", "pais": "PT" },
-        { "nome": "David Neres", "numero": 7, "minuto": 87, "pais": "BR" },
-        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR" }
+        { "nome": "Gilberto", "numero": 2, "minuto": 81, "pais": "BR", "pos": "DD" },
+        { "nome": "Chiquinho", "numero": 22, "minuto": "90+4", "pais": "PT", "pos": "ED" },
+        { "nome": "David Neres", "numero": 7, "minuto": 87, "pais": "BR", "pos": "PL" },
+        { "nome": "Petar Musa", "numero": 33, "minuto": 87, "pais": "HR", "pos": "MO" }
       ],
       "nao_utilizados": ["Helton Leite", "João Victor", "Lucas Veríssimo", "Mihailo Ristic", "Gil Dias", "Paulo Bernardo", "Diogo Gonçalves", "Henrique Araújo"]
     },
@@ -55,11 +55,11 @@
         { "nome": "Moise Kean", "numero": 18, "pais": "IT", "pos": "PL", "golos": [{ "minuto": 22 }] }
       ],
       "suplentes": [
-        { "nome": "Alex Sandro", "numero": 12, "minuto": 60, "pais": "BR" },
-        { "nome": "Fabio Miretti", "numero": 20, "minuto": 60, "pais": "IT" },
-        { "nome": "Matìas Soulé", "numero": 30, "minuto": 70, "pais": "AR" },
-        { "nome": "Arkadiusz Milik", "numero": 14, "minuto": 46, "pais": "PL", "golos": [{ "minuto": 77 }] },
-        { "nome": "Samuel Iling", "numero": 43, "minuto": 70, "pais": "GB-ENG" }
+        { "nome": "Alex Sandro", "numero": 12, "minuto": 60, "pais": "BR", "pos": "DC" },
+        { "nome": "Fabio Miretti", "numero": 20, "minuto": 60, "pais": "IT", "pos": "MD" },
+        { "nome": "Matìas Soulé", "numero": 30, "minuto": 70, "pais": "AR", "pos": "PL" },
+        { "nome": "Arkadiusz Milik", "numero": 14, "minuto": 46, "pais": "PL", "golos": [{ "minuto": 77 }], "pos": "PL" },
+        { "nome": "Samuel Iling", "numero": 43, "minuto": 70, "pais": "GB-ENG", "pos": "MC" }
       ],
       "nao_utilizados": ["Carlo Pinsoglio", "Mattia Perin", "Daniele Rugani", "Nicolò Fagioli"]
     }

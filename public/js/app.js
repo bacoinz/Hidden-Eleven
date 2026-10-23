@@ -179,7 +179,7 @@ function aoEstado(sala) {
   for (const ev of novos) {
     if (ev.tipo === 'descoberta') {
       const extra = $('#relogio-extra');
-      extra.textContent = '+5s';
+      extra.textContent = '+1s';
       extra.classList.remove('mostrar');
       void extra.offsetWidth;
       extra.classList.add('mostrar');

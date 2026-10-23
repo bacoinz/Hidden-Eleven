@@ -29,9 +29,9 @@
         { "nome": "David Villa", "numero": 7, "pais": "ES", "pos": "EE", "golos": [{ "minuto": 55 }, { "minuto": 58 }] }
       ],
       "suplentes": [
-        { "nome": "Seydou Keita", "numero": 15, "minuto": 87, "pais": "ML" },
-        { "nome": "Jeffrén", "numero": 11, "minuto": 87, "pais": "VE", "golos": [{ "minuto": "90+1" }], "aceites": ["Jeffrén Suárez"] },
-        { "nome": "Bojan", "numero": 9, "minuto": 77, "pais": "ES", "aceites": ["Bojan Krkić"] }
+        { "nome": "Seydou Keita", "numero": 15, "minuto": 87, "pais": "ML", "pos": "MC" },
+        { "nome": "Jeffrén", "numero": 11, "minuto": 87, "pais": "VE", "golos": [{ "minuto": "90+1" }], "aceites": ["Jeffrén Suárez"], "pos": "ED" },
+        { "nome": "Bojan", "numero": 9, "minuto": 77, "pais": "ES", "aceites": ["Bojan Krkić"], "pos": "EE" }
       ],
       "nao_utilizados": ["José Manuel Pinto", "Maxwell", "Adriano", { "nome": "Javier Mascherano", "aceites": ["masche"] }]
     },
@@ -54,7 +54,10 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" },
         { "nome": "Karim Benzema", "numero": 9, "pais": "FR", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Álvaro Arbeloa", "numero": 17, "minuto": 59, "pais": "ES" }, { "nome": "Lassana Diarra", "numero": 10, "minuto": 46, "pais": "FR" }],
+      "suplentes": [
+        { "nome": "Álvaro Arbeloa", "numero": 17, "minuto": 59, "pais": "ES", "pos": "DE" },
+        { "nome": "Lassana Diarra", "numero": 10, "minuto": 46, "pais": "FR", "pos": "MO" }
+      ],
       "nao_utilizados": ["Jerzy Dudek", "Raúl Albiol", "Mahamadou Diarra", "Pedro León", { "nome": "Gonzalo Higuaín", "aceites": ["pipita"] }]
     }
   ]

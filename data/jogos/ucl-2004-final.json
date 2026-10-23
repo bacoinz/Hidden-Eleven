@@ -27,9 +27,9 @@
         { "nome": "Fernando Morientes", "numero": 10, "pais": "ES", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Sébastien Squillaci", "numero": 19, "minuto": 72, "pais": "FR" },
-        { "nome": "Dado Pršo", "numero": 9, "minuto": 23, "pais": "HR" },
-        { "nome": "Shabani Nonda", "numero": 18, "minuto": 64, "pais": "CD" }
+        { "nome": "Sébastien Squillaci", "numero": 19, "minuto": 72, "pais": "FR", "pos": "DC" },
+        { "nome": "Dado Pršo", "numero": 9, "minuto": 23, "pais": "HR", "pos": "ED" },
+        { "nome": "Shabani Nonda", "numero": 18, "minuto": 64, "pais": "CD", "pos": "MC" }
       ],
       "nao_utilizados": ["Tony Sylva", "Jaroslav Plašil", "Hassan El Fakiri", "Emmanuel Adebayor"]
     },
@@ -53,16 +53,17 @@
         { "nome": "Derlei", "numero": 11, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 85, "pais": "PT" },
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 85, "pais": "PT", "pos": "DC" },
         {
           "nome": "Dmitri Alenichev",
           "numero": 15,
           "minuto": 60,
           "pais": "RU",
           "golos": [{ "minuto": 75 }],
-          "aceites": ["alenitchev", "dmitri alenitchev"]
+          "aceites": ["alenitchev", "dmitri alenitchev"],
+          "pos": "PL"
         },
-        { "nome": "Benni McCarthy", "numero": 77, "minuto": 78, "pais": "ZA", "aceites": ["benni"] }
+        { "nome": "Benni McCarthy", "numero": 77, "minuto": 78, "pais": "ZA", "aceites": ["benni"], "pos": "PL" }
       ],
       "nao_utilizados": [
         { "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] },

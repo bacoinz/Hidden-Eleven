@@ -28,9 +28,9 @@
         { "nome": "Petar Musa", "numero": 33, "pais": "HR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Casper Tengstedt", "numero": 19, "minuto": 64, "pais": "DK", "golos": [{ "minuto": "90+8" }] },
-        { "nome": "Arthur Cabral", "numero": 9, "minuto": 64, "pais": "BR" },
-        { "nome": "Gonçalo Guedes", "numero": 17, "minuto": 86, "pais": "PT" }
+        { "nome": "Casper Tengstedt", "numero": 19, "minuto": 64, "pais": "DK", "golos": [{ "minuto": "90+8" }], "pos": "PL" },
+        { "nome": "Arthur Cabral", "numero": 9, "minuto": 64, "pais": "BR", "pos": "MDC" },
+        { "nome": "Gonçalo Guedes", "numero": 17, "minuto": 86, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": ["Samuel Soares", "João Victor", "Tomás Araújo", "David Jurásek", "Tiago Gouveia", "Chiquinho"]
     },
@@ -54,10 +54,10 @@
         { "nome": "Viktor Gyökeres", "numero": 9, "pais": "SE", "pos": "PL", "golos": [{ "minuto": 45 }] }
       ],
       "suplentes": [
-        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 57, "pais": "NL" },
-        { "nome": "Nuno Santos", "numero": 11, "minuto": 73, "pais": "PT" },
-        { "nome": "Francisco Trincão", "numero": 17, "minuto": 73, "pais": "PT" },
-        { "nome": "Paulinho", "numero": 20, "minuto": 85, "pais": "PT" }
+        { "nome": "Jeremiah St. Juste", "numero": 3, "minuto": 57, "pais": "NL", "pos": "DC" },
+        { "nome": "Nuno Santos", "numero": 11, "minuto": 73, "pais": "PT", "pos": "DE" },
+        { "nome": "Francisco Trincão", "numero": 17, "minuto": 73, "pais": "PT", "pos": "MO" },
+        { "nome": "Paulinho", "numero": 20, "minuto": 85, "pais": "PT", "pos": "ME" }
       ],
       "nao_utilizados": ["Franco Israel", "Luís Neto", "Dário Essugo", "Daniel Bragança", "Afonso Moreira"]
     }

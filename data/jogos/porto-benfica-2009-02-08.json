@@ -28,8 +28,8 @@
         { "nome": "Lisandro López", "aceites": ["lisandro"], "numero": 9, "pais": "AR", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 65, "pais": "AR" },
-        { "nome": "Ernesto Farías", "numero": 19, "minuto": 89, "pais": "AR" }
+        { "nome": "Mariano González", "aceites": ["mariano"], "numero": 11, "minuto": 65, "pais": "AR", "pos": "MC" },
+        { "nome": "Ernesto Farías", "numero": 19, "minuto": 89, "pais": "AR", "pos": "EE" }
       ],
       "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "Pedro Emanuel", "Milan Stepanov", "Fredy Guarín", "Tomás Costa"]
     },
@@ -53,9 +53,9 @@
         { "nome": "David Suazo", "numero": 30, "pais": "HN", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Carlos Martins", "numero": 24, "minuto": 93, "pais": "PT" },
-        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 62, "pais": "AR" },
-        { "nome": "Nuno Gomes", "numero": 21, "minuto": 86, "pais": "PT" }
+        { "nome": "Carlos Martins", "numero": 24, "minuto": 93, "pais": "PT", "pos": "MO" },
+        { "nome": "Ángel Di María", "aceites": ["di maria", "fideo"], "numero": 20, "minuto": 62, "pais": "AR", "pos": "PL" },
+        { "nome": "Nuno Gomes", "numero": 21, "minuto": 86, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": ["Quim", "Jorge Ribeiro", "Gilles Binya", { "nome": "Óscar Cardozo", "aceites": ["tacuara"] }]
     }

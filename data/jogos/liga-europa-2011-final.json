@@ -28,8 +28,8 @@
         { "nome": "Radamel Falcao", "numero": 9, "pais": "CO", "pos": "PL", "golos": [{ "minuto": 44 }] }
       ],
       "suplentes": [
-        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 73, "pais": "AR" },
-        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 79, "pais": "CO" }
+        { "nome": "Fernando Belluschi", "numero": 7, "minuto": 73, "pais": "AR", "pos": "MC" },
+        { "nome": "James Rodríguez", "aceites": ["james"], "numero": 19, "minuto": 79, "pais": "CO", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Beto",
@@ -58,9 +58,9 @@
         { "nome": "Lima", "numero": 18, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Kaká", "numero": 4, "minuto": 46, "pais": "BR" },
-        { "nome": "Márcio Mossoró", "numero": 8, "minuto": 46, "pais": "BR" },
-        { "nome": "Albert Meyong", "numero": 19, "minuto": 66, "pais": "CM" }
+        { "nome": "Kaká", "numero": 4, "minuto": 46, "pais": "BR", "pos": "DC" },
+        { "nome": "Márcio Mossoró", "numero": 8, "minuto": 46, "pais": "BR", "pos": "MO" },
+        { "nome": "Albert Meyong", "numero": 19, "minuto": 66, "pais": "CM", "pos": "PL" }
       ],
       "nao_utilizados": ["Cristiano", "Elderson Echiéjilé", "Leandro Salino", "Hélder Barbosa"]
     }

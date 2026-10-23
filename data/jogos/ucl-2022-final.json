@@ -28,9 +28,9 @@
         { "nome": "Luis Díaz", "numero": 23, "pais": "CO", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Naby Keïta", "numero": 8, "minuto": 77, "pais": "GN" },
-        { "nome": "Roberto Firmino", "numero": 9, "minuto": 77, "pais": "BR" },
-        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 20, "minuto": 65, "pais": "PT" }
+        { "nome": "Naby Keïta", "numero": 8, "minuto": 77, "pais": "GN", "pos": "MC" },
+        { "nome": "Roberto Firmino", "numero": 9, "minuto": 77, "pais": "BR", "pos": "MC" },
+        { "nome": "Diogo Jota", "aceites": ["jota"], "numero": 20, "minuto": 65, "pais": "PT", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Caoimhín Kelleher",
@@ -71,9 +71,9 @@
         }
       ],
       "suplentes": [
-        { "nome": "Dani Ceballos", "numero": 19, "minuto": 90, "pais": "ES" },
-        { "nome": "Eduardo Camavinga", "numero": 25, "minuto": 86, "pais": "FR" },
-        { "nome": "Rodrygo", "numero": 21, "minuto": "90+3", "pais": "BR" }
+        { "nome": "Dani Ceballos", "numero": 19, "minuto": 90, "pais": "ES", "pos": "MC" },
+        { "nome": "Eduardo Camavinga", "numero": 25, "minuto": 86, "pais": "FR", "pos": "ED" },
+        { "nome": "Rodrygo", "numero": 21, "minuto": "90+3", "pais": "BR", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Andriy Lunin",

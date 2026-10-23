@@ -29,9 +29,9 @@
         { "nome": "Nuno Gomes", "numero": 21, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 40 }] }
       ],
       "suplentes": [
-        { "nome": "Raul Meireles", "numero": 6, "minuto": 31, "pais": "PT" },
-        { "nome": "Nani", "numero": 19, "minuto": 67, "pais": "PT" },
-        { "nome": "Hélder Postiga", "numero": 23, "minuto": 73, "pais": "PT", "golos": [{ "minuto": 87 }] }
+        { "nome": "Raul Meireles", "numero": 6, "minuto": 31, "pais": "PT", "pos": "MC" },
+        { "nome": "Nani", "numero": 19, "minuto": 67, "pais": "PT", "pos": "PL" },
+        { "nome": "Hélder Postiga", "numero": 23, "minuto": 73, "pais": "PT", "golos": [{ "minuto": 87 }], "pos": "MC" }
       ],
       "nao_utilizados": [
         "Bruno Alves",
@@ -65,9 +65,9 @@
         { "nome": "Lukas Podolski", "numero": 20, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Tim Borowski", "numero": 18, "minuto": 73, "pais": "DE" },
-        { "nome": "Clemens Fritz", "numero": 4, "minuto": 83, "pais": "DE" },
-        { "nome": "Marcell Jansen", "numero": 2, "minuto": 89, "pais": "DE" }
+        { "nome": "Tim Borowski", "numero": 18, "minuto": 73, "pais": "DE", "pos": "EE" },
+        { "nome": "Clemens Fritz", "numero": 4, "minuto": 83, "pais": "DE", "pos": "DC" },
+        { "nome": "Marcell Jansen", "numero": 2, "minuto": 89, "pais": "DE", "pos": "DC" }
       ],
       "nao_utilizados": [
         "Heiko Westermann",

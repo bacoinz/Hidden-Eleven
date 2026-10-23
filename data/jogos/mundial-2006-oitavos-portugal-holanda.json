@@ -30,9 +30,9 @@
         { "nome": "Pauleta", "numero": 9, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 34, "pais": "PT" },
-        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT" },
-        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "minuto": 84, "pais": "PT" }
+        { "nome": "Simão", "aceites": ["simao sabrosa", "simao", "Simão Sabrosa"], "numero": 11, "minuto": 34, "pais": "PT", "pos": "EE" },
+        { "nome": "Petit", "numero": 8, "minuto": 46, "pais": "PT", "pos": "PL" },
+        { "nome": "Tiago", "aceites": ["tiago mendes", "Tiago Mendes"], "numero": 19, "minuto": 84, "pais": "PT", "pos": "ED" }
       ],
       "nao_utilizados": ["Paulo Ferreira", "Marco Caneira", "Ricardo Costa", "Hugo Viana", "Quim", "Luís Boa Morte", "Nuno Gomes", "Paulo Santos", "Hélder Postiga"]
     },
@@ -56,9 +56,16 @@
         { "nome": "Arjen Robben", "numero": 11, "pais": "NL", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Rafael van der Vaart", "numero": 10, "minuto": 56, "pais": "NL" },
-        { "nome": "John Heitinga", "numero": 14, "minuto": 67, "pais": "NL" },
-        { "nome": "Jan Vennegoor of Hesselink", "aceites": ["vennegoor", "vennegoor of hesselink"], "numero": 19, "minuto": 84, "pais": "NL" }
+        { "nome": "Rafael van der Vaart", "numero": 10, "minuto": 56, "pais": "NL", "pos": "MC" },
+        { "nome": "John Heitinga", "numero": 14, "minuto": 67, "pais": "NL", "pos": "DC" },
+        {
+          "nome": "Jan Vennegoor of Hesselink",
+          "aceites": ["vennegoor", "vennegoor of hesselink"],
+          "numero": 19,
+          "minuto": 84,
+          "pais": "NL",
+          "pos": "MC"
+        }
       ],
       "nao_utilizados": [
         "Kew Jaliens",

@@ -29,8 +29,8 @@
         { "nome": "Danny Welbeck", "numero": 19, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Phil Jones", "numero": 4, "minuto": 66, "pais": "GB-ENG" },
-        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 66, "pais": "MX" }
+        { "nome": "Phil Jones", "numero": 4, "minuto": 66, "pais": "GB-ENG", "pos": "DC" },
+        { "nome": "Javier Hernández", "aceites": ["chicharito"], "numero": 14, "minuto": 66, "pais": "MX", "pos": "MC" }
       ],
       "nao_utilizados": ["Anders Lindegaard", "Fábio", "Antonio Valencia", { "nome": "Park Ji-sung", "aceites": ["park"] }, "Dimitar Berbatov"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 16, "pais": "AR", "pos": "PL", "golos": [{ "minuto": 69 }] }
       ],
       "suplentes": [
-        { "nome": "Aleksandar Kolarov", "numero": 13, "minuto": 89, "pais": "RS" },
-        { "nome": "Samir Nasri", "numero": 19, "minuto": 76, "pais": "FR" },
-        { "nome": "Edin Džeko", "numero": 10, "minuto": 70, "pais": "BA", "golos": [{ "minuto": 89 }, { "minuto": "90+3" }] }
+        { "nome": "Aleksandar Kolarov", "numero": 13, "minuto": 89, "pais": "RS", "pos": "DC" },
+        { "nome": "Samir Nasri", "numero": 19, "minuto": 76, "pais": "FR", "pos": "PL" },
+        { "nome": "Edin Džeko", "numero": 10, "minuto": 70, "pais": "BA", "golos": [{ "minuto": 89 }, { "minuto": "90+3" }], "pos": "EE" }
       ],
       "nao_utilizados": ["Costel Pantilimon", "Pablo Zabaleta", "Kolo Touré", "Nigel de Jong"]
     }

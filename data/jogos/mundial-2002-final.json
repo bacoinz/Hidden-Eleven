@@ -29,9 +29,9 @@
         { "nome": "Oliver Neuville", "numero": 7, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Oliver Bierhoff", "numero": 20, "minuto": 74, "pais": "DE" },
-        { "nome": "Gerald Asamoah", "numero": 14, "minuto": 77, "pais": "DE" },
-        { "nome": "Christian Ziege", "numero": 6, "minuto": 84, "pais": "DE" }
+        { "nome": "Oliver Bierhoff", "numero": 20, "minuto": 74, "pais": "DE", "pos": "PL" },
+        { "nome": "Gerald Asamoah", "numero": 14, "minuto": 77, "pais": "DE", "pos": "MC" },
+        { "nome": "Christian Ziege", "numero": 6, "minuto": 84, "pais": "DE", "pos": "ME" }
       ],
       "nao_utilizados": [
         "Marko Rehmer",
@@ -72,8 +72,8 @@
         }
       ],
       "suplentes": [
-        { "nome": "Juninho Paulista", "aceites": ["juninho"], "numero": 19, "minuto": 85, "pais": "BR" },
-        { "nome": "Denílson", "numero": 17, "minuto": 90, "pais": "BR" }
+        { "nome": "Juninho Paulista", "aceites": ["juninho"], "numero": 19, "minuto": 85, "pais": "BR", "pos": "MO" },
+        { "nome": "Denílson", "numero": 17, "minuto": 90, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Ricardinho", "Dida", "Juliano Belletti", "Ânderson Polga", "Júnior", "Vampeta", "Edílson", "Luizão", "Rogério Ceni", "Kaká"]
     }

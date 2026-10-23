@@ -29,11 +29,11 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Nélson Semedo", "numero": 2, "minuto": 56, "pais": "PT" },
-        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 71, "pais": "PT" },
-        { "nome": "Diogo Dalot", "numero": 5, "minuto": 71, "pais": "PT" },
-        { "nome": "Francisco Conceição", "numero": 26, "minuto": 83, "pais": "PT" },
-        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 83, "pais": "PT" }
+        { "nome": "Nélson Semedo", "numero": 2, "minuto": 56, "pais": "PT", "pos": "DE" },
+        { "nome": "Rafael Leão", "aceites": ["leao"], "numero": 17, "minuto": 71, "pais": "PT", "pos": "EE" },
+        { "nome": "Diogo Dalot", "numero": 5, "minuto": 71, "pais": "PT", "pos": "DD" },
+        { "nome": "Francisco Conceição", "numero": 26, "minuto": 83, "pais": "PT", "pos": "ED" },
+        { "nome": "Bernardo Silva", "aceites": ["bernardo"], "numero": 10, "minuto": 83, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Tomás Araújo",
@@ -68,10 +68,10 @@
         { "nome": "Álex Baena", "numero": 15, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 75, "pais": "ES" },
-        { "nome": "Mikel Merino", "numero": 6, "minuto": 85, "pais": "ES", "golos": [{ "minuto": "90+1" }] },
-        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "minuto": 85, "pais": "ES" },
-        { "nome": "Borja Iglesias", "numero": 26, "minuto": "90+7", "pais": "ES" }
+        { "nome": "Ferran Torres", "aceites": ["ferran"], "numero": 7, "minuto": 75, "pais": "ES", "pos": "EE" },
+        { "nome": "Mikel Merino", "numero": 6, "minuto": 85, "pais": "ES", "golos": [{ "minuto": "90+1" }], "pos": "MC" },
+        { "nome": "Fabián Ruiz", "aceites": ["fabian"], "numero": 8, "minuto": 85, "pais": "ES", "pos": "MC" },
+        { "nome": "Borja Iglesias", "numero": 26, "minuto": "90+7", "pais": "ES", "pos": "PL" }
       ],
       "nao_utilizados": [
         "David Raya",

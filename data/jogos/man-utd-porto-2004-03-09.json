@@ -28,9 +28,9 @@
         { "nome": "Ruud van Nistelrooy", "numero": 10, "pais": "NL", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Ole Gunnar Solskjær", "numero": 20, "minuto": 83, "pais": "NO" },
-        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 75, "pais": "PT" },
-        { "nome": "Louis Saha", "numero": 9, "minuto": 45, "pais": "FR" }
+        { "nome": "Ole Gunnar Solskjær", "numero": 20, "minuto": 83, "pais": "NO", "pos": "MDC" },
+        { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "minuto": 75, "pais": "PT", "pos": "MDC" },
+        { "nome": "Louis Saha", "numero": 9, "minuto": 45, "pais": "FR", "pos": "MDC" }
       ],
       "nao_utilizados": ["Roy Carroll", "Kléberson", "David Bellion", "Diego Forlán"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Benni McCarthy", "numero": 77, "pais": "ZA", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 37, "pais": "PT" },
-        { "nome": "Ricardo Fernandes", "numero": 25, "minuto": 81, "pais": "PT" },
-        { "nome": "Edgaras Jankauskas", "numero": 9, "minuto": 61, "pais": "LT" }
+        { "nome": "Pedro Emanuel", "numero": 3, "minuto": 37, "pais": "PT", "pos": "DC" },
+        { "nome": "Ricardo Fernandes", "numero": 25, "minuto": 81, "pais": "PT", "pos": "MO" },
+        { "nome": "Edgaras Jankauskas", "numero": 9, "minuto": 61, "pais": "LT", "pos": "EE" }
       ],
       "nao_utilizados": [{ "nome": "Nuno Espírito Santo", "aceites": ["nuno", "espirito santo"] }, "José Bosingwa", "Ricardo Costa", "Bruno Moraes"]
     }

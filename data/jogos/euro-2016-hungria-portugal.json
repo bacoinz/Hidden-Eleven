@@ -27,9 +27,9 @@
         { "nome": "Ádám Szalai", "numero": 9, "pais": "HU", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Barnabás Bese", "numero": 21, "minuto": 46, "pais": "HU" },
-        { "nome": "Krisztián Németh", "numero": 11, "minuto": 71, "pais": "HU" },
-        { "nome": "Zoltán Stieber", "numero": 18, "minuto": 83, "pais": "HU" }
+        { "nome": "Barnabás Bese", "numero": 21, "minuto": 46, "pais": "HU", "pos": "DC" },
+        { "nome": "Krisztián Németh", "numero": 11, "minuto": 71, "pais": "HU", "pos": "PL" },
+        { "nome": "Zoltán Stieber", "numero": 18, "minuto": 83, "pais": "HU", "pos": "ED" }
       ],
       "nao_utilizados": [
         "Tamás Kádár",
@@ -70,9 +70,9 @@
         { "nome": "Nani", "numero": 17, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 42 }] }
       ],
       "suplentes": [
-        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 46, "pais": "PT" },
-        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 61, "pais": "PT" },
-        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 81, "pais": "PT" }
+        { "nome": "Renato Sanches", "aceites": ["renato"], "numero": 16, "minuto": 46, "pais": "PT", "pos": "MC" },
+        { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 20, "minuto": 61, "pais": "PT", "pos": "MD" },
+        { "nome": "Danilo", "aceites": ["danilo", "Danilo Pereira"], "numero": 13, "minuto": 81, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": [
         "Bruno Alves",

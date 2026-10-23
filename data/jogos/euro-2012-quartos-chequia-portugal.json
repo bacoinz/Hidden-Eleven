@@ -26,7 +26,10 @@
         { "nome": "Václav Pilař", "numero": 14, "pais": "CZ", "pos": "EE" },
         { "nome": "Milan Baroš", "numero": 15, "pais": "CZ", "pos": "PL" }
       ],
-      "suplentes": [{ "nome": "Jan Rezek", "numero": 9, "minuto": 61, "pais": "CZ" }, { "nome": "Tomáš Pekhart", "numero": 20, "minuto": 86, "pais": "CZ" }],
+      "suplentes": [
+        { "nome": "Jan Rezek", "numero": 9, "minuto": 61, "pais": "CZ", "pos": "MO" },
+        { "nome": "Tomáš Pekhart", "numero": 20, "minuto": 86, "pais": "CZ", "pos": "MC" }
+      ],
       "nao_utilizados": [
         "Marek Suchý",
         "Roman Hubník",
@@ -60,9 +63,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE", "golos": [{ "minuto": 79 }] }
       ],
       "suplentes": [
-        { "nome": "Hugo Almeida", "numero": 9, "minuto": 40, "pais": "PT" },
-        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 84, "pais": "PT" },
-        { "nome": "Rolando", "numero": 14, "minuto": 88, "pais": "PT" }
+        { "nome": "Hugo Almeida", "numero": 9, "minuto": 40, "pais": "PT", "pos": "PL" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 84, "pais": "PT", "pos": "ED" },
+        { "nome": "Rolando", "numero": 14, "minuto": 88, "pais": "PT", "pos": "DC" }
       ],
       "nao_utilizados": [
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },

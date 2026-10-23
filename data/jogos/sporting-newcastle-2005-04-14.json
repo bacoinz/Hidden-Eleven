@@ -28,9 +28,9 @@
         { "nome": "Marius Niculae", "numero": 9, "pais": "RO", "pos": "PL", "golos": [{ "minuto": 40 }] }
       ],
       "suplentes": [
-        { "nome": "Custódio", "numero": 27, "minuto": 87, "pais": "PT" },
-        { "nome": "Pedro Barbosa", "numero": 8, "minuto": 67, "pais": "PT" },
-        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 74, "pais": "CL" }
+        { "nome": "Custódio", "numero": 27, "minuto": 87, "pais": "PT", "pos": "PL" },
+        { "nome": "Pedro Barbosa", "numero": 8, "minuto": 67, "pais": "PT", "pos": "ME" },
+        { "nome": "Mauricio Pinilla", "numero": 87, "minuto": 74, "pais": "CL", "pos": "PL" }
       ],
       "nao_utilizados": ["Nélson", "Miguel Garcia", "Rodrigo Tello", "Mota"]
     },
@@ -52,9 +52,9 @@
         { "nome": "Alan Shearer", "numero": 9, "pais": "GB-ENG", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Andy O'Brien", "numero": 5, "minuto": 55, "pais": "IE" },
-        { "nome": "James Milner", "numero": 11, "minuto": 46, "pais": "GB-ENG" },
-        { "nome": "Patrick Kluivert", "numero": 16, "minuto": 59, "pais": "NL" }
+        { "nome": "Andy O'Brien", "numero": 5, "minuto": 55, "pais": "IE", "pos": "DC" },
+        { "nome": "James Milner", "numero": 11, "minuto": 46, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Patrick Kluivert", "numero": 16, "minuto": 59, "pais": "NL", "pos": "ED" }
       ],
       "nao_utilizados": ["Steve Harper", "Nicky Butt", "Darren Ambrose", "Shola Ameobi"]
     }

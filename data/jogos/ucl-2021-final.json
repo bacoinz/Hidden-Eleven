@@ -28,9 +28,9 @@
         { "nome": "Raheem Sterling", "numero": 7, "pais": "GB-ENG", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Fernandinho", "numero": 25, "minuto": 64, "pais": "BR" },
-        { "nome": "Gabriel Jesus", "numero": 9, "minuto": 60, "pais": "BR" },
-        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 10, "minuto": 77, "pais": "AR" }
+        { "nome": "Fernandinho", "numero": 25, "minuto": 64, "pais": "BR", "pos": "MC" },
+        { "nome": "Gabriel Jesus", "numero": 9, "minuto": 60, "pais": "BR", "pos": "PL" },
+        { "nome": "Sergio Agüero", "aceites": ["kun", "kun aguero"], "numero": 10, "minuto": 77, "pais": "AR", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Zack Steffen",
@@ -64,9 +64,9 @@
         { "nome": "Timo Werner", "numero": 11, "pais": "DE", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Andreas Christensen", "numero": 4, "minuto": 39, "pais": "DK" },
-        { "nome": "Christian Pulisic", "numero": 10, "minuto": 66, "pais": "US" },
-        { "nome": "Mateo Kovačić", "numero": 17, "minuto": 80, "pais": "HR" }
+        { "nome": "Andreas Christensen", "numero": 4, "minuto": 39, "pais": "DK", "pos": "DC" },
+        { "nome": "Christian Pulisic", "numero": 10, "minuto": 66, "pais": "US", "pos": "PL" },
+        { "nome": "Mateo Kovačić", "numero": 17, "minuto": 80, "pais": "HR", "pos": "MO" }
       ],
       "nao_utilizados": [
         "Kepa Arrizabalaga",

@@ -28,9 +28,9 @@
         { "nome": "Liedson", "numero": 31, "pais": "BR", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Carlos Martins", "numero": 10, "minuto": 46, "pais": "PT" },
-        { "nome": "Yannick Djaló", "numero": 20, "minuto": 46, "pais": "PT" },
-        { "nome": "Alecsandro", "numero": 19, "minuto": 66, "pais": "BR" }
+        { "nome": "Carlos Martins", "numero": 10, "minuto": 46, "pais": "PT", "pos": "MDC" },
+        { "nome": "Yannick Djaló", "numero": 20, "minuto": 46, "pais": "PT", "pos": "ED" },
+        { "nome": "Alecsandro", "numero": 19, "minuto": 66, "pais": "BR", "pos": "MO" }
       ],
       "nao_utilizados": [{ "nome": "Tiago", "aceites": ["tiago mendes"] }, "Miguel Veloso", "Carlos Paredes", "Ronny"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Fabrizio Miccoli", "numero": 30, "pais": "IT", "pos": "PL" }
       ],
       "suplentes": [
-        { "nome": "Beto", "numero": 16, "minuto": "90+1", "pais": "BR" },
-        { "nome": "Giorgos Karagounis", "numero": 26, "minuto": 89, "pais": "GR" },
-        { "nome": "Paulo Jorge", "numero": 15, "minuto": 68, "pais": "PT" }
+        { "nome": "Beto", "numero": 16, "minuto": "90+1", "pais": "BR", "pos": "MC" },
+        { "nome": "Giorgos Karagounis", "numero": 26, "minuto": 89, "pais": "GR", "pos": "MD" },
+        { "nome": "Paulo Jorge", "numero": 15, "minuto": 68, "pais": "PT", "pos": "PL" }
       ],
       "nao_utilizados": ["Marcelo Moretto", "Anderson", "Miguelito", "Kikin Fonseca"]
     }

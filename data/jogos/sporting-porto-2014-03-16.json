@@ -28,9 +28,9 @@
         { "nome": "Diego Capel", "numero": 11, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "André Carrillo", "numero": 18, "minuto": 69, "pais": "PE" },
-        { "nome": "Wilson Eduardo", "numero": 28, "minuto": 86, "pais": "AO" },
-        { "nome": "Fredy Montero", "numero": 17, "minuto": 74, "pais": "CO" }
+        { "nome": "André Carrillo", "numero": 18, "minuto": 69, "pais": "PE", "pos": "MC" },
+        { "nome": "Wilson Eduardo", "numero": 28, "minuto": 86, "pais": "AO", "pos": "ED" },
+        { "nome": "Fredy Montero", "numero": 17, "minuto": 74, "pais": "CO", "pos": "PL" }
       ],
       "nao_utilizados": ["Marcelo Boeck", "Rúben Semedo", "Gerson Magrão", "Heldon"]
     },
@@ -54,9 +54,9 @@
         { "nome": "Ricardo Quaresma", "aceites": ["quaresma"], "numero": 7, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Fabiano Freitas", "numero": 24, "minuto": 62, "pais": "BR" },
-        { "nome": "Juan Quintero", "numero": 10, "minuto": 59, "pais": "CO" },
-        { "nome": "Nabil Ghilas", "numero": 11, "minuto": 77, "pais": "DZ" }
+        { "nome": "Fabiano Freitas", "numero": 24, "minuto": 62, "pais": "BR", "pos": "GR" },
+        { "nome": "Juan Quintero", "numero": 10, "minuto": 59, "pais": "CO", "pos": "MC" },
+        { "nome": "Nabil Ghilas", "numero": 11, "minuto": 77, "pais": "DZ", "pos": "ED" }
       ],
       "nao_utilizados": ["Ricardo Pereira", "Diego Reyes", "Héctor Herrera", "Licá"]
     }

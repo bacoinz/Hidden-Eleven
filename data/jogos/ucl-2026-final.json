@@ -28,11 +28,11 @@
         { "nome": "Khvicha Kvaratskhelia", "aceites": ["kvara"], "numero": 7, "pais": "GE", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Lucas Beraldo", "numero": 4, "minuto": 106, "pais": "BR" },
-        { "nome": "Illia Zabarnyi", "numero": 6, "minuto": 106, "pais": "UA" },
-        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 95, "pais": "FR" },
-        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": "90+6", "pais": "PT" },
-        { "nome": "Bradley Barcola", "numero": 29, "minuto": 83, "pais": "FR" }
+        { "nome": "Lucas Beraldo", "numero": 4, "minuto": 106, "pais": "BR", "pos": "DC" },
+        { "nome": "Illia Zabarnyi", "numero": 6, "minuto": 106, "pais": "UA", "pos": "DC" },
+        { "nome": "Warren Zaïre-Emery", "numero": 33, "minuto": 95, "pais": "FR", "pos": "ME" },
+        { "nome": "Gonçalo Ramos", "numero": 9, "minuto": "90+6", "pais": "PT", "pos": "PL" },
+        { "nome": "Bradley Barcola", "numero": 29, "minuto": 83, "pais": "FR", "pos": "EE" }
       ],
       "nao_utilizados": [
         "Lucas Chevalier",
@@ -64,12 +64,12 @@
         { "nome": "Kai Havertz", "numero": 29, "pais": "DE", "pos": "PL", "golos": [{ "minuto": 6 }] }
       ],
       "suplentes": [
-        { "nome": "Jurriën Timber", "numero": 12, "minuto": 66, "pais": "NL" },
-        { "nome": "Eberechi Eze", "numero": 10, "minuto": 91, "pais": "GB-ENG" },
-        { "nome": "Noni Madueke", "numero": 20, "minuto": 83, "pais": "GB-ENG" },
-        { "nome": "Martín Zubimendi", "numero": 36, "minuto": 91, "pais": "ES" },
-        { "nome": "Gabriel Martinelli", "aceites": ["martinelli"], "numero": 11, "minuto": 83, "pais": "BR" },
-        { "nome": "Viktor Gyökeres", "numero": 14, "minuto": 67, "pais": "SE" }
+        { "nome": "Jurriën Timber", "numero": 12, "minuto": 66, "pais": "NL", "pos": "DD" },
+        { "nome": "Eberechi Eze", "numero": 10, "minuto": 91, "pais": "GB-ENG", "pos": "MC" },
+        { "nome": "Noni Madueke", "numero": 20, "minuto": 83, "pais": "GB-ENG", "pos": "EE" },
+        { "nome": "Martín Zubimendi", "numero": 36, "minuto": 91, "pais": "ES", "pos": "PL" },
+        { "nome": "Gabriel Martinelli", "aceites": ["martinelli"], "numero": 11, "minuto": 83, "pais": "BR", "pos": "ED" },
+        { "nome": "Viktor Gyökeres", "numero": 14, "minuto": 67, "pais": "SE", "pos": "MO" }
       ],
       "nao_utilizados": ["Kepa Arrizabalaga", "Riccardo Calafiori", "Christian Nørgaard", "Mikel Merino", "Max Dowman", "Gabriel Jesus"]
     }

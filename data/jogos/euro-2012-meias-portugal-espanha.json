@@ -29,9 +29,9 @@
         { "nome": "Cristiano Ronaldo", "aceites": ["cristiano", "cr7"], "numero": 7, "pais": "PT", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 81, "pais": "PT" },
-        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 106, "pais": "PT" },
-        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 113, "pais": "PT" }
+        { "nome": "Nélson Oliveira", "numero": 11, "minuto": 81, "pais": "PT", "pos": "PL" },
+        { "nome": "Custódio", "aceites": ["Custódio Castro"], "numero": 6, "minuto": 106, "pais": "PT", "pos": "MC" },
+        { "nome": "Silvestre Varela", "aceites": ["varela"], "numero": 18, "minuto": 113, "pais": "PT", "pos": "MC" }
       ],
       "nao_utilizados": [
         { "nome": "Eduardo", "aceites": ["Eduardo Carvalho"] },
@@ -65,9 +65,9 @@
         { "nome": "Andrés Iniesta", "numero": 6, "pais": "ES", "pos": "EE" }
       ],
       "suplentes": [
-        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 54, "pais": "ES" },
-        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES" },
-        { "nome": "Pedro", "numero": 7, "minuto": 87, "pais": "ES" }
+        { "nome": "Cesc Fàbregas", "aceites": ["cesc"], "numero": 10, "minuto": 54, "pais": "ES", "pos": "PL" },
+        { "nome": "Jesús Navas", "aceites": ["navas"], "numero": 22, "minuto": 60, "pais": "ES", "pos": "ED" },
+        { "nome": "Pedro", "numero": 7, "minuto": 87, "pais": "ES", "pos": "MC" }
       ],
       "nao_utilizados": [
         "Raúl Albiol",

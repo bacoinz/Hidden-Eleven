@@ -28,9 +28,9 @@
         { "nome": "Adrián López", "numero": 20, "pais": "ES", "pos": "PL", "golos": [{ "minuto": 18 }] }
       ],
       "suplentes": [
-        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "minuto": 81, "pais": "PT" },
-        { "nome": "Otávio", "numero": 25, "minuto": 61, "pais": "BR" },
-        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "minuto": 61, "pais": "BR" }
+        { "nome": "Danilo Pereira", "aceites": ["danilo"], "numero": 22, "minuto": 81, "pais": "PT", "pos": "DC" },
+        { "nome": "Otávio", "numero": 25, "minuto": 61, "pais": "BR", "pos": "MD" },
+        { "nome": "Tiquinho Soares", "aceites": ["tiquinho"], "numero": 29, "minuto": 61, "pais": "BR", "pos": "PL" }
       ],
       "nao_utilizados": ["Vaná Alves", "Éder Militão", "Hernâni", "Fernando Andrade"]
     },
@@ -54,9 +54,9 @@
         { "nome": "João Félix", "aceites": ["felix"], "numero": 79, "pais": "PT", "pos": "PL", "golos": [{ "minuto": 26 }] }
       ],
       "suplentes": [
-        { "nome": "Sébastien Corchia", "numero": 7, "minuto": 88, "pais": "FR" },
-        { "nome": "Gedson Fernandes", "numero": 83, "minuto": 71, "pais": "PT" },
-        { "nome": "Franco Cervi", "numero": 11, "minuto": "90+2", "pais": "AR" }
+        { "nome": "Sébastien Corchia", "numero": 7, "minuto": 88, "pais": "FR", "pos": "DD" },
+        { "nome": "Gedson Fernandes", "numero": 83, "minuto": 71, "pais": "PT", "pos": "MC" },
+        { "nome": "Franco Cervi", "numero": 11, "minuto": "90+2", "pais": "AR", "pos": "PL" }
       ],
       "nao_utilizados": ["Mile Svilar", "Florentino Luís", "Jonas", "João Filipe"]
     }
