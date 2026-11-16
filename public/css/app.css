@@ -306,13 +306,28 @@ select.campo option {
   outline: 2px solid var(--azul2);
   outline-offset: 2px;
 }
+/* Botão principal como no Coach Board: letra Anton em maiúsculas e um degrau por baixo. */
 .btn-principal {
   background: linear-gradient(180deg, var(--azul), var(--azul-escuro));
+  outline: 1px solid #93c5fd55;
+  outline-offset: -1px;
   color: #fff;
-  box-shadow: 0 6px 20px #3b82f64d;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  box-shadow:
+    0 3px 0 var(--azul-tinta),
+    0 8px 20px #3b82f64d;
 }
 .btn-principal:hover:not(:disabled) {
-  filter: brightness(1.08);
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+.btn-principal:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--azul-tinta), 0 4px 10px #3b82f64d;
 }
 .btn-claro {
   background: #fff;
@@ -1738,4 +1753,73 @@ kbd {
 .lugar-banco.outro-lado {
   opacity: 0.4;
   transition: opacity 0.3s;
+}
+
+/* Idioma, e o rodapé do início: Ko-fi, GitHub, versão e bugs. */
+.campo-idioma {
+  padding: 4px 8px;
+  border: 1px solid var(--panel-border, #ffffff1a);
+  border-radius: 8px;
+  background: #0b1a12;
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+}
+.idioma-inicio {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+.menu-idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.linha-inicio {
+  justify-content: center;
+}
+.rodape-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 16px;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.botao-kofi {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 10px;
+  border-radius: 999px;
+  background: #29abe0;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 14px #29abe055;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.botao-kofi:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px #29abe088;
+}
+.ligacao-github,
+.ligacao-bug {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.ligacao-github:hover,
+.ligacao-bug:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.versao {
+  opacity: 0.6;
 }

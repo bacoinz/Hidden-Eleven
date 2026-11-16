@@ -1,6 +1,7 @@
 // Relvado em SVG: linhas do campo, camisolas colocadas pela formação, pistas, descobertas e bancos.
 import { disporOnze } from './formacao.js';
 import { svg, el, corTexto, bandeira } from './util.js';
+import { traduzir } from './idioma.js';
 
 const L = 1050; // comprimento (unidades de 10 cm)
 const W = 680; // largura
@@ -41,7 +42,7 @@ function bola(r, autogolo = false) {
     svg('polygon', { points: pentagono, fill: autogolo ? '#7f1d1d' : '#0b1220' }));
 }
 
-const descreverGolo = (g) => `${g.autogolo ? 'Autogolo' : g.penalti ? 'Golo de penálti' : 'Golo'} ${g.minuto}'`;
+const descreverGolo = (g) => traduzir(`${g.autogolo ? 'Autogolo' : g.penalti ? 'Golo de penálti' : 'Golo'} ${g.minuto}'`);
 
 /** Bolas dos golos ao lado da camisola (uma por golo; a partir de 4, uma bola com "×N"). */
 function iconesGolos(golos, S) {
@@ -295,7 +296,8 @@ export class Relvado {
         rotulo.append(svg('text', { class: 'rotulo-dono', y: y0 + tamDono * 1.25, 'font-size': tamDono, fill: dono.cor, 'stroke-width': tamDono * 0.3 }, dono.nome));
       }
       const golos = (lugar.golos ?? []).map(descreverGolo).join(', ');
-      const titulo = `${lugar.nome}${estado === 'descoberta' ? ` — descoberto por ${dono?.nome ?? '?'} (+${lugar.pontos})` : ' (ninguém descobriu)'}${golos ? ` · ${golos}` : ''}`;
+      // O título do SVG não passa pelo tradutor do ecrã: traduz-se aqui.
+      const titulo = `${traduzir(`${lugar.nome}${estado === 'descoberta' ? ` — descoberto por ${dono?.nome ?? '?'} (+${lugar.pontos})` : ' (ninguém descobriu)'}`)}${golos ? ` · ${golos}` : ''}`;
       g.replaceChildren(svg('title', {}, titulo));
     }
     if (estado === 'escondida') g.replaceChildren();

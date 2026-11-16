@@ -4,6 +4,10 @@ import { Ligacao } from './ligacao.js';
 import { Relvado } from './relvado.js';
 import * as ui from './ui.js';
 import { sons, somLigado, alternarSom } from './sons.js';
+import { instalarTradutor, traduzir } from './idioma.js';
+
+// Em inglês, os textos traduzem-se à medida que aparecem no ecrã (ver idioma.js).
+instalarTradutor();
 
 const CHAVE_TOKEN = 'he.token';
 const CHAVE_NOME = 'he.nome';
@@ -86,7 +90,7 @@ async function abrirSala(codigo) {
 function ligar(codigo) {
   estado.ligacao?.fechar();
   Object.assign(estado, { codigo, eu: null, sala: null, ultimoSeq: null, totais: null, bloqueadoAte: 0 });
-  document.title = `Hidden Eleven · Sala ${codigo}`;
+  document.title = traduzir(`Hidden Eleven · Sala ${codigo}`);
   estado.ligacao = new Ligacao({
     codigo,
     identidade: () => ({ token, nome: ler(CHAVE_NOME) ?? '' }),

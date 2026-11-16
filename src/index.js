@@ -31,8 +31,12 @@ async function criarSala(request, env) {
 /** A página da sala é o mesmo index.html, com o título da pré-visualização do Discord adaptado. */
 async function paginaSala(request, env, codigo) {
   const pagina = await env.ASSETS.fetch(new Request(new URL('/', request.url), { headers: request.headers }));
-  const titulo = `Hidden Eleven · Sala ${codigo}`;
-  const descricao = `Entra na sala ${codigo} e descobre o onze escondido com os teus amigos.`;
+  // A pré-visualização (Discord…) segue a língua de quem pede; sem português, fica em inglês.
+  const pt = /^pt\b/i.test(request.headers.get('accept-language') ?? '');
+  const titulo = pt ? `Hidden Eleven · Sala ${codigo}` : `Hidden Eleven · Room ${codigo}`;
+  const descricao = pt
+    ? `Entra na sala ${codigo} e descobre o onze escondido com os teus amigos.`
+    : `Join room ${codigo} and uncover the hidden line-up with your friends.`;
   return new HTMLRewriter()
     .on('meta[property="og:title"]', { element: (el) => el.setAttribute('content', titulo) })
     .on('meta[property="og:description"]', { element: (el) => el.setAttribute('content', descricao) })

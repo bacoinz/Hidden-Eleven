@@ -74,7 +74,7 @@ export function renderLobby(sala, eu, catalogo, enviar) {
   select.disabled = !anfitriao;
   const atual = [...select.options].map((o) => o.value).join();
   if (atual !== equipas.map((e) => e.slug).join()) {
-    select.replaceChildren(...equipas.map((e) => el('option', { value: e.slug, text: `${e.nome} (${plural(e.jogos, 'jogo', 'jogos')})` })));
+    select.replaceChildren(...equipas.map((e) => el('option', { value: e.slug, text: `${e.nome} · ${plural(e.jogos, 'jogo', 'jogos')}` })));
   }
   if (sala.config.equipa) select.value = sala.config.equipa;
   select.onchange = () => enviar({ t: 'config', conteudo: 'equipa', equipa: select.value });
@@ -209,8 +209,10 @@ export function renderPlacar(sala, eu, anterior, enviar) {
   $('#jogo-grelha').classList.toggle('terminada', terminou);
   $('#placar-titulo').textContent =
     sala.fase === 'final' ? 'Jogo terminado' : sala.fase === 'fim' ? `Fim da ronda ${p?.numero ?? ''}/${p?.total ?? ''}` : 'Classificação';
-  $('#placar-resumo').textContent =
-    terminou && r ? `Descobriram ${r.descobertos} de ${r.total} posições. O que ficou por descobrir está a cinzento.` : '';
+  const resumo = terminou && r ? `Descobriram ${r.descobertos} de ${r.total} posições. O que ficou por descobrir está a cinzento.` : '';
+  const espectadores = sala.jogadores.filter((j) => j.espectador && j.ligado).map((j) => j.nome);
+  // Um texto só (e não acrescentos), para o tradutor o reconhecer inteiro.
+  $('#placar-resumo').textContent = espectadores.length ? `${resumo}${resumo ? ' ' : ''}A ver: ${espectadores.join(', ')}.` : resumo;
 
   const lados = r?.lados ?? null;
   const equipaDe = (id) => (lados && lados[id] !== undefined ? r.equipas.find((e) => e.indice === lados[id]) : null);
@@ -229,11 +231,6 @@ export function renderPlacar(sala, eu, anterior, enviar) {
     }),
   );
 
-  const espectadores = sala.jogadores.filter((j) => j.espectador && j.ligado).map((j) => j.nome);
-  if (espectadores.length) {
-    const resumo = $('#placar-resumo');
-    resumo.textContent = `${resumo.textContent}${resumo.textContent ? ' ' : ''}A ver: ${espectadores.join(', ')}.`;
-  }
   renderEstatisticas(sala, eu, terminou);
 
   const anfitriao = sala.anfitriao === eu;

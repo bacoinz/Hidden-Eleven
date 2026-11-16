@@ -31,12 +31,15 @@ function aplicar(n, attrs) {
   }
 }
 
+import { emIngles } from './idioma.js';
+import { MESES as MONTHS } from './ingles.js';
+
 const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
 /** "2004-05-26" → "26 de maio de 2004" */
 export function formatarData(iso) {
   const [a, m, d] = String(iso).split('-').map(Number);
   if (!a || !m || !d) return iso ?? '';
-  return `${d} de ${MESES[m - 1]} de ${a}`;
+  return emIngles ? `${d} ${MONTHS[m - 1]} ${a}` : `${d} de ${MESES[m - 1]} de ${a}`;
 }
 
 /** 167000 → "2:47" */
