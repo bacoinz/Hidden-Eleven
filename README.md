@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="public/favicon.svg" alt="Hidden Eleven logo" width="96" height="96">
-
-# Hidden Eleven
+<img src="docs/screenshots/cover.png" alt="Hidden Eleven: name the hidden eleven before your friends do" width="100%">
 
 **A real-time multiplayer football trivia game: uncover the hidden line-ups of legendary matches with your friends.**<br>
 The starting elevens appear with the names hidden. Type a name first and the spot is yours. Free to host on Cloudflare.
@@ -10,8 +8,6 @@ The starting elevens appear with the names hidden. Type a name first and the spo
 <a href="https://hidden-eleven.bacoinz.workers.dev"><img src="https://img.shields.io/badge/play-hidden--eleven.bacoinz.workers.dev-3b82f6?style=flat-square&labelColor=06140d" alt="Play online"></a> <img src="https://img.shields.io/badge/version-1.0-3b82f6?style=flat-square&labelColor=06140d" alt="Version 1.0"> <a href="LICENSE.md"><img src="https://img.shields.io/badge/license-PolyForm%20Noncommercial-3b82f6?style=flat-square&labelColor=06140d" alt="License: PolyForm Noncommercial"></a> <img src="https://img.shields.io/badge/cost-0%20%E2%82%AC%2Fmonth-3b82f6?style=flat-square&labelColor=06140d" alt="Cost: 0 €/month"> <img src="https://img.shields.io/badge/Cloudflare-Workers%20%C2%B7%20Durable%20Objects-3b82f6?style=flat-square&logo=cloudflare&logoColor=white&labelColor=06140d" alt="Cloudflare Workers and Durable Objects"> <img src="https://img.shields.io/badge/interface-English%20%C2%B7%20Portugu%C3%AAs-3b82f6?style=flat-square&labelColor=06140d" alt="Interface: English and Portuguese"> <a href="https://ko-fi.com/bacoinz"><img src="https://img.shields.io/badge/Ko--fi-support%20Hidden%20Eleven-3b82f6?style=flat-square&logo=kofi&logoColor=white&labelColor=06140d" alt="Support Hidden Eleven on Ko-fi"></a>
 
 [**▶ Play now**](https://hidden-eleven.bacoinz.workers.dev) · [How to play](#how-to-play) · [Run your own](#run-your-own) · [Report a bug](https://github.com/bacoinz/hidden-eleven/issues/new/choose) · [🇵🇹 Português](README.pt-PT.md)
-
-<img src="docs/screenshots/game.png" alt="A Champions League final in progress, with the line-ups half uncovered" width="100%">
 
 </div>
 

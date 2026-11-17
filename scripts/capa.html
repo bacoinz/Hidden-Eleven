@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: 'Anton'; src: url(../public/fontes/anton-latin.woff2) format('woff2'); }
+@font-face { font-family: 'Inter'; src: url(../public/fontes/inter-latin.woff2) format('woff2-variations'); font-weight: 100 900; }
+* { box-sizing: border-box; margin: 0; }
+body { width: 1920px; height: 1080px; overflow: hidden; background: #06140d; color: #fff; font-family: 'Inter', sans-serif; position: relative; }
+.fundo { position: absolute; inset: 0; background:
+  radial-gradient(900px 600px at 78% 40%, #1d4ed833, transparent 70%),
+  radial-gradient(1100px 800px at 70% 55%, #0f3d2466, transparent 70%),
+  repeating-linear-gradient(90deg, #ffffff05 0 110px, transparent 110px 220px); }
+.marca { position: absolute; left: 96px; top: 150px; display: flex; align-items: center; gap: 28px; }
+.logo { width: 84px; height: 84px; border-radius: 22px; background: #0c2016; border: 1px solid #ffffff1a; display: grid; place-items: center; }
+.logo img { width: 56px; }
+.nome { font-family: 'Anton'; font-size: 74px; letter-spacing: 0.01em; text-transform: uppercase; line-height: 1; }
+.nome b { font-weight: 400; background: linear-gradient(180deg, #60a5fa, #3b82f6); -webkit-background-clip: text; color: transparent; }
+h1 { position: absolute; left: 96px; top: 285px; font-size: 76px; line-height: 1.04; font-weight: 800; letter-spacing: -0.02em; width: 640px; }
+h1 span { background: linear-gradient(180deg, #7db4ff, #3b82f6); -webkit-background-clip: text; color: transparent; }
+.sub { position: absolute; left: 96px; top: 580px; width: 560px; font-size: 31px; line-height: 1.4; color: #c7d6cd; font-weight: 300; }
+.sub2 { position: absolute; left: 96px; top: 725px; font-size: 29px; color: #93a99c; font-weight: 300; }
+.pilula { position: absolute; left: 96px; top: 800px; padding: 18px 28px; border-radius: 999px; background: linear-gradient(180deg, #3b82f6, #1d4ed8); font-size: 30px; font-weight: 700; box-shadow: 0 10px 30px #3b82f655; }
+.janela { position: absolute; left: 740px; top: 130px; width: 1030px; height: 640px; border-radius: 18px; border: 1px solid #ffffff22; overflow: hidden; box-shadow: 0 30px 80px #000a; background: #06140d; }
+.janela img { width: 100%; display: block; }
+.telemovel { position: absolute; left: 1500px; top: 270px; width: 330px; border-radius: 44px; border: 9px solid #0a0f0c; outline: 1px solid #ffffff2a; overflow: hidden; box-shadow: 0 30px 80px #000c; background: #06140d; }
+.telemovel img { width: 100%; display: block; }
+</style></head>
+<body>
+<div class="fundo"></div>
+<div class="marca"><div class="logo"><img src="../public/favicon.svg"></div><div class="nome">Hidden <b>Eleven</b></div></div>
+<h1>Name the hidden eleven <span>before your friends do.</span></h1>
+<p class="sub">Legendary line-ups, every name hidden. Type one first and the spot is yours.</p>
+<p class="sub2">Solo, multiplayer, duels, hints, stats.</p>
+<div class="pilula">Free on Cloudflare · play now</div>
+<div class="janela"><img src="../docs/screenshots/round-end.png"></div>
+<div class="telemovel"><img src="../docs/screenshots/game-phone.png"></div>
+</body></html>

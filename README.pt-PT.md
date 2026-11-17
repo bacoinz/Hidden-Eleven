@@ -1,8 +1,6 @@
 <div align="center">
 
-<img src="public/favicon.svg" alt="Logótipo do Hidden Eleven" width="96" height="96">
-
-# Hidden Eleven
+<img src="docs/screenshots/cover.png" alt="Hidden Eleven: descobre o onze escondido antes dos teus amigos" width="100%">
 
 **Um jogo de futebol multijogador em tempo real: descobre os onzes escondidos de jogos míticos com os teus amigos.**<br>
 Aparecem os onzes com os nomes escondidos. Quem escrever primeiro um nome fica com a posição. Aloja-se de graça na Cloudflare.
@@ -10,8 +8,6 @@ Aparecem os onzes com os nomes escondidos. Quem escrever primeiro um nome fica c
 <a href="https://hidden-eleven.bacoinz.workers.dev"><img src="https://img.shields.io/badge/jogar-hidden--eleven.bacoinz.workers.dev-3b82f6?style=flat-square&labelColor=06140d" alt="Jogar online"></a> <img src="https://img.shields.io/badge/vers%C3%A3o-1.0-3b82f6?style=flat-square&labelColor=06140d" alt="Versão 1.0"> <a href="LICENSE.md"><img src="https://img.shields.io/badge/licen%C3%A7a-PolyForm%20Noncommercial-3b82f6?style=flat-square&labelColor=06140d" alt="Licença: PolyForm Noncommercial"></a> <img src="https://img.shields.io/badge/custo-0%20%E2%82%AC%2Fm%C3%AAs-3b82f6?style=flat-square&labelColor=06140d" alt="Custo: 0 €/mês"> <img src="https://img.shields.io/badge/Cloudflare-Workers%20%C2%B7%20Durable%20Objects-3b82f6?style=flat-square&logo=cloudflare&logoColor=white&labelColor=06140d" alt="Cloudflare Workers e Durable Objects"> <img src="https://img.shields.io/badge/interface-Portugu%C3%AAs%20%C2%B7%20English-3b82f6?style=flat-square&labelColor=06140d" alt="Interface: Português e inglês"> <a href="https://ko-fi.com/bacoinz"><img src="https://img.shields.io/badge/Ko--fi-apoiar%20o%20Hidden%20Eleven-3b82f6?style=flat-square&logo=kofi&logoColor=white&labelColor=06140d" alt="Apoiar o Hidden Eleven no Ko-fi"></a>
 
 [**▶ Jogar agora**](https://hidden-eleven.bacoinz.workers.dev) · [Como jogar](#como-jogar) · [Alojar o teu](#alojar-o-teu) · [Reportar um bug](https://github.com/bacoinz/hidden-eleven/issues/new/choose) · [🇬🇧 English](README.md)
-
-<img src="docs/screenshots/game.png" alt="Uma final da Liga dos Campeões a meio, com os onzes meio descobertos" width="100%">
 
 </div>
 
