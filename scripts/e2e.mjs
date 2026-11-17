@@ -79,8 +79,10 @@ async function principal() {
   const codigo = criar.codigo;
   const info = await fetch(`${BASE}/api/salas/${codigo}`).then((r) => r.json());
   ok(info.existe === true && info.solo === false, 'a sala existe e é multijogador');
-  const html = await fetch(`${BASE}/sala/${codigo}`).then((r) => r.text());
-  ok(html.includes(`Sala ${codigo}`), 'a página da sala tem o código na pré-visualização');
+  const html = await fetch(`${BASE}/sala/${codigo}`, { headers: { 'accept-language': 'pt-PT' } }).then((r) => r.text());
+  ok(html.includes(`Sala ${codigo}`), 'a página da sala tem o código na pré-visualização (português)');
+  const htmlEn = await fetch(`${BASE}/sala/${codigo}`, { headers: { 'accept-language': 'en-GB' } }).then((r) => r.text());
+  ok(htmlEn.includes(`Room ${codigo}`), 'a página da sala tem o código na pré-visualização (inglês)');
   const inexistente = await fetch(`${BASE}/api/salas/ZZZZ`).then((r) => r.json());
   ok(inexistente.existe === false, 'uma sala inexistente é reportada');
 
