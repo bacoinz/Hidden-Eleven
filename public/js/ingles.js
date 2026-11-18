@@ -23,6 +23,7 @@ export const PARES = [
   ['Voltar ao início', 'Back to start'],
   ['Apoiar no Ko-fi', 'Support on Ko-fi'],
   ['Encontraste um bug?', 'Found a bug?'],
+  ['Vê os meus outros jogos e apps', 'See my other games and apps'],
   ['Idioma', 'Language'],
   ['A ligar ao servidor…', 'Connecting to the server…'],
   ['Escolhe um nome primeiro.', 'Choose a name first.'],

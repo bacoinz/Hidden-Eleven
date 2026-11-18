@@ -1780,14 +1780,40 @@ kbd {
 .linha-inicio {
   justify-content: center;
 }
-.rodape-inicio {
+#ecra-inicio {
+  position: relative;
+  padding-bottom: 56px;
+}
+.apoio-inicio {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.ligacao-outros {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.ligacao-outros:hover {
+  text-decoration: underline;
+}
+.rodape-inicio {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  gap: 10px 16px;
-  margin-top: 8px;
-  font-size: 13px;
+  gap: 14px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.rodape-inicio svg {
+  width: 14px;
+  height: 14px;
 }
 .botao-kofi {
   display: inline-flex;
